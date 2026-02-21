@@ -174,9 +174,23 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            isolation: isolate;
         }
 
         .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url('/assets/images/hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.14;
+            transform: translateZ(0);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero::after {
             content: "";
             position: absolute;
             inset: -20%;
@@ -185,11 +199,12 @@
                 radial-gradient(700px 500px at 75% 65%, rgba(245, 245, 245, 0.10) 0%, rgba(13, 13, 13, 0) 55%);
             transform: translateZ(0);
             pointer-events: none;
+            z-index: 1;
         }
 
         .hero-content {
             max-width: 800px;
-            z-index: 1;
+            z-index: 2;
         }
 
         .hero-eyebrow {
@@ -412,6 +427,28 @@
             margin-top: var(--spacing-lg);
         }
 
+        .process-figure {
+            margin-top: var(--spacing-lg);
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .process-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .process-caption {
+            padding: 0.75rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+
         .booking-placeholder {
             text-align: center;
             padding: 60px 20px;
@@ -421,7 +458,7 @@
             color: var(--text-muted);
         }
 
-        .booking-note + .booking-note {
+        .booking-note+.booking-note {
             margin-top: 1.5rem;
         }
 
@@ -656,9 +693,14 @@
                 Ready to begin resolving your family law matter? Schedule an initial consultation to discuss your situation and explore mediation options.
             </p>
 
+            <figure class="process-figure">
+                <img class="process-image" src="/assets/images/process.png" alt="Consultation process: intro call, mediation session(s), next steps" loading="lazy" decoding="async">
+                <figcaption class="process-caption">A simple, supportive process—start with an intro call, then work through mediation sessions toward clear next steps.</figcaption>
+            </figure>
+
             <div class="booking-container">
-                 <div class="calendly-inline-widget booking-placeholder" 
-                     data-url="https://calendly.com/your-calendly-username/consultation">
+                <div class="calendly-inline-widget booking-placeholder"
+                    data-url="https://calendly.com/your-calendly-username/consultation">
                     <p class="booking-note booking-note--spaced">
                         📅 <strong>Calendly Integration Required</strong>
                     </p>
