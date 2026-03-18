@@ -10,15 +10,15 @@
     <meta property="og:title" content="Jamie Rigling – Family Law Mediation &amp; ADR Services">
     <meta property="og:description" content="MN Rule 114 certified mediator specializing in child custody, divorce, and family law matters. Schedule your consultation today.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mediation.globaldeets.com">
-    <meta property="og:image" content="https://mediation.globaldeets.com/assets/og/og-image.png">
+    <meta property="og:url" content="https://minnesotapeace.com">
+    <meta property="og:image" content="https://minnesotapeace.com/assets/og/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jamie Rigling – Family Law Mediation &amp; ADR Services">
     <meta name="twitter:description" content="MN Rule 114 certified mediator specializing in child custody, divorce, and family law matters.">
-    <meta name="twitter:image" content="https://mediation.globaldeets.com/assets/og/og-image.png">
-    <link rel="canonical" href="https://mediation.globaldeets.com">
+    <meta name="twitter:image" content="https://minnesotapeace.com/assets/og/og-image.png">
+    <link rel="canonical" href="https://minnesotapeace.com">
     <title>Jamie Rigling – Family Law Mediation &amp; ADR Services</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,24 +28,24 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Cache bust: 2026-02-20-23:30 -->
+    <!-- Cache bust: 2026-03-18-001 -->
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM6Q66W9W0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-WM6Q66W9W0');
     </script>
     <!-- Error monitoring -->
     <script>
-        window.onerror = function(msg, src, line, col, err) {
+        window.onerror = function (msg, src, line, col, err) {
             if (typeof gtag === 'function') {
-                gtag('event', 'js_error', { event_category: 'JavaScript', event_label: (src||'') + ':' + line, description: msg });
+                gtag('event', 'js_error', { event_category: 'JavaScript', event_label: (src || '') + ':' + line, description: msg });
             }
         };
-        window.addEventListener('unhandledrejection', function(e) {
+        window.addEventListener('unhandledrejection', function (e) {
             if (typeof gtag === 'function') {
                 gtag('event', 'js_error', { event_category: 'Promise', event_label: 'unhandledrejection', description: String(e.reason) });
             }
@@ -57,27 +57,43 @@
            VARIABLES & RESET
            ============================================ */
         :root {
-            --bg:            #09090b;
-            --bg-elevated:   #111113;
-            --bg-card:       #0d0d0f;
-            --text:          #ede8e1;
-            --text-muted:    #87827a;
-            --text-subtle:   #52504c;
-            --accent:        #c9956a;
-            --accent-light:  #dfb48c;
-            --accent-glow:   rgba(201,149,106,0.14);
-            --accent-glow-s: rgba(201,149,106,0.07);
-            --border:        rgba(255,255,255,0.07);
-            --border-accent: rgba(201,149,106,0.28);
-            --max-width:     1200px;
-            --font-body:     'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-display:  'Playfair Display', Georgia, serif;
-            --radius:        10px;
-            --radius-lg:     18px;
+            --bg: #09090b;
+            --bg-elevated: #111113;
+            --bg-card: #0d0d0f;
+            --text: #ede8e1;
+            --text-muted: #87827a;
+            --text-subtle: #52504c;
+            --accent: #c9956a;
+            --accent-light: #dfb48c;
+            --accent-glow: rgba(201, 149, 106, 0.14);
+            --accent-glow-s: rgba(201, 149, 106, 0.07);
+            --border: rgba(255, 255, 255, 0.07);
+            --border-accent: rgba(201, 149, 106, 0.28);
+            --max-width: 1200px;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --radius: 10px;
+            --radius-lg: 18px;
         }
-        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
-        img  { display:block; max-width:100%; height:auto; }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
         body {
             font-family: var(--font-body);
             background: var(--bg);
@@ -91,459 +107,765 @@
            SKIP LINK
            ============================================ */
         .skip-link {
-            position:absolute; top:-40px; left:0;
-            background:var(--accent); color:var(--bg);
-            padding:8px 16px; font-weight:600; text-decoration:none;
-            z-index:200; transition:transform 0.2s ease;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--accent);
+            color: var(--bg);
+            padding: 8px 16px;
+            font-weight: 600;
+            text-decoration: none;
+            z-index: 200;
+            transition: transform 0.2s ease;
         }
-        .skip-link:focus { transform:translateY(40px); }
+
+        .skip-link:focus {
+            transform: translateY(40px);
+        }
 
         /* ============================================
            NAVIGATION
            ============================================ */
         .nav {
-            position:fixed; inset:0 0 auto 0; z-index:50;
-            background:rgba(9,9,11,0.88);
-            -webkit-backdrop-filter:blur(18px);
-            backdrop-filter:blur(18px);
-            border-bottom:1px solid var(--border);
-            transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);
+            position: fixed;
+            inset: 0 0 auto 0;
+            z-index: 50;
+            background: rgba(9, 9, 11, 0.88);
+            -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--border);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .nav.scroll-down { transform:translateY(-100%); }
-        .nav.scroll-up   { transform:translateY(0); }
+
+        .nav.scroll-down {
+            transform: translateY(-100%);
+        }
+
+        .nav.scroll-up {
+            transform: translateY(0);
+        }
 
         .nav-inner {
-            max-width:var(--max-width); margin:0 auto;
-            padding:0.85rem 2rem;
-            display:flex; justify-content:space-between; align-items:center;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0.85rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .nav-brand {
-            display:flex; align-items:center; gap:0.6rem;
-            text-decoration:none; color:var(--text);
-            transition:opacity 0.2s ease;
-        }
-        .nav-brand:hover { opacity:0.75; }
-        .nav-mono {
-            width:34px; height:34px; border-radius:50%;
-            object-fit:cover; object-position:center top;
-            border:1px solid var(--border-accent);
-        }
-        .nav-name {
-            font-family:var(--font-display);
-            font-size:1.05rem; font-weight:600;
-            letter-spacing:0.01em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: opacity 0.2s ease;
         }
 
-        .nav-links { display:flex; gap:2rem; list-style:none; }
-        .nav-links a {
-            color:var(--text-muted); text-decoration:none;
-            font-size:0.875rem; font-weight:500;
-            min-height:44px; display:flex; align-items:center;
-            transition:color 0.2s ease; letter-spacing:0.02em;
+        .nav-brand:hover {
+            opacity: 0.75;
         }
+
+        .nav-mono {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 1px solid var(--border-accent);
+        }
+
+        .nav-name {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+            letter-spacing: 0.02em;
+        }
+
         .nav-links a:hover,
-        .nav-links a.active { color:var(--accent); }
+        .nav-links a.active {
+            color: var(--accent);
+        }
 
         .nav-cta {
-            padding:0.5rem 1.25rem;
-            background:var(--accent); color:var(--bg);
-            border-radius:6px; font-weight:600;
-            font-size:0.875rem; text-decoration:none;
-            transition:background 0.2s ease, transform 0.2s ease;
-            min-height:40px; display:flex; align-items:center;
+            padding: 0.5rem 1.25rem;
+            background: var(--accent);
+            color: var(--bg);
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: background 0.2s ease, transform 0.2s ease;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
         }
-        .nav-cta:hover { background:var(--accent-light); transform:translateY(-1px); }
+
+        .nav-cta:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+        }
 
         .nav-toggle {
-            display:none; background:none; border:none;
-            cursor:pointer; color:var(--text);
-            min-height:44px; min-width:44px;
-            justify-content:center; align-items:center;
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text);
+            min-height: 44px;
+            min-width: 44px;
+            justify-content: center;
+            align-items: center;
         }
 
         /* ============================================
            HERO
            ============================================ */
         .hero {
-            min-height:100vh;
-            display:flex; align-items:center; justify-content:center;
-            padding:7rem 2rem 5rem;
-            text-align:center;
-            position:relative; overflow:hidden; isolation:isolate;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7rem 2rem 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
         }
 
         .hero-bg {
-            position:absolute; inset:0; z-index:0;
-            background-image:url('/assets/images/hero-bg.png');
-            background-size:cover; background-position:center;
-            opacity:0.11; transform:translateZ(0);
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-image: url('/assets/images/hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.11;
+            transform: translateZ(0);
         }
 
         .hero-glow {
-            position:absolute; inset:-30%; z-index:1; pointer-events:none;
+            position: absolute;
+            inset: -30%;
+            z-index: 1;
+            pointer-events: none;
             background:
-                radial-gradient(ellipse 65% 55% at 15% 20%, rgba(201,149,106,0.24) 0%, transparent 60%),
-                radial-gradient(ellipse 55% 45% at 85% 75%, rgba(237,232,225,0.06) 0%, transparent 55%),
-                radial-gradient(ellipse 70% 50% at 50% 105%, rgba(201,149,106,0.12) 0%, transparent 50%);
-            transform:translateZ(0);
+                radial-gradient(ellipse 65% 55% at 15% 20%, rgba(201, 149, 106, 0.24) 0%, transparent 60%),
+                radial-gradient(ellipse 55% 45% at 85% 75%, rgba(237, 232, 225, 0.06) 0%, transparent 55%),
+                radial-gradient(ellipse 70% 50% at 50% 105%, rgba(201, 149, 106, 0.12) 0%, transparent 50%);
+            transform: translateZ(0);
         }
 
         .hero-vignette {
-            position:absolute; bottom:0; left:0; right:0; height:280px;
-            background:linear-gradient(to bottom, transparent, var(--bg));
-            z-index:2; pointer-events:none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 280px;
+            background: linear-gradient(to bottom, transparent, var(--bg));
+            z-index: 2;
+            pointer-events: none;
         }
 
-        .hero-content { position:relative; z-index:3; max-width:840px; }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 840px;
+        }
 
         .hero-badge {
-            display:inline-flex; align-items:center; gap:0.5rem;
-            padding:0.4rem 1rem;
-            border:1px solid var(--border-accent);
-            border-radius:999px;
-            font-size:0.75rem; font-weight:600;
-            letter-spacing:0.1em; text-transform:uppercase; color:var(--accent);
-            background:rgba(201,149,106,0.06);
-            margin-bottom:2.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border-accent);
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(201, 149, 106, 0.06);
+            margin-bottom: 2.5rem;
         }
+
         .badge-dot {
-            width:5px; height:5px; border-radius:50%;
-            background:var(--accent); box-shadow:0 0 5px var(--accent);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 5px var(--accent);
         }
 
         .hero-wordmark {
-            width:min(460px, 82vw);
-            margin:0 auto 1.75rem;
-            filter:brightness(1.05);
+            width: min(460px, 82vw);
+            margin: 0 auto 1.75rem;
+            filter: brightness(1.05);
         }
 
         .hero-subtitle {
-            font-size:clamp(1rem, 2vw, 1.25rem);
-            color:var(--text-muted); line-height:1.7;
-            margin-bottom:3rem;
-            max-width:600px; margin-left:auto; margin-right:auto;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-actions {
-            display:inline-flex; gap:1rem; flex-wrap:wrap; justify-content:center;
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         /* ============================================
            BUTTONS
            ============================================ */
         .btn {
-            padding:0.875rem 2rem;
-            font-size:0.95rem; font-weight:600;
-            text-decoration:none; border-radius:var(--radius);
-            transition:transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
-            min-height:48px; display:inline-flex; align-items:center; justify-content:center;
-            letter-spacing:0.02em; cursor:pointer; border:none;
+            padding: 0.875rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.02em;
+            cursor: pointer;
+            border: none;
         }
+
         .btn-primary {
-            background:var(--accent); color:#09090b;
+            background: var(--accent);
+            color: #09090b;
         }
+
         .btn-primary:hover {
-            background:var(--accent-light);
-            transform:translateY(-2px);
-            box-shadow:0 10px 32px rgba(201,149,106,0.3);
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 32px rgba(201, 149, 106, 0.3);
         }
+
         .btn-ghost {
-            background:transparent; color:var(--text);
-            border:1.5px solid var(--border);
+            background: transparent;
+            color: var(--text);
+            border: 1.5px solid var(--border);
         }
+
         .btn-ghost:hover {
-            border-color:var(--border-accent); color:var(--accent-light);
-            transform:translateY(-2px);
+            border-color: var(--border-accent);
+            color: var(--accent-light);
+            transform: translateY(-2px);
         }
 
         /* ============================================
            SECTION WRAPPER
            ============================================ */
         .wrap {
-            padding:7rem 2rem;
-            max-width:var(--max-width); margin:0 auto;
+            padding: 7rem 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
         }
 
         .eyebrow {
-            color:var(--accent); font-size:0.75rem; font-weight:600;
-            letter-spacing:0.14em; text-transform:uppercase;
-            margin-bottom:0.7rem;
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 0.7rem;
         }
 
         h2.heading {
-            font-family:var(--font-display);
-            font-size:clamp(2rem, 4.5vw, 3.25rem);
-            font-weight:600; line-height:1.12;
-            margin-bottom:1.2rem;
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4.5vw, 3.25rem);
+            font-weight: 600;
+            line-height: 1.12;
+            margin-bottom: 1.2rem;
         }
 
         .lead {
-            font-size:1.1rem; color:var(--text-muted);
-            max-width:640px; line-height:1.7;
-            margin-bottom:4rem;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 640px;
+            line-height: 1.7;
+            margin-bottom: 4rem;
         }
 
         /* ============================================
            STAT STRIP
            ============================================ */
         .stat-strip {
-            background:var(--bg-elevated);
-            border-top:1px solid var(--border);
-            border-bottom:1px solid var(--border);
+            background: var(--bg-elevated);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
+
         .stat-strip-inner {
-            max-width:var(--max-width); margin:0 auto;
-            padding:4rem 2rem;
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
-            gap:2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2rem;
         }
-        .stat { text-align:center; padding:1rem; }
+
+        .stat {
+            text-align: center;
+            padding: 1rem;
+        }
+
         .stat-num {
-            font-family:var(--font-display);
-            font-size:clamp(2.4rem,5vw,3.8rem); font-weight:700;
-            color:var(--accent); line-height:1; margin-bottom:0.4rem;
+            font-family: var(--font-display);
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.4rem;
         }
-        .stat-desc { font-size:0.88rem; color:var(--text-muted); line-height:1.5; }
+
+        .stat-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
 
         /* ============================================
            SERVICES
            ============================================ */
         .services-grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(258px,1fr));
-            gap:1px;
-            background:var(--border);
-            border:1px solid var(--border);
-            border-radius:var(--radius-lg);
-            overflow:hidden;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
         }
+
         .service-card {
-            background:var(--bg-card);
-            padding:2.5rem 2rem;
-            position:relative;
-            transition:background 0.3s ease;
-            overflow:hidden;
+            background: var(--bg-card);
+            padding: 2.5rem 2rem;
+            position: relative;
+            transition: background 0.3s ease;
+            overflow: hidden;
         }
+
         .service-card::after {
-            content:"";
-            position:absolute; top:0; left:0; right:0; height:2px;
-            background:linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
-            opacity:0; transition:opacity 0.35s ease;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.35s ease;
         }
-        .service-card:hover { background:var(--bg-elevated); }
-        .service-card:hover::after { opacity:1; }
+
+        .service-card:hover {
+            background: var(--bg-elevated);
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
 
         .svc-icon {
-            width:48px; height:48px; margin-bottom:1.5rem;
-            color:var(--accent);
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
         }
+
         .service-card h3 {
-            font-family:var(--font-display);
-            font-size:1.3rem; font-weight:600; margin-bottom:0.7rem;
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.7rem;
         }
-        .service-card p { font-size:0.93rem; color:var(--text-muted); line-height:1.65; }
+
+        .service-card p {
+            font-size: 0.93rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
 
         /* ============================================
            EXPERTISE TAGS
            ============================================ */
         .tags {
-            display:flex; flex-wrap:wrap; gap:0.6rem;
-            margin-bottom:4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 4rem;
         }
+
         .tag {
-            padding:0.45rem 1rem;
-            background:transparent;
-            border:1px solid var(--border); border-radius:999px;
-            font-size:0.84rem; color:var(--text-muted);
-            transition:border-color 0.25s, color 0.25s, background 0.25s;
-            cursor:default;
+            padding: 0.45rem 1rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            transition: border-color 0.25s, color 0.25s, background 0.25s;
+            cursor: default;
         }
+
         .tag:hover {
-            border-color:var(--border-accent);
-            color:var(--accent-light);
-            background:var(--accent-glow-s);
+            border-color: var(--border-accent);
+            color: var(--accent-light);
+            background: var(--accent-glow-s);
         }
 
         /* ============================================
            CREDENTIALS
            ============================================ */
         .creds-grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(275px,1fr));
-            gap:1.1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            gap: 1.1rem;
         }
+
         .cred {
-            display:flex; gap:1rem; align-items:flex-start;
-            background:var(--bg-elevated);
-            border:1px solid var(--border);
-            border-radius:var(--radius);
-            padding:1.6rem 1.75rem;
-            transition:border-color 0.3s, box-shadow 0.3s;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.6rem 1.75rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
+
         .cred:hover {
-            border-color:var(--border-accent);
-            box-shadow:0 4px 20px var(--accent-glow-s);
+            border-color: var(--border-accent);
+            box-shadow: 0 4px 20px var(--accent-glow-s);
         }
+
         .cred-ico {
-            flex-shrink:0;
-            width:34px; height:34px; border-radius:var(--radius);
-            background:var(--accent-glow);
-            display:flex; align-items:center; justify-content:center;
-            color:var(--accent);
+            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: var(--radius);
+            background: var(--accent-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
         }
-        .cred-body strong { display:block; font-size:0.92rem; font-weight:600; margin-bottom:0.2rem; }
-        .cred-body span   { font-size:0.82rem; color:var(--text-muted); }
+
+        .cred-body strong {
+            display: block;
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+
+        .cred-body span {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
 
         /* ============================================
            PROCESS STEPS
            ============================================ */
         .steps {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
-            gap:1.25rem;
-            margin-bottom:3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 3rem;
         }
+
         .step {
-            background:var(--bg-card);
-            border:1px solid var(--border);
-            border-radius:var(--radius-lg);
-            padding:2.5rem 2rem; text-align:center;
-            transition:border-color 0.3s, transform 0.3s;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.3s;
         }
+
         .step:hover {
-            border-color:var(--border-accent);
-            transform:translateY(-4px);
+            border-color: var(--border-accent);
+            transform: translateY(-4px);
         }
+
         .step-n {
-            font-family:var(--font-display);
-            font-size:4rem; font-weight:700; color:var(--accent);
-            opacity:0.22; line-height:1; margin-bottom:0.65rem;
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--accent);
+            opacity: 0.22;
+            line-height: 1;
+            margin-bottom: 0.65rem;
         }
+
         .step h3 {
-            font-family:var(--font-display);
-            font-size:1.2rem; font-weight:600; margin-bottom:0.6rem;
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
         }
-        .step p { font-size:0.9rem; color:var(--text-muted); line-height:1.6; }
+
+        .step p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
 
         /* ============================================
            BOOKING
            ============================================ */
         .booking-box {
-            background:var(--bg-elevated);
-            border:1px solid var(--border);
-            border-radius:var(--radius-lg);
-            padding:4rem 3rem;
-            text-align:center;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 4rem 3rem;
+            text-align: center;
         }
-        .booking-box p { color:var(--text-muted); font-size:0.95rem; margin-bottom:0.7rem; }
-        .booking-box strong { color:var(--text); }
-        .booking-box a { color:var(--accent); text-decoration:none; }
-        .booking-box a:hover { color:var(--accent-light); }
+
+        .booking-box p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .booking-box strong {
+            color: var(--text);
+        }
+
+        .booking-box a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .booking-box a:hover {
+            color: var(--accent-light);
+        }
+
         .booking-disclaimer {
-            margin-top:1.5rem !important;
-            font-size:0.82rem !important; color:var(--text-subtle) !important;
+            margin-top: 1.5rem !important;
+            font-size: 0.82rem !important;
+            color: var(--text-subtle) !important;
         }
-        .calendly-inline-widget { min-width:320px; height:700px; }
+
+        .calendly-inline-widget {
+            min-width: 320px;
+            height: 700px;
+        }
 
         /* ============================================
            CONTACT
            ============================================ */
         .contact-grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-            gap:1.25rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
         }
+
         .contact-card {
-            background:var(--bg-elevated);
-            border:1px solid var(--border);
-            border-radius:var(--radius-lg);
-            padding:2.25rem 2rem; text-align:center;
-            transition:border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 2.25rem 2rem;
+            text-align: center;
+            transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
         }
+
         .contact-card:hover {
-            border-color:var(--border-accent);
-            box-shadow:0 8px 32px var(--accent-glow-s);
-            transform:translateY(-3px);
+            border-color: var(--border-accent);
+            box-shadow: 0 8px 32px var(--accent-glow-s);
+            transform: translateY(-3px);
         }
+
         .contact-ico-ring {
-            width:54px; height:54px; border-radius:50%;
-            background:var(--accent-glow); border:1px solid var(--border-accent);
-            display:flex; align-items:center; justify-content:center;
-            margin:0 auto 1.2rem; color:var(--accent);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            border: 1px solid var(--border-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            color: var(--accent);
         }
+
         .contact-card h3 {
-            font-size:0.72rem; font-weight:600;
-            letter-spacing:0.12em; text-transform:uppercase;
-            color:var(--text-muted); margin-bottom:0.45rem;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.45rem;
         }
+
         .contact-card a,
-        .contact-card .c-val { font-size:1.05rem; font-weight:500; color:var(--text); text-decoration:none; }
-        .contact-card a:hover   { color:var(--accent-light); }
-        .contact-card .c-sub   { font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem; }
+        .contact-card .c-val {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            color: var(--accent-light);
+        }
+
+        .contact-card .c-sub {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
 
         /* ============================================
            FOOTER
            ============================================ */
         footer {
-            border-top:1px solid var(--border);
-            padding:3.5rem 2rem 4.5rem;
-            text-align:center;
+            border-top: 1px solid var(--border);
+            padding: 3.5rem 2rem 4.5rem;
+            text-align: center;
         }
+
         .footer-wm {
-            width:min(240px, 65vw);
-            margin:0 auto 1.25rem;
-            opacity:0.55; filter:brightness(0.95);
+            width: min(240px, 65vw);
+            margin: 0 auto 1.25rem;
+            opacity: 0.55;
+            filter: brightness(0.95);
         }
-        .footer-text { font-size:0.8rem; color:var(--text-subtle); line-height:1.8; }
-        .footer-accent { color:var(--accent); }
+
+        .footer-text {
+            font-size: 0.8rem;
+            color: var(--text-subtle);
+            line-height: 1.8;
+        }
+
+        .footer-accent {
+            color: var(--accent);
+        }
 
         /* ============================================
            DIVIDER
            ============================================ */
         .divider {
-            border:none; border-top:1px solid var(--border);
-            max-width:var(--max-width); margin:0 auto;
+            border: none;
+            border-top: 1px solid var(--border);
+            max-width: var(--max-width);
+            margin: 0 auto;
         }
 
         /* ============================================
            REVEAL ANIMATION
            ============================================ */
         .r {
-            opacity:0; transform:translateY(22px);
-            transition:opacity 0.65s ease, transform 0.65s ease;
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.65s ease, transform 0.65s ease;
         }
-        .r.in { opacity:1; transform:translateY(0); }
-        .r[data-d="1"] { transition-delay:0.08s; }
-        .r[data-d="2"] { transition-delay:0.16s; }
-        .r[data-d="3"] { transition-delay:0.24s; }
-        .r[data-d="4"] { transition-delay:0.32s; }
+
+        .r.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .r[data-d="1"] {
+            transition-delay: 0.08s;
+        }
+
+        .r[data-d="2"] {
+            transition-delay: 0.16s;
+        }
+
+        .r[data-d="3"] {
+            transition-delay: 0.24s;
+        }
+
+        .r[data-d="4"] {
+            transition-delay: 0.32s;
+        }
 
         /* ============================================
            RESPONSIVE
            ============================================ */
         @media (max-width:900px) {
-            .nav-links { display:none; flex-direction:column; gap:0; }
-            .nav-links.open {
-                display:flex; position:absolute; top:100%; left:0; right:0;
-                background:rgba(9,9,11,0.97);
-                border-top:1px solid var(--border);
-                padding:0.75rem 0;
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
             }
-            .nav-links.open a { padding:0.75rem 2rem; min-height:48px; }
-            .nav-cta         { display:none; }
-            .nav-toggle      { display:flex; }
+
+            .nav-links.open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(9, 9, 11, 0.97);
+                border-top: 1px solid var(--border);
+                padding: 0.75rem 0;
+            }
+
+            .nav-links.open a {
+                padding: 0.75rem 2rem;
+                min-height: 48px;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
         }
+
         @media (max-width:640px) {
-            .wrap            { padding:4.5rem 1.25rem; }
-            .hero            { padding:6.5rem 1.25rem 4rem; }
-            .stat-strip-inner{ padding:3rem 1.25rem; }
+            .wrap {
+                padding: 4.5rem 1.25rem;
+            }
+
+            .hero {
+                padding: 6.5rem 1.25rem 4rem;
+            }
+
+            .stat-strip-inner {
+                padding: 3rem 1.25rem;
+            }
+
             .services-grid,
             .steps,
             .creds-grid,
-            .contact-grid    { grid-template-columns:1fr; }
-            .booking-box     { padding:2.5rem 1.5rem; }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-box {
+                padding: 2.5rem 1.5rem;
+            }
         }
     </style>
 </head>
@@ -561,9 +883,9 @@
 
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-                    <line x1="2" y1="5"  x2="18" y2="5"/>
-                    <line x1="2" y1="10" x2="18" y2="10"/>
-                    <line x1="2" y1="15" x2="18" y2="15"/>
+                    <line x1="2" y1="5" x2="18" y2="5" />
+                    <line x1="2" y1="10" x2="18" y2="10" />
+                    <line x1="2" y1="15" x2="18" y2="15" />
                 </svg>
             </button>
 
@@ -582,8 +904,8 @@
 
         <!-- ── HERO ─────────────────────────────────────── -->
         <section id="home" class="hero" aria-label="Introduction">
-            <div class="hero-bg"    aria-hidden="true"></div>
-            <div class="hero-glow"  aria-hidden="true"></div>
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-glow" aria-hidden="true"></div>
             <div class="hero-vignette" aria-hidden="true"></div>
 
             <div class="hero-content">
@@ -593,10 +915,10 @@
                 </div>
 
                 <img class="hero-wordmark"
-                     src="/assets/logos/wordmark.png"
-                     alt="Jamie Rigling – Family Law Mediation"
-                     width="460" height="115"
-                     loading="eager" decoding="async">
+                    src="/assets/logos/wordmark.png"
+                    alt="Jamie Rigling – Family Law Mediation"
+                    width="460" height="115"
+                    loading="eager" decoding="async">
 
                 <p class="hero-subtitle">
                     Helping families move forward — with clarity, dignity, and agreements built around what actually matters to you.
@@ -646,13 +968,13 @@
                 <!-- Mediation -->
                 <div class="service-card r" data-d="1">
                     <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <line x1="24" y1="6" x2="24" y2="42"/>
-                        <line x1="12" y1="6" x2="36" y2="6"/>
-                        <path d="M8 20 Q16 14 24 20"/>
-                        <path d="M24 20 Q32 14 40 20"/>
-                        <ellipse cx="16" cy="22" rx="8" ry="4" fill="none"/>
-                        <ellipse cx="32" cy="22" rx="8" ry="4" fill="none"/>
-                        <line x1="18" y1="42" x2="30" y2="42"/>
+                        <line x1="24" y1="6" x2="24" y2="42" />
+                        <line x1="12" y1="6" x2="36" y2="6" />
+                        <path d="M8 20 Q16 14 24 20" />
+                        <path d="M24 20 Q32 14 40 20" />
+                        <ellipse cx="16" cy="22" rx="8" ry="4" fill="none" />
+                        <ellipse cx="32" cy="22" rx="8" ry="4" fill="none" />
+                        <line x1="18" y1="42" x2="30" y2="42" />
                     </svg>
                     <h3>Mediation</h3>
                     <p>Neutral, confidential facilitation that keeps both parties at the table — creating agreements that reflect your family's real needs, not a courtroom's timetable.</p>
@@ -661,12 +983,12 @@
                 <!-- Med-Arb -->
                 <div class="service-card r" data-d="2">
                     <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="24" cy="24" r="18"/>
-                        <path d="M14 24 L20 30 L34 16"/>
-                        <line x1="24" y1="6" x2="24" y2="10"/>
-                        <line x1="24" y1="38" x2="24" y2="42"/>
-                        <line x1="6" y1="24" x2="10" y2="24"/>
-                        <line x1="38" y1="24" x2="42" y2="24"/>
+                        <circle cx="24" cy="24" r="18" />
+                        <path d="M14 24 L20 30 L34 16" />
+                        <line x1="24" y1="6" x2="24" y2="10" />
+                        <line x1="24" y1="38" x2="24" y2="42" />
+                        <line x1="6" y1="24" x2="10" y2="24" />
+                        <line x1="38" y1="24" x2="42" y2="24" />
                     </svg>
                     <h3>Med-Arb</h3>
                     <p>We start collaboratively. If an impasse is reached, I shift to binding arbitration — efficiency and finality, without the delays of re-starting in a new venue.</p>
@@ -675,12 +997,12 @@
                 <!-- Arb-Med -->
                 <div class="service-card r" data-d="3">
                     <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="8" y="6" width="20" height="28" rx="2"/>
-                        <line x1="13" y1="14" x2="23" y2="14"/>
-                        <line x1="13" y1="19" x2="23" y2="19"/>
-                        <line x1="13" y1="24" x2="18" y2="24"/>
-                        <path d="M28 28 L42 42 L38 46 L24 32"/>
-                        <path d="M24 32 L28 28"/>
+                        <rect x="8" y="6" width="20" height="28" rx="2" />
+                        <line x1="13" y1="14" x2="23" y2="14" />
+                        <line x1="13" y1="19" x2="23" y2="19" />
+                        <line x1="13" y1="24" x2="18" y2="24" />
+                        <path d="M28 28 L42 42 L38 46 L24 32" />
+                        <path d="M24 32 L28 28" />
                     </svg>
                     <h3>Arb-Med</h3>
                     <p>An arbitration-derived framework provides structure, then mediation humanizes the outcome — effective when complex issues need both definition and flexibility.</p>
@@ -689,8 +1011,8 @@
                 <!-- Facilitative/Hybrid -->
                 <div class="service-card r" data-d="4">
                     <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M6 10 h22 a4 4 0 0 1 4 4 v10 a4 4 0 0 1-4 4 H18 L10 36 V28 H6 a4 4 0 0 1-4-4 V14 a4 4 0 0 1 4-4z"/>
-                        <path d="M24 28 h8 a4 4 0 0 1 4 4 v6 a4 4 0 0 1-4 4 H28 l-4 4 V42 a4 4 0 0 1-4-4 V32"/>
+                        <path d="M6 10 h22 a4 4 0 0 1 4 4 v10 a4 4 0 0 1-4 4 H18 L10 36 V28 H6 a4 4 0 0 1-4-4 V14 a4 4 0 0 1 4-4z" />
+                        <path d="M24 28 h8 a4 4 0 0 1 4 4 v6 a4 4 0 0 1-4 4 H28 l-4 4 V42 a4 4 0 0 1-4-4 V32" />
                     </svg>
                     <h3>Facilitative / Hybrid</h3>
                     <p>No two families are the same. A tailored blend of facilitation styles matched to your communication dynamics, history, and specific goals for resolution.</p>
@@ -722,7 +1044,11 @@
             <div class="creds-grid">
                 <div class="cred r" data-d="1">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Minnesota Rule 114 Qualified Neutral</strong>
@@ -731,7 +1057,10 @@
                 </div>
                 <div class="cred r" data-d="2">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 12l2 2 4-4" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Certified: Mediation, Med-Arb, Arb-Med</strong>
@@ -740,7 +1069,10 @@
                 </div>
                 <div class="cred r" data-d="3">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M6 20v-2a6 6 0 0 1 12 0v2" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Family Law ADR Specialist</strong>
@@ -749,7 +1081,10 @@
                 </div>
                 <div class="cred r" data-d="4">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="16" rx="2" />
+                            <path d="M8 2v4M16 2v4M3 10h18" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Ongoing Professional Education</strong>
@@ -758,7 +1093,10 @@
                 </div>
                 <div class="cred r" data-d="1">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Based in Maple Grove, MN</strong>
@@ -767,7 +1105,9 @@
                 </div>
                 <div class="cred r" data-d="2">
                     <div class="cred-ico">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10a8 8 0 1 0-16 0c0 6 8 10 8 10z" />
+                        </svg>
                     </div>
                     <div class="cred-body">
                         <strong>Licensed for MN Family Law Practice</strong>
@@ -807,9 +1147,9 @@
 
             <figure class="r" style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border);">
                 <img src="/assets/images/process.png"
-                     alt="Visual overview of the three-step mediation consultation process"
-                     loading="lazy" decoding="async"
-                     style="width:100%; display:block;">
+                    alt="Visual overview of the three-step mediation consultation process"
+                    loading="lazy" decoding="async"
+                    style="width:100%; display:block;">
             </figure>
         </section>
 
@@ -831,7 +1171,7 @@
                     <p style="margin-top:0.75rem; font-size:1.1rem;">
                         <a href="tel:+15073837088"><strong>(507) 383-7088</strong></a>
                         &nbsp;·&nbsp;
-                        <a href="mailto:jamielarsen76@gmail.com">jamielarsen76@gmail.com</a>
+                        <a href="mailto:jamie@minnesotapeace.com">jamie@minnesotapeace.com</a>
                     </p>
                     <p class="booking-disclaimer">All communications are confidential. Mediation services do not constitute legal advice.</p>
                 </div>
@@ -852,7 +1192,7 @@
                 <div class="contact-card r" data-d="1">
                     <div class="contact-ico-ring">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.852.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.852.573 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                     </div>
                     <h3>Phone</h3>
@@ -863,20 +1203,20 @@
                 <div class="contact-card r" data-d="2">
                     <div class="contact-ico-ring">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </div>
                     <h3>Email</h3>
-                    <a href="mailto:jamielarsen76@gmail.com">jamielarsen76@gmail.com</a>
+                    <a href="mailto:jamie@minnesotapeace.com">jamie@minnesotapeace.com</a>
                     <p class="c-sub">Replies within 1 business day</p>
                 </div>
 
                 <div class="contact-card r" data-d="3">
                     <div class="contact-ico-ring">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/>
-                            <circle cx="12" cy="10" r="3"/>
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                            <circle cx="12" cy="10" r="3" />
                         </svg>
                     </div>
                     <h3>Location</h3>
@@ -891,10 +1231,10 @@
     <!-- ── FOOTER ────────────────────────────────────────── -->
     <footer>
         <img class="footer-wm"
-             src="/assets/logos/wordmark.png"
-             alt="Jamie Rigling"
-             width="240" height="60"
-             loading="lazy" decoding="async">
+            src="/assets/logos/wordmark.png"
+            alt="Jamie Rigling"
+            width="240" height="60"
+            loading="lazy" decoding="async">
         <p class="footer-text">
             &copy; 2026 Jamie Rigling &nbsp;&middot;&nbsp;
             <span class="footer-accent">Minnesota Rule 114 Qualified Neutral</span>
@@ -907,66 +1247,67 @@
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
     <script>
-    (function () {
-        'use strict';
+        (function () {
+            'use strict';
 
-        /* Smooth scroll */
-        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-            a.addEventListener('click', function (e) {
-                var t = document.querySelector(this.getAttribute('href'));
-                if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-            });
-        });
-
-        /* Nav scroll-hide */
-        var nav = document.querySelector('.nav'), last = 0;
-        window.addEventListener('scroll', function () {
-            var y = window.pageYOffset;
-            if (y <= 80) { nav.classList.remove('scroll-down','scroll-up'); last = y; return; }
-            if (y > last) { nav.classList.add('scroll-down'); nav.classList.remove('scroll-up'); }
-            else          { nav.classList.remove('scroll-down'); nav.classList.add('scroll-up'); }
-            last = y;
-        }, { passive: true });
-
-        /* Active nav link */
-        var secs = document.querySelectorAll('section[id]');
-        var links = document.querySelectorAll('.nav-links a');
-        window.addEventListener('scroll', function () {
-            var cur = '';
-            secs.forEach(function (s) { if (window.pageYOffset >= s.offsetTop - 240) cur = s.id; });
-            links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
-        }, { passive: true });
-
-        /* Mobile hamburger */
-        var toggle = document.querySelector('.nav-toggle');
-        var menu   = document.querySelector('.nav-links');
-        if (toggle && menu) {
-            toggle.addEventListener('click', function () {
-                var open = menu.classList.toggle('open');
-                toggle.setAttribute('aria-expanded', String(open));
-            });
-            menu.querySelectorAll('a').forEach(function (a) {
-                a.addEventListener('click', function () {
-                    menu.classList.remove('open');
-                    toggle.setAttribute('aria-expanded', 'false');
+            /* Smooth scroll */
+            document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    var t = document.querySelector(this.getAttribute('href'));
+                    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
                 });
             });
-        }
 
-        /* Scroll-reveal */
-        var els = document.querySelectorAll('.r');
-        if ('IntersectionObserver' in window) {
-            var io = new IntersectionObserver(function (entries) {
-                entries.forEach(function (e) {
-                    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+            /* Nav scroll-hide */
+            var nav = document.querySelector('.nav'), last = 0;
+            window.addEventListener('scroll', function () {
+                var y = window.pageYOffset;
+                if (y <= 80) { nav.classList.remove('scroll-down', 'scroll-up'); last = y; return; }
+                if (y > last) { nav.classList.add('scroll-down'); nav.classList.remove('scroll-up'); }
+                else { nav.classList.remove('scroll-down'); nav.classList.add('scroll-up'); }
+                last = y;
+            }, { passive: true });
+
+            /* Active nav link */
+            var secs = document.querySelectorAll('section[id]');
+            var links = document.querySelectorAll('.nav-links a');
+            window.addEventListener('scroll', function () {
+                var cur = '';
+                secs.forEach(function (s) { if (window.pageYOffset >= s.offsetTop - 240) cur = s.id; });
+                links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + cur); });
+            }, { passive: true });
+
+            /* Mobile hamburger */
+            var toggle = document.querySelector('.nav-toggle');
+            var menu = document.querySelector('.nav-links');
+            if (toggle && menu) {
+                toggle.addEventListener('click', function () {
+                    var open = menu.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', String(open));
                 });
-            }, { threshold: 0.10 });
-            els.forEach(function (el) { io.observe(el); });
-        } else {
-            els.forEach(function (el) { el.classList.add('in'); });
-        }
+                menu.querySelectorAll('a').forEach(function (a) {
+                    a.addEventListener('click', function () {
+                        menu.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
 
-    })();
+            /* Scroll-reveal */
+            var els = document.querySelectorAll('.r');
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+                    });
+                }, { threshold: 0.10 });
+                els.forEach(function (el) { io.observe(el); });
+            } else {
+                els.forEach(function (el) { el.classList.add('in'); });
+            }
+
+        })();
     </script>
 </body>
+
 </html>
