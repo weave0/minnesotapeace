@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://minnesotapeace.com/</loc>
-    <lastmod>2026-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://minnesotapeace.com/assets/logos/wordmark.png</image:loc>
-      <image:title>Jamie Rigling - Minnesota Peace</image:title>
-      <image:caption>Jamie Rigling Mediation logo</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://minnesotapeace.com/assets/images/Jamie%20Profile%20Square.png</image:loc>
-      <image:title>Jamie Rigling, LICSW - Licensed Clinical Social Worker and Mediator</image:title>
-      <image:caption>Jamie Rigling profile photo</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://minnesotapeace.com/assets/images/hero-bg.png</image:loc>
-      <image:title>Minnesota Peace - Mediation Services</image:title>
-      <image:caption>Hero background image</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://minnesotapeace.com/assets/images/process.png</image:loc>
-      <image:title>Mediation Process Overview</image:title>
-      <image:caption>Visual guide to the mediation process</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://minnesotapeace.com/assets/og/og-image.png</image:loc>
-      <image:title>Jamie Rigling - A Better Way Through Relationship Conflict</image:title>
-      <image:caption>Social media preview image</image:caption>
-    </image:image>
-  </url>
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://minnesotapeace.com/</loc>
+        <lastmod>2026-03-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://minnesotapeace.com/assets/logos/wordmark.png</image:loc>
+            <image:title>Jamie Rigling - Minnesota Peace</image:title>
+            <image:caption>Jamie Rigling Mediation logo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://minnesotapeace.com/assets/images/Jamie%20Profile%20Square.png</image:loc>
+            <image:title>Jamie Rigling, LICSW - Licensed Clinical Social Worker and Mediator</image:title>
+            <image:caption>Jamie Rigling profile photo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://minnesotapeace.com/assets/images/hero-bg.png</image:loc>
+            <image:title>Minnesota Peace - Mediation Services</image:title>
+            <image:caption>Hero background image</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://minnesotapeace.com/assets/images/process.png</image:loc>
+            <image:title>Mediation Process Overview</image:title>
+            <image:caption>Visual guide to the mediation process</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://minnesotapeace.com/assets/og/og-image.png</image:loc>
+            <image:title>Jamie Rigling - A Better Way Through Relationship Conflict</image:title>
+            <image:caption>Social media preview image</image:caption>
+        </image:image>
+    </url>
 </urlset>
