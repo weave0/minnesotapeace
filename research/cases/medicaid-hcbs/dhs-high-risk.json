@@ -1,0 +1,31 @@
+{
+  "source_url": "https://mn.gov/dhs/program-integrity/",
+  "as_of": "2026-08-04",
+  "evidence_class": "AGENCY_POSITION",
+  "categories": [
+    "Adult Companion Services",
+    "Adult Day Services",
+    "Adult Rehabilitative Mental Health Services",
+    "Assertive Community Treatment",
+    "Community First Services and Supports",
+    "Early Intensive Developmental and Behavioral Intervention",
+    "Housing Stabilization Services",
+    "Individualized Home Supports",
+    "Integrated Community Supports",
+    "Intensive Residential Treatment Services",
+    "Night Supervision Services",
+    "Nonemergency Medical Transportation Services",
+    "Recovery Peer Support",
+    "Recuperative Care"
+  ],
+  "basis": "programmatic vulnerabilities, evidence of fraudulent activity, or data analytics that revealed potentially suspicious patterns, claim anomalies or outliers",
+  "stats_2026_08": {
+    "open_intakes": 3068,
+    "open_cases": 1647,
+    "payment_withholds_2025": 490,
+    "investigations_since_2020": "over 3500",
+    "le_referrals_since_2020": "over 1150",
+    "identified_for_recovery_since_2020_usd": 56000000
+  },
+  "notes": "HSS benefit terminated Oct 31 2025; remains on the 14-item list. Operational docs often say 13 remaining high-risk services."
+}

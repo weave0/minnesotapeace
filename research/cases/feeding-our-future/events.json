@@ -1,0 +1,492 @@
+{
+  "family_id": "feeding-our-future",
+  "generated_at": "2026-08-26T16:04:00-05:00",
+  "event_count": 33,
+  "events": [
+    {
+      "event_id": "fof-e-001",
+      "event_type": "complaint",
+      "date": "2018-06-01",
+      "summary": "MDE began receiving complaints involving Feeding Our Future or its sites (OLA: at least 30 from June 2018 through December 2021).",
+      "source_ids": [
+        "S26",
+        "S27"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "end_date": "2021-12-31",
+      "related_claim_ids": [
+        "fof-c-019"
+      ]
+    },
+    {
+      "event_id": "fof-e-002",
+      "event_type": "state_audit",
+      "date": "2018-12-01",
+      "summary": "MDE conducted its only administrative review of Feeding Our Future CACFP operations (December 2018); serious findings, no follow-up review.",
+      "source_ids": [
+        "S26"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-018"
+      ],
+      "notes": "Month from OLA p. 37 (December 2018)."
+    },
+    {
+      "event_id": "fof-e-003",
+      "event_type": "internal_warning",
+      "date": "2020-10-01",
+      "summary": "MDE told OLA it shared concerns about Feeding Our Future with USDA OIG in October or November 2020.",
+      "source_ids": [
+        "S26"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "end_date": "2020-11-30",
+      "related_claim_ids": [
+        "fof-c-012",
+        "fof-c-022"
+      ],
+      "notes": "Exact day unclear (OLA p. 50 n.6)."
+    },
+    {
+      "event_id": "fof-e-004",
+      "event_type": "judicial_ruling",
+      "date": "2020-12-22",
+      "summary": "Consent order issued on processing FOF site applications (not payments).",
+      "source_ids": [
+        "S28"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-011"
+      ]
+    },
+    {
+      "event_id": "fof-e-005",
+      "event_type": "provider_suspension",
+      "date": "2021-03-30",
+      "summary": "MDE issued a serious-deficiencies letter to FOF and suspended payments.",
+      "source_ids": [
+        "S28"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-011"
+      ]
+    },
+    {
+      "event_id": "fof-e-006",
+      "event_type": "payment",
+      "date": "2021-06-04",
+      "summary": "MDE advised the court that FOF’s serious deficiencies were resolved as of June 4, 2021, after MDE had voluntarily resumed payments (no court payment order, per Judicial Branch).",
+      "source_ids": [
+        "S28"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-011"
+      ]
+    },
+    {
+      "event_id": "fof-e-007",
+      "event_type": "indictment",
+      "date": "2022-09-13",
+      "summary": "Grand jury returned the Bock-group 61-count indictment (22-CR-223).",
+      "source_ids": [
+        "S24"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-001",
+        "fof-c-009"
+      ],
+      "case_id": "22-CR-223"
+    },
+    {
+      "event_id": "fof-e-008",
+      "event_type": "indictment",
+      "date": "2022-09-20",
+      "summary": "DOJ announced federal charges against 47 defendants in six indictments and three informations (~$250 million alleged scheme).",
+      "source_ids": [
+        "S01"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-001"
+      ]
+    },
+    {
+      "event_id": "fof-e-009",
+      "event_type": "agency_record",
+      "date": "2022-09-23",
+      "summary": "Minnesota Judicial Branch statement: Judge Guthmann never ordered MDE to resume FOF reimbursements; MDE resumed voluntarily; contrary Star Tribune/Walz/commissioner statements called false.",
+      "source_ids": [
+        "S28"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-011",
+        "fof-c-016"
+      ]
+    },
+    {
+      "event_id": "fof-e-010",
+      "event_type": "indictment",
+      "date": "2023-03-13",
+      "summary": "USAO-MN announced charges against 10 additional defendants.",
+      "source_ids": [
+        "S02"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-002"
+      ]
+    },
+    {
+      "event_id": "fof-e-011",
+      "event_type": "guilty_plea",
+      "date": "2023-09-07",
+      "summary": "Sahra Mohamed Nur pleaded guilty to wire fraud and money laundering.",
+      "source_ids": [
+        "S19"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-015"
+      ]
+    },
+    {
+      "event_id": "fof-e-012",
+      "event_type": "trial",
+      "date": "2024-04-22",
+      "summary": "First FOF trial began before Judge Brasel (seven defendants, including Abdiaziz Farah and Abdimajid Nur).",
+      "source_ids": [
+        "S08",
+        "S07"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-008"
+      ]
+    },
+    {
+      "event_id": "fof-e-013",
+      "event_type": "verdict",
+      "date": "2024-06-01",
+      "summary": "Jury convicted Abdiaziz Shafii Farah (and, per later PRs, Abdimajid Nur) after the seven-week first trial. Complete seven-defendant verdict roster not in a captured .gov PR.",
+      "source_ids": [
+        "S07",
+        "S06"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-008"
+      ],
+      "notes": "Month-level: conviction June 2024. Day not specified in captured PRs; recorded as 2024-06-01."
+    },
+    {
+      "event_id": "fof-e-014",
+      "event_type": "other",
+      "date": "2024-06-02",
+      "summary": "Juror-bribery plot: $120,000 cash delivered to Juror 52.",
+      "source_ids": [
+        "S08",
+        "S23"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-006"
+      ],
+      "case_id": "24-cr-173"
+    },
+    {
+      "event_id": "fof-e-015",
+      "event_type": "state_audit",
+      "date": "2024-06-13",
+      "summary": "OLA released special review: Minnesota Department of Education oversight of Feeding Our Future.",
+      "source_ids": [
+        "S26",
+        "S27"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-010"
+      ]
+    },
+    {
+      "event_id": "fof-e-016",
+      "event_type": "indictment",
+      "date": "2024-06-24",
+      "summary": "Said Abdullahi Ereg indicted (conspiracy to commit wire fraud, wire fraud, money laundering).",
+      "source_ids": [
+        "S18"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota"
+    },
+    {
+      "event_id": "fof-e-017",
+      "event_type": "guilty_plea",
+      "date": "2025-02-24",
+      "summary": "Najmo Ahmed pleaded guilty to money laundering; sentencing set 2026-06-15 in S18.",
+      "source_ids": [
+        "S18"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota"
+    },
+    {
+      "event_id": "fof-e-018",
+      "event_type": "trial",
+      "date": "2025-02-03",
+      "summary": "Bock/Said jury trial, Feb 3–Mar 18, 2025 (21 trial days). Convictions on counts tried.",
+      "source_ids": [
+        "S22",
+        "S12"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "end_date": "2025-03-18",
+      "related_claim_ids": [
+        "fof-c-007"
+      ],
+      "case_id": "22-CR-223"
+    },
+    {
+      "event_id": "fof-e-019",
+      "event_type": "guilty_plea",
+      "date": "2025-06-17",
+      "summary": "Abdiaziz Farah pleaded guilty before Judge Doty to one count of bribery of a juror (18 U.S.C. § 201).",
+      "source_ids": [
+        "S08"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-006"
+      ],
+      "case_id": "24-cr-173"
+    },
+    {
+      "event_id": "fof-e-020",
+      "event_type": "sentencing",
+      "date": "2025-08-06",
+      "summary": "Abdiaziz Shafii Farah sentenced to 28 years + 3 years SR; IRS-CI states restitution $47,920,514.",
+      "source_ids": [
+        "S07",
+        "S21"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-008"
+      ]
+    },
+    {
+      "event_id": "fof-e-021",
+      "event_type": "indictment",
+      "date": "2025-08-06",
+      "summary": "Hussein Mohamed Farah charged by information; 73rd defendant. New Vision ~$2.7 million.",
+      "source_ids": [
+        "S03"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-003"
+      ]
+    },
+    {
+      "event_id": "fof-e-022",
+      "event_type": "judicial_ruling",
+      "date": "2025-08-22",
+      "summary": "Judge Brasel denied Bock/Said motions for judgment of acquittal and new trial.",
+      "source_ids": [
+        "S22"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-007"
+      ],
+      "case_id": "22-CR-223"
+    },
+    {
+      "event_id": "fof-e-023",
+      "event_type": "indictment",
+      "date": "2025-09-04",
+      "summary": "Muna Wais Fidhin charged; 75th defendant.",
+      "source_ids": [
+        "S04"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-003"
+      ]
+    },
+    {
+      "event_id": "fof-e-024",
+      "event_type": "guilty_plea",
+      "date": "2025-09-18",
+      "summary": "Abdullahe Nur Jesow pleaded guilty to money laundering; 56th defendant to plead.",
+      "source_ids": [
+        "S14"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-017"
+      ]
+    },
+    {
+      "event_id": "fof-e-025",
+      "event_type": "indictment",
+      "date": "2025-11-20",
+      "summary": "Ousman Camara indicted; 77th defendant.",
+      "source_ids": [
+        "S05"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-003"
+      ]
+    },
+    {
+      "event_id": "fof-e-026",
+      "event_type": "sentencing",
+      "date": "2025-11-24",
+      "summary": "Abdimajid Mohamed Nur sentenced to 120 months + 3 years SR; restitution $47,920,514.",
+      "source_ids": [
+        "S06"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-005"
+      ]
+    },
+    {
+      "event_id": "fof-e-027",
+      "event_type": "sentencing",
+      "date": "2026-03-04",
+      "summary": "Abdulkarim Shafii Farah sentenced to 57 months + 1 year SR for juror bribery (Judge Tostrud).",
+      "source_ids": [
+        "S09"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-006"
+      ],
+      "case_id": "24-cr-173"
+    },
+    {
+      "event_id": "fof-e-028",
+      "event_type": "guilty_plea",
+      "date": "2026-03-20",
+      "summary": "Five defendants in U.S. v. Mohamed et al. (24-cr-15) pleaded guilty to wire fraud. Official conviction count 63.",
+      "source_ids": [
+        "S10"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-017"
+      ]
+    },
+    {
+      "event_id": "fof-e-029",
+      "event_type": "guilty_plea",
+      "date": "2026-04-09",
+      "summary": "Suleman Yusuf Mohamed (2026-04-02) and Gandi Yusuf Mohamed (2026-04-09) pleaded; official conviction count 65. Jesow sentenced 43 months the same day as the PR.",
+      "source_ids": [
+        "S11",
+        "S13"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-017",
+        "fof-c-015"
+      ]
+    },
+    {
+      "event_id": "fof-e-030",
+      "event_type": "sentencing",
+      "date": "2026-05-22",
+      "summary": "Aimee Marie Bock sentenced to 500 months.",
+      "source_ids": [
+        "S12"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-007"
+      ],
+      "case_id": "22-CR-223"
+    },
+    {
+      "event_id": "fof-e-031",
+      "event_type": "guilty_plea",
+      "date": "2026-07-13",
+      "summary": "LEAD ONLY: KSTP reports Abdirashid Bixi Dool pleaded guilty July 13, 2026, described as 68th conviction after a DOJ correction from 70th. Not verified on a fetched .gov page.",
+      "source_ids": [
+        "L01"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-004"
+      ],
+      "notes": "LEAD_UNVERIFIED. Do not treat as official count."
+    },
+    {
+      "event_id": "fof-e-032",
+      "event_type": "sentencing",
+      "date": "2026-07-22",
+      "summary": "LEAD ONLY: Journalism reports Abdiaziz Shafii Farah sentenced July 22, 2026, by Judge Tostrud to 120 months for juror bribery. Not retrieved from justice.gov or irs.gov.",
+      "source_ids": [
+        "L03"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-006"
+      ],
+      "case_id": "24-cr-173",
+      "notes": "LEAD_UNVERIFIED. Do not upgrade Abdiaziz bribery status from pleaded to sentenced on this event."
+    },
+    {
+      "event_id": "fof-e-033",
+      "event_type": "sentencing",
+      "date": "2026-08-19",
+      "summary": "LEAD ONLY: Star Tribune reports Abdinasir Mahamed Abshir sentenced 6.5 years (2026-08-19 article) and claims 80 charged / 69 convicted. Status in this corpus remains charged.",
+      "source_ids": [
+        "L02"
+      ],
+      "investigation_family": "feeding-our-future",
+      "jurisdiction": "D. Minn. / Minnesota",
+      "related_claim_ids": [
+        "fof-c-004"
+      ],
+      "notes": "LEAD_UNVERIFIED. Do not upgrade defendant status from journalism."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "family_id": "feeding-our-future",
+  "name": "Feeding Our Future",
+  "coverage_state": "structured",
+  "last_checked": "2026-08-26",
+  "next_check": null,
+  "source_depth": 4,
+  "legal_maturity": "elements_mapped",
+  "prosecution_maturity": "mature",
+  "missing_records": [
+    {
+      "record_type": "press_release",
+      "description": "Official charged-count after the 77th defendant (Ousman Camara, 2025-11-20). USAO-MN 78th-defendant URL exists but body not captured (Akamai). Journalism says 80 charged.",
+      "priority": "high",
+      "notes": "76th defendant name not captured on a readable IRS/DOJ page."
+    },
+    {
+      "record_type": "press_release",
+      "description": "Official conviction count after 65 on 2026-04-09 (S11). ChatGPT/KSTP '68 as of 2026-07-24' not verified on a fetched .gov page.",
+      "priority": "critical"
+    },
+    {
+      "record_type": "press_release",
+      "description": "July 2026 120-month juror-bribery sentence for Abdiaziz Shafii Farah (journalism: 2026-07-22, Judge Tostrud). Plea is on .gov; that sentence PR was not retrieved.",
+      "priority": "high"
+    },
+    {
+      "record_type": "indictment",
+      "description": "Original PACER indictment PDFs (ECF 1) for 22-CR-223, 22-CR-124, 22-CR-224, 22-CR-226, 22-CR-222, 22-CR-225 and later dockets. 18 U.S.C. § 1349 not found in fetched charging text.",
+      "priority": "critical"
+    },
+    {
+      "record_type": "verdict",
+      "description": "Complete first-trial (June 2024) verdict roster for all seven defendants. Journalism of fraud acquittals (including Said Farah) is unverified in a primary.",
+      "priority": "high"
+    },
+    {
+      "record_type": "press_release",
+      "description": "Complete plea/sentence status for the original 47. Most wave-1 names remain status=charged pending later .gov PRs.",
+      "priority": "high"
+    },
+    {
+      "record_type": "audit",
+      "description": "USDA OIG work product on Minnesota CACFP/SFSP FOF. OLA p. 50 records MDE referral Oct/Nov 2020; no OIG finding in this corpus.",
+      "priority": "high"
+    },
+    {
+      "record_type": "judgment",
+      "description": "Court-certified network proven_loss, cumulative restitution_ordered total, or recovered_amount grand total. Individual restitution orders may be joint-and-several.",
+      "priority": "critical"
+    },
+    {
+      "record_type": "civil_docket",
+      "description": "Ramsey County FOF v. MDE docket, Guthmann written orders (June 2021 contempt/sanctions), civil judgment. Only the 2022-09-23 Judicial Branch statement is captured.",
+      "priority": "medium"
+    },
+    {
+      "record_type": "charging_instrument",
+      "description": "Legal name of March 2023 USAO 'Sponsor A'.",
+      "priority": "low"
+    }
+  ],
+  "related_family_ids": [],
+  "notes": "Reference case family for the Minnesota fraud corpus. Actor class A (private defendants) is extensively charged and in substantial part adjudicated. OLA 2024 supports B/C (MDE oversight failure / unprepared investigations), not D (no charging document in this corpus names MDE officials as criminal defendants). Do not treat $250 million as proven_loss. Nur and Abdiaziz Farah restitution of $47,920,514 is likely joint-and-several (MAY_OVERLAP); do not add. The circulating $9 billion figure does not appear in FOF primaries and is not a record in this family. Journalism is a lead only: do not upgrade defendant status from news."
+}

@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/case.schema.json",
+  "title": "Minnesota Fraud Research Case",
+  "description": "Criminal, civil, or administrative case. Feeding Our Future is the reference implementation: for every defendant track aliases, indictment date, superseding indictments, charges, organizations, meal sites, alleged amount, plea status/date, trial status, verdict, conviction/acquittal counts, sentencing, sentence, restitution, forfeiture, appeal, related defendants/entities, and sources. An indictment is an allegation until adjudicated.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id"
+  ],
+  "$defs": {
+    "party": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "party_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entity_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "e.g. defendant, plaintiff, united_states, petitioner, respondent, relator, interested_party."
+        }
+      }
+    },
+    "charge": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "charge_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "count": {
+          "type": [
+            "integer",
+            "string",
+            "null"
+          ]
+        },
+        "statute": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Citation, e.g. 18 U.S.C. § 1343."
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "pending, dismissed, pleaded, convicted, acquitted, etc."
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "caseEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "disposition_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "plea, verdict, dismissal, sentence, settlement, judgment, appeal_disposition."
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "details": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "defendant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "person_id"
+      ],
+      "properties": {
+        "person_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "PERSON entity_id."
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "indictment_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "superseding_indictments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "document": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Description or source_id of the superseding instrument."
+              },
+              "source_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        },
+        "charges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/charge"
+          }
+        },
+        "organizations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Organization entity_ids tied to this defendant in this case."
+        },
+        "meal_sites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "MEAL_SITE entity_ids."
+        },
+        "alleged_amount": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Charging-instrument amount. Metric is alleged_loss unless a more specific money record exists."
+        },
+        "alleged_amount_money_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Preferred link to a first-class money record."
+        },
+        "plea_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "not_pleaded, guilty, not_guilty, nolo, mixed, withdrawn."
+        },
+        "plea_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "trial_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "none, pending, in_progress, completed, mistrial."
+        },
+        "verdict": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "conviction_counts": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "acquittal_counts": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sentencing_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "sentence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Narrative sentence (term, supervised release, fine)."
+        },
+        "restitution": {
+          "type": [
+            "number",
+            "string",
+            "null"
+          ],
+          "description": "Ordered restitution; prefer a money record for typed amounts."
+        },
+        "forfeiture": {
+          "type": [
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "appeal": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Appeal status or citation."
+        },
+        "related_defendants": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Other person_ids in this or related cases."
+        },
+        "related_entities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "court": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "docket": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Docket / case number as used by the court."
+    },
+    "caption": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "investigation_family": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "family_id."
+    },
+    "jurisdiction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "criminal",
+        "civil",
+        "administrative",
+        "appellate",
+        null
+      ]
+    },
+    "parties": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/party"
+      }
+    },
+    "charges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/charge"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/caseEvent"
+      }
+    },
+    "dispositions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/disposition"
+      }
+    },
+    "defendants": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/defendant"
+      }
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

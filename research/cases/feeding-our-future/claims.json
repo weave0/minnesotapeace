@@ -1,0 +1,1001 @@
+[
+  {
+    "claim_id": "fof-c-001",
+    "claim_text": "On September 20, 2022, DOJ announced federal criminal charges against 47 defendants in six indictments and three criminal informations for alleged roles in a fraud scheme exploiting USDA child-nutrition reimbursements administered in Minnesota by MDE and sponsored in large part by Feeding Our Future.",
+    "normalized_claim": "First FOF charging wave: 47 defendants on 2022-09-20; scheme alleged at about $250 million.",
+    "claim_type": "COUNT",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "confirmed",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2022-09-20",
+    "source_ids": [
+      "S01"
+    ],
+    "jurisdiction": "D. Minn.",
+    "amounts": [
+      {
+        "value": 250000000,
+        "currency": "USD",
+        "metric_type": "alleged_loss",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "DOJ charging headline; not a restitution total or proven_loss"
+      },
+      {
+        "value": 250000000,
+        "currency": "USD",
+        "metric_type": "fraud_estimate",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "Same charging headline; not proven_loss"
+      },
+      {
+        "value": 3400000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "period_start": "2019-01-01",
+        "period_end": "2019-12-31",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "FOF receiving and disbursing federal funds in 2019, per DOJ"
+      },
+      {
+        "value": 200000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "period_start": "2021-01-01",
+        "period_end": "2021-12-31",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "FOF nearly $200 million in 2021, per DOJ"
+      },
+      {
+        "value": 240000000,
+        "currency": "USD",
+        "metric_type": "alleged_loss",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "DOJ: fraudulently obtained and disbursed more than $240 million; alleged at charging"
+      },
+      {
+        "value": 18000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "More than $18 million in administrative fees to FOF, alleged as to entitlement"
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": true,
+    "is_inference": false,
+    "qualifiers": [
+      "Indictment is merely an allegation as of 2022-09-20 (S01 closing line).",
+      "Do not treat $250 million as proven_loss."
+    ],
+    "editorial_notes": "Actor class A. Named cases: 22-CR-223 Bock; 22-CR-124 Farah; 22-CR-224 Hassan; 22-CR-226 Salad; 22-CR-222 Alishire; 22-CR-225 Jama.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-002",
+    "claim_text": "On March 13, 2023, USAO-MN announced charges against 10 additional defendants across four indictments and two informations.",
+    "claim_type": "COUNT",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "confirmed",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2023-03-13",
+    "source_ids": [
+      "S02"
+    ],
+    "amounts": [
+      {
+        "value": 3700000,
+        "currency": "USD",
+        "metric_type": "amount_billed",
+        "exact_or_approximate": "approximate",
+        "methodology": "Kawsar Jama claims"
+      },
+      {
+        "value": 1100000,
+        "currency": "USD",
+        "metric_type": "amount_billed",
+        "exact_or_approximate": "approximate",
+        "methodology": "Abdikadir Kadiye more than $1.1 million"
+      },
+      {
+        "value": 11800000,
+        "currency": "USD",
+        "metric_type": "alleged_loss",
+        "exact_or_approximate": "approximate",
+        "methodology": "Abdulkadir Awale"
+      },
+      {
+        "value": 3400000,
+        "currency": "USD",
+        "metric_type": "amount_billed",
+        "exact_or_approximate": "approximate",
+        "methodology": "Khadra Abdi more than $3.4 million"
+      },
+      {
+        "value": 5700000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "Ayan Farah Abukar received"
+      },
+      {
+        "value": 5700000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "Sade Osman Hashi received"
+      },
+      {
+        "value": 2800000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "Sharon Denise Ross received"
+      },
+      {
+        "value": 5000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "Hussein and Lul Ali more than $5 million"
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": true,
+    "is_inference": false,
+    "qualifiers": [
+      "Journalism said this brought the total to 60; S02 itself does not state 60. Record 60 as LEAD_UNVERIFIED unless a USAO sentence stating 60 is captured."
+    ],
+    "editorial_notes": "Actor class A.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-003",
+    "claim_text": "On November 20, 2025, U.S. Attorney Daniel N. Rosen announced that Ousman Camara was indicted in a nine-count indictment and is the 77th defendant indicted in the scheme.",
+    "claim_type": "COUNT",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "confirmed",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2025-11-20",
+    "source_ids": [
+      "S05"
+    ],
+    "corroborating_source_ids": [
+      "S03",
+      "S04",
+      "S16",
+      "S17"
+    ],
+    "amounts": [
+      {
+        "value": 1000000,
+        "currency": "USD",
+        "metric_type": "amount_billed",
+        "exact_or_approximate": "approximate",
+        "methodology": "More than $1 million claimed reimbursement"
+      },
+      {
+        "value": 100000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "More than $100,000 wired abroad (alleged proceeds movement)"
+      },
+      {
+        "value": 87000,
+        "currency": "USD",
+        "metric_type": "alleged_loss",
+        "exact_or_approximate": "approximate",
+        "methodology": "Approximately $87,000 kickbacks"
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": true,
+    "is_inference": false,
+    "qualifiers": [
+      "Camara charged, not convicted in this source.",
+      "Verified intermediate official counts: 71st (Hibo Daar, S16), 73rd (Hussein Mohamed Farah, S03), 74th (Ahmednaji Sheikh, S17), 75th (Muna Wais Fidhin, S04).",
+      "76th and 78th+ names were not captured on a readable .gov page."
+    ],
+    "editorial_notes": "USAO-MN slug existed but was Akamai-blocked; IRS-CI republication is the readable primary.",
+    "contradicting_claim_ids": [
+      "fof-c-019"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-004",
+    "claim_text": "As of July 24, 2026, DOJ reported 68 defendants convicted.",
+    "normalized_claim": "Journalism/ChatGPT attribution of a DOJ 68-conviction count as of 2026-07-24.",
+    "claim_type": "COUNT",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "status": "unresolved",
+    "event_date": "2026-07-24",
+    "source_ids": [
+      "L01"
+    ],
+    "corroborating_source_ids": [
+      "L02"
+    ],
+    "confidence": 0.3,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Last verified official conviction count in this corpus is 65 on 2026-04-09 (S11).",
+      "KSTP reported Abdirashid Bixi Dool as 68th conviction (plea July 13, 2026) and noted a DOJ correction from 70th to 68th.",
+      "Star Tribune 2026-08-19 later said 69 convicted / 80 charged.",
+      "Do not publish 68 as of July 24, 2026 as a DOJ-verified figure until the underlying press release is captured."
+    ],
+    "editorial_notes": "Official trajectory: 52 (Guhaad Said) → 56 (Jesow 2025-09-18) → 63 (2026-03-20) → 65 (2026-04-09).",
+    "contradicting_claim_ids": [
+      "fof-c-017"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-005",
+    "claim_text": "On November 24, 2025, U.S. District Judge Nancy E. Brasel sentenced Abdimajid Mohamed Nur to 120 months plus 3 years supervised release and ordered restitution of $47,920,514 for his role in the Empire Cuisine Feeding Our Future fraud.",
+    "claim_type": "DISPOSITION",
+    "evidence_class": "ADJUDICATED",
+    "status": "adjudicated",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2025-11-24",
+    "source_ids": [
+      "S06"
+    ],
+    "persons": [
+      "fof-p-abdimajid-mohamed-nur"
+    ],
+    "amounts": [
+      {
+        "value": 47920514,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "exact",
+        "overlap_group_id": "fof-empire-47920514"
+      },
+      {
+        "value": 47000000,
+        "currency": "USD",
+        "metric_type": "proven_loss",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-empire-47920514",
+        "methodology": "USAO post-trial: group stole more than $47 million as demonstrated at trial; not necessarily Nur's personal take"
+      },
+      {
+        "value": 900000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "methodology": "Nur Consulting received more than $900,000"
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Juror-bribery case was separate and still pending sentence in S06.",
+      "Same restitution dollar figure appears for Abdiaziz Shafii Farah (S07/S21); likely joint-and-several. Do not treat the two orders as two independent $47.9 million recoveries."
+    ],
+    "editorial_notes": "Actor class A.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-006",
+    "claim_text": "Journalism reports that Abdiaziz Shafii Farah was sentenced July 22, 2026, by Judge Eric C. Tostrud to 120 months for bribing a Feeding Our Future juror, consecutive to his 28-year fraud sentence. A DOJ OPA/IRS-CI page for that 120-month sentence was not retrieved.",
+    "normalized_claim": "July 2026 120-month juror-bribery sentence attributed to Abdiaziz Shafii Farah is LEAD_UNVERIFIED; his 2025-06-17 plea and Abdulkarim Farah's 57-month sentence are on .gov.",
+    "claim_type": "DISPOSITION",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "status": "unresolved",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2026-07-22",
+    "date_start": "2025-06-17",
+    "date_end": "2026-07-22",
+    "source_ids": [
+      "L03"
+    ],
+    "corroborating_source_ids": [
+      "S08",
+      "S09",
+      "S20",
+      "S23",
+      "L05"
+    ],
+    "case_number": "24-cr-173",
+    "persons": [
+      "fof-p-abdiaziz-shafii-farah",
+      "fof-p-abdulkarim-shafii-farah",
+      "fof-p-abdimajid-mohamed-nur",
+      "fof-p-said-shafii-farah",
+      "fof-p-ladan-mohamed-ali"
+    ],
+    "statutes": [
+      "18 U.S.C. § 201"
+    ],
+    "amounts": [
+      {
+        "value": 120000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "exact",
+        "methodology": "Cash delivered to Juror 52; bribe offer, not program loss"
+      },
+      {
+        "value": 200000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "exact",
+        "methodology": "Cash gathered for the bribe"
+      },
+      {
+        "value": 120000,
+        "currency": "USD",
+        "metric_type": "forfeiture_ordered",
+        "exact_or_approximate": "exact",
+        "methodology": "Agreed forfeiture of $120,000 currency in Nur plea (S23)"
+      }
+    ],
+    "confidence": 0.35,
+    "is_allegation": true,
+    "is_inference": false,
+    "qualifiers": [
+      "ADJUDICATED as to Abdiaziz Farah's 2025-06-17 plea to one count of bribery of a juror (S08) and as to Abdulkarim Shafii Farah's 57-month sentence on 2026-03-04 (S09).",
+      "LEAD_UNVERIFIED as to Abdiaziz's July 2026 120-month term until justice.gov/irs.gov page is captured.",
+      "Five named: Abdiaziz Farah, Said Farah, Abdulkarim Farah, Abdimajid Nur, Ladan Ali."
+    ],
+    "editorial_notes": "Actor class A (obstruction). Do not confuse Abdulkarim's 57-month sentence with the journalism 120-month term.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-007",
+    "claim_text": "After a 21-day jury trial (Feb 3–Mar 18, 2025), Aimee Marie Bock was convicted of conspiracy to commit wire fraud, four counts of wire fraud, conspiracy to commit federal programs bribery, and federal programs bribery. On May 22, 2026, she was sentenced to 500 months. Salim Ahmed Said was convicted on all counts tried, including § 666 bribery and § 1957 money laundering. Post-trial motions were denied August 22, 2025.",
+    "claim_type": "DISPOSITION",
+    "evidence_class": "ADJUDICATED",
+    "status": "adjudicated",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2026-05-22",
+    "date_start": "2025-02-03",
+    "date_end": "2026-05-22",
+    "source_ids": [
+      "S12",
+      "S22"
+    ],
+    "persons": [
+      "fof-p-aimee-marie-bock",
+      "fof-p-salim-ahmed-said"
+    ],
+    "case_number": "22-CR-223",
+    "statutes": [
+      "18 U.S.C. § 1343",
+      "18 U.S.C. § 666(a)(1)(B)",
+      "18 U.S.C. § 666(a)(2)",
+      "18 U.S.C. § 1957"
+    ],
+    "amounts": [
+      {
+        "value": 240000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "DOJ post-trial: fraudulently obtained and disbursed more than $240 million through FOF; not a published restitution figure in S12"
+      },
+      {
+        "value": 18000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss"
+      },
+      {
+        "value": 3400000,
+        "currency": "USD",
+        "metric_type": "program_spend",
+        "exact_or_approximate": "approximate",
+        "period_start": "2019-01-01",
+        "period_end": "2019-12-31",
+        "overlap_group_id": "fof-scheme-loss"
+      },
+      {
+        "value": 200000000,
+        "currency": "USD",
+        "metric_type": "program_spend",
+        "exact_or_approximate": "approximate",
+        "period_start": "2021-01-01",
+        "period_end": "2021-12-31",
+        "overlap_group_id": "fof-scheme-loss"
+      },
+      {
+        "value": 310000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "exact",
+        "methodology": "$310,000 daycare-center check treated by jury as bribe (S22)"
+      }
+    ],
+    "confidence": 0.98,
+    "is_allegation": false,
+    "is_inference": false,
+    "editorial_notes": "Actor class A. Judge Brasel: This was a fraud vortex and you were at the epicenter of it.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-008",
+    "claim_text": "After a seven-week trial starting April 22, 2024, a jury convicted Abdiaziz Shafii Farah of conspiracy to commit wire fraud, conspiracy to commit federal programs bribery, false statements in a passport application, conspiracy to commit money laundering, two counts of federal programs bribery, six counts of wire fraud, and 11 counts of money laundering. On August 6, 2025, Judge Brasel sentenced him to 28 years plus 3 years supervised release. IRS-CI states restitution of $47,920,514.",
+    "claim_type": "DISPOSITION",
+    "evidence_class": "ADJUDICATED",
+    "status": "adjudicated",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "event_date": "2025-08-06",
+    "date_start": "2024-04-22",
+    "date_end": "2025-08-06",
+    "source_ids": [
+      "S07",
+      "S08",
+      "S21"
+    ],
+    "persons": [
+      "fof-p-abdiaziz-shafii-farah"
+    ],
+    "case_number": "22-CR-124",
+    "amounts": [
+      {
+        "value": 47920514,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "exact",
+        "overlap_group_id": "fof-empire-47920514",
+        "methodology": "IRS-CI; full S07 page returned a historical stub on fetch"
+      },
+      {
+        "value": 47000000,
+        "currency": "USD",
+        "metric_type": "proven_loss",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-empire-47920514",
+        "methodology": "USAO post-trial characterization of the Empire group; 18 million meals claimed"
+      }
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Conviction and 28-year term supported by IRS-CI/DOJ-derived pages; exact judgment PDF not downloaded.",
+      "Restitution figure taken from IRS-CI (S07/S21). Same dollar figure as Nur; likely joint-and-several.",
+      "First-trial acquittals (if any) are not listed in a .gov verdict PR captured here."
+    ],
+    "editorial_notes": "Actor class A. Journalism says Said Farah was acquitted of the fraud charges — unverified in a primary.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-009",
+    "claim_text": "Charging and adjudicative documents in this corpus use: 18 U.S.C. § 1343 (wire fraud); 18 U.S.C. § 371 (conspiracy, including conspiracy to commit wire fraud and conspiracy to commit federal programs bribery); 18 U.S.C. § 666 (federal programs bribery — payee § 666(a)(1)(B), payor § 666(a)(2)); 18 U.S.C. § 1956(a) (concealment money-laundering conspiracy); 18 U.S.C. § 1957 (monetary transactions in property derived from unlawful activity); 18 U.S.C. § 201 (bribery of a juror). DOJ press releases also describe false statements in a passport application (Abdiaziz Farah).",
+    "claim_type": "LEGAL_ELEMENT",
+    "evidence_class": "ADJUDICATED",
+    "status": "confirmed",
+    "event_date": "2022-09-13",
+    "source_ids": [
+      "S22",
+      "S23",
+      "S24",
+      "S01"
+    ],
+    "statutes": [
+      "18 U.S.C. § 1343",
+      "18 U.S.C. § 371",
+      "18 U.S.C. § 666",
+      "18 U.S.C. § 666(a)(1)(B)",
+      "18 U.S.C. § 666(a)(2)",
+      "18 U.S.C. § 1956(a)",
+      "18 U.S.C. § 1957",
+      "18 U.S.C. § 201"
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "18 U.S.C. § 1349 was not located in the indictment excerpts or Brasel order fetched here (conspiracy was charged via § 371 + § 1343).",
+      "Statutes are charging instruments; guilt is defendant-specific.",
+      "Snyder v. United States, 603 U.S. 1 (2024) required the Bock court to treat § 666 as bribes not gratuities (S22)."
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-010",
+    "claim_text": "The Minnesota Office of the Legislative Auditor found that MDE's inadequate oversight of Feeding Our Future created opportunities for fraud. OLA did not find that MDE officials themselves stole funds or were charged with crimes.",
+    "normalized_claim": "OLA June 2024: MDE oversight failure created opportunities for fraud (actor classes B/C, not D).",
+    "claim_type": "OVERSIGHT",
+    "evidence_class": "AUDIT_FINDING",
+    "status": "AUDIT_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2024-06-13",
+    "source_ids": [
+      "S26",
+      "S27"
+    ],
+    "agencies": [
+      "mde",
+      "ola"
+    ],
+    "amounts": [
+      {
+        "value": 250000000,
+        "currency": "USD",
+        "metric_type": "alleged_loss",
+        "exact_or_approximate": "approximate",
+        "overlap_group_id": "fof-scheme-loss",
+        "methodology": "OLA transmittal recites federal charging of a $250 million fraud scheme as the federal government's allegation, not an OLA-audited loss total"
+      }
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "S26",
+        "page": "S-1",
+        "quote": "MDE’s inadequate oversight of Feeding Our Future created opportunities for fraud."
+      },
+      {
+        "source_id": "S26",
+        "page": 37,
+        "quote": "MDE’s only administrative review of Feeding Our Future’s CACFP operations—conducted in 2018—resulted in serious findings that required follow-up, but MDE never conducted a follow-up review."
+      },
+      {
+        "source_id": "S26",
+        "page": 49,
+        "quote": "Between June 2018 and December 2021, the Minnesota Department of Education (MDE) received at least 30 complaints involving Feeding Our Future or its sites."
+      },
+      {
+        "source_id": "S26",
+        "page": 49,
+        "quote": "Most importantly, MDE had reason to doubt Feeding Our Future’s trustworthiness as a sponsor, yet MDE continued to ask Feeding Our Future to resolve complaints about itself."
+      },
+      {
+        "source_id": "S26",
+        "page": 50,
+        "quote": "More broadly, despite repeated warnings by the U.S. Department of Agriculture’s (USDA’s) Office of Inspector General of the risks of fraud, waste, and abuse in federal nutrition programs, MDE was not prepared to investigate these issues in CACFP or SFSP."
+      },
+      {
+        "source_id": "S26",
+        "page": 50,
+        "quote": "Finally, MDE officials told us that the department met the federal requirement to inform USDA of “any suspected fraud or criminal abuse…which would result in a loss or misuse of Federal funds” in SFSP when it shared its concerns about Feeding Our Future with USDA’s Office of Inspector General in October or November 2020. However, informing USDA of its concerns did not absolve MDE of its legal responsibility to (1) “promptly investigate” program-related complaints and irregularities, and (2) “take appropriate action to correct any irregularities” in CACFP and SFSP."
+      },
+      {
+        "source_id": "S26",
+        "page": 51,
+        "quote": "While MDE had written complaint investigation procedures, their limited scope and failure to address important issues undermined their ability to promote good investigative practices."
+      },
+      {
+        "source_id": "S26",
+        "page": 53,
+        "quote": "MDE did not investigate some complaints about Feeding Our Future, despite their frequency or seriousness."
+      },
+      {
+        "source_id": "S26",
+        "page": 55,
+        "quote": "MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      },
+      {
+        "source_id": "S26",
+        "page": 57,
+        "quote": "When MDE decided to investigate complaints about Feeding Our Future, the investigations were inadequate."
+      },
+      {
+        "source_id": "S27",
+        "page": "S-1",
+        "quote": "MDE’s inadequate oversight of Feeding Our Future created opportunities for fraud."
+      },
+      {
+        "source_id": "S26",
+        "page": null,
+        "locator": "transmittal letter (Legislative Auditor Judy Randall, 2024-06-13)",
+        "quote": "However, we found MDE’s oversight of Feeding Our Future to be inadequate. In fact, we believe MDE’s actions and inactions created opportunities for fraud."
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "OLA findings are audit conclusions about oversight (B/C), not criminal charges against MDE (not D).",
+      "MDE written dispute exists (Commissioner Willie L. Jett II letter 2024-06-07); see fof-c-018.",
+      "OLA transmittal recites federal charging of 70 individuals and a $250 million scheme as DOJ's allegation."
+    ],
+    "assertion_ladder": {
+      "claim": "MDE officials knowingly facilitated Feeding Our Future fraud (proposition D/E).",
+      "evidence_available": [
+        "OLA found MDE's inadequate oversight created opportunities for fraud (S-1).",
+        "2018 administrative review produced serious findings and no follow-up (p. 37).",
+        "At least 30 complaints June 2018–December 2021 (p. 49).",
+        "MDE asked Feeding Our Future to investigate complaints about itself (pp. 49, 55).",
+        "Some complaints not investigated despite frequency or seriousness (p. 53); investigations that occurred were inadequate (p. 57).",
+        "MDE referred concerns to USDA OIG in October or November 2020; OLA says a referral did not discharge MDE's own duties (p. 50)."
+      ],
+      "missing_evidence": [
+        "A charging document, plea, or verdict naming a specified MDE official as a criminal participant.",
+        "A source demonstrating that a specified official knowingly joined the fraudulent scheme."
+      ],
+      "current_assessment": "Strong evidence of oversight failure (B) and being ill-prepared / using untrained investigators / asking FOF to investigate itself (C). Insufficient evidence for official misconduct (D) or government criminal participation (E)."
+    },
+    "editorial_notes": "Actor class B and C. Not D. Do not collapse B/C into D.",
+    "contradicting_claim_ids": [
+      "fof-c-018"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-011",
+    "claim_text": "In a September 23, 2022, Minnesota Judicial Branch statement, the court stated that Judge John Guthmann never ordered MDE to resume payments to Feeding Our Future in April 2021 or at any other time, and that MDE voluntarily resumed payments.",
+    "claim_type": "FACT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "confirmed",
+    "proposition_class": "C_NEGLIGENCE_MISADMINISTRATION",
+    "event_date": "2022-09-23",
+    "source_ids": [
+      "S28"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "S28",
+        "page": null,
+        "locator": "Minnesota Judicial Branch statement 2022-09-23",
+        "quote": "Judge Guthmann never ordered the Department of Education to resume payments to FOF in April 2021, or at any other time."
+      },
+      {
+        "source_id": "S28",
+        "page": null,
+        "locator": "Minnesota Judicial Branch statement 2022-09-23",
+        "quote": "Thereafter, the Department of Education voluntarily resumed making payments to FOF. The Department of Education was not ordered by the court to do so."
+      },
+      {
+        "source_id": "S28",
+        "page": null,
+        "locator": "Minnesota Judicial Branch statement 2022-09-23",
+        "quote": "All of the MN Department of Education food reimbursement payments to FOF were made voluntarily, without any court order."
+      }
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Court's own statement of the public court record, not a criminal adjudication.",
+      "Consent order Dec 22, 2020 concerned processing applications (not payments).",
+      "Dollar amount of any June 2021 contempt sanction is not quoted in the statement text captured here."
+    ],
+    "editorial_notes": "Distinguishes B/C oversight and civil-procedure disputes from D. The statement calls the Star Tribune line that Guthmann ordered the department to resume payments, the commissioner's April 4, 2022 Senate testimony to that effect, and Governor Walz's September 22, 2022 media comments false.",
+    "contradicting_claim_ids": [
+      "fof-c-016"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-012",
+    "claim_text": "This collection found no USDA OIG audit, investigation report, or press release that independently quantifies Minnesota CACFP/SFSP Feeding Our Future losses. What exists is OLA's account that MDE referred concerns to USDA OIG in October or November 2020; a 2024 House Education and the Workforce subpoena to USDA OIG; and FNS national integrity rulemaking citing older (2011/2013) OIG work unrelated to Minnesota FOF.",
+    "claim_type": "METHODOLOGY",
+    "evidence_class": "DERIVED_INFERENCE",
+    "status": "unresolved",
+    "event_date": "2020-11-01",
+    "date_start": "2020-10-01",
+    "date_end": "2024-12-31",
+    "source_ids": [
+      "S26",
+      "S29",
+      "S31"
+    ],
+    "supporting_passages": [
+      {
+        "source_id": "S26",
+        "page": 50,
+        "quote": "MDE officials told us that the department met the federal requirement to inform USDA of “any suspected fraud or criminal abuse…which would result in a loss or misuse of Federal funds” in SFSP when it shared its concerns about Feeding Our Future with USDA’s Office of Inspector General in October or November 2020."
+      }
+    ],
+    "confidence": 0.8,
+    "is_allegation": false,
+    "is_inference": true,
+    "qualifiers": [
+      "Gap as to USDA-OIG work product, not a finding that OIG did nothing.",
+      "OLA reports MDE's claim that it informed USDA OIG; OLA does not independently audit USDA OIG's response beyond recording MDE's account and stating that a referral did not discharge MDE's own duties.",
+      "Journalism quotes attributing an 'emboldened' sentence to Emily Honer are a lead unless quoted from the OLA PDF itself."
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-013",
+    "claim_text": "None of the primary FOF charging, sentencing, or OLA documents in this corpus use a $9 billion loss figure for Feeding Our Future / Minnesota CACFP-SFSP.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "DERIVED_INFERENCE",
+    "status": "confirmed",
+    "source_ids": [
+      "S01",
+      "S06",
+      "S12",
+      "S21",
+      "S26"
+    ],
+    "amounts": [
+      {
+        "value": 9000000000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "unknown",
+        "methodology": "Circulating $9 billion figure does not appear in collected FOF primaries; not a record of this family"
+      }
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": true,
+    "qualifiers": [
+      "Documented official ranges for this program: charging $250 million (S01); later USAO/IRS language $250 million or $300 million (S06, S12, S21); FOF pass-through ~$3.4 million (2019) to nearly $200 million (2021) and >$240 million disbursed (S01/S12).",
+      "Those are still not a single court-certified network restitution total.",
+      "Do not treat $9 billion as proven_loss for this family."
+    ],
+    "editorial_notes": "$9 billion is a Medicaid high-risk-program fraud_estimate discussed in the oversight/law family, not a FOF figure.",
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-014",
+    "claim_text": "Federal prosecutions collected here charge private site operators, vendors, FOF employees, and the FOF founder — actor class A. OLA findings concern MDE's failure to oversee (B) and being ill-prepared / using untrained investigators / asking FOF to investigate itself (C). No charging document in this corpus alleges that MDE officials knowingly committed the theft (D).",
+    "claim_type": "WARNING",
+    "evidence_class": "DERIVED_INFERENCE",
+    "status": "confirmed",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "date_start": "2022-09-20",
+    "date_end": "2026-08-26",
+    "source_ids": [
+      "S01",
+      "S02",
+      "S12",
+      "S26",
+      "S27",
+      "S28"
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": true,
+    "qualifiers": [
+      "Verified as a negative: class D not supported for MDE officials in collected sources.",
+      "Keep A/B/C/D distinct in any public write-up."
+    ],
+    "assertion_ladder": {
+      "claim": "Public officials knowingly participated in Feeding Our Future criminal conduct (E).",
+      "evidence_available": [
+        "Private actors charged and in many cases convicted (A).",
+        "OLA audit of inadequate MDE oversight (B/C).",
+        "Judicial Branch statement that MDE resumed payments voluntarily."
+      ],
+      "missing_evidence": [
+        "Any charging instrument naming an MDE, USDA, or elected official as a FOF criminal defendant."
+      ],
+      "current_assessment": "Class D and E are not supported for MDE officials in this corpus."
+    },
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-015",
+    "claim_text": "Besides Nur/Farah $47,920,514 restitution, official PRs record: Suleman Yusuf Mohamed agreed restitution $8,662,287; Gandi Yusuf Mohamed agreed approximately $1.3 million; Abdullahe Nur Jesow ordered $866,458; Sahra Mohamed Nur ordered $5,000,240. IRS Pub 3583: Mukhtar Mohamed Shariff 210 months and almost $50 million restitution; Sharon Denise Ross 43 months and $2.4 million restitution.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "ADJUDICATED",
+    "status": "adjudicated",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "source_ids": [
+      "S11",
+      "S13",
+      "S19",
+      "S21"
+    ],
+    "amounts": [
+      {
+        "value": 8662287,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "exact",
+        "methodology": "Suleman Yusuf Mohamed agreed restitution"
+      },
+      {
+        "value": 1300000,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "approximate",
+        "methodology": "Gandi Yusuf Mohamed agreed ~$1.3 million as restitution"
+      },
+      {
+        "value": 866458,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "exact",
+        "methodology": "Abdullahe Nur Jesow ordered"
+      },
+      {
+        "value": 5000240,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "exact",
+        "methodology": "Sahra Mohamed Nur ordered"
+      },
+      {
+        "value": 50000000,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "approximate",
+        "methodology": "Mukhtar Mohamed Shariff almost $50 million (S21 summary)"
+      },
+      {
+        "value": 2400000,
+        "currency": "USD",
+        "metric_type": "restitution_ordered",
+        "exact_or_approximate": "approximate",
+        "methodology": "Sharon Denise Ross $2.4 million (S21 summary)"
+      }
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Verified at the PR/report level; judgment PDFs not all downloaded.",
+      "S21 Pub 3583 summaries are AGENCY_POSITION as to the recap, describing adjudicated sentences.",
+      "Joint-and-several overlap is likely; do not sum restitution orders into a recovered_amount."
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-016",
+    "claim_text": "Public statements by the Star Tribune, the Minnesota Department of Education commissioner (April 4, 2022 Senate testimony), and Governor Tim Walz (September 22, 2022 media comments) asserted that Judge John Guthmann ordered MDE to resume Feeding Our Future reimbursement payments.",
+    "claim_type": "FACT",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "status": "disputed",
+    "event_date": "2022-09-22",
+    "source_ids": [
+      "S28",
+      "L05"
+    ],
+    "confidence": 0.4,
+    "is_allegation": true,
+    "is_inference": false,
+    "qualifiers": [
+      "These statements are recorded because the Judicial Branch called them false (S28).",
+      "They are not independently verified as accurate descriptions of the court's orders.",
+      "S28 is the court's statement of the record, not a news primary for the original Walz/Star Tribune wording."
+    ],
+    "editorial_notes": "Seed contradiction: do not silently overwrite. Link to fof-c-011 rather than deleting this claim.",
+    "contradicting_claim_ids": [
+      "fof-c-011"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z",
+    "supporting_passages": [
+      {
+        "source_id": "S27",
+        "page": 49,
+        "quote": "And, MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      },
+      {
+        "source_id": "S27",
+        "page": 51,
+        "quote": "And, MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      },
+      {
+        "source_id": "S27",
+        "page": 55,
+        "quote": "And, MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      },
+      {
+        "source_id": "S26",
+        "page": 49,
+        "quote": "Most importantly, MDE had reason to doubt Feeding Our Future’s trustworthiness as a sponsor, yet MDE continued to ask Feeding Our Future to resolve complaints about itself."
+      },
+      {
+        "source_id": "S26",
+        "page": 51,
+        "quote": "And, MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      },
+      {
+        "source_id": "S26",
+        "page": 55,
+        "quote": "And, MDE inappropriately asked Feeding Our Future to investigate complaints about itself."
+      }
+    ]
+  },
+  {
+    "claim_id": "fof-c-017",
+    "claim_text": "As of April 9, 2026, a DOJ Office of Public Affairs press release stated that two more defendants had pleaded guilty and that 65 defendants had been convicted in the Feeding Our Future fraud scheme.",
+    "claim_type": "COUNT",
+    "evidence_class": "ADJUDICATED",
+    "status": "confirmed",
+    "event_date": "2026-04-09",
+    "source_ids": [
+      "S11"
+    ],
+    "corroborating_source_ids": [
+      "S10",
+      "S14",
+      "S15"
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Last verified official conviction count in this corpus as of 2026-08-26.",
+      "Prior official: 63 on 2026-03-20 (S10); 56th plea Jesow 2025-09-18 (S14); 52nd Guhaad Said (S15)."
+    ],
+    "contradicting_claim_ids": [
+      "fof-c-004"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z",
+    "supporting_passages": [
+      {
+        "source_id": "S27",
+        "page": 53,
+        "quote": "MDE did not investigate some complaints about Feeding Our Future, despite their frequency or seriousness. When MDE decided to investigate complaints about Feeding Our Future, the investigations were inadequate."
+      },
+      {
+        "source_id": "S27",
+        "page": 57,
+        "quote": "MDE did not investigate some complaints about Feeding Our Future, despite their frequency or seriousness. When MDE decided to investigate complaints about Feeding Our Future, the investigations were inadequate."
+      },
+      {
+        "source_id": "S26",
+        "page": 53,
+        "quote": "MDE did not investigate some complaints about Feeding Our Future, despite their frequency or seriousness. When MDE decided to investigate complaints about Feeding Our Future, the investigations were inadequate."
+      },
+      {
+        "source_id": "S26",
+        "page": 57,
+        "quote": "MDE did not investigate some complaints about Feeding Our Future, despite their frequency or seriousness. When MDE decided to investigate complaints about Feeding Our Future, the investigations were inadequate."
+      }
+    ]
+  },
+  {
+    "claim_id": "fof-c-018",
+    "claim_text": "In a June 7, 2024 letter, MDE Commissioner Willie L. Jett II disputed OLA's characterization of the adequacy of MDE's oversight, stating that MDE's oversight of these programs met applicable standards, that MDE made effective referrals to law enforcement, and that the responsibility for this flagrant fraud lies with the indicted and convicted fraudsters.",
+    "claim_type": "OVERSIGHT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "disputed",
+    "proposition_class": "C_NEGLIGENCE_MISADMINISTRATION",
+    "event_date": "2024-06-07",
+    "source_ids": [
+      "S27"
+    ],
+    "agencies": [
+      "mde"
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "This is MDE's written rebuttal, not an independent audit conclusion.",
+      "Does not erase OLA's AUDIT_FINDING; both remain in the ledger."
+    ],
+    "contradicting_claim_ids": [
+      "fof-c-010"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  },
+  {
+    "claim_id": "fof-c-019",
+    "claim_text": "Star Tribune reporting dated August 19, 2026, stated that 80 defendants had been charged and 69 convicted in the Feeding Our Future scheme, and that Abdinasir Mahamed Abshir was the 23rd defendant sentenced (6.5 years, witness tampering).",
+    "claim_type": "COUNT",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "status": "unresolved",
+    "event_date": "2026-08-19",
+    "source_ids": [
+      "L02"
+    ],
+    "persons": [
+      "fof-p-abdinasir-mahamed-abshir"
+    ],
+    "confidence": 0.3,
+    "is_allegation": false,
+    "is_inference": false,
+    "qualifiers": [
+      "Running totals are LEAD_UNVERIFIED.",
+      "Do not upgrade Abdinasir Mahamed Abshir from charged to sentenced on this journalism lead.",
+      "Last verified official charged count is 77th (Ousman Camara, 2025-11-20)."
+    ],
+    "contradicting_claim_ids": [
+      "fof-c-003",
+      "fof-c-017"
+    ],
+    "reviewed_at": "2026-08-26T21:07:00Z"
+  }
+]

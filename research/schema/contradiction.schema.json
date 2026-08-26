@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/contradiction.schema.json",
+  "title": "Minnesota Fraud Research Contradiction",
+  "description": "Contradiction ledger. Do not silently choose the source we like. A source being official does not eliminate contradictions. Preserve source disagreement. Seed example: the Minnesota Judicial Branch stated on 2022-09-23 that Judge John Guthmann never ordered MDE to resume Feeding Our Future reimbursement payments; MDE resumed payments voluntarily. Any contrary public assertion is linked to that judicial correction rather than silently overwritten.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contradiction_id",
+    "claim_a",
+    "claim_b",
+    "nature_of_conflict",
+    "status"
+  ],
+  "properties": {
+    "contradiction_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "claim_a": {
+      "type": "string",
+      "minLength": 1,
+      "description": "First claim_id."
+    },
+    "claim_b": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Second claim_id."
+    },
+    "source_a": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Source of claim_a, if pinning the conflict to particular documents."
+    },
+    "source_b": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nature_of_conflict": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What actually conflicts (dates, amounts, legal authority, actor identity, status, etc.)."
+    },
+    "possible_reconciliation": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "How the conflict might be resolved without picking a favorite source."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "unresolved",
+        "reconciled",
+        "superseded",
+        "editorial_hold",
+        "OPEN",
+        "UNRESOLVED",
+        "RECONCILED",
+        "SUPERSEDED"
+      ],
+      "description": "Whether the contradiction remains live. Unresolved contradictions should be exposable."
+    },
+    "editorial_resolution": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "If resolved, the reasoned resolution with sources; never a silent overwrite."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "family_id": "inv-medicaid-hcbs",
+  "name": "Minnesota Medicaid HCBS / high-risk services (HSS, EIDBI, ICS, related)",
+  "coverage_state": "first_harvest",
+  "last_checked": "2026-08-26",
+  "source_depth": "press_release_and_agency_pages",
+  "legal_maturity": "charging_narratives_not_indictment_pdfs",
+  "prosecution_maturity": "early_to_mid_HSS_EIDBI_ICS_opening",
+  "proposition_classes_supported": [
+    "A",
+    "B",
+    "C"
+  ],
+  "proposition_classes_not_supported": [
+    "D",
+    "E"
+  ],
+  "missing_records": [
+    "PACER informations/pleas for 25-cr-349/351/353/354 and EIDBI dockets",
+    "CMS Dec 5 2025 and Jan 6 2026 letters",
+    "USAO PR confirming Yussuf March 2026 plea",
+    "Optum Phase 1 official mn.gov host",
+    "House Oversight transcripts"
+  ],
+  "notes": "High-risk designation is not charged fraud in each of the 14 categories. Do not add Smart $14M + Star $6M + $46.6M billed. $9B is a fraud_estimate from an oral prosecutor statement, not a written DOJ finding."
+}

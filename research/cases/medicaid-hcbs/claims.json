@@ -1,0 +1,146 @@
+[
+  {
+    "claim_id": "hcbs-c-001",
+    "claim_text": "On September 18, 2025, USAO-MN announced federal wire-fraud charges against eight defendants in the first wave of Housing Stabilization Services cases.",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "charged",
+    "source_ids": [
+      "DOJ-HSS-1"
+    ],
+    "confidence": 0.9,
+    "is_allegation": true,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "event_date": "2025-09-18",
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "program_ids": [
+      "HSS"
+    ],
+    "review_notes": "Do not sum billed+paid across the four entities into an official $8 million total."
+  },
+  {
+    "claim_id": "hcbs-c-002",
+    "claim_text": "Asha Farhan Hassan of Smart Therapy LLC was charged September 24, 2025, in the first announced EIDBI/autism case, alleged to have obtained more than $14 million in EIDBI reimbursements from DHS and UCare, and pleaded guilty to one count of wire fraud on December 18, 2025.",
+    "evidence_class": "ADJUDICATED",
+    "status": "adjudicated",
+    "source_ids": [
+      "DOJ-EIDBI-1",
+      "DOJ-DEC18"
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "event_date": "2025-12-18",
+    "amounts": [
+      {
+        "value": 14000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "overlap_group_id": "eidbi-smart-star"
+      }
+    ],
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "program_ids": [
+      "EIDBI"
+    ],
+    "review_notes": "Plea is adjudicated as to guilt. Dollar figure is still alleged_loss/amount_paid at charging, not restitution_ordered. Overlaps later $46.6M/$21.2M two-center indictment."
+  },
+  {
+    "claim_id": "hcbs-c-003",
+    "claim_text": "On December 18, 2025, USAO-MN charged additional autism and HSS defendants and announced a search warrant in an Integrated Community Supports investigation of Ultimate Home Health Services LLC.",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "charged",
+    "source_ids": [
+      "DOJ-DEC18"
+    ],
+    "confidence": 0.9,
+    "is_allegation": true,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "event_date": "2025-12-18",
+    "proposition_class": "A_FRAUD_AGAINST_STATE"
+  },
+  {
+    "claim_id": "hcbs-c-004",
+    "claim_text": "Abdinajib Hassan Yussuf of Star Autism Center was charged December 18, 2025, with a scheme through which Star Autism obtained more than $6 million in EIDBI reimbursements. A March 2, 2026 guilty plea is reported in journalism but was not confirmed on a captured USAO press release.",
+    "evidence_class": "CHARGED_ALLEGED",
+    "status": "charged",
+    "source_ids": [
+      "DOJ-DEC18"
+    ],
+    "confidence": 0.85,
+    "is_allegation": true,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "amounts": [
+      {
+        "value": 6000000,
+        "currency": "USD",
+        "metric_type": "amount_paid",
+        "overlap_group_id": "eidbi-smart-star"
+      }
+    ],
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "review_notes": "Plea status remains LEAD_UNVERIFIED as to official PR. Overlaps $46.6M billed / $21.2M paid indictment."
+  },
+  {
+    "claim_id": "hcbs-c-005",
+    "claim_text": "As of August 2026, Minnesota DHS lists 14 Medicaid service provider types as high-risk based on programmatic vulnerabilities, evidence of fraudulent activity, or data analytics.",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "confirmed",
+    "source_ids": [
+      "DHS-PI"
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "review_notes": "Designation is an oversight response, not a finding that every claim in these categories is fraudulent."
+  },
+  {
+    "claim_id": "hcbs-c-006",
+    "claim_text": "DHS Program Integrity page updated August 4, 2026 reports 3,068 open intakes, 1,647 open cases, 490 payment withholds in 2025, over 3,500 investigations since 2020, over 1,150 law-enforcement referrals since 2020, and more than $56 million identified for recovery since 2020.",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "confirmed",
+    "source_ids": [
+      "DHS-PI"
+    ],
+    "confidence": 0.85,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "amounts": [
+      {
+        "value": 56000000,
+        "currency": "USD",
+        "metric_type": "identified_for_recovery"
+      }
+    ],
+    "review_notes": "Unaudited agency statistics. identified_for_recovery is not recovered_amount. Conflicts with 'over 500' withholds in a CAP letter."
+  },
+  {
+    "claim_id": "hcbs-c-007",
+    "claim_text": "The circulating ~$9 billion Minnesota Medicaid fraud figure originates as an oral estimate by First Assistant U.S. Attorney Joseph H. Thompson at an 18 December 2025 news conference: CMS pulled claims for 14 high-risk programs totaling about $18 billion since 2018, of which he said 'half or more' could be fraudulent. It does not appear in the official USAO press release that day.",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "status": "unresolved",
+    "source_ids": [
+      "NINE-BILLION"
+    ],
+    "confidence": 0.6,
+    "is_allegation": true,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T00:00:00Z",
+    "amounts": [
+      {
+        "value": 9000000000,
+        "currency": "USD",
+        "metric_type": "fraud_estimate",
+        "overlap_group_id": "fourteen-high-risk-spend"
+      }
+    ],
+    "proposition_class": "A_FRAUD_AGAINST_STATE",
+    "review_notes": "Denominator is program_spend. Numerator is qualitative prosecutor judgment. Not proven_loss. DHS IG called the speculation shocking."
+  }
+]

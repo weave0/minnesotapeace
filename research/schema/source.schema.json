@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/source.schema.json",
+  "title": "Minnesota Fraud Research Source",
+  "description": "Durable source record. Do not merely save URLs. Capture enough metadata to survive link rot and later revisions. An official source is not independently proven merely because it is official. An indictment is authoritative evidence of what prosecutors alleged, not proof that every allegation is true. source_tier 1–8 follows the corpus source hierarchy (court records at 1, social/anonymous leads at 8).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable source identifier used by claims and other records."
+    },
+    "canonical_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "issuing_body": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Court, agency, publisher, or other issuing body."
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "retrieval_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Date this copy was retrieved."
+    },
+    "document_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Date on the face of the document, which may differ from publication_date."
+    },
+    "document_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Free-text or controlled type such as indictment, information, complaint, plea_agreement, judgment, sentencing_order, restitution_order, forfeiture_order, audit_report, press_release, statute, regulation, hearing_transcript, news_article, agency_record, docket, opinion, search_warrant, corrective_action_plan."
+    },
+    "case_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "court": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "docket_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Docket identifier, which may differ from case_number."
+    },
+    "archive_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "description": "Internet Archive, court PACER/RECAP, or other durable copy."
+    },
+    "local_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path to the preserved local copy within the corpus."
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "description": "SHA-256 of the preserved bytes."
+    },
+    "mime_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "extracted_text_path": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Path to OCR or extracted text."
+    },
+    "access_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "available",
+        "archived",
+        "restricted",
+        "paywalled",
+        "removed",
+        "blocked",
+        "unknown",
+        null
+      ],
+      "description": "Whether the canonical URL is presently reachable; prefer archive_url and local_path if not."
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "source_id of a prior version this record replaces (superseding indictment, corrected PR, revised audit)."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8,
+      "description": "1 court filings/judgments/dockets; 2 statutes/regulations/plan documents/waivers; 3 DOJ/USAO/FBI/IRS-CI/HHS-OIG/USDA-OIG/CMS/MFCU primary materials; 4 OLA and other formal audits; 5 Minnesota Judicial Branch, Revisor, Legislature, agency/licensing records; 6 sworn legislative testimony; 7 corporate/charity/property/campaign-finance/licensing public records; 8 journalism (context/leads) — social media and anonymous material are UNVERIFIED_LEAD and never published as established fact."
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_COURT_RECORD",
+        "PRIMARY_STATUTE",
+        "PRIMARY_REGULATION",
+        "PRIMARY_AGENCY_RECORD",
+        "PRIMARY_AUDIT",
+        "PRIMARY_SWORN_TESTIMONY",
+        "PRIMARY_FINANCIAL_RECORD",
+        "OFFICIAL_PRESS_RELEASE",
+        "LEGISLATIVE_RECORD",
+        "REPUTABLE_JOURNALISM",
+        "ACADEMIC_ANALYSIS",
+        "POLITICAL_STATEMENT",
+        "ADVOCACY_MATERIAL",
+        "SOCIAL_MEDIA",
+        "UNVERIFIED_LEAD"
+      ],
+      "description": "Reliability/type designation. Do not confuse official with independently proven."
+    }
+  }
+}

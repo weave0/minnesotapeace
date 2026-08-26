@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/warning.schema.json",
+  "title": "Minnesota Fraud Research Warning / Who-Knew-What-When",
+  "description": "Institutional-knowledge record for complaints, warnings, audit findings, anomalies, provider flags, media reports, lawsuits, referrals, or enforcement contacts. Enables visualization of warning → recipient → required action → actual action → subsequent payments → later allegation/proof without editorializing beyond the evidence. OLA found MDE received at least 30 complaints concerning Feeding Our Future or its sites between June 2018 and December 2021; some were not investigated, others were inadequately investigated, and MDE at times asked Feeding Our Future to investigate complaints about itself. That pattern is exactly what this schema is for.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "warning_id",
+    "warning_type",
+    "allegation"
+  ],
+  "properties": {
+    "warning_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "warning_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "e.g. complaint, audit_finding, internal_warning, media_report, lawsuit, referral, enforcement_contact, anomaly, provider_flag, legislative_inquiry."
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Date the warning/complaint/finding was made or received."
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Originating source description or source_id."
+    },
+    "sender": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Who sent or filed the warning/complaint."
+    },
+    "recipient": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Who received it."
+    },
+    "agency": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Agency entity_id or name."
+    },
+    "program": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Program entity_id or name."
+    },
+    "subject_entity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Entity the warning is about."
+    },
+    "allegation": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What was alleged or flagged, in sourced language."
+    },
+    "evidence_supplied": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "What supporting evidence accompanied the warning, if any."
+    },
+    "required_response": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "What duty, policy, or statute required in response, if known."
+    },
+    "actual_response": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "What the recipient actually did, including 'no documented response'."
+    },
+    "response_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "escalation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "law_enforcement_referral": {
+      "type": [
+        "boolean",
+        "string",
+        "null"
+      ],
+      "description": "Whether/when the matter was referred to law enforcement. Boolean or sourced description."
+    },
+    "payment_status_afterward": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Whether payments continued, were withheld, or changed after the warning."
+    },
+    "provider_status_afterward": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Enrollment, suspension, termination, or other provider status after the warning."
+    },
+    "later_consequence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Later prosecution, audit finding, or other consequence, if any."
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "investigation_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

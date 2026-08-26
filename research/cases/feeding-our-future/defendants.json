@@ -1,0 +1,1188 @@
+[
+  {
+    "defendant_id": "fof-d-001",
+    "person_id": "fof-p-aimee-marie-bock",
+    "canonical_name": "Aimee Marie Bock",
+    "case_docket": "22-CR-223",
+    "group": "FOF founder/ED",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "trial_status": "completed",
+    "trial_dates": "2025-02-03/2025-03-18",
+    "verdict": "guilty (all counts tried)",
+    "sentencing_date": "2026-05-22",
+    "sentence": "500 months",
+    "organizations": [
+      "Feeding Our Future"
+    ],
+    "source_ids": [
+      "S01",
+      "S12",
+      "S22"
+    ],
+    "notes": "Post-trial motions denied 2025-08-22. Judge Brasel.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-002",
+    "person_id": "fof-p-abdikerm-abdelahi-eidleh",
+    "canonical_name": "Abdikerm Abdelahi Eidleh",
+    "case_docket": "22-CR-223",
+    "group": "FOF employee",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "organizations": [
+      "Eidleh Inc.",
+      "Feeding Our Future"
+    ],
+    "source_ids": [
+      "S01",
+      "S22"
+    ],
+    "notes": "No later status in captured PRs. Kickbacks alleged (S01); checks to Eidleh Inc. were § 666 objects at Bock/Said trial (S22).",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-003",
+    "person_id": "fof-p-salim-ahmed-said",
+    "canonical_name": "Salim Ahmed Said",
+    "case_docket": "22-CR-223",
+    "group": "Safari",
+    "status": "convicted",
+    "charged_date": "2022-09-20",
+    "trial_status": "completed",
+    "verdict": "guilty (all counts tried, including 9× § 666 and 5× § 1957)",
+    "alleged_amount": 16000000,
+    "organizations": [
+      "Safari Restaurant",
+      "Cosmopolitan Business Solutions",
+      "Salim Limited"
+    ],
+    "source_ids": [
+      "S01",
+      "S12",
+      "S22"
+    ],
+    "notes": "Sentencing not in captured PRs. Do not invent a sentence.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-004",
+    "person_id": "fof-p-abdulkadir-nur-salah",
+    "canonical_name": "Abdulkadir Nur Salah",
+    "case_docket": "22-CR-223",
+    "group": "Safari",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 16000000,
+    "notes": "Safari >$16 million alleged_loss at group level.",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-005",
+    "person_id": "fof-p-ahmed-sharif-omar-hashim",
+    "canonical_name": "Ahmed Sharif Omar-Hashim",
+    "case_docket": "22-CR-223",
+    "group": "Olive Management",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "organizations": [
+      "Olive Management"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-006",
+    "person_id": "fof-p-abdi-nur-salah",
+    "canonical_name": "Abdi Nur Salah",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "organizations": [
+      "Stigma-Free"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-007",
+    "person_id": "fof-p-abdihakim-ali-ahmed",
+    "canonical_name": "Abdihakim Ali Ahmed",
+    "case_docket": "22-CR-223",
+    "group": "ASA Limited",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "organizations": [
+      "ASA Limited"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-008",
+    "person_id": "fof-p-ahmed-mohamed-artan",
+    "canonical_name": "Ahmed Mohamed Artan",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-009",
+    "person_id": "fof-p-abdikadir-ainanshe-mohamud",
+    "canonical_name": "Abdikadir Ainanshe Mohamud",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free Willmar",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 4000000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-010",
+    "person_id": "fof-p-abdinasir-mahamed-abshir",
+    "canonical_name": "Abdinasir Mahamed Abshir",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free Mankato",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "source_ids": [
+      "S01"
+    ],
+    "journalism_leads": [
+      "L02"
+    ],
+    "notes": "Journalism (L02, 2026-08-19) says sentenced 6.5 years for witness tampering. Status remains charged. Do not upgrade from journalism.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-011",
+    "person_id": "fof-p-asad-mohamed-abshir",
+    "canonical_name": "Asad Mohamed Abshir",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free Mankato",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-012",
+    "person_id": "fof-p-hamdi-hussein-omar",
+    "canonical_name": "Hamdi Hussein Omar",
+    "case_docket": "22-CR-223",
+    "group": "Stigma-Free Waite Park",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 1000000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-013",
+    "person_id": "fof-p-ahmed-abdullahi-ghedi",
+    "canonical_name": "Ahmed Abdullahi Ghedi",
+    "case_docket": "22-CR-223",
+    "group": "ASA Limited",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-014",
+    "person_id": "fof-p-abdirahman-mohamud-ahmed",
+    "canonical_name": "Abdirahman Mohamud Ahmed",
+    "case_docket": "22-CR-223",
+    "group": "Safari",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 16000000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-015",
+    "person_id": "fof-p-abdiaziz-shafii-farah",
+    "canonical_name": "Abdiaziz Shafii Farah",
+    "case_docket": "22-CR-124",
+    "related_dockets": [
+      "24-cr-173"
+    ],
+    "group": "Empire; juror bribery",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "trial_status": "completed",
+    "trial_dates": "2024-04-22/2024-06",
+    "verdict": "guilty (June 2024)",
+    "sentencing_date": "2025-08-06",
+    "sentence": "28 years plus 3 years supervised release (fraud)",
+    "restitution": 47920514,
+    "plea_status": "guilty",
+    "plea_date": "2025-06-17",
+    "organizations": [
+      "Empire Cuisine"
+    ],
+    "source_ids": [
+      "S01",
+      "S07",
+      "S08",
+      "S21"
+    ],
+    "journalism_leads": [
+      "L03"
+    ],
+    "notes": "Fraud sentenced 2025-08-06. Pleaded guilty to juror bribery 2025-06-17. July 2026 120-month bribery sentence is LEAD_UNVERIFIED (L03). Do not upgrade bribery disposition from journalism. Restitution $47,920,514 likely joint-and-several with Nur.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-016",
+    "person_id": "fof-p-mohamed-jama-ismail",
+    "canonical_name": "Mohamed Jama Ismail",
+    "case_docket": "22-CR-124",
+    "group": "Empire",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 28000000,
+    "notes": "No later status in captured PRs. Empire Cuisine >$28 million alleged_loss, group.",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-017",
+    "person_id": "fof-p-mahad-ibrahim",
+    "canonical_name": "Mahad Ibrahim",
+    "case_docket": "22-CR-124",
+    "group": "ThinkTechAct",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 18000000,
+    "organizations": [
+      "ThinkTechAct"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-018",
+    "person_id": "fof-p-abdimajid-mohamed-nur",
+    "canonical_name": "Abdimajid Mohamed Nur",
+    "case_docket": "22-CR-124",
+    "related_dockets": [
+      "24-cr-173"
+    ],
+    "group": "Empire; juror bribery",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "trial_status": "completed",
+    "verdict": "guilty (June 2024)",
+    "sentencing_date": "2025-11-24",
+    "sentence": "120 months plus 3 years supervised release (fraud)",
+    "restitution": 47920514,
+    "plea_status": "guilty",
+    "organizations": [
+      "Nur Consulting",
+      "Empire Cuisine"
+    ],
+    "source_ids": [
+      "S01",
+      "S06",
+      "S23"
+    ],
+    "notes": "Fraud sentenced 2025-11-24. Juror-bribery plea (S23) pending sentence as of S06. Restitution $47,920,514 likely joint-and-several with Abdiaziz Farah. Nur Consulting >$900,000.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-019",
+    "person_id": "fof-p-said-shafii-farah",
+    "canonical_name": "Said Shafii Farah",
+    "case_docket": "22-CR-124",
+    "related_dockets": [
+      "24-cr-173"
+    ],
+    "group": "Empire; juror bribery",
+    "status": "pleaded",
+    "charged_date": "2022-09-20",
+    "plea_status": "guilty",
+    "organizations": [
+      "Bushra Wholesalers"
+    ],
+    "source_ids": [
+      "S01",
+      "S20"
+    ],
+    "journalism_leads": [
+      "L05"
+    ],
+    "notes": "Pleaded guilty to juror bribery (5th plea, S20). Fraud-trial outcome not in a captured .gov verdict PR. Journalism: acquitted of fraud — LEAD_UNVERIFIED. Do not mark acquitted.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-020",
+    "person_id": "fof-p-abdiwahab-maalim-aftin",
+    "canonical_name": "Abdiwahab Maalim Aftin",
+    "case_docket": "22-CR-124",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-021",
+    "person_id": "fof-p-mukhtar-mohamed-shariff",
+    "canonical_name": "Mukhtar Mohamed Shariff",
+    "case_docket": "22-CR-124",
+    "group": "Afrique",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "sentence": "210 months (IRS Pub 3583)",
+    "restitution": 50000000,
+    "organizations": [
+      "Afrique"
+    ],
+    "source_ids": [
+      "S01",
+      "S21"
+    ],
+    "notes": "S21 agency recap: sentenced Jan 2025; almost $50 million restitution. Judgment PDF not downloaded. Restitution recorded as approximate from 'almost $50 million'.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-022",
+    "person_id": "fof-p-hayat-mohamed-nur",
+    "canonical_name": "Hayat Mohamed Nur",
+    "case_docket": "22-CR-124",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-023",
+    "person_id": "fof-p-qamar-ahmed-hassan",
+    "canonical_name": "Qamar Ahmed Hassan",
+    "case_docket": "22-CR-224",
+    "group": "S&S Catering",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 18000000,
+    "organizations": [
+      "S&S Catering"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-024",
+    "person_id": "fof-p-sahra-mohamed-nur",
+    "canonical_name": "Sahra Mohamed Nur",
+    "case_docket": "22-CR-224",
+    "group": "S&S Catering",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "plea_status": "guilty",
+    "plea_date": "2023-09-07",
+    "sentence": "51 months plus 2 years supervised release",
+    "restitution": 5000240,
+    "organizations": [
+      "S&S Catering"
+    ],
+    "source_ids": [
+      "S01",
+      "S19"
+    ],
+    "notes": "Pleaded 2023-09-07 (wire fraud + money laundering). Sentence date not stated in SOURCES.md.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-025",
+    "person_id": "fof-p-abdiwahab-ahmed-mohamud",
+    "canonical_name": "Abdiwahab Ahmed Mohamud",
+    "case_docket": "22-CR-224",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-026",
+    "person_id": "fof-p-filsan-mumin-hassan",
+    "canonical_name": "Filsan Mumin Hassan",
+    "case_docket": "22-CR-224",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-027",
+    "person_id": "fof-p-guhaad-hashi-said",
+    "canonical_name": "Guhaad Hashi Said",
+    "case_docket": "22-CR-224",
+    "status": "pleaded",
+    "charged_date": "2022-09-20",
+    "plea_status": "guilty",
+    "source_ids": [
+      "S01",
+      "S15"
+    ],
+    "notes": "Described as 52nd defendant convicted. Conspiracy to commit wire fraud and conspiracy to commit money laundering. Page not fully dated in fetch.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-028",
+    "person_id": "fof-p-abdullahe-nur-jesow",
+    "canonical_name": "Abdullahe Nur Jesow",
+    "case_docket": "22-CR-224",
+    "group": "S&S Catering / Academy for Youth Excellence",
+    "status": "sentenced",
+    "charged_date": "2022-09-20",
+    "plea_status": "guilty",
+    "plea_date": "2025-09-18",
+    "sentencing_date": "2026-04-09",
+    "sentence": "43 months plus 2 years supervised release",
+    "restitution": 866458,
+    "organizations": [
+      "Academy for Youth Excellence",
+      "S&S Catering"
+    ],
+    "source_ids": [
+      "S01",
+      "S11",
+      "S13",
+      "S14"
+    ],
+    "notes": "56th to plead (money laundering). Academy/S&S received $4,286,088 (amount_paid, fraudulent claims).",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-029",
+    "person_id": "fof-p-abdul-abubakar-ali",
+    "canonical_name": "Abdul Abubakar Ali",
+    "case_docket": "22-CR-224",
+    "group": "Youth Inventors Lab",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "organizations": [
+      "Youth Inventors Lab"
+    ],
+    "notes": "~1.5 million meals claimed.",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-030",
+    "person_id": "fof-p-yusuf-bashir-ali",
+    "canonical_name": "Yusuf Bashir Ali",
+    "case_docket": "22-CR-224",
+    "group": "Youth Inventors Lab",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-031",
+    "person_id": "fof-p-haji-osman-salad",
+    "canonical_name": "Haji Osman Salad",
+    "case_docket": "22-CR-226",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 11600000,
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-032",
+    "person_id": "fof-p-fahad-nur",
+    "canonical_name": "Fahad Nur",
+    "case_docket": "22-CR-226",
+    "group": "The Produce",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 5000000,
+    "organizations": [
+      "The Produce"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-033",
+    "person_id": "fof-p-anab-artan-awad",
+    "canonical_name": "Anab Artan Awad",
+    "case_docket": "22-CR-226",
+    "group": "MCA",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 11000000,
+    "organizations": [
+      "MCA"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-034",
+    "person_id": "fof-p-sharmarke-issa",
+    "canonical_name": "Sharmarke Issa",
+    "case_docket": "22-CR-226",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 7400000,
+    "notes": ">$7.4 million caused to be paid.",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-035",
+    "person_id": "fof-p-farhiya-mohamud",
+    "canonical_name": "Farhiya Mohamud",
+    "case_docket": "22-CR-226",
+    "group": "Dua Supplies",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "organizations": [
+      "Dua Supplies"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-036",
+    "person_id": "fof-p-liban-yasin-alishire",
+    "canonical_name": "Liban Yasin Alishire",
+    "case_docket": "22-CR-222",
+    "group": "CES",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 1600000,
+    "organizations": [
+      "Community Enhancement Services"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-037",
+    "person_id": "fof-p-ahmed-yasin-ali",
+    "canonical_name": "Ahmed Yasin Ali",
+    "case_docket": "22-CR-222",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-038",
+    "person_id": "fof-p-khadar-jigre-adan",
+    "canonical_name": "Khadar Jigre Adan",
+    "case_docket": "22-CR-222",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-039",
+    "person_id": "fof-p-sharmake-jama",
+    "canonical_name": "Sharmake Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "alleged_amount": 4300000,
+    "organizations": [
+      "Brava"
+    ],
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-040",
+    "person_id": "fof-p-ayan-jama",
+    "canonical_name": "Ayan Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-041",
+    "person_id": "fof-p-asha-jama",
+    "canonical_name": "Asha Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-042",
+    "person_id": "fof-p-fartun-jama",
+    "canonical_name": "Fartun Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-043",
+    "person_id": "fof-p-mustafa-jama",
+    "canonical_name": "Mustafa Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-044",
+    "person_id": "fof-p-zamzam-jama",
+    "canonical_name": "Zamzam Jama",
+    "case_docket": "22-CR-225",
+    "group": "Brava",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-045",
+    "person_id": "fof-p-bekam-addissu-merdassa",
+    "canonical_name": "Bekam Addissu Merdassa",
+    "group": "information, 2022",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "notes": "Charged by information with conspiracy to commit wire fraud.",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-046",
+    "person_id": "fof-p-hadith-yusuf-ahmed",
+    "canonical_name": "Hadith Yusuf Ahmed",
+    "group": "information, 2022",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "source_ids": [
+      "S01",
+      "S24"
+    ],
+    "notes": "Recruiter role described in later Bock filings (S24).",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-047",
+    "person_id": "fof-p-hanna-marekegn",
+    "canonical_name": "Hanna Marekegn",
+    "group": "information, 2022",
+    "status": "charged",
+    "charged_date": "2022-09-20",
+    "investigation_family": "inv-feeding-our-future",
+    "source_ids": [
+      "S01"
+    ]
+  },
+  {
+    "defendant_id": "fof-d-048",
+    "person_id": "fof-p-kawsar-jama",
+    "canonical_name": "Kawsar Jama",
+    "case_docket": "22-CR-226",
+    "group": "wave 2",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 3700000,
+    "source_ids": [
+      "S02"
+    ],
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-049",
+    "person_id": "fof-p-abdikadir-kadiye",
+    "canonical_name": "Abdikadir Kadiye",
+    "case_docket": "22-CR-226",
+    "group": "wave 2",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 1100000,
+    "source_ids": [
+      "S02"
+    ],
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-050",
+    "person_id": "fof-p-abdulkadir-awale",
+    "canonical_name": "Abdulkadir Awale",
+    "case_docket": "22-CR-226",
+    "group": "wave 2",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 11800000,
+    "source_ids": [
+      "S02"
+    ],
+    "notes": "≥$83,000 kickbacks alleged.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-051",
+    "person_id": "fof-p-khadra-abdi",
+    "canonical_name": "Khadra Abdi",
+    "case_docket": "22-CR-226",
+    "group": "wave 2",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 3400000,
+    "source_ids": [
+      "S02"
+    ],
+    "notes": "≥$17,000 kickbacks alleged.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-052",
+    "person_id": "fof-p-ayan-farah-abukar",
+    "canonical_name": "Ayan Farah Abukar",
+    "case_docket": "23-CR-80",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 5700000,
+    "source_ids": [
+      "S02"
+    ],
+    "notes": "~$5.7 million received; >$330,000 kickbacks.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-053",
+    "person_id": "fof-p-sade-osman-hashi",
+    "canonical_name": "Sade Osman Hashi",
+    "case_docket": "23-CR-81",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 5700000,
+    "source_ids": [
+      "S02"
+    ],
+    "notes": "~$5.7 million received; >$150,000 kickbacks.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-054",
+    "person_id": "fof-p-sharon-denise-ross",
+    "canonical_name": "Sharon Denise Ross",
+    "case_docket": "23-CR-82",
+    "group": "House of Refuge",
+    "status": "sentenced",
+    "charged_date": "2023-03-13",
+    "sentence": "43 months (IRS Pub 3583)",
+    "restitution": 2400000,
+    "alleged_amount": 2800000,
+    "organizations": [
+      "House of Refuge"
+    ],
+    "source_ids": [
+      "S02",
+      "S21"
+    ],
+    "notes": "~$2.8 million received at charging. S21 recap: 43 months and $2.4 million restitution.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-055",
+    "person_id": "fof-p-mohamed-ali-hussein",
+    "canonical_name": "Mohamed Ali Hussein",
+    "case_docket": "23-CR-91",
+    "group": "information",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 5000000,
+    "source_ids": [
+      "S02"
+    ],
+    "notes": ">$5 million with Lul Ali; >$100,000 kickbacks.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-056",
+    "person_id": "fof-p-lul-bashir-ali",
+    "canonical_name": "Lul Bashir Ali",
+    "case_docket": "23-CR-91",
+    "group": "information",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "alleged_amount": 5000000,
+    "source_ids": [
+      "S02",
+      "S22"
+    ],
+    "notes": "Cooperator testimony at Bock trial (S22). Status remains charged in this corpus (no plea PR captured as a numbered primary for her own case).",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-057",
+    "person_id": "fof-p-mulata-yusuf-ali",
+    "canonical_name": "Mulata Yusuf Ali",
+    "case_docket": "23-CR-92",
+    "status": "charged",
+    "charged_date": "2023-03-13",
+    "source_ids": [
+      "S02"
+    ],
+    "notes": "Charged with theft of government funds.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-058",
+    "person_id": "fof-p-ikram-yusuf-mohamed",
+    "canonical_name": "Ikram Yusuf Mohamed",
+    "case_docket": "24-cr-15",
+    "group": "Mohamed family",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-03-18",
+    "alleged_amount": 14600000,
+    "organizations": [
+      "IM Consultation",
+      "Star Distribution"
+    ],
+    "source_ids": [
+      "S10"
+    ],
+    "notes": "Pleaded guilty to wire fraud. Family group alleged $14.6 million.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-059",
+    "person_id": "fof-p-shakur-abdinur-abdisalam",
+    "canonical_name": "Shakur Abdinur Abdisalam",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-03-18",
+    "organizations": [
+      "Inspiring Youth"
+    ],
+    "source_ids": [
+      "S10"
+    ],
+    "notes": "Wire fraud. Inspiring Youth >$1.5 million received; $21,000 kickback.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-060",
+    "person_id": "fof-p-aisha-hassan-hussein",
+    "canonical_name": "Aisha Hassan Hussein",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-03-20",
+    "alleged_amount": 2200000,
+    "organizations": [
+      "United Youth"
+    ],
+    "source_ids": [
+      "S10"
+    ],
+    "notes": "Wire fraud. United Youth ~$2.2 million; $166,000 kickback.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-061",
+    "person_id": "fof-p-sahra-sharif-osman",
+    "canonical_name": "Sahra Sharif Osman",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-03-20",
+    "organizations": [
+      "Youth International"
+    ],
+    "source_ids": [
+      "S10"
+    ],
+    "notes": "Wire fraud. Youth International >$1.4 million received; $7,500 kickback.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-062",
+    "person_id": "fof-p-fadumo-mohamed-yusuf",
+    "canonical_name": "Fadumo Mohamed Yusuf",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-03-20",
+    "organizations": [
+      "Active Minds"
+    ],
+    "source_ids": [
+      "S10"
+    ],
+    "notes": "Wire fraud. Active Minds >$1 million received; $38,500 kickback.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-063",
+    "person_id": "fof-p-suleman-yusuf-mohamed",
+    "canonical_name": "Suleman Yusuf Mohamed",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-04-02",
+    "restitution": 8662287,
+    "organizations": [
+      "Star Distribution"
+    ],
+    "source_ids": [
+      "S11"
+    ],
+    "notes": "Wire fraud. Star Distribution ~$10.1 million received; agreed restitution $8,662,287.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-064",
+    "person_id": "fof-p-gandi-yusuf-mohamed",
+    "canonical_name": "Gandi Yusuf Mohamed",
+    "case_docket": "24-cr-15",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2026-04-09",
+    "restitution": 1300000,
+    "source_ids": [
+      "S11"
+    ],
+    "notes": "Money laundering. ~$1.3 million laundered, agreed as restitution.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-065",
+    "person_id": "fof-p-hussein-mohamed-farah",
+    "canonical_name": "Hussein Mohamed Farah",
+    "group": "73rd defendant; information; New Vision Foundation",
+    "status": "charged",
+    "charged_date": "2025-08-06",
+    "alleged_amount": 2700000,
+    "organizations": [
+      "New Vision Foundation"
+    ],
+    "source_ids": [
+      "S03"
+    ],
+    "notes": "73rd defendant. One count wire fraud. New Vision received approximately $2.7 million Feb 2021–Jan 2022.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-066",
+    "person_id": "fof-p-muna-wais-fidhin",
+    "canonical_name": "Muna Wais Fidhin",
+    "group": "75th defendant; 10-count indictment",
+    "status": "charged",
+    "charged_date": "2025-09-04",
+    "alleged_amount": 1000000,
+    "source_ids": [
+      "S04"
+    ],
+    "notes": "3 wire fraud, 4 federal programs bribery, 3 money laundering. ~300,000 meals claimed; ~$27,000 kickbacks.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-067",
+    "person_id": "fof-p-ousman-camara",
+    "canonical_name": "Ousman Camara",
+    "group": "77th defendant; 9-count indictment",
+    "status": "charged",
+    "charged_date": "2025-11-20",
+    "alleged_amount": 1000000,
+    "organizations": [
+      "K’s Grocery"
+    ],
+    "source_ids": [
+      "S05"
+    ],
+    "notes": "Wire fraud, federal programs bribery, money laundering. >300,000 meals; >$100,000 wired abroad; ~$87,000 kickbacks. USDA SNAP disqualification of K’s Grocery, Aug 2015.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-068",
+    "person_id": "fof-p-hibo-daar",
+    "canonical_name": "Hibo Daar",
+    "group": "71st defendant",
+    "status": "charged",
+    "charged_date": "2025-05-01",
+    "alleged_amount": 2400000,
+    "organizations": [
+      "Northside Wellness"
+    ],
+    "source_ids": [
+      "S16"
+    ],
+    "notes": "Charged date is month-approximate (~May 2025); detention hearing May 30. Two counts wire fraud. >$2.4 million claims; bank account received >$1.7 million; $72,000 bribes. Date precision month_approximate.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-069",
+    "person_id": "fof-p-ahmednaji-maalim-aftin-sheikh",
+    "canonical_name": "Ahmednaji Maalim Aftin Sheikh",
+    "group": "74th defendant",
+    "status": "charged",
+    "charged_date": "2025-08-01",
+    "source_ids": [
+      "S17"
+    ],
+    "notes": "Charged date month-approximate (~Aug 2025). Conspiracy to commit international money laundering. Kenyan national alleged to have laundered proceeds for brother Abdiaziz Farah.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-070",
+    "person_id": "fof-p-said-abdullahi-ereg",
+    "canonical_name": "Said Abdullahi Ereg",
+    "group": "Evergreen Grocery",
+    "status": "charged",
+    "charged_date": "2024-06-24",
+    "alleged_amount": 4200000,
+    "organizations": [
+      "Evergreen Grocery"
+    ],
+    "source_ids": [
+      "S18"
+    ],
+    "notes": "Indicted 2024-06-24 (conspiracy to commit wire fraud, wire fraud, money laundering). Surrendered to FBI (S18 date 2026 year-precision). Wife Najmo Ahmed pleaded.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-071",
+    "person_id": "fof-p-najmo-ahmed",
+    "canonical_name": "Najmo Ahmed",
+    "group": "Ereg spouse",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "plea_date": "2025-02-24",
+    "source_ids": [
+      "S18"
+    ],
+    "notes": "Money laundering. Sentencing set 2026-06-15 in S18. Do not mark sentenced unless a sentencing PR is captured.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-072",
+    "person_id": "fof-p-abdulkarim-shafii-farah",
+    "canonical_name": "Abdulkarim Shafii Farah",
+    "case_docket": "24-cr-173",
+    "group": "juror bribery",
+    "status": "sentenced",
+    "plea_status": "guilty",
+    "sentencing_date": "2026-03-04",
+    "sentence": "57 months plus 1 year supervised release",
+    "source_ids": [
+      "S09",
+      "S20"
+    ],
+    "notes": "Sentenced by Judge Eric C. Tostrud. Not the July 2026 120-month sentence. Role: drove Ali; recorded delivery; removed license plate.",
+    "investigation_family": "inv-feeding-our-future"
+  },
+  {
+    "defendant_id": "fof-d-073",
+    "person_id": "fof-p-ladan-mohamed-ali",
+    "canonical_name": "Ladan Mohamed Ali",
+    "case_docket": "24-cr-173",
+    "group": "juror bribery",
+    "status": "pleaded",
+    "plea_status": "guilty",
+    "source_ids": [
+      "S08",
+      "S09",
+      "S20",
+      "S23"
+    ],
+    "notes": "Delivered gift bag / $120,000 cash to Juror 52's home on 2024-06-02. Plea indicated in S20 set; sentencing pending in those PRs.",
+    "investigation_family": "inv-feeding-our-future"
+  }
+]
