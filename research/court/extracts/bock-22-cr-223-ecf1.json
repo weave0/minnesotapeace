@@ -1,0 +1,155 @@
+{
+  "docket_number": "0:22-cr-00223",
+  "ecf": 1,
+  "filed": "2022-09-13",
+  "pages": 58,
+  "source_pdf": "research/court/pdfs/0_22-cr-00223_ecf1_Indictment.pdf",
+  "sha256": "060c069f751742405427ab4277ff30809d6724539d4e8b86e29b6dbbf393393a",
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 371",
+    "18 U.S.C. \u00a7 666",
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 1956",
+    "18 U.S.C. \u00a7 1957"
+  ],
+  "section_1349_present": false,
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Aimee Marie Bock"
+    },
+    {
+      "n": 2,
+      "name": "Abdikerm Abdelahi Eidleh"
+    },
+    {
+      "n": 3,
+      "name": "Salim Ahmed Said"
+    },
+    {
+      "n": 4,
+      "name": "Abdulkadir Nur Salah"
+    },
+    {
+      "n": 5,
+      "name": "Ahmed Sharif Omar-Hashim",
+      "aka": [
+        "Salah Donyale"
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Abdi Nur Salah"
+    },
+    {
+      "n": 7,
+      "name": "Abdihakim Ali Ahmed"
+    },
+    {
+      "n": 8,
+      "name": "Ahmed Mohamed Artan"
+    },
+    {
+      "n": 9,
+      "name": "Abdikadir Ainanshe Mohamud",
+      "aka": [
+        "AK"
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Abdinasir Mahamed Abshir"
+    },
+    {
+      "n": 11,
+      "name": "Asad Mohamed Abshir"
+    },
+    {
+      "n": 12,
+      "name": "Hamdi Hussein Omar"
+    },
+    {
+      "n": 13,
+      "name": "Ahmed Abdullahi Ghedi"
+    },
+    {
+      "n": 14,
+      "name": "Abdirahman Mohamud Ahmed",
+      "aka": [
+        "Chef Abcos"
+      ]
+    }
+  ],
+  "counts": [
+    {
+      "count": "1",
+      "statute": "18 U.S.C. \u00a7 371",
+      "title": "Conspiracy (child-nutrition fraud)",
+      "pages": "through 32",
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
+      "notes": "Closes at p.32 immediately before Counts 2-14. Narrative includes Southcross site sale for $310,000 (para 141) and meal-count claims."
+    },
+    {
+      "count": "2-14",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "pages": "32-35",
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+      "notes": "Table of interstate emails. Count 2: Bock/Said/Abdihakim Ahmed/Ghedi email to MDE 2020-09-08 ASA Limited application. Count 14: Abdulkadir Salah 2021-12-02 email to FOF subject 'all the companies'."
+    },
+    {
+      "count": "15",
+      "statute": "18 U.S.C. \u00a7 371",
+      "title": "Conspiracy to commit federal programs bribery",
+      "pages": "35-39",
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
+      "named_defendants": [
+        "Aimee Marie Bock",
+        "Abdikerm Abdelahi Eidleh",
+        "Salim Ahmed Said",
+        "Abdulkadir Nur Salah",
+        "Ahmed Sharif Omar-Hashim",
+        "Abdihakim Ali Ahmed",
+        "Ahmed Mohamed Artan",
+        "Abdikadir Ainanshe Mohamud",
+        "Abdinasir Mohamed Abshir"
+      ],
+      "notes": "Object: bribe FOF agents in transactions of $5,000 or more. Overt acts include $310,000 cashier's check from Cosmopolitan Business Solutions to Bock (para 178, 2021-08-18) and multiple $7,000/$14,000 checks to Eidleh Inc / Hope Suppliers."
+    },
+    {
+      "count": "16-40",
+      "statute": "18 U.S.C. \u00a7 666",
+      "title": "Federal programs bribery",
+      "pages": "39+",
+      "notes": "Heading and caption support \u00a7 666. Individual bribe-table rows still being OCRed; do not treat table dollars as proven_loss."
+    },
+    {
+      "count": "41",
+      "statute": "18 U.S.C. \u00a7 1956(h)",
+      "title": "Conspiracy to commit money laundering",
+      "pages": "through 49",
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1956(h).",
+      "notes": "Includes alleged >$1 million to Five A's Projects LLC to buy former Kelly's 19th Hole (Brooklyn Park) and >$5 million into Eidleh shell companies. CHARGED_ALLEGED."
+    },
+    {
+      "count": "42-61",
+      "statute": "18 U.S.C. \u00a7 1957",
+      "title": "Money laundering (monetary transactions >$10,000)",
+      "pages": "49-52",
+      "notes": "Specified unlawful activity: wire fraud \u00a7 1343. Sample charged transactions (alleged): Said ~$47,000 toward 2021 Silverado (count 42); Ghedi ~$114,887 Cadillac Escalade (count 43 OCR '48'); Said ~$60,000 Mercedes GLA; Abshir ~$45,000 Land Rover; Omar-Hashim ~$100,000 home at 1336 Vincent Avenue N, Minneapolis; Abdirahman Ahmed ~$42,233 Lexus RX350; Eidleh ~$95,000 mortgage 15101 County Road 5, Burnsville. Table OCR is messy; treat amounts as alleged."
+    }
+  ],
+  "forfeiture": {
+    "starts_page": 52,
+    "notes": "FORFEITURE ALLEGATIONS heading on p.52; cites 1956 and 1957. Details not fully OCRed."
+  },
+  "ocr_quality": "page-sample (p.32-35, 39, 49-52). Count 1 heading page not yet captured; closing statute on p.32 is clear. Counts 16-40 row table pending. 18 U.S.C. \u00a7 1349 not found in sampled pages or caption.",
+  "gaps": [
+    "Full 58-page OCR still running",
+    "Count 16-40 bribe table rows",
+    "Forfeiture property list",
+    "Count 1 heading page number"
+  ]
+}
