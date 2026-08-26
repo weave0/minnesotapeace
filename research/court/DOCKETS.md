@@ -2,7 +2,7 @@
 
 Compiled 2026-08-26 from CourtListener public search. No PACER purchases. Authenticated docket-entry API was 401 without a CL token.
 
-**Dockets indexed:** 6 of 12 targeted.
+**Dockets indexed:** 7 of 12 targeted.
 
 ## `0:22-cr-00124` — United States v. Farah
 
@@ -58,9 +58,17 @@ Compiled 2026-08-26 from CourtListener public search. No PACER purchases. Authen
 - PACER case id: 203034
 - Parties (12): Fahad Nur; Abdikadir Kadiye; Kawsar Jama; Anab Artan Awad; Abdulkadir Awale; Farhiya Mohamud; Haji Osman Salad; Abdul Mohamed Osman; Khadra Abdi; USA; Sharmarke Issa; John C. Ellis, Jr.
 
+## `0:24-cr-00173` — United States v. Farah
+
+- Filed: 2024-06-25
+- Judge: Eric Christian Tostrud
+- Court: District Court, D. Minnesota (`mnd`)
+- CourtListener: https://www.courtlistener.com/docket/68889612/united-states-v-farah/
+- PACER case id: 216388
+- Parties (6): Abdiaziz Shafii Farah; Ladan Mohamed Ali; USA; Said Shafii Farah; Abdulkarim Shafii Farah; Abdimajid Mohamed Nur
+
 ## Not indexed this pass (429 / harvest cut off)
 
-- `0:24-cr-00173` juror bribery
 - `0:24-cr-00015` Yusuf family
 - HSS `0:25-cr-00349`, `351`, `353`, `354`
 
@@ -68,3 +76,4 @@ Compiled 2026-08-26 from CourtListener public search. No PACER purchases. Authen
 
 - No RECAP PDFs downloaded
 - Docket *entries* (indictment PDFs, minute entries) need a free CourtListener API token
+- Public search 429 persisted after 3 backoffs on `0:24-cr-00015` (this continuation pass indexed `0:24-cr-00173` only)
