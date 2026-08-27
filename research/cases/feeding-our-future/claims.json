@@ -938,13 +938,13 @@
   },
   {
     "claim_id": "fof-c-029",
-    "claim_text": "The September 13, 2022 indictment in United States v. Bock, 0:22-cr-00223, ECF 1, charges 14 defendants (led by Aimee Marie Bock) in 61 counts: Count 1 conspiracy under 18 U.S.C. \u00a7 371; Counts 2\u201314 wire fraud under \u00a7 1343; Count 15 conspiracy to commit federal-programs bribery under \u00a7 371; Counts 16\u201340 federal-programs bribery under \u00a7 666; Count 41 money-laundering conspiracy under \u00a7 1956(h); Counts 42\u201361 monetary transactions under \u00a7 1957. Caption statutes are 18 U.S.C. \u00a7\u00a7 371, 666, 1343, 1956, and 1957. 18 U.S.C. \u00a7 1349 does not appear on the caption of this instrument.",
+    "claim_text": "The September 13, 2022 indictment in United States v. Bock, 0:22-cr-00223, ECF 1, charges 14 caption defendants in 61 counts: Count 1 conspiracy to commit wire fraud under 18 U.S.C. \u00a7\u00a7 371 and 1343 (Abdirahman Mohamud Ahmed not named in this count); Counts 2\u201314 wire fraud under \u00a7 1343; Count 15 conspiracy to commit federal-programs bribery under \u00a7 371; Counts 16\u201340 federal-programs bribery under \u00a7\u00a7 666(a)(1)(B) and (a)(2), including a $310,000 Cosmopolitan-to-Bock check as Count 40; Count 41 money-laundering conspiracy under \u00a7 1956(h) (Bock not named; Abdirahman is); Counts 42\u201361 monetary transactions under \u00a7 1957. Caption statutes are 18 U.S.C. \u00a7\u00a7 371, 666, 1343, 1956, and 1957. 18 U.S.C. \u00a7 1349 does not appear in this instrument.",
     "evidence_class": "CHARGED_ALLEGED",
     "status": "charged",
     "source_ids": [
       "S29"
     ],
-    "confidence": 0.93,
+    "confidence": 0.96,
     "is_allegation": true,
     "event_date": "2022-09-13",
     "case_number": "0:22-cr-00223",
@@ -953,7 +953,7 @@
       "SFSP"
     ],
     "proposition_class": "A",
-    "review_notes": "From OCR of RECAP PDF ECF 1, not from a press release. Indictment is allegation. Do not treat charged vehicle/home purchases as proven_loss. Count 16\u201340 row table still being OCRed; statute for that block is caption + heading.",
+    "review_notes": "Locked from full tesseract of RECAP ECF 1. A few bribe-table rows are OCR-garbled. Indictment remains allegation.",
     "reviewed_at": "2026-08-26T00:00:00Z",
     "is_inference": false
   },

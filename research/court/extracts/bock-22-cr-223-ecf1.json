@@ -5,6 +5,7 @@
   "pages": 58,
   "source_pdf": "research/court/pdfs/0_22-cr-00223_ecf1_Indictment.pdf",
   "sha256": "060c069f751742405427ab4277ff30809d6724539d4e8b86e29b6dbbf393393a",
+  "ocr_text": "research/court/raw/bock-indictment-ocr.txt",
   "evidence_class": "PRIMARY_COURT_RECORD",
   "evidentiary_status": "CHARGED_ALLEGED",
   "caption_statutes": [
@@ -85,11 +86,28 @@
   "counts": [
     {
       "count": "1",
-      "statute": "18 U.S.C. \u00a7 371",
-      "title": "Conspiracy (child-nutrition fraud)",
-      "pages": "through 32",
+      "statute": "18 U.S.C. \u00a7\u00a7 371 and 1343",
+      "title": "Conspiracy to commit wire fraud",
+      "pages": "6-32",
+      "heading_page": 6,
       "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
-      "notes": "Closes at p.32 immediately before Counts 2-14. Narrative includes Southcross site sale for $310,000 (para 141) and meal-count claims."
+      "object_quote": "The object and purpose of the conspiracy was to carry out a fraudulent scheme to obtain tens of millions of dollars in Federal Child Nutrition Program funds by submitting fraudulent claims that they were serving meals to thousands of children a day.",
+      "named_defendants": [
+        "Aimee Marie Bock",
+        "Abdikerm Abdelahi Eidleh",
+        "Salim Ahmed Said",
+        "Abdulkadir Nur Salah",
+        "Ahmed Sharif Omar-Hashim",
+        "Abdi Nur Salah",
+        "Abdihakim Ali Ahmed",
+        "Ahmed Mohamed Artan",
+        "Abdikadir Ainanshe Mohamud",
+        "Abdinasir Mahamed Abshir",
+        "Asad Mohamed Abshir",
+        "Hamdi Hussein Omar",
+        "Ahmed Abdullahi Ghedi"
+      ],
+      "notes": "Caption defendant 14 Abdirahman Mohamud Ahmed (Chef Abcos) is NOT named in Count 1. He is named in Count 41. p.7 also cites \u00a7\u00a7 371 and 1343 as the object offense."
     },
     {
       "count": "2-14",
@@ -97,7 +115,7 @@
       "title": "Wire fraud",
       "pages": "32-35",
       "closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
-      "notes": "Table of interstate emails. Count 2: Bock/Said/Abdihakim Ahmed/Ghedi email to MDE 2020-09-08 ASA Limited application. Count 14: Abdulkadir Salah 2021-12-02 email to FOF subject 'all the companies'."
+      "notes": "Interstate-email table. Count 2: Bock/Said/Abdihakim Ahmed/Ghedi to MDE 2020-09-08 ASA Limited application. Count 14: Abdulkadir Salah 2021-12-02 email to FOF subject 'all the companies'."
     },
     {
       "count": "15",
@@ -116,40 +134,277 @@
         "Abdikadir Ainanshe Mohamud",
         "Abdinasir Mohamed Abshir"
       ],
-      "notes": "Object: bribe FOF agents in transactions of $5,000 or more. Overt acts include $310,000 cashier's check from Cosmopolitan Business Solutions to Bock (para 178, 2021-08-18) and multiple $7,000/$14,000 checks to Eidleh Inc / Hope Suppliers."
+      "notes": "Overt acts include $310,000 cashier's check from Cosmopolitan Business Solutions to Bock (para 178)."
     },
     {
       "count": "16-40",
-      "statute": "18 U.S.C. \u00a7 666",
+      "statute": "18 U.S.C. \u00a7\u00a7 666(a)(1)(B) and (a)(2)",
       "title": "Federal programs bribery",
-      "pages": "39+",
-      "notes": "Heading and caption support \u00a7 666. Individual bribe-table rows still being OCRed; do not treat table dollars as proven_loss."
+      "pages": "39-41",
+      "closing_quote": "All in violation of Title 18, United States Code, Sections 666(a)(1)(B) and (a)(2).",
+      "notes": "Table OCR is messy on a few row numbers (23-24, 30, 32, 37). Amounts are CHARGED_ALLEGED, not proven_loss. Eidleh is the alleged recipient on almost every row; Count 40 is the $310,000 Cosmopolitan-to-Bock check dated 2021-08-13.",
+      "bribe_rows_ocr": [
+        {
+          "count": 16,
+          "date": "2020-07-28",
+          "amount_usd": 1500,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 17,
+          "date": "2020-08-20",
+          "amount_usd": 2500,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 18,
+          "date": "2020-09-15",
+          "amount_usd": 5000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 19,
+          "date": "2020-11-25",
+          "amount_usd": 5000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 20,
+          "date": "2020-11-28",
+          "amount_usd": 5000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdulkadir Salah"
+          ]
+        },
+        {
+          "count": 21,
+          "date": "2020-12-30",
+          "amount_usd": 14000,
+          "from": "ASA Limited LLC",
+          "to": "Hope Suppliers LLC",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdihakim Ahmed"
+          ]
+        },
+        {
+          "count": 22,
+          "date": "2021-01-08",
+          "amount_usd": 7000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdulkadir Salah"
+          ]
+        },
+        {
+          "count": 25,
+          "date": "2021-01-18",
+          "amount_usd": 24000,
+          "from": "Olive Management Inc.",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Ahmed Omar-Hashim"
+          ],
+          "ocr_note": "OCR 'Kidleh Inc' treated as Eidleh"
+        },
+        {
+          "count": 26,
+          "date": "2021-01-29",
+          "amount_usd": 7000,
+          "from": "ASA Limited LLC",
+          "to": "Hope Suppliers LLC",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdihakim Ahmed"
+          ]
+        },
+        {
+          "count": 27,
+          "date": "2021-02-08",
+          "amount_usd": 56000,
+          "from": "Horseed Management LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdinasir Abshir"
+          ]
+        },
+        {
+          "count": 28,
+          "date": "2021-02-08",
+          "amount_usd": 56000,
+          "from": "Horseed Management",
+          "to": "Bridge Logistics LLC",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdinasir Abshir"
+          ]
+        },
+        {
+          "count": 29,
+          "date": "2021-02-19",
+          "amount_usd": 68338,
+          "from": "Tunyar Trading LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdikadir Mohamud"
+          ]
+        },
+        {
+          "count": 31,
+          "date": "2021-02-19",
+          "amount_usd": 68333,
+          "from": "Tunyar Trading",
+          "to": "Bridge Logistics LLC",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Abdikadir Mohamud"
+          ]
+        },
+        {
+          "count": 33,
+          "date": "2021-03-01",
+          "amount_usd": 7000,
+          "from": "Olive Management Inc.",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Ahmed Omar-Hashim"
+          ]
+        },
+        {
+          "count": 35,
+          "date": "2021-03-19",
+          "amount_usd": 7000,
+          "from": "Olive Management Inc.",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Ahmed Omar-Hashim"
+          ]
+        },
+        {
+          "count": 36,
+          "date": "2021-03-23",
+          "amount_usd": 7000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 38,
+          "date": "2021-05-27",
+          "amount_usd": 14000,
+          "from": "Cosmopolitan Business Solutions LLC",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Salim Said"
+          ]
+        },
+        {
+          "count": 39,
+          "date": "2021-05-27",
+          "amount_usd": 7000,
+          "from": "Olive Management Inc.",
+          "to": "Eidleh Inc",
+          "defendants_ocr": [
+            "Abdikerm Eidleh",
+            "Ahmed Omar-Hashim"
+          ]
+        },
+        {
+          "count": 40,
+          "date": "2021-08-13",
+          "amount_usd": 310000,
+          "from": "Cosmopolitan Business Solutions",
+          "to": "Aimee Bock",
+          "defendants_ocr": [
+            "Aimee Bock",
+            "Abdulkadir Salah"
+          ]
+        }
+      ],
+      "ocr_rows_unreadable": [
+        23,
+        24,
+        30,
+        32,
+        34,
+        37
+      ]
     },
     {
       "count": "41",
       "statute": "18 U.S.C. \u00a7 1956(h)",
+      "object_statute": "18 U.S.C. \u00a7 1956(a)(1)(B)(i)",
       "title": "Conspiracy to commit money laundering",
-      "pages": "through 49",
+      "pages": "42-49",
+      "heading_page": 42,
       "closing_quote": "All in violation of Title 18, United States Code, Section 1956(h).",
-      "notes": "Includes alleged >$1 million to Five A's Projects LLC to buy former Kelly's 19th Hole (Brooklyn Park) and >$5 million into Eidleh shell companies. CHARGED_ALLEGED."
+      "named_defendants": [
+        "Abdikerm Abdelahi Eidleh",
+        "Salim Ahmed Said",
+        "Abdulkadir Nur Salah",
+        "Ahmed Sharif Omar-Hashim",
+        "Abdi Nur Salah",
+        "Abdihakim Ali Ahmed",
+        "Ahmed Mohamed Artan",
+        "Abdikadir Ainanshe Mohamud",
+        "Abdinasir Mahamed Abshir",
+        "Asad Mohamed Abshir",
+        "Hamdi Hussein Omar",
+        "Ahmed Abdullahi Ghedi",
+        "Abdirahman Mohamud Ahmed"
+      ],
+      "notes": "Bock is NOT named in Count 41. Specified unlawful activity: wire fraud \u00a7 1343. Concealment laundering. Includes alleged >$1 million to Five A's Projects LLC (Kelly's 19th Hole, Brooklyn Park) and >$5 million into Eidleh shells."
     },
     {
       "count": "42-61",
       "statute": "18 U.S.C. \u00a7 1957",
       "title": "Money laundering (monetary transactions >$10,000)",
       "pages": "49-52",
-      "notes": "Specified unlawful activity: wire fraud \u00a7 1343. Sample charged transactions (alleged): Said ~$47,000 toward 2021 Silverado (count 42); Ghedi ~$114,887 Cadillac Escalade (count 43 OCR '48'); Said ~$60,000 Mercedes GLA; Abshir ~$45,000 Land Rover; Omar-Hashim ~$100,000 home at 1336 Vincent Avenue N, Minneapolis; Abdirahman Ahmed ~$42,233 Lexus RX350; Eidleh ~$95,000 mortgage 15101 County Road 5, Burnsville. Table OCR is messy; treat amounts as alleged."
+      "notes": "SUA: wire fraud \u00a7 1343. Sample alleged transactions: Said ~$47,000 toward 2021 Silverado (count 42); Ghedi ~$114,887 Cadillac Escalade; Omar-Hashim ~$100,000 home at 1336 Vincent Avenue N, Minneapolis; Abdirahman Ahmed ~$42,233 Lexus RX350; Eidleh ~$95,000 mortgage 15101 County Road 5, Burnsville."
     }
   ],
   "forfeiture": {
     "starts_page": 52,
-    "notes": "FORFEITURE ALLEGATIONS heading on p.52; cites 1956 and 1957. Details not fully OCRed."
+    "notes": "FORFEITURE ALLEGATIONS heading on p.52; cites 1956 and 1957."
   },
-  "ocr_quality": "page-sample (p.32-35, 39, 49-52). Count 1 heading page not yet captured; closing statute on p.32 is clear. Counts 16-40 row table pending. 18 U.S.C. \u00a7 1349 not found in sampled pages or caption.",
+  "ocr_quality": "Full 58-page tesseract. Page 1 recovered from higher-contrast PNG. \u00a7 1349 not present anywhere in OCR. A few bribe-table row numbers (23-24, 30, 32, 34, 37) are garbled.",
   "gaps": [
-    "Full 58-page OCR still running",
-    "Count 16-40 bribe table rows",
-    "Forfeiture property list",
-    "Count 1 heading page number"
+    "Garbled bribe-table rows 23-24, 30, 32, 34, 37",
+    "Forfeiture property list not itemized",
+    "FOF/Empire fraud indictment on 0:22-cr-00124 still missing"
   ]
 }
