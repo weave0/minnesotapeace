@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-fof-ein-81-4343304",
+  "claim_text": "Feeding Our Future filed IRS Form 990 under EIN 81-4343304 for the fiscal period October 1, 2019 through September 30, 2020, listing Minneapolis address 3055 Old Highway 8, Suite 312.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-irs-990-fof-fy2020"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-irs-990-fof-fy2020",
+      "page": 1,
+      "quote": "FEEDING OUR FUTURE ... 81-4343304 ... 3055 OLD HIGHWAY 8 STE 312, MINNEAPOLIS, MN 55418"
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

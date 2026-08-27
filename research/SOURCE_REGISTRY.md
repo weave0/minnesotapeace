@@ -55,6 +55,15 @@ This is a starter registry for primary and high-value sources identified in the 
 - **Fischer v. United States, 529 U.S. 667 (2000).** Medicare payments may constitute federal benefits for purposes of § 666 depending on the program/entity relationship.
 - **Kousisis v. United States (2025).** Index current Supreme Court wire-fraud treatment of fraudulent inducement and economic-property requirements; use the official opinion for precise holding.
 
+
+## Corporate, charity, and business filings (entity graph)
+
+- **IRS Form 990 series (TEOS epostcard `/cor/` PDFs).** Primary source for what a nonprofit *reported* (officers, addresses, revenue, contractors). Not proven program receipts and not alleged-loss. Feeding Our Future EIN 81-4343304 public 990s stop at FY ending 2020-09-30. Partners In Nutrition EIN 47-4302258 has e-filed 990s through FY2024.
+- **IRS Exempt Organizations Business Master File (state extracts).** Use to confirm current listing, ruling-date fields, and absence. Absence is not itself a fraud finding.
+- **ProPublica Nonprofit Explorer.** Index only. Prefer the IRS PDF/XML over the Explorer UI for line items.
+- **Minnesota Secretary of State MBLS business filings.** File number, status, registered office, governors. Portal was TLS/CAPTCHA-blocked from the research host on 2026-08-26; do not invent file numbers.
+- **Minnesota Attorney General petition for supervised dissolution of Feeding Our Future.** Civil petition. SOS dates and IRS-revocation statements are petition-cited until independently confirmed. The copy currently in the corpus was retrieved from a third-party host and has a blank court file number.
+
 ## Critical qualification records
 
 - The frequently reported **$9 billion** Minnesota Medicaid fraud figure must be stored as a **fraud estimate / investigative hypothesis**, not proven loss. Any visualization must identify the speaker/source, denominator, methodology, period, and whether the estimate has been audited or adjudicated.

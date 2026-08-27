@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-ago-petition-irs-501c3-2017-02-28",
+  "claim_text": "The Minnesota Attorney General petition alleges Feeding Our Future obtained IRS recognition of 501(c)(3) status on February 28, 2017 (Decl. Ex. 4).",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "status": "alleged",
+  "source_ids": [
+    "src-ago-fof-dissolution-petition-copy"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-ago-fof-dissolution-petition-copy",
+      "page": 2,
+      "quote": "Feeding Our Future obtained Internal Revenue Service (\u201cIRS\u201d) recognition of its federal tax-exempt status under Section 501(c)(3) of the Internal Revenue Code on February 28, 2017."
+    }
+  ],
+  "confidence": "MODERATE",
+  "is_allegation": true,
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

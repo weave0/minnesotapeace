@@ -1,0 +1,28 @@
+{
+  "entity_id": "org-empire-cuisine-and-market",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Empire Cuisine and Market",
+  "aliases": [
+    "Empire Cuisine & Market"
+  ],
+  "ein": null,
+  "business_reg_ids": [],
+  "addresses": [
+    {
+      "line1": "232 Marschall Road",
+      "line2": null,
+      "city": "Shakopee",
+      "state": "MN",
+      "postal_code": "55379",
+      "country": "US",
+      "raw": "232 MARSCHALL ROAD, SHAKOPEE, MN 55379",
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ]
+    }
+  ],
+  "notes": "Address and name as listed on Partners In Nutrition FY2021 Form 990 Part VII Section B (independent contractor, description PROVIDER PAYMENTS, compensation $1,819,633). That is PIN's filing, not a finding that the payment was fraudulent. SOS file number not yet retrieved. Do not treat a shared meal-program relationship as conspiracy by itself.",
+  "source_ids": [
+    "src-irs-990-pin-fy2021"
+  ]
+}

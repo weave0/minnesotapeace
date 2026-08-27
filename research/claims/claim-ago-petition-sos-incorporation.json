@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-ago-petition-fof-sos-incorporation",
+  "claim_text": "The Minnesota Attorney General petition for supervised voluntary dissolution of Feeding Our Future alleges that Feeding Our Future obtained its Minnesota certificate of incorporation on November 7, 2016, that its registered address with the Secretary of State was 13299 Bronze Parkway, Rosemount, Minnesota 55068, and that it filed a Notice of Intent to Dissolve on February 25, 2022. These facts are petition-cited to SOS exhibits and are not independently confirmed from the SOS portal in this harvest.",
+  "claim_type": "CHRONOLOGY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "status": "alleged",
+  "source_ids": [
+    "src-ago-fof-dissolution-petition-copy"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-ago-fof-dissolution-petition-copy",
+      "page": 1,
+      "quote": "Feeding Our Future obtained its certificate of incorporation with the Minnesota Secretary of State on November 7, 2016."
+    }
+  ],
+  "confidence": "MODERATE",
+  "is_allegation": true,
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

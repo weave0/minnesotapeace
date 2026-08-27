@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-fof-absent-from-irs-bmf-2026-08",
+  "claim_text": "The IRS Exempt Organizations Business Master File Minnesota extract retrieved 2026-08-26 does not contain EIN 81-4343304 (Feeding Our Future). Partners In Nutrition EIN 47-4302258 is present on the same extract.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future",
+    "org-partners-in-nutrition"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-irs-bmf-mn-2026-08"
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "organizations": [
+    "org-feeding-our-future",
+    "org-partners-in-nutrition"
+  ],
+  "editorial_notes": "Absence from BMF is not itself a fraud finding. AGO petition \u00b613 alleged IRS listed exemption revoked as of 2022-03-01 for failure to file returns; that revocation list has not yet been independently retrieved in this harvest."
+}

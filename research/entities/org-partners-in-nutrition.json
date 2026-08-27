@@ -1,0 +1,93 @@
+{
+  "entity_id": "org-partners-in-nutrition",
+  "entity_type": "NONPROFIT",
+  "canonical_name": "Partners In Nutrition",
+  "aliases": [
+    "Partners In Quality Care"
+  ],
+  "dba": [
+    "Partners In Quality Care"
+  ],
+  "ein": "47-4302258",
+  "officers": [
+    {
+      "name": "Robyn Tousignant",
+      "title": "Interim Executive Director (principal officer / signer)",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "name": "Kara Lomen",
+      "title": "Executive Director",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Jim Handrigan",
+      "title": "Board President",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Christine Twait",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Sue Ostfield",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Donnie Preston",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "1035 West 7th Street",
+      "line2": null,
+      "city": "Saint Paul",
+      "state": "MN",
+      "postal_code": "55102",
+      "country": "US",
+      "raw": "1035 WEST 7TH STREET, ST PAUL, MN 55102",
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ]
+    }
+  ],
+  "notes": "Separate CACFP/SFSP sponsor from Feeding Our Future. Do not collapse PIN program volume into FOF alleged-loss figures. FY2021 990 Part VII-B lists EMPIRE CUISINE AND MARKET as an independent contractor (provider payments). Present on IRS EO BMF MN extract 2026-08-26.",
+  "source_ids": [
+    "src-irs-990-pin-fy2021",
+    "src-irs-bmf-mn-2026-08"
+  ]
+}

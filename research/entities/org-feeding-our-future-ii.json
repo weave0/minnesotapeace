@@ -1,0 +1,21 @@
+{
+  "entity_id": "org-feeding-our-future-ii",
+  "entity_type": "NONPROFIT",
+  "canonical_name": "Feeding Our Future II",
+  "ein": "86-1201700",
+  "addresses": [
+    {
+      "city": "Rosemount",
+      "state": "MN",
+      "country": "US",
+      "raw": "Rosemount, MN (ProPublica/IRS index city)",
+      "source_ids": [
+        "src-propublica-fof-814343304"
+      ]
+    }
+  ],
+  "notes": "Separate EIN from org-feeding-our-future. ProPublica lists EIN 86-1201700, city Rosemount, ruling 2021-03-01, no filings_with_data. Do not merge into Feeding Our Future on name or city. Identity relative to the charged FOF nonprofit is unresolved.",
+  "source_ids": [
+    "src-propublica-fof-814343304"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-pin-990-fy2021-contractor-empire",
+  "claim_text": "Partners In Nutrition Form 990 Part VII Section B for the fiscal period ending September 30, 2021 lists EMPIRE CUISINE AND MARKET, 232 Marschall Road, Shakopee, MN 55379, as an independent contractor for PROVIDER PAYMENTS with compensation of $1,819,633. This is PIN-reported contractor compensation, not a finding that the payment was fraudulent.",
+  "claim_type": "RELATIONSHIP",
+  "subject_ids": [
+    "org-partners-in-nutrition",
+    "org-empire-cuisine-and-market"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-irs-990-pin-fy2021"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-irs-990-pin-fy2021",
+      "page": 8,
+      "quote": "EMPIRE CUISINE AND MARKET 232 MARSCHALL ROAD, SHAKOPEE, MN 55379 PROVIDER PAYMENTS 1,819,633"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 1819633,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2020-10-01",
+      "period_end": "2021-09-30",
+      "exact_or_approximate": "exact",
+      "methodology": "PIN Form 990 Part VII-B independent contractor compensation as filed. Not alleged_loss."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "organizations": [
+    "org-partners-in-nutrition",
+    "org-empire-cuisine-and-market"
+  ]
+}

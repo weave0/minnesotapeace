@@ -1,0 +1,19 @@
+{
+  "source_id": "src-ago-fof-dissolution-petition-copy",
+  "canonical_url": "https://files.americanexperiment.org/wp-content/uploads/2022/05/FeedingOurFuture_SupervisedDissolutionPetition.pdf",
+  "issuing_body": "Minnesota Attorney General (petition); this file is a third-party hosted copy, not retrieved from Minnesota courts e-filing",
+  "title": "Petition for Supervised Voluntary Dissolution of Feeding Our Future (Dakota County District Court, First Judicial District)",
+  "publication_date": null,
+  "retrieval_date": "2026-08-26",
+  "document_type": "petition",
+  "court": "Minnesota District Court, Dakota County, First Judicial District",
+  "case_number": null,
+  "local_path": "research/entities/civil/ago-fof-supervised-dissolution-petition.pdf",
+  "sha256": "b8cc0b75bb84e2e61c350d846ce4257f268d1aae48fc85b53dc3ddfcfad37200",
+  "mime_type": "application/pdf",
+  "extracted_text_path": "research/entities/civil/ago-fof-supervised-dissolution-petition.txt",
+  "access_status": "archived",
+  "notes": "Court File No. is blank on the face of this copy. Treat SOS dates and IRS-revocation statements as AGO allegations citing Decl. exhibits until the SOS portal and IRS auto-revocation list are independently retrieved. Do not treat this petition as a criminal adjudication. Host: Center of the American Experiment file CDN, not ag.state.mn.us.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD"
+}
