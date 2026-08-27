@@ -1,8 +1,7 @@
 name: Deploy to Cloudflare Pages
 
 # Cloudflare Pages project `minnesotapeace` deploys from `main`.
-# `main` is the MN Peace public site (community healing + The Record),
-# not the retired Jamie Rigling mediation practice.
+# `main` is the MN Peace public site (community healing + The Record).
 
 on:
     push:

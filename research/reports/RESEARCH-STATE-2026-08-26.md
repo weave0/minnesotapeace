@@ -157,7 +157,7 @@ Assertion ladder for “officials knowingly facilitated fraud”:
 - Treat $9 billion as stolen.
 - Collapse oversight failure into official criminality.
 - Treat shared addresses, common attorneys, or community as conspiracy.
-- Gut `main` or the live mediation site until this substrate can replace it.
+- Gut `main` or the live MN Peace public site until this substrate can replace it.
 
 **last_checked:** 2026-08-26  
 **next_check:** continue PACER/USAO capture; harden schemas; normalize FOF as the reference case family.

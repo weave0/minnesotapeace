@@ -193,11 +193,20 @@ main,
   color: var(--purple);
 }
 
+.nav-panel {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
 .nav-links {
   display: flex;
   gap: 1.6rem;
   list-style: none;
   align-items: center;
+  order: 1;
 }
 
 .nav-links a {
@@ -217,6 +226,7 @@ main,
 }
 
 .nav-cta {
+  order: 2;
   padding: 0.55rem 1.25rem;
   background: var(--purple);
   color: #fff;
@@ -234,10 +244,15 @@ main,
   transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-.nav-cta:hover {
+.nav-cta:hover,
+.nav-cta[aria-current="page"] {
   transform: translateY(-1px);
   filter: brightness(1.08);
   box-shadow: 0 0 40px rgba(168, 85, 247, 0.55);
+}
+
+.nav-cta[aria-current="page"] {
+  transform: none;
 }
 
 .nav-toggle {
@@ -907,9 +922,11 @@ main,
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.family-card:hover {
+.family-card:hover,
+.family-card:focus-visible {
   border-color: rgba(6, 182, 212, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 0 36px rgba(34, 211, 238, 0.16);
 }
 
 .family-kicker {
@@ -942,8 +959,16 @@ main,
   margin-top: 1rem;
   border-style: dashed;
   border-color: rgba(245, 158, 11, 0.35);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 .gap-kicker { color: var(--gold); }
+
+.gap-card:hover,
+.gap-card:focus-visible {
+  border-color: rgba(245, 158, 11, 0.55);
+  box-shadow: 0 0 36px rgba(245, 158, 11, 0.14);
+  transform: translateY(-2px);
+}
 
 .gap-card h3 {
   font-family: var(--font-display);
@@ -1071,27 +1096,149 @@ main,
 
 .footer-bottom a { color: var(--cyan); text-decoration: none; }
 
-/* Record chrome page */
-.record-shell {
+/* Record chrome — same MN Peace header owns the product */
+.record-page {
+  --nav-h: 6.9rem;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
 }
 
-.record-frame {
+.record-page::before { opacity: 0.16; }
+.record-page::after { opacity: 0.03; }
+
+.record-page #app {
+  position: relative;
+  z-index: 1;
   flex: 1;
+  padding-top: calc(var(--nav-h) + 1.25rem);
+}
+
+.record-header {
+  flex-wrap: wrap;
+  row-gap: 0;
+  padding-bottom: 0;
+}
+
+.record-header .nav-panel {
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+
+.record-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.35rem;
   width: 100%;
-  border: 0;
-  margin-top: var(--nav-h);
-  height: calc(100dvh - var(--nav-h));
-  min-height: calc(100dvh - var(--nav-h));
-  background: #f4efe4;
+  order: 3;
+  padding: 0.35rem 0 0.55rem;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.record-nav a {
+  color: var(--text-dim);
+  text-decoration: none;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.record-nav a:hover,
+.record-nav a[aria-current="page"] {
+  color: var(--cyan);
+}
+
+.record-nav a[aria-current="page"] {
+  box-shadow: inset 0 -2px 0 var(--cyan);
+}
+
+.record-foot {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .record-fallback {
   padding: 6rem 1.5rem 3rem;
   max-width: 40rem;
+}
+
+/* Chapter rail + read progress */
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 120;
+  pointer-events: none;
+}
+
+.read-progress > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--cyan), var(--gold));
+  transform-origin: left;
+}
+
+.chapter-rail {
+  position: fixed;
+  right: 1.15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.chapter-rail a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.chapter-rail a::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  background: transparent;
+  flex-shrink: 0;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chapter-rail a.is-active {
+  color: var(--text);
+}
+
+.chapter-rail a.is-active::after {
+  background: var(--cyan);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.7);
+}
+
+.chapter-rail a span {
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+
+.chapter-rail a:hover span,
+.chapter-rail a.is-active span,
+.chapter-rail a:focus-visible span {
+  opacity: 1;
 }
 
 /* Reveal */
@@ -1153,15 +1300,44 @@ main,
     justify-content: center;
     row-gap: 0.6rem;
   }
+
+  .chapter-rail a.is-active::after {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .chapter-rail {
+    top: var(--nav-h);
+    right: 0;
+    left: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    background: rgba(5, 5, 7, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 0.45rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+    gap: 0.25rem 1.1rem;
+    scrollbar-width: none;
+  }
+  .chapter-rail::-webkit-scrollbar { display: none; }
+  .chapter-rail a {
+    justify-content: flex-start;
+    flex-shrink: 0;
+  }
+  .chapter-rail a::after { display: none; }
+  .chapter-rail a span { opacity: 0.7; }
 }
 
 @media (max-width: 900px) {
-  .nav-links,
-  .nav-cta {
+  .nav-panel {
     display: none;
   }
 
-  .site-header.is-open .nav-links {
+  .site-header.is-open .nav-panel {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1171,17 +1347,41 @@ main,
     right: 0;
     background: rgba(5, 5, 7, 0.96);
     backdrop-filter: blur(16px);
-    padding: 0.6rem 1.2rem 1.2rem;
+    -webkit-backdrop-filter: blur(16px);
+    padding: 0.7rem 1.2rem 1.2rem;
     border-bottom: 1px solid var(--border-subtle);
-    gap: 0;
+    gap: 0.25rem;
+    flex: none;
+    justify-content: flex-start;
   }
 
   .site-header.is-open .nav-cta {
+    order: -1;
     display: inline-flex;
-    margin: 0.4rem 1.2rem 1rem auto;
+    justify-content: center;
+    margin: 0.15rem 0 0.55rem;
+    align-self: stretch;
+  }
+
+  .site-header.is-open .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    order: 2;
+  }
+
+  .site-header.is-open .record-nav {
+    order: 1;
+    flex-direction: column;
+    width: auto;
+    gap: 0;
+    padding: 0.35rem 0 0.65rem;
+    margin-bottom: 0.25rem;
   }
 
   .nav-toggle { display: inline-flex; }
+
+  .record-page { --nav-h: 4.5rem; }
 
   .split,
   .footer-top,

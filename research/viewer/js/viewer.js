@@ -4,10 +4,7 @@
 
   const CORPUS = window.__CORPUS__;
   const app = document.getElementById("app");
-
-  if (window.self !== window.top) {
-    document.documentElement.classList.add("is-framed");
-  }
+  const TITLE_SUFFIX = " — The Record";
 
   function esc(value) {
     return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
@@ -90,10 +87,25 @@
   }
 
   function setNav(active) {
-    document.querySelectorAll("nav [data-nav]").forEach((a) => {
+    document.querySelectorAll("[data-nav]").forEach((a) => {
       if (a.getAttribute("data-nav") === active) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
+  }
+
+  function setTitle(prefix) {
+    document.title = prefix + TITLE_SUFFIX;
+  }
+
+  function familyFilters(active) {
+    const chips = [
+      { id: "", href: "#/cases", label: "All" },
+      { id: "feeding-our-future", href: "#/cases/family/feeding-our-future", label: "FOF" },
+      { id: "hss", href: "#/cases/family/hss", label: "HSS" },
+    ];
+    return `<div class="case-filters" role="navigation" aria-label="Filter cases by family">${chips.map((c) =>
+      `<a class="filter-chip${c.id === (active || "") ? " is-on" : ""}" href="${c.href}"${c.id === (active || "") ? ' aria-current="true"' : ""}>${c.label}</a>`
+    ).join("")}</div>`;
   }
 
   function primaryDollarHtml(c) {
@@ -115,13 +127,13 @@
 
   function renderIndex() {
     setNav("index");
-    document.title = "MinnesotaPeace research corpus";
+    setTitle("Index");
     const families = CORPUS.families.map((f) => `
       <article class="family-card">
         <p class="meta">${esc(f.id)}</p>
         <h3>${esc(f.name)}</h3>
         <p>${esc(f.blurb)}</p>
-        <p><a href="#/cases">Open cases</a></p>
+        <p><a href="#/cases/family/${esc(f.id)}">Open cases</a></p>
       </article>
     `).join("");
     const gaps = CORPUS.gaps.map((g) => `
@@ -132,6 +144,8 @@
       </article>
     `).join("");
     app.innerHTML = `
+      <span class="record-kicker">// Index</span>
+      <h2>How to hold this layer</h2>
       <p class="lede">${esc(CORPUS.mandate)}</p>
       <div class="notice">
         <p><strong>No total</strong> This index does not add case figures. Overlapping dollars stay in their overlap groups. There is no corpus-wide loss number on this page.</p>
@@ -169,18 +183,23 @@
     `;
   }
 
-  function renderCases() {
+  function renderCases(familyId) {
     setNav("cases");
-    document.title = "Cases — MinnesotaPeace research corpus";
+    const family = CORPUS.families.find((f) => f.id === familyId) || null;
+    setTitle(family ? family.name + " · Cases" : "Cases");
     const fof = CORPUS.cases.filter((c) => c.family === "feeding-our-future");
     const hss = CORPUS.cases.filter((c) => c.family === "hss");
+    const showFof = !familyId || familyId === "feeding-our-future";
+    const showHss = !familyId || familyId === "hss";
+    const unknown = familyId && !family;
     app.innerHTML = `
+      <span class="record-kicker">// Cases</span>
       <h2>Charging instruments</h2>
       <p class="lede">One card per mapped instrument. Asad Adow 0:25-cr-00354 is a gap card: the felony information is missing from RECAP. Dollars are the primary claim figure with <span class="mono">metric_type</span>, not a case total.</p>
-      <h3>Feeding Our Future / child nutrition</h3>
-      <div class="card-grid">${fof.map(caseCard).join("")}</div>
-      <h3>Housing Stabilization Services</h3>
-      <div class="card-grid">${hss.map(caseCard).join("")}</div>
+      ${familyFilters(familyId || "")}
+      ${unknown ? `<div class="not-found"><p>No family <span class="mono">${esc(familyId)}</span>.</p></div>` : ""}
+      ${showFof && !unknown ? `<h3>Feeding Our Future / child nutrition</h3><div class="card-grid">${fof.map(caseCard).join("")}</div>` : ""}
+      ${showHss && !unknown ? `<h3>Housing Stabilization Services</h3><div class="card-grid">${hss.map(caseCard).join("")}</div>` : ""}
     `;
   }
 
@@ -191,7 +210,7 @@
       app.innerHTML = `<div class="not-found"><p>No case <span class="mono">${esc(id)}</span>.</p><p><a href="#/cases">Back to cases</a></p></div>`;
       return;
     }
-    document.title = `${c.short_name} — MinnesotaPeace research corpus`;
+    setTitle(c.short_name);
     const claims = (c.claim_ids || []).map(claimById).filter(Boolean);
     const countRows = (c.counts || []).map((row) => `
       <tr>
@@ -233,6 +252,7 @@
     const sources = sourceLinks(c.source_ids);
     app.innerHTML = `
       ${c.gap ? `<div class="gap-banner"><p><strong>Document gap</strong> ${esc((c.gap_notes || [])[0] || "Charging instrument not in the corpus.")}</p></div>` : ""}
+      <span class="record-kicker">// Case</span>
       <p class="meta"><a href="#/cases">Cases</a> / ${esc(c.docket)}</p>
       <h2>${esc(c.caption || c.short_name)}</h2>
       <div class="chips">
@@ -286,7 +306,7 @@
       app.innerHTML = `<div class="not-found"><p>No claim <span class="mono">${esc(id)}</span>.</p></div>`;
       return;
     }
-    document.title = `${cl.claim_id} — MinnesotaPeace research corpus`;
+    setTitle(cl.claim_id);
     const cse = caseForDocket(cl.case_number);
     const passages = (cl.supporting_passages || []).map((p) => {
       const src = sourceById(p.source_id);
@@ -337,7 +357,7 @@
 
   function renderMoney() {
     setNav("money");
-    document.title = "Money — MinnesotaPeace research corpus";
+    setTitle("Money");
     const groups = new Map();
     CORPUS.money.forEach((row) => {
       const key = row.overlap_group_id;
@@ -389,6 +409,7 @@
     }
 
     app.innerHTML = `
+      <span class="record-kicker">// Money</span>
       <h2>Money</h2>
       <div class="sum-banner">
         <p><strong>Do not sum these rows</strong></p>
@@ -429,7 +450,7 @@
 
   function renderEntities() {
     setNav("entities");
-    document.title = "Entities — MinnesotaPeace research corpus";
+    setTitle("Entities");
     const cards = CORPUS.entities.map((e) => `
       <article class="card">
         <p class="meta">${esc(e.entity_type || "")}${e.ein ? " · EIN " + esc(e.ein) : ""}</p>
@@ -440,6 +461,7 @@
       </article>
     `).join("");
     app.innerHTML = `
+      <span class="record-kicker">// Entities</span>
       <h2>Organizations</h2>
       <p class="lede">SOS- and 990-backed entities in this harvest. Feeding Our Future and Feeding Our Future II are separate organizations. Shared street address is not a conspiracy edge.</p>
       <div class="notice"><p><strong>Identity, not guilt</strong> An SOS file or Form 990 is not a charging instrument. Name-match to an indictment is not a conviction.</p></div>
@@ -454,7 +476,7 @@
       app.innerHTML = `<div class="not-found"><p>No entity <span class="mono">${esc(id)}</span>.</p><p><a href="#/entities">Back to entities</a></p></div>`;
       return;
     }
-    document.title = `${e.canonical_name} — MinnesotaPeace research corpus`;
+    setTitle(e.canonical_name);
     const claims = CORPUS.claims.filter((c) =>
       (c.organizations || []).includes(id) || (c.subject_ids || []).includes(id)
     );
@@ -501,14 +523,21 @@
     }
     const parts = hashParts();
     const head = parts[0] || "";
-    if (!head) return renderIndex();
+    if (!head) {
+      if (location.hash !== "#/cases") {
+        history.replaceState(null, "", "#/cases");
+      }
+      return renderCases();
+    }
+    if (head === "index") return renderIndex();
+    if (head === "cases" && parts[1] === "family") return renderCases(parts[2] || "");
     if (head === "cases" && !parts[1]) return renderCases();
     if (head === "cases" && parts[1]) return renderCase(parts[1]);
     if (head === "claims" && parts[1]) return renderClaim(parts[1]);
     if (head === "money") return renderMoney();
     if (head === "entities" && !parts[1]) return renderEntities();
     if (head === "entities" && parts[1]) return renderEntity(parts[1]);
-    app.innerHTML = `<div class="not-found"><p>No such page.</p><p><a href="#/">Index</a></p></div>`;
+    app.innerHTML = `<div class="not-found"><p>No such page.</p><p><a href="#/cases">Cases</a> · <a href="#/index">Index</a></p></div>`;
   }
 
   window.addEventListener("hashchange", route);

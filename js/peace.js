@@ -21,7 +21,7 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
-    nav.querySelectorAll(".nav-links a, .nav-cta").forEach(function (a) {
+    nav.querySelectorAll(".nav-panel a").forEach(function (a) {
       a.addEventListener("click", function () {
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
@@ -93,6 +93,38 @@
   } else {
     fillStats();
   }
+
+  var progress = document.querySelector(".read-progress > span");
+  var rail = document.querySelector(".chapter-rail");
+  var railLinks = rail ? Array.prototype.slice.call(rail.querySelectorAll("a[data-rail]")) : [];
+  var railSections = railLinks.map(function (a) {
+    return document.getElementById(a.getAttribute("data-rail"));
+  });
+
+  function setRailActive(id) {
+    railLinks.forEach(function (a) {
+      a.classList.toggle("is-active", a.getAttribute("data-rail") === id);
+    });
+  }
+
+  function onPageScroll() {
+    if (progress) {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - doc.clientHeight;
+      var p = max > 0 ? (window.scrollY / max) * 100 : 0;
+      progress.style.width = p + "%";
+    }
+    if (!railLinks.length) return;
+    var marker = window.scrollY + window.innerHeight * 0.28;
+    var current = railLinks[0] && railLinks[0].getAttribute("data-rail");
+    for (var i = 0; i < railSections.length; i++) {
+      var sec = railSections[i];
+      if (sec && sec.offsetTop <= marker) current = railLinks[i].getAttribute("data-rail");
+    }
+    setRailActive(current);
+  }
+  onPageScroll();
+  window.addEventListener("scroll", onPageScroll, { passive: true });
 
   var canvas = document.getElementById("aurora");
   if (!canvas || reduce || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

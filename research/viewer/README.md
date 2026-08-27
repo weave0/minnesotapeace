@@ -1,11 +1,13 @@
 # Research viewer (v1)
 
-Static, evidence-first HTML for the MinnesotaPeace public-program fraud corpus. This viewer is The Record inside MinnesotaPeace.com. It is not a homepage fraud dashboard.
+Static, evidence-first HTML for the MinnesotaPeace public-program fraud corpus. This layer is The Record inside MN Peace — not a fraud-total dashboard.
 
 
 ## Open
 
-Open `research/viewer/index.html` (GitHub Pages-style static hosting, or any local static server). Relative paths only.
+The public route is `/record` (Cases by default). `research/viewer/index.html` redirects there and keeps the hash.
+
+Relative data paths stay under `research/viewer/` so the bundle can load from `/record`.
 
 Rebuild the data bundle after claim/extract/source/entity edits:
 

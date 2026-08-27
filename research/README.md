@@ -1,6 +1,6 @@
 # Minnesota Public-Program Fraud Research Corpus
 
-This directory is the evidence layer for the complete replacement of the prior Minnesota Peace mediation site.
+This directory is the evidence layer for The Record on MinnesotaPeace.com.
 
 ## Mission
 

@@ -4,7 +4,7 @@ This tree (`minnesota-fraud-corpus/`) is the **research substrate** for Minnesot
 
 **Research before website.** Do not publish a fraud dashboard, TOTAL FRAUD number, or “connected network” graphic until the corpus behind it passes the quality gates below. Journalism, press releases, and charging documents are inputs, not ceilings.
 
-**Do not gut `main`.** The live MinnesotaPeace site (mediation / public site on `main`) must not be stripped, redirected, or replaced by this research until the substrate can actually support public pages. Land research on `research/minnesota-fraud-corpus` (or the working branch named for this work). Keep `main` intact.
+**Do not gut `main`.** The live MinnesotaPeace site (MN Peace public face + The Record on `main`) must not be stripped, redirected, or replaced by unfinished research. Land research on `research/minnesota-fraud-corpus` (or the working branch named for this work). Keep `main` intact.
 
 ## research/ layout
 

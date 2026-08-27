@@ -23,8 +23,6 @@
   <meta name="twitter:description" content="Community healing, awareness, and acceptance so Minnesota can repair. The record is honest. People are not a spectacle.">
   <meta name="twitter:image" content="https://minnesotapeace.com/assets/og/mn-peace-og.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.webp" type="image/webp">
-  <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -49,23 +47,34 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <div class="read-progress" aria-hidden="true"><span></span></div>
+
   <header class="site-header" id="nav">
     <a class="logo" href="/">MN <em>Peace</em></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="site-nav" role="list">
-      <li><a href="#heal">Why</a></li>
-      <li><a href="#read">How to read</a></li>
-      <li><a href="#record">The record</a></li>
-      <li><a href="#wont">Limits</a></li>
-      <li><a href="#community">Community</a></li>
-    </ul>
-    <a class="nav-cta" href="/record">Enter the record</a>
+    <div class="nav-panel" id="site-nav">
+      <a class="nav-cta" href="/record">The Record</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#heal">Why</a></li>
+        <li><a href="#read">How to read</a></li>
+        <li><a href="#wont">Limits</a></li>
+      </ul>
+    </div>
   </header>
 
+  <nav class="chapter-rail" aria-label="On this page">
+    <a href="#top" data-rail="top"><span>Start</span></a>
+    <a href="#heal" data-rail="heal"><span>01 Why</span></a>
+    <a href="#read" data-rail="read"><span>02 Read</span></a>
+    <a href="#record" data-rail="record"><span>03 Record</span></a>
+    <a href="#wont" data-rail="wont"><span>04 Limits</span></a>
+    <a href="#community" data-rail="community"><span>05 Community</span></a>
+  </nav>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-heading">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
       <div class="hero-fallback" aria-hidden="true"></div>
       <canvas id="aurora" class="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-grid" aria-hidden="true"></div>
@@ -236,18 +245,18 @@
           <span class="chapter-label is-cyan reveal">// 03 — Record</span>
           <h2 class="chapter-title reveal" id="record-heading">Two families.<br>No statewide total.</h2>
         <p class="lede reveal">
-          The record is the existing research viewer: charging instruments, claims,
-          and metric-typed dollars. It is quieter on the inside. That is on purpose.
+          The record is charging instruments, claims, and metric-typed dollars —
+          mounted here as one MN Peace product. Cases first. No statewide total.
         </p>
 
         <div class="family-grid">
-          <a class="glass family-card reveal" href="/research/viewer/#/cases">
+          <a class="glass family-card reveal" href="/record#/cases/family/feeding-our-future">
             <p class="family-kicker">Investigation family</p>
             <h3>Feeding Our Future / child nutrition</h3>
             <p class="muted">Federal Child Nutrition Program prosecutions in the District of Minnesota. Charging instruments in this viewer include Bock, Farah/Empire, and the Mohamed family. Feeding Our Future II is a separate SOS nonprofit and is not merged into Feeding Our Future.</p>
             <span class="family-go">Open cases →</span>
           </a>
-          <a class="glass family-card reveal d1" href="/research/viewer/#/cases">
+          <a class="glass family-card reveal d1" href="/record#/cases/family/hss">
             <p class="family-kicker">Investigation family</p>
             <h3>Housing Stabilization Services</h3>
             <p class="muted">Minnesota Medicaid Housing Stabilization Services. First-wave dockets and later instruments are mapped as claims. Statewide program-spend recitals on charging documents are background, not a case alleged-loss total.</p>
@@ -255,7 +264,7 @@
           </a>
         </div>
 
-        <a class="glass gap-card reveal" href="/research/viewer/#/cases/asad-adow-25cr354">
+        <a class="glass gap-card reveal" href="/record#/cases/asad-adow-25cr354">
           <p class="family-kicker gap-kicker">Documented gap</p>
           <h3>Asad Adow 0:25-cr-00354 is a RECAP gap, not a fake extract.</h3>
           <p class="muted">Docket identity is confirmed. The felony information is not on RECAP. Needed, not nonexistent. No local count map and no claim-level dollar from the face of an information that is not in the corpus.</p>
@@ -342,15 +351,15 @@
     <div class="footer-top">
       <div>
         <p class="footer-brand">MN <em>Peace</em></p>
-        <p class="muted">A public Minnesota site. Healing-first. Evidence-labeled. Not a booking form, not legal advice, not a prosecutor’s press room.</p>
+        <p class="muted">A public Minnesota site. Healing-first. Evidence-labeled. Not a contact form, not legal advice, not a prosecutor’s press room.</p>
       </div>
       <div class="footer-col">
         <span class="footer-col-label">The record</span>
         <ul>
           <li><a href="/record">Enter the record</a></li>
-          <li><a href="/research/viewer/">Research viewer</a></li>
-          <li><a href="/research/viewer/#/cases">Mapped cases</a></li>
-          <li><a href="/research/viewer/#/money">Money (by metric_type)</a></li>
+          <li><a href="/record#/cases">Mapped cases</a></li>
+          <li><a href="/record#/money">Money (by metric_type)</a></li>
+          <li><a href="/#community">Community</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -364,7 +373,7 @@
     </div>
     <div class="footer-bottom">
       <p>Allegations remain allegations until adjudicated.</p>
-      <p><a href="/research/viewer/">The Record</a> · MinnesotaPeace.com</p>
+      <p><a href="/record">The Record</a> · MinnesotaPeace.com</p>
     </div>
   </footer>
 
