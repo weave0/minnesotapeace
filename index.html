@@ -94,6 +94,28 @@
       </div>
     </section>
 
+    <section class="stats" id="stats" aria-label="What the record currently holds">
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <div class="stat-value" data-stat="documents">—</div>
+          <div class="stat-label">Documents</div>
+        </div>
+        <div class="stat reveal d1">
+          <div class="stat-value" data-stat="claims">—</div>
+          <div class="stat-label">Claims</div>
+        </div>
+        <div class="stat reveal d2">
+          <div class="stat-value" data-stat="mapped_cases">—</div>
+          <div class="stat-label">Mapped cases</div>
+        </div>
+        <div class="stat reveal d3">
+          <div class="stat-value" data-stat="gaps">—</div>
+          <div class="stat-label">Documented gaps</div>
+        </div>
+      </div>
+      <p class="stats-note">Counts from the corpus bundle. Not a fraud-dollar total. Overlapping dollars are never summed here.</p>
+    </section>
+
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
         <span class="marquee-item">Awareness is not accusation</span>
@@ -117,33 +139,13 @@
       </div>
     </div>
 
-    <section class="stats" aria-label="What the record currently holds">
-      <div class="stats-grid">
-        <div class="stat reveal">
-          <div class="stat-value" data-stat="documents">—</div>
-          <div class="stat-label">Documents</div>
-        </div>
-        <div class="stat reveal d1">
-          <div class="stat-value" data-stat="claims">—</div>
-          <div class="stat-label">Claims</div>
-        </div>
-        <div class="stat reveal d2">
-          <div class="stat-value" data-stat="mapped_cases">—</div>
-          <div class="stat-label">Mapped cases</div>
-        </div>
-        <div class="stat reveal d3">
-          <div class="stat-value" data-stat="gaps">—</div>
-          <div class="stat-label">Documented gaps</div>
-        </div>
-      </div>
-      <p class="stats-note">Counts from the corpus bundle. Not a fraud-dollar total. Overlapping dollars are never summed here.</p>
-    </section>
+    <div class="river-band" aria-hidden="true"></div>
 
     <section class="chapter" id="heal" aria-labelledby="heal-heading">
       <div class="wrap split">
         <div>
-          <span class="chapter-label is-cyan reveal">// 01 — Why this exists</span>
-          <h2 class="chapter-title reveal" id="heal-heading">Awareness and acceptance are the path to repair.</h2>
+          <span class="chapter-label is-purple reveal">// 01 — Why</span>
+          <h2 class="chapter-title reveal" id="heal-heading">Awareness and acceptance<br>are the path to repair.</h2>
           <p class="lede reveal">
             This is MN Peace: a public frame for community healing so Minnesota can look
             at the record with eyes open. The primary work is peace — not a thriller dashboard.
@@ -158,32 +160,45 @@
             Facing documents is how repair starts. Hope without naivete looks like that.
           </p>
         </div>
-        <aside class="glass reveal" aria-label="How we heal">
-          <h3>How we heal</h3>
-          <p class="muted">
-            Hold the facts at the grain they were written. Leave room for people who
-            never appear in a caption. Do not ask a whole community to carry a case number.
-            The honest layer is the record. The human layer is Minnesota.
-          </p>
+        <aside class="panel-card reveal" aria-label="How we heal">
+          <div class="panel-card-bg" aria-hidden="true"></div>
+          <div class="panel-card-stripes" aria-hidden="true"></div>
+          <div class="panel-card-body">
+            <p class="panel-kicker">How we heal</p>
+            <p class="panel-mark">01</p>
+            <p class="muted">Hold the facts at the grain they were written. Leave room for people who never appear in a caption. Do not ask a whole community to carry a case number. The honest layer is the record. The human layer is Minnesota.</p>
+          </div>
         </aside>
       </div>
     </section>
 
     <section class="chapter" id="read" aria-labelledby="read-heading">
+      <div class="wrap split">
+        <div>
+          <span class="chapter-label is-cyan reveal">// 02 — Reading</span>
+          <h2 class="chapter-title reveal" id="read-heading">The atomic unit<br>is a claim.</h2>
+          <p class="lede reveal">
+            A claim is a sentence with a source and a status. It is not an article,
+            and it is not a verdict. Read slowly. The labels are doing work.
+          </p>
+          <ul class="read-points">
+            <li class="reveal"><strong>CHARGED_ALLEGED</strong> is what a charging instrument says. It is not a conviction.</li>
+            <li class="reveal d1">Every displayed dollar keeps a <strong>metric_type</strong> — billed is not paid; paid is not alleged loss; alleged loss is not proven loss.</li>
+            <li class="reveal d2">Figures that share an overlap group are restatements or nested amounts. <strong>Do not sum them.</strong></li>
+            <li class="reveal d3">Do not upgrade charged to sentenced from journalism. A guilty-plea docket minute is not a judgment.</li>
+          </ul>
+        </div>
+        <aside class="panel-card panel-card-compact reveal" aria-label="Actor classes">
+          <div class="panel-card-bg panel-card-bg-alt" aria-hidden="true"></div>
+          <div class="panel-card-stripes" aria-hidden="true"></div>
+          <div class="panel-card-body">
+            <p class="panel-kicker">Actor classes</p>
+            <p class="panel-mark">A–E</p>
+            <p class="muted">v1 records private-actor charging documents. It does not claim official knowing duty violation (D) or official knowing crime (E).</p>
+          </div>
+        </aside>
+      </div>
       <div class="wrap">
-        <span class="chapter-label is-gold reveal">// 02 — How to read this</span>
-        <h2 class="chapter-title reveal" id="read-heading">The atomic unit is a claim.</h2>
-        <p class="lede reveal">
-          A claim is a sentence with a source and a status. It is not an article,
-          and it is not a verdict. Read slowly. The labels are doing work.
-        </p>
-        <ul class="read-points">
-          <li class="reveal"><strong>CHARGED_ALLEGED</strong> is what a charging instrument says. It is not a conviction.</li>
-          <li class="reveal d1">Every displayed dollar keeps a <strong>metric_type</strong> — billed is not paid; paid is not alleged loss; alleged loss is not proven loss.</li>
-          <li class="reveal d2">Figures that share an overlap group are restatements or nested amounts. <strong>Do not sum them.</strong></li>
-          <li class="reveal d3">Do not upgrade charged to sentenced from journalism. A guilty-plea docket minute is not a judgment.</li>
-        </ul>
-
         <div class="actor-grid" role="list">
           <article class="actor is-open reveal" role="listitem">
             <div class="actor-key">A</div>
@@ -218,8 +233,8 @@
 
     <section class="chapter" id="record" aria-labelledby="record-heading">
       <div class="wrap">
-        <span class="chapter-label is-ice reveal">// 03 — The record</span>
-        <h2 class="chapter-title reveal" id="record-heading">Two families. No statewide total.</h2>
+          <span class="chapter-label is-cyan reveal">// 03 — Record</span>
+          <h2 class="chapter-title reveal" id="record-heading">Two families.<br>No statewide total.</h2>
         <p class="lede reveal">
           The record is the existing research viewer: charging instruments, claims,
           and metric-typed dollars. It is quieter on the inside. That is on purpose.
@@ -250,12 +265,20 @@
     </section>
 
     <section class="chapter" id="wont" aria-labelledby="wont-heading">
+      <div class="wrap split">
+        <div>
+          <span class="chapter-label is-gold reveal">// 04 — Limits</span>
+          <h2 class="chapter-title reveal" id="wont-heading">Limits are<br>part of the peace.</h2>
+          <p class="lede reveal">
+            A healing site can still be exact. These refusals are editorial, not a vibe.
+          </p>
+        </div>
+        <aside class="glass reveal">
+          <h3>Editorial, not a vibe</h3>
+          <p class="muted">These refusals travel with the record. They are how this site stays a peace frame instead of a spectacle.</p>
+        </aside>
+      </div>
       <div class="wrap">
-        <span class="chapter-label is-gold reveal">// 04 — What we will not do</span>
-        <h2 class="chapter-title reveal" id="wont-heading">Limits are part of the peace.</h2>
-        <p class="lede reveal">
-          A healing site can still be exact. These refusals are editorial, not a vibe.
-        </p>
         <div class="wont-grid">
           <article class="wont reveal">
             <span class="wont-n">01</span>
@@ -293,7 +316,7 @@
       <div class="wrap split">
         <div>
           <span class="chapter-label is-purple reveal">// 05 — Community</span>
-          <h2 class="chapter-title reveal" id="community-heading">Minnesota is more than a case caption.</h2>
+          <h2 class="chapter-title reveal" id="community-heading">Minnesota is more<br>than a case caption.</h2>
           <p class="lede reveal">
             Saint Paul, Minneapolis, and the towns between them are where people live,
             worship, work, and raise kids — including people who never appear in these files.

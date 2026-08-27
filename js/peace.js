@@ -70,11 +70,28 @@
     }
     requestAnimationFrame(tick);
   }
-  if (stats) {
+  function fillStats() {
+    if (!stats) return;
     ["documents", "claims", "mapped_cases", "gaps"].forEach(function (key) {
       var el = document.querySelector('[data-stat="' + key + '"]');
       if (el && stats[key] != null) countUp(el, Number(stats[key]));
     });
+  }
+  var statsRoot = document.getElementById("stats");
+  if (statsRoot && stats && "IntersectionObserver" in window && !reduce) {
+    var counted = false;
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          fillStats();
+          so.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+    so.observe(statsRoot);
+  } else {
+    fillStats();
   }
 
   var canvas = document.getElementById("aurora");
@@ -133,15 +150,17 @@
     };
   }
 
+  var sparks = [];
+
   function build() {
     var n = w < 700 ? 42 : 78;
     strands = [];
     var colors = [
-      "rgba(6, 182, 212, 0.55)",
+      "rgba(34, 211, 238, 0.55)",
       "rgba(103, 232, 249, 0.45)",
       "rgba(245, 158, 11, 0.42)",
-      "rgba(6, 182, 212, 0.28)",
-      "rgba(168, 85, 247, 0.16)"
+      "rgba(34, 211, 238, 0.28)",
+      "rgba(168, 85, 247, 0.18)"
     ];
     for (var i = 0; i < n; i++) {
       strands.push({
@@ -163,6 +182,18 @@
         tw: Math.random() * 2
       });
     }
+    sparks = [];
+    var pn = w < 700 ? 24 : 52;
+    for (var p = 0; p < pn; p++) {
+      sparks.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 12,
+        vy: -8 - Math.random() * 14,
+        r: Math.random() * 1.3 + 0.25,
+        gold: Math.random() > 0.72
+      });
+    }
   }
 
   function draw(now) {
@@ -170,10 +201,17 @@
     var t = (now - start) / 1000;
     ctx.clearRect(0, 0, w, h);
 
-    var g = ctx.createRadialGradient(w * 0.7, h * 0.2, 0, w * 0.7, h * 0.2, h * 0.7);
-    g.addColorStop(0, "rgba(6, 182, 212, 0.07)");
+    var g = ctx.createRadialGradient(w * 0.5, h * 0.38, 0, w * 0.5, h * 0.38, h * 0.78);
+    g.addColorStop(0, "rgba(34, 211, 238, 0.08)");
+    g.addColorStop(0.55, "rgba(168, 85, 247, 0.04)");
     g.addColorStop(1, "rgba(0,0,0,0)");
     ctx.fillStyle = g;
+    ctx.fillRect(0, 0, w, h);
+
+    var g2 = ctx.createRadialGradient(w * 0.72, h * 0.7, 0, w * 0.72, h * 0.7, h * 0.45);
+    g2.addColorStop(0, "rgba(245, 158, 11, 0.06)");
+    g2.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g2;
     ctx.fillRect(0, 0, w, h);
 
     ctx.lineWidth = 0.6;
@@ -197,6 +235,19 @@
       ctx.fillStyle = "rgba(248,250,252," + (st.a * tw) + ")";
       ctx.beginPath();
       ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    for (var sp = 0; sp < sparks.length; sp++) {
+      var spark = sparks[sp];
+      spark.x += spark.vx * 0.016;
+      spark.y += spark.vy * 0.016;
+      if (spark.y < -8) spark.y = h + 8;
+      if (spark.x < -8) spark.x = w + 8;
+      if (spark.x > w + 8) spark.x = -8;
+      ctx.fillStyle = spark.gold ? "rgba(245,158,11,0.55)" : "rgba(34,211,238,0.5)";
+      ctx.beginPath();
+      ctx.arc(spark.x, spark.y, spark.r, 0, Math.PI * 2);
       ctx.fill();
     }
 
