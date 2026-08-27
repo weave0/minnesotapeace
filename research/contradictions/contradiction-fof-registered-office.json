@@ -1,0 +1,11 @@
+{
+  "contradiction_id": "contradiction-fof-registered-office-rosemount-vs-stlouispark",
+  "claim_a": "claim-ago-petition-fof-sos-incorporation",
+  "claim_b": "claim-sos-fof-current-president-ali-egal",
+  "source_a": "src-ago-fof-dissolution-petition-copy",
+  "source_b": "src-mn-sos-mbls-2026-08-26",
+  "nature_of_conflict": "AGO petition (citing SOS as of early 2022) gives registered address 13299 Bronze Parkway, Rosemount. SOS detail page retrieved 2026-08-26 lists c/o Legal for Good PLLC, St. Louis Park, with a Registered Office filing dated 2022-04-08.",
+  "possible_reconciliation": "The Rosemount address was current when the petition was filed; the April 8, 2022 registered-office filing post-dates the petition. Confirm with the SOS filing image for 2022-04-08 rather than discarding either.",
+  "status": "open",
+  "notes": "Filing date 2016-11-07 is independently confirmed on SOS and matches the petition. Address is the disagreement."
+}

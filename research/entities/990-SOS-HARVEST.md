@@ -50,9 +50,26 @@ Retrieved as a PDF copy hosted by Center of the American Experiment, not from Mi
 - IRS exemption listed revoked as of **2022-03-01** for failure to file (not independently pulled from the auto-revocation list this harvest)
 - Charity registration with AGO 2019-03-11; withdrawn 2021-10-25
 
-## SOS
+## SOS (retrieved 2026-08-26 from the user computer)
 
-**Not retrieved.** `mblsportal.sos.state.mn.us` closed TLS from this computer. `sos.mn.gov` served a Radware hCaptcha. File numbers remain a gap.
+The research host cannot complete TLS to mblsportal.sos.state.mn.us. MBLS at mblsportal.sos.mn.gov answered from the user computer. Status/officers are the **current snapshot**, not a 2021 snapshot.
+
+| Legal name | File number | Type | Formed | Status now | Key people on snapshot |
+| --- | --- | --- | --- | --- | --- |
+| Feeding Our Future | 913838800020 | Nonprofit 317A | 2016-11-07 | Active / In Good Standing | President Ali Egal; registered office Legal for Good, St. Louis Park. Intent to Dissolve 2022-02-25. |
+| Feeding our Future II | 1207117500020 | Nonprofit 317A | 2021-01-04 | Inactive (involuntary dissolution 2023-01-25) | Registered agent Aimee Marie Bock. **Not merged** into FOF. |
+| Empire Cuisine And Market LLC | 1151747200022 | LLC 322C | 2020-04-01 | Inactive (admin termination 2022-02-02) | Registered office Savage, MN. PIN 990 used Shakopee. |
+| Partners in Nutrition | 829756400022 | Nonprofit 317A | 2015-06-11 | Active | President/agent Aaron Twait; registered office Woodbury. |
+| BRILLIANT MINDS SERVICES L.L.C. | 1186478200020 | LLC | 2020-10-14 | Active | 1821 University Ave W Ste 120, St Paul. |
+| Foundation First Services L.L.C. | 1392114100023 | LLC | 2023-05-18 | Active | Manager Abdifitah M Mohamed; Ste 158 same street as Brilliant Minds. Shared street is not conspiracy. |
+| Liberty Plus LLC | 1349782500024 | LLC | 2022-11-17 | Active | Agent/manager Anwar Adow. |
+| Leo Human Services L.L.C. | 1305222600022 | LLC | 2022-03-24 | Active | Agent/manager Asad Adow. |
+| Faladcare Inc | 1115037700056 | Business corp | 2019-10-31 | Active | CEO/agent Emmanuel Falade. Converted from Faladcare LLC same day. |
+| Bet On Better Future | 1240557200029 | Nonprofit | 2021-06-21 | Inactive (dissolved 2023-10-23) | President Abdulkadir Salah. |
+
+Masjid Bilal / Masjid Bilol: no MBLS hit under those strings.
+
+FOF formation date 2016-11-07 is now SOS-confirmed (upgrades the petition-cited claim). Registered-office Rosemount vs St. Louis Park is left open as a dated change.
 
 ## Not in this commit
 

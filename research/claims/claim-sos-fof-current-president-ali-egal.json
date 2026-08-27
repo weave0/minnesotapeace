@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-08-27T03:20:00Z",
+  "created_at": "2026-08-27T03:20:00Z",
+  "updated_at": "2026-08-27T03:20:00Z",
+  "is_inference": false,
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "claim_id": "claim-sos-fof-current-president-ali-egal",
+  "claim_text": "As of the 2026-08-26 SOS detail page, Feeding Our Future file 913838800020 lists President Ali Egal and registered office c/o Legal for Good PLLC, 5353 Gamble Dr., Suite 320, St. Louis Park, MN 55416. This is the current SOS snapshot, not the FY2020 Form 990 officer list.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

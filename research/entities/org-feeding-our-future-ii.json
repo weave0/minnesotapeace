@@ -5,17 +5,34 @@
   "ein": "86-1201700",
   "addresses": [
     {
-      "city": "Rosemount",
+      "line1": "c/o Legal for Good PLLC",
+      "line2": "5353 Gamble Dr., Suite 320",
+      "city": "St. Louis Park",
       "state": "MN",
+      "postal_code": "55416",
       "country": "US",
-      "raw": "Rosemount, MN (ProPublica/IRS index city)",
+      "raw": "c/o Legal for Good PLLC, 5353 Gamble Dr., Suite 320, St. Louis Park, MN 55416, USA",
       "source_ids": [
-        "src-propublica-fof-814343304"
+        "src-mn-sos-mbls-2026-08-26"
       ]
     }
   ],
-  "notes": "Separate EIN from org-feeding-our-future. ProPublica lists EIN 86-1201700, city Rosemount, ruling 2021-03-01, no filings_with_data. Do not merge into Feeding Our Future on name or city. Identity relative to the charged FOF nonprofit is unresolved.",
+  "notes": "Separate nonprofit, file 1207117500020, formed 2021-01-04, Inactive after involuntary dissolution 2023-01-25. SOS registered agent Aimee Marie Bock. Shared registered-office vendor (Legal for Good) and agent name with Feeding Our Future leadership is not a merge. Do not collapse into org-feeding-our-future.",
   "source_ids": [
-    "src-propublica-fof-814343304"
+    "src-propublica-fof-814343304",
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "business_reg_ids": [
+    "MN-SOS-1207117500020"
+  ],
+  "officers": [
+    {
+      "name": "Aimee Marie Bock",
+      "title": "Registered agent (SOS)",
+      "person_id": null,
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
   ]
 }

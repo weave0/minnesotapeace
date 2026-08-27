@@ -1,0 +1,37 @@
+{
+  "entity_id": "org-bet-on-better-future",
+  "entity_type": "NONPROFIT",
+  "canonical_name": "Bet On Better Future",
+  "ein": "87-1341199",
+  "business_reg_ids": [
+    "MN-SOS-1240557200029"
+  ],
+  "officers": [
+    {
+      "name": "Abdulkadir Salah",
+      "title": "President (SOS)",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "2722 Park Avenue",
+      "line2": "Suite 303",
+      "city": "Minneapolis",
+      "state": "MN",
+      "postal_code": "55407",
+      "country": "US",
+      "raw": "2722 Park Avenue, Suite 303, Minneapolis, MN 55407, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1240557200029, formed 2021-06-21, Inactive after dissolution 2023-10-23. EIN 87-1341199 from IRS index, no 990 filings. Not merged into FOF.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26",
+    "src-propublica-fof-814343304"
+  ]
+}

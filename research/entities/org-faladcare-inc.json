@@ -1,0 +1,38 @@
+{
+  "entity_id": "org-faladcare-inc",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Faladcare Inc",
+  "former_names": [
+    "Faladcare LLC"
+  ],
+  "business_reg_ids": [
+    "MN-SOS-1115037700056"
+  ],
+  "officers": [
+    {
+      "name": "Emmanuel Falade",
+      "title": "Registered agent / Chief Executive Officer",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "6053 Hudson Rd",
+      "line2": "Suite 280",
+      "city": "Woodbury",
+      "state": "MN",
+      "postal_code": "55125",
+      "country": "US",
+      "raw": "6053 Hudson Rd, Suite 280, Woodbury, MN 55125, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1115037700056, business corporation originally filed 2019-10-31. Same day, Faladcare LLC file 970826200029 recorded Converted to Business Corporation. Keep the LLC as a predecessor node; do not delete it. CEO/agent Emmanuel Falade. Name-matched to HSS 25-cr-351.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

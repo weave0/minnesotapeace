@@ -1,0 +1,21 @@
+{
+  "entity_id": "org-faladcare-llc",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Faladcare LLC",
+  "business_reg_ids": [
+    "MN-SOS-970826200029"
+  ],
+  "officers": [
+    {
+      "name": "Emmanuel Oluwademilade Falade",
+      "title": "Registered agent",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "Predecessor LLC file 970826200029, formed 2017-10-02, converted to Faladcare Inc on 2019-10-31, now Inactive. Keep as a former-name node; canonical operating entity is org-faladcare-inc.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}
