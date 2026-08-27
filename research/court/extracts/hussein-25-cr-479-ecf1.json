@@ -1,0 +1,48 @@
+{
+  "docket_number": "0:25-cr-00479",
+  "ecf": 1,
+  "filed": "2025-12-16",
+  "pages": 8,
+  "instrument": "indictment",
+  "source_pdf": "research/court/pdfs/0_25-cr-00479_ecf1_hussein-hss.pdf",
+  "sha256": "b7310b575b4e080ed42633cfbbf19727751e375884ea213bbe69871789ebee37",
+  "bytes": 4768400,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 981(a)(1)(C)",
+    "21 U.S.C. \u00a7 853(p)",
+    "28 U.S.C. \u00a7 2461(c)"
+  ],
+  "defendants": [
+    "Hassan Ahmed Hussein (1)",
+    "Ahmed Abdirashid Mohamed (2)"
+  ],
+  "provider": "Pristine Health LLC",
+  "counts": [
+    {
+      "count": "1-5",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Jan 2022\u2013Jun 2025. OCR of scanned RECAP PDF; CHARGED_ALLEGED."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 750000,
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "notes": "Indictment \u00b613: Pristine Health submitted approximately $750,000 in fraudulent Medicaid claims related to HSS, Jan 2022\u2013Apr 2025. CHARGED_ALLEGED."
+    }
+  ],
+  "recap_document_id": 462447766,
+  "docket_id": 72056327,
+  "pacer_case_id": "229749",
+  "related_to_asad_adow": "Named in 0:25-cr-00354 ECF 17 reassignment of related case 25-479 PJS/ECW to Judge Blackwell. Not a charging instrument against Asad Adow.",
+  "harvested_at_utc": "2026-08-27T20:32:55.355204+00:00",
+  "stub": true,
+  "ocr_source": "research/court/raw/hussein-25-cr-479-ecf1-ocr-p1-5.txt",
+  "filepath_local": "recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+  "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf"
+}

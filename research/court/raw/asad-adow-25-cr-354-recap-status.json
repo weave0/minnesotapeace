@@ -1,0 +1,2918 @@
+{
+  "title": "Asad Adow 0:25-cr-00354 RECAP status (public only, no PACER purchase)",
+  "queried_at_utc": "2026-08-27T20:26:24.350452+00:00",
+  "pace_seconds": 12.5,
+  "token_used_for_cl_rest": true,
+  "pacer_purchases": 0,
+  "pacer_credentials_used": false,
+  "api_calls": [
+    {
+      "endpoint": "dockets/71379215",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/71379215/",
+      "started_utc": "2026-08-27T20:26:24.350697+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1632,
+      "finished_utc": "2026-08-27T20:26:24.741586+00:00"
+    },
+    {
+      "endpoint": "dockets/71379577",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/71379577/",
+      "started_utc": "2026-08-27T20:26:37.241815+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1629,
+      "finished_utc": "2026-08-27T20:26:37.593600+00:00"
+    },
+    {
+      "endpoint": "docket-entries/71379215:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=71379215&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:26:50.093820+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 24079,
+      "finished_utc": "2026-08-27T20:26:50.455095+00:00"
+    },
+    {
+      "endpoint": "docket-entries/71379577:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=71379577&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:27:02.955327+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 55428,
+      "finished_utc": "2026-08-27T20:27:03.425178+00:00"
+    },
+    {
+      "endpoint": "dockets?docket_number=0:25-cr-00479&court=mnd",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/?docket_number=0%3A25-cr-00479&court=mnd&page_size=20",
+      "started_utc": "2026-08-27T20:27:15.925402+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 5082,
+      "finished_utc": "2026-08-27T20:27:17.290802+00:00"
+    },
+    {
+      "endpoint": "dockets?docket_number=0:25-cr-00482&court=mnd",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/?docket_number=0%3A25-cr-00482&court=mnd&page_size=20",
+      "started_utc": "2026-08-27T20:27:29.791004+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 3447,
+      "finished_utc": "2026-08-27T20:27:30.154271+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72056832:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72056832&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:27:42.654492+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 32377,
+      "finished_utc": "2026-08-27T20:27:43.038898+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72184616:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72184616&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:27:55.539099+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 14121,
+      "finished_utc": "2026-08-27T20:27:55.877554+00:00"
+    },
+    {
+      "endpoint": "dockets/71378943",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/71378943/",
+      "started_utc": "2026-08-27T20:28:08.377776+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1682,
+      "finished_utc": "2026-08-27T20:28:08.660219+00:00"
+    },
+    {
+      "endpoint": "docket-entries/71378943:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=71378943&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:28:21.160647+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 35553,
+      "finished_utc": "2026-08-27T20:28:21.482018+00:00"
+    },
+    {
+      "endpoint": "dockets/72056327",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72056327/",
+      "started_utc": "2026-08-27T20:30:03.439311+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1663,
+      "finished_utc": "2026-08-27T20:30:03.851143+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72056327:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72056327&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:30:16.351386+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 43720,
+      "finished_utc": "2026-08-27T20:30:16.924675+00:00"
+    },
+    {
+      "endpoint": "dockets/72056826",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72056826/",
+      "started_utc": "2026-08-27T20:30:29.424866+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1626,
+      "finished_utc": "2026-08-27T20:30:30.180987+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72056826:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72056826&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:30:42.681201+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 30076,
+      "finished_utc": "2026-08-27T20:30:43.381777+00:00"
+    },
+    {
+      "endpoint": "dockets/72065130",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72065130/",
+      "started_utc": "2026-08-27T20:30:55.882024+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1622,
+      "finished_utc": "2026-08-27T20:30:56.169013+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72065130:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72065130&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:31:08.669227+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 11687,
+      "finished_utc": "2026-08-27T20:31:09.061465+00:00"
+    }
+  ],
+  "stopped_endpoints": [],
+  "dockets": {
+    "0:25-cr-00354": {
+      "requested": "0:25-cr-00354",
+      "canonical_docket_id": 71379215,
+      "docket_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "id": 71379215,
+        "docket_number": "0:25-cr-00354",
+        "case_name": "United States v. Adow",
+        "pacer_case_id": "227867",
+        "court": "https://www.courtlistener.com/api/rest/v4/courts/mnd/",
+        "date_filed": "2025-09-18",
+        "date_terminated": null,
+        "assigned_to_str": "Jerry W. Blackwell",
+        "absolute_url": "/docket/71379215/united-states-v-adow/"
+      },
+      "alt_docket_id": 71379577,
+      "alt_docket_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "id": 71379577,
+        "docket_number": "0:25-cr-00354",
+        "pacer_case_id": "227868",
+        "date_terminated": null
+      },
+      "entries_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "stopped": false,
+        "count_reported": 17,
+        "entry_count": 17,
+        "pages": 1,
+        "has_next": false
+      },
+      "alt_entries_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "count_reported": 16,
+        "entry_count": 16
+      },
+      "entries": [
+        {
+          "id": 438731277,
+          "entry_number": 1,
+          "date_filed": "2025-09-18",
+          "description": "FELONY INFORMATION by USA Daniel Bobier as to Asad Ahmed Adow (1) counts 1-4 assigned to Judge Ann D. Montgomery. Forfeiture allegations as to this information. (BTX) (Entered: 09/18/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 5,
+          "recap_sequence_number": "2025-09-18.001",
+          "documents": [
+            {
+              "id": 453240711,
+              "document_number": "1",
+              "attachment_number": null,
+              "description": "Information - Felony",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/1/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011153278",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 438731278,
+          "entry_number": 2,
+          "date_filed": "2025-09-18",
+          "description": "Defendant Information Sheet as to Asad Ahmed Adow. (Attachments: # 1 Cover Letter) (BTX) (Main Document 2 replaced on 9/18/2025) (LEG). (Attachment 1 replaced on 9/18/2025) (LEG). DOCUMENT QC'D on 9/24/2025 (LTT). (Main Document 2 replaced on 11/18/2025) (MSK). (Attachment 1 replaced on 11/18/2025) (MSK). (Entered: 09/18/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 9,
+          "recap_sequence_number": "2025-09-18.002",
+          "documents": [
+            {
+              "id": 453240712,
+              "document_number": "2",
+              "attachment_number": null,
+              "description": "Defendant Information Sheet and/or Signature Page",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/2/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011153290",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441969216,
+          "entry_number": 3,
+          "date_filed": "2025-09-22",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Asad Ahmed Adow. (Bobier, Daniel) (Main Document 3 replaced on 9/22/2025) (MGV). (Main Document 3 replaced on 10/10/2025) (LEG). (Entered: 09/22/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 15,
+          "recap_sequence_number": "2025-09-22.001",
+          "documents": [
+            {
+              "id": 456564571,
+              "document_number": "3",
+              "attachment_number": null,
+              "description": "Notice to the Court of Possible Related Case",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/3/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011158389",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 439735573,
+          "entry_number": 4,
+          "date_filed": "2025-10-02",
+          "description": "ORDER OF REASSIGNMENT OF RELATED CASES in case as to Asad Ahmed Adow. IT IS ORDERED THAT Case No. 25-351 (JMB/DJF) has been reassigned to Judge Jerry W. Blackwell and Magistrate Judge John F. Docherty, and Case No. 25-354 (ADM) has been reassigned to Judge Jerry W. Blackwell, nunc pro tunc, by use of a card on the appropriate deck of the automated case assignment system. The Clerk Of Court is directed to reuse a card on the same list pursuant to the Court's Assignment of Cases Order filed July 19, 2021. Signed by Judge Jerry W. Blackwell, Judge Jeffrey M. Bryan and Judge Ann D. Montgomery on 10/2/2025. IT IS FINALLY ORDERED that a copy of this order shall be placed in each of the respective files. (ABR) (Entered: 10/02/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 20,
+          "recap_sequence_number": "2025-10-02.001",
+          "documents": [
+            {
+              "id": 454273499,
+              "document_number": "4",
+              "attachment_number": null,
+              "description": "Order of Reassignment",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/4/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011176000",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441969217,
+          "entry_number": 5,
+          "date_filed": "2025-10-09",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for Asad Ahmed Adow. (Tamburino, Joseph) (Entered: 10/09/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 23,
+          "recap_sequence_number": "2025-10-09.001",
+          "documents": [
+            {
+              "id": 456564572,
+              "document_number": "5",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution - Defendant",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/5/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011186603",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441969218,
+          "entry_number": 6,
+          "date_filed": "2025-10-09",
+          "description": "NOTICE OF ATTORNEY APPEARANCE as CO-COUNSEL for Asad Ahmed Adow. (Bailey, William) (Entered: 10/09/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 26,
+          "recap_sequence_number": "2025-10-09.002",
+          "documents": [
+            {
+              "id": 456564573,
+              "document_number": "6",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution - Defendant",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/6/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011186609",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441969219,
+          "entry_number": 7,
+          "date_filed": "2025-10-20",
+          "description": "(Text-Only) NOTICE as to Asad Ahmed Adow: Setting Initial Appearance, Arraignment and Plea Agreement Hearing set for 11/17/2025 at 10:00 AM in Courtroom 7A (STP) before Judge Jerry W. Blackwell. (DMD) (Entered: 10/20/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2025-10-20.001",
+          "documents": [
+            {
+              "id": 456564574,
+              "document_number": "7",
+              "attachment_number": null,
+              "description": "Notice of Setting/Resetting Initial Appearance/Arraignment/Plea Agreement Hearing",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/7/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 443845809,
+          "entry_number": 8,
+          "date_filed": "2025-10-24",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for USA. (Murphy, Matthew) (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 33,
+          "recap_sequence_number": "2025-10-24.001",
+          "documents": [
+            {
+              "id": 458499444,
+              "document_number": "8",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution/Withdrawal- USA",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/8/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213648",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885043,
+          "entry_number": 10,
+          "date_filed": "2025-11-13",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for USA. (Thompson, Joseph) (Entered: 11/13/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 38,
+          "recap_sequence_number": "2025-11-13.001",
+          "documents": [
+            {
+              "id": 460595713,
+              "document_number": "10",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution/Withdrawal- USA",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/10/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011243418",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885044,
+          "entry_number": 12,
+          "date_filed": "2025-11-17",
+          "description": "Minute Entry for proceedings held before Judge Jerry W. Blackwell: Initial Appearance as to Asad Ahmed Adow held on 11/17/2025, Arraignment as to Asad Ahmed Adow (1) Counts 1-4 held on 11/17/2025, Change of Plea Hearing as to Asad Ahmed Adow held on 11/17/2025. Plea entered by Asad Ahmed Adow (1) Counts 1-4 Asad Ahmed Adow (1) Guilty Count 1. (Court Reporter Caitlin Albrecht) (DMD) (Entered: 11/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 45,
+          "recap_sequence_number": "2025-11-17.001",
+          "documents": [
+            {
+              "id": 460595714,
+              "document_number": "12",
+              "attachment_number": null,
+              "description": "Initial Appearance",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/12/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011247990",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885045,
+          "entry_number": 13,
+          "date_filed": "2025-11-17",
+          "description": "WAIVER OF INDICTMENT by Asad Ahmed Adow. (BTX) (Entered: 11/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 61,
+          "recap_sequence_number": "2025-11-17.002",
+          "documents": [
+            {
+              "id": 460595715,
+              "document_number": "13",
+              "attachment_number": null,
+              "description": "Waiver of Indictment",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/13/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011248512",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885047,
+          "entry_number": 14,
+          "date_filed": "2025-11-17",
+          "description": "PLEA AGREEMENT as to Asad Ahmed Adow. (BTX) (Entered: 11/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 63,
+          "recap_sequence_number": "2025-11-17.003",
+          "documents": [
+            {
+              "id": 460595716,
+              "document_number": "14",
+              "attachment_number": null,
+              "description": "Plea Agreement",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/14/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011248521",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885048,
+          "entry_number": 15,
+          "date_filed": "2025-11-17",
+          "description": "ORDER Setting Conditions of Release as to Asad Ahmed Adow. Signed by Judge Jerry W. Blackwell on 11/17/2025. (BTX) (Entered: 11/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 66,
+          "recap_sequence_number": "2025-11-17.004",
+          "documents": [
+            {
+              "id": 460595718,
+              "document_number": "15",
+              "attachment_number": null,
+              "description": "Order Setting Conditions of Release",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/15/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011248560",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885050,
+          "entry_number": 16,
+          "date_filed": "2025-11-17",
+          "description": "Appearance Bond Entered as to Asad Ahmed Adow. Signed by Judge Jerry W. Blackwell on 11/17/2025. (BTX) (Entered: 11/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 69,
+          "recap_sequence_number": "2025-11-17.005",
+          "documents": [
+            {
+              "id": 460595720,
+              "document_number": "16",
+              "attachment_number": null,
+              "description": "Bond",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/16/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011248609",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 448260641,
+          "entry_number": 17,
+          "date_filed": "2025-12-23",
+          "description": "ORDER OF REASSIGNMENT OF RELATED CASES as to Asad Ahmed Adow. IT IS ORDERED THAT Case No. Criminal 25-479 PJS/ECW be reassigned to Judge Jerry W. Blackwell and Magistrate Judge John F. Docherty, nunc pro tunc, by use of a space on the Master Criminal List of the automated case assignment system. The Clerk of Court is directed to reuse a card on a same list pursuant to the Court Assignment of Cases filed July 19, 2021. Signed by Chief Judge Patrick Schiltz and Judge Jerry W. Blackwell on 12/23/2025. IT IS FINALLY ORDERED that a copy of this order shall be filed in each of the respective files. (ACH) Modified text on 12/23/2025 (LEG). (Entered: 12/23/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 71,
+          "recap_sequence_number": "2025-12-23.001",
+          "documents": [
+            {
+              "id": 463031503,
+              "document_number": "17",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/17/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011308268",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449884846,
+          "entry_number": 18,
+          "date_filed": "2026-01-08",
+          "description": "ORDER OF REASSIGNMENT OF RELATED CASES as to Asad Ahmed Adow. IT IS HEREBY ORDERED that Case No. 25-CR-482 (SRN/DLM) be reassigned to Judge Jerry W. Blackwell and Magistrate Judge John F. Docherty, nunc pro tunc, by use of a card from the appropriate deck in the automated case assignment system. The Clerk of Court is directed to void and reuse a card from the same list pursuant to this Court's Assignment of Cases Order filed July 19, 2021. Signed by Judge Jerry W. Blackwell and Judge Susan Richard Nelson on 1/7/2026. IT IS FINALLY ORDERED that a copy of this order shall be filed in each of the above respective files. (CLK) Modified text on 1/8/2026 (CLK). (Entered: 01/08/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 73,
+          "recap_sequence_number": "2026-01-08.001",
+          "documents": [
+            {
+              "id": 464688483,
+              "document_number": "18",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/18/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011326899",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 473984587,
+          "entry_number": 19,
+          "date_filed": "2026-05-14",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Asad Ahmed Adow. (Murphy, Matthew) (Main Document 19 replaced on 6/4/2026) (LEG). (Entered: 05/14/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 75,
+          "recap_sequence_number": "2026-05-14.001",
+          "documents": [
+            {
+              "id": 489471122,
+              "document_number": "19",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71379215/19/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011581523",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        }
+      ]
+    },
+    "0:25-cr-00479": {
+      "requested": "0:25-cr-00479",
+      "exists_on_recap": true,
+      "count": "https://www.courtlistener.com/api/rest/v4/dockets/?count=on&court=mnd&docket_number=0%3A25-cr-00479&page_size=20",
+      "status": 200,
+      "error": null,
+      "hits": [
+        {
+          "id": 72056832,
+          "docket_number": "0:25-cr-00479",
+          "case_name": "United States v. Hussein",
+          "pacer_case_id": "229750",
+          "date_filed": "2025-12-16",
+          "date_terminated": null,
+          "assigned_to_str": null,
+          "absolute_url": "/docket/72056832/united-states-v-hussein/",
+          "party": null
+        },
+        {
+          "id": 72056826,
+          "docket_number": "0:25-cr-00479",
+          "case_name": "United States v. Hussein",
+          "pacer_case_id": "229751",
+          "date_filed": "2025-12-16",
+          "date_terminated": null,
+          "assigned_to_str": null,
+          "absolute_url": "/docket/72056826/united-states-v-hussein/",
+          "party": null
+        },
+        {
+          "id": 72056327,
+          "docket_number": "0:25-cr-00479",
+          "case_name": "United States v. Hussein",
+          "pacer_case_id": "229749",
+          "date_filed": "2025-12-16",
+          "date_terminated": null,
+          "assigned_to_str": "Jerry W. Blackwell",
+          "absolute_url": "/docket/72056327/united-states-v-hussein/",
+          "party": null
+        }
+      ],
+      "entries": [
+        {
+          "id": 447698866,
+          "entry_number": 8,
+          "date_filed": "2025-12-18",
+          "description": "",
+          "time_filed": "15:08:47",
+          "pacer_sequence_number": 45,
+          "recap_sequence_number": "2025-12-18.001",
+          "documents": [
+            {
+              "id": 462457684,
+              "document_number": "8",
+              "attachment_number": null,
+              "description": "Brady Obligation Order",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/8/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301495",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 447698859,
+          "entry_number": 10,
+          "date_filed": "2025-12-18",
+          "description": "",
+          "time_filed": "15:12:20",
+          "pacer_sequence_number": 51,
+          "recap_sequence_number": "2025-12-18.001",
+          "documents": [
+            {
+              "id": 462457677,
+              "document_number": "10",
+              "attachment_number": null,
+              "description": "Order Setting Conditions of Release",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/10/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301526",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 447698853,
+          "entry_number": 11,
+          "date_filed": "2025-12-18",
+          "description": "",
+          "time_filed": "15:13:28",
+          "pacer_sequence_number": 54,
+          "recap_sequence_number": "2025-12-18.001",
+          "documents": [
+            {
+              "id": 462457670,
+              "document_number": "11",
+              "attachment_number": null,
+              "description": "Bond",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/11/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301534",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 448018176,
+          "entry_number": 21,
+          "date_filed": "2025-12-22",
+          "description": "",
+          "time_filed": "14:00:32",
+          "pacer_sequence_number": 82,
+          "recap_sequence_number": "2025-12-22.001",
+          "documents": [
+            {
+              "id": 462784459,
+              "document_number": "21",
+              "attachment_number": null,
+              "description": "Order Appointing Attorney",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/21/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011306606",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 448150968,
+          "entry_number": 23,
+          "date_filed": "2025-12-23",
+          "description": "",
+          "time_filed": "09:42:31",
+          "pacer_sequence_number": 88,
+          "recap_sequence_number": "2025-12-23.001",
+          "documents": [
+            {
+              "id": 462919298,
+              "document_number": "23",
+              "attachment_number": null,
+              "description": "Order of Reassignment",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/23/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011308291",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449692126,
+          "entry_number": 28,
+          "date_filed": "2026-01-08",
+          "description": "",
+          "time_filed": "13:11:53",
+          "pacer_sequence_number": 110,
+          "recap_sequence_number": "2026-01-08.001",
+          "documents": [
+            {
+              "id": 464491986,
+              "document_number": "28",
+              "attachment_number": null,
+              "description": "Order of Reassignment",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/28/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011326911",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449879304,
+          "entry_number": 33,
+          "date_filed": "2026-01-09",
+          "description": "",
+          "time_filed": "16:12:27",
+          "pacer_sequence_number": 121,
+          "recap_sequence_number": "2026-01-09.001",
+          "documents": [
+            {
+              "id": 464682785,
+              "document_number": "33",
+              "attachment_number": null,
+              "description": "Order on Motion for Miscellaneous Relief",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/33/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011330405",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 450913649,
+          "entry_number": 37,
+          "date_filed": "2026-01-20",
+          "description": "",
+          "time_filed": "16:47:27",
+          "pacer_sequence_number": 135,
+          "recap_sequence_number": "2026-01-20.001",
+          "documents": [
+            {
+              "id": 465743903,
+              "document_number": "37",
+              "attachment_number": null,
+              "description": "Order on Motion for Protective Order",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/37/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011350896",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 455210970,
+          "entry_number": 42,
+          "date_filed": "2026-02-26",
+          "description": "",
+          "time_filed": "14:46:29",
+          "pacer_sequence_number": 151,
+          "recap_sequence_number": "2026-02-26.001",
+          "documents": [
+            {
+              "id": 470148296,
+              "document_number": "42",
+              "attachment_number": null,
+              "description": "Scheduling Order",
+              "short_description": null,
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.229750/gov.uscourts.mnd.229750.42.0.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229750/gov.uscourts.mnd.229750.42.0.pdf",
+              "page_count": 8,
+              "absolute_url": "/docket/72056832/42/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011443728",
+              "error": null,
+              "date_upload": "2026-05-12T15:54:17.533861-07:00",
+              "sha1": "dcd2594bfcd8e3f1f358800af144fcfe5a1376d9",
+              "is_sealed": null,
+              "is_available_via_ia": true
+            }
+          ]
+        },
+        {
+          "id": 462706162,
+          "entry_number": 48,
+          "date_filed": "2026-05-01",
+          "description": "",
+          "time_filed": "13:50:23",
+          "pacer_sequence_number": 173,
+          "recap_sequence_number": "2026-05-01.001",
+          "documents": [
+            {
+              "id": 477826889,
+              "document_number": "48",
+              "attachment_number": null,
+              "description": "Order on Proposed Petition/Order - Pretrial",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/48/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011558792",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 465446212,
+          "entry_number": 54,
+          "date_filed": "2026-05-28",
+          "description": "",
+          "time_filed": "08:41:00",
+          "pacer_sequence_number": 191,
+          "recap_sequence_number": "2026-05-28.001",
+          "documents": [
+            {
+              "id": 480650643,
+              "document_number": "54",
+              "attachment_number": null,
+              "description": "Order on Motion for Continuance",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/54/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011603610",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 472373549,
+          "entry_number": 58,
+          "date_filed": "2026-07-28",
+          "description": "",
+          "time_filed": "10:49:29",
+          "pacer_sequence_number": 218,
+          "recap_sequence_number": "2026-07-28.001",
+          "documents": [
+            {
+              "id": 487805677,
+              "document_number": "58",
+              "attachment_number": null,
+              "description": "Order on Motion for Continuance",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056832/58/united-states-v-hussein/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011693569",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449679064,
+          "entry_number": null,
+          "date_filed": "2026-01-08",
+          "description": "",
+          "time_filed": "12:24:43",
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2026-01-08.001",
+          "documents": [
+            {
+              "id": 464478781,
+              "document_number": "",
+              "attachment_number": null,
+              "description": "Order/Notice of Hearing/Deadlines (Setting/Resetting)",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449879299,
+          "entry_number": null,
+          "date_filed": "2026-01-09",
+          "description": "",
+          "time_filed": "16:21:01",
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2026-01-09.001",
+          "documents": [
+            {
+              "id": 464682780,
+              "document_number": "",
+              "attachment_number": null,
+              "description": "Order in Response to Letter/Request/E-mail",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 462693166,
+          "entry_number": null,
+          "date_filed": "2026-05-01",
+          "description": "",
+          "time_filed": "12:59:42",
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2026-05-01.001",
+          "documents": [
+            {
+              "id": 477813474,
+              "document_number": "",
+              "attachment_number": null,
+              "description": "Order on Motion to Substitute Attorney",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 447995588,
+          "entry_number": null,
+          "date_filed": "2025-12-22",
+          "description": "",
+          "time_filed": "12:02:21",
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2025-12-22.001",
+          "documents": [
+            {
+              "id": 462761481,
+              "document_number": "",
+              "attachment_number": null,
+              "description": "Order/Notice of Hearing/Deadlines (Setting/Resetting)",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        }
+      ],
+      "docket_id": 72056832,
+      "entries_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "stopped": false,
+        "count_reported": 16,
+        "entry_count": 16
+      },
+      "lead_docket_id": 72056327,
+      "lead": {
+        "docket_id": 72056327,
+        "docket_number": "0:25-cr-00479",
+        "case_name": "United States v. Hussein",
+        "pacer_case_id": "229749",
+        "assigned_to_str": "Jerry W. Blackwell",
+        "date_filed": "2025-12-16",
+        "date_terminated": null,
+        "absolute_url": "/docket/72056327/united-states-v-hussein/",
+        "docket_fetch_ok": true,
+        "docket_fetch_status": 200,
+        "docket_fetch_error": null,
+        "entries_fetch_ok": true,
+        "entries_fetch_status": 200,
+        "entries_fetch_error": null,
+        "entry_count": 20,
+        "has_next": true
+      },
+      "lead_entries": [
+        {
+          "id": 447689177,
+          "entry_number": 1,
+          "date_filed": "2025-12-16",
+          "description": "INDICTMENT assigned to Chief Judge Patrick J. Schiltz referred to Magistrate Judge Elizabeth Cowan Wright by USA Daniel W. Bobier as to Hassan Ahmed Hussein (1) count(s) 1-5, Ahmed Abdirashid Mohamed (2) count(s) 1-5. Forfeiture allegations as to this indictment. (ACH) cc: PPS. Modified text on 12/17/2025 (ACH). (Main Document 1 replaced on 12/18/2025) (JAM). (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447766,
+              "document_number": "1",
+              "attachment_number": null,
+              "description": "Indictment",
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+              "page_count": 8,
+              "absolute_url": "/docket/72056327/1/united-states-v-hussein/",
+              "error": null,
+              "sha1": "91da6ac7e890aea899d19fa78ced42dd70e237d5",
+              "date_upload": "2026-02-03T12:39:14.731799-08:00",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296900"
+            }
+          ]
+        },
+        {
+          "id": 447689178,
+          "entry_number": 2,
+          "date_filed": "2025-12-16",
+          "description": "Defendant Information Sheet as to Hassan Ahmed Hussein, Ahmed Abdirashid Mohamed [Court-Only Document(s)]. (Attachments: # 1 Original Signature Page) (ACH) cc: PPS w/deft info sheet. Modified text on 12/17/2025 (ACH). (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447767,
+              "document_number": "2",
+              "attachment_number": null,
+              "description": "Defendant Information Sheet and/or Signature Page",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/2/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296903"
+            }
+          ]
+        },
+        {
+          "id": 447689179,
+          "entry_number": 3,
+          "date_filed": "2025-12-16",
+          "description": "Bench Warrant Issued as to Hassan Ahmed Hussein by Magistrate Judge Shannon G. Elkins. (ACH) cc: AUSA. Modified text on 12/17/2025 (ACH). (Main Document 3 replaced on 12/18/2025) (JAM). (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447768,
+              "document_number": "3",
+              "attachment_number": null,
+              "description": "Warrant Issued - document attached",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/3/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296931"
+            }
+          ]
+        },
+        {
+          "id": 447689180,
+          "entry_number": 4,
+          "date_filed": "2025-12-16",
+          "description": "Bench Warrant Issued as to Ahmed Abdirashid Mohamed by Magistrate Judge Shannon G. Elkins. (ACH) cc: AUSA. Modified text on 12/17/2025 (ACH). (Main Document 4 replaced on 12/18/2025) (JAM). (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447769,
+              "document_number": "4",
+              "attachment_number": null,
+              "description": "Warrant Issued - document attached",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/4/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296936"
+            }
+          ]
+        },
+        {
+          "id": 447689182,
+          "entry_number": 5,
+          "date_filed": "2025-12-16",
+          "description": "Oral Motion to Seal pursuant to LR 49.1 the Indictment be sealed and remain sealed until the defendants have had their first appearance by USA as to Hassan Ahmed Hussein, Ahmed Abdirashid Mohamed. (ACH) (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447771,
+              "document_number": "5",
+              "attachment_number": null,
+              "description": "Motion to Seal Document",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/5/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": ""
+            }
+          ]
+        },
+        {
+          "id": 447689183,
+          "entry_number": 6,
+          "date_filed": "2025-12-16",
+          "description": "Oral Order granting 5 Motion to Seal pursuant to Rule 49.1(d) of the Local Rules for the District of Minnesota, the indictments proposed to be filed under seal be so filed and remain sealed until the defendant make his/her initial appearance before the court as to Hassan Ahmed Hussein (1), Ahmed Abdirashid Mohamed (2). Ordered by Magistrate Judge Shannon G. Elkins on 12/16/2025. (ACH) (Entered: 12/17/2025)",
+          "documents": [
+            {
+              "id": 462447772,
+              "document_number": "6",
+              "attachment_number": null,
+              "description": "Order on Motion to Seal Document",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/6/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": ""
+            }
+          ]
+        },
+        {
+          "id": 447689184,
+          "entry_number": 7,
+          "date_filed": "2025-12-18",
+          "description": "Minute Entry for proceedings held before Magistrate Judge David T. Schultz: Initial Appearance as to Hassan Ahmed Hussein held on 12/18/2025. Counsel to be appointed. Personal Recognizance Bond set with conditions, see Order Setting Conditions of Release. Defendant also arraigned at this hearing, see separate arraignment minutes. Government moves to unseal the case- Granted. (Digital Recording) (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447773,
+              "document_number": "7",
+              "attachment_number": null,
+              "description": "Initial Appearance",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/7/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301485"
+            }
+          ]
+        },
+        {
+          "id": 447689185,
+          "entry_number": 8,
+          "date_filed": "2025-12-18",
+          "description": "Brady Obligation Order as to Hassan Ahmed Hussein. Signed by Magistrate Judge David T. Schultz on 12/18/2025.(JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447774,
+              "document_number": "8",
+              "attachment_number": null,
+              "description": "Brady Obligation Order",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/8/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301495"
+            }
+          ]
+        },
+        {
+          "id": 447689186,
+          "entry_number": 9,
+          "date_filed": "2025-12-18",
+          "description": "Minute Entry for proceedings held before Magistrate Judge David T. Schultz: Arraignment as to Hassan Ahmed Hussein (1) Count 1-5 held on 12/18/2025. Reading of Indictment Waived. Not Guilty Plea Entered. Counsel to be notified of additional dates by separate Order to be issued. (Digital Recording) (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447775,
+              "document_number": "9",
+              "attachment_number": null,
+              "description": "Arraignment",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/9/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301515"
+            }
+          ]
+        },
+        {
+          "id": 447689188,
+          "entry_number": 10,
+          "date_filed": "2025-12-18",
+          "description": "ORDER Setting Conditions of Release as to Hassan Ahmed Hussein. Signed by Magistrate Judge David T. Schultz on 12/18/2025. (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447777,
+              "document_number": "10",
+              "attachment_number": null,
+              "description": "Order Setting Conditions of Release",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/10/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301526"
+            }
+          ]
+        },
+        {
+          "id": 447689189,
+          "entry_number": 11,
+          "date_filed": "2025-12-18",
+          "description": "Appearance Bond Entered as to Hassan Ahmed Hussein in amount of Personal Recognizance. Signed by Magistrate Judge David T. Schultz on 12/18/2025. (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447779,
+              "document_number": "11",
+              "attachment_number": null,
+              "description": "Bond",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/11/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301534"
+            }
+          ]
+        },
+        {
+          "id": 447689190,
+          "entry_number": 12,
+          "date_filed": "2025-12-18",
+          "description": "Minute Entry for proceedings held before Magistrate Judge David T. Schultz: Initial Appearance as to Ahmed Abdirashid Mohamed held on 12/18/2025. Counsel to be appointed. Personal Recognizance Bond set with conditions, see Order Setting Conditions of Release. Defendant also arraigned at this hearing, see separate arraignment minutes. Government moves to unseal the case- Granted. (Digital Recording) (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447780,
+              "document_number": "12",
+              "attachment_number": null,
+              "description": "Initial Appearance",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/12/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301574"
+            }
+          ]
+        },
+        {
+          "id": 447689191,
+          "entry_number": 13,
+          "date_filed": "2025-12-18",
+          "description": "Brady Obligation Order as to Ahmed Abdirashid Mohamed. Signed by Magistrate Judge David T. Schultz on 12/18/2025.(JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447781,
+              "document_number": "13",
+              "attachment_number": null,
+              "description": "Brady Obligation Order",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/13/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301582"
+            }
+          ]
+        },
+        {
+          "id": 447689192,
+          "entry_number": 15,
+          "date_filed": "2025-12-18",
+          "description": "Minute Entry for proceedings held before Magistrate Judge David T. Schultz: Arraignment as to Ahmed Abdirashid Mohamed (2) Count 1-5 held on 12/18/2025. Reading of Indictment Waived. Not Guilty Plea Entered. Counsel to be notified of additional dates by separate Order to be issued. (Digital Recording) (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447782,
+              "document_number": "15",
+              "attachment_number": null,
+              "description": "Arraignment",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/15/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301609"
+            }
+          ]
+        },
+        {
+          "id": 447689193,
+          "entry_number": 16,
+          "date_filed": "2025-12-18",
+          "description": "ORDER Setting Conditions of Release as to Ahmed Abdirashid Mohamed. Signed by Magistrate Judge David T. Schultz on 12/18/2025. (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447783,
+              "document_number": "16",
+              "attachment_number": null,
+              "description": "Order Setting Conditions of Release",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/16/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301623"
+            }
+          ]
+        },
+        {
+          "id": 447689194,
+          "entry_number": 17,
+          "date_filed": "2025-12-18",
+          "description": "Appearance Bond Entered as to Ahmed Abdirashid Mohamed in amount of Personal Recognizance,. Signed by Magistrate Judge David T. Schultz on 12/18/2025. (JAM) (Entered: 12/18/2025)",
+          "documents": [
+            {
+              "id": 462447784,
+              "document_number": "17",
+              "attachment_number": null,
+              "description": "Bond",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/17/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011301629"
+            }
+          ]
+        },
+        {
+          "id": 449880984,
+          "entry_number": 18,
+          "date_filed": "2025-12-19",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Hassan Ahmed Hussein, Ahmed Abdirashid Mohamed. (Murphy, Matthew) (Main Document 18 replaced on 1/9/2026) (LEG). (Entered: 12/19/2025)",
+          "documents": [
+            {
+              "id": 464684506,
+              "document_number": "18",
+              "attachment_number": null,
+              "description": "Notice to the Court of Possible Related Case",
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.18.0.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.18.0.pdf",
+              "page_count": 2,
+              "absolute_url": "/docket/72056327/18/united-states-v-hussein/",
+              "error": null,
+              "sha1": "23a5ac792f3ec4440a68ed93a6b91c3d7658f99e",
+              "date_upload": "2026-01-09T15:35:03.839504-08:00",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011304499"
+            }
+          ]
+        },
+        {
+          "id": 448260419,
+          "entry_number": 19,
+          "date_filed": "2025-12-22",
+          "description": "(Text-Only) ORDER setting deadline: The United States' disclosure deadline is 1/5/2026. IT IS HEREBY ORDERED that the time between today and the status conference date of 1/14/2026 is to be excluded from the Speedy Trial Act computations in this case under 18 U.S.C. \u00a7 3161(h)(7)(B)(iv). Ordered by Magistrate Judge Elizabeth Cowan Wright on 12/22/2025. (CRG) (Entered: 12/22/2025)",
+          "documents": [
+            {
+              "id": 463031278,
+              "document_number": "19",
+              "attachment_number": null,
+              "description": "Order/Notice Setting/Resetting of Hearings/Deadlinea",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/19/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": ""
+            }
+          ]
+        },
+        {
+          "id": 448260420,
+          "entry_number": 20,
+          "date_filed": "2025-12-22",
+          "description": "(Text-Only) ORDER setting hearing as to Hassan Ahmed Hussein and Ahmed Abdirashid Mohamed: A Status Conference is set for 1/14/2026 at 03:30 PM in Courtroom 3C (STP) before Magistrate Judge Elizabeth Cowan Wright. Ordered by Magistrate Judge Elizabeth Cowan Wright on 12/22/2025. (CRG) (Entered: 12/22/2025)",
+          "documents": [
+            {
+              "id": 463031279,
+              "document_number": "20",
+              "attachment_number": null,
+              "description": "Order/Notice Setting/Resetting of Hearings/Deadlinea",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/20/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": ""
+            }
+          ]
+        },
+        {
+          "id": 448260421,
+          "entry_number": 21,
+          "date_filed": "2025-12-22",
+          "description": "ORDER APPOINTING ATTORNEY Brian Toder as to Hassan Ahmed Hussein. Signed by Magistrate Judge Jon T. Huseby on 12/22/2025. (NAH) (Entered: 12/22/2025)",
+          "documents": [
+            {
+              "id": 463031280,
+              "document_number": "21",
+              "attachment_number": null,
+              "description": "Order Appointing Attorney",
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72056327/21/united-states-v-hussein/",
+              "error": null,
+              "sha1": "",
+              "date_upload": null,
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011306606"
+            }
+          ]
+        }
+      ],
+      "alt_docket_72056826": {
+        "docket_id": 72056826,
+        "case_name": "United States v. Hussein",
+        "pacer_case_id": "229751",
+        "entry_count": 14,
+        "docket_fetch_error": null,
+        "entries_fetch_error": null
+      }
+    },
+    "0:25-cr-00482": {
+      "requested": "0:25-cr-00482",
+      "exists_on_recap": true,
+      "count": "https://www.courtlistener.com/api/rest/v4/dockets/?count=on&court=mnd&docket_number=0%3A25-cr-00482&page_size=20",
+      "status": 200,
+      "error": null,
+      "hits": [
+        {
+          "id": 72184616,
+          "docket_number": "0:25-cr-00482",
+          "case_name": "United States v. Sallah",
+          "pacer_case_id": "229752",
+          "date_filed": "2025-12-16",
+          "date_terminated": null,
+          "assigned_to_str": "Jerry W. Blackwell",
+          "absolute_url": "/docket/72184616/united-states-v-sallah/",
+          "party": null
+        },
+        {
+          "id": 72065130,
+          "docket_number": "0:25-cr-00482",
+          "case_name": "United States v. Sallah",
+          "pacer_case_id": "229753",
+          "date_filed": "2025-12-16",
+          "date_terminated": null,
+          "assigned_to_str": null,
+          "absolute_url": "/docket/72065130/united-states-v-sallah/",
+          "party": null
+        }
+      ],
+      "entries": [
+        {
+          "id": 460875903,
+          "entry_number": 1,
+          "date_filed": "2025-12-16",
+          "description": "INDICTMENT (Unsealed 12/22/2025) assigned to Judge Susan Richard Nelson referred to Magistrate Judge Douglas L. Micko by USA Daniel Bobier as to Kaamil Omar Sallah (1) counts 1-4. Forfeiture allegations as to this indictment. (MKB) cc: PPS. Modified text on 12/17/2025 (MKB). DOCUMENT QC'd by KT on 12/17/25. (kt) Modified text on 12/22/2025 (NAH). (Main Document 1 replaced on 12/22/2025) (NAH). (Entered: 12/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 5,
+          "recap_sequence_number": "2025-12-16.001",
+          "documents": [
+            {
+              "id": 475952427,
+              "document_number": "1",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+              "page_count": 8,
+              "absolute_url": "/docket/72184616/1/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296869",
+              "error": null,
+              "date_upload": "2026-07-07T11:45:41.463047-07:00",
+              "sha1": "65d60b8723b308f6737d51d04471f5db3c6f5b20",
+              "is_sealed": null,
+              "is_available_via_ia": true
+            }
+          ]
+        },
+        {
+          "id": 460875904,
+          "entry_number": 2,
+          "date_filed": "2025-12-16",
+          "description": "Defendant Information Sheet as to Kaamil Omar Sallah [Court-Only Document(s)]. (Attachments: # 1 Original Signature Page) (MKB) cc: Def Info Sheet to PPS. Modified text on 12/17/2025 (MKB).DOCUMENT QC'd by KT on 12/17/25. (kt) (Entered: 12/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 9,
+          "recap_sequence_number": "2025-12-16.002",
+          "documents": [
+            {
+              "id": 475952428,
+              "document_number": "2",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/2/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011296879",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875905,
+          "entry_number": 4,
+          "date_filed": "2025-12-16",
+          "description": "Oral Motion to Seal pursuant to LR 49.1 the Indictment be sealed and remain sealed until the defendants have had their first appearance by USA as to Kaamil Omar Sallah. (MKB) (Entered: 12/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2025-12-16.003",
+          "documents": [
+            {
+              "id": 475952429,
+              "document_number": "4",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/4/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875906,
+          "entry_number": 5,
+          "date_filed": "2025-12-16",
+          "description": "Oral Order granting Motion to Seal pursuant to Rule 49.1(d) of the Local Rules for the District of Minnesota, the indictments proposed to be filed under seal be so filed and remain sealed until the defendant make his/her initial appearance before the court as to Kaamil Omar Sallah (1) by Magistrate Judge Shannon G Elkins on 12/16/25. (MKB) (Entered: 12/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2025-12-16.004",
+          "documents": [
+            {
+              "id": 475952430,
+              "document_number": "5",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/5/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875907,
+          "entry_number": 6,
+          "date_filed": "2025-12-19",
+          "description": "MOTION to Unseal Case by USA as to Kaamil Omar Sallah. (Thompson, Joseph) (Main Document 6 replaced on 12/22/2025) (NAH). (Entered: 12/19/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 20,
+          "recap_sequence_number": "2025-12-19.001",
+          "documents": [
+            {
+              "id": 475952431,
+              "document_number": "6",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/6/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011304160",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875908,
+          "entry_number": 7,
+          "date_filed": "2025-12-22",
+          "description": "ORDER granting 6 Motion to Unseal Case. Signed by Magistrate Judge David T. Schultz on 12/22/2025. (NAH) (Entered: 12/22/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 27,
+          "recap_sequence_number": "2025-12-22.001",
+          "documents": [
+            {
+              "id": 475952432,
+              "document_number": "7",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/7/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011305202",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875909,
+          "entry_number": 8,
+          "date_filed": "2025-12-30",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Kaamil Omar Sallah. (Murphy, Matthew) (Main Document 8 replaced on 1/9/2026) (LEG). (Entered: 12/30/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 29,
+          "recap_sequence_number": "2025-12-30.001",
+          "documents": [
+            {
+              "id": 475952433,
+              "document_number": "8",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/8/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011314713",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 460875910,
+          "entry_number": 9,
+          "date_filed": "2026-01-08",
+          "description": "ORDER OF REASSIGNMENT OF RELATED CASES as to Kaamil Omar Sallah. IT IS HEREBY ORDERED that Case No. 25-CR-482 (SRN/DLM) be reassigned to Judge Jerry W. Blackwell and Magistrate Judge John F. Docherty, nunc pro tunc, by use of a card from the appropriate deck in the automated case assignment system. The Clerk of Court is directed to void and reuse a card from the same list pursuant to this Court's Assignment of Cases Order filed July 19, 2021. Signed by Judge Jerry W. Blackwell and Judge Susan Richard Nelson on 1/7/2026. IT IS FINALLY ORDERED that a copy of this order shall be filed in each of the above respective files. Case number is now 25-cr-482 (JWB/JFD). (CLK) (Entered: 01/08/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 32,
+          "recap_sequence_number": "2026-01-08.001",
+          "documents": [
+            {
+              "id": 475952434,
+              "document_number": "9",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/9/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011326929",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 463660394,
+          "entry_number": 10,
+          "date_filed": "2026-04-29",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for USA. (Kline, Rebecca) (Entered: 04/29/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 36,
+          "recap_sequence_number": "2026-04-29.001",
+          "documents": [
+            {
+              "id": 478812687,
+              "document_number": "10",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/10/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011554601",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 469981224,
+          "entry_number": 11,
+          "date_filed": "2026-05-14",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Kaamil Omar Sallah. (Murphy, Matthew) (Main Document 11 replaced on 6/4/2026) (LEG). (Entered: 05/14/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 39,
+          "recap_sequence_number": "2026-05-14.001",
+          "documents": [
+            {
+              "id": 485337932,
+              "document_number": "11",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/72184616/11/united-states-v-sallah/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011581510",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        }
+      ],
+      "docket_id": 72184616,
+      "entries_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "stopped": false,
+        "count_reported": 10,
+        "entry_count": 10
+      },
+      "alt_docket_72065130": {
+        "docket_id": 72065130,
+        "case_name": "United States v. Sallah",
+        "pacer_case_id": "229753",
+        "entry_count": 8
+      }
+    },
+    "0:25-cr-00353": {
+      "requested": "0:25-cr-00353",
+      "canonical_docket_id": 71378943,
+      "docket_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "id": 71378943,
+        "docket_number": "0:25-cr-00353",
+        "case_name": "United States v. Adow",
+        "pacer_case_id": "227865",
+        "date_filed": "2025-09-18",
+        "date_terminated": null,
+        "assigned_to_str": "Paul A. Magnuson",
+        "absolute_url": "/docket/71378943/united-states-v-adow/"
+      },
+      "entries_fetch": {
+        "ok": true,
+        "status": 200,
+        "error": null,
+        "stopped": false,
+        "count_reported": 17,
+        "entry_count": 17,
+        "pages": 1,
+        "has_next": false
+      },
+      "entries": [
+        {
+          "id": 438379749,
+          "entry_number": 1,
+          "date_filed": "2025-09-18",
+          "description": "FELONY INFORMATION by USA Daniel Bobier as to Anwar Ahmed Adow (1) counts 1-4 assigned to Judge Paul A. Magnuson. Forfeiture allegations as to this information. (kt) (Entered: 09/18/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 5,
+          "recap_sequence_number": "2025-09-18.001",
+          "documents": [
+            {
+              "id": 452878769,
+              "document_number": "1",
+              "attachment_number": null,
+              "description": "Information - Felony",
+              "short_description": null,
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.227865/gov.uscourts.mnd.227865.1.0_1.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.227865/gov.uscourts.mnd.227865.1.0.pdf",
+              "page_count": 6,
+              "absolute_url": "/docket/71378943/1/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011153248",
+              "error": null,
+              "date_upload": "2026-08-10T15:34:18.139129-07:00",
+              "sha1": "a55fb4423ae5c73af16aafdfe675be0f0053666a",
+              "is_sealed": null,
+              "is_available_via_ia": true
+            }
+          ]
+        },
+        {
+          "id": 438379751,
+          "entry_number": 2,
+          "date_filed": "2025-09-18",
+          "description": "Defendant Information Sheet as to Anwar Ahmed Adow. (Attachments: # 1 Cover Letter) (kt). DOCUMENT QC'D on 9/24/2025 (LTT). (Main Document 2 replaced on 11/18/2025) (NMS). (Attachment 1 replaced on 11/18/2025) (NMS). (Entered: 09/18/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 9,
+          "recap_sequence_number": "2025-09-18.002",
+          "documents": [
+            {
+              "id": 452878770,
+              "document_number": "2",
+              "attachment_number": null,
+              "description": "Defendant Information Sheet and/or Signature Page",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/2/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011153262",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 438379752,
+          "entry_number": 3,
+          "date_filed": "2025-09-18",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for Anwar Ahmed Adow. (Cotter, Patrick) (Entered: 09/18/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 13,
+          "recap_sequence_number": "2025-09-18.003",
+          "documents": [
+            {
+              "id": 452878771,
+              "document_number": "3",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution - Defendant",
+              "short_description": null,
+              "is_available": true,
+              "filepath_local": "recap/gov.uscourts.mnd.227865/gov.uscourts.mnd.227865.3.0.pdf",
+              "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.227865/gov.uscourts.mnd.227865.3.0.pdf",
+              "page_count": 1,
+              "absolute_url": "/docket/71378943/3/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011153753",
+              "error": null,
+              "date_upload": "2025-09-23T14:16:13.369459-07:00",
+              "sha1": "9507c5f2dada326c09cb0dda8e76a21a6162c7ec",
+              "is_sealed": null,
+              "is_available_via_ia": true
+            }
+          ]
+        },
+        {
+          "id": 441743910,
+          "entry_number": 4,
+          "date_filed": "2025-09-22",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Anwar Ahmed Adow. (Bobier, Daniel) (Main Document 4 replaced on 9/22/2025) (MGV). (Main Document 4 replaced on 10/10/2025) (LEG). (Entered: 09/22/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 16,
+          "recap_sequence_number": "2025-09-22.001",
+          "documents": [
+            {
+              "id": 456332876,
+              "document_number": "4",
+              "attachment_number": null,
+              "description": "Notice to the Court of Possible Related Case",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/4/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011158383",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441743912,
+          "entry_number": 5,
+          "date_filed": "2025-10-15",
+          "description": "(Text-Only) NOTICE as to Anwar Ahmed Adow: Initial Appearance, Arraignment, and Plea Hearing SET for 10/23/2025 at 11:00 AM in Courtroom 7B (STP) before Judge Paul A. Magnuson. (NMS) (Entered: 10/15/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2025-10-15.001",
+          "documents": [
+            {
+              "id": 456332877,
+              "document_number": "5",
+              "attachment_number": null,
+              "description": "Notice of Setting/Resetting Initial Appearance/Arraignment/Plea Agreement Hearing",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/5/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 441969152,
+          "entry_number": 7,
+          "date_filed": "2025-10-23",
+          "description": "Minute Entry for proceedings held before Judge Paul A. Magnuson: Initial, Arraignment, and Change of Plea Hearing as to Anwar Ahmed Adow held on 10/23/2025. Plea entered by Anwar Ahmed Adow. Guilty as to Count 1 of the Information. (Court Reporter Tim Willette) (NMS) (Entered: 10/23/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 27,
+          "recap_sequence_number": "2025-10-23.001",
+          "documents": [
+            {
+              "id": 456564494,
+              "document_number": "7",
+              "attachment_number": null,
+              "description": "Change of Plea Hearing and Plea Entered",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/7/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011212325",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885290,
+          "entry_number": 8,
+          "date_filed": "2025-10-23",
+          "description": "WAIVER OF INDICTMENT by Anwar Ahmed Adow (LTT) Document QC'd on 11/10/2025 (CLK). (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 30,
+          "recap_sequence_number": "2025-10-23.002",
+          "documents": [
+            {
+              "id": 460595976,
+              "document_number": "8",
+              "attachment_number": null,
+              "description": "Waiver of Indictment",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/8/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213540",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885291,
+          "entry_number": 9,
+          "date_filed": "2025-10-23",
+          "description": "PLEA AGREEMENT as to Anwar Ahmed Adow (LTT) Document QC'd on 11/10/2025 (CLK). (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 32,
+          "recap_sequence_number": "2025-10-23.003",
+          "documents": [
+            {
+              "id": 460595977,
+              "document_number": "9",
+              "attachment_number": null,
+              "description": "Plea Agreement",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/9/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213558",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885292,
+          "entry_number": 10,
+          "date_filed": "2025-10-23",
+          "description": "ORDER Setting Conditions of Release as to Anwar Ahmed Adow. Signed by Judge Paul A. Magnuson on 10/23/2025. (LTT) Document QC'd on 11/10/2025 (CLK). (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 35,
+          "recap_sequence_number": "2025-10-23.004",
+          "documents": [
+            {
+              "id": 460595978,
+              "document_number": "10",
+              "attachment_number": null,
+              "description": "Order Setting Conditions of Release",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/10/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213575",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885293,
+          "entry_number": 11,
+          "date_filed": "2025-10-23",
+          "description": "Personal Recognizance Bond Bond Entered as to Anwar Ahmed Adow. Signed by Judge Paul A. Magnuson on 10/23/2025. (LTT) Document QC'd on 11/10/2025 (CLK). (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 38,
+          "recap_sequence_number": "2025-10-23.005",
+          "documents": [
+            {
+              "id": 460595979,
+              "document_number": "11",
+              "attachment_number": null,
+              "description": "Bond",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/11/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213604",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885294,
+          "entry_number": 12,
+          "date_filed": "2025-10-24",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for USA. (Murphy, Matthew) (Entered: 10/24/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 40,
+          "recap_sequence_number": "2025-10-24.001",
+          "documents": [
+            {
+              "id": 460595980,
+              "document_number": "12",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution/Withdrawal- USA",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/12/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011213636",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 445885295,
+          "entry_number": 13,
+          "date_filed": "2025-11-13",
+          "description": "NOTICE OF ATTORNEY APPEARANCE for USA. (Thompson, Joseph) (Entered: 11/13/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 43,
+          "recap_sequence_number": "2025-11-13.001",
+          "documents": [
+            {
+              "id": 460595981,
+              "document_number": "13",
+              "attachment_number": null,
+              "description": "Notice of Attorney Appearance/Substitution/Withdrawal- USA",
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/13/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011243431",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 447615575,
+          "entry_number": 14,
+          "date_filed": "2025-12-17",
+          "description": "PRELIMINARY PRESENTENCE REPORT as to Anwar Ahmed Adow (Restricted Document). Objections due December 31, 2025. (mas) (Entered: 12/17/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 46,
+          "recap_sequence_number": "2025-12-17.001",
+          "documents": [
+            {
+              "id": 462373006,
+              "document_number": "14",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/14/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011299071",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449883097,
+          "entry_number": 15,
+          "date_filed": "2025-12-22",
+          "description": "First MOTION for Extension of Time to File Objections to Presentence Investigation Report by Anwar Ahmed Adow. (Cotter, Patrick) (Entered: 12/22/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 48,
+          "recap_sequence_number": "2025-12-22.001",
+          "documents": [
+            {
+              "id": 464686695,
+              "document_number": "15",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/15/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011305499",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449883098,
+          "entry_number": 16,
+          "date_filed": "2025-12-31",
+          "description": "IT IS HEREBY ORDERED that: 1. Defendant's Motion for Extension of Time to File Objections (Docket No. 15 ) is GRANTED; and 2. The parties may have until January 28, 2026, to file objections to the preliminary Presentence Investigation Report. Signed by Judge Paul A. Magnuson on 12/31/2025. (MGMM) (Entered: 12/31/2025)",
+          "time_filed": null,
+          "pacer_sequence_number": 50,
+          "recap_sequence_number": "2025-12-31.001",
+          "documents": [
+            {
+              "id": 464686696,
+              "document_number": "16",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/16/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011316939",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 449883099,
+          "entry_number": 17,
+          "date_filed": "2026-01-05",
+          "description": "(Text-Only) ORDER/NOTICE TO ATTORNEY as to Anwar Ahmed Adow: The deadline to object to the preliminary Presentence Investigation Report (see Docket No. 16 ) is CONTINUED to a date to be determined. Ordered by Judge Paul A. Magnuson on 1/5/2026. (MGMM) (Entered: 01/05/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": null,
+          "recap_sequence_number": "2026-01-05.001",
+          "documents": [
+            {
+              "id": 464686697,
+              "document_number": "17",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/17/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        },
+        {
+          "id": 473983398,
+          "entry_number": 18,
+          "date_filed": "2026-05-14",
+          "description": "NOTICE TO THE COURT OF POSSIBLE RELATED CASE by USA as to Anwar Ahmed Adow. (Murphy, Matthew) (Main Document 18 replaced on 6/4/2026) (LEG). (Entered: 05/14/2026)",
+          "time_filed": null,
+          "pacer_sequence_number": 54,
+          "recap_sequence_number": "2026-05-14.001",
+          "documents": [
+            {
+              "id": 489469932,
+              "document_number": "18",
+              "attachment_number": null,
+              "description": null,
+              "short_description": null,
+              "is_available": false,
+              "filepath_local": null,
+              "filepath_ia": "",
+              "page_count": null,
+              "absolute_url": "/docket/71378943/18/united-states-v-adow/",
+              "is_free_on_pacer": null,
+              "pacer_doc_id": "101011581531",
+              "error": null,
+              "date_upload": null,
+              "sha1": "",
+              "is_sealed": null,
+              "is_available_via_ia": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "downloads": [
+    {
+      "docket_number": "0:25-cr-00479",
+      "docket_id": 72056327,
+      "ecf": 1,
+      "instrument": "indictment",
+      "is_available": true,
+      "filepath_local": "recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+      "recap_document_id": 462447766,
+      "path": "/workspace/minnesota-fraud-corpus/court/pdfs/0_25-cr-00479_ecf1_hussein-hss.pdf",
+      "sha256": "b7310b575b4e080ed42633cfbbf19727751e375884ea213bbe69871789ebee37",
+      "bytes": 4768400,
+      "pages": 8,
+      "extract": "/workspace/minnesota-fraud-corpus/court/extracts/hussein-25-cr-479-ecf1.json"
+    },
+    {
+      "docket_number": "0:25-cr-00482",
+      "docket_id": 72184616,
+      "ecf": 1,
+      "instrument": "indictment",
+      "is_available": true,
+      "filepath_local": "recap/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+      "recap_document_id": 475952427,
+      "path": "/workspace/minnesota-fraud-corpus/court/pdfs/0_25-cr-00482_ecf1_sallah-hss.pdf",
+      "sha256": "c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8",
+      "bytes": 4399478,
+      "pages": 8,
+      "extract": "/workspace/minnesota-fraud-corpus/court/extracts/sallah-25-cr-482-ecf1.json"
+    }
+  ],
+  "extracts": [
+    "/workspace/minnesota-fraud-corpus/court/extracts/hussein-25-cr-479-ecf1.json",
+    "/workspace/minnesota-fraud-corpus/court/extracts/sallah-25-cr-482-ecf1.json"
+  ],
+  "available_vs_missing": {
+    "queried_at_utc": "2026-08-27T20:26:24.350452+00:00",
+    "finished_utc": "2026-08-27T20:33:50.816107+00:00",
+    "429_stopped": false,
+    "pacer_purchases": 0,
+    "0:25-cr-00354_Asad_Adow_Leo_Human_Services": {
+      "docket_id": 71379215,
+      "exists_on_recap": true,
+      "felony_information_ecf1": "MISSING_PDF \u2014 docket entry exists; is_available=false; filepath_local=null; recap_document_id=453240711",
+      "plea_agreement_ecf14": "MISSING_PDF \u2014 docket entry exists 2025-11-17; is_available=false; filepath_local=null; recap_document_id=460595716",
+      "waiver_of_indictment_ecf13": "MISSING_PDF \u2014 is_available=false",
+      "judgment": "NOT_ON_DOCKET \u2014 date_terminated=null; no judgment entry",
+      "plea_minute_ecf12": "DOCKET_FACT only \u2014 2025-11-17 guilty Count 1; not ADJUDICATED",
+      "any_recap_pdf_on_this_docket": false
+    },
+    "0:25-cr-00353_Anwar_Adow_Liberty_Plus": {
+      "docket_id": 71378943,
+      "exists_on_recap": true,
+      "felony_information_ecf1": "AVAILABLE \u2014 is_available=true; already archived 0_25-cr-00353_ecf1_anwar-adow-hss.pdf (6 pp)",
+      "plea_agreement_ecf9": "MISSING_PDF \u2014 docket entry exists 2025-10-23; is_available=false; filepath_local=null; recap_document_id=460595977",
+      "judgment": "NOT_ON_DOCKET \u2014 date_terminated=null; PSR process ongoing (restricted PSR ECF 14; objections continued)",
+      "plea_minute_ecf7": "DOCKET_FACT only \u2014 2025-10-23 guilty Count 1 of the Information; not ADJUDICATED",
+      "other_available": "ECF 3 notice of appearance is_available=true (not charging/plea/judgment)"
+    },
+    "0:25-cr-00479_United_States_v_Hussein": {
+      "exists_on_recap": true,
+      "case_name": "United States v. Hussein",
+      "lead_docket_id": 72056327,
+      "pacer_case_id": "229749",
+      "defendants_from_docket": [
+        "Hassan Ahmed Hussein (1)",
+        "Ahmed Abdirashid Mohamed (2)"
+      ],
+      "indictment_ecf1": "AVAILABLE \u2014 downloaded 0_25-cr-00479_ecf1_hussein-hss.pdf sha256=b7310b575b4e080ed42633cfbbf19727751e375884ea213bbe69871789ebee37 4768400 bytes 8 pp recap_document_id=462447766 is_available=true filepath_local=recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+      "plea_agreement": "NOT_ON_LEAD_DOCKET",
+      "judgment": "NOT_ON_LEAD_DOCKET \u2014 not-guilty pleas at arraignment 2025-12-18",
+      "other_cl_ids_same_number": [
+        72056832,
+        72056826,
+        72056327
+      ],
+      "note": "Related-case number from Asad Adow 354 ECF 17. Not Asad Adow. Provider Pristine Health LLC. CHARGED_ALLEGED."
+    },
+    "0:25-cr-00482_United_States_v_Sallah": {
+      "exists_on_recap": true,
+      "case_name": "United States v. Sallah",
+      "docket_id": 72184616,
+      "pacer_case_id": "229752",
+      "defendant_from_docket": "Kaamil Omar Sallah (1)",
+      "indictment_ecf1": "AVAILABLE \u2014 downloaded 0_25-cr-00482_ecf1_sallah-hss.pdf sha256=c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8 4399478 bytes 8 pp recap_document_id=475952427 is_available=true filepath_local=recap/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+      "plea_agreement": "NOT_ON_DOCKET",
+      "judgment": "NOT_ON_DOCKET",
+      "other_cl_ids_same_number": [
+        72184616,
+        72065130
+      ],
+      "note": "Related-case number from Asad Adow 354 ECF 18. Not Asad Adow. Provider SafeLodgings, Inc. Indictment mentions Employee A previously at Leo Human Services. CHARGED_ALLEGED."
+    }
+  },
+  "queried_finished_utc": "2026-08-27T20:33:50.816107+00:00",
+  "log": [
+    "start 2026-08-27T20:26:24.350387+00:00 token=yes",
+    "  OK 200 dockets/71379215 1632 bytes",
+    "  sleep 12.5s before dockets/71379577",
+    "  OK 200 dockets/71379577 1629 bytes",
+    "  sleep 12.5s before docket-entries/71379215:page1",
+    "  OK 200 docket-entries/71379215:page1 24079 bytes",
+    "  sleep 12.5s before docket-entries/71379577:page1",
+    "  OK 200 docket-entries/71379577:page1 55428 bytes",
+    "  sleep 12.5s before dockets?docket_number=0:25-cr-00479&court=mnd",
+    "  OK 200 dockets?docket_number=0:25-cr-00479&court=mnd 5082 bytes",
+    "  sleep 12.5s before dockets?docket_number=0:25-cr-00482&court=mnd",
+    "  OK 200 dockets?docket_number=0:25-cr-00482&court=mnd 3447 bytes",
+    "  sleep 12.5s before docket-entries/72056832:page1",
+    "  OK 200 docket-entries/72056832:page1 32377 bytes",
+    "  sleep 12.5s before docket-entries/72184616:page1",
+    "  OK 200 docket-entries/72184616:page1 14121 bytes",
+    "  sleep 12.5s before dockets/71378943",
+    "  OK 200 dockets/71378943 1682 bytes",
+    "  sleep 12.5s before docket-entries/71378943:page1",
+    "  OK 200 docket-entries/71378943:page1 35553 bytes",
+    "  PDF 0_25-cr-00482_ecf1_indictment.pdf 4399478 sha256=c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8"
+  ],
+  "followup_api_calls": [
+    {
+      "endpoint": "dockets/72056327",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72056327/",
+      "started_utc": "2026-08-27T20:30:03.439311+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1663,
+      "finished_utc": "2026-08-27T20:30:03.851143+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72056327:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72056327&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:30:16.351386+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 43720,
+      "finished_utc": "2026-08-27T20:30:16.924675+00:00"
+    },
+    {
+      "endpoint": "dockets/72056826",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72056826/",
+      "started_utc": "2026-08-27T20:30:29.424866+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1626,
+      "finished_utc": "2026-08-27T20:30:30.180987+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72056826:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72056826&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:30:42.681201+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 30076,
+      "finished_utc": "2026-08-27T20:30:43.381777+00:00"
+    },
+    {
+      "endpoint": "dockets/72065130",
+      "url": "https://www.courtlistener.com/api/rest/v4/dockets/72065130/",
+      "started_utc": "2026-08-27T20:30:55.882024+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 1622,
+      "finished_utc": "2026-08-27T20:30:56.169013+00:00"
+    },
+    {
+      "endpoint": "docket-entries/72065130:page1",
+      "url": "https://www.courtlistener.com/api/rest/v4/docket-entries/?docket=72065130&page_size=100&order_by=entry_number",
+      "started_utc": "2026-08-27T20:31:08.669227+00:00",
+      "status": 200,
+      "ok": true,
+      "bytes": 11687,
+      "finished_utc": "2026-08-27T20:31:09.061465+00:00"
+    }
+  ],
+  "asad_adow_0_25-cr-00354_exact_cl": {
+    "docket_id": 71379215,
+    "alt_docket_id": 71379577,
+    "docket_number": "0:25-cr-00354",
+    "case_name": "United States v. Adow",
+    "pacer_case_id": "227867",
+    "date_filed": "2025-09-18",
+    "date_terminated": null,
+    "assigned_to_str": "Jerry W. Blackwell",
+    "absolute_url": "/docket/71379215/united-states-v-adow/",
+    "docket_fetch_error": null,
+    "entries_fetch_error": null,
+    "entry_count": 17,
+    "felony_information_ecf1": {
+      "entry_id": 438731277,
+      "entry_number": 1,
+      "date_filed": "2025-09-18",
+      "description": "FELONY INFORMATION by USA Daniel Bobier as to Asad Ahmed Adow (1) counts 1-4 assigned to Judge Ann D. Montgomery. Forfeiture allegations as to this information. (BTX) (Entered: 09/18/2025)",
+      "recap_document_id": 453240711,
+      "is_available": false,
+      "filepath_local": null,
+      "filepath_ia": "",
+      "page_count": null,
+      "error": null
+    },
+    "plea_agreement_ecf14": {
+      "entry_id": 445885047,
+      "entry_number": 14,
+      "date_filed": "2025-11-17",
+      "description": "PLEA AGREEMENT as to Asad Ahmed Adow. (BTX) (Entered: 11/17/2025)",
+      "recap_document_id": 460595716,
+      "is_available": false,
+      "filepath_local": null,
+      "filepath_ia": "",
+      "page_count": null,
+      "error": null
+    },
+    "waiver_of_indictment_ecf13": {
+      "entry_id": 445885045,
+      "entry_number": 13,
+      "recap_document_id": 460595715,
+      "is_available": false,
+      "filepath_local": null,
+      "error": null
+    },
+    "plea_minute_ecf12": {
+      "entry_id": 445885044,
+      "entry_number": 12,
+      "date_filed": "2025-11-17",
+      "description": "Minute Entry for proceedings held before Judge Jerry W. Blackwell: Initial Appearance as to Asad Ahmed Adow held on 11/17/2025, Arraignment as to Asad Ahmed Adow (1) Counts 1-4 held on 11/17/2025, Change of Plea Hearing as to Asad Ahmed Adow held on 11/17/2025. Plea entered by Asad Ahmed Adow (1) Counts 1-4 Asad Ahmed Adow (1) Guilty Count 1. (Court Reporter Caitlin Albrecht) (DMD) (Entered: 11/17/2025)",
+      "is_available": false,
+      "filepath_local": null,
+      "note": "Docket-minute fact: waived indictment and pleaded guilty to Count 1 on 2025-11-17. Not ADJUDICATED; no judgment PDF."
+    },
+    "judgment": {
+      "present_on_docket": false,
+      "entries": [],
+      "is_available": false,
+      "error": null
+    }
+  },
+  "anwar_adow_0_25-cr-00353_exact_cl": {
+    "docket_id": 71378943,
+    "docket_number": "0:25-cr-00353",
+    "case_name": "United States v. Adow",
+    "pacer_case_id": "227865",
+    "date_terminated": null,
+    "docket_fetch_error": null,
+    "entries_fetch_error": null,
+    "felony_information_ecf1": {
+      "entry_id": 438379749,
+      "recap_document_id": 452878769,
+      "is_available": true,
+      "filepath_local": "recap/gov.uscourts.mnd.227865/gov.uscourts.mnd.227865.1.0_1.pdf",
+      "page_count": 6,
+      "error": null,
+      "already_locally_archived": true,
+      "local_pdf": "research/court/pdfs/0_25-cr-00353_ecf1_anwar-adow-hss.pdf"
+    },
+    "plea_minute_ecf7": {
+      "entry_id": 441969152,
+      "date_filed": "2025-10-23",
+      "description": "Minute Entry for proceedings held before Judge Paul A. Magnuson: Initial, Arraignment, and Change of Plea Hearing as to Anwar Ahmed Adow held on 10/23/2025. Plea entered by Anwar Ahmed Adow. Guilty as to Count 1 of the Information. (Court Reporter Tim Willette) (NMS) (Entered: 10/23/2025)",
+      "is_available": false,
+      "filepath_local": null,
+      "note": "Docket-minute fact: guilty as to Count 1 of the Information on 2025-10-23. Not ADJUDICATED."
+    },
+    "plea_agreement_ecf9": {
+      "entry_id": 445885291,
+      "date_filed": "2025-10-23",
+      "description": "PLEA AGREEMENT as to Anwar Ahmed Adow (LTT) Document QC'd on 11/10/2025 (CLK). (Entered: 10/24/2025)",
+      "recap_document_id": 460595977,
+      "is_available": false,
+      "filepath_local": null,
+      "error": null
+    },
+    "judgment": {
+      "present_on_docket": false,
+      "is_available": false,
+      "error": null
+    }
+  }
+}

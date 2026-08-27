@@ -1,0 +1,19 @@
+{
+  "source_id": "src-mnd-25-cr-00354-adow-asad-recap-gap",
+  "canonical_url": "https://www.courtlistener.com/docket/71379215/united-states-v-adow/",
+  "issuing_body": "United States District Court, District of Minnesota",
+  "title": "RECAP gap log, United States v. Asad Ahmed Adow, No. 0:25-cr-00354 (D. Minn.)",
+  "publication_date": "2025-09-18",
+  "retrieval_date": "2026-08-27",
+  "document_date": "2025-09-18",
+  "document_type": "docket_status",
+  "case_number": "0:25-cr-00354",
+  "court": "United States District Court, District of Minnesota",
+  "docket_id": "71379215",
+  "pacer_case_id": "227867",
+  "local_path": "research/court/raw/asad-adow-25-cr-354-recap-status.json",
+  "access_status": "needed_not_nonexistent",
+  "notes": "Queried CourtListener REST v4 public RECAP only on 2026-08-27, no PACER purchase. Docket exists. Felony information ECF 1, waiver ECF 13, and plea agreement ECF 14 are recap documents with is_available=false. No judgment on the docket (date_terminated=null). Guilty-to-Count-1 minute ECF 12 (2025-11-17) is a docket fact only, not ADJUDICATED. Unchanged from 2026-08-26. Anwar Adow 0:25-cr-00353 plea agreement ECF 9 likewise unavailable.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD"
+}

@@ -1,0 +1,53 @@
+{
+  "docket_number": "0:25-cr-00482",
+  "ecf": 1,
+  "filed": "2025-12-16",
+  "pages": 8,
+  "instrument": "indictment",
+  "source_pdf": "research/court/pdfs/0_25-cr-00482_ecf1_sallah-hss.pdf",
+  "sha256": "c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8",
+  "bytes": 4399478,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 981(a)(1)(C)",
+    "21 U.S.C. \u00a7 853(p)",
+    "28 U.S.C. \u00a7 2461(c)"
+  ],
+  "defendant": "Kaamil Omar Sallah",
+  "provider": "SafeLodgings, Inc.",
+  "counts": [
+    {
+      "count": "1-4",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Mar 2023\u2013Aug 2025. OCR of scanned RECAP PDF; CHARGED_ALLEGED."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 1400000,
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "notes": "Indictment \u00b613: between approx. March 2023 and August 2025, Sallah/SafeLodgings fraudulently claimed approximately $1.4 million. CHARGED_ALLEGED."
+    },
+    {
+      "value": 1300000,
+      "metric_type": "amount_received",
+      "exact_or_approximate": "approximate",
+      "notes": "Indictment \u00b613: received nearly $1.3 million. CHARGED_ALLEGED."
+    }
+  ],
+  "leo_human_services_mention": "\u00b621 names Employee A previously at Leo Human Services, alleged to have submitted millions in fraudulent HSS bills. Not a charging document against Asad Adow / Leo.",
+  "docket_id": 72184616,
+  "pacer_case_id": "229752",
+  "related_to_asad_adow": "Named in 0:25-cr-00354 ECF 18 reassignment of related case 25-CR-482 (SRN/DLM) to Judge Blackwell.",
+  "harvested_at_utc": "2026-08-27T20:32:55.355204+00:00",
+  "stub": true,
+  "ocr_source": "research/court/raw/sallah-25-cr-482-ecf1-ocr-p1-5.txt",
+  "recap_document_id": 475952427,
+  "filepath_local": "recap/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+  "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+  "alt_docket_id": 72065130
+}
