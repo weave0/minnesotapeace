@@ -89,7 +89,7 @@ Metric handling:
 
 ## Open acquisition gaps
 
-Asad Adow `25-cr-354` information remains missing from RECAP. Aden and Falade indictment scans are locally archived; count-level OCR is in progress. Anwar Adow `25-cr-353` information is a text PDF and has been count-mapped from the face of ECF 1.
+Asad Adow `25-cr-354` information remains missing from RECAP. Aden, Falade, and Anwar Adow charging instruments are count-mapped from the face of ECF 1.
 
 ## Source
 
@@ -98,8 +98,8 @@ https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabili
 
 ## Local charging instruments (2026-08-26 RECAP)
 
-- **25-cr-349** ECF 1 indictment archived (`0_25-cr-00349_ecf1_aden-hss.pdf`). Counts 1–6 are 18 U.S.C. § 1343. Caption defendants match the DOJ release. OCR of p.7 alleges each defendant personally pocketed about $300,000–$400,000 from Brilliant Minds — still CHARGED_ALLEGED; do not add those four figures into a loss total.
-- **25-cr-351** ECF 1 indictment archived (`0_25-cr-00351_ecf1_falade-hss.pdf`). Counts 1–4 are 18 U.S.C. § 1343.
+- **25-cr-349** ECF 1 indictment count-mapped from OCR (`aden-25-cr-349-ecf1.json`). Counts 1–6 are 18 U.S.C. § 1343 (dated wires Sept 2022–Oct 2024). ¶14 Brilliant Minds submitted about **$2.3 million** in reimbursement claims (`amount_billed`; same figure restated ¶21 — do not sum). ¶15 Foundation First submitted about **$222,000** (`amount_billed`, separate provider). ¶23 each defendant personally pocketed about $300,000–$400,000 from Brilliant Minds (proceeds range, **not** 4×, overlaps $2.3M). ¶24 nearly $500,000 Amex charges from company accounts. SOS: Brilliant Minds formed Oct 2020 is consistent with ¶10; Foundation First May 2023 is consistent with ¶15’s operator. Caption OCR initially read § 1348; count-closing line is § 1343.
+- **25-cr-351** ECF 1 indictment count-mapped (`falade-25-cr-351-ecf1.json`). Counts 1–4 are 18 U.S.C. § 1343. ¶13 Faladcare submitted **over $2.2 million** in reimbursement claims (`amount_billed`; same figure ¶17 — do not sum). No personal-pocketing dollar on this indictment. SOS Faladcare Inc 2019-10-31 is consistent with ¶10. Caption OCR § 1348 corrected to § 1343 from the closing line.
 - **25-cr-353** ECF 1 is a **felony information**, not an indictment (`0_25-cr-00353_ecf1_anwar-adow-hss.pdf`, full text extracted). Counts 1–4 are 18 U.S.C. § 1343 (emails `PlusLibertyLLC@gmail.com`, Mar 2022–Apr 2025). ¶10: owner of Liberty Plus, registered with Minnesota in or about November 2022 (SOS file 1349782500024 original filing 2022-11-17 is consistent). ¶16: Liberty Plus **received more than $1.2 million** (`amount_paid` / CHARGED_ALLEGED) for purported services to about 200 beneficiaries. ¶8 program-wide HSS payouts ($21M/$42M/$74M/$104M/$61M) are `program_spend` background in this charging document — **do not add them to the $1.2M**. ¶1 “millions of dollars” is scheme-purpose language; the specific Liberty Plus figure is ¶16. ¶17 alleges diversion to employees and brother Asad Adow (not itself a charging document against Asad). Docket: guilty as to Count 1 on 2025-10-23 — not a judgment.
 - **25-cr-354** Asad Adow felony information is **not** on RECAP (`is_available=false`). Still a local-document gap.
 

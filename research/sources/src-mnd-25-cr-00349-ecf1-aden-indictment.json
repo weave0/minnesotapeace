@@ -1,0 +1,23 @@
+{
+  "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+  "canonical_url": "https://www.courtlistener.com/docket/71388836/1/united-states-v-aden/",
+  "archive_url": "https://archive.org/download/gov.uscourts.mnd.227848/gov.uscourts.mnd.227848.1.0.pdf",
+  "issuing_body": "United States District Court, District of Minnesota",
+  "title": "Indictment, United States v. Moktar Hassan Aden et al., No. 0:25-cr-00349 (D. Minn. ECF 1)",
+  "publication_date": "2025-09-17",
+  "retrieval_date": "2026-08-26",
+  "document_date": "2025-09-17",
+  "document_type": "indictment",
+  "case_number": "0:25-cr-00349",
+  "court": "United States District Court, District of Minnesota",
+  "docket_id": "71388836",
+  "local_path": "research/court/pdfs/0_25-cr-00349_ecf1_aden-hss.pdf",
+  "sha256": "d1781deb0cabf59ba808078976349a2b4fb6074c5f790d63073408c0feaf9812",
+  "mime_type": "application/pdf",
+  "page_count": 8,
+  "extracted_text_path": "research/court/raw/aden-25-cr-349-ecf1.txt",
+  "access_status": "archived",
+  "notes": "Public RECAP/IA copy of ECF 1. TIFF scan (PaperStream fi-7700). OCR at ~180 dpi saved under court/raw/. Indictment allegations only; not a judgment. Unsealed 2025-09-18 per docket minute, not on the face of the PDF.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD"
+}

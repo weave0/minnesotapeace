@@ -1,0 +1,59 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-aden-25cr349-brilliant-minds-amount-billed",
+  "claim_text": "The September 17, 2025 indictment in United States v. Aden et al., No. 0:25-cr-00349 (ECF 1), alleges that between approximately September 2022 and April 2025 Brilliant Minds Services LLC submitted reimbursement claims totaling about $2.3 million, and that the defendants claimed to be entitled to nearly $2.3 million for purported services to nearly 350 beneficiaries. That is an amount_billed / amount_claimed charging allegation, not amount_paid and not proven_loss. Paragraph 14 and paragraph 21 describe the same Brilliant Minds figure and must not be summed.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00349",
+  "source_ids": [
+    "src-mnd-25-cr-00349-ecf1-aden-indictment"
+  ],
+  "subject_ids": [
+    "org-brilliant-minds-services"
+  ],
+  "organizations": [
+    "org-brilliant-minds-services"
+  ],
+  "date_start": "2022-09-01",
+  "date_end": "2025-04-30",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 4,
+      "locator": "para 14",
+      "quote": "In all, between approximately September 2022 and April 2025, Brilliant Minds submitted reimbursement claims totaling about $2.3 million."
+    },
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 6,
+      "locator": "para 21",
+      "quote": "Ultimately, the defendants claimed to service nearly 350 different beneficiaries through Brilliant Minds and for such services claimed to be entitled to nearly $2.3 million."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 2300000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "period_start": "2022-09-01",
+      "period_end": "2025-04-30",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-brilliant-minds-2.3m-claims",
+      "methodology": "Indictment para 14: submitted reimbursement claims totaling about $2.3 million. Face of charging document; not amount_paid."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "do not add to Falade billed dollars or FOF $250M",
+    "do not sum with para 21 claimed-entitlement restatement"
+  ],
+  "editorial_notes": "Do not add Aden personal-pocketing $300k–$400k or Amex charges to this billed figure."
+}

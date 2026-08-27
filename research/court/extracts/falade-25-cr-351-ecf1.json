@@ -3,30 +3,231 @@
   "ecf": 1,
   "filed": "2025-09-17",
   "unsealed": "2025-09-18",
+  "unsealed_note": "Unsealed date is from the ECF 1 docket minute (INDICTMENT unsealed 9/18/2025), not printed on the face of the PDF. Face stamp: SCANNED SEP 17 2025 U.S. DISTRICT COURT MPLS.",
   "pages": 7,
   "instrument": "indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Christopher Adesoji Falade and Emmanuel Oluwademilade Falade",
+  "short_caption": "United States v. Falade, et al.",
+  "header_case_id": "0:25-cr-00351-JWB-JFD",
   "source_pdf": "research/court/pdfs/0_25-cr-00351_ecf1_falade-hss.pdf",
   "sha256": "c88b4ac7ebce8fd63a0974ca41a9d8bd272210596406b0b9375ab1b13debb0fe",
   "bytes": 3917157,
-  "evidence_class": "PRIMARY_COURT_RECORD",
+  "ocr_text": "research/court/raw/falade-25-cr-351-ecf1.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
   "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
   "caption_statutes": [
-    "18 U.S.C. \u00a7 1343",
-    "18 U.S.C. \u00a7 981(a)(1)(C)",
-    "21 U.S.C. \u00a7 853(p)",
-    "28 U.S.C. \u00a7 2461(c)"
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 981(a)(1)(C)",
+    "21 U.S.C. § 853(p)",
+    "28 U.S.C. § 2461(c)"
+  ],
+  "ocr_corrections": [
+    {
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 1348. Visual inspection of the scan and the count-closing line on p.6 both show 18 U.S.C. § 1343.",
+      "used": "18 U.S.C. § 1343"
+    },
+    {
+      "page": "1-7",
+      "issue": "CM/ECF header fragments and missing spaces. Count table and $2.2 million figures were checked against page images. Page 7 is the signature page only (A TRUE BILL / ACTING UNITED STATES ATTORNEY / FOREPERSON); OCR of that page is short, not a failure of the charging text."
+    }
   ],
   "defendants_caption": [
-    "Christopher Adesoji Falade",
-    "Emmanuel Oluwademilade Falade"
+    {
+      "n": 1,
+      "name": "Christopher Adesoji Falade",
+      "role_on_face": "Father of Emmanuel Falade; alleged company point of contact on HSS enrollment paperwork (para 10)."
+    },
+    {
+      "n": 2,
+      "name": "Emmanuel Oluwademilade Falade",
+      "role_on_face": "Incorporated Faladcare Inc. in about October 2019; alleged Owner on DHS HSS enrollment paperwork in or about February 2023 (para 10)."
+    }
   ],
-  "provider": "Faladcare Inc.",
+  "providers": [
+    {
+      "name": "Faladcare Inc.",
+      "aliases_on_face": [
+        "Faladcare"
+      ],
+      "role_on_face": "HSS provider. Emmanuel incorporated Faladcare Inc. in about October 2019 and submitted DHS HSS-provider paperwork in or about February 2023. Alleged offices in Little Canada and Woodbury, Minnesota.",
+      "entity_id": "org-faladcare-inc"
+    }
+  ],
+  "scheme_period": {
+    "start": "2020-07",
+    "end": "2025-06",
+    "page": 4,
+    "para": 14
+  },
   "counts": [
     {
-      "count": "1-4",
-      "statute": "18 U.S.C. \u00a7 1343",
+      "count": 1,
+      "statute": "18 U.S.C. § 1343",
       "title": "Wire fraud",
-      "notes": "Four emails Mar\u2013May 2025 including one to HealthPartners."
+      "named_defendants": [
+        "Christopher Adesoji Falade",
+        "Emmanuel Oluwademilade Falade"
+      ],
+      "date_on_or_about": "2025-04-04",
+      "wire": "An email to CHRISTOPHER FALADE and EMMANUEL FALADE attaching three documents and bearing the subject, “Fwd: Service Verification Forms”",
+      "page": 6
+    },
+    {
+      "count": 2,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Christopher Adesoji Falade",
+        "Emmanuel Oluwademilade Falade"
+      ],
+      "date_on_or_about": "2025-03-31",
+      "wire": "An email to CHRISTOPHER FALADE attaching a purported patient day sheet as a document named, “CCF_000271.pdf”",
+      "page": 6
+    },
+    {
+      "count": 3,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Christopher Adesoji Falade",
+        "Emmanuel Oluwademilade Falade"
+      ],
+      "date_on_or_about": "2025-03-31",
+      "wire": "An email to CHRISTOPHER FALADE attaching a purported patient day sheet as a document named, “CCF_000272.pdf”",
+      "page": 6
+    },
+    {
+      "count": 4,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Christopher Adesoji Falade",
+        "Emmanuel Oluwademilade Falade"
+      ],
+      "date_on_or_about": "2025-05-22",
+      "wire": "An email from EMMANUEL FALADE to HealthPartners with the subject line “Anna records HSS records”",
+      "page": 6
     }
+  ],
+  "counts_closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+  "forfeiture": {
+    "pages": 6,
+    "statutes": [
+      "18 U.S.C. § 981(a)(1)(C)",
+      "28 U.S.C. § 2461(c)",
+      "21 U.S.C. § 853(p)"
+    ],
+    "notes": "If convicted of any of Counts 1-4, forfeiture of proceeds-traceable property; substitute-asset allegation under § 853(p). No dollar amount is stated in the forfeiture paragraphs."
+  },
+  "amounts": [
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "period_start": "2020-07",
+      "period_end": "2025-06",
+      "provider": "Faladcare Inc.",
+      "overlap_group_id": "falade-faladcare-2.2m-claims",
+      "page": 4,
+      "para": 13,
+      "quote": "In all, between approximately July 2020 and June 2025, Faladcare submitted reimbursement claims totaling over $2.2 million.",
+      "notes": "Face language is submitted reimbursement claims totaling over $2.2 million (amount_billed), not amount_paid and not proven_loss. Do not add to Aden Brilliant Minds $2.3M or FOF $250M."
+    },
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "provider": "Faladcare Inc.",
+      "overlap_group_id": "falade-faladcare-2.2m-claims",
+      "page": 5,
+      "para": 17,
+      "quote": "From those locations, the FALADES claimed to service about 100 different beneficiaries and for such services claimed to be entitled to over $2.2 million.",
+      "notes": "Same >$2.2M as para 13; do not sum. Indictment alleges operations provided only a fraction of that claimed total and that proceeds were diverted to conspirators including Faladcare employees. No personal-pocketing dollar figure is stated on the face of this indictment."
+    }
+  ],
+  "no_personal_pocketing_dollar_on_face": true,
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 174,
+      "metric_type": "amount_billed",
+      "page": 2,
+      "quote": "Consultants could bill Medicaid about $174 for a consulting session.",
+      "notes": "Statewide HSS rate recital, identical boilerplate to Aden indictment."
+    },
+    {
+      "value": 68,
+      "metric_type": "amount_billed",
+      "page": 2,
+      "quote": "Providers can bill about $68 per hour of transition services provided."
+    },
+    {
+      "value": 3000,
+      "metric_type": "amount_billed",
+      "page": 2,
+      "quote": "Moving expenses of up to $3,000, subject to conditions."
+    },
+    {
+      "value": 2600000,
+      "metric_type": "program_authorization",
+      "page": 3,
+      "quote": "Before the Program’s inaugural year, DHS predicted the Program would cost about $2.6 million annually."
+    }
+  ],
+  "statewide_hss_program_payouts_recital": {
+    "overlap_group_id": "hss-statewide-program-payouts-2021-2025h1-indictment-recital",
+    "metric_type": "program_spend",
+    "page": 3,
+    "para": 8,
+    "quote": "In 2021 alone, the Program paid out more than $21 million in claims. That figure ballooned in the following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. In just the first six months of 2025, the Program paid out another $61 million.",
+    "rows": [
+      {
+        "period": "2021",
+        "value": 21000000,
+        "exact_or_approximate": "approximate",
+        "qualifier": "more than"
+      },
+      {
+        "period": "2022",
+        "value": 42000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2023",
+        "value": 74000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2024",
+        "value": 104000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2025-H1",
+        "value": 61000000,
+        "exact_or_approximate": "approximate"
+      }
+    ],
+    "notes": "Statewide HSS program_spend recitals, not Falade alleged_loss. Identical boilerplate in the Aden indictment. Do not add to Faladcare >$2.2M, Aden $2.3M, or FOF $250M."
+  },
+  "other_face_facts": [
+    "Para 11: Christopher Falade is the father of Emmanuel Falade; they worked together to operate Faladcare Inc. within the HSS Program.",
+    "Para 12: Faladcare was paid at quarter-hourly rates with Medicaid dollars based on services it claimed to have provided (paid language, no dollar).",
+    "Para 16: purported to service individuals from business offices in Little Canada and Woodbury, Minnesota.",
+    "Para 17: diversion of fraud proceeds to conspirators including Faladcare employees — no dollar stated.",
+    "Count 4 names HealthPartners as the email recipient."
+  ],
+  "do_not": [
+    "Do not mark ADJUDICATED.",
+    "Do not sum para 13 + para 17 $2.2M.",
+    "Do not add Falade billed dollars to Aden Brilliant Minds $2.3M, Aden personal-pocketing, or FOF $250M.",
+    "Do not invent an Aden-style personal-pocketing figure for Falade; none appears on this indictment.",
+    "Do not treat $ figures in this indictment as proven_loss."
   ]
 }

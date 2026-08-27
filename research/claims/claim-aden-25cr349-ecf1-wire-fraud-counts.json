@@ -1,0 +1,51 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-aden-25cr349-ecf1-wire-fraud-counts",
+  "claim_text": "On September 17, 2025, a grand jury in the District of Minnesota returned an indictment in United States v. Moktar Hassan Aden, Mustafa Dayib Ali, Khalid Ahmed Dayib, and Abdifitah Mohamud Mohamed, No. 0:25-cr-00349 (ECF 1), charging all four defendants with Counts 1–6, wire fraud, 18 U.S.C. § 1343. Each count is an alleged interstate email: Count 1, on or about September 8, 2022, from Brilliantmindservices@gmail.com attaching MNeConnect_Client_ONBOARDING_SHEET.pdf; Count 2, on or about March 17, 2023, to that address, subject Invoice 20242 from [Company A]; Count 3, on or about April 18, 2023, to that address, TIN registration; Count 4, on or about April 25, 2023, from that address, subject Re: Code.; Count 5, on or about June 26, 2024, from Foundation First Services to that address, subject Housing Consultations.; Count 6, on or about October 17, 2024, from that address attaching Provider_EFT.pdf. These are charging allegations, not adjudicated facts.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:25-cr-00349",
+  "source_ids": [
+    "src-mnd-25-cr-00349-ecf1-aden-indictment"
+  ],
+  "subject_ids": [
+    "org-brilliant-minds-services",
+    "org-foundation-first-services"
+  ],
+  "organizations": [
+    "org-brilliant-minds-services",
+    "org-foundation-first-services"
+  ],
+  "statutes": [
+    "18 U.S.C. § 1343"
+  ],
+  "date_start": "2022-09-08",
+  "date_end": "2024-10-17",
+  "event_date": "2025-09-17",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 1,
+      "quote": "UNITED STATES OF AMERICA, ... v. 1. MOKTAR HASSAN ADEN, 2. MUSTAFA DAYIB ALI, 3. KHALID AHMED DAYIB, and 4. ABDIFITAH MOHAMUD MOHAMED, Defendants. ... INDICTMENT 18 U.S.C. § 1343"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": "7-8",
+      "quote": "Counts 1-6 (Wire Fraud) ... each transmission constituting a separate count ... All in violation of Title 18, United States Code, Section 1343."
+    }
+  ],
+  "qualifiers": [
+    "as of indictment date 2025-09-17",
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "caption statute confirmed visually as § 1343 after OCR misread § 1348"
+  ],
+  "editorial_notes": "Count 6 numeral dropped by OCR; date and wire confirmed on page-8 image."
+}

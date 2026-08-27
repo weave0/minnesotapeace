@@ -3,33 +3,350 @@
   "ecf": 1,
   "filed": "2025-09-17",
   "unsealed": "2025-09-18",
+  "unsealed_note": "Unsealed date is from the ECF 1 docket minute (INDICTMENT unsealed 9/18/2025), not printed on the face of the PDF. Face stamp: SCANNED SEP 17 2025 U.S. DISTRICT COURT MPLS.",
   "pages": 8,
   "instrument": "indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Moktar Hassan Aden, Mustafa Dayib Ali, Khalid Ahmed Dayib, and Abdifitah Mohamud Mohamed",
+  "short_caption": "United States v. Aden, et al.",
+  "header_case_id": "0:25-cr-00349-JWB-JFD",
   "source_pdf": "research/court/pdfs/0_25-cr-00349_ecf1_aden-hss.pdf",
   "sha256": "d1781deb0cabf59ba808078976349a2b4fb6074c5f790d63073408c0feaf9812",
   "bytes": 4757311,
-  "evidence_class": "PRIMARY_COURT_RECORD",
+  "ocr_text": "research/court/raw/aden-25-cr-349-ecf1.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
   "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
   "caption_statutes": [
-    "18 U.S.C. \u00a7 1343",
-    "18 U.S.C. \u00a7 981(a)(1)(C)",
-    "21 U.S.C. \u00a7 853(p)",
-    "28 U.S.C. \u00a7 2461(c)"
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 981(a)(1)(C)",
+    "21 U.S.C. § 853(p)",
+    "28 U.S.C. § 2461(c)"
   ],
-  "defendants_caption": [
-    "Moktar Hassan Aden",
-    "Mustafa Dayib Ali",
-    "Khalid Ahmed Dayib",
-    "Abdifitah Mohamud Mohamed"
-  ],
-  "provider": "Brilliant Minds Services LLC",
-  "counts": [
+  "ocr_corrections": [
     {
-      "count": "1-6",
-      "statute": "18 U.S.C. \u00a7 1343",
-      "title": "Wire fraud",
-      "notes": "Six interstate emails Sept 2022\u2013Oct 2024."
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 1348. Visual inspection of the scan and the count-closing line on p.8 both show 18 U.S.C. § 1343 (wire fraud). 1348 is securities fraud and is not charged.",
+      "used": "18 U.S.C. § 1343"
+    },
+    {
+      "page": 4,
+      "issue": "Paragraph 13 OCR'd as '138.' Visual: paragraph 13.",
+      "used": "13"
+    },
+    {
+      "page": 8,
+      "issue": "Count-table OCR dropped the numeral 6 on the October 17, 2024 row. Visual inspection of the table shows Count 6.",
+      "used": "Count 6, October 17, 2024"
+    },
+    {
+      "page": "1-8",
+      "issue": "CM/ECF header fragments and missing spaces (1of8, Onor, Inall). Count emails and dollar figures were checked against the page images."
     }
   ],
-  "alleged_personal": "OCR p.7: each defendant personally pocketed between about $300,000 and $400,000 from Brilliant Minds (CHARGED_ALLEGED; do not sum into proven_loss)."
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Moktar Hassan Aden"
+    },
+    {
+      "n": 2,
+      "name": "Mustafa Dayib Ali"
+    },
+    {
+      "n": 3,
+      "name": "Khalid Ahmed Dayib"
+    },
+    {
+      "n": 4,
+      "name": "Abdifitah Mohamud Mohamed"
+    }
+  ],
+  "providers": [
+    {
+      "name": "Brilliant Minds Services LLC",
+      "aliases_on_face": [
+        "Brilliant Minds",
+        "Brilliant Minds LLC",
+        "Brilliant Mind's"
+      ],
+      "role_on_face": "HSS provider registered with MN SOS in or about October 2020 by Aden; enrolled as HSS provider in or about April 2022 by Aden, Dayib, and Ali. Office suite in the Griggs-Midway Building, St. Paul.",
+      "entity_id": "org-brilliant-minds-services"
+    },
+    {
+      "name": "Foundation First Services LLC",
+      "aliases_on_face": [
+        "Foundation First"
+      ],
+      "role_on_face": "HSS provider registered by Abdifitah Mohamed with MN SOS in or about May 2023. Alleged consultation provider, including to Brilliant Minds; some consultation paperwork alleged fabricated. Same building (Griggs-Midway).",
+      "entity_id": "org-foundation-first-services"
+    }
+  ],
+  "scheme_period": {
+    "start": "2020-10",
+    "end": "2025-04",
+    "page": 5,
+    "para": 16
+  },
+  "counts": [
+    {
+      "count": 1,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2022-09-08",
+      "wire": "An email from Brilliantmindservices@gmail.com attaching a document named, “MNeConnect_Client_ONBOARDING_SHEET.pdf”",
+      "page": 7
+    },
+    {
+      "count": 2,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2023-03-17",
+      "wire": "An email to Brilliantmindservices@gmail.com with the subject, “Invoice 20242 from [Company A]”",
+      "page": 7
+    },
+    {
+      "count": 3,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2023-04-18",
+      "wire": "An email to Brilliantmindservices@gmail.com with the subject, “Your TIN registration was successful and next steps.”",
+      "page": 7
+    },
+    {
+      "count": 4,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2023-04-25",
+      "wire": "An email from Brilliantmindservices@gmail.com with the subject, “Re: Code.”",
+      "page": 8
+    },
+    {
+      "count": 5,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2024-06-26",
+      "wire": "An email from Foundation First Services to Brilliantmindservices@gmail.com with the subject, “Housing Consultations.”",
+      "page": 8
+    },
+    {
+      "count": 6,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Moktar Hassan Aden",
+        "Mustafa Dayib Ali",
+        "Khalid Ahmed Dayib",
+        "Abdifitah Mohamud Mohamed"
+      ],
+      "date_on_or_about": "2024-10-17",
+      "wire": "An email from Brilliantmindservices@gmail.com attaching two documents, one named “Provider_EFT.pdf.”",
+      "page": 8
+    }
+  ],
+  "counts_closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+  "forfeiture": {
+    "pages": 8,
+    "statutes": [
+      "18 U.S.C. § 981(a)(1)(C)",
+      "28 U.S.C. § 2461(c)",
+      "21 U.S.C. § 853(p)"
+    ],
+    "notes": "If convicted of any of Counts 1-6, forfeiture of proceeds-traceable property; substitute-asset allegation under § 853(p). No dollar amount is stated in the forfeiture paragraphs."
+  },
+  "amounts": [
+    {
+      "value": 2300000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "period_start": "2022-09",
+      "period_end": "2025-04",
+      "provider": "Brilliant Minds Services LLC",
+      "overlap_group_id": "aden-brilliant-minds-2.3m-claims",
+      "page": 4,
+      "para": 14,
+      "quote": "In all, between approximately September 2022 and April 2025, Brilliant Minds submitted reimbursement claims totaling about $2.3 million.",
+      "notes": "Face language is submitted reimbursement claims, not amount_paid and not proven_loss. Do not add to Falade billed figures or to FOF ~$250M."
+    },
+    {
+      "value": 2300000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "provider": "Brilliant Minds Services LLC",
+      "overlap_group_id": "aden-brilliant-minds-2.3m-claims",
+      "page": 6,
+      "para": 21,
+      "quote": "Ultimately, the defendants claimed to service nearly 350 different beneficiaries through Brilliant Minds and for such services claimed to be entitled to nearly $2.3 million.",
+      "notes": "Same Brilliant Minds ~$2.3M as para 14; do not sum para 14 + para 21. Also alleges Brilliant Minds was one of the ten highest-billing HSS providers statewide in 2024."
+    },
+    {
+      "value": 222000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "period_start": "2023-05",
+      "period_end": "2025-04",
+      "provider": "Foundation First Services LLC",
+      "overlap_group_id": "aden-foundation-first-222k-claims",
+      "page": 4,
+      "para": 15,
+      "quote": "Between approximately May 2023 and April 2025, Foundation First submitted reimbursement claims totaling about $222,000.",
+      "notes": "Separate provider from Brilliant Minds. Do not silently add $222k to $2.3M as a single Aden-case loss. Not a Falade figure. Not FOF."
+    },
+    {
+      "value": 300000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "period_start": "2023-04",
+      "period_end": "2025-05",
+      "overlap_group_id": "aden-brilliant-minds-personal-pocketing-range",
+      "page": 7,
+      "para": 23,
+      "quote": "From about April 2023 through about May 2025, each of the defendants personally pocketed between about $300,000 and $400,000 from Brilliant Minds.",
+      "notes": "PERSONAL POCKETING / alleged proceeds from Brilliant Minds accounts, not amount_billed and not amount_paid by Medicaid. This is the LOWER bound of a per-defendant range. Do not multiply by four. Do not add to Falade or to FOF $250M. Overlaps the $2.3M billed figure."
+    },
+    {
+      "value": 400000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "period_start": "2023-04",
+      "period_end": "2025-05",
+      "overlap_group_id": "aden-brilliant-minds-personal-pocketing-range",
+      "page": 7,
+      "para": 23,
+      "quote": "From about April 2023 through about May 2025, each of the defendants personally pocketed between about $300,000 and $400,000 from Brilliant Minds.",
+      "notes": "PERSONAL POCKETING / alleged proceeds. UPPER bound of the per-defendant range. Do not treat $300k+$400k as $700k. Do not multiply by four. Do not add to Falade or FOF $250M."
+    },
+    {
+      "value": 500000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-brilliant-minds-amex-charges",
+      "page": 7,
+      "para": 24,
+      "quote": "The defendants also shared a Platinum American Express credit card, on which they accrued nearly half a million dollars in charges to fund and enhance their lifestyles. The defendants paid those charges using Brilliant Mind’s company accounts.",
+      "notes": "Alleged personal lifestyle charges on a shared Amex, paid from Brilliant Minds company accounts — not a Medicaid billed or paid figure. Overlaps billed/pocketing dollars. Do not add to Falade or FOF $250M."
+    }
+  ],
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 174,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Consultants could bill Medicaid about $174 for a consulting session.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital, not a Brilliant Minds total."
+    },
+    {
+      "value": 68,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Providers can bill about $68 per hour of transition services provided.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital."
+    },
+    {
+      "value": 3000,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Moving expenses of up to $3,000, subject to conditions.",
+      "page": 2,
+      "notes": "Statewide HSS cap recital."
+    },
+    {
+      "value": 2600000,
+      "metric_type": "program_authorization",
+      "exact_or_approximate": "approximate",
+      "quote": "Before the Program’s inaugural year, DHS predicted the Program would cost about $2.6 million annually.",
+      "page": 3,
+      "notes": "DHS prediction recital, not this case."
+    }
+  ],
+  "statewide_hss_program_payouts_recital": {
+    "overlap_group_id": "hss-statewide-program-payouts-2021-2025h1-indictment-recital",
+    "metric_type": "program_spend",
+    "page": 3,
+    "para": 8,
+    "quote": "In 2021 alone, the Program paid out more than $21 million in claims. That figure ballooned in the following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. In just the first six months of 2025, the Program paid out another $61 million.",
+    "rows": [
+      {
+        "period": "2021",
+        "value": 21000000,
+        "exact_or_approximate": "approximate",
+        "qualifier": "more than"
+      },
+      {
+        "period": "2022",
+        "value": 42000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2023",
+        "value": 74000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2024",
+        "value": 104000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2025-H1",
+        "value": 61000000,
+        "exact_or_approximate": "approximate"
+      }
+    ],
+    "notes": "Statewide HSS program_spend recitals, not Aden alleged_loss. Identical boilerplate also appears in the Falade indictment. Do not add these to Brilliant Minds $2.3M, Falade $2.2M, or FOF $250M."
+  },
+  "other_face_facts": [
+    "Para 1: scheme to defraud federally funded health care benefits in Minnesota's Housing Stability Services Program; alleged misappropriation of millions of dollars in program funds (qualitative, no dollar).",
+    "Para 10: Aden registered Brilliant Minds Services LLC with MN SOS in or about October 2020; Aden, Khalid Dayib, and Mustafa Ali completed HSS enrollment paperwork in or about April 2022.",
+    "Para 20: Aden and Ali enrolled Brilliant Minds with Company A (EHR) between about September 2022 and March 2023; claims submitted to about nine different insurers.",
+    "Para 22: operations 'provided only a fraction of their claimed total.'",
+    "Para 23: all four defendants had control of the Brilliant company bank account into which claimed HSS reimbursements flowed.",
+    "Company A is unnamed on the face (placeholder in Count 2 subject line)."
+  ],
+  "do_not": [
+    "Do not mark ADJUDICATED.",
+    "Do not sum overlapping dollars (billed $2.3M + claimed-entitled $2.3M + pocketing range + Amex + Foundation First $222k + statewide program payouts).",
+    "Do not add Aden personal-pocketing figures to Falade or to FOF $250M.",
+    "Do not treat $ figures in this indictment as proven_loss."
+  ]
 }

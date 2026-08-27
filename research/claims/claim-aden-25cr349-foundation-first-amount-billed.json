@@ -1,0 +1,52 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-aden-25cr349-foundation-first-amount-billed",
+  "claim_text": "The September 17, 2025 indictment in United States v. Aden et al., No. 0:25-cr-00349 (ECF 1), alleges that between approximately May 2023 and April 2025 Foundation First Services LLC, operated by defendant Abdifitah Mohamud Mohamed, submitted reimbursement claims totaling about $222,000. That is an amount_billed charging allegation for a second provider, not proven_loss, and it is not a Falade figure.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00349",
+  "source_ids": [
+    "src-mnd-25-cr-00349-ecf1-aden-indictment"
+  ],
+  "subject_ids": [
+    "org-foundation-first-services"
+  ],
+  "organizations": [
+    "org-foundation-first-services"
+  ],
+  "date_start": "2023-05-01",
+  "date_end": "2025-04-30",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 4,
+      "locator": "para 15",
+      "quote": "Between approximately May 2023 and April 2025, Foundation First submitted reimbursement claims totaling about $222,000."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 222000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "period_start": "2023-05-01",
+      "period_end": "2025-04-30",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-foundation-first-222k-claims",
+      "methodology": "Indictment para 15: submitted reimbursement claims totaling about $222,000. Separate provider from Brilliant Minds."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "do not silently add to Brilliant Minds $2.3M as a single case total",
+    "not Falade, not FOF"
+  ]
+}
