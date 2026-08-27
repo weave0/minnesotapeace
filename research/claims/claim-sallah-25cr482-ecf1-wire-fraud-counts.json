@@ -1,0 +1,56 @@
+{
+  "reviewed_at": "2026-08-27T21:10:00Z",
+  "created_at": "2026-08-27T21:10:00Z",
+  "updated_at": "2026-08-27T21:10:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-sallah-25cr482-ecf1-wire-fraud-counts",
+  "claim_text": "On December 16, 2025, a grand jury in the District of Minnesota returned an indictment in United States v. Kaamil Omar Sallah, No. 0:25-cr-00482 (ECF 1), charging Sallah with Counts 1–4, wire fraud, 18 U.S.C. § 1343, through SafeLodgings, Inc. Each count is an alleged interstate email: Count 1, on or about March 15, 2024, from Kaamil Sallah to Conspirator 1 including electronic health records login information; Count 2, on or about May 22, 2024, email exchanges with Kaamil Sallah concerning purported beneficiary Imani C.; Count 3, on or about July 12, 2024, from Kaamil Sallah attaching a client list; Count 4, on or about October 27, 2024, to Kaamil Sallah concerning purported beneficiary J. Johnson. These are charging allegations, not adjudicated facts.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:25-cr-00482",
+  "source_ids": [
+    "src-mnd-25-cr-00482-ecf1-sallah-indictment"
+  ],
+  "subject_ids": [
+    "org-safelodgings-inc"
+  ],
+  "organizations": [
+    "org-safelodgings-inc"
+  ],
+  "statutes": [
+    "18 U.S.C. § 1343"
+  ],
+  "date_start": "2024-03-15",
+  "date_end": "2024-10-27",
+  "event_date": "2025-12-16",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "page": 1,
+      "quote": "UNITED STATES OF AMERICA, ... v. KAAMIL OMAR SALLAH, Defendant. ... INDICTMENT 18 U.S.C. § 1343"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "page": 4,
+      "quote": "Counts 1-4 (Wire Fraud)"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "page": 7,
+      "quote": "each transmission constituting a separate count: ... All in violation of Title 18, United States Code, Section 1343."
+    }
+  ],
+  "qualifiers": [
+    "as of indictment date 2025-12-16",
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "caption statute confirmed visually as § 1343 after OCR misread § 1348",
+    "HSS case; not Feeding Our Future; not first-wave Aden/Falade/Anwar/Asad",
+    "para 21 Leo Human Services mention is a recital about Employee A, not a charge against Asad Adow"
+  ],
+  "editorial_notes": "Count 3 numeral dropped by OCR; date and wire confirmed on page-7 image. Para 24 flight-to-Amsterdam allegation is not a count."
+}

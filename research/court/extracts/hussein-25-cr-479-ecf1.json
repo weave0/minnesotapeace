@@ -4,45 +4,292 @@
   "filed": "2025-12-16",
   "pages": 8,
   "instrument": "indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Hassan Ahmed Hussein and Ahmed Abdirashid Mohamed",
+  "short_caption": "United States v. Hussein, et al.",
+  "header_case_id": "0:25-cr-00479-JWB-JFD",
+  "handwritten_assignment": "CR 25-479 PJS/ECW",
   "source_pdf": "research/court/pdfs/0_25-cr-00479_ecf1_hussein-hss.pdf",
   "sha256": "b7310b575b4e080ed42633cfbbf19727751e375884ea213bbe69871789ebee37",
   "bytes": 4768400,
-  "evidence_class": "PRIMARY_COURT_RECORD",
+  "ocr_text": "research/court/raw/hussein-25-cr-479-ecf1.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
   "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
+  "stub": false,
   "caption_statutes": [
-    "18 U.S.C. \u00a7 1343",
-    "18 U.S.C. \u00a7 981(a)(1)(C)",
-    "21 U.S.C. \u00a7 853(p)",
-    "28 U.S.C. \u00a7 2461(c)"
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 981(a)(1)(C)",
+    "21 U.S.C. § 853(p)",
+    "28 U.S.C. § 2461(c)"
   ],
-  "defendants": [
-    "Hassan Ahmed Hussein (1)",
-    "Ahmed Abdirashid Mohamed (2)"
-  ],
-  "provider": "Pristine Health LLC",
-  "counts": [
+  "ocr_corrections": [
     {
-      "count": "1-5",
-      "statute": "18 U.S.C. \u00a7 1343",
-      "title": "Wire fraud",
-      "notes": "Jan 2022\u2013Jun 2025. OCR of scanned RECAP PDF; CHARGED_ALLEGED."
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 1348. Visual inspection of the scan and the count-closing line on p.7 both show 18 U.S.C. § 1343 (wire fraud). 1348 is securities fraud and is not charged.",
+      "used": "18 U.S.C. § 1343"
+    },
+    {
+      "page": 1,
+      "issue": "Handwritten assignment OCR'd as 'CR US-479 PIS/ECW'. Visual: CR 25-479 PJS/ECW.",
+      "used": "CR 25-479 PJS/ECW"
+    },
+    {
+      "page": 6,
+      "issue": "Paragraph 24 OCR'd as 'Onor about'. Visual: 'On or about'.",
+      "used": "On or about"
+    },
+    {
+      "page": 7,
+      "issue": "Count-table OCR dropped the numeral 1 on the April 27, 2023 row. Visual inspection of the table shows Count 1, Email from HASSAN HUSSEIN to AllCare Software.",
+      "used": "Count 1, April 27, 2023"
+    },
+    {
+      "page": "1-8",
+      "issue": "CM/ECF header fragments and missing spaces (1of8, 6of8, 8of8). Count emails, dates, and $750,000 figures were checked against the page images."
     }
   ],
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Hassan Ahmed Hussein",
+      "role_on_face": "Co-owner/operator of Pristine Health LLC; alleged HSS Program Coordinator; registered Pristine with MN SOS on or about January 10, 2022 and completed DHS HSS enrollment with Mohamed."
+    },
+    {
+      "n": 2,
+      "name": "Ahmed Abdirashid Mohamed",
+      "role_on_face": "Co-owner/operator of Pristine Health LLC; alleged HSS Program Coordinator; registered Pristine with MN SOS on or about January 10, 2022 and completed DHS HSS enrollment with Hussein."
+    }
+  ],
+  "providers": [
+    {
+      "name": "Pristine Health LLC",
+      "aliases_on_face": [
+        "Pristine",
+        "Pristine Health"
+      ],
+      "role_on_face": "HSS provider registered with MN SOS on or about January 10, 2022 by Hussein and Mohamed; enrolled as HSS provider the same time. Alleged office suite in St. Paul. Both defendants styled as HSS Program Coordinators.",
+      "entity_id": "org-pristine-health-llc"
+    }
+  ],
+  "related_providers_recital_not_charged_here": [
+    {
+      "name": "Foundation First",
+      "page": 5,
+      "para": 18,
+      "notes": "Para 18 recites that Hussein and Mohamed worked with Foundation First, alleged to generate fake HSS paperwork, to fabricate Housing Focused Plans for Pristine beneficiaries. Recital of a co-provider already charged in Aden 0:25-cr-00349; this indictment does not charge Foundation First operators and its dollars are not added here."
+    },
+    {
+      "name": "Brilliant Minds Services LLC",
+      "page": 5,
+      "para": 19,
+      "notes": "Para 19 recites that Company 1 marketed beneficiary-finding services to Pristine and to Brilliant Minds. Recital, not a charge against Aden defendants. Do not add Pristine $750k to Brilliant Minds $2.3M."
+    }
+  ],
+  "scheme_period": {
+    "start": "2022-01",
+    "end": "2025-06",
+    "page": 4,
+    "para": 14,
+    "notes": "Para 14 scheme window January 2022 through June 2025. Para 13 claims window is January 2022 through April 2025."
+  },
+  "counts": [
+    {
+      "count": 1,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Hassan Ahmed Hussein",
+        "Ahmed Abdirashid Mohamed"
+      ],
+      "date_on_or_about": "2023-04-27",
+      "wire": "Email from HASSAN HUSSEIN to AllCare Software",
+      "page": 7
+    },
+    {
+      "count": 2,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Hassan Ahmed Hussein",
+        "Ahmed Abdirashid Mohamed"
+      ],
+      "date_on_or_about": "2023-08-22",
+      "wire": "Email from HASSAN HUSSEIN to A. Hussein attaching paperwork for purported beneficiary Damien R.",
+      "page": 7
+    },
+    {
+      "count": 3,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Hassan Ahmed Hussein",
+        "Ahmed Abdirashid Mohamed"
+      ],
+      "date_on_or_about": "2023-09-18",
+      "wire": "Email exchanges between AHMED MOHAMED and AllCare Software",
+      "page": 7
+    },
+    {
+      "count": 4,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Hassan Ahmed Hussein",
+        "Ahmed Abdirashid Mohamed"
+      ],
+      "date_on_or_about": "2024-10-31",
+      "wire": "Email from AHMED MOHAMED to HASSAN HUSSEIN attaching paperwork for purported beneficiary Haley G.",
+      "page": 7
+    },
+    {
+      "count": 5,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Hassan Ahmed Hussein",
+        "Ahmed Abdirashid Mohamed"
+      ],
+      "date_on_or_about": "2024-12-31",
+      "wire": "Email from HASSAN HUSSEIN to DHS regarding an emergency clients update",
+      "page": 7
+    }
+  ],
+  "counts_closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+  "forfeiture": {
+    "pages": "7-8",
+    "statutes": [
+      "18 U.S.C. § 981(a)(1)(C)",
+      "28 U.S.C. § 2461(c)",
+      "21 U.S.C. § 853(p)"
+    ],
+    "notes": "If convicted of any of Counts 1-5, forfeiture of proceeds-traceable property; substitute-asset allegation under § 853(p). No dollar amount is stated in the forfeiture paragraphs."
+  },
   "amounts": [
     {
       "value": 750000,
+      "currency": "USD",
       "metric_type": "amount_claimed",
       "exact_or_approximate": "approximate",
-      "notes": "Indictment \u00b613: Pristine Health submitted approximately $750,000 in fraudulent Medicaid claims related to HSS, Jan 2022\u2013Apr 2025. CHARGED_ALLEGED."
+      "period_start": "2022-01",
+      "period_end": "2025-04",
+      "provider": "Pristine Health LLC",
+      "overlap_group_id": "hussein-pristine-health-750k-claims",
+      "page": 4,
+      "para": 13,
+      "quote": "In all, between approximately January 2022 and April 2025, Pristine Health submitted approximately $750,000 in fraudulent Medicaid claims related to the Housing Stabilization Services program.",
+      "notes": "Face language is submitted fraudulent Medicaid claims. Charging allegation, not amount_paid and not proven_loss. Same ~$750k restated as claimed-entitled in para 21; do not sum para 13 + para 21. Do not add to first-wave HSS (Aden/Falade/Anwar/Asad) or to FOF."
+    },
+    {
+      "value": 750000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "provider": "Pristine Health LLC",
+      "overlap_group_id": "hussein-pristine-health-750k-claims",
+      "page": 6,
+      "para": 21,
+      "quote": "Ultimately, the defendants claimed to service nearly 100 different beneficiaries through Pristine and for such services claimed to be entitled to about $750,000.",
+      "notes": "Same Pristine ~$750k as para 13; do not sum. Also alleges nearly 100 purported beneficiaries. Not a Falade/Aden/Adow figure. Not FOF."
     }
   ],
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 174,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Consultants could bill Medicaid about $174 for a consulting session.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital, not a Pristine total."
+    },
+    {
+      "value": 68,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Providers can bill about $68 per hour of transition services provided.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital."
+    },
+    {
+      "value": 3000,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Moving expenses of up to $3,000, subject to conditions.",
+      "page": 2,
+      "notes": "Statewide HSS cap recital."
+    },
+    {
+      "value": 2600000,
+      "metric_type": "program_authorization",
+      "exact_or_approximate": "approximate",
+      "quote": "Before the Program’s inaugural year, DHS predicted the Program would cost about $2.6 million annually.",
+      "page": 3,
+      "notes": "DHS prediction recital, not this case."
+    }
+  ],
+  "statewide_hss_program_payouts_recital": {
+    "overlap_group_id": "hss-statewide-program-payouts-2021-2025h1-indictment-recital",
+    "metric_type": "program_spend",
+    "page": 3,
+    "para": 8,
+    "quote": "In 2021 alone, the Program paid out more than $21 million in claims. That figure ballooned in the following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. In just the first six months of 2025, the Program paid out another $61 million.",
+    "already_claimed": "claim-hss-25cr-indictments-statewide-program-payouts",
+    "rows": [
+      {
+        "period": "2021",
+        "value": 21000000,
+        "exact_or_approximate": "approximate",
+        "qualifier": "more than"
+      },
+      {
+        "period": "2022",
+        "value": 42000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2023",
+        "value": 74000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2024",
+        "value": 104000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2025-H1",
+        "value": 61000000,
+        "exact_or_approximate": "approximate"
+      }
+    ],
+    "notes": "Statewide HSS program_spend recitals, not Hussein alleged_loss. Identical boilerplate also appears in Aden/Falade/Sallah. Already claimed; do not invent a second program-spend claim. Do not add these to Pristine $750k, first-wave HSS, or FOF $250M."
+  },
+  "other_face_facts": [
+    "Para 1: scheme to defraud federally funded health care benefits in Minnesota's Housing Stability Services Program; alleged misappropriation of millions of dollars in program funds (qualitative, no case-specific dollar; do not treat as a second Pristine total).",
+    "Face stamp: SCANNED DEC 16 2025 U.S. DISTRICT COURT MPLS.",
+    "Para 10-11: Hussein and Mohamed owned and operated Pristine Health LLC; registered with MN SOS on or about January 10, 2022 and completed DHS HSS-provider enrollment at the same time.",
+    "Para 16: purported to service individuals from an office suite in St. Paul.",
+    "Para 17: both styled as HSS Program Coordinators.",
+    "Para 18: Foundation First consultation/fabrication recital; not a charge against Aden defendants.",
+    "Para 19: Company 1 (unnamed) retained to find new beneficiaries; marketed to Pristine and Brilliant Minds; script for recruiting beneficiaries; subscription for monthly client lists.",
+    "Para 20: contracted with two software companies to submit Pristine HSS claims; Count 1 and Count 3 name AllCare Software.",
+    "Para 22: operations 'provided only a fraction of their claimed total.'",
+    "Para 23: proceeds shared with conspirators including Pristine employees; personal travel to London, Sydney, Dubai, Istanbul, and several destinations in Saudi Arabia. No dollar on the travel.",
+    "Page 8 is signature page (A TRUE BILL / UNITED STATES ATTORNEY / FOREPERSON); no additional counts."
+  ],
+  "related_to_asad_adow": "Named in 0:25-cr-00354 ECF 17 reassignment of related case 25-479 PJS/ECW to Judge Blackwell. Not a charging instrument against Asad Adow.",
   "recap_document_id": 462447766,
   "docket_id": 72056327,
   "pacer_case_id": "229749",
-  "related_to_asad_adow": "Named in 0:25-cr-00354 ECF 17 reassignment of related case 25-479 PJS/ECW to Judge Blackwell. Not a charging instrument against Asad Adow.",
-  "harvested_at_utc": "2026-08-27T20:32:55.355204+00:00",
-  "stub": true,
-  "ocr_source": "research/court/raw/hussein-25-cr-479-ecf1-ocr-p1-5.txt",
   "filepath_local": "recap/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
-  "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf"
+  "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229749/gov.uscourts.mnd.229749.1.0.pdf",
+  "do_not": [
+    "Do not mark ADJUDICATED.",
+    "Do not sum overlapping dollars (para 13 $750k submitted claims + para 21 $750k claimed-entitled + statewide program payouts + qualitative 'millions').",
+    "Do not add Pristine $750k to first-wave HSS (Aden Brilliant Minds $2.3M / Foundation First $222k, Falade Faladcare $2.2M, Anwar Liberty Plus $1.2M, Asad Leo $2.7M) or to FOF $250M.",
+    "Do not treat $ figures in this indictment as proven_loss.",
+    "Do not invent a second statewide HSS program_spend claim; overlap_group already claimed."
+  ]
 }

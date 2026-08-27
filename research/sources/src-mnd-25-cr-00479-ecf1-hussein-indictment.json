@@ -17,9 +17,9 @@
   "sha256": "b7310b575b4e080ed42633cfbbf19727751e375884ea213bbe69871789ebee37",
   "mime_type": "application/pdf",
   "page_count": 8,
-  "extracted_text_path": "research/court/raw/hussein-25-cr-479-ecf1-ocr-p1-5.txt",
+  "extracted_text_path": "research/court/raw/hussein-25-cr-479-ecf1.txt",
   "access_status": "archived",
-  "notes": "Public RECAP/IA copy of ECF 1, harvested 2026-08-27. Related-case notice on Asad Adow 0:25-cr-00354 ECF 17; this is not a charging instrument against Asad. Stub extract only; count table not yet locked. CHARGED_ALLEGED ~$750,000 claims. Not-guilty arraignment 2025-12-18. Do not sum with first-wave HSS or FOF dollars.",
+  "notes": "Full 8-page OCR 2026-08-27 (180 dpi tesseract psm 6). Count table locked: Counts 1-5 § 1343. CHARGED_ALLEGED ~$750,000 Pristine claims (para 13 and para 21 overlap; do not sum). Caption OCR may read § 1348; face and count-closing line are § 1343. Statewide HSS payout recitals already claimed. Not-guilty arraignment 2025-12-18. Related-case notice on Asad Adow 0:25-cr-00354 ECF 17; this is not a charging instrument against Asad. Do not sum with first-wave HSS or FOF dollars.",
   "source_tier": 1,
   "source_status": "PRIMARY_COURT_RECORD"
 }

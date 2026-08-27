@@ -1,0 +1,61 @@
+{
+  "reviewed_at": "2026-08-27T21:10:00Z",
+  "created_at": "2026-08-27T21:10:00Z",
+  "updated_at": "2026-08-27T21:10:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-hussein-25cr479-pristine-amount-claimed",
+  "claim_text": "The December 16, 2025 indictment in United States v. Hussein et al., No. 0:25-cr-00479 (ECF 1), alleges that between approximately January 2022 and April 2025 Pristine Health LLC submitted approximately $750,000 in fraudulent Medicaid claims related to Housing Stabilization Services, and that the defendants claimed to be entitled to about $750,000 for purported services to nearly 100 beneficiaries. That is an amount_claimed charging allegation, not amount_paid and not proven_loss. Paragraph 13 and paragraph 21 describe the same Pristine figure and must not be summed. Do not add this $750,000 to first-wave HSS (Aden/Falade/Anwar/Asad) or to Feeding Our Future.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00479",
+  "source_ids": [
+    "src-mnd-25-cr-00479-ecf1-hussein-indictment"
+  ],
+  "subject_ids": [
+    "org-pristine-health-llc"
+  ],
+  "organizations": [
+    "org-pristine-health-llc"
+  ],
+  "date_start": "2022-01-01",
+  "date_end": "2025-04-30",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "page": 4,
+      "locator": "para 13",
+      "quote": "In all, between approximately January 2022 and April 2025, Pristine Health submitted approximately $750,000 in fraudulent Medicaid claims related to the Housing Stabilization Services program."
+    },
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "page": 6,
+      "locator": "para 21",
+      "quote": "Ultimately, the defendants claimed to service nearly 100 different beneficiaries through Pristine and for such services claimed to be entitled to about $750,000."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 750000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "period_start": "2022-01-01",
+      "period_end": "2025-04-30",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "hussein-pristine-health-750k-claims",
+      "methodology": "Indictment para 13: submitted approximately $750,000 in fraudulent Medicaid claims. Face of charging document; not amount_paid. Same figure restated as claimed-entitled in para 21."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "do not sum para 13 + para 21",
+    "do not add to Aden $2.3M, Falade $2.2M, Anwar $1.2M, Asad $2.7M, or FOF $250M",
+    "para 1 'millions of dollars' is qualitative and is not a second Pristine total",
+    "statewide $21M/$42M/$74M/$104M/$61M recitals belong to overlap_group hss-statewide-program-payouts-2021-2025h1-indictment-recital and are already claimed"
+  ],
+  "editorial_notes": "Foundation First and Brilliant Minds appear only as recitals (paras 18–19); this is not a charging instrument against Aden defendants and Pristine dollars are not added to those providers."
+}

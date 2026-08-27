@@ -17,9 +17,9 @@
   "sha256": "c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8",
   "mime_type": "application/pdf",
   "page_count": 8,
-  "extracted_text_path": "research/court/raw/sallah-25-cr-482-ecf1-ocr-p1-5.txt",
+  "extracted_text_path": "research/court/raw/sallah-25-cr-482-ecf1.txt",
   "access_status": "archived",
-  "notes": "Public RECAP/IA copy of ECF 1, harvested 2026-08-27. Related-case notice on Asad Adow 0:25-cr-00354 ECF 18; this is not a charging instrument against Asad. Stub extract only. CHARGED_ALLEGED ~$1.4M claimed / ~$1.3M received (do not add those two). Paragraph 21 mentions an employee previously at Leo Human Services; that is a recital, not a charge against Asad or Leo. Do not sum with first-wave HSS or FOF dollars.",
+  "notes": "Full 8-page OCR 2026-08-27 (180 dpi tesseract psm 6). Count table locked: Counts 1-4 § 1343. CHARGED_ALLEGED ~$1.4M claimed / ~$1.3M received (same paragraph, do not add). Caption OCR may read § 1348; face and count-closing line are § 1343. Paragraph 21 Employee A previously at Leo Human Services is a recital, not a charge against Asad Adow / Leo. Statewide HSS payout recitals already claimed. Related-case notice on Asad Adow 0:25-cr-00354 ECF 18; this is not a charging instrument against Asad. Do not sum with first-wave HSS or FOF dollars.",
   "source_tier": 1,
   "source_status": "PRIMARY_COURT_RECORD"
 }

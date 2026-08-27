@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-08-27T21:10:00Z",
+  "created_at": "2026-08-27T21:10:00Z",
+  "updated_at": "2026-08-27T21:10:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-hussein-25cr479-ecf1-wire-fraud-counts",
+  "claim_text": "On December 16, 2025, a grand jury in the District of Minnesota returned an indictment in United States v. Hassan Ahmed Hussein and Ahmed Abdirashid Mohamed, No. 0:25-cr-00479 (ECF 1), charging both defendants with Counts 1–5, wire fraud, 18 U.S.C. § 1343, through Pristine Health LLC. Each count is an alleged interstate email: Count 1, on or about April 27, 2023, from Hassan Hussein to AllCare Software; Count 2, on or about August 22, 2023, from Hassan Hussein to A. Hussein attaching paperwork for purported beneficiary Damien R.; Count 3, on or about September 18, 2023, email exchanges between Ahmed Mohamed and AllCare Software; Count 4, on or about October 31, 2024, from Ahmed Mohamed to Hassan Hussein attaching paperwork for purported beneficiary Haley G.; Count 5, on or about December 31, 2024, from Hassan Hussein to DHS regarding an emergency clients update. These are charging allegations, not adjudicated facts.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:25-cr-00479",
+  "source_ids": [
+    "src-mnd-25-cr-00479-ecf1-hussein-indictment"
+  ],
+  "subject_ids": [
+    "org-pristine-health-llc"
+  ],
+  "organizations": [
+    "org-pristine-health-llc"
+  ],
+  "statutes": [
+    "18 U.S.C. § 1343"
+  ],
+  "date_start": "2023-04-27",
+  "date_end": "2024-12-31",
+  "event_date": "2025-12-16",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "page": 1,
+      "quote": "UNITED STATES OF AMERICA, ... v. 1. HASSAN AHMED HUSSEIN, and 2. AHMED ABDIRASHID MOHAMED, Defendants. ... INDICTMENT 18 U.S.C. § 1343"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "page": 4,
+      "quote": "Counts 1-5 (Wire Fraud)"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "page": 7,
+      "quote": "each transmission constituting a separate count: ... All in violation of Title 18, United States Code, Section 1343."
+    }
+  ],
+  "qualifiers": [
+    "as of indictment date 2025-12-16",
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "caption statute confirmed visually as § 1343 after OCR misread § 1348",
+    "HSS case; not Feeding Our Future; not first-wave Aden/Falade/Anwar/Asad"
+  ],
+  "editorial_notes": "Count 1 numeral dropped by OCR; date and wire confirmed on page-7 image. Both defendants named on all five counts."
+}

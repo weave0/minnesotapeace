@@ -89,7 +89,7 @@ Metric handling:
 
 ## Open acquisition gaps
 
-Asad Adow `25-cr-354` information remains missing from RECAP (re-checked 2026-08-27; no PACER buy). Aden, Falade, and Anwar Adow charging instruments are count-mapped from the face of ECF 1. Related-case indictments **25-cr-479** (Hussein / Pristine Health) and **25-cr-482** (Sallah / SafeLodgings) are archived as stubs, not yet count-mapped.
+Asad Adow `25-cr-354` information remains missing from RECAP (re-checked 2026-08-27; no PACER buy). Aden, Falade, Anwar Adow, Hussein 25-cr-479, and Sallah 25-cr-482 charging instruments are count-mapped from the face of ECF 1.
 
 ## Source
 
@@ -102,8 +102,8 @@ https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabili
 - **25-cr-351** ECF 1 indictment count-mapped (`falade-25-cr-351-ecf1.json`). Counts 1–4 are 18 U.S.C. § 1343. ¶13 Faladcare submitted **over $2.2 million** in reimbursement claims (`amount_billed`; same figure ¶17 — do not sum). No personal-pocketing dollar on this indictment. SOS Faladcare Inc 2019-10-31 is consistent with ¶10. Caption OCR § 1348 corrected to § 1343 from the closing line.
 - **25-cr-353** ECF 1 is a **felony information**, not an indictment (`0_25-cr-00353_ecf1_anwar-adow-hss.pdf`, full text extracted). Counts 1–4 are 18 U.S.C. § 1343 (emails `PlusLibertyLLC@gmail.com`, Mar 2022–Apr 2025). ¶10: owner of Liberty Plus, registered with Minnesota in or about November 2022 (SOS file 1349782500024 original filing 2022-11-17 is consistent). ¶16: Liberty Plus **received more than $1.2 million** (`amount_paid` / CHARGED_ALLEGED) for purported services to about 200 beneficiaries. ¶8 program-wide HSS payouts ($21M/$42M/$74M/$104M/$61M) are `program_spend` background in this charging document — **do not add them to the $1.2M**. ¶1 “millions of dollars” is scheme-purpose language; the specific Liberty Plus figure is ¶16. ¶17 alleges diversion to employees and brother Asad Adow (not itself a charging document against Asad). Docket: guilty as to Count 1 on 2025-10-23 — not a judgment.
 - **25-cr-354** Asad Adow felony information is **not** on RECAP (`is_available=false` as of 2026-08-27). Plea agreement ECF 14 and waiver ECF 13 also unavailable. No judgment. Still a local-document gap.
-- **25-cr-479** ECF 1 indictment archived (`0_25-cr-00479_ecf1_hussein-hss.pdf`, sha256 `b7310b57…`). Hassan Ahmed Hussein and Ahmed Abdirashid Mohamed / Pristine Health LLC. Stub: Counts 1–5 § 1343; ~$750,000 amount_claimed, CHARGED_ALLEGED. Not a charge against Asad. Do not add to first-wave totals.
-- **25-cr-482** ECF 1 indictment archived (`0_25-cr-00482_ecf1_sallah-hss.pdf`, sha256 `c4b12be6…`). Kaamil Omar Sallah / SafeLodgings, Inc. Stub: Counts 1–4 § 1343; ~$1.4M claimed / ~$1.3M received (same paragraph, do not add). ¶21 employee previously at Leo Human Services is a recital, not a Leo charge. Do not add to first-wave totals.
+- **25-cr-479** ECF 1 indictment count-mapped (`hussein-25-cr-479-ecf1.json`). Counts 1–5 are 18 U.S.C. § 1343 (emails Apr 2023–Dec 2024). ¶13 / ¶21 Pristine Health submitted about **$750,000** in fraudulent Medicaid claims (`amount_claimed`; same figure, do not sum). Caption OCR § 1348 corrected to § 1343. Foundation First / Brilliant Minds paras 18–19 are recitals, not Aden charges. Not a charge against Asad. Do not add to first-wave totals or FOF.
+- **25-cr-482** ECF 1 indictment count-mapped (`sallah-25-cr-482-ecf1.json`). Counts 1–4 are 18 U.S.C. § 1343. ¶13 / ¶23 about **$1.4 million** claimed (`amount_claimed`) and ¶13 **nearly $1.3 million** received (`amount_paid`) — same overlap group, do not add. ¶22 ~$150,000 crypto-exchange diversion overlaps the received figure. ¶21 Employee A previously at Leo Human Services is a recital, not a charge against Asad or Leo. Caption OCR § 1348 corrected to § 1343. Do not add to first-wave totals or FOF.
 
 Do not sum the $2.3M / >$2.2M / $2.7M / >$1.2M figures. They are overlapping program-family billing/payment allegations across four matters.
 
@@ -114,4 +114,4 @@ These come from CourtListener docket minutes, not from archived plea-agreement P
 
 - **Anwar Ahmed Adow, 25-cr-353, ECF 7 (2025-10-23):** Judge Magnuson; “Plea entered … Guilty as to Count 1 of the Information.” Waiver of indictment ECF 8. Plea agreement ECF 9 exists and is **not** on RECAP. PSR is pending; objection deadline continued 2026-01-05. Treat Count 1 guilt as a court-minute fact; do not invent a sentence or restitution number.
 - **Asad Ahmed Adow, 25-cr-354, ECF 12 (2025-11-17):** Judge Blackwell; guilty as to Count 1. Waiver ECF 13. Plea agreement ECF 14 **not** on RECAP. The felony information itself is still not on RECAP.
-- Related-case leads from Asad reassignment orders: **25-cr-479** and **25-cr-482** ECF 1 PDFs pulled from RECAP on 2026-08-27. Count tables still stubs.
+- Related-case leads from Asad reassignment orders: **25-cr-479** and **25-cr-482** ECF 1 count-mapped 2026-08-27.
