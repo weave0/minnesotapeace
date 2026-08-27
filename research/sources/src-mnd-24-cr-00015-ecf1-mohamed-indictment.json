@@ -1,0 +1,23 @@
+{
+  "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+  "canonical_url": "https://www.courtlistener.com/docket/68224248/1/united-states-v-mohamed/",
+  "archive_url": "https://archive.org/download/gov.uscourts.mnd.212869/gov.uscourts.mnd.212869.1.0.pdf",
+  "issuing_body": "United States District Court, District of Minnesota",
+  "title": "Indictment, United States v. Ikram Yusuf Mohamed et al., No. 0:24-cr-00015 (D. Minn. ECF 1)",
+  "publication_date": "2024-01-24",
+  "retrieval_date": "2026-08-26",
+  "document_date": "2024-01-24",
+  "document_type": "indictment",
+  "case_number": "0:24-cr-00015",
+  "court": "United States District Court, District of Minnesota",
+  "docket_id": "68224248",
+  "local_path": "research/court/pdfs/0_24-cr-00015_ecf1_mohamed.pdf",
+  "sha256": "eb090e5e657fe64fff1819c26ed073aa934b689f0e1e49b0ac1df47b81df0d1f",
+  "mime_type": "application/pdf",
+  "page_count": 37,
+  "extracted_text_path": "research/court/raw/mohamed-24-cr-015-ecf1.txt",
+  "access_status": "archived",
+  "notes": "Public RECAP/IA copy of ECF 1. TIFF scan (PaperStream fi-7700). Sequential pdftoppm+tesseract at ~180 dpi saved under court/raw/mohamed-24-cr-015-ecf1.txt. 47-count Feeding Our Future family indictment; not HSS. Allegations only; not a judgment. Face header 0:24-cr-00015-ECT-DJF (Judge Eric C. Tostrud). Unsealed 2024-02-05 per prior stub/PDF ModDate, not printed on the face of page 1.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD"
+}

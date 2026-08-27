@@ -1,0 +1,106 @@
+{
+  "reviewed_at": "2026-08-27T21:15:00Z",
+  "created_at": "2026-08-27T21:15:00Z",
+  "updated_at": "2026-08-27T21:15:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mohamed-24cr015-ecf1-site-receipts",
+  "claim_text": "The January 24, 2024 indictment in United States v. Mohamed et al., No. 0:24-cr-00015 (ECF 1), alleges 2021 Federal Child Nutrition Program receipts at four family sites: United Youth of MPLS LLC approximately $2.2 million (and FOF paid another approximately $2.8 million to related entities for meals purportedly served at that site); Youth International Club more than $1.4 million; Inspiring Youth & Out Reach LLC more than $1.5 million; and Active Mind’s Youth LLC more than $1 million. These are amount_paid / received charging allegations, subsets of the para 91 more-than-$12 million family figure, and must not be summed with that $12 million or added to HSS or the Bock $250 million headline.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:24-cr-00015",
+  "source_ids": [
+    "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "date_start": "2020-12-01",
+  "date_end": "2021-11-30",
+  "event_date": "2024-01-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 6,
+      "locator": "para 20",
+      "quote": "In 2021, United Youth received approximately $2.2 million in Federal Child Nutrition Program funds for food and meals it purportedly provided to children."
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 12,
+      "locator": "para 43",
+      "quote": "Based on these fraudulent figures, Feeding Our Future paid approximately $2.2 million to United Youth and another approximately $2.8 million to related entities for meals purportedly served at the United Youth site."
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 14,
+      "locator": "para 51",
+      "quote": "Based on these fraudulent claims, they received more than $1.4 million in Federal Child Nutrition Program funds."
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 16,
+      "locator": "para 60",
+      "quote": "Based on these fraudulent claims, Inspiring Youth received more than $1.5 million in federal child nutrition program funds"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 20,
+      "locator": "para 72",
+      "quote": "Based on these fraudulent claims, Active Mind’s Youth received more than $1 million in federal child nutrition program funds"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "methodology": "United Youth received approximately $2.2 million (paras 20 and 43). Do not sum the two paragraphs."
+    },
+    {
+      "value": 2800000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "methodology": "Para 43: FOF paid another approximately $2.8 million to related entities for meals purportedly served at the United Youth site."
+    },
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "methodology": "Youth International received more than $1.4 million (paras 22, 51)."
+    },
+    {
+      "value": 1500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "methodology": "Inspiring Youth received more than $1.5 million (paras 19, 60)."
+    },
+    {
+      "value": 1000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "methodology": "Active Mind’s Youth received more than $1 million (paras 21, 72)."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "subsets of para 91 >$12 million; do not sum with that figure",
+    "do not add to HSS or Bock $250M"
+  ]
+}

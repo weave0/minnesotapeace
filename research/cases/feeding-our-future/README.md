@@ -1,41 +1,93 @@
-# Feeding Our Future — structured case family
+# Feeding Our Future — MinnesotaPeace reference case family
 
-Normalized 2026-08-26 (America/Chicago) from local markdown and primary files under `feeding-our-future/`. Journalism is a lead only. Do not invent numbers. Do not sum overlapping dollars. Do not treat `$250 million` as `proven_loss`. Do not upgrade defendant status from news. The circulating `$9 billion` figure is **not** a record in this family.
+Investigation family `inv-feeding-our-future`. Normalized 2026-08-26 from the first-harvest markdown under `feeding-our-future/` (SOURCES.md, CLAIMS.md, DEFENDANTS.md, GAPS.md) plus SHA-256 of local files in `feeding-our-future/primary/`.
 
-Source markdown: `feeding-our-future/SOURCES.md`, `CLAIMS.md`, `DEFENDANTS.md`, `GAPS.md`.
+This directory is the structured JSON view. **Do not invent facts beyond those four files.** Coverage is `first_harvest`: press-release-plus-OLA-PDF depth; high on PRs, low on indictment PDFs. Prosecution is mature (dozens of pleas/trial convictions/sentences) but many original-47 statuses are still `charged` only because later USAO-MN pages were not fetched.
 
-## Files
+## How to read the files
 
-| File | Contents |
+| File | What it is |
 |---|---|
-| `family.json` | Investigation-family record (`family_id`: `feeding-our-future`) |
-| `sources.json` | S01–S31 primary/official + L01–L05 news leads; SHA-256 of local `primary/` bytes |
-| `claims.json` | `fof-c-001` … atomic claims with required fields |
-| `defendants.json` | Named defendants from `DEFENDANTS.md` (status from primaries only) |
-| `money.json` | Typed amounts; Nur/Farah `$47,920,514` is `MAY_OVERLAP` |
-| `contradictions.json` | Guthmann, conviction-count, OLA vs MDE, scheme-size, juror-bribery term |
-| `events.json` | Chronology events citing sources |
+| `family.json` | Family record, coverage flags, missing_records from GAPS.md, proposition classes A/B/C supported and D/E not supported |
+| `sources.json` | Array of S01–S31 official/primary sources and L01–L05 journalism leads (`id`, `title`, `publisher`, `url`, `date`, `type`, `evidence_class`; local PDFs/HTML have `sha256`) |
+| `claims.json` | One object per claim (`fof-c-001` …). Required: claim_id, claim_text, evidence_class, status, source_ids, confidence, is_allegation, is_inference, reviewed_at. OLA findings include page numbers in `supporting_passages` (p. 37, 49–51, 53, 55, 57, S-1) |
+| `defendants.json` | One object per named defendant in DEFENDANTS.md. Status is **not** upgraded from journalism |
+| `money.json` | Distinct dollar figures with `metric_type` and overlap notes. **$9 billion is not in this family** |
+| `contradictions.json` | Guthmann vs “judge ordered payments”; 65 vs 68 convictions; $250M vs $300M; S&S $18M vs $17.4M |
+| `events.json` | Dated chronology (charging waves, OLA report, sentences, Guthmann statement, juror-bribery plea). Lead-only events are tagged `LEAD_UNVERIFIED` |
 
-Collection files wrap schema-shaped records in `{ family_id, generated_at, …, <records> }`. `family.json` is a single investigation-family object.
+Actor classes (do not collapse B/C into D):
 
-## Local primary hashes (sha256sum)
+- **A** — private actors defrauded programs (supported: charging, pleas, trial convictions)
+- **B** — agency failed to detect/prevent (supported: OLA)
+- **C** — negligence / incompetence / ill-prepared investigations (supported: OLA)
+- **D** — officials knowingly committed crimes (**not supported** in collected sources)
+- **E** — not defined in the source files (**not supported**)
 
-| Path | sha256 |
-|---|---|
-| `feeding-our-future/primary/ola-2024-mdefof.pdf` | `dc5b7d9db66dff4b4febc7d50664ffd11a4617d47233b3d28e9da68393d50ef6` (120 pp.) |
-| `feeding-our-future/primary/ola-2024-mdefof-sum.pdf` | `c1350704297e181027365fb626e3824134edf8d7d93adc6f2cfa9d1bd67f41d4` (2 pp.) |
-| `feeding-our-future/primary/bock-said-order-acquittal-2025-08-22.pdf` | `353114cc4a7d71befa9330c44eb7440cefefe083517f828bff15aa7c4b484dcf` (31 pp.) |
-| `feeding-our-future/primary/mncourts-guthmann-2022-09-23.html` | `3632472c01ebf9c1fd01afd6984e02b2357c06e709c2f230f0ab0df09c6f8da2` |
-| `feeding-our-future/primary/ola-2024-mdefof.txt` | `7e200e2c892a357fc98b6c8c83d8e12b30647fd94d6e58adf9fff52004c2eeb2` (extracted text of the full OLA report) |
+## Do not sum restitution
 
-## Operating rules encoded here
+Restitution orders can be **joint-and-several**. Especially:
 
-- **A ≠ B ≠ C ≠ D.** Private fraud (A) is extensively charged/adjudicated. OLA supports oversight failure (B) and unprepared/inadequate investigations (C). No charging document in this corpus names MDE officials as criminal defendants (D).
-- **Indictment ≠ conviction.** Rows marked `charged` stay allegations until a captured primary says otherwise.
-- **68 convictions = `LEAD_UNVERIFIED`.** Last verified official count is **65 on 2026-04-09** (S11).
-- **Guthmann.** Judicial Branch 2022-09-23: Judge Guthmann never ordered MDE to resume payments; MDE resumed voluntarily. Contrary Walz/Star Tribune/commissioner statements are preserved as a contradiction, not overwritten.
-- **Money.** `$47,920,514` appears for both Abdimajid Mohamed Nur and Abdiaziz Shafii Farah — `MAY_OVERLAP`, likely joint-and-several; **do not add**. `$250 million` is `alleged_loss` / charging headline, not `proven_loss`. **No `$9 billion` in this family.**
+- **$47,920,514** appears for both **Abdimajid Mohamed Nur** (S06, sentenced 2025-11-24) and **Abdiaziz Shafii Farah** (S07/S21, sentenced 2025-08-06). Treat as `MAY_OVERLAP` / likely joint-and-several on the Empire Cuisine loss. **Do not count two $47.9 million recoveries.**
+- Mukhtar Mohamed Shariff “almost $50 million” (S21) may overlap the same Empire loss.
+- S&S Catering individual restitutions (Sahra Mohamed Nur $5,000,240; Jesow $866,458) sit inside group alleged-loss figures. Do not add them to the group total.
+- Mohamed-group (24-cr-15) site receipts and agreed restitutions sit inside the $14.6 million group alleged_loss.
 
-## OLA passage binding
+There is **no** court-certified network `proven_loss`, cumulative `restitution_ordered` total, or `recovered_amount` in this harvest. Summing `money.json` will double-count.
 
-OLA claims (`fof-c-010`, `fof-c-018`–`fof-c-022`) bind supporting passages to printed pages **S-1, 37, 49–51, 53, 55, 57** of `ola-2024-mdefof.pdf` (and the two-page summary).
+## $250 million is alleged_loss, not proven_loss
+
+- Charging headline **$250 million** (S01) = `alleged_loss` / `fraud_estimate`.
+- “More than $240 million” obtained and disbursed (S01, repeated as “proven at trial” in S12) is still **not** a published court-certified net-loss judgment for the whole network.
+- IRS Pub 3583 “over **$300 million**” (S21) is `AGENCY_POSITION`, not a court finding. See `contradictions.json` fof-x-003.
+- FOF pass-through **~$3.4 million (2019) → nearly $200 million (2021)** is `amount_paid` / `program_spend`, not a loss total.
+- **Do not put $9 billion in this family.** It does not appear in S01–S28. Claim `fof-c-022` records the negative finding only.
+
+## Journalism leads are not a ceiling
+
+`L01`–`L05` are `LEAD_UNVERIFIED`. Do not treat them as DOJ-verified:
+
+- **68 convictions as of July 24, 2026** is **not verified** here (`fof-c-004`, status `unresolved`). Last verified official conviction count is **65 on 2026-04-09** (S11). KSTP’s Dool “68th” / “70th then 68th” note is a lead.
+- **July 22, 2026 120-month** juror-bribery sentence attributed to Abdiaziz Farah is a lead (L03). What **is** on .gov: his **plea** 2025-06-17 and **Abdulkarim** Farah’s **57-month** sentence 2026-03-04. Do not confuse the two people or terms.
+- Abdinasir Mahamed Abshir remains **charged** in this family even though L02 reports a 6.5-year sentence.
+- Said Shafii Farah’s reported fraud-trial **acquittal** is journalism only; status is **pleaded** (juror bribery). Do not mark acquitted.
+- Running totals of 78–80 charged are unverified; last verified official charged count in a captured .gov page is the **77th** (Ousman Camara, 2025-11-20).
+
+If a defendant’s status is only `charged`, read `coverage_note`: later plea/sentence PRs often exist but were Akamai-blocked and were **not** fetched. Do not fill them from memory or news.
+
+## Local primary files (hashed)
+
+SHA-256 of files under `feeding-our-future/primary/`:
+
+- `ola-2024-mdefof.pdf` — OLA full special review (S26)
+- `ola-2024-mdefof-sum.pdf` — OLA summary (S27)
+- `bock-said-order-acquittal-2025-08-22.pdf` — Brasel order (S22)
+- `mncourts-guthmann-2022-09-23.html` — Judicial Branch statement (S28)
+- `ola-2024-mdefof.txt` — extracted text of the full OLA report (companion to S26)
+
+## OLA page map (claims)
+
+Use these page cites; they come from CLAIMS.md, not from re-reading the PDF for new facts:
+
+- **S-1** — summary headline: inadequate oversight created opportunities for fraud (`fof-c-012`)
+- **p. 37** — 2018 CACFP administrative review, no follow-up (`fof-c-014`)
+- **p. 49** — ≥30 complaints June 2018–Dec 2021 (`fof-c-015`); FOF asked to investigate itself / trustworthiness (`fof-c-016`)
+- **pp. 49, 51, 55** — asked FOF to investigate itself (`fof-c-016`)
+- **p. 50** — USDA OIG general warnings; MDE not prepared; Oct/Nov 2020 referral (`fof-c-018`, `fof-c-019`)
+- **pp. 53, 57** — some complaints not investigated; investigations inadequate (`fof-c-017`)
+
+MDE disputes the adequacy characterization (Jett letter 2024-06-07, `fof-c-025`). That is an `AGENCY_POSITION` rebuttal, not a withdrawal of the audit.
+
+## Proposition classes in public write-ups
+
+Supported: **A, B, C**. Not supported: **D, E**. Guthmann (S28) and OLA (S26/S27) are about oversight and civil procedure, not about MDE officials stealing funds. Keep that distinction.
+
+## Local charging instrument: United States v. Mohamed, 0:24-cr-00015 ECF 1
+
+Count-mapped 2026-08-27 from the face of the 37-page scan (`court/extracts/mohamed-24-cr-015-ecf1.json`). Feeding Our Future family, **not HSS**.
+
+- 47 counts: Count 1 §§ 371/1343 (all 7); Counts 2–20 § 1343 (all 7); Count 21 § 371 bribery conspiracy (**not** Gandi Yusuf Mohamed); Counts 22–37 § 666 (Ikram on every row); Count 38 § 1956(h) (all 7); Counts 39–47 § 1957.
+- Family **received** more than **$12 million** (`amount_paid`, para 91). Site receipts and Star Distribution ~$10 million **overlap** that figure. Do not add them to each other, to Bock $250 million, or to HSS.
+- FOF-sponsor recitals (~$3.4 million 2019 / nearly $200 million 2021 / nearly $18 million admin fees) are sponsor-wide `amount_paid`, not this family's loss.
+- CHARGED_ALLEGED only. Not a judgment.
+

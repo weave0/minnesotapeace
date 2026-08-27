@@ -1,0 +1,77 @@
+{
+  "reviewed_at": "2026-08-27T21:15:00Z",
+  "created_at": "2026-08-27T21:15:00Z",
+  "updated_at": "2026-08-27T21:15:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mohamed-24cr015-ecf1-count-map",
+  "claim_text": "On January 24, 2024, a grand jury in the District of Minnesota returned a 47-count indictment in United States v. Ikram Yusuf Mohamed, Suleman Yusuf Mohamed, Aisha Hassan Hussein, Sahra Sharif Osman, Shakur Abdinur Abdisalam, Fadumo Mohamed Yusuf, and Gandi Yusuf Mohamed, also known as Gandi Abdi Kediye, No. 0:24-cr-00015 (ECF 1). Count 1 charges all seven defendants with conspiracy to commit wire fraud, 18 U.S.C. §§ 371 and 1343. Counts 2–20 charge all seven with wire fraud, 18 U.S.C. § 1343 (interstate emails and Feeding Our Future-to-site payments). Count 21 charges six defendants (all except Gandi Yusuf Mohamed) with conspiracy to commit federal programs bribery, 18 U.S.C. § 371 (object §§ 666(a)(1)(B) and (a)(2)). Counts 22–37 charge federal programs bribery, 18 U.S.C. §§ 666(a)(1)(B) and (a)(2), with Ikram Mohamed named on every row. Count 38 charges all seven with conspiracy to commit money laundering, 18 U.S.C. § 1956(h). Counts 39–47 charge money laundering, 18 U.S.C. § 1957, named per row. Forfeiture allegations incorporate Counts 1–47 and split Counts 1–37 (proceeds, § 981) from Counts 38–47 (§§ 1956/1957, § 982). These are charging allegations, not adjudicated facts. Feeding Our Future family, not HSS.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:24-cr-00015",
+  "source_ids": [
+    "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "statutes": [
+    "18 U.S.C. § 371",
+    "18 U.S.C. § 666",
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 1956",
+    "18 U.S.C. § 1957"
+  ],
+  "date_start": "2020-12-01",
+  "date_end": "2022-04-30",
+  "event_date": "2024-01-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 1,
+      "quote": "UNITED STATES OF AMERICA, Plaintiff, v. 1. IKRAM YUSUF MOHAMED, 2. SULEMAN YUSUF MOHAMED, 3. AISHA HASSAN HUSSEIN, 4. SAHRA SHARIF OSMAN, 5. SHAKUR ABDINUR ABDISALAM, 6. FADUMO MOHAMED YUSUF, and 7. GANDI YUSUF MOHAMED, also known “Gandi Abdi Kediye,” Defendants. INDICTMENT 18 U.S.C. § 371 18 U.S.C. § 666 18 U.S.C. § 1343 18 U.S.C. § 1956 18 U.S.C. § 1957"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 8,
+      "quote": "Count 1 (Conspiracy to Commit Wire Fraud) ... in violation of Title 18, United States Code, Sections 371 and 1343."
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 25,
+      "quote": "Counts 2-20 (Wire Fraud)"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 28,
+      "quote": "All in violation of Title 18, United States Code, Section 1343. Count 21 (Conspiracy to Commit Federal Programs Bribery)"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 31,
+      "quote": "All in violation of Title 18, United States Code, Section 371  Count 22-37 (Federal Programs Bribery)"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 33,
+      "quote": "All in violation of Title 18, United States Code, Section 666(a)(1)(B) and (a)(2). Count 38 (Conspiracy to Commit Money Laundering)"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 36,
+      "quote": "All in violation of Title 18, United States Code, Section 1957. FORFEITURE ALLEGATIONS  126. Counts 1 through 47 of this Indictment are incorporated by reference"
+    }
+  ],
+  "qualifiers": [
+    "as of indictment date 2024-01-24",
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "Gandi Yusuf Mohamed is not named in Count 21",
+    "caption § 371 confirmed visually after OCR misread § 3871",
+    "Feeding Our Future family, not HSS"
+  ],
+  "editorial_notes": "Count numerals 6–9, 27, 40, and 47 restored from page images after table OCR drops. June 1, 2021 $14,700 check is a Count 21 overt act only, not a Count 22–37 row."
+}
