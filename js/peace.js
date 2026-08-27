@@ -55,10 +55,25 @@
   }
 
   var stats = window.__CORPUS_STATS__;
+  function countUp(el, target) {
+    if (reduce) {
+      el.textContent = String(target);
+      return;
+    }
+    var t0 = performance.now();
+    var dur = 900;
+    function tick(now) {
+      var p = Math.min(1, (now - t0) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = String(Math.round(target * eased));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
   if (stats) {
     ["documents", "claims", "mapped_cases", "gaps"].forEach(function (key) {
       var el = document.querySelector('[data-stat="' + key + '"]');
-      if (el && stats[key] != null) el.textContent = String(stats[key]);
+      if (el && stats[key] != null) countUp(el, Number(stats[key]));
     });
   }
 
@@ -161,6 +176,21 @@
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, w, h);
 
+    ctx.lineWidth = 0.6;
+    for (var a = 0; a < stars.length; a++) {
+      for (var b = a + 1; b < stars.length; b++) {
+        var dx = stars[a].x - stars[b].x;
+        var dy = stars[a].y - stars[b].y;
+        var dist = Math.hypot(dx, dy);
+        if (dist < 88) {
+          ctx.strokeStyle = "rgba(34, 211, 238," + (0.09 * (1 - dist / 88)) + ")";
+          ctx.beginPath();
+          ctx.moveTo(stars[a].x, stars[a].y);
+          ctx.lineTo(stars[b].x, stars[b].y);
+          ctx.stroke();
+        }
+      }
+    }
     for (var s = 0; s < stars.length; s++) {
       var st = stars[s];
       var tw = 0.55 + 0.45 * Math.sin(t * (0.6 + st.tw) + st.x);
