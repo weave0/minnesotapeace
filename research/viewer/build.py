@@ -586,7 +586,7 @@ def main() -> None:
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "corpus_name": "MinnesotaPeace public-program fraud research corpus",
         "viewer": "research/viewer v1",
-        "mandate": "Citation-rich investigative corpus. The atomic unit is a claim, not an article. This viewer is a research layer, not a replacement for MinnesotaPeace.com.",
+        "mandate": "Citation-rich investigative corpus. The atomic unit is a claim, not an article. This viewer is The Record inside MinnesotaPeace.com — not a fraud-total dashboard.",
         "editorial_rules": [
             "Never show a TOTAL FRAUD number. Never sum overlapping dollars.",
             "Every displayed dollar carries metric_type and evidence_class.",
@@ -614,8 +614,23 @@ def main() -> None:
         "window.__CORPUS__ = " + json.dumps(corpus, ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
+    stats = {
+        "generated_at": corpus["generated_at"],
+        "documents": len(sources),
+        "claims": len(claims),
+        "mapped_cases": len(cases_out),
+        "gaps": len(GAPS),
+        "entities": len(entities),
+        "money_rows": len(money_rows),
+    }
+    stats_js = OUT_DIR / "stats.js"
+    stats_js.write_text(
+        "window.__CORPUS_STATS__ = " + json.dumps(stats, ensure_ascii=False) + ";\n",
+        encoding="utf-8",
+    )
     print(f"wrote {json_path.relative_to(ROOT)} ({json_path.stat().st_size} bytes)")
     print(f"wrote {js_path.relative_to(ROOT)} ({js_path.stat().st_size} bytes)")
+    print(f"wrote {stats_js.relative_to(ROOT)}")
     print(f"claims={len(claims)} cases={len(cases_out)} money_rows={len(money_rows)} entities={len(entities)}")
 
 

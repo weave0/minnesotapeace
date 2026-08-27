@@ -5,6 +5,10 @@
   const CORPUS = window.__CORPUS__;
   const app = document.getElementById("app");
 
+  if (window.self !== window.top) {
+    document.documentElement.classList.add("is-framed");
+  }
+
   function esc(value) {
     return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
       "&": "&amp;",

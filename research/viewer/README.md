@@ -1,6 +1,7 @@
 # Research viewer (v1)
 
-Static, evidence-first HTML for the MinnesotaPeace public-program fraud corpus. It is not the live mediation site and is not a homepage fraud dashboard.
+Static, evidence-first HTML for the MinnesotaPeace public-program fraud corpus. This viewer is The Record inside MinnesotaPeace.com. It is not a homepage fraud dashboard.
+
 
 ## Open
 
@@ -12,7 +13,7 @@ Rebuild the data bundle after claim/extract/source/entity edits:
 python3 research/viewer/build.py
 ```
 
-That writes `research/viewer/data/corpus.json` and `research/viewer/data/corpus.js` (the JS file is what the page loads, so `file://` works).
+That writes `research/viewer/data/corpus.json`, `research/viewer/data/corpus.js` (the JS file is what the page loads, so `file://` works), and `research/viewer/data/stats.js` for the MN Peace homepage counters.
 
 ## What is in the bundle
 
