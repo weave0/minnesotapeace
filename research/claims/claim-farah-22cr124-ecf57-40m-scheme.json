@@ -1,0 +1,62 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "status": "alleged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "event_date": "2022-09-13",
+  "claim_id": "claim-farah-22cr124-ecf57-40m-scheme",
+  "claim_text": "The September 13, 2022 superseding indictment in United States v. Farah et al., No. 0:22-cr-00124 (ECF 57), alleges that the eight defendants devised and carried out a $40 million scheme to defraud the federal child nutrition program (para 1) and that, in total, they fraudulently received approximately $40 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022 (para 47). Para 1 language is scheme-to-defraud (alleged_loss); para 47 language is received (amount_paid). These are the same Empire-group $40 million figure, not two amounts. This is a CHARGED_ALLEGED Empire/FOF-family figure. It overlaps the Bock $250 million network charging headline (do not add) and must not be added to HSS totals or to the Mohamed family $12 million.",
+  "claim_type": "AMOUNT",
+  "organizations": [
+    "org-feeding-our-future",
+    "org-empire-cuisine-and-market"
+  ],
+  "date_start": "2020-05-01",
+  "date_end": "2022-01-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 1,
+      "locator": "para 1",
+      "quote": "The defendants devised and carried out a $40 million scheme to defraud the federal child nutrition program, a program designed to provide free meals to children in need."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 14,
+      "locator": "para 47",
+      "quote": "In total, the defendants fraudulently received approximately $40 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 40000000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "period_start": "2020-05-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Indictment para 1: $40 million scheme to defraud. Same figure as para 47 fraudulently received approximately $40 million. Keep as alleged_loss per charging-headline language; para 47 is received/amount_paid wording of the same number."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "para 1 scheme language = alleged_loss; para 47 received language = amount_paid of the same $40M",
+    "overlap_group_id empire-22cr124-40m-scheme",
+    "do not add to Bock $250M charging headline",
+    "do not add to HSS",
+    "do not add to Mohamed family $12M",
+    "do not sum with Empire $28M / ThinkTechAct / Bushra / shell-company receipts"
+  ],
+  "editorial_notes": "Bock $250M is a network alleged_loss that already contains Empire. Record $40M with overlap; never add."
+}

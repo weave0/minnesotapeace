@@ -1,0 +1,112 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "status": "alleged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "event_date": "2022-09-13",
+  "claim_id": "claim-farah-22cr124-ecf57-entity-shell-receipts",
+  "claim_text": "The September 13, 2022 Farah superseding indictment, No. 0:22-cr-00124 (ECF 57), alleges downstream receipts used to receive and launder Federal Child Nutrition Program funds: Empire Enterprises more than / nearly $7 million (paras 19, 96); Bushra Wholesalers more than $4.5 million (para 26); The Free Minded Institute nearly $2.5 million from Sponsor A, of which over 97 percent was paid to Empire Cuisine and Market (paras 29, 38, 40); MIB Holdings more than $2 million (para 23); and Nur Consulting more than $800,000 (para 25). Face language is received and laundered (amount_paid of overlapping proceeds). These are subsets of the $40 million Empire-group figure and of Empire Cuisine's more-than-$28 million; do not add them to $40 million, Bock $250 million, HSS, or Mohamed $12 million.",
+  "claim_type": "AMOUNT",
+  "organizations": [
+    "org-feeding-our-future",
+    "org-empire-cuisine-and-market"
+  ],
+  "date_start": "2021-02-01",
+  "date_end": "2022-01-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 7,
+      "locator": "para 19",
+      "quote": "used Empire Enterprises to receive and launder more than $7 million in Federal Child Nutrition Program funds."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 8,
+      "locator": "para 26",
+      "quote": "Bushra Wholesalers was used to receive and launder more than $4.5 million in Federal Child Nutrition Program funds between approximately February 2021 and January 2022."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 9,
+      "locator": "para 29",
+      "quote": "The Free Minded Institute received nearly $2.5 million in Federal Child Nutrition Program funds from Sponsor A from October 2021 to January 2022. J.S. paid over 97 percent of these funds to Empire Cuisine and Market."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 8,
+      "locator": "para 23",
+      "quote": "MAHAD IBRAHIM used MIB Holdings to receive and launder more than $2 million in Federal Child Nutrition Program funds."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 8,
+      "locator": "para 25",
+      "quote": "ABDIMAJID NUR used Nur Consulting to receive and launder more than $800,000 in Federal Child Nutrition Program funds between approximately April 2021 and January 2022."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 7000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 19 more than $7 million; para 96 nearly $7 million. Same Empire Enterprises figure."
+    },
+    {
+      "value": 4500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-02-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 26 Bushra Wholesalers more than $4.5 million received/laundered."
+    },
+    {
+      "value": 2500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-10-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Paras 29/38 FMI nearly $2.5 million; about 97 percent paid onward to Empire."
+    },
+    {
+      "value": 2000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 23 MIB Holdings more than $2 million."
+    },
+    {
+      "value": 800000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-04-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 25 Nur Consulting more than $800,000."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "received/laundered proceeds, not independent billed loss",
+    "overlap_group_id empire-22cr124-40m-scheme - do not sum with $40M or Empire $28M",
+    "do not add to Bock $250M, HSS, or Mohamed $12M"
+  ]
+}

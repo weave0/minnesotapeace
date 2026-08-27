@@ -91,3 +91,12 @@ Count-mapped 2026-08-27 from the face of the 37-page scan (`court/extracts/moham
 - FOF-sponsor recitals (~$3.4 million 2019 / nearly $200 million 2021 / nearly $18 million admin fees) are sponsor-wide `amount_paid`, not this family's loss.
 - CHARGED_ALLEGED only. Not a judgment.
 
+## Local charging instrument: United States v. Farah, 0:22-cr-00124 ECF 57
+
+Count-mapped 2026-08-27 from the face of the 48-page superseding indictment (`court/extracts/farah-22-cr-124-ecf57.json`). Empire / Feeding Our Future family, **not HSS**, not the Mohamed 24-cr-015 family.
+
+- 43 counts: Count 1 §§ 371/1343 (all 8); Counts 2–12 § 1343 (Aftin on none of those rows); Count 13 § 371 bribery conspiracy (Abdiaziz, Said, Mukhtar only); Counts 14–19 § 666; Count 20 § 1956(h) (**Hayat omitted**); Counts 21–42 § 1957; Count 43 § 1542 (Abdiaziz only, same theory as ECF 22). Forfeiture is Counts 1–42, not 43.
+- **$40 million** “scheme to defraud” (para 1, `alleged_loss`) is the same figure as para 47 “fraudulently received approximately $40 million” (`amount_paid`). Do **not** add to Bock **$250 million**. Empire Cuisine >$28M, ThinkTechAct, and shell receipts are subsets.
+- FOF ~$3.4M (2019) / nearly $200M (2021) / nearly $18M admin, and Sponsor A recitals, are sponsor-wide `amount_paid`, not this indictment’s extra loss.
+- CHARGED_ALLEGED only. Not a judgment. Count 17 table date Aug 13 vs para 146 Aug 17 is the same $10,000 check.
+
