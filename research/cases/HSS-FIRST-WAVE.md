@@ -104,3 +104,12 @@ https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabili
 - **25-cr-354** Asad Adow felony information is **not** on RECAP (`is_available=false`). Still a local-document gap.
 
 Do not sum the $2.3M / >$2.2M / $2.7M / >$1.2M figures. They are overlapping program-family billing/payment allegations across four matters.
+
+
+## Guilty-plea docket facts (not yet judgments)
+
+These come from CourtListener docket minutes, not from archived plea-agreement PDFs. Sentence/restitution are **not** entered on these dockets as of the May 2026 related-case notices.
+
+- **Anwar Ahmed Adow, 25-cr-353, ECF 7 (2025-10-23):** Judge Magnuson; “Plea entered … Guilty as to Count 1 of the Information.” Waiver of indictment ECF 8. Plea agreement ECF 9 exists and is **not** on RECAP. PSR is pending; objection deadline continued 2026-01-05. Treat Count 1 guilt as a court-minute fact; do not invent a sentence or restitution number.
+- **Asad Ahmed Adow, 25-cr-354, ECF 12 (2025-11-17):** Judge Blackwell; guilty as to Count 1. Waiver ECF 13. Plea agreement ECF 14 **not** on RECAP. The felony information itself is still not on RECAP.
+- Related-case leads from Asad reassignment orders: **25-cr-479** and **25-cr-482**. Not yet pulled.

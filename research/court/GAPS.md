@@ -15,7 +15,7 @@ Updated 2026-08-26 evening after authenticated RECAP pulls (no PACER purchases).
 
 ## Still missing as local charging instruments
 
-- **Empire/Farah fraud charging instrument** on `0:22-cr-00124`. ECF 22 is the passport count. The 43-count superseding indictment (filed 2022-09-13, unsealed 2022-09-20) is identified from docket text / later opinions, but the PDF is **not** in this corpus. First 20 docket entries are the May 2022 complaint path. A 16 MB FBI complaint affidavit (ECF 2-1, 34 pp.) is on disk locally and is **not** committed (size). That affidavit is not the superseding indictment.
+- **Empire/Farah 43-count superseding indictment is now locally archived** as `0_22-cr-00124_ecf57_Superseding-Indictment.pdf` (ECF 57, 48 pp., RECAP 201530.57). ECF 22 remains the earlier one-page passport count. The 201529 IA dump still lacks 57.0.pdf. First 20 docket entries are the May 2022 complaint path. A 16 MB FBI complaint affidavit (ECF 2-1, 34 pp.) is on disk locally and is **not** committed (size). That affidavit is not the superseding indictment.
 - **`0:25-cr-00354` Asad Adow / Leo Human Services** felony information: docket identity confirmed (counts 1–4, filed 2025-09-18, waiver of indictment 2025-11-17). RECAP `is_available=false`. Still a local-document gap.
 - Dispositive filings (judgments, plea agreements, restitution orders) to move facts from CHARGED_ALLEGED to ADJUDICATED, including Anwar Adow’s 2025-10-23 change-of-plea minute entry.
 

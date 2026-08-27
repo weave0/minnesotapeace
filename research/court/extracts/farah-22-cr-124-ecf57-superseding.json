@@ -1,0 +1,56 @@
+{
+  "docket_number": "0:22-cr-00124",
+  "ecf": 57,
+  "filed": "2022-09-13",
+  "unsealed": "2022-09-20",
+  "pages": 48,
+  "instrument": "superseding_indictment",
+  "source_pdf": "research/court/pdfs/0_22-cr-00124_ecf57_Superseding-Indictment.pdf",
+  "recap_path": "recap/gov.uscourts.mnd.201530/gov.uscourts.mnd.201530.57.0.pdf",
+  "pacer_case_id_note": "CL has two Farah docket records: 65361787 (pacer 201529) and 63409881 (pacer 201530). This PDF is the 201530 RECAP object for ECF 57. The 201529 IA bundle does not contain 57.0.pdf.",
+  "sha256": "b20c786a70f454083482ed82e533f379f0dc1bab9272cee21b5d8854d766609c",
+  "bytes": 3021230,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 371",
+    "18 U.S.C. \u00a7 666",
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 1542",
+    "18 U.S.C. \u00a7 1956",
+    "18 U.S.C. \u00a7 1957"
+  ],
+  "defendants_caption": [
+    "Abdiaziz Shafii Farah",
+    "Mohamed Jama Ismail",
+    "Mahad Ibrahim",
+    "Abdimajid Mohamed Nur",
+    "Said Shafii Farah",
+    "Abdiwahab Maalim Aftin",
+    "Mukhtar Mohamed Shariff",
+    "Hayat Mohamed Nur"
+  ],
+  "intro_amount": {
+    "value": 40000000,
+    "metric_type": "alleged_loss",
+    "notes": "Paragraph 1: '$40 million scheme'. Charging allegation, not proven_loss. Later PRs use overlapping Empire figures; do not add to Bock $250M charging headline."
+  },
+  "counts": [
+    {
+      "count": "1-19",
+      "statute": "fraud/bribery family (371/666/1343)",
+      "notes": "Forfeiture split treats Counts 1-19 as 981(a)(1)(C) proceeds counts. Full row table not yet OCRed."
+    },
+    {
+      "count": "20-42",
+      "statute": "18 U.S.C. \u00a7\u00a7 1956 and 1957",
+      "notes": "Forfeiture split on p.44. Count block closes \u00a7 1957 immediately before Count 43."
+    },
+    {
+      "count": "43",
+      "statute": "18 U.S.C. \u00a7 1542",
+      "title": "False statement in a passport application",
+      "notes": "This is the same passport theory as ECF 22, now count 43 of the superseding instrument."
+    }
+  ]
+}
