@@ -1,15 +1,16 @@
 # Charging instruments (RECAP, no PACER purchase)
 
-Downloaded 2026-08-26 via authenticated CourtListener RECAP storage.
+Downloaded via authenticated CourtListener RECAP storage. Indictment/information dollars are CHARGED_ALLEGED, not proven_loss.
 
-| File | Docket | ECF | What it actually is | SHA-256 | Bytes |
+| File | Docket | ECF | What it is | SHA-256 | Bytes |
 |---|---|---|---|---|---|
-| `0_22-cr-00223_ecf1_Indictment.pdf` | 0:22-cr-00223 *United States v. Bock* | 1 (filed 2022-09-13, 58 pp.) | FOF fraud indictment. Caption: 18 U.S.C. §§ 371, 666, 1343, 1956, 1957. 14 named defendants led by Aimee Marie Bock. CHARGED_ALLEGED. | 060c069f751742405427ab4277ff30809d6724539d4e8b86e29b6dbbf393393a | 2697748 |
-| `0_22-cr-00124_ecf22_Indictment.pdf` (misnamed on download) | 0:22-cr-00124 *United States v. Farah* | 22 (filed 2022-06-21, 1 p.) | **Not** the FOF/Empire fraud indictment. One-count 18 U.S.C. § 1542 (false statement in a passport application) against Abdiaziz Shafii Farah only. Local copy also saved as `0_22-cr-00124_ecf22_Passport-1542.pdf`. | 64b4c93a6aa721d741bbcd5afe98ff692de5daf6f6295e508618f5724e19d054 | 587815 |
+| `0_22-cr-00223_ecf1_Indictment.pdf` | 0:22-cr-00223 Bock | 1 | 61-count FOF indictment | 060c069f751742405427ab4277ff30809d6724539d4e8b86e29b6dbbf393393a | 2697748 |
+| `0_22-cr-00124_ecf22_Indictment.pdf` | 0:22-cr-00124 Farah | 22 | Passport § 1542 only; **not** the Empire fraud instrument | 64b4c93a6aa721d741bbcd5afe98ff692de5daf6f6295e508618f5724e19d054 | 587815 |
+| `0_24-cr-00015_ecf1_mohamed.pdf` | 0:24-cr-00015 Mohamed | 1 | 37-page FOF indictment, 7 defendants, caption §§ 371, 666, 1343, 1956, 1957; forfeiture cites counts 1–47 | eb090e5e657fe64fff1819c26ed073aa934b689f0e1e49b0ac1df47b81df0d1f | 2613292 |
+| `0_25-cr-00349_ecf1_aden-hss.pdf` | 0:25-cr-00349 Aden / Brilliant Minds | 1 | HSS indictment, 4 defendants, counts 1–6 wire fraud § 1343 | d1781deb0cabf59ba808078976349a2b4fb6074c5f790d63073408c0feaf9812 | 4757311 |
+| `0_25-cr-00351_ecf1_falade-hss.pdf` | 0:25-cr-00351 Falade / Faladcare | 1 | HSS indictment, 2 defendants, counts 1–4 wire fraud § 1343 | c88b4ac7ebce8fd63a0974ca41a9d8bd272210596406b0b9375ab1b13debb0fe | 3917157 |
+| `0_25-cr-00353_ecf1_anwar-adow-hss.pdf` | 0:25-cr-00353 Anwar Adow / Liberty Plus | 1 | **Felony information**, counts 1–4 wire fraud § 1343; alleged >$1.2M received | c449cde383c96511ad2b0b02c75e57673dc4f72cb9b12d02d9adf87c0f80d81f | 112727 |
 
 ## Gaps
-- Feeding Our Future / Empire Kitchen fraud charging instrument on 0:22-cr-00124 is still missing (likely a superseding indictment, not ECF 22).
-- Other Sept 2022 wave dockets (Alishire 222, Hassan 224, Jama 225, Salad 226) charging PDFs not yet downloaded.
-- 0:24-cr-00015, juror bribery 0:24-cr-00173, HSS 0:25-cr-349/351/353/354: docket metadata only.
-
-Indictment dollars are CHARGED_ALLEGED, not proven loss. Convictions and sentences live in the FOF case family, not in these PDFs.
+- Farah/Empire 43-count superseding indictment still not locally archived.
+- Asad Adow 25-cr-354 information not on RECAP.

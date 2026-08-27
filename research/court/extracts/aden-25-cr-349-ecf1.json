@@ -1,0 +1,35 @@
+{
+  "docket_number": "0:25-cr-00349",
+  "ecf": 1,
+  "filed": "2025-09-17",
+  "unsealed": "2025-09-18",
+  "pages": 8,
+  "instrument": "indictment",
+  "source_pdf": "research/court/pdfs/0_25-cr-00349_ecf1_aden-hss.pdf",
+  "sha256": "d1781deb0cabf59ba808078976349a2b4fb6074c5f790d63073408c0feaf9812",
+  "bytes": 4757311,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 981(a)(1)(C)",
+    "21 U.S.C. \u00a7 853(p)",
+    "28 U.S.C. \u00a7 2461(c)"
+  ],
+  "defendants_caption": [
+    "Moktar Hassan Aden",
+    "Mustafa Dayib Ali",
+    "Khalid Ahmed Dayib",
+    "Abdifitah Mohamud Mohamed"
+  ],
+  "provider": "Brilliant Minds Services LLC",
+  "counts": [
+    {
+      "count": "1-6",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Six interstate emails Sept 2022\u2013Oct 2024."
+    }
+  ],
+  "alleged_personal": "OCR p.7: each defendant personally pocketed between about $300,000 and $400,000 from Brilliant Minds (CHARGED_ALLEGED; do not sum into proven_loss)."
+}

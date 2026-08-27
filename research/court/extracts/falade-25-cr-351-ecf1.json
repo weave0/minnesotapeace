@@ -1,0 +1,32 @@
+{
+  "docket_number": "0:25-cr-00351",
+  "ecf": 1,
+  "filed": "2025-09-17",
+  "unsealed": "2025-09-18",
+  "pages": 7,
+  "instrument": "indictment",
+  "source_pdf": "research/court/pdfs/0_25-cr-00351_ecf1_falade-hss.pdf",
+  "sha256": "c88b4ac7ebce8fd63a0974ca41a9d8bd272210596406b0b9375ab1b13debb0fe",
+  "bytes": 3917157,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 981(a)(1)(C)",
+    "21 U.S.C. \u00a7 853(p)",
+    "28 U.S.C. \u00a7 2461(c)"
+  ],
+  "defendants_caption": [
+    "Christopher Adesoji Falade",
+    "Emmanuel Oluwademilade Falade"
+  ],
+  "provider": "Faladcare Inc.",
+  "counts": [
+    {
+      "count": "1-4",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Four emails Mar\u2013May 2025 including one to HealthPartners."
+    }
+  ]
+}

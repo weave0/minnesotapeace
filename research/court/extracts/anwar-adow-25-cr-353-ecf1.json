@@ -1,0 +1,39 @@
+{
+  "docket_number": "0:25-cr-00353",
+  "ecf": 1,
+  "filed": "2025-09-18",
+  "pages": 6,
+  "instrument": "felony_information",
+  "not_an_indictment": true,
+  "source_pdf": "research/court/pdfs/0_25-cr-00353_ecf1_anwar-adow-hss.pdf",
+  "sha256": "c449cde383c96511ad2b0b02c75e57673dc4f72cb9b12d02d9adf87c0f80d81f",
+  "bytes": 112727,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 981(a)(1)(C)",
+    "21 U.S.C. \u00a7 853(p)",
+    "28 U.S.C. \u00a7 2461(c)"
+  ],
+  "defendant": "Anwar Ahmed Adow",
+  "provider": "Liberty Plus LLC",
+  "counts": [
+    {
+      "count": "1-4",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Emails using PlusLibertyLLC@gmail.com, Mar 2022\u2013Apr 2025."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 1200000,
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "notes": "Liberty Plus received more than $1.2 million in Medicaid funds for services purportedly provided to approximately 200 beneficiaries. CHARGED_ALLEGED."
+    }
+  ],
+  "docket_plea_lead": "CL docket: change of plea 2025-10-23 and waiver of indictment ECF 8. Plea is a docket fact; counts of conviction still need judgment/plea agreement before ADJUDICATED.",
+  "related": "Information alleges Anwar diverted proceeds to brother Asad Adow (25-cr-354). Not itself a charging document against Asad."
+}

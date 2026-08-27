@@ -1,0 +1,55 @@
+{
+  "docket_number": "0:24-cr-00015",
+  "ecf": 1,
+  "filed": "2024-01-24",
+  "unsealed": "2024-02-05",
+  "pages": 37,
+  "judge": "Eric C. Tostrud",
+  "source_pdf": "research/court/pdfs/0_24-cr-00015_ecf1_mohamed.pdf",
+  "sha256": "eb090e5e657fe64fff1819c26ed073aa934b689f0e1e49b0ac1df47b81df0d1f",
+  "bytes": 2613292,
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "caption_statutes": [
+    "18 U.S.C. \u00a7 371",
+    "18 U.S.C. \u00a7 666",
+    "18 U.S.C. \u00a7 1343",
+    "18 U.S.C. \u00a7 1956",
+    "18 U.S.C. \u00a7 1957"
+  ],
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Ikram Yusuf Mohamed"
+    },
+    {
+      "n": 2,
+      "name": "Suleman Yusuf Mohamed"
+    },
+    {
+      "n": 3,
+      "name": "Aisha Hassan Hussein"
+    },
+    {
+      "n": 4,
+      "name": "Sahra Sharif Osman"
+    },
+    {
+      "n": 5,
+      "name": "Shakur Abdinur Abdisalam"
+    },
+    {
+      "n": 6,
+      "name": "Fadumo Mohamed Yusuf"
+    },
+    {
+      "n": 7,
+      "name": "Gandi Yusuf Mohamed",
+      "aka": [
+        "Gandi Abdi Kediye"
+      ]
+    }
+  ],
+  "counts_from_ocr": "Caption matches FOF charging family. Forfeiture pages cite Counts 1-37 and Counts 38-47 under 18 U.S.C. \u00a7\u00a7 1956 and 1957. Full count table not yet itemized.",
+  "notes": "This closes the local-archive gap noted in GAPS.md. Feeding Our Future family, not HSS."
+}

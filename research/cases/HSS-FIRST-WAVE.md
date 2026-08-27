@@ -94,3 +94,13 @@ The charging instruments for all four matters still need to be locally acquired,
 ## Source
 
 https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabilization-fraud-cases
+
+
+## Local charging instruments (2026-08-26 RECAP)
+
+- **25-cr-349** ECF 1 indictment archived (`0_25-cr-00349_ecf1_aden-hss.pdf`). Counts 1–6 are 18 U.S.C. § 1343. Caption defendants match the DOJ release. OCR of p.7 alleges each defendant personally pocketed about $300,000–$400,000 from Brilliant Minds — still CHARGED_ALLEGED; do not add those four figures into a loss total.
+- **25-cr-351** ECF 1 indictment archived (`0_25-cr-00351_ecf1_falade-hss.pdf`). Counts 1–4 are 18 U.S.C. § 1343.
+- **25-cr-353** ECF 1 is a **felony information**, not an indictment (`0_25-cr-00353_ecf1_anwar-adow-hss.pdf`). Counts 1–4 are 18 U.S.C. § 1343. The information states Liberty Plus **received more than $1.2 million** (`amount_paid` / CHARGED_ALLEGED) for purported services to about 200 beneficiaries, and that Anwar diverted proceeds to employees and to his brother Asad Adow. Docket: waiver of indictment and change of plea 2025-10-23 — plea is a docket fact; wait for judgment before ADJUDICATED.
+- **25-cr-354** Asad Adow felony information is **not** on RECAP (`is_available=false`). Still a local-document gap.
+
+Do not sum the $2.3M / >$2.2M / $2.7M / >$1.2M figures. They are overlapping program-family billing/payment allegations across four matters.
