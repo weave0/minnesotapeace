@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_inference": false,
+  "claim_id": "claim-adow-anwar-counts-1-4-1343",
+  "claim_text": "The Anwar Adow information charges Counts 1\u20134 of wire fraud under 18 U.S.C. \u00a7 1343, alleging interstate emails using PlusLibertyLLC@gmail.com from in or about March 2022 through in or about April 2025. Forfeiture is pleaded as to Count 1. A docket change-of-plea on 2025-10-23 is not a judgment and does not make these counts ADJUDICATED.",
+  "claim_type": "COUNT",
+  "evidence_class": "CHARGED_ALLEGED",
+  "status": "charged",
+  "source_ids": [
+    "src-us-v-adow-anwar-25cr353-ecf1"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-us-v-adow-anwar-25cr353-ecf1",
+      "page": 6,
+      "quote": "caused to be transmitted by means of wire communication in interstate commerce certain signals and sounds, including emails using the email account PlusLibertyLLC@gmail.com, all in violation of 18 U.S.C. \u00a7 1343."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": true,
+  "case_number": "0:25-cr-00353",
+  "proposition_class": "A_FRAUD_AGAINST_STATE"
+}

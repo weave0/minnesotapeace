@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_inference": false,
+  "claim_id": "claim-adow-anwar-liberty-plus-owner",
+  "claim_text": "The September 18, 2025 felony information in United States v. Anwar Ahmed Adow, 0:25-cr-00353, alleges that Anwar Ahmed Adow was the owner and principal of Liberty Plus LLC, a Roseville, Minnesota company he registered with the State of Minnesota in or about November 2022.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-liberty-plus"
+  ],
+  "evidence_class": "CHARGED_ALLEGED",
+  "status": "charged",
+  "source_ids": [
+    "src-us-v-adow-anwar-25cr353-ecf1",
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-us-v-adow-anwar-25cr353-ecf1",
+      "page": 3,
+      "quote": "The defendant ANWAR AHMED ADOW was the owner and principal of Liberty Plus LLC, a company based out of a business suite in Roseville, Minnesota. ADOW registered Liberty Plus LLC with the State of Minnesota in or about November 2022."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": true,
+  "case_number": "0:25-cr-00353",
+  "organizations": [
+    "org-liberty-plus"
+  ],
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "editorial_notes": "SOS file 1349782500024 original filing 2022-11-17 is consistent with the information\u2019s \u201cin or about November 2022.\u201d SOS confirms registration; the fraud scheme remains alleged."
+}

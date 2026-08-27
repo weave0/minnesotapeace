@@ -20,10 +20,17 @@
   "provider": "Liberty Plus LLC",
   "counts": [
     {
+      "count": "1",
+      "statute": "18 U.S.C. \u00a7 1343",
+      "title": "Wire fraud",
+      "notes": "Forfeiture is alleged as to Count 1 only (\u00b621\u201322)."
+    },
+    {
       "count": "1-4",
       "statute": "18 U.S.C. \u00a7 1343",
       "title": "Wire fraud",
-      "notes": "Emails using PlusLibertyLLC@gmail.com, Mar 2022\u2013Apr 2025."
+      "period": "2022-03 through 2025-04",
+      "wires": "emails using PlusLibertyLLC@gmail.com (\u00b620)"
     }
   ],
   "amounts": [
@@ -31,9 +38,54 @@
       "value": 1200000,
       "metric_type": "amount_paid",
       "exact_or_approximate": "approximate",
-      "notes": "Liberty Plus received more than $1.2 million in Medicaid funds for services purportedly provided to approximately 200 beneficiaries. CHARGED_ALLEGED."
+      "notes": "\u00b616 Liberty Plus received more than $1.2 million. Charging allegation. Not proven_loss. Not to be summed with \u00b68 program-wide figures."
+    },
+    {
+      "value": 21000000,
+      "metric_type": "program_spend",
+      "period": "2021",
+      "notes": "\u00b68: Program paid out more than $21 million in 2021. USAO background in this information. Not Anwar-specific."
+    },
+    {
+      "value": 42000000,
+      "metric_type": "program_spend",
+      "period": "2022",
+      "notes": "\u00b68. Not Anwar-specific."
+    },
+    {
+      "value": 74000000,
+      "metric_type": "program_spend",
+      "period": "2023",
+      "notes": "\u00b68. Not Anwar-specific."
+    },
+    {
+      "value": 104000000,
+      "metric_type": "program_spend",
+      "period": "2024",
+      "notes": "\u00b68. Not Anwar-specific."
+    },
+    {
+      "value": 61000000,
+      "metric_type": "program_spend",
+      "period": "2025-H1",
+      "notes": "\u00b68 first six months of 2025. Not Anwar-specific."
     }
   ],
   "docket_plea_lead": "CL docket: change of plea 2025-10-23 and waiver of indictment ECF 8. Plea is a docket fact; counts of conviction still need judgment/plea agreement before ADJUDICATED.",
-  "related": "Information alleges Anwar diverted proceeds to brother Asad Adow (25-cr-354). Not itself a charging document against Asad."
+  "related": "Information alleges Anwar diverted proceeds to brother Asad Adow (25-cr-354). Not itself a charging document against Asad.",
+  "judge": "Patrick A. McNulty / PAM",
+  "scheme_period": {
+    "start": "2022-03-01",
+    "end": "2025-04-30",
+    "exact_or_approximate": "approximate",
+    "source": "\u00b612, \u00b620"
+  },
+  "quotes": {
+    "owner": "The defendant ANWAR AHMED ADOW was the owner and principal of Liberty Plus LLC, a company based out of a business suite in Roseville, Minnesota. ADOW registered Liberty Plus LLC with the State of Minnesota in or about November 2022. (\u00b610)",
+    "received": "Ultimately, based on inflated and fraudulent claims, Liberty Plus received more than $1.2 million in Medicaid funds for services purportedly provided to approximately 200 beneficiaries. (\u00b616)",
+    "asad": "ADOW diverted much of those taxpayer dollars to his conspirators, including his employees at Liberty and his brother, Asad Adow. (\u00b617)",
+    "program_2024": "That figure ballooned in the following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. (\u00b68)"
+  },
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "editorial": "\u00b67 'susceptible to fraud' is program-design language in a charging document, not actor-specific evidence of official misconduct (D) or official criminal participation (E). \u00b61 'millions of dollars' is scheme-purpose rhetoric; the specific Liberty Plus figure is >$1.2 million received (\u00b616). SOS file 1349782500024 (Liberty Plus LLC, 2022-11-17) is consistent with \u00b610."
 }

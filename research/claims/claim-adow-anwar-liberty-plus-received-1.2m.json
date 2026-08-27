@@ -1,0 +1,43 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_inference": false,
+  "claim_id": "claim-adow-anwar-liberty-plus-received-1.2m",
+  "claim_text": "The Anwar Adow information alleges that, based on inflated and fraudulent claims, Liberty Plus received more than $1.2 million in Medicaid funds for services purportedly provided to approximately 200 beneficiaries. That figure is alleged amount paid to the provider, not proven_loss, and must not be added to the paragraph-8 program-wide HSS payouts or to Feeding Our Future charged amounts.",
+  "claim_type": "AMOUNT",
+  "subject_ids": [
+    "org-liberty-plus"
+  ],
+  "evidence_class": "CHARGED_ALLEGED",
+  "status": "charged",
+  "source_ids": [
+    "src-us-v-adow-anwar-25cr353-ecf1"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-us-v-adow-anwar-25cr353-ecf1",
+      "page": 5,
+      "quote": "Ultimately, based on inflated and fraudulent claims, Liberty Plus received more than $1.2 million in Medicaid funds for services purportedly provided to approximately 200 beneficiaries."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 1200000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2022-03-01",
+      "period_end": "2025-04-30",
+      "overlap_group_id": "hss-adow-liberty-plus",
+      "methodology": "Information \u00b616 \u201cmore than $1.2 million.\u201d Charging allegation."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": true,
+  "case_number": "0:25-cr-00353",
+  "organizations": [
+    "org-liberty-plus"
+  ],
+  "proposition_class": "A_FRAUD_AGAINST_STATE"
+}
