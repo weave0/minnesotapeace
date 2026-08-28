@@ -114,7 +114,8 @@
     }
     const amts = c.primary_amounts || [];
     if (!amts.length) {
-      return `<p class="no-sum">${esc(c.primary_dollar_note || "No isolated case-level billed/paid total on this extract.")}</p>`;
+      const note = c.primary_dollar_note || "No isolated case-level billed/paid total on this extract.";
+      return `<details class="fold"><summary>No isolated case-level total</summary><div class="fold-panel"><p class="no-sum">${esc(note)}</p></div></details>`;
     }
     return amts.map((a) => `
       <p class="dollar">
@@ -164,11 +165,19 @@
     `;
   }
 
+  function vtIdent(id) {
+    return "vt-case-" + String(id || "").replace(/[^a-zA-Z0-9_-]/g, "");
+  }
+
+  function prefersReduce() {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
   function caseCard(c) {
     const klass = c.gap ? "gap-card" : "card";
     const family = CORPUS.families.find((f) => f.id === c.family);
     return `
-      <article class="${klass}">
+      <article class="${klass}" style="view-transition-name:${vtIdent(c.id)}">
         <p class="meta">${esc(c.docket)} · ECF ${esc(c.ecf ?? "—")} · ${esc(c.instrument)}</p>
         <h3><a href="#/cases/${esc(c.id)}">${esc(c.short_name)}</a></h3>
         <p class="small">${esc(c.caption || "")}</p>
@@ -254,7 +263,7 @@
       ${c.gap ? `<div class="gap-banner"><p><strong>Document gap</strong> ${esc((c.gap_notes || [])[0] || "Charging instrument not in the corpus.")}</p></div>` : ""}
       <span class="record-kicker">// Case</span>
       <p class="meta"><a href="#/cases">Cases</a> / ${esc(c.docket)}</p>
-      <h2>${esc(c.caption || c.short_name)}</h2>
+      <h2 style="view-transition-name:${vtIdent(c.id)}">${esc(c.caption || c.short_name)}</h2>
       <div class="chips">
         ${chip(c.instrument)}
         ${chip("ECF " + (c.ecf ?? "—"))}
@@ -516,7 +525,7 @@
     `;
   }
 
-  function route() {
+  function paintRoute() {
     if (!CORPUS) {
       app.innerHTML = "<p>Corpus bundle failed to load.</p>";
       return;
@@ -540,6 +549,16 @@
     app.innerHTML = `<div class="not-found"><p>No such page.</p><p><a href="#/cases">Cases</a> · <a href="#/index">Index</a></p></div>`;
   }
 
-  window.addEventListener("hashchange", route);
-  route();
+  function onHashChange() {
+    if (prefersReduce() || typeof document.startViewTransition !== "function") {
+      paintRoute();
+      return;
+    }
+    document.startViewTransition(function () {
+      paintRoute();
+    });
+  }
+
+  window.addEventListener("hashchange", onHashChange);
+  paintRoute();
 })();

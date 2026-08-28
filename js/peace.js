@@ -37,21 +37,20 @@
     });
   }
 
-  var reveals = document.querySelectorAll(".reveal");
-  if (reduce) {
-    reveals.forEach(function (el) { el.classList.add("is-in"); });
-  } else if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: "0px 0px -24px 0px" });
-    reveals.forEach(function (el) { io.observe(el); });
-  } else {
-    reveals.forEach(function (el) { el.classList.add("is-in"); });
+  var density = document.getElementById("density-toggle");
+  if (density) {
+    var paper = false;
+    try { paper = localStorage.getItem("mnpeace-record-density") === "paper"; } catch (err) { paper = false; }
+    function applyDensity() {
+      document.body.classList.toggle("is-paper", paper);
+      density.setAttribute("aria-pressed", paper ? "true" : "false");
+    }
+    applyDensity();
+    density.addEventListener("click", function () {
+      paper = !paper;
+      try { localStorage.setItem("mnpeace-record-density", paper ? "paper" : "dark"); } catch (err) { /* ignore */ }
+      applyDensity();
+    });
   }
 
   var stats = window.__CORPUS_STATS__;
@@ -95,6 +94,7 @@
   }
 
   var progress = document.querySelector(".read-progress > span");
+  var supportsScrollTimeline = typeof CSS !== "undefined" && CSS.supports && CSS.supports("animation-timeline: scroll()");
   var rail = document.querySelector(".chapter-rail");
   var railLinks = rail ? Array.prototype.slice.call(rail.querySelectorAll("a[data-rail]")) : [];
   var railSections = railLinks.map(function (a) {
@@ -108,11 +108,11 @@
   }
 
   function onPageScroll() {
-    if (progress) {
+    if (progress && !supportsScrollTimeline && !reduce) {
       var doc = document.documentElement;
       var max = doc.scrollHeight - doc.clientHeight;
-      var p = max > 0 ? (window.scrollY / max) * 100 : 0;
-      progress.style.width = p + "%";
+      var p = max > 0 ? window.scrollY / max : 0;
+      progress.style.transform = "scaleX(" + p + ")";
     }
     if (!railLinks.length) return;
     var marker = window.scrollY + window.innerHeight * 0.28;
@@ -127,7 +127,8 @@
   window.addEventListener("scroll", onPageScroll, { passive: true });
 
   var canvas = document.getElementById("aurora");
-  if (!canvas || reduce || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  var motionMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!canvas || reduce || motionMq.matches) {
     return;
   }
 
@@ -325,6 +326,18 @@
     if (document.hidden) stop();
     else startLoop();
   });
+
+  if (motionMq.addEventListener) {
+    motionMq.addEventListener("change", function (e) {
+      if (e.matches) {
+        stop();
+        canvas.style.display = "none";
+      } else {
+        canvas.style.display = "";
+        startLoop();
+      }
+    });
+  }
 
   window.addEventListener("resize", resize, { passive: true });
   resize();

@@ -2,20 +2,20 @@
    Mounted at /record under the shared MN Peace header. */
 
 :root {
-  --rv-bg: #050507;
-  --rv-card: #0e0e14;
-  --rv-card-2: #12121a;
-  --rv-ink: #f8fafc;
-  --rv-muted: #9ca3af;
-  --rv-dim: #6b7280;
-  --rv-line: rgba(255, 255, 255, 0.08);
-  --rv-cyan: #22d3ee;
-  --rv-gold: #f59e0b;
-  --rv-purple: #a855f7;
-  --rv-blue: #3b82f6;
-  --rv-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --rv-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --rv-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --rv-bg: var(--bg, oklch(0.13 0.012 285));
+  --rv-card: var(--bg-card, oklch(0.18 0.02 285));
+  --rv-card-2: var(--bg-elevated, oklch(0.16 0.014 285));
+  --rv-ink: var(--text, oklch(0.98 0.005 240));
+  --rv-muted: var(--text-muted, oklch(0.72 0.02 250));
+  --rv-dim: var(--text-dim, #6b7280);
+  --rv-line: var(--border-subtle, rgba(255, 255, 255, 0.08));
+  --rv-cyan: var(--cyan, oklch(0.82 0.12 205));
+  --rv-gold: var(--gold, oklch(0.82 0.14 75));
+  --rv-purple: var(--purple, oklch(0.68 0.2 305));
+  --rv-blue: var(--blue, oklch(0.62 0.17 260));
+  --rv-display: var(--font-display, "Space Grotesk", ui-sans-serif, system-ui, sans-serif);
+  --rv-sans: var(--font-body, "Inter", ui-sans-serif, system-ui, sans-serif);
+  --rv-mono: var(--font-mono, "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace);
   --rv-measure: 72rem;
 }
 
@@ -124,6 +124,8 @@
 #app .card,
 #app .family-card,
 #app .gap-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 14rem;
   background: var(--rv-card);
   border: 1px solid var(--rv-line);
   border-radius: 16px;
@@ -232,6 +234,10 @@
   vertical-align: top;
   padding: 0.5rem 0.6rem;
 }
+#app tbody tr {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 3.2rem;
+}
 #app th {
   font-family: var(--rv-mono);
   font-size: 0.68rem;
@@ -331,7 +337,34 @@ tr.group-head td {
   color: var(--rv-muted);
 }
 
-.not-found { padding: 2rem 0; }
+.fold {
+  margin: 0.35rem 0 0.7rem;
+  border: 1px solid var(--rv-line);
+  border-radius: 12px;
+  padding: 0.15rem 0.75rem 0.2rem;
+}
+.fold summary {
+  cursor: pointer;
+  font-family: var(--rv-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--rv-muted);
+  list-style: none;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+.fold summary::-webkit-details-marker { display: none; }
+.fold .fold-panel {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.28s ease, opacity 0.22s ease;
+}
+.fold[open] .fold-panel {
+  height: auto;
+  opacity: 1;
+}
 
 .def-list { margin: 0 0 0.8rem 1.15rem; color: var(--rv-muted); }
 .def-list li { margin: 0 0 0.2rem; }
@@ -339,8 +372,11 @@ tr.group-head td {
 @media (prefers-reduced-motion: reduce) {
   #app .card,
   #app .family-card,
-  #app .gap-card {
+  #app .gap-card,
+  .fold .fold-panel {
     transition: none;
+    animation: none;
+    animation-timeline: auto;
   }
   #app .card:hover,
   #app .card:focus-within,
@@ -349,5 +385,10 @@ tr.group-head td {
   #app .gap-card:hover,
   #app .gap-card:focus-within {
     transform: none;
+  }
+  .fold .fold-panel,
+  .fold[open] .fold-panel {
+    height: auto;
+    opacity: 1;
   }
 }
