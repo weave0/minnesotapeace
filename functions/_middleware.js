@@ -54,7 +54,7 @@ export async function onRequest(context) {
   const isGood = pathname === "/good" || pathname === "/good/" || pathname === "/good/index.html";
 
   // Social crawlers cache image URLs aggressively. The original OG filename contained a
-  // legacy Jamie Rigling-era binary even after the page copy was rebuilt as MN Peace.
+  // legacy pre-MN-Peace binary even after the page copy was rebuilt for this publication.
   // Rewrite every public HTML response to a clean, versioned MN Peace asset so old social
   // caches cannot continue to attach the unrelated image to current pages or deep links.
   const socialImage = "https://minnesotapeace.com/assets/og/mn-peace-og-v2.png";
