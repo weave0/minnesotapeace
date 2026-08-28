@@ -26,6 +26,8 @@ jobs:
                   mkdir -p public
                   cp _headers _redirects index.html 404.html robots.txt sitemap.xml favicon.svg public/
                   cp -a css js assets record public/
+                  mkdir -p public/functions
+                  cp -a functions/. public/functions/
                   test -f public/index.html
                   test -f public/_headers
                   test -f public/_redirects
@@ -35,6 +37,7 @@ jobs:
                   test -f public/record/data/corpus.js
                   test -f public/record/data/stats.js
                   test -f public/record/documents/25-cr-00349-ecf1.pdf
+                  test -f public/functions/_middleware.js
                   if [ -e public/research ] || [ -e public/.git ] || [ -e public/.github ]; then
                     echo "lab paths leaked into the public artifact" >&2
                     exit 1
