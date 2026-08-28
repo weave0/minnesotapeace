@@ -1128,6 +1128,17 @@ main,
 /* Record chrome — same MN Peace header owns the product */
 .record-page {
   --nav-h: 6.9rem;
+  --rv-bg: var(--bg);
+  --rv-card: var(--bg-card);
+  --rv-card-2: var(--bg-elevated);
+  --rv-ink: var(--text);
+  --rv-muted: var(--text-muted);
+  --rv-dim: var(--text-dim);
+  --rv-line: var(--border-subtle);
+  --rv-cyan: var(--cyan);
+  --rv-gold: var(--gold);
+  --rv-purple: var(--purple);
+  --rv-blue: var(--blue);
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
@@ -1216,6 +1227,15 @@ main,
   --border-subtle: oklch(0.82 0.02 80 / 0.12);
   --cyan: oklch(0.82 0.1 205);
   --gold: oklch(0.82 0.12 75);
+  --rv-bg: var(--bg);
+  --rv-card: var(--bg-card);
+  --rv-card-2: var(--bg-elevated);
+  --rv-ink: var(--text);
+  --rv-muted: var(--text-muted);
+  --rv-dim: var(--text-dim);
+  --rv-line: var(--border-subtle);
+  --rv-cyan: var(--cyan);
+  --rv-gold: var(--gold);
 }
 
 .record-page.is-paper #app {
