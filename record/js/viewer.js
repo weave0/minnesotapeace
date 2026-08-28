@@ -68,6 +68,28 @@
     }[ch]));
   }
 
+  function civicText(value) {
+    if (value == null || value === "") return "";
+    return String(value)
+      .replace(/amount_billed/g, "billed")
+      .replace(/amount_claimed/g, "claimed")
+      .replace(/amount_paid/g, "paid")
+      .replace(/amount_received/g, "received")
+      .replace(/alleged_loss/g, "alleged loss")
+      .replace(/proven_loss/g, "proven loss")
+      .replace(/program_spend/g, "program payout")
+      .replace(/fraud_estimate/g, "estimate")
+      .replace(/metric_type/g, "kind")
+      .replace(/overlap_group_id/g, "same dollars")
+      .replace(/CHARGED_ALLEGED/g, "charged (not convicted)")
+      .replace(/Do not mark ADJUDICATED\.?/gi, "")
+      .replace(/\bRECAP\b/g, "the public file")
+      .replace(/\ban billed\b/g, "a billed")
+      .replace(/[ \t]+/g, " ")
+      .replace(/\n /g, "\n")
+      .trim();
+  }
+
   function formatUsd(value, exact) {
     if (value == null || value === "") return "—";
     const n = Number(value);
@@ -264,7 +286,7 @@
         <p class="small">${esc(c.caption || "")}</p>
         <div class="chips">
           ${chip(family ? family.name : c.family)}
-          ${chip(c.count_label)}
+          ${c.gap ? "" : chip(civicText(c.count_label))}
           ${c.gap ? "" : chip(statusLabel(c.evidentiary_status), standingClass(c.evidentiary_status))}
         </div>
         <p class="small">${esc((c.defendants || []).join("; "))}</p>
@@ -296,11 +318,11 @@
   function allegationHtml(c) {
     const claims = (c.primary_claim_ids || []).map(claimById).filter(Boolean);
     if (claims.length) {
-      return claims.map((cl) => `<p class="claim-text">${esc(cl.claim_text)}</p>`).join("");
+      return claims.map((cl) => `<p class="claim-text">${esc(civicText(cl.claim_text))}</p>`).join("");
     }
     if (c.gap) return "";
     if (c.count_label) {
-      return `<p>${esc(c.count_label)}.</p>`;
+      return `<p>${esc(civicText(c.count_label))}.</p>`;
     }
     return "";
   }
@@ -329,7 +351,7 @@
         <td class="numcell">${esc(formatUsd(a.value, a.exact_or_approximate))}</td>
         <td>${chip(kindLabel(a.metric_type), "metric")}</td>
         <td class="small">${esc(a.provider || a.period || a.period_start || "")}</td>
-        <td class="small">${esc(a.notes || a.quote || "")}</td>
+        <td class="small">${esc(civicText(a.notes) || a.quote || "")}</td>
       </tr>
     `).join("");
     const related = (c.related_instruments || []).map((r) => `
@@ -353,7 +375,7 @@
     ` : "";
     const sources = sourceLinks(c.source_ids);
     const plea = c.plea_note
-      ? `<p class="small">${esc(c.plea_note.replace(/Do not mark ADJUDICATED\.?/g, "").replace(/\bRECAP\b/g, "the public file").trim())}</p>`
+      ? `<p class="small">${esc(civicText(c.plea_note))}</p>`
       : "";
     app.innerHTML = `
       <span class="record-kicker">// Case</span>
@@ -361,7 +383,7 @@
       <h2 style="view-transition-name:${vtIdent(c.id)}">${esc(c.caption || c.short_name)}</h2>
       <div class="chips">
         ${chip(instrumentLabel(c.instrument))}
-        ${chip(c.count_label)}
+        ${c.gap ? "" : chip(civicText(c.count_label))}
         ${c.gap ? "" : chip(statusLabel(c.evidentiary_status), standingClass(c.evidentiary_status))}
       </div>
       ${pdfBlock(c)}
@@ -394,7 +416,7 @@
         <table><thead><tr><th>Amount</th><th>What this number is</th><th>Context</th><th>Notes</th></tr></thead><tbody>${extractAmtRows}</tbody></table>` : ""}
       ${statewide}
       <h3>What else is sourced here</h3>
-      ${claims.length ? `<ul>${claims.map((cl) => `<li><a href="#/claims/${esc(cl.claim_id)}">${esc(cl.claim_text.slice(0, 180))}${(cl.claim_text.length > 180) ? "…" : ""}</a></li>`).join("")}</ul>` : "<p class='small muted'>No additional sourced sentences are keyed to this docket.</p>"}
+      ${claims.length ? `<ul>${claims.map((cl) => `<li><a href="#/claims/${esc(cl.claim_id)}">${esc(civicText(cl.claim_text).slice(0, 180))}${(cl.claim_text.length > 180) ? "…" : ""}</a></li>`).join("")}</ul>` : "<p class='small muted'>No additional sourced sentences are keyed to this docket.</p>"}
       <h3>Sources</h3>
       <ul>${sources || "<li>None attached on this card.</li>"}</ul>
     `;
@@ -423,7 +445,7 @@
         <td class="numcell">${esc(formatUsd(a.value, a.exact_or_approximate))}</td>
         <td>${chip(kindLabel(a.metric_type), "metric")}</td>
         <td class="small">${esc([a.period_start, a.period_end].filter(Boolean).join(" – "))}</td>
-        <td class="small">${esc(a.methodology || "")}</td>
+        <td class="small">${esc(civicText(a.methodology || ""))}</td>
       </tr>
     `).join("");
     const orgs = (cl.organizations || cl.subject_ids || []).map((oid) => {
@@ -440,10 +462,10 @@
         ${chip(statusLabel(cl.evidence_class), standingClass(cl.evidence_class))}
         ${cl.case_number ? chip(cl.case_number) : ""}
       </div>
-      <p class="claim-text">${esc(cl.claim_text)}</p>
+      <p class="claim-text">${esc(civicText(cl.claim_text))}</p>
       ${amounts ? `<h3>Dollars</h3>${overlapNote(cl.amounts) || `<p class="no-sum">Each row keeps its kind. Do not add figures that describe the same money.</p>`}
         <table><thead><tr><th>Amount</th><th>What this number is</th><th>Period</th><th>How it was read</th></tr></thead><tbody>${amounts}</tbody></table>` : ""}
-      ${cl.qualifiers && cl.qualifiers.length ? `<h3>How to hold this</h3><ul class="rules">${cl.qualifiers.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
+      ${cl.qualifiers && cl.qualifiers.length ? `<h3>How to hold this</h3><ul class="rules">${cl.qualifiers.map((q) => `<li>${esc(civicText(q))}</li>`).join("")}</ul>` : ""}
       <h3>Passages</h3>
       ${passages ? `<ul class="passages">${passages}</ul>` : "<p class='small muted'>No supporting passages on this record.</p>"}
       <h3>Sources</h3>
@@ -477,10 +499,7 @@
     function groupHeading(rows, key) {
       const label = rows[0].overlap_label;
       if (label && !/^ungrouped:/i.test(String(key))) {
-        return String(label)
-          .replace(/program_spend/g, "program payout")
-          .replace(/alleged_loss/g, "alleged loss")
-          .replace(/overlap group/gi, "same dollars");
+        return civicText(label);
       }
       return "Standalone figure";
     }
@@ -508,7 +527,7 @@
             <td>${chip(kindLabel(r.metric_type), "metric")}</td>
             <td>${chip(statusLabel(r.evidence_class), standingClass(r.evidence_class))}</td>
             <td>${cse ? `<a href="#/cases/${esc(cse.id)}">${esc(cse.short_name)}</a>` : esc(r.case_number || "—")}</td>
-            <td class="small">${esc(r.methodology || "")}</td>
+            <td class="small">${esc(civicText(r.methodology || ""))}</td>
           </tr>`;
         });
       });
@@ -563,7 +582,7 @@
         <p class="meta">${esc(entityTypeLabel(e.entity_type))}${e.ein ? " · EIN " + esc(e.ein) : ""}</p>
         <h3><a href="#/entities/${esc(e.entity_id)}">${esc(e.canonical_name)}</a></h3>
         ${(e.business_reg_ids || []).map((id) => chip(id)).join(" ")}
-        ${e.notes ? `<p class="small">${esc(e.notes.slice(0, 220))}${e.notes.length > 220 ? "…" : ""}</p>` : ""}
+        ${e.notes ? `<p class="small">${esc(civicText(e.notes).slice(0, 220))}${e.notes.length > 220 ? "…" : ""}</p>` : ""}
       </article>
     `).join("");
     app.innerHTML = `
@@ -606,7 +625,7 @@
         ${(e.aliases || []).map((a) => chip(a)).join("")}
         ${(e.former_names || []).map((a) => chip("formerly " + a)).join("")}
       </div>
-      ${e.notes ? `<p>${esc(e.notes)}</p>` : ""}
+      ${e.notes ? `<p>${esc(civicText(e.notes))}</p>` : ""}
       ${id === "org-feeding-our-future" ? `<p class="small">Kept separate from <a href="#/entities/org-feeding-our-future-ii">Feeding Our Future II</a>.</p>` : ""}
       ${id === "org-feeding-our-future-ii" ? `<p class="small">Kept separate from <a href="#/entities/org-feeding-our-future">Feeding Our Future</a>. A shared registered-office vendor is not a merge.</p>` : ""}
       <h3>Addresses</h3>
@@ -615,7 +634,7 @@
       ${officers ? `<h3>Officers / agents (as sourced)</h3>
         <table><thead><tr><th>Name</th><th>Title</th><th>Dates</th></tr></thead><tbody>${officers}</tbody></table>` : ""}
       <h3>Sourced sentences</h3>
-      ${claims.length ? `<ul>${claims.map((cl) => `<li><a href="#/claims/${esc(cl.claim_id)}">${esc(cl.claim_text.slice(0, 160))}${cl.claim_text.length > 160 ? "…" : ""}</a></li>`).join("")}</ul>` : "<p class='small muted'>No sourced sentences name this organization.</p>"}
+      ${claims.length ? `<ul>${claims.map((cl) => `<li><a href="#/claims/${esc(cl.claim_id)}">${esc(civicText(cl.claim_text).slice(0, 160))}${cl.claim_text.length > 160 ? "…" : ""}</a></li>`).join("")}</ul>` : "<p class='small muted'>No sourced sentences name this organization.</p>"}
       <h3>Sources</h3>
       <ul>${sourceLinks(e.source_ids) || "<li>None</li>"}</ul>
     `;
