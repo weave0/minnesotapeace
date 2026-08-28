@@ -1,0 +1,39 @@
+name: Brand integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify-brand:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Reject legacy Jamie Rigling branding
+        run: |
+          set -euo pipefail
+
+          if grep -RniE \
+            --include='*.html' \
+            --include='*.xml' \
+            --include='*.js' \
+            'Jamie[[:space:]]+Rigling|Family Law Mediation|Rule 114 certified mediator' \
+            index.html record status good guide oversight functions; then
+            echo 'Legacy Jamie Rigling branding leaked into the MN Peace publication.' >&2
+            exit 1
+          fi
+
+          test -f assets/og/mn-peace-og-v2.png
+
+          if [ -e assets/og/mn-peace-og.jpg ]; then
+            echo 'Legacy OG binary must not return to the repository.' >&2
+            exit 1
+          fi
+
+          grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' functions/_middleware.js
+          grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' functions/_middleware.js
+          grep -Fq '/assets/og/mn-peace-og.jpg  /assets/og/mn-peace-og-v2.png  301' _redirects
