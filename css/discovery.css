@@ -7,4 +7,6 @@
 .deep-discovery-link strong { display:block; font-family:var(--font-display); font-size:1.05rem; letter-spacing:-.02em; }
 .deep-discovery-link small { display:block; margin-top:.35rem; color:var(--text-muted); font-size:.84rem; line-height:1.5; }
 .deep-discovery-link.is-gold span { color:var(--gold); }
+.deep-discovery-link.is-purple span { color:var(--purple); }
+.deep-discovery-link.is-purple:hover,.deep-discovery-link.is-purple:focus-visible { border-color:rgba(168,85,247,.46); box-shadow:0 0 28px rgba(168,85,247,.1); }
 .nav-links a[data-deep-link] { color:var(--text-muted); }
