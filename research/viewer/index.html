@@ -4,15 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Record — MN Peace</title>
-  <link rel="canonical" href="https://minnesotapeace.com/record">
-  <meta http-equiv="refresh" content="0;url=/record">
-  <script>
-    (function () {
-      location.replace("/record" + (location.search || "") + (location.hash || ""));
-    })();
-  </script>
+  <meta name="description" content="Evidence-first viewer for the MinnesotaPeace public-program fraud research corpus. Claims, charging instruments, and sourced dollar figures. Not a fraud total.">
+  <link rel="canonical" href="https://minnesotapeace.com/record/">
+  <link rel="stylesheet" href="css/viewer.css">
 </head>
 <body>
-  <p>The Record lives at <a href="/record">/record</a>.</p>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <p class="kicker">MN Peace · The Record</p>
+      <h1><a href="#/cases">Public-program fraud record</a></h1>
+      <p class="deck">A citation-rich investigative layer. The atomic unit is a claim, not an article. Allegations remain allegations until adjudicated.</p>
+    </div>
+    <nav aria-label="Corpus">
+      <a href="#/cases" data-nav="cases">Cases</a>
+      <a href="#/index" data-nav="index">Index</a>
+      <a href="#/money" data-nav="money">Money</a>
+      <a href="#/entities" data-nav="entities">Entities</a>
+    </nav>
+  </header>
+  <main id="app">Loading corpus…</main>
+  <footer class="site-foot">
+    District of Minnesota charging instruments and related public records. No corpus-wide fraud total. Public face: <a href="/">MN Peace</a>.
+  </footer>
+  <script src="data/corpus.js"></script>
+  <script src="js/viewer.js"></script>
 </body>
 </html>
