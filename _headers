@@ -29,3 +29,6 @@
 
 /record/data/*
   Cache-Control: public, max-age=300, must-revalidate
+
+/research/*
+  Cache-Control: no-store
