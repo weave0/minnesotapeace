@@ -21,6 +21,9 @@ export async function onRequest(context) {
     "/status",
     "/status/",
     "/status/index.html",
+    "/good",
+    "/good/",
+    "/good/index.html",
     "/guide",
     "/guide/",
     "/guide/index.html",
@@ -35,7 +38,7 @@ export async function onRequest(context) {
   headers.set("cache-control", "no-store, no-cache, must-revalidate, max-age=0");
   headers.set("pragma", "no-cache");
   headers.set("expires", "0");
-  headers.set("x-mnpeace-publication", "context-first-v4.1");
+  headers.set("x-mnpeace-publication", "context-first-v5");
 
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) {
