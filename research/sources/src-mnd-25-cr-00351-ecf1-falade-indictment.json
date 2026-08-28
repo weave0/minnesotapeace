@@ -1,0 +1,23 @@
+{
+  "source_id": "src-mnd-25-cr-00351-ecf1-falade-indictment",
+  "canonical_url": "https://www.courtlistener.com/docket/71388822/1/united-states-v-falade/",
+  "archive_url": "https://archive.org/download/gov.uscourts.mnd.227857/gov.uscourts.mnd.227857.1.0.pdf",
+  "issuing_body": "United States District Court, District of Minnesota",
+  "title": "Indictment, United States v. Christopher Adesoji Falade and Emmanuel Oluwademilade Falade, No. 0:25-cr-00351 (D. Minn. ECF 1)",
+  "publication_date": "2025-09-17",
+  "retrieval_date": "2026-08-26",
+  "document_date": "2025-09-17",
+  "document_type": "indictment",
+  "case_number": "0:25-cr-00351",
+  "court": "United States District Court, District of Minnesota",
+  "docket_id": "71388822",
+  "local_path": "research/court/pdfs/0_25-cr-00351_ecf1_falade-hss.pdf",
+  "sha256": "c88b4ac7ebce8fd63a0974ca41a9d8bd272210596406b0b9375ab1b13debb0fe",
+  "mime_type": "application/pdf",
+  "page_count": 7,
+  "extracted_text_path": "research/court/raw/falade-25-cr-351-ecf1.txt",
+  "access_status": "archived",
+  "notes": "Public RECAP/IA copy of ECF 1. TIFF scan (PaperStream fi-7700). OCR at ~180 dpi saved under court/raw/. Indictment allegations only; not a judgment. Unsealed 2025-09-18 per docket minute, not on the face of the PDF.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD"
+}

@@ -1,14 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JR Mediation">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#f5f5f5"/>
-      <stop offset="1" stop-color="#d4a574"/>
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="56" height="56" rx="12" fill="#0d0d0d" stroke="rgba(255,255,255,0.10)"/>
-  <path d="M20 22h24" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M32 22v20" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M24 28l-6 10h12l-6-10z" fill="url(#g)" opacity="0.9"/>
-  <path d="M40 28l-6 10h12l-6-10z" fill="url(#g)" opacity="0.9"/>
-  <path d="M18 44c4 6 24 6 28 0" stroke="url(#g)" stroke-width="4" stroke-linecap="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MN Peace">
+  <rect width="64" height="64" rx="12" fill="#050507"/>
+  <path d="M8 44c10-18 18-8 24-20 6 14 12 4 24 22" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M10 48c10-16 18-6 22-16 6 12 14 4 22 18" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
 </svg>

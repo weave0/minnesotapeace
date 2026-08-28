@@ -1,0 +1,72 @@
+[
+  {
+    "file": "814343304_202009_990_2022072620253896.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/814343304_202009_990_2022072620253896.pdf",
+    "bytes": 1562047,
+    "sha256": "97f5ba8d5629d72861faa9b66d41f0b0a882b07e7a4839672b9b8032649eab62",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_202409_990_2025042323377675.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_202409_990_2025042323377675.pdf",
+    "bytes": 1084845,
+    "sha256": "97e086c7658445c8051cce894c60aae5ef0b17e90036664510791e7db2e9dd8a",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_202309_990_2024022022299225.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_202309_990_2024022022299225.pdf",
+    "bytes": 1273962,
+    "sha256": "99735572b58689f11ed30505989a2fddd6287e1fb6d045218e710ae363ec6098",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_202209_990_2023091321676732.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_202209_990_2023091321676732.pdf",
+    "bytes": 1287421,
+    "sha256": "cff5f92e48bdd7df33f2d89d53153725784444e6f8d3e37a1d5a525a4f3f97b1",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_202109_990_2023053021324325.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_202109_990_2023053021324325.pdf",
+    "bytes": 1387618,
+    "sha256": "2a48732a79d96952730c2ef258b7c72d3460635ac706862b45c1ce18f1caf654",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_202009_990_2023020620917720.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_202009_990_2023020620917720.pdf",
+    "bytes": 1349223,
+    "sha256": "96728794920f8c3e3c7b2af9811a2af129b8c40d0faa3c4cb205f0ce1fbe5539",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_201909_990_2020100817362423.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_201909_990_2020100817362423.pdf",
+    "bytes": 1038177,
+    "sha256": "11fb3c34a6576082426784c9c03a81169bc93c5b55ea335b0a8f02a137683b62",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_201809_990_2019080816554220.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_201809_990_2019080816554220.pdf",
+    "bytes": 1686509,
+    "sha256": "3e5dbb1a494f36f5a5a8f588617974147144c949ebef0e930deb39f017f366bc",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_201709_990_2018101215785852.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_201709_990_2018101215785852.pdf",
+    "bytes": 1137696,
+    "sha256": "6b307daa947fafe096002bb25a50ccaefe5501b29419cf5ebe62cc6269b346d1",
+    "source": "IRS TEOS epostcard /cor/"
+  },
+  {
+    "file": "474302258_201609_990EZ_2017083114693787.pdf",
+    "url": "https://apps.irs.gov/pub/epostcard/cor/474302258_201609_990EZ_2017083114693787.pdf",
+    "bytes": 885661,
+    "sha256": "be96e9bdb02ee22897661bdfd10698fb4e81c2b2dd04fe1d1495a9504798a0fe",
+    "source": "IRS TEOS epostcard /cor/"
+  }
+]

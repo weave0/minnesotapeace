@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/legal.schema.json",
+  "title": "Minnesota Fraud Research Legal Record",
+  "description": "Law and precedent library. Discriminator is kind or alias legal_record_type (statute | precedent | regulation). The statute currently in effect may not be identical to the statute during the alleged conduct; preserve historical versions. Connect precedent to actual legal questions in the Minnesota matters rather than dumping hundreds of cases indiscriminately.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "citation"
+  ],
+  "properties": {
+    "legal_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional durable ID; citation may also serve as a key but IDs are preferred."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "statute",
+        "precedent",
+        "regulation"
+      ],
+      "description": "Discriminator: statute, precedent, or regulation. Alias: legal_record_type. The statute currently in effect may not be identical to the statute during alleged conduct; preserve historical_versions."
+    },
+    "jurisdiction": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Required in practice for statutes (e.g. US, MN)."
+    },
+    "citation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_text_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "official_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "description": "Official reporter or court URL for precedent."
+    },
+    "historical_versions": {
+      "type": "array",
+      "description": "Versions effective during relevant conduct, which may differ from current_text_url.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "effective_from"
+        ],
+        "properties": {
+          "effective_from": {
+            "type": "string",
+            "format": "date"
+          },
+          "effective_until": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "text_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "session_law": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "element"
+        ],
+        "properties": {
+          "element": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "mens_rea": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Required mental state, if the offense specifies one."
+    },
+    "penalty": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "holding": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "For precedent: the holding, stated narrowly."
+    },
+    "relevance": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "For precedent: why this authority matters to a Minnesota-corpus legal question."
+    },
+    "connected_case_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Prosecutions or civil cases in this corpus that apply this authority."
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "legal_record_type": {
+      "type": "string",
+      "enum": [
+        "statute",
+        "precedent",
+        "regulation"
+      ],
+      "description": "Alias of kind. Same enum: statute | precedent | regulation."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          {
+            "properties": {
+              "kind": {
+                "const": "statute"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          {
+            "properties": {
+              "legal_record_type": {
+                "const": "statute"
+              }
+            },
+            "required": [
+              "legal_record_type"
+            ]
+          }
+        ]
+      },
+      "then": {
+        "required": [
+          "jurisdiction",
+          "citation"
+        ]
+      }
+    },
+    {
+      "if": {
+        "anyOf": [
+          {
+            "properties": {
+              "kind": {
+                "const": "precedent"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          {
+            "properties": {
+              "legal_record_type": {
+                "const": "precedent"
+              }
+            },
+            "required": [
+              "legal_record_type"
+            ]
+          }
+        ]
+      },
+      "then": {
+        "required": [
+          "citation",
+          "holding"
+        ],
+        "properties": {
+          "holding": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "kind"
+      ]
+    },
+    {
+      "required": [
+        "legal_record_type"
+      ]
+    }
+  ]
+}

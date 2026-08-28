@@ -1,0 +1,11 @@
+{
+  "contradiction_id": "contradiction-fof-irs-501c3-ruling-date",
+  "claim_a": "claim-ago-petition-irs-501c3-2017-02-28",
+  "claim_b": "claim-propublica-irs-index-ruling-2020-12",
+  "source_a": "src-ago-fof-dissolution-petition-copy",
+  "source_b": "src-propublica-fof-814343304",
+  "nature_of_conflict": "AGO petition cites IRS 501(c)(3) recognition on 2017-02-28; IRS/ProPublica organization index reports ruling_date 2020-12-01.",
+  "possible_reconciliation": "Determination letter date vs BMF ruling-date field; or a later re-ruling. Need the IRS determination letter (petition Decl. Ex. 4) and the BMF historical extract, not a choice between sources.",
+  "status": "open",
+  "notes": "Do not silently prefer either date."
+}

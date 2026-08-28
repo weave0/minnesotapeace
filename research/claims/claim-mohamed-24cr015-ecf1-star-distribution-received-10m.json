@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-08-27T21:15:00Z",
+  "created_at": "2026-08-27T21:15:00Z",
+  "updated_at": "2026-08-27T21:15:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mohamed-24cr015-ecf1-star-distribution-received-10m",
+  "claim_text": "The January 24, 2024 indictment in United States v. Mohamed et al., No. 0:24-cr-00015 (ECF 1), alleges that from approximately February 2021 through April 2022 Star Distribution LLC, an alleged sham food vendor owned by Suleman Yusuf Mohamed, received approximately $10 million in Federal Child Nutrition Program funds, including more than $4.9 million from Feeding Our Future, $1.6 million from United Youth of Mpls, and $1 million from Inspiring Youth & Outreach. Those components are part of the $10 million, not additional. Face language is received (amount_paid). The $10 million overlaps family site receipts and the >$12 million para 91 figure and must not be added to HSS or to the Bock $250 million charging headline.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:24-cr-00015",
+  "source_ids": [
+    "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "date_start": "2021-02-01",
+  "date_end": "2022-04-30",
+  "event_date": "2024-01-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 22,
+      "locator": "para 80",
+      "quote": "From approximately February 2021 through April 2022, Star Distribution received approximately $10 million in Federal Child Nutrition Program funds, including more than $4.9 million from Feeding Our Future, $1.6 million from United Youth of Mpls, and $1 million from Inspiring Youth & Outreach."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 10000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-02-01",
+      "period_end": "2022-04-30",
+      "overlap_group_id": "mohamed-24cr015-star-distribution",
+      "methodology": "Para 80: Star Distribution received approximately $10 million."
+    },
+    {
+      "value": 4900000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-star-distribution",
+      "methodology": "Component: more than $4.9 million from Feeding Our Future. Not independent of the $10 million."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "do not add $4.9M+$1.6M+$1M on top of $10M",
+    "do not add Star $10M to family $12M, HSS, or Bock $250M"
+  ]
+}

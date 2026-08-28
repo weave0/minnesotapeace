@@ -1,0 +1,118 @@
+{
+  "entity_id": "org-feeding-our-future",
+  "entity_type": "NONPROFIT",
+  "canonical_name": "Feeding Our Future",
+  "aliases": [],
+  "ein": "81-4343304",
+  "business_reg_ids": [
+    "MN-SOS-913838800020"
+  ],
+  "officers": [
+    {
+      "name": "Aimee Bock",
+      "title": "President",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ],
+      "valid_from": "2019-10-01",
+      "valid_until": "2020-09-30"
+    },
+    {
+      "name": "Ben Stayberg",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ],
+      "valid_from": "2019-10-01",
+      "valid_until": "2020-09-30"
+    },
+    {
+      "name": "Ali Egal",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ],
+      "valid_from": "2019-10-01",
+      "valid_until": "2020-09-30"
+    },
+    {
+      "name": "Jamie Phelps",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ],
+      "valid_from": "2019-10-01",
+      "valid_until": "2020-09-30"
+    },
+    {
+      "name": "John Senkler",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ],
+      "valid_from": "2019-10-01",
+      "valid_until": "2020-09-30"
+    },
+    {
+      "name": "Ali Egal",
+      "title": "President (SOS current listing as of 2026-08-26)",
+      "person_id": null,
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ],
+      "valid_from": null,
+      "valid_until": null
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "3055 Old Highway 8",
+      "line2": "Ste 312",
+      "city": "Minneapolis",
+      "state": "MN",
+      "postal_code": "55418",
+      "country": "US",
+      "raw": "3055 OLD HIGHWAY 8 STE 312, MINNEAPOLIS, MN 55418",
+      "source_ids": [
+        "src-irs-990-fof-fy2020"
+      ]
+    },
+    {
+      "line1": "13299 Bronze Parkway",
+      "line2": null,
+      "city": "Rosemount",
+      "state": "MN",
+      "postal_code": "55068",
+      "country": "US",
+      "raw": "13299 Bronze Parkway, Rosemount, Dakota County, Minnesota 55068",
+      "source_ids": [
+        "src-ago-fof-dissolution-petition-copy"
+      ]
+    },
+    {
+      "line1": "c/o Legal for Good PLLC",
+      "line2": "5353 Gamble Dr., Suite 320",
+      "city": "St. Louis Park",
+      "state": "MN",
+      "postal_code": "55416",
+      "country": "US",
+      "raw": "c/o Legal for Good PLLC, 5353 Gamble Dr., Suite 320, St. Louis Park, MN 55416, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "Do not merge with org-feeding-our-future-ii (EIN 86-1201700, Rosemount) on name similarity. SOS file number not yet retrieved (MBLS portal blocked this harvest). AGO petition cites certificate of incorporation 2016-11-07 and notice of intent to dissolve 2022-02-25; those remain petition-cited until SOS confirms. Form 990 year of formation: 2016. Absent from IRS EO BMF MN extract retrieved 2026-08-26. SOS file 913838800020, formed 2016-11-07, status Active / In Good Standing as of 2026-08-26 despite Intent to Dissolve 2022-02-25. Current SOS president Ali Egal. Registered office Legal for Good PLLC, St. Louis Park (changed 2022-04-08). Filing history includes involuntary dissolution 2018-03-08 and reinstatement 2018-06-13.",
+  "source_ids": [
+    "src-irs-990-fof-fy2020",
+    "src-irs-bmf-mn-2026-08",
+    "src-ago-fof-dissolution-petition-copy",
+    "src-propublica-fof-814343304",
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

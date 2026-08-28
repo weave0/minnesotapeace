@@ -1,0 +1,22 @@
+{
+  "docket_number": "0:22-cr-00124",
+  "ecf": 22,
+  "filed": "2022-06-21",
+  "pages": 1,
+  "source_pdf": "research/court/pdfs/0_22-cr-00124_ecf22_Indictment.pdf",
+  "sha256": "64b4c93a6aa721d741bbcd5afe98ff692de5daf6f6295e508618f5724e19d054",
+  "evidence_class": "PRIMARY_COURT_RECORD",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "what_it_is": "One-count 18 U.S.C. \u00a7 1542 false statement in a passport application against Abdiaziz Shafii Farah only. NOT the Feeding Our Future / Empire Kitchen fraud indictment.",
+  "counts": [
+    {
+      "count": "1",
+      "statute": "18 U.S.C. \u00a7 1542",
+      "title": "False statement in a passport application",
+      "allegation": "On or about 2022-03-22, defendant submitted a passport application stating his previous passport had been lost when, as alleged, he had not lost it."
+    }
+  ],
+  "gaps": [
+    "FOF/Empire fraud charging instrument on this docket is still missing (likely a later superseding indictment, not ECF 22)."
+  ]
+}

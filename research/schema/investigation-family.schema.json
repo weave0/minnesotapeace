@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/investigation-family.schema.json",
+  "title": "Minnesota Fraud Research Investigation Family",
+  "description": "Canonical record for an investigation/program family (Feeding Our Future, HSS, EIDBI, ICS, CCAP, ARMHS, and others). Families are distinct but cross-linkable. Do not assume criminal fraud exists merely because a program is designated high-risk; record the basis for the designation. The corpus must not be limited to Feeding Our Future.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "family_id",
+    "name"
+  ],
+  "properties": {
+    "family_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage_state": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "seed",
+        "partial",
+        "structured",
+        "verified",
+        "complete",
+        null
+      ],
+      "description": "How thoroughly this family has been ingested into the corpus."
+    },
+    "last_checked": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Last date sources for this family were checked for updates."
+    },
+    "next_check": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Scheduled next check."
+    },
+    "source_depth": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ],
+      "description": "Depth of primary-source coverage (e.g. 1–8 matching source_tier reached, or qualitative)."
+    },
+    "legal_maturity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "unassessed",
+        "statutes_identified",
+        "elements_mapped",
+        "precedent_attached",
+        "mature",
+        null
+      ],
+      "description": "How far the legal-research layer has been built for this family."
+    },
+    "prosecution_maturity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "none",
+        "investigation",
+        "charged",
+        "trials_ongoing",
+        "substantial_adjudication",
+        "mature",
+        null
+      ],
+      "description": "How far public prosecutions have progressed. Feeding Our Future is comparatively mature."
+    },
+    "missing_records": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "description"
+            ],
+            "properties": {
+              "record_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "priority": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "critical",
+                  "high",
+                  "medium",
+                  "low",
+                  null
+                ]
+              },
+              "notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "description": "Known gaps: missing indictments, unretrieved sentencing orders, unread audits, etc."
+    },
+    "related_family_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Cross-links. Overlap is not conspiracy."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,306 @@
+            CASE 0:25-cr-00353-PAM     Doc. 1   Filed 09/18/25   Page 1 of 6
+
+
+
+
+                        UNITED STATES DISTRICT COURT
+                           DISTRICT OF MINNESOTA
+                                                                 CR 25-353 PAM
+
+ UNITED STATES OF AMERICA,                        INFORMATION
+
+                      Plaintiff,                  18 U.S.C. § 1343
+                                                  18 U.S.C. § 981(a)(1)(C)
+       v.                                         21 U.S.C. § 853(p)
+                                                  28 U.S.C. § 2461(c)
+ ANWAR AHMED ADOW,
+
+                      Defendant.
+
+      THE UNITED STATES ATTORNEY CHARGES THAT:
+
+      At times relevant to this Information:
+
+      1.       The defendant devised and carried out a scheme to defraud Minnesota’s
+
+Housing Stability Services Program, a Medicaid program designed to help people
+
+with disabilities and addictions find and maintain housing. Rather than provide such
+
+help, the defendant obtained and misappropriated millions of dollars in program
+
+funds that were intended as reimbursements for services provided to those people.
+
+      A.       Background on Minnesota’s Housing Stability Services Program
+
+      2.       In July 2020, Minnesota became the first state in the country to offer
+
+Medicaid coverage for Housing Stabilization Services. The Housing Stabilization
+
+Services Program is a Medical Assistance (that is, Medicaid) benefit designed to help
+
+people with disabilities, including seniors and people with mental illnesses and
+
+substance use disorders, find and maintain housing.
+
+      3.       The Program permitted reimbursements for four principal kinds of
+
+services:
+           CASE 0:25-cr-00353-PAM      Doc. 1   Filed 09/18/25   Page 2 of 6
+
+
+
+
+      (a) Housing consultation, during which a consultant (like a social worker or
+          nurse) helps a beneficiary complete a Department of Human Services form
+          called a “Person-Centered, Housing Focused Plan.” The Plan is a form
+          available from the Department of Human Services. It requires minimal
+          information. Consultants could bill Medicaid about $174 for a consulting
+          session.
+
+      (b) Housing transition services, during which a provider helps a beneficiary
+          plan for, find, and move into housing. Providers can bill about $68 per hour
+          of transition services provided.
+
+      (c) Housing sustaining services, during which a provider helps a beneficiary
+          keep their housing after they have moved in (including through behavioral
+          management of the beneficiary). For sustaining services, too, providers can
+          bill about $68 per hour.
+
+      (d) Moving expenses of up to $3,000, subject to conditions.
+
+      4.      By design, the Program had a low barrier to entry for new providers.
+
+A would-be provider needed only be at least 18 years old, submit some enrollment
+
+paperwork to Minnesota Department of Human Services, undergo a background
+
+check, and complete about five hours of online training videos. Providers did not have
+
+to have a medical license or social work training.
+
+      5.      Similarly, the Program had a low barrier to entry for beneficiaries.
+
+Beneficiaries needed only be at least 18 years old, have coverage under Medical
+
+Assistance (which is Minnesota’s Medicaid program for people with low income), have
+
+a documented disability or “disabling condition,” and be experiencing housing
+
+instability. Program rules defined those final two conditions expansively. To receive
+
+billable services, a beneficiary meeting these requirements just needed to complete,
+
+with a Program-qualified consultant, a document called a Housing Focused Plan,
+
+detailing their housing challenges and needs. That done, the beneficiary could enroll
+
+with a provider. And the provider could start billing for services provided.
+
+
+                                          2
+            CASE 0:25-cr-00353-PAM      Doc. 1   Filed 09/18/25   Page 3 of 6
+
+
+
+
+      6.       To bill, a provider needed to submit only the names of the beneficiaries
+
+serviced, the types of billable services provided, and the hours worked.
+
+      7.       The HSS Program’s low barriers to entry and minimal records
+
+requirements for reimbursement combined to make the Program susceptible to fraud.
+
+      8.       Before the Program’s inaugural year, DHS predicted the Program would
+
+cost about $2.6 million annually. That proved to be inaccurate. In 2021 alone, the
+
+Program paid out more than $21 million in claims. That figure ballooned in the
+
+following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. In just
+
+the first six months of 2025, the Program paid out another $61 million.
+
+      9.       A federal investigation revealed that many Program providers
+
+defrauded the system. These providers acquired the names of Program-eligible
+
+beneficiaries from facilities like addiction treatment centers. They then used those
+
+individuals’ information to submit inflated and fake reimbursement claims. In this
+
+fashion, the providers acquired substantial pay-outs of taxpayer money to which they
+
+were not entitled. They used those ill-gotten gains for their own enrichment.
+
+      B.       The Defendant and His Role
+
+      10.      The defendant ANWAR AHMED ADOW was the owner and principal of
+
+Liberty Plus LLC, a company based out of a business suite in Roseville, Minnesota.
+
+ADOW registered Liberty Plus LLC with the State of Minnesota in or about
+
+November 2022.
+
+      11.      ANWAR ADOW used Liberty Plus to participate in the Housing
+
+Stability Services Program as a provider. In that role, ADOW and his employees at
+
+Liberty Plus were supposed to provide housing consulting, transitioning, and
+
+
+                                           3
+            CASE 0:25-cr-00353-PAM      Doc. 1   Filed 09/18/25   Page 4 of 6
+
+
+
+
+sustaining services to qualifying people in need. Liberty Plus was paid at quarter-
+
+hourly rates and with Medicaid dollars based on the services it claimed to provide.
+
+      The Scheme to Defraud the Housing Stability Services Program
+
+      12.      From in or about March 2022 through in or about April 2025, in the
+
+State and District of Minnesota, and elsewhere, the defendant,
+
+                              ANWAR AHMED ADOW,
+
+and others known and unknown to the grand jury, did knowingly devise and
+
+participate in a scheme and artifice to defraud and to obtain money by means of
+
+materially false and fraudulent pretenses, representations, and promises, and by
+
+concealment of material facts.
+
+      13.      The purpose of the scheme was to fraudulently obtain millions of dollars
+
+in Housing Stability Services Program funds by causing the submission of fake and
+
+inflated bills. As a Program provider, ADOW was responsible for providing program-
+
+eligible housing services to people in need. However, in furtherance of the scheme,
+
+ADOW and his conspirators caused the submission of false claims information that
+
+significantly overrepresented the hours of services they provided. In so doing, ADOW
+
+received HSS Program funds that substantially exceeded the services he and his
+
+company provided.
+
+      14.      In furtherance of the scheme to defraud, in or about April 2024, ADOW
+
+applied with DHS for Liberty Plus to operate as an HSS provider. ADOW thereafter
+
+
+
+
+                                           4
+            CASE 0:25-cr-00353-PAM      Doc. 1   Filed 09/18/25   Page 5 of 6
+
+
+
+
+purported to service individuals in need through Liberty from a business suite in
+
+Roseville, Minnesota.
+
+      15.      ADOW directed his employees at Liberty Plus to bill as much as they
+
+could. At the same time, ADOW made clear to those employees that he would not
+
+scrutinize the purported billable hours his employees submitted to him. In this way,
+
+ADOW incentivized his employees, who were paid hourly wages, to inflate their
+
+hours. As the company owner and principal, ADOW made more money when his
+
+employees overrepresented their billings—which ADOW then submitted for Program
+
+reimbursement.
+
+      16.      Ultimately, based on inflated and fraudulent claims, Liberty Plus
+
+received more than $1.2 million in Medicaid funds for services purportedly provided
+
+to approximately 200 beneficiaries.
+
+      17.      ADOW diverted much of those taxpayer dollars to his conspirators,
+
+including his employees at Liberty and his brother, Asad Adow.
+
+      18.      ADOW also spent proceeds from his scheme to lease a 2023 Mercedes-
+
+Benz CLA, to make investments, and to fund his lifestyle.
+
+                                       Counts 1-4
+                                      (Wire Fraud)
+
+      19.      Paragraphs 1 through 19 are incorporated herein.
+
+      20.      From in or about March 2022 through in or about April 2025, in the
+
+State and District of Minnesota, and elsewhere, the defendant,
+
+                             ANWAR AHMED ADOW,
+
+
+
+
+                                           5
+            CASE 0:25-cr-00353-PAM       Doc. 1    Filed 09/18/25   Page 6 of 6
+
+
+
+
+and others known and unknown to the grand jury, for the purpose of executing the
+
+scheme described above, caused to be transmitted by means of wire communication
+
+in interstate commerce certain signals and sounds, including emails using the email
+
+account PlusLibertyLLC@gmail.com, all in violation of 18 U.S.C. § 1343.
+
+                           FORFEITURE ALLEGATIONS
+
+      21.      Count 1 of this Information is incorporated by reference for the purpose
+
+of alleging forfeiture pursuant to Title 18, United States Code, Section 981(a)(1)(C)
+
+in conjunction with Title 28, United States Code, Section 2461(c).
+
+      22.      If convicted of Count 1 of this Information, the defendant shall forfeit to
+
+the United States, pursuant to Title 18, United States Code, Section 981(a)(1)(C) and
+
+Title 28, United States Code, Section 2461(c), any property, real or personal, which
+
+constitutes or is derived from proceeds traceable to Count 1 of the Information.
+
+      23.      If any of the above-described forfeitable property is unavailable for
+
+forfeiture, the United States intends to seek the forfeiture of substitute property as
+
+provided for in Title 21, United States Code, Section 853(p) as incorporated by Title
+
+28, United States Code, Section 2461(c).
+
+
+
+Dated: September 18, 2025                         JOSEPH H. THOMPSON
+                                                  Acting United States Attorney
+
+                                                  /s/ Daniel W. Bobier
+                                                  DANIEL W. BOBIER
+                                                  Assistant U.S. Attorney
+
+
+
+
+                                             6
+

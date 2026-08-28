@@ -1,0 +1,99 @@
+[
+  {
+    "money_id": "hcbs-m-smart-14m",
+    "amount": 14000000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "evidence_class": "CHARGED_ALLEGED",
+    "source_id": "DOJ-EIDBI-1",
+    "exact_or_approximate": "approximate",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "hcbs-m-smart-star-466m-billed",
+        "notes": "Likely included in later two-center indictment. Do not add."
+      }
+    ]
+  },
+  {
+    "money_id": "hcbs-m-star-6m",
+    "amount": 6000000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "evidence_class": "CHARGED_ALLEGED",
+    "source_id": "DOJ-DEC18",
+    "exact_or_approximate": "approximate",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "hcbs-m-smart-star-466m-billed",
+        "notes": "Likely included in later two-center indictment. Do not add."
+      }
+    ]
+  },
+  {
+    "money_id": "hcbs-m-smart-star-466m-billed",
+    "amount": 46600000,
+    "currency": "USD",
+    "metric_type": "amount_billed",
+    "evidence_class": "CHARGED_ALLEGED",
+    "source_id": "DOJ-OPA-0521",
+    "exact_or_approximate": "exact",
+    "overlaps": [
+      {
+        "relation": "OVERLAPS_WITH",
+        "other_money_id": "hcbs-m-smart-14m"
+      },
+      {
+        "relation": "OVERLAPS_WITH",
+        "other_money_id": "hcbs-m-star-6m"
+      }
+    ]
+  },
+  {
+    "money_id": "hcbs-m-smart-star-212m-paid",
+    "amount": 21200000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "evidence_class": "CHARGED_ALLEGED",
+    "source_id": "DOJ-SUMM",
+    "exact_or_approximate": "approximate",
+    "overlaps": [
+      {
+        "relation": "INCLUDED_IN",
+        "other_money_id": "hcbs-m-smart-star-466m-billed",
+        "notes": "Paid subset of billed conspiracy figure."
+      }
+    ]
+  },
+  {
+    "money_id": "hcbs-m-90m-takedown",
+    "amount": 90000000,
+    "currency": "USD",
+    "metric_type": "intended_loss",
+    "evidence_class": "CHARGED_ALLEGED",
+    "source_id": "DOJ-OPA-0521",
+    "exact_or_approximate": "approximate",
+    "notes": "May 21 2026 takedown. Mixed Medicaid and child-care (CCAP/GSCSPP). Not all HCBS. Do not treat as HCBS-only fraud total."
+  },
+  {
+    "money_id": "hcbs-m-9b-estimate",
+    "amount": 9000000000,
+    "currency": "USD",
+    "metric_type": "fraud_estimate",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "source_id": "NINE-BILLION",
+    "exact_or_approximate": "approximate",
+    "notes": "0.5 x ~$18B 14-program spend since 2018, oral statement by AUSA Thompson 2025-12-18. Not in the USAO PR. Not proven_loss."
+  },
+  {
+    "money_id": "hcbs-m-dhs-56m-identified",
+    "amount": 56000000,
+    "currency": "USD",
+    "metric_type": "identified_for_recovery",
+    "evidence_class": "AGENCY_POSITION",
+    "source_id": "DHS-PI",
+    "exact_or_approximate": "approximate",
+    "notes": "Not recovered_amount."
+  }
+]

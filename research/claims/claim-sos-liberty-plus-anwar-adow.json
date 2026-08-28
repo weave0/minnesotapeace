@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-08-27T03:20:00Z",
+  "created_at": "2026-08-27T03:20:00Z",
+  "updated_at": "2026-08-27T03:20:00Z",
+  "is_inference": false,
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "claim_id": "claim-sos-liberty-plus-anwar-adow",
+  "claim_text": "Minnesota SOS lists Liberty Plus LLC, file 1349782500024, formed 2022-11-17, Active / In Good Standing, registered agent Anwar A Adow and manager Anwar Ahmed Adow.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-liberty-plus"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "organizations": [
+    "org-liberty-plus"
+  ]
+}

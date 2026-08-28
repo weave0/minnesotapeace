@@ -1,0 +1,29 @@
+{
+  "entity_id": "org-brilliant-minds-services",
+  "entity_type": "BUSINESS",
+  "canonical_name": "BRILLIANT MINDS SERVICES L.L.C.",
+  "aliases": [
+    "Brilliant Minds Services LLC"
+  ],
+  "business_reg_ids": [
+    "MN-SOS-1186478200020"
+  ],
+  "addresses": [
+    {
+      "line1": "1821 University Ave W",
+      "line2": "Ste 120",
+      "city": "Saint Paul",
+      "state": "MN",
+      "postal_code": "55104",
+      "country": "US",
+      "raw": "1821 UNIVERSITY AVE W STE 120, SAINT PAUL, MN 55104, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1186478200020, LLC formed 2020-10-14, Active / In Good Standing. Same street as Foundation First (1821 University Ave W) but different suite; shared street is not conspiracy. HSS charging documents name Brilliant Minds Services; this SOS record is the name match, not a conviction.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

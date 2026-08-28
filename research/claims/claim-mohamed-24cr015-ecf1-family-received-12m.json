@@ -1,0 +1,52 @@
+{
+  "reviewed_at": "2026-08-27T21:15:00Z",
+  "created_at": "2026-08-27T21:15:00Z",
+  "updated_at": "2026-08-27T21:15:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mohamed-24cr015-ecf1-family-received-12m",
+  "claim_text": "The January 24, 2024 indictment in United States v. Mohamed et al., No. 0:24-cr-00015 (ECF 1), alleges that the defendants fraudulently claimed to have served more than 4.8 million meals at their sites between December 2020 and November 2021 and that, based on those claims, they received more than $12 million in Federal Child Nutrition Program funds. Face language is received (amount_paid), not amount_billed and not proven_loss. This is the Mohamed-family case figure; it overlaps the site-level United Youth / Youth International / Inspiring Youth / Active Minds receipts and must not be added to HSS totals or to the Bock $250 million charging headline.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:24-cr-00015",
+  "source_ids": [
+    "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "date_start": "2020-12-01",
+  "date_end": "2021-11-30",
+  "event_date": "2024-01-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 25,
+      "locator": "para 91",
+      "quote": "In all, the defendants fraudulently claimed to have served more than 4.8 million meals at their sites between December 2020 and November 2021. Based on these fraudulent claims, they received more than $12 million in Federal Child Nutrition Program funds."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 12000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2020-12-01",
+      "period_end": "2021-11-30",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "methodology": "Indictment para 91: received more than $12 million in Federal Child Nutrition Program funds based on alleged fraudulent meal claims. Face language is received/paid, not billed."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "face language is received (amount_paid), not billed, not proven_loss",
+    "do not add to HSS",
+    "do not add to Bock $250M charging headline without overlap_group_id mohamed-24cr015-family-receipts",
+    "do not sum with site-level receipts or Star Distribution $10M"
+  ]
+}

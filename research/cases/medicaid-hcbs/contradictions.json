@@ -1,0 +1,59 @@
+[
+  {
+    "contradiction_id": "hcbs-x-hss-start",
+    "claim_a": "HSS dates back to July 2022 (USAO 2025-09-18)",
+    "claim_b": "HSS launched July 2020 (later USAO/DHS)",
+    "source_a": "DOJ-HSS-1",
+    "source_b": "DOJ-DEC18 / DHS HSS-end PR",
+    "nature_of_conflict": "program start date",
+    "status": "unresolved",
+    "editorial_resolution": "Record both vintages. Do not silently correct."
+  },
+  {
+    "contradiction_id": "hcbs-x-hss-2021-paid",
+    "claim_a": "HSS 2021 paid more than $21 million",
+    "claim_b": "OPA 2026-05-21: more than $26 million",
+    "source_a": "USAO Sept/Dec 2025",
+    "source_b": "DOJ-OPA-0521",
+    "nature_of_conflict": "program_spend vintage",
+    "status": "unresolved"
+  },
+  {
+    "contradiction_id": "hcbs-x-ics-cumulative",
+    "claim_a": "> $400M ICS paid since 2021 (Dec 2025)",
+    "claim_b": "> $460M (May 2026)",
+    "source_a": "DOJ-DEC18",
+    "source_b": "DOJ-OPA-0521",
+    "nature_of_conflict": "program_spend vintage",
+    "status": "unresolved"
+  },
+  {
+    "contradiction_id": "hcbs-x-withholds",
+    "claim_a": "490 payment withholds in 2025",
+    "claim_b": "over 500",
+    "source_a": "DHS-PI Aug 2026",
+    "source_b": "DHS-CAP-0130",
+    "nature_of_conflict": "agency count",
+    "status": "unresolved"
+  },
+  {
+    "contradiction_id": "hcbs-x-eidbi-overlap",
+    "claim_a": "Smart Therapy obtained >$14M; Star Autism >$6M",
+    "claim_b": "Smart+Star billed $46.6M / paid $21.2M",
+    "source_a": "DOJ-EIDBI-1 / DOJ-DEC18",
+    "source_b": "DOJ-OPA-0521",
+    "nature_of_conflict": "overlapping case amounts; not additive",
+    "status": "MAY_OVERLAP",
+    "editorial_resolution": "Do not add. Tag PARTIAL_COMPONENT_OF."
+  },
+  {
+    "contradiction_id": "hcbs-x-9b",
+    "claim_a": "Half or more of ~$18B in 14 programs since 2018 may be fraudulent (~$9B)",
+    "claim_b": "DHS IG: speculation shocking; Medicaid Director: evidence in hand tens of millions excluding FOF",
+    "source_a": "Thompson oral 2025-12-18 via journalism",
+    "source_b": "DHS officials via journalism / seek written DHS statement",
+    "nature_of_conflict": "fraud_estimate vs known-to-agency stock",
+    "status": "unresolved",
+    "editorial_resolution": "Publish as fraud_estimate with speaker, methodology, and pushback. Never as proven_loss."
+  }
+]

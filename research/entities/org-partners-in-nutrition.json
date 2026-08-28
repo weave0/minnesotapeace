@@ -1,0 +1,116 @@
+{
+  "entity_id": "org-partners-in-nutrition",
+  "entity_type": "NONPROFIT",
+  "canonical_name": "Partners In Nutrition",
+  "aliases": [
+    "Partners In Quality Care"
+  ],
+  "dba": [
+    "Partners In Quality Care"
+  ],
+  "ein": "47-4302258",
+  "officers": [
+    {
+      "name": "Robyn Tousignant",
+      "title": "Interim Executive Director (principal officer / signer)",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "name": "Kara Lomen",
+      "title": "Executive Director",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Jim Handrigan",
+      "title": "Board President",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Christine Twait",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Sue Ostfield",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Donnie Preston",
+      "title": "Board member",
+      "person_id": null,
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ],
+      "valid_from": "2020-10-01",
+      "valid_until": "2021-09-30"
+    },
+    {
+      "name": "Aaron Twait",
+      "title": "President / registered agent (SOS as of 2026-08-26)",
+      "person_id": null,
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "1035 West 7th Street",
+      "line2": null,
+      "city": "Saint Paul",
+      "state": "MN",
+      "postal_code": "55102",
+      "country": "US",
+      "raw": "1035 WEST 7TH STREET, ST PAUL, MN 55102",
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ]
+    },
+    {
+      "line1": "7216 Braemar Lane",
+      "city": "Woodbury",
+      "state": "MN",
+      "postal_code": "55125",
+      "country": "US",
+      "raw": "7216 Braemar Lane, Woodbury, MN 55125, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "Separate CACFP/SFSP sponsor from Feeding Our Future. Do not collapse PIN program volume into FOF alleged-loss figures. FY2021 990 Part VII-B lists EMPIRE CUISINE AND MARKET as an independent contractor (provider payments). Present on IRS EO BMF MN extract 2026-08-26. SOS file 829756400022, formed 2015-06-11, Active / In Good Standing. SOS president/agent Aaron Twait. 990 address (1035 W 7th, St Paul) is not the current SOS registered office (Woodbury); do not collapse them.",
+  "source_ids": [
+    "src-irs-990-pin-fy2021",
+    "src-irs-bmf-mn-2026-08",
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "business_reg_ids": [
+    "MN-SOS-829756400022"
+  ]
+}

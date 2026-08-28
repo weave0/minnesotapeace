@@ -1,0 +1,399 @@
+[
+  {
+    "id": "S01",
+    "title": "U.S. Attorney Announces Federal Charges Against 47 Defendants in $250 Million Feeding Our Future Fraud Scheme",
+    "publisher": "U.S. Department of Justice, Office of Public Affairs",
+    "url": "https://www.justice.gov/archives/opa/pr/us-attorney-announces-federal-charges-against-47-defendants-250-million-feeding-our-future",
+    "date": "2022-09-20",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED",
+    "date_note": "updated 2025-02-06"
+  },
+  {
+    "id": "S02",
+    "title": "U.S. Attorney Announces Federal Charges Against 10 Additional Defendants in $250 Million Feeding Our Future Fraud Scheme",
+    "publisher": "U.S. Attorney\u2019s Office, District of Minnesota",
+    "url": "https://www.justice.gov/usao-mn/pr/us-attorney-announces-federal-charges-against-10-additional-defendants-250-million",
+    "date": "2023-03-13",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED"
+  },
+  {
+    "id": "S03",
+    "title": "Seventy-third defendant charged in Feeding Our Future Case",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/seventy-third-defendant-charged-in-feeding-our-future-case",
+    "date": "2025-08-06",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED"
+  },
+  {
+    "id": "S04",
+    "title": "75th defendant charged in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/75th-defendant-charged-in-feeding-our-future-fraud-scheme",
+    "date": "2025-09-04",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED"
+  },
+  {
+    "id": "S05",
+    "title": "77th defendant charged in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement by U.S. Attorney Daniel N. Rosen)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/77th-defendant-charged-in-feeding-our-future-fraud-scheme",
+    "date": "2025-11-20",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED",
+    "urls": [
+      "https://www.justice.gov/usao-mn/pr/77th-defendant-charged-feeding-our-future-fraud-scheme"
+    ],
+    "notes": "Corresponding USAO-MN slug was Akamai-blocked in this collection."
+  },
+  {
+    "id": "S06",
+    "title": "Feeding Our Future defendant sentenced to 10 years in prison",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/feeding-our-future-defendant-sentenced-to-10-years-in-prison",
+    "date": "2025-11-24",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED"
+  },
+  {
+    "id": "S07",
+    "title": "In landmark sentence, Feeding Our Future scheme leader sentenced to 28 years in prison",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/in-landmark-sentence-feeding-our-future-scheme-leader-sentenced-to-28-years-in-prison",
+    "date": "2025-08-06",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Date from IRS-CI page and search snippets; live fetch returned a \u201chistorical content\u201d stub. Confirm full page text if IRS archive is restored."
+  },
+  {
+    "id": "S08",
+    "title": "Fourth defendant pleads guilty to scheme to bribe Feeding Our Future juror",
+    "publisher": "IRS Criminal Investigation (USAO-MN announcement)",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/fourth-defendant-pleads-guilty-to-scheme-to-bribe-feeding-our-future-juror",
+    "date": "2025-06-23",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED"
+  },
+  {
+    "id": "S09",
+    "title": "Minneapolis Man Sentenced for Scheme to Bribe Feeding Our Future Juror",
+    "publisher": "U.S. Department of Justice, Office of Public Affairs",
+    "url": "https://www.justice.gov/opa/pr/minneapolis-man-sentenced-scheme-bribe-feeding-our-future-juror",
+    "date": "2026-03-04",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "urls": [
+      "https://www.irs.gov/compliance/criminal-investigation/minneapolis-man-sentenced-for-scheme-to-bribe-feeding-our-future-juror"
+    ]
+  },
+  {
+    "id": "S10",
+    "title": "Five More Plead Guilty in Minnesota Feeding Our Future Fraud Scheme",
+    "publisher": "U.S. Department of Justice, Office of Public Affairs",
+    "url": "https://www.justice.gov/opa/pr/five-more-plead-guilty-minnesota-feeding-our-future-fraud-scheme",
+    "date": "2026-03-20",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED"
+  },
+  {
+    "id": "S11",
+    "title": "Two More Defendants Plead Guilty in Feeding Our Future Fraud Scheme",
+    "publisher": "U.S. Department of Justice, Office of Public Affairs",
+    "url": "https://www.justice.gov/opa/pr/two-more-defendants-plead-guilty-feeding-our-future-fraud-scheme",
+    "date": "2026-04-09",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Press Release Number 26-340."
+  },
+  {
+    "id": "S12",
+    "title": "Feeding Our Future Ringleader Sentenced to 500 Months",
+    "publisher": "U.S. Department of Justice, Office of Public Affairs",
+    "url": "https://www.justice.gov/opa/pr/feeding-our-future-ringleader-sentenced-500-months",
+    "date": "2026-05-22",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "urls": [
+      "https://www.irs.gov/compliance/criminal-investigation/feeding-our-future-ringleader-sentenced-to-500-months"
+    ]
+  },
+  {
+    "id": "S13",
+    "title": "Minneapolis man sentenced to 43 months for role in feeding our future fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/minneapolis-man-sentenced-to-43-months-for-role-in-feeding-our-future-fraud-scheme",
+    "date": "2026-04-09",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED"
+  },
+  {
+    "id": "S14",
+    "title": "Fifty-sixth defendant pleads guilty in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/fifty-sixth-defendant-pleads-guilty-in-feeding-our-future-fraud-scheme",
+    "date": "2025-09-18",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Page text: Jesow became 56th to plead; same day as Housing Stabilization first-wave charges."
+  },
+  {
+    "id": "S15",
+    "title": "Guhaad Hashi Said pleads guilty to his involvement in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/guhaad-hashi-said-pleads-guilty-to-his-involvement-in-feeding-our-future-fraud-scheme",
+    "date": null,
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Page not fully dated in fetch; USAO described \u201c52nd defendant.\u201d"
+  },
+  {
+    "id": "S16",
+    "title": "Woman bound for Dubai arrested at airport and indicted in Feeding Our Future scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/woman-bound-for-dubai-arrested-at-airport-and-indicted-in-feeding-our-future-scheme",
+    "date": "2025-05",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED",
+    "notes": "~2025-05; 71st defendant; detention hearing May 30."
+  },
+  {
+    "id": "S17",
+    "title": "Kenyan national charged with international money laundering in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/kenyan-national-charged-with-international-money-laundering-in-feeding-our-future-fraud-scheme",
+    "date": "2025-08",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED",
+    "notes": "~2025-08 (after Abdiaziz Farah 28-year sentence)."
+  },
+  {
+    "id": "S18",
+    "title": "Man surrenders for role in Feeding Our Future fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/man-surrenders-for-role-in-feeding-our-future-fraud-scheme",
+    "date": "2026",
+    "type": "press_release",
+    "evidence_class": "CHARGED_ALLEGED",
+    "notes": "After Najmo Ahmed plea 2025-02-24; Ahmed sentencing set 2026-06-15. CHARGED_ALLEGED as to Ereg; ADJUDICATED as to Ahmed plea."
+  },
+  {
+    "id": "S19",
+    "title": "Minneapolis woman sentenced to 51 months in prison for role in feeding our future $250 million fraud scheme",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/minneapolis-woman-sentenced-to-51-months-in-prison-for-role-in-feeding-our-future-250-million-fraud-scheme",
+    "date": null,
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Sahra Mohamed Nur; pleaded 2023-09-07. Sentence date not stated in SOURCES.md."
+  },
+  {
+    "id": "S20",
+    "title": "Third / Fifth juror-bribery defendant plea releases",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/compliance/criminal-investigation/third-defendant-pleads-guilty-to-scheme-to-bribe-feeding-our-future-juror",
+    "date": "2025",
+    "type": "press_release",
+    "evidence_class": "ADJUDICATED",
+    "urls": [
+      "https://www.irs.gov/compliance/criminal-investigation/third-defendant-pleads-guilty-to-scheme-to-bribe-feeding-our-future-juror",
+      "https://www.irs.gov/compliance/criminal-investigation/fifth-juror-bribery-defendant-pleads-guilty-to-scheme-to-bribe-feeding-our-future-juror"
+    ],
+    "notes": "Abdulkarim Farah plea; Said Farah plea."
+  },
+  {
+    "id": "S21",
+    "title": "IRS-CI Publication 3583 (Rev. 3-2026) \u2014 FY2025 annual report excerpt on Feeding Our Future",
+    "publisher": "IRS Criminal Investigation",
+    "url": "https://www.irs.gov/pub/irs-pdf/p3583.pdf",
+    "date": "2026-03",
+    "type": "agency",
+    "evidence_class": "AGENCY_POSITION",
+    "notes": "Scheme-size figure is not a court net-loss finding. Summary of adjudicated sentences."
+  },
+  {
+    "id": "S22",
+    "title": "United States v. Aimee Marie Bock and Salim Ahmed Said, Order on Motion for Judgment of Acquittal and Motion for New Trial",
+    "publisher": "U.S. District Court, District of Minnesota (Judge Nancy E. Brasel)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203016/gov.uscourts.mnd.203016.756.0_1.pdf",
+    "date": "2025-08-22",
+    "type": "court",
+    "evidence_class": "ADJUDICATED",
+    "local_path": "feeding-our-future/primary/bock-said-order-acquittal-2025-08-22.pdf",
+    "sha256": "353114cc4a7d71befa9330c44eb7440cefefe083517f828bff15aa7c4b484dcf"
+  },
+  {
+    "id": "S23",
+    "title": "United States v. Abdimajid Mohamed Nur \u2014 Plea Agreement (juror bribery)",
+    "publisher": "U.S. Attorney\u2019s Office, District of Minnesota / U.S. District Court",
+    "url": "https://www.justice.gov/usao-mn/media/1361396/dl?inline=",
+    "date": null,
+    "type": "court",
+    "evidence_class": "ADJUDICATED",
+    "notes": "Plea agreement in 24-cr-173(2) (DSD/TNL). Date of the agreement not stated in SOURCES.md."
+  },
+  {
+    "id": "S24",
+    "title": "Related docket / indictment discussion in U.S. v. Bock, 22-CR-223 (NEB)",
+    "publisher": "U.S. District Court, District of Minnesota (RECAP/CourtListener)",
+    "url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203016/gov.uscourts.mnd.203016.435.0.pdf",
+    "date": "2022-09-13",
+    "type": "court",
+    "evidence_class": "CHARGED_ALLEGED",
+    "urls": [
+      "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203016/gov.uscourts.mnd.203016.435.0.pdf",
+      "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203023/gov.uscourts.mnd.203023.257.0.pdf"
+    ],
+    "notes": "2022 indictment returned Sept 13, 2022 (grand jury); later motion practice. CHARGED_ALLEGED as to indictment; later ADJUDICATED for Bock/Said via S22."
+  },
+  {
+    "id": "S25",
+    "title": "Criminal Division case index entries (MIMF / 2022 fraud cases)",
+    "publisher": "U.S. Department of Justice, Criminal Division",
+    "url": "https://www.justice.gov/criminal/criminal-fraud/case/mgc/2022",
+    "date": "2025-09-10",
+    "type": "agency",
+    "evidence_class": "AGENCY_POSITION",
+    "urls": [
+      "https://www.justice.gov/criminal/criminal-fraud/case/mgc/2022",
+      "https://www.justice.gov/criminal/criminal-fraud/related-mimf-cases-n"
+    ],
+    "date_note": "updated 2025-09-10 / 2025-01-24",
+    "notes": "Index listing of FOF-related captions. Not a status tracker."
+  },
+  {
+    "id": "S26",
+    "title": "Minnesota Department of Education: Oversight of Feeding Our Future (Special Review, full report)",
+    "publisher": "Minnesota Office of the Legislative Auditor",
+    "url": "https://www.auditor.leg.state.mn.us/sreview/pdf/2024-mdefof.pdf",
+    "date": "2024-06-13",
+    "type": "audit",
+    "evidence_class": "AUDIT_FINDING",
+    "urls": [
+      "https://www.auditor.leg.state.mn.us/sreview/2024/mdefof.htm"
+    ],
+    "date_note": "minor edits 2024-07-03 on pp. 8, 9, 15",
+    "local_path": "feeding-our-future/primary/ola-2024-mdefof.pdf",
+    "sha256": "dc5b7d9db66dff4b4febc7d50664ffd11a4617d47233b3d28e9da68393d50ef6",
+    "extracted_text_path": "feeding-our-future/primary/ola-2024-mdefof.txt",
+    "extracted_text_sha256": "7e200e2c892a357fc98b6c8c83d8e12b30647fd94d6e58adf9fff52004c2eeb2"
+  },
+  {
+    "id": "S27",
+    "title": "Minnesota Department of Education: Oversight of Feeding Our Future \u2014 Summary",
+    "publisher": "Minnesota Office of the Legislative Auditor",
+    "url": "https://www.auditor.leg.state.mn.us/sreview/2024/mdefof-sum.htm",
+    "date": "2024-06-13",
+    "type": "audit",
+    "evidence_class": "AUDIT_FINDING",
+    "urls": [
+      "https://www.auditor.leg.state.mn.us/sreview/2024/mdefof-sum.htm",
+      "https://www.auditor.leg.state.mn.us/sreview/pdf/2024-mdefof-sum.pdf"
+    ],
+    "local_path": "feeding-our-future/primary/ola-2024-mdefof-sum.pdf",
+    "sha256": "c1350704297e181027365fb626e3824134edf8d7d93adc6f2cfa9d1bd67f41d4",
+    "notes": "Also carries AGENCY_POSITION (MDE rebuttal letter of Commissioner Willie L. Jett II, 2024-06-07)."
+  },
+  {
+    "id": "S28",
+    "title": "Feeding Our Future v. Minnesota Department of Education: Correcting Media Reports and Statements by Governor Tim Walz Concerning Orders Issued by the Court",
+    "publisher": "Minnesota Judicial Branch",
+    "url": "https://mncourts.gov/about-the-courts/newsandannouncements/feeding-our-future-v-minnesota-department-of-education-correcting-media-reports-and-statements-by-governor-tim-walz-concerning-orders-issued-by-the-court",
+    "date": "2022-09-23",
+    "type": "agency",
+    "evidence_class": "AGENCY_POSITION",
+    "date_note": "meta NewsAndAnnouncements.PostDate = 2022-09-23 01:00:00",
+    "local_path": "feeding-our-future/primary/mncourts-guthmann-2022-09-23.html",
+    "sha256": "3632472c01ebf9c1fd01afd6984e02b2357c06e709c2f230f0ab0df09c6f8da2",
+    "notes": "Court\u2019s own statement of the record. HTML local copy hashed (not a PDF)."
+  },
+  {
+    "id": "S29",
+    "title": "Chair Foxx Subpoenas Walz\u2019s Minnesota Department of Education \u2026 (also USDA and USDA OIG)",
+    "publisher": "U.S. House Committee on Education and the Workforce",
+    "url": "https://edworkforce.house.gov/news/documentsingle.aspx?DocumentID=411885",
+    "date": "2024",
+    "type": "agency",
+    "evidence_class": "LEGISLATIVE_FINDING_OR_ALLEGATION",
+    "notes": "Not a USDA-OIG audit of MN CACFP/SFSP fraud."
+  },
+  {
+    "id": "S30",
+    "title": "Report Fraud in Minnesota (FNS child nutrition contacts)",
+    "publisher": "USDA Food and Nutrition Service",
+    "url": "https://www.fns.usda.gov/report-fraud/minnesota",
+    "date": "2025-12-02",
+    "type": "agency",
+    "evidence_class": "AGENCY_POSITION",
+    "notes": "Does not analyze FOF. Current FNS fraud-reporting contacts for MN child nutrition (MDE OIG)."
+  },
+  {
+    "id": "S31",
+    "title": "Child Nutrition Program Integrity final rule (FNS; cites prior OIG audits, not MN FOF)",
+    "publisher": "USDA Food and Nutrition Service",
+    "url": "https://www.fns.usda.gov/cn/fr-082323",
+    "date": "2023-08-23",
+    "type": "agency",
+    "evidence_class": "AGENCY_POSITION",
+    "notes": "National CACFP/SFSP integrity rulemaking; incorporates older USDA-OIG recommendations (2011 CACFP management controls; 2013 FSMC). Not a Minnesota FOF investigation."
+  },
+  {
+    "id": "L01",
+    "title": "68th defendant convicted in Feeding Our Future scheme",
+    "publisher": "KSTP",
+    "url": "https://kstp.com/kstp-news/local-news/70th-defendant-convicted-in-feeding-our-future-scheme/",
+    "date": "2026-07",
+    "type": "news_lead",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "notes": "Lead only. Claims DOJ said Abdirashid Bixi Dool pleaded guilty to wire fraud July 13, 2026, as 68th conviction; editor\u2019s note that DOJ previously said 70th then corrected to 68th. USAO slug exists but was Akamai-blocked: https://www.justice.gov/usao-mn/pr/78th-defendant-charged-feeding-our-future-fraud-scheme"
+  },
+  {
+    "id": "L02",
+    "title": "Lakeville man sentenced for witness tampering and role in Feeding Our Future fraud",
+    "publisher": "Star Tribune",
+    "url": "https://www.startribune.com/feeding-our-future-fraud-witness-tampering/601880386",
+    "date": "2026-08-19",
+    "type": "news_lead",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "notes": "Lead: Abdinasir Mahamed Abshir sentenced 6.5 years; article claims 80 charged, 69 convicted, 23rd sentenced. Running totals are LEAD_UNVERIFIED."
+  },
+  {
+    "id": "L03",
+    "title": "Man Sentenced to 120 Months\u2019 Imprisonment for Role in Bribing a Juror During Feeding Our Future Trial",
+    "publisher": "Red Lake Nation News (appears to reprint USAO text)",
+    "url": "https://www.redlakenationnews.com/story/2026/07/27/news/man-sentenced-to-120-months-imprisonment-for-role-in-bribing-a-juror-during-feeding-our-future-trial/141813.html",
+    "date": "2026-07-27",
+    "type": "news_lead",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "date_note": "sentencing stated as 2026-07-22",
+    "notes": "Lead that Abdiaziz Shafii Farah, 37, was sentenced 2026-07-22 by Judge Eric C. Tostrud in St. Paul to 120 months for juror bribery. Unverified as primary until justice.gov/irs.gov page is captured."
+  },
+  {
+    "id": "L04",
+    "title": "Man ordered to pay nearly $48M restitution \u2026 Feeding Our Future",
+    "publisher": "CBS Minnesota",
+    "url": "https://www.cbsnews.com/minnesota/news/feeding-our-future-fraud-48-million-restitution-sentencing/",
+    "date": "2025-11",
+    "type": "news_lead",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "notes": "Lead that pointed to Nur $47,920,514; verified in S06."
+  },
+  {
+    "id": "L05",
+    "title": "Various Star Tribune / KSTP / Fox 9 pieces on Guthmann, OLA, and later sentencings",
+    "publisher": "Star Tribune, KSTP, Fox 9, AP",
+    "url": "https://www.startribune.com/did-minnesota-department-of-education-do-enough-to-stop-feeding-our-future-fraud-legislative-auditor-report-to-be-released-thursday/600373216",
+    "date": null,
+    "type": "news_lead",
+    "evidence_class": "LEAD_UNVERIFIED",
+    "urls": [
+      "https://www.startribune.com/did-minnesota-department-of-education-do-enough-to-stop-feeding-our-future-fraud-legislative-auditor-report-to-be-released-thursday/600373216",
+      "https://apnews.com/article/minnesota-food-fraud-bag-of-cash-7106883911765bb0c3794fe6196fcf9d",
+      "https://www.startribune.com/juror-bribe-feeding-our-future/601870606"
+    ],
+    "date_note": "2022\u20132026",
+    "notes": "Leads only. OLA and Guthmann claims were verified in S26\u2013S28. July 2026 Farah 120-month claim not verified on DOJ."
+  }
+]

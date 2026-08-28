@@ -1,0 +1,447 @@
+[
+  {
+    "slug": "brilliant-minds-services",
+    "file_number": "1186478200020",
+    "legal_name": "BRILLIANT MINDS SERVICES L.L.C.",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Active / In Good Standing",
+    "filing_date": "10/14/2020",
+    "renewal_due": "12/31/2026",
+    "registered_office": "1821 UNIVERSITY AVE W STE 120, SAINT PAUL, MN 55104\u20132811, USA",
+    "registered_agent": "(Optional) Currently No Agent",
+    "president": null,
+    "manager": "Brilliant Minds Services",
+    "ceo": null,
+    "principal_office": "1821 UNIVERSITY AVE W, STE 120, SAINT PAUL, MN 55104\u20132811, United States",
+    "mailing_address": "None Provided",
+    "history": [
+      {
+        "date": "10/14/2020",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: BRILLIANT MINDS SERVICES L.L.C.)"
+      },
+      {
+        "date": "2/4/2022",
+        "filing": "Administrative Termination - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "3/21/2022",
+        "filing": "Annual Reinstatement - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "2/28/2024",
+        "filing": "Administrative Termination - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "3/1/2024",
+        "filing": "Annual Reinstatement - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "3/26/2024",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "5/2/2025",
+        "filing": "Amendment - Limited Liability Company (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "empire-cuisine-and-market",
+    "file_number": "1151747200022",
+    "legal_name": "Empire Cuisine And Market LLC",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Inactive",
+    "filing_date": "4/1/2020",
+    "renewal_due": "12/31/2021",
+    "registered_office": "13825 Edgewood Ave S, Savage, MN 55378, USA",
+    "registered_agent": "(Optional) Currently No Agent",
+    "president": null,
+    "manager": null,
+    "ceo": null,
+    "principal_office": null,
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "4/1/2020",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: Empire Cuisine And Market LLC)"
+      },
+      {
+        "date": "2/2/2022",
+        "filing": "Administrative Termination - Limited Liability Company (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "faladcare-inc",
+    "file_number": "1115037700056",
+    "legal_name": "Faladcare Inc",
+    "entity_type_sos": "Business Corporation (Domestic)",
+    "mn_statute": "302A",
+    "status": "Active / In Good Standing",
+    "filing_date": "10/31/2019",
+    "renewal_due": "12/31/2026",
+    "registered_office": "6053 Hudson Rd, Suite 280, Woodbury, MN 55125, USA",
+    "registered_agent": "Emmanuel Falade",
+    "president": null,
+    "manager": null,
+    "ceo": "Emmanuel Falade",
+    "principal_office": "1240 DONEGAL DR, SAINT PAUL, MN 55125\u20132390, United States",
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "10/31/2019",
+        "filing": "Original Filing - Business Corporation (Domestic), (Business Name: Faladcare Inc)"
+      },
+      {
+        "date": "1/26/2022",
+        "filing": "Administrative Dissolution - Business Corporation (Domestic)"
+      },
+      {
+        "date": "5/18/2023",
+        "filing": "Annual Reinstatement - Business Corporation (Domestic)"
+      },
+      {
+        "date": "1/8/2025",
+        "filing": "Administrative Dissolution - Business Corporation (Domestic)"
+      },
+      {
+        "date": "1/24/2025",
+        "filing": "Annual Reinstatement - Business Corporation (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "faladcare-llc",
+    "file_number": "970826200029",
+    "legal_name": "Faladcare LLC",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Inactive",
+    "filing_date": "10/2/2017",
+    "renewal_due": "12/31/2019",
+    "registered_office": "6043 Hudson Road Suite 399J, Woodbury, MN 55125, USA",
+    "registered_agent": "Emmanuel Oluwademilade Falade",
+    "president": null,
+    "manager": "Faladcare LLC",
+    "ceo": null,
+    "principal_office": "6043 hudson road, Woodbury, MN 55125, USA",
+    "mailing_address": "6043 Hudson Road Suite 399J, Woodbury, MN 55125, USA",
+    "history": [
+      {
+        "date": "10/2/2017",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: Faladcare LLC), Professional Service - Social Work"
+      },
+      {
+        "date": "10/31/2019",
+        "filing": "Converted to Business Corporation (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "feeding-our-future-ii",
+    "file_number": "1207117500020",
+    "legal_name": "Feeding our Future II",
+    "entity_type_sos": "Nonprofit Corporation (Domestic)",
+    "mn_statute": "317A",
+    "status": "Inactive",
+    "filing_date": "1/4/2021",
+    "renewal_due": "12/31/2022",
+    "registered_office": "c/o Legal for Good PLLC, 5353 Gamble Dr., Suite 320, St. Louis Park, MN 55416, USA",
+    "registered_agent": "Aimee Marie Bock",
+    "president": null,
+    "manager": null,
+    "ceo": null,
+    "principal_office": null,
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "1/4/2021",
+        "filing": "Original Filing - Nonprofit Corporation (Domestic), (Business Name: Feeding our Future II)"
+      },
+      {
+        "date": "4/8/2022",
+        "filing": "Registered Office - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "1/25/2023",
+        "filing": "Involuntary Dissolution - Nonprofit Corporation (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "feeding-our-future",
+    "file_number": "913838800020",
+    "legal_name": "Feeding Our Future",
+    "entity_type_sos": "Nonprofit Corporation (Domestic)",
+    "mn_statute": "317A",
+    "status": "Active / In Good Standing",
+    "filing_date": "11/7/2016",
+    "renewal_due": "12/31/2026",
+    "registered_office": "c/o Legal for Good PLLC, 5353 Gamble Dr., Suite 320, St. Louis Park, MN 55416, USA",
+    "registered_agent": "(Optional) Currently No Agent",
+    "president": "Ali Egal",
+    "manager": null,
+    "ceo": null,
+    "principal_office": null,
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "11/7/2016",
+        "filing": "Original Filing - Nonprofit Corporation (Domestic), (Business Name: Feeding Our Future)"
+      },
+      {
+        "date": "3/8/2018",
+        "filing": "Involuntary Dissolution - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "6/13/2018",
+        "filing": "Annual Reinstatement - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "2/25/2022",
+        "filing": "Intent to Dissolve - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "4/8/2022",
+        "filing": "Registered Office - Nonprofit Corporation (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "leo-human-services",
+    "file_number": "1305222600022",
+    "legal_name": "Leo Human Services L.L.C.",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Active / In Good Standing",
+    "filing_date": "3/24/2022",
+    "renewal_due": "12/31/2026",
+    "registered_office": "7100 NORTHLAND CIR N STE 404, BROOKLYN PARK, MN 55428\u20131500, USA",
+    "registered_agent": "Asad Adow",
+    "president": null,
+    "manager": "Asad Adow",
+    "ceo": null,
+    "principal_office": "7100 NORTHLAND CIR N, STE 404, BROOKLYN PARK, MN 55428\u20131500, USA",
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "3/24/2022",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: Leo Human Services L.L.C.), Professional Service - Social Work"
+      },
+      {
+        "date": "3/22/2023",
+        "filing": "Amendment - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "4/11/2025",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "liberty-plus",
+    "file_number": "1349782500024",
+    "legal_name": "Liberty Plus LLC",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Active / In Good Standing",
+    "filing_date": "11/17/2022",
+    "renewal_due": "12/31/2026",
+    "registered_office": "2355 HIGHWAY 36 W STE 438, ROSEVILLE, MN 55113\u20133902, USA",
+    "registered_agent": "Anwar A Adow",
+    "president": null,
+    "manager": "Anwar Ahmed Adow",
+    "ceo": null,
+    "principal_office": "2355 HIGHWAY 36 W, STE 438, ROSEVILLE, MN 55113\u20133902, USA",
+    "mailing_address": null,
+    "history": [
+      {
+        "date": "11/17/2022",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: Liberty Plus LLC)"
+      },
+      {
+        "date": "12/30/2023",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "partners-in-nutrition",
+    "file_number": "829756400022",
+    "legal_name": "Partners in Nutrition",
+    "entity_type_sos": "Nonprofit Corporation (Domestic)",
+    "mn_statute": "317A",
+    "status": "Active / In Good Standing",
+    "filing_date": "6/11/2015",
+    "renewal_due": "12/31/2027",
+    "registered_office": "7216 Braemar Lane, Woodbury, MN 55125, USA",
+    "registered_agent": "Aaron Twait",
+    "president": "Aaron Twait",
+    "manager": null,
+    "ceo": null,
+    "principal_office": null,
+    "mailing_address": "7216 Braemar Ln, Woodbury, Minnesota 55125, United States",
+    "history": [
+      {
+        "date": "6/11/2015",
+        "filing": "Original Filing - Nonprofit Corporation (Domestic), (Business Name: Partners in Nutrition)"
+      },
+      {
+        "date": "5/3/2016",
+        "filing": "Registered Office - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "7/31/2018",
+        "filing": "Registered Office and/or Agent - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "6/7/2022",
+        "filing": "Registered Office and/or Agent - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "6/20/2023",
+        "filing": "Registered Office and/or Agent - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "6/27/2023",
+        "filing": "Email Address for Official Notices"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "foundation-first-services",
+    "file_number": "1392114100023",
+    "legal_name": "Foundation First Services L.L.C.",
+    "entity_type_sos": "Limited Liability Company (Domestic)",
+    "mn_statute": "322C",
+    "status": "Active / In Good Standing",
+    "filing_date": "5/18/2023",
+    "renewal_due": "12/31/2026",
+    "registered_office": "1821 UNIVERSITY AVE W STE 158, SAINT PAUL, MN 55104\u20132895, USA",
+    "registered_agent": "(Optional) Currently No Agent",
+    "president": null,
+    "manager": "Abdifitah M Mohamed",
+    "ceo": null,
+    "principal_office": "1821 UNIVERSITY AVE W STE 158, SAINT PAUL, MN 55104\u20132895, USA",
+    "mailing_address": "None Provided, ,",
+    "history": [
+      {
+        "date": "5/18/2023",
+        "filing": "Original Filing - Limited Liability Company (Domestic), (Business Name: Foundation First Services L.L.C.)"
+      },
+      {
+        "date": "4/21/2024",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "12/4/2024",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "4/14/2025",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "7/16/2025",
+        "filing": "Amendment - Limited Liability Company (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  },
+  {
+    "slug": "bet-on-better-future",
+    "file_number": "1240557200029",
+    "legal_name": "Bet On Better Future",
+    "entity_type_sos": "Nonprofit Corporation (Domestic)",
+    "mn_statute": "317A",
+    "status": "Inactive",
+    "filing_date": "6/21/2021",
+    "renewal_due": "12/31/2024",
+    "registered_office": "2722 Park Avenue, Suite 303, Minneapolis, MN 55407, USA",
+    "registered_agent": "United States Corporation Agents, Inc.",
+    "president": "Abdulkadir Salah",
+    "manager": null,
+    "ceo": null,
+    "principal_office": null,
+    "mailing_address": "None Provided",
+    "history": [
+      {
+        "date": "6/21/2021",
+        "filing": "Original Filing - Nonprofit Corporation (Domestic), (Business Name: Bet On Better Future)"
+      },
+      {
+        "date": "6/29/2021",
+        "filing": "Amendment - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "9/22/2021",
+        "filing": "Global Registered Office and/or Agent - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "11/1/2021",
+        "filing": "Registered Office - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "1/25/2023",
+        "filing": "Involuntary Dissolution - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/20/2023",
+        "filing": "Annual Reinstatement - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/23/2023",
+        "filing": "Intent to Dissolve - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/23/2023",
+        "filing": "Dissolution - Nonprofit Corporation (Domestic)"
+      }
+    ],
+    "source_url_pattern": "https://mblsportal.sos.mn.gov/Business/SearchDetails?filingGuid=",
+    "retrieved": "2026-08-26",
+    "portal": "https://mblsportal.sos.mn.gov/Business/Search",
+    "notes": "Retrieved from the user computer because the research host cannot complete TLS to mblsportal.sos.state.mn.us. Status and officers are as displayed on the detail page that date, not historical snapshots except filing-history rows."
+  }
+]

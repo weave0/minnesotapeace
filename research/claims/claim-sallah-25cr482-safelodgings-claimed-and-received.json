@@ -1,0 +1,72 @@
+{
+  "reviewed_at": "2026-08-27T21:10:00Z",
+  "created_at": "2026-08-27T21:10:00Z",
+  "updated_at": "2026-08-27T21:10:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-sallah-25cr482-safelodgings-claimed-and-received",
+  "claim_text": "The December 16, 2025 indictment in United States v. Sallah, No. 0:25-cr-00482 (ECF 1), alleges that between approximately March 2023 and August 2025 Kaamil Omar Sallah and SafeLodgings, Inc. fraudulently claimed to be entitled to approximately $1.4 million for Housing Stabilization Services and received nearly $1.3 million. Paragraph 23 restates the claimed-entitled figure as about $1.4 million for purported services to nearly 150 beneficiaries. The $1.4 million is amount_claimed and the $1.3 million is amount_paid; they are in the same paragraph and must not be added. These are charging allegations, not proven_loss. Do not add them to first-wave HSS (Aden/Falade/Anwar/Asad) or to Feeding Our Future.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00482",
+  "source_ids": [
+    "src-mnd-25-cr-00482-ecf1-sallah-indictment"
+  ],
+  "subject_ids": [
+    "org-safelodgings-inc"
+  ],
+  "organizations": [
+    "org-safelodgings-inc"
+  ],
+  "date_start": "2023-03-01",
+  "date_end": "2025-08-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "page": 4,
+      "locator": "para 13",
+      "quote": "In all, between approximately March 2023 and August 2025, SALLAH and his company fraudulently claimed to be entitled to approximately $1.4 million for providing Housing Stabilization Services and received nearly $1.3 million."
+    },
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "page": 6,
+      "locator": "para 23",
+      "quote": "Ultimately, SALLAH fraudulently claimed to service nearly 150 different beneficiaries through SafeLodgings and for such services claimed to be entitled to about $1.4 million."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "period_start": "2023-03-01",
+      "period_end": "2025-08-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "methodology": "Indictment para 13: fraudulently claimed to be entitled to approximately $1.4 million. Restated para 23. Face of charging document."
+    },
+    {
+      "value": 1300000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2023-03-01",
+      "period_end": "2025-08-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "methodology": "Indictment para 13: received nearly $1.3 million. Amount_paid to the provider; schema has no amount_received. Same paragraph as $1.4M claimed; do not add."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "do not add $1.4M claimed + $1.3M received",
+    "do not sum para 13 + para 23 claimed figures",
+    "do not add to Aden $2.3M, Falade $2.2M, Anwar $1.2M, Asad $2.7M, or FOF $250M",
+    "para 1 'more than a million dollars' is qualitative and overlaps these figures",
+    "statewide $21M/$42M/$74M/$104M/$61M recitals belong to overlap_group hss-statewide-program-payouts-2021-2025h1-indictment-recital and are already claimed"
+  ],
+  "editorial_notes": "Para 21 Employee A / Leo Human Services recital is not a charge against Asad Adow and is not a Sallah dollar."
+}

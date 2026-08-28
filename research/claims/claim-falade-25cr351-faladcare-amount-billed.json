@@ -1,0 +1,59 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-falade-25cr351-faladcare-amount-billed",
+  "claim_text": "The September 17, 2025 indictment in United States v. Falade, No. 0:25-cr-00351 (ECF 1), alleges that between approximately July 2020 and June 2025 Faladcare Inc. submitted reimbursement claims totaling over $2.2 million, and that from offices in Little Canada and Woodbury the Falades claimed to service about 100 beneficiaries and claimed to be entitled to over $2.2 million. That is an amount_billed / amount_claimed charging allegation, not amount_paid and not proven_loss. Paragraph 13 and paragraph 17 describe the same Faladcare figure and must not be summed. The indictment does not state a personal-pocketing dollar figure for the Falades; do not copy Aden’s $300,000–$400,000 pocketing range onto this case, and do not add this billed figure to Aden Brilliant Minds $2.3 million or to FOF $250 million.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00351",
+  "source_ids": [
+    "src-mnd-25-cr-00351-ecf1-falade-indictment"
+  ],
+  "subject_ids": [
+    "org-faladcare-inc"
+  ],
+  "organizations": [
+    "org-faladcare-inc"
+  ],
+  "date_start": "2020-07-01",
+  "date_end": "2025-06-30",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00351-ecf1-falade-indictment",
+      "page": 4,
+      "locator": "para 13",
+      "quote": "In all, between approximately July 2020 and June 2025, Faladcare submitted reimbursement claims totaling over $2.2 million."
+    },
+    {
+      "source_id": "src-mnd-25-cr-00351-ecf1-falade-indictment",
+      "page": 5,
+      "locator": "para 17",
+      "quote": "From those locations, the FALADES claimed to service about 100 different beneficiaries and for such services claimed to be entitled to over $2.2 million."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_billed",
+      "period_start": "2020-07-01",
+      "period_end": "2025-06-30",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "falade-faladcare-2.2m-claims",
+      "methodology": "Indictment para 13: submitted reimbursement claims totaling over $2.2 million. Face of charging document; not amount_paid."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "over $2.2 million not an exact total",
+    "do not add to Aden $2.3M or FOF $250M",
+    "no Falade personal-pocketing dollar on this indictment"
+  ]
+}

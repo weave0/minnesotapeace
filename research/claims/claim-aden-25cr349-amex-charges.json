@@ -1,0 +1,48 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-aden-25cr349-amex-charges",
+  "claim_text": "The September 17, 2025 indictment in United States v. Aden et al., No. 0:25-cr-00349 (ECF 1) paragraph 24 alleges that the defendants shared a Platinum American Express credit card on which they accrued nearly half a million dollars in charges to fund and enhance their lifestyles, and that they paid those charges using Brilliant Minds company accounts. That is an alleged personal-expenditure figure paid from company accounts, not a Medicaid amount_billed or amount_paid total. It overlaps other Brilliant Minds dollars and must not be added to Falade figures or to FOF $250 million.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00349",
+  "source_ids": [
+    "src-mnd-25-cr-00349-ecf1-aden-indictment"
+  ],
+  "subject_ids": [
+    "org-brilliant-minds-services"
+  ],
+  "organizations": [
+    "org-brilliant-minds-services"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 7,
+      "locator": "para 24",
+      "quote": "The defendants also shared a Platinum American Express credit card, on which they accrued nearly half a million dollars in charges to fund and enhance their lifestyles. The defendants paid those charges using Brilliant Mind’s company accounts."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 500000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-brilliant-minds-amex-charges",
+      "methodology": "Indictment para 24: nearly half a million dollars in Amex charges paid from Brilliant Minds company accounts. Personal lifestyle charges, not Medicaid billed/paid."
+    }
+  ],
+  "qualifiers": [
+    "personal Amex charges not billing",
+    "do not add to Falade or FOF $250M"
+  ],
+  "editorial_notes": "metric_type alleged_loss used for lack of a personal-expenditure token; wording must remain 'accrued ... charges'."
+}

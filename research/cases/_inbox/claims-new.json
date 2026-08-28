@@ -1,0 +1,344 @@
+[
+  {
+    "claim_id": "cms-c-001",
+    "claim_text": "In a January 6, 2026 letter to Governor Tim Walz, published with the January 14, 2026 Federal Register notice (91 FR 1539, FR Doc. 2026-00512), CMS Administrator Mehmet Oz found that the Minnesota Medicaid agency was operating in substantial noncompliance with Social Security Act section 1902(a)(64) and 42 C.F.R. part 455, subpart A, because it failed to adequately identify, prevent, and address fraud, waste, and abuse.",
+    "normalized_claim": "CMS January 6, 2026 substantial-noncompliance finding against Minnesota Medicaid under SSA 1902(a)(64) and 42 CFR 455 Subpart A.",
+    "claim_type": "OVERSIGHT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-01-06",
+    "source_ids": ["FR-2026-00512"],
+    "supporting_passages": [
+      {
+        "source_id": "FR-2026-00512",
+        "page": 1540,
+        "quote": "This letter provides notice and an opportunity for a hearing on a finding by the Centers for Medicare & Medicaid Services (CMS) of significant noncompliance with applicable statutory and regulatory requirements in the operation of the Minnesota Medicaid program, because the Minnesota Medicaid agency fails to adequately identify, prevent, and address fraud in its Medicaid program."
+      },
+      {
+        "source_id": "FR-2026-00512",
+        "page": 1539,
+        "quote": "This notice announces the opportunity, pursuant to section 1904 of the Social Security Act (the Act), for an administrative hearing concerning the finding of the Administrator of the Centers for Medicare & Medicaid Services (CMS) that the State of Minnesota is substantially out of compliance with federal requirements in section 1902(a)(64) of the Act and federal regulations at 42 CFR part 455, subpart A"
+      }
+    ],
+    "agencies": ["CMS", "HHS", "MN-DHS"],
+    "statutes": ["42 U.S.C. 1396c (SSA 1904)", "SSA 1902(a)(64)", "42 CFR 455 Subpart A", "42 CFR 430.35"],
+    "qualifiers": [
+      "Administrative finding under SSA 1904; not a criminal charge, not a court judgment, not proven_loss.",
+      "Does not establish proposition D or E as to any named official.",
+      "The December 5, 2025 CMS letter directing a CAP is described in this notice but was not retrieved as a standalone cms.gov PDF this pass."
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "editorial_notes": "Actor class B (agency oversight failure as found by CMS). Not D/E.",
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "cms-c-002",
+    "claim_text": "Subject to Minnesota's opportunity for a hearing, CMS stated it would withhold a portion of FFP calculated as the federal share for one quarter of the previous calendar year's annual paid expenditures for fourteen high-risk services, estimated as $515,154,947.56, or an alternative substantiated amount, until a comprehensive CAP addressing those 14 service areas is fully and satisfactorily implemented.",
+    "normalized_claim": "CMS estimated quarterly FFP withholding formula of $515,154,947.56 for 14 high-risk services.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-01-06",
+    "source_ids": ["FR-2026-00512"],
+    "supporting_passages": [
+      {
+        "source_id": "FR-2026-00512",
+        "page": 1542,
+        "quote": "The quarterly withholding will be calculated based on the federal share for one quarter's amount of the previous calendar year's annual total paid expenditures for the fourteen high-risk services, estimated as $515,154,947.56, or an alternative substantiated amount per quarter based on evidence provided by the state"
+      }
+    ],
+    "amounts": [
+      {
+        "value": 515154947.56,
+        "currency": "USD",
+        "metric_type": "program_spend",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "methodology": "CMS estimate of federal share of one quarter of prior-calendar-year paid expenditures for 14 high-risk services; a withholding formula, not proven_loss and not alleged_loss.",
+        "overlap_group_id": "cms-14-high-risk-ffp"
+      }
+    ],
+    "qualifiers": [
+      "Withholding formula, not a finding that $515 million was stolen.",
+      "Distinct from the later $259,505,491 Q4-FY2025 deferral.",
+      "Do not add this figure to charged-case amounts or to the $9 billion oral estimate."
+    ],
+    "confidence": 0.95,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "cms-c-003",
+    "claim_text": "According to CMS analysis of Minnesota Medicaid data as stated in the January 6, 2026 Administrator letter, fourteen high-risk Medicaid services identified by the State consume $3.75 billion in federal and state taxpayer resources.",
+    "normalized_claim": "CMS states 14 high-risk Minnesota Medicaid services consume $3.75 billion federal-plus-state resources.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-01-06",
+    "source_ids": ["FR-2026-00512"],
+    "supporting_passages": [
+      {
+        "source_id": "FR-2026-00512",
+        "page": 1541,
+        "quote": "According to CMS analysis of Minnesota Medicaid data, these fourteen programs consume $3.75 billion in federal and state taxpayer resources."
+      }
+    ],
+    "amounts": [
+      {
+        "value": 3750000000,
+        "currency": "USD",
+        "metric_type": "program_spend",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "methodology": "CMS analysis of Minnesota Medicaid data for 14 high-risk services self-identified by the State; combined federal and state resources. Not a fraud total.",
+        "overlap_group_id": "cms-14-high-risk-spend"
+      }
+    ],
+    "qualifiers": [
+      "program_spend, including any legitimate care. Not alleged_loss, not proven_loss, not the $9 billion oral estimate.",
+      "Period covered by the $3.75 billion figure is not stated in the letter excerpt."
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "cms-c-004",
+    "claim_text": "On February 25, 2026, CMS announced a deferral of $259,505,491 in federal matching funds on Minnesota Medicaid spending for the fourth quarter of FY 2025, described as including $243.8 million for unsupported or potentially fraudulent Medicaid claims and $15.4 million related to claims involving individuals lacking a satisfactory immigration status.",
+    "normalized_claim": "CMS deferred $259,505,491 FFP on Minnesota Q4 FY2025 CMS-64 claims.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-02-25",
+    "source_ids": ["CMS-CRACK"],
+    "supporting_passages": [
+      {
+        "source_id": "CMS-CRACK",
+        "quote": "CMS' review of Minnesota's Medicaid spending for the fourth quarter in FY 2025 resulted in a deferral of $259,505,491 in federal matching funds. This includes state expenditures of $243.8 million for unsupported or potentially fraudulent Medicaid claims and $15.4 million related to claims involving individuals lacking a satisfactory immigration status."
+      }
+    ],
+    "amounts": [
+      {
+        "value": 259505491,
+        "currency": "USD",
+        "metric_type": "identified_for_recovery",
+        "exact_or_approximate": "exact",
+        "gross_or_net": "unknown",
+        "methodology": "CMS 42 CFR 430.40 deferral of QE 30 September 2025 CMS-64 FFP; administrative hold pending state documentation, not a completed disallowance and not proven_loss.",
+        "overlap_group_id": "cms-q4-fy2025-deferral"
+      },
+      {
+        "value": 243800000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "methodology": "CMS press-release split: 'unsupported or potentially fraudulent' component of the same $259,505,491 deferral. Do not add to the parent total.",
+        "overlap_group_id": "cms-q4-fy2025-deferral"
+      },
+      {
+        "value": 15400000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "methodology": "CMS press-release split: immigration-status documentation component of the same $259,505,491 deferral. Do not add to the parent total.",
+        "overlap_group_id": "cms-q4-fy2025-deferral"
+      }
+    ],
+    "qualifiers": [
+      "Deferral is not disallowance and is not a finding that $259.5 million was stolen.",
+      "Mixes potentially fraudulent claims with immigration-status documentation issues.",
+      "Do not sum with the $515 million withhold formula or with charged-case amounts."
+    ],
+    "confidence": 0.93,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "optum-c-001",
+    "claim_text": "Optum's January 30, 2026 Phase 1 Summary Report, prepared for Minnesota DHS and archived by the Minnesota Legislative Reference Library, states that Phase I identified over $52.3 million in direct recoveries attributable to clearly defined policy violations across 14 high-risk service areas from paid-claim analyses of 46 months of fee-for-service claims (managed-care claims out of scope).",
+    "normalized_claim": "Optum Phase 1 identified over $52.3 million in direct recoveries on 14-category FFS paid claims.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-01-30",
+    "source_ids": ["OPTUM-P1", "DHS-OPTUM-206"],
+    "supporting_passages": [
+      {
+        "source_id": "OPTUM-P1",
+        "page": 1,
+        "quote": "Identify over $52.3 million in direct recoveries attributable to clearly defined policy violations across the 14 high-risk service areas from paid claim analyses. Direct recoveries are related to funds that can be recouped based on identified issues (usually, directly against policy standards)."
+      },
+      {
+        "source_id": "OPTUM-P1",
+        "page": 5,
+        "quote": "Data includes 46 months of fee for service paid claims data. Managed Care claims were not a part of this scope."
+      }
+    ],
+    "amounts": [
+      {
+        "value": 52300000,
+        "currency": "USD",
+        "metric_type": "identified_for_recovery",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "period_start": "2022-10-01",
+        "period_end": "2025-12-31",
+        "methodology": "Optum paid-claim analytics on 46 months of FFS claims in 14 high-risk services; 'direct recoveries' defined as recoupable based on identified policy-standard issues. Not recovered_amount. MCO encounters excluded.",
+        "overlap_group_id": "optum-p1-ffs-14"
+      }
+    ],
+    "qualifiers": [
+      "identified_for_recovery, not recovered_amount, not proven_loss, not alleged_loss in a charging document.",
+      "Contractor report for DHS; DHS later said Phase 1 'is not a measure of fraud, waste and abuse.'",
+      "Managed-care claims excluded; do not treat as a whole-Medicaid fraud total."
+    ],
+    "confidence": 0.9,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "optum-c-002",
+    "claim_text": "The same Optum Phase 1 Summary Report identifies potential recoveries totaling more than $1.7 billion based on paid-claim analyses, defined as point-in-time opportunities for corrective action usually associated with missing or vague policy that may require medical-necessity review. Minnesota Medicaid Director John Connolly stated on February 6, 2026 that this work 'is not a measure of fraud, waste and abuse.'",
+    "normalized_claim": "Optum Phase 1 $1.7 billion figure is potential recoveries from policy gaps, not a fraud total.",
+    "claim_type": "AMOUNT",
+    "evidence_class": "AGENCY_POSITION",
+    "status": "AGENCY_FINDING",
+    "proposition_class": "C_NEGLIGENCE_MISADMINISTRATION",
+    "event_date": "2026-01-30",
+    "source_ids": ["OPTUM-P1", "DHS-OPTUM-206"],
+    "supporting_passages": [
+      {
+        "source_id": "OPTUM-P1",
+        "page": 1,
+        "quote": "Identify potential recoveries that total more than $1.7 billion based on paid claim analyses. These costs are associated with a point in time that suggest opportunities for corrective action (usually, missing/vague policy found within vulnerabilities), and may require a review of records for medical necessity."
+      },
+      {
+        "source_id": "DHS-OPTUM-206",
+        "quote": "This is not a measure of fraud, waste and abuse, but it shows us where we need to do more work to understand why these claims are raising red flags"
+      }
+    ],
+    "amounts": [
+      {
+        "value": 1700000000,
+        "currency": "USD",
+        "metric_type": "unknown_or_disputed",
+        "exact_or_approximate": "approximate",
+        "gross_or_net": "unknown",
+        "methodology": "Optum 'potential recoveries' on FFS paid claims where policies were missing/vague; may require medical-necessity review. DHS: not a measure of FWA. Do not treat as fraud_estimate or proven_loss. Overlaps the $52.3M direct-recovery subset; do not add.",
+        "overlap_group_id": "optum-p1-ffs-14"
+      }
+    ],
+    "qualifiers": [
+      "Do not publish $1.7 billion as stolen or as proven fraud.",
+      "Do not add $1.7B to $52.3M; the latter is a subset of paid-claim findings.",
+      "MCO out of scope."
+    ],
+    "confidence": 0.92,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "ho-c-001",
+    "claim_text": "The March 4, 2026 House Oversight majority interim staff report alleges that senior Minnesota officials, including Governor Walz and Attorney General Ellison, were aware of credible fraud concerns as early as 2019 at DHS and by April 2020 at MDE, possessed authority to stop payments, and repeatedly failed to act. The report's own excerpt of former DHS Commissioner Tony Lourey's February 6, 2026 transcribed interview shows Lourey said he communicated 2019 program-integrity issues to Chief of Staff Chris Schmitter but, asked whether Schmitter briefed the Governor, answered 'I can't speak to conversations that I wasn't involved in.'",
+    "normalized_claim": "House Oversight majority staff alleges 2019/2020 official knowledge of fraud; Lourey interview as excerpted does not itself prove Walz was briefed.",
+    "claim_type": "OVERSIGHT",
+    "evidence_class": "LEGISLATIVE_FINDING_OR_ALLEGATION",
+    "status": "alleged",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2026-03-04",
+    "date_start": "2019-01-01",
+    "date_end": "2020-04-30",
+    "source_ids": ["HO-STAFF-0304", "HO-COMER-REL"],
+    "supporting_passages": [
+      {
+        "source_id": "HO-STAFF-0304",
+        "page": 2,
+        "quote": "Senior officials in the Governor's office and Attorney General Ellison's office were aware of credible fraud concerns in Minnesota's social services programs as early as 2019 within the Department of Human Services (DHS) and by April 2020 within the Department of Education (MDE), despite later public statements by Governor Walz suggesting otherwise."
+      },
+      {
+        "source_id": "HO-STAFF-0304",
+        "page": 16,
+        "quote": "Q Do you know if Mr. Schmitter then briefed the Governor or passed that information along to the Governor about the program integrity or the major program integrity concerns that DHS had at that time? A I can't speak to conversations that I wasn't involved in."
+      }
+    ],
+    "persons": ["Tim Walz", "Keith Ellison", "Tony Lourey", "Chris Schmitter"],
+    "agencies": ["MN-DHS", "MDE", "Office of the Governor"],
+    "qualifiers": [
+      "Majority staff report is LEGISLATIVE_FINDING_OR_ALLEGATION, not a criminal charging document and not proposition D or E.",
+      "Lourey's excerpted answers support that 2019 program-integrity issues were discussed with the Governor's chief of staff; they do not themselves establish that Walz was briefed or that any official joined a fraudulent scheme.",
+      "Transcribed-interview oath status not confirmed from the opening pages harvested this pass; treat as committee interview record.",
+      "The same report repeats 'potentially $9 billion in Medicaid-related funds' — that is reuse of the prosecutor estimate, not an independent measurement."
+    ],
+    "assertion_ladder": {
+      "claim": "Officials knowingly facilitated fraud or committed crimes (proposition D/E).",
+      "evidence_available": [
+        "OLA 2019 CCAP reports existed during the Walz administration.",
+        "Lourey said he discussed 2019 program-integrity tools/authority with Chief of Staff Schmitter.",
+        "CMS later found substantial noncompliance (cms-c-001) — administrative B, not criminal D.",
+        "Majority staff report alleges knowledge, delay, and whistleblower retaliation."
+      ],
+      "missing_evidence": [
+        "A charging instrument naming a Minnesota statewide elected official, DHS commissioner, or CMS official as a criminal defendant.",
+        "A source showing a specified official knowingly joined a fraudulent scheme.",
+        "Official GPO transcript of the March 4, 2026 hearing (not retrieved this pass)."
+      ],
+      "current_assessment": "Strong evidence of B/C (oversight failure and administrative weakness). Insufficient evidence for D/E as to named officials. Do not collapse the staff report into a criminal finding."
+    },
+    "confidence": 0.85,
+    "is_allegation": true,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  },
+  {
+    "claim_id": "fof-c-031",
+    "claim_text": "In a January 29, 2026 House Oversight transcribed interview excerpted in the March 4, 2026 majority staff report, MDE Director of Nutrition Program Services Emily Honer stated that MDE made a formal complaint to the USDA Office of Inspector General in the October/November 2020 timeframe, followed up in a November/December 2020 meeting and into early 2021, and that to her knowledge no USDA OIG investigation was started; she described the OIG's response as 'basically absent.'",
+    "normalized_claim": "Honer testimony: MDE referred SFSP/CACFP concerns to USDA OIG Oct/Nov 2020; she knew of no resulting OIG investigation.",
+    "claim_type": "OVERSIGHT",
+    "evidence_class": "LEGISLATIVE_FINDING_OR_ALLEGATION",
+    "status": "alleged",
+    "proposition_class": "B_OVERSIGHT_FAILURE",
+    "event_date": "2020-11-01",
+    "date_start": "2020-10-01",
+    "date_end": "2021-03-31",
+    "source_ids": ["HO-STAFF-0304", "HO-HONER-TI"],
+    "supporting_passages": [
+      {
+        "source_id": "HO-STAFF-0304",
+        "page": 14,
+        "quote": "So again, in October, November time frame of 2020 is when the formal complaint was made, which is following the CACFP and other program regulations. When we have concerns, we've used our tools, the next step is to report to the regional office of Inspector General. So we did that, and didn't hear back right away."
+      },
+      {
+        "source_id": "HO-STAFF-0304",
+        "page": 14,
+        "quote": "And I continued to email with the Office of Inspector General, both on the case they were investigating, and on having additional concerns throughout the beginning of 2021 with, again, no investigation, to my knowledge, being started."
+      }
+    ],
+    "persons": ["Emily Honer"],
+    "agencies": ["MDE", "USDA-OIG", "USDA-FNS"],
+    "programs": ["CACFP", "SFSP"],
+    "qualifiers": [
+      "Honer's account is committee-interview testimony, not a USDA OIG closeout or audit finding.",
+      "This pass still found no Minnesota-specific USDA OIG audit or investigation report of Feeding Our Future on oig.usda.gov.",
+      "Supports a B/C gap (federal inspector-general follow-up), not D/E as to MDE or USDA officials.",
+      "OLA 2024 already recorded MDE's statement that it informed USDA OIG in Oct/Nov 2020; Honer is a named-actor account of the same referral."
+    ],
+    "confidence": 0.88,
+    "is_allegation": false,
+    "is_inference": false,
+    "reviewed_at": "2026-08-26T23:50:00-05:00"
+  }
+]

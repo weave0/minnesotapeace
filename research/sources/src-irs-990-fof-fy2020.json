@@ -1,0 +1,19 @@
+{
+  "source_id": "src-irs-990-fof-fy2020",
+  "canonical_url": "https://apps.irs.gov/pub/epostcard/cor/814343304_202009_990_2022072620253896.pdf",
+  "issuing_body": "Internal Revenue Service (Form 990 filed by Feeding Our Future)",
+  "title": "Feeding Our Future Form 990, tax year 2019, fiscal period Oct 1 2019\u2013Sep 30 2020",
+  "publication_date": "2021-11-04",
+  "retrieval_date": "2026-08-26",
+  "document_date": "2021-09-24",
+  "document_type": "form_990",
+  "local_path": "research/entities/990s/814343304_202009_990_2022072620253896.pdf",
+  "sha256": "97f5ba8d5629d72861faa9b66d41f0b0a882b07e7a4839672b9b8032649eab62",
+  "mime_type": "application/pdf",
+  "page_count": 27,
+  "extracted_text_path": "research/entities/raw/fof-2020-990-ocr.txt",
+  "access_status": "archived",
+  "notes": "IRS TEOS epostcard /cor/ TIFF-wrapper scan. Face of form: signed Aimee Bock, President, 2021-09-24; paid preparer Hussein Hashi, CPA, Daud & Hashi Consulting Services LLC; IRS RECEIVED stamp Ogden UT Nov 4 2021; SCANNED Jun 30 2022. This is the organization's self-reported information return, not an IRS determination that the figures are true program receipts. No FY2021+ Form 990 for this EIN appears in IRS e-file indexes 2019\u20132025.",
+  "source_tier": 7,
+  "source_status": "PRIMARY_FINANCIAL_RECORD"
+}

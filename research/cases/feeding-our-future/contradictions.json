@@ -1,0 +1,63 @@
+{
+  "family_id": "feeding-our-future",
+  "generated_at": "2026-08-26T16:04:00-05:00",
+  "contradiction_count": 5,
+  "contradictions": [
+    {
+      "contradiction_id": "fof-x-001",
+      "claim_a": "fof-c-011",
+      "claim_b": "fof-c-016",
+      "source_a": "S28",
+      "source_b": "S28",
+      "nature_of_conflict": "Whether Judge John Guthmann ordered MDE to resume Feeding Our Future reimbursements in April 2021. Judicial Branch 2022-09-23: never ordered; MDE resumed voluntarily. Star Tribune / commissioner Senate testimony / Governor Walz: judge ordered payments to resume. The court calls those statements false.",
+      "possible_reconciliation": "The public statements appear to have conflated a December 22, 2020 consent order on processing site applications (not payments) and later sanctions litigation with a nonexistent payment order. Preserve both; do not silently overwrite.",
+      "status": "open",
+      "editorial_resolution": null,
+      "notes": "Seed contradiction for the corpus. Court system's own statement of the record is S28. Political counter-statements are AGENCY_POSITION of the executive on the narrow ordered-to-pay point."
+    },
+    {
+      "contradiction_id": "fof-x-002",
+      "claim_a": "fof-c-017",
+      "claim_b": "fof-c-004",
+      "source_a": "S11",
+      "source_b": "L01",
+      "nature_of_conflict": "Official FOF conviction count. Last verified DOJ/IRS figure in this corpus is 65 on 2026-04-09 (S11). Journalism/ChatGPT claim 68 as of 2026-07-24 (L01; KSTP also notes a DOJ correction from 70th to 68th). Star Tribune 2026-08-19 says 69 convicted (L02).",
+      "possible_reconciliation": "Later official PRs may exist but were not captured (USAO-MN Akamai blocks). Until a matching .gov page is retrieved, 68/69 remain LEAD_UNVERIFIED.",
+      "status": "unresolved",
+      "notes": "Do not publish 68 as DOJ-verified."
+    },
+    {
+      "contradiction_id": "fof-x-003",
+      "claim_a": "fof-c-010",
+      "claim_b": "fof-c-023",
+      "source_a": "S26",
+      "source_b": "S27",
+      "nature_of_conflict": "Adequacy of MDE oversight. OLA: inadequate; actions and inactions created opportunities for fraud. Commissioner Jett (2024-06-07): MDE’s oversight met applicable standards and MDE made effective referrals; responsibility lies with indicted/convicted fraudsters.",
+      "possible_reconciliation": "OLA is an audit conclusion (B/C). MDE’s letter is AGENCY_POSITION. They can coexist as disagreement; neither is a criminal finding against MDE officials (not D).",
+      "status": "open",
+      "notes": "Do not collapse the dispute into a single 'MDE committed fraud' or 'MDE did nothing wrong' headline."
+    },
+    {
+      "contradiction_id": "fof-x-004",
+      "claim_a": "fof-c-001",
+      "claim_b": "fof-c-015",
+      "source_a": "S01",
+      "source_b": "S21",
+      "nature_of_conflict": "Scheme-size language: 2022 charging headline $250 million (S01, also OLA recitation) versus later IRS-CI Pub 3583 'over $300 million' (S21). Both are estimates/characterizations, not proven_loss.",
+      "possible_reconciliation": "Different vintages and metrics (charging alleged_loss vs agency recap). Treat as MAY_OVERLAP, not additive.",
+      "status": "unresolved",
+      "notes": "Neither figure is a court-certified network restitution total."
+    },
+    {
+      "contradiction_id": "fof-x-005",
+      "claim_a": "fof-c-006",
+      "claim_b": "fof-c-006",
+      "source_a": "S09",
+      "source_b": "L03",
+      "nature_of_conflict": "Juror-bribery sentence length. Abdulkarim Shafii Farah was sentenced 57 months on 2026-03-04 (S09, ADJUDICATED). Journalism attributes a 120-month July 22, 2026 sentence to Abdiaziz Shafii Farah (L03). These are different people; the 120-month term is not on a fetched .gov page.",
+      "possible_reconciliation": "Do not conflate Abdulkarim’s 57-month sentence with the unpublished Abdiaziz 120-month claim. Capture the USAO PR if/when reachable.",
+      "status": "unresolved",
+      "notes": "Same claim_id appears on both sides because CLAIMS.md bundled the verified plea/Abdulkarim sentence with the unverified July 2026 term. Split in public wording."
+    }
+  ]
+}

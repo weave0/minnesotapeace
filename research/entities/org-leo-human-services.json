@@ -1,0 +1,38 @@
+{
+  "entity_id": "org-leo-human-services",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Leo Human Services L.L.C.",
+  "aliases": [
+    "Leo Human Services LLC"
+  ],
+  "business_reg_ids": [
+    "MN-SOS-1305222600022"
+  ],
+  "officers": [
+    {
+      "name": "Asad Adow",
+      "title": "Registered agent / Manager",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "7100 Northland Cir N",
+      "line2": "Ste 404",
+      "city": "Brooklyn Park",
+      "state": "MN",
+      "postal_code": "55428",
+      "country": "US",
+      "raw": "7100 NORTHLAND CIR N STE 404, BROOKLYN PARK, MN 55428, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1305222600022, formed 2022-03-24, Active. Agent/manager Asad Adow. Name-matched to HSS 25-cr-354; SOS record is not the information/plea.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

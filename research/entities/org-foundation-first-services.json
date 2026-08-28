@@ -1,0 +1,35 @@
+{
+  "entity_id": "org-foundation-first-services",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Foundation First Services L.L.C.",
+  "business_reg_ids": [
+    "MN-SOS-1392114100023"
+  ],
+  "officers": [
+    {
+      "name": "Abdifitah M Mohamed",
+      "title": "Manager",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "1821 University Ave W",
+      "line2": "Ste 158",
+      "city": "Saint Paul",
+      "state": "MN",
+      "postal_code": "55104",
+      "country": "US",
+      "raw": "1821 UNIVERSITY AVE W STE 158, SAINT PAUL, MN 55104, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1392114100023, formed 2023-05-18, Active. Manager Abdifitah M Mohamed. Same building as Brilliant Minds (different suite). Name-matched to HSS charging documents; not a conviction.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

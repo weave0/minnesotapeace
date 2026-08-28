@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-08-27T03:20:00Z",
+  "created_at": "2026-08-27T03:20:00Z",
+  "updated_at": "2026-08-27T03:20:00Z",
+  "is_inference": false,
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "claim_id": "claim-sos-fof-file-913838800020",
+  "claim_text": "Minnesota SOS MBLS lists Feeding Our Future as a domestic nonprofit corporation, file number 913838800020, original filing 2016-11-07, MN Stat. ch. 317A, status Active / In Good Standing as of 2026-08-26, with an Intent to Dissolve filing dated 2022-02-25.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

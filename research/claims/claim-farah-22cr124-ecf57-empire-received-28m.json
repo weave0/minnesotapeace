@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "status": "alleged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "event_date": "2022-09-13",
+  "claim_id": "claim-farah-22cr124-ecf57-empire-received-28m",
+  "claim_text": "The September 13, 2022 Farah superseding indictment, No. 0:22-cr-00124 (ECF 57) paras 18 and 43, alleges that Empire Cuisine and Market received more than $28 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022, as a site and meal vendor under Feeding Our Future and Sponsor A. Face language is received (amount_paid), not amount_billed and not proven_loss. This is a subset of the $40 million Empire-group figure and must not be added to that $40 million, to the Bock $250 million headline, to HSS, or to the Mohamed $12 million.",
+  "claim_type": "AMOUNT",
+  "organizations": [
+    "org-feeding-our-future",
+    "org-empire-cuisine-and-market"
+  ],
+  "date_start": "2020-05-01",
+  "date_end": "2022-01-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 6,
+      "locator": "para 18",
+      "quote": "In all, Empire Cuisine and Market received more than $28 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 13,
+      "locator": "para 43",
+      "quote": "In all, Empire Cuisine and Market received more than $28 million in Federal Child Nutrition Program funds between May 2020 and January 2022."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 28000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2020-05-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Paras 18 and 43: Empire Cuisine and Market received more than $28 million. Face language is received/paid. Subset of $40M scheme."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "face language is received (amount_paid), not billed, not proven_loss",
+    "subset of empire-22cr124-40m-scheme $40M",
+    "do not add to Bock $250M, HSS, or Mohamed $12M"
+  ]
+}

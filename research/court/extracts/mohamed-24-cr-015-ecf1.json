@@ -1,0 +1,999 @@
+{
+  "docket_number": "0:24-cr-00015",
+  "ecf": 1,
+  "filed": "2024-01-24",
+  "unsealed": "2024-02-05",
+  "unsealed_note": "Unsealed date is from the prior stub / PDF ModDate 2024-02-05, not printed as a date on the face of page 1. Face stamp: SCANNED JAN 24 2024 U.S. DISTRICT COURT MPLS. Header case id is 0:24-cr-00015-ECT-DJF.",
+  "pages": 37,
+  "instrument": "indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Ikram Yusuf Mohamed, Suleman Yusuf Mohamed, Aisha Hassan Hussein, Sahra Sharif Osman, Shakur Abdinur Abdisalam, Fadumo Mohamed Yusuf, and Gandi Yusuf Mohamed, also known as Gandi Abdi Kediye",
+  "short_caption": "United States v. Mohamed, et al.",
+  "header_case_id": "0:24-cr-00015-ECT-DJF",
+  "judge": "Eric C. Tostrud",
+  "source_pdf": "research/court/pdfs/0_24-cr-00015_ecf1_mohamed.pdf",
+  "sha256": "eb090e5e657fe64fff1819c26ed073aa934b689f0e1e49b0ac1df47b81df0d1f",
+  "bytes": 2613292,
+  "ocr_text": "research/court/raw/mohamed-24-cr-015-ecf1.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
+  "investigation_family": "feeding-our-future",
+  "not_hss": true,
+  "caption_statutes": [
+    "18 U.S.C. § 371",
+    "18 U.S.C. § 666",
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 1956",
+    "18 U.S.C. § 1957"
+  ],
+  "ocr_corrections": [
+    {
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 3871 and defendant 1 as IXRAM. Visual inspection of the scan shows 18 U.S.C. § 371 and IKRAM YUSUF MOHAMED.",
+      "used": "18 U.S.C. § 371; Ikram Yusuf Mohamed"
+    },
+    {
+      "page": "26-27",
+      "issue": "Wire-fraud table OCR dropped count numerals 6, 7, 8, and 9. Visual inspection of the tables shows Counts 6–9 as listed in counts[].rows.",
+      "used": "Counts 6–9 restored from page images"
+    },
+    {
+      "page": 32,
+      "issue": "Bribery table OCR dropped the numeral 27 and collapsed the Aisha June 3 $7,500 row into the prior row. Visual inspection shows Count 27.",
+      "used": "Count 27, June 3, 2021, $7,500 United Youth of Mpls to IM Consultation"
+    },
+    {
+      "page": 35,
+      "issue": "Money-laundering table OCR dropped the numeral 40 on the April 6, 2021 Land Rover row.",
+      "used": "Count 40"
+    },
+    {
+      "page": 36,
+      "issue": "Tesseract read Count 47 as AT.",
+      "used": "Count 47"
+    },
+    {
+      "page": "11,13-14,16,18-19,21,24",
+      "issue": "Embedded meal-count-sheet exhibits, cashier's-check images, and Afrique payment table are heavily garbled. Charging narrative around those exhibits was used; exhibit cell values were not inventoried as counts."
+    },
+    {
+      "page": "1-37",
+      "issue": "CM/ECF header fragments, missing spaces, and name variants (AASHA/AISHA, TKRAM/IXRAM/IXKRAM, Untied {Sic} Youth). Count tables and dollar figures were checked against page images."
+    }
+  ],
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Ikram Yusuf Mohamed",
+      "role_on_face": "FOF consultant; alleged to have opened sites in relatives’ names; IM Consultation LLC (registered on or about 2021-03-10) used to receive kickbacks."
+    },
+    {
+      "n": 2,
+      "name": "Suleman Yusuf Mohamed",
+      "role_on_face": "Brother of Ikram; owner of Star Distribution LLC, alleged sham food vendor."
+    },
+    {
+      "n": 3,
+      "name": "Aisha Hassan Hussein",
+      "role_on_face": "Sister of Ikram; principal of United Youth of MPLS LLC."
+    },
+    {
+      "n": 4,
+      "name": "Sahra Sharif Osman",
+      "role_on_face": "Principal of Youth International Club LLC (Hopkins and Edina sites)."
+    },
+    {
+      "n": 5,
+      "name": "Shakur Abdinur Abdisalam",
+      "role_on_face": "Husband of Ikram; created Inspiring Youth & Out Reach LLC."
+    },
+    {
+      "n": 6,
+      "name": "Fadumo Mohamed Yusuf",
+      "role_on_face": "Mother of Ikram; ran Active Mind’s Youth LLC."
+    },
+    {
+      "n": 7,
+      "name": "Gandi Yusuf Mohamed",
+      "aka": [
+        "Gandi Abdi Kediye"
+      ],
+      "role_on_face": "Brother of Ikram; owner of GAK Properties LLC and GIF Properties LLC, alleged to receive/launder proceeds; also alleged to have submitted fraudulent meal counts."
+    }
+  ],
+  "providers": [
+    {
+      "name": "United Youth of MPLS LLC",
+      "aliases_on_face": [
+        "United Youth",
+        "United Youth of Minneapolis",
+        "Untied {Sic} Youth of MPLS LLC"
+      ],
+      "role_on_face": "FOF-sponsored site operator; Aisha Hassan Hussein principal. Two Minneapolis sites alleged."
+    },
+    {
+      "name": "Youth International Club LLC",
+      "aliases_on_face": [
+        "Youth International",
+        "Youth International Club"
+      ],
+      "role_on_face": "FOF-sponsored; Sahra Sharif Osman principal. Hopkins and Edina sites alleged."
+    },
+    {
+      "name": "Inspiring Youth & Out Reach LLC",
+      "aliases_on_face": [
+        "Inspiring Youth",
+        "inspiring youth & Out reach L.L.C.",
+        "Inspiring Youth and Outreach LLC"
+      ],
+      "role_on_face": "FOF-sponsored; Shakur Abdinur Abdisalam. Same north Minneapolis address as a United Youth site alleged."
+    },
+    {
+      "name": "Active Mind’s Youth LLC",
+      "aliases_on_face": [
+        "Active Minds",
+        "Active Mind's Youth"
+      ],
+      "role_on_face": "FOF-sponsored; Fadumo Mohamed Yusuf. East Lake Street, Minneapolis."
+    },
+    {
+      "name": "Star Distribution LLC",
+      "aliases_on_face": [
+        "Star Distribution"
+      ],
+      "role_on_face": "Alleged sham food vendor created by Suleman Yusuf Mohamed."
+    },
+    {
+      "name": "IM Consultation LLC",
+      "aliases_on_face": [
+        "IM Consultation"
+      ],
+      "role_on_face": "Registered by Ikram Yusuf Mohamed on or about 2021-03-10; alleged kickback/laundering vehicle."
+    },
+    {
+      "name": "GAK Properties LLC",
+      "aliases_on_face": [
+        "G.A.K. Properties LLC",
+        "GAK Properties"
+      ],
+      "role_on_face": "Created by Gandi Yusuf Mohamed on or about 2020-11-12; alleged proceeds/laundering vehicle."
+    },
+    {
+      "name": "GIF Properties LLC",
+      "aliases_on_face": [
+        "GIF Properties"
+      ],
+      "role_on_face": "Alleged Gandi Yusuf Mohamed company used to receive 'rent' from Star Distribution and others."
+    },
+    {
+      "name": "Feeding Our Future",
+      "aliases_on_face": [
+        "FOF"
+      ],
+      "role_on_face": "Sponsoring nonprofit; Aimee Bock named as founder and executive director. Not a defendant in this instrument.",
+      "entity_id": "org-feeding-our-future"
+    }
+  ],
+  "scheme_period": {
+    "start": "2020-12",
+    "end": "2022-04",
+    "page": 8,
+    "para": 25,
+    "notes": "Count 1: December 2020 through in or about 2022. Wire/ML charging paragraphs run through April 2022. Meal-claim summary in para 91 is December 2020–November 2021."
+  },
+  "counts": [
+    {
+      "count": 1,
+      "statute": "18 U.S.C. §§ 371 and 1343",
+      "title": "Conspiracy to commit wire fraud",
+      "pages": "8-25",
+      "heading_page": 8,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
+      "object_quote": "The object and purpose of the conspiracy was to carry out a fraudulent scheme to obtain Federal Child Program funds by submitting fraudulent claims that they were serving meals to thousands of children a day.",
+      "named_defendants": [
+        "Ikram Yusuf Mohamed",
+        "Suleman Yusuf Mohamed",
+        "Aisha Hassan Hussein",
+        "Sahra Sharif Osman",
+        "Shakur Abdinur Abdisalam",
+        "Fadumo Mohamed Yusuf",
+        "Gandi Yusuf Mohamed"
+      ],
+      "period": {
+        "start": "2020-12",
+        "end": "2022"
+      },
+      "notes": "All seven caption defendants are named. Closing line is § 371; charging paragraph also cites § 1343 as the object offense. Face object language is 'Federal Child Program funds' (Nutrition omitted in that sentence)."
+    },
+    {
+      "count": "2-20",
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "pages": "25-28",
+      "heading_page": 25,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+      "named_defendants": [
+        "Ikram Yusuf Mohamed",
+        "Suleman Yusuf Mohamed",
+        "Aisha Hassan Hussein",
+        "Sahra Sharif Osman",
+        "Shakur Abdinur Abdisalam",
+        "Fadumo Mohamed Yusuf",
+        "Gandi Yusuf Mohamed"
+      ],
+      "period": {
+        "start": "2020-12",
+        "end": "2022-04"
+      },
+      "notes": "Interstate-email and FOF-to-site payment table. Charging paragraph names all seven defendants. Individual rows identify the sender/recipient of that wire. Payment-row dollars are alleged FOF disbursements to family-site accounts; they overlap the para 91 >$12 million received figure and must not be summed as additional loss. OCR dropped numerals 6–9; restored from page images.",
+      "rows": [
+        {
+          "count": 2,
+          "date_on_or_about": "2021-02-24",
+          "page": 26,
+          "wire": "An email from AISHA HUSSEIN containing meal count sheets with the subject line “Lake Street location” to Feeding Our Future that traveled through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 3,
+          "date_on_or_about": "2021-03-07",
+          "page": 26,
+          "wire": "An email from IKRAM MOHAMED to SULEMAN with the subject line “Invoices” that traveled through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 4,
+          "date_on_or_about": "2021-03-15",
+          "page": 26,
+          "wire": "An email from FADUMO YUSUF to Feeding Our Future with the subject line “Active minds” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 5,
+          "date_on_or_about": "2021-03-25",
+          "page": 26,
+          "amount_usd": 240920,
+          "wire": "Payment in the amount of approximately $240,920 from a Feeding Our Future bank account to an Active Mind’s Youth LLC bank account controlled by FADUMO YUSUF"
+        },
+        {
+          "count": 6,
+          "date_on_or_about": "2021-05-05",
+          "page": 26,
+          "wire": "An email from AISHA HASSAN HUSSEIN to Feeding Our Future with the subject line “April 2021” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 7,
+          "date_on_or_about": "2021-05-07",
+          "page": 26,
+          "amount_usd": 199571,
+          "wire": "Payment in the amount of approximately $199,571 from a Feeding Our Future bank account to an Inspiring Youth & Outreach LLC bank account controlled by SHAKUR ABDISALAM"
+        },
+        {
+          "count": 8,
+          "date_on_or_about": "2021-05-07",
+          "page": 27,
+          "amount_usd": 210088,
+          "wire": "Payment in the amount of approximately $210,088 from a Feeding Our Future bank account to a United Youth of Mpls LLC bank account controlled by AISHA HUSSEIN"
+        },
+        {
+          "count": 9,
+          "date_on_or_about": "2021-05-17",
+          "page": 27,
+          "amount_usd": 215107,
+          "wire": "Payment in the amount of approximately $215,107 from a Feeding Our Future bank account to a United Youth of Mpls LLC bank account controlled by AISHA HUSSEIN"
+        },
+        {
+          "count": 10,
+          "date_on_or_about": "2021-05-17",
+          "page": 27,
+          "amount_usd": 200766,
+          "wire": "Payment in the amount of approximately $200,766 from a Feeding Our Future bank account to an Inspiring Youth & Outreach LLC bank account controlled by SHAKUR ABDISALAM"
+        },
+        {
+          "count": 11,
+          "date_on_or_about": "2021-05-24",
+          "page": 27,
+          "amount_usd": 270345,
+          "wire": "Payment in the amount of approximately $270,345 from a Feeding Our Future bank account to an Active Mind's Youth LLC bank account controlled by FADUMO YUSUF"
+        },
+        {
+          "count": 12,
+          "date_on_or_about": "2021-06-06",
+          "page": 27,
+          "wire": "An email from FADUMO MOHAMED YUSUF to Feeding Our Future with the subject line “MAY 2021” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 13,
+          "date_on_or_about": "2021-06-11",
+          "page": 27,
+          "amount_usd": 300000,
+          "wire": "Payment in the amount of approximately $300,000 from a Feeding Our Future bank account to a Youth International Club bank account controlled by SAHRA OSMAN"
+        },
+        {
+          "count": 14,
+          "date_on_or_about": "2021-06-18",
+          "page": 27,
+          "amount_usd": 348234,
+          "wire": "Payment in the amount of approximately $348,234 from a Feeding Our Future bank account to a United Youth of Mpls LLC bank account controlled by AISHA HUSSEIN"
+        },
+        {
+          "count": 15,
+          "date_on_or_about": "2021-07-05",
+          "page": 27,
+          "wire": "An email from SHAKUR ABDINUR ABDISALAM to Aimee Bock and another Feeding Our Future employee with the subject line “June” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 16,
+          "date_on_or_about": "2021-07-07",
+          "page": 27,
+          "amount_usd": 236139,
+          "wire": "Payment in the amount of approximately $236,139 from a Feeding Our Future bank account to an Active Mind’s Youth LLC bank account controlled by FADUMO YUSUF"
+        },
+        {
+          "count": 17,
+          "date_on_or_about": "2021-07-27",
+          "page": 27,
+          "wire": "An email from GANDI YUSUF MOHAMED to Feeding Our Future with the subject line “youth international club” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 18,
+          "date_on_or_about": "2021-07-29",
+          "page": 27,
+          "wire": "An email from GANDI YUSUF MOHAMED to Feeding Our Future with the subject line “youth edina” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 19,
+          "date_on_or_about": "2021-08-13",
+          "page": 28,
+          "wire": "An email from GANDI YUSUF MOHAMED to Feeding Our Future with the subject line “inspiring” that passed through servers located outside the state of Minnesota"
+        },
+        {
+          "count": 20,
+          "date_on_or_about": "2021-08-13",
+          "page": 28,
+          "wire": "An email with the subject line “EVERYTHING UNITED YOUTH” sent to a Feeding Our Future employee that passed through servers located outside the state of Minnesota",
+          "notes": "Face does not name the sender. OCR of the subject line included a trailing question mark that is not clearly present on the scan."
+        }
+      ]
+    },
+    {
+      "count": 21,
+      "statute": "18 U.S.C. § 371",
+      "object_statute": "18 U.S.C. §§ 666(a)(1)(B) and (a)(2)",
+      "title": "Conspiracy to commit federal programs bribery",
+      "pages": "28-31",
+      "heading_page": 28,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371",
+      "named_defendants": [
+        "Ikram Yusuf Mohamed",
+        "Suleman Yusuf Mohamed",
+        "Aisha Hassan Hussein",
+        "Sahra Sharif Osman",
+        "Shakur Abdinur Abdisalam",
+        "Fadumo Mohamed Yusuf"
+      ],
+      "period": {
+        "start": "2021-05",
+        "end": "2022-04"
+      },
+      "notes": "Gandi Yusuf Mohamed is NOT named in Count 21. Object: kickbacks to Feeding Our Future employees/consultants (via IM Consultation) in exchange for FOF sponsorship. $5,000 and $10,000 figures on pp.28-29 are statutory § 666 thresholds, not case totals. Overt act 104 (June 1, 2021 $14,700 Fadumo/Active Mind’s check) is not a separate Count 22–37 row."
+    },
+    {
+      "count": "22-37",
+      "statute": "18 U.S.C. §§ 666(a)(1)(B) and (a)(2)",
+      "title": "Federal programs bribery",
+      "pages": "31-33",
+      "heading_page": 31,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 666(a)(1)(B) and (a)(2).",
+      "notes": "Ikram Mohamed is named on every row as alleged recipient via IM Consultation (Count 29 is a Dua Supplies check to Ikram personally). Kickback dollars are alleged scheme payments, not amount_billed and not proven_loss. Do not sum with site receipts or Star $10M as additional FOF loss. Count 27 numeral dropped by OCR; restored from page-32 image.",
+      "rows": [
+        {
+          "count": 22,
+          "date_on_or_about": "2021-05-19",
+          "page": 32,
+          "amount_usd": 14800,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Fadumo Mohamed Yusuf"
+          ],
+          "payment": "A $14,800 check from Active Mind's Youth LLC to IM Consultation"
+        },
+        {
+          "count": 23,
+          "date_on_or_about": "2021-05-19",
+          "page": 32,
+          "amount_usd": 13500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Shakur Abdinur Abdisalam"
+          ],
+          "payment": "A $13,500 check from Inspiring Youth and Out Reach LLC to IM Consultation"
+        },
+        {
+          "count": 24,
+          "date_on_or_about": "2021-05-19",
+          "page": 32,
+          "amount_usd": 13500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Aisha Hassan Hussein"
+          ],
+          "payment": "A $13,500 check from United Youth of Mpls to IM Consultation",
+          "notes": "Table defendant column on face reads AISHA HASSAN (truncated). Same person as caption defendant Aisha Hassan Hussein."
+        },
+        {
+          "count": 25,
+          "date_on_or_about": "2021-06-03",
+          "page": 32,
+          "amount_usd": 9000,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Fadumo Mohamed Yusuf"
+          ],
+          "payment": "A $9,000 check from Active Mind's Youth LLC to IM Consultation",
+          "notes": "Para 104 (p.30) recites a June 1, 2021 $14,700 Active Mind’s Youth check to IM Consultation as a Count 21 overt act. That check is NOT a numbered Count 22–37 row. Do not invent a count for it."
+        },
+        {
+          "count": 26,
+          "date_on_or_about": "2021-06-03",
+          "page": 32,
+          "amount_usd": 7500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Shakur Abdinur Abdisalam"
+          ],
+          "payment": "A $7,500 check from Inspiring Youth and Out Reach LLC to IM Consultation"
+        },
+        {
+          "count": 27,
+          "date_on_or_about": "2021-06-03",
+          "page": 32,
+          "amount_usd": 7500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Aisha Hassan Hussein"
+          ],
+          "payment": "A $7,500 check from United Youth of Mpls to IM Consultation",
+          "notes": "OCR dropped the count numeral; confirmed on page-32 image."
+        },
+        {
+          "count": 28,
+          "date_on_or_about": "2021-09-02",
+          "page": 32,
+          "amount_usd": 7500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Sahra Sharif Osman"
+          ],
+          "payment": "A $7,500 check from Youth International Club to IM Consultation"
+        },
+        {
+          "count": 29,
+          "date_on_or_about": "2021-10-18",
+          "page": 32,
+          "amount_usd": 166724.22,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed"
+          ],
+          "payment": "A $166,724.22 check from Dua Supplies & Distribution to Ikram Mohamed",
+          "notes": "Count table date is October 18, 2021. Para 109 (p.30) recites that on or about October 12, 2021 Farhiya Mohamud obtained a $166,724 cashier's check from Dua Supplies & Distribution to IKRAM YUSUF MOHAMED. Farhiya Mohamud is not a caption defendant in this instrument."
+        },
+        {
+          "count": 30,
+          "date_on_or_about": "2021-12-20",
+          "page": 32,
+          "amount_usd": 21300,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Suleman Yusuf Mohamed"
+          ],
+          "payment": "A $21,300 check from Star Distribution LLC to IM Consultation"
+        },
+        {
+          "count": 31,
+          "date_on_or_about": "2021-12-20",
+          "page": 33,
+          "amount_usd": 68750,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Suleman Yusuf Mohamed"
+          ],
+          "payment": "A $68,750 check from Star Distribution LLC to IM Consultation"
+        },
+        {
+          "count": 32,
+          "date_on_or_about": "2021-12-24",
+          "page": 33,
+          "amount_usd": 48000,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Suleman Yusuf Mohamed"
+          ],
+          "payment": "A $48,000 check from Star Distribution LLC to IM Consultation"
+        },
+        {
+          "count": 33,
+          "date_on_or_about": "2021-12-24",
+          "page": 33,
+          "amount_usd": 24150,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Suleman Yusuf Mohamed"
+          ],
+          "payment": "A $24,150 check from Star Distribution LLC to IM Consultation"
+        },
+        {
+          "count": 34,
+          "date_on_or_about": "2021-12-31",
+          "page": 33,
+          "amount_usd": 30750,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Suleman Yusuf Mohamed"
+          ],
+          "payment": "A $30,750 check from Star Distribution LLC to IM Consultation"
+        },
+        {
+          "count": 35,
+          "date_on_or_about": "2021-12-31",
+          "page": 33,
+          "amount_usd": 42300,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Aisha Hassan Hussein"
+          ],
+          "payment": "A $42,300 check from United Youth of Mpls to IM Consultation"
+        },
+        {
+          "count": 36,
+          "date_on_or_about": "2021-12-31",
+          "page": 33,
+          "amount_usd": 41000,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Aisha Hassan Hussein"
+          ],
+          "payment": "A $41,000 check from United Youth of Mpls to IM Consultation"
+        },
+        {
+          "count": 37,
+          "date_on_or_about": "2021-12-31",
+          "page": 33,
+          "amount_usd": 25500,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed",
+            "Aisha Hassan Hussein"
+          ],
+          "payment": "A $25,500 check from United Youth of Mpls to IM Consultation"
+        }
+      ]
+    },
+    {
+      "count": 38,
+      "statute": "18 U.S.C. § 1956(h)",
+      "object_statute": "18 U.S.C. § 1956(a)(1)(B)(i)",
+      "title": "Conspiracy to commit money laundering",
+      "pages": "33-34",
+      "heading_page": 33,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1956(h).",
+      "named_defendants": [
+        "Ikram Yusuf Mohamed",
+        "Suleman Yusuf Mohamed",
+        "Aisha Hassan Hussein",
+        "Sahra Sharif Osman",
+        "Shakur Abdinur Abdisalam",
+        "Fadumo Mohamed Yusuf",
+        "Gandi Yusuf Mohamed"
+      ],
+      "period": {
+        "start": "2020-12",
+        "end": "2022-04"
+      },
+      "notes": "Specified unlawful activity: wire fraud § 1343. Concealment laundering. All seven caption defendants named. Para 120 OCR duplicates 'are incorporated herein'."
+    },
+    {
+      "count": "39-47",
+      "statute": "18 U.S.C. § 1957",
+      "title": "Money laundering (monetary transactions >$10,000)",
+      "pages": "35-36",
+      "heading_page": 35,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1957.",
+      "notes": "SUA: wire fraud § 1343. Named per row (Suleman, Gandi, or Ikram). Transaction dollars are alleged laundering of proceeds, not additional billed/paid program totals. OCR dropped Count 40 numeral and read Count 47 as AT; both restored from page images.",
+      "rows": [
+        {
+          "count": 39,
+          "date_on_or_about": "2021-03-04",
+          "page": 35,
+          "amount_usd": 15722,
+          "named_defendants": [
+            "Suleman Yusuf Mohamed"
+          ],
+          "transaction": "Deposit of a cashier's check in the amount of approximately $15,722 from a Star Distribution LLC account to King Cargo Vans & Salvage, for the purchase of a 2015 Ford T-150 Cargo Van"
+        },
+        {
+          "count": 40,
+          "date_on_or_about": "2021-04-06",
+          "page": 35,
+          "amount_usd": 18000,
+          "named_defendants": [
+            "Suleman Yusuf Mohamed"
+          ],
+          "transaction": "Deposit of a cashier's check in the amount of approximately $18,000 from an account controlled by defendant SULEMAN YUSUF MOHAMED to Morrie’s Auto Group, for the purchase of a 2015 Land Rover",
+          "notes": "OCR dropped the count numeral; confirmed on page-35 image."
+        },
+        {
+          "count": 41,
+          "date_on_or_about": "2021-04-30",
+          "page": 35,
+          "amount_usd": 14509,
+          "named_defendants": [
+            "Gandi Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $14,509 from a GAK Properties LLC account to 403 Union Street LLC for a contract-for-deed payment"
+        },
+        {
+          "count": 42,
+          "date_on_or_about": "2021-06-01",
+          "page": 35,
+          "amount_usd": 14509,
+          "named_defendants": [
+            "Gandi Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $14,509 from a GAK Properties LLC account to 403 Union Street LLC for a contract-for-deed payment"
+        },
+        {
+          "count": 43,
+          "date_on_or_about": "2021-07-04",
+          "page": 36,
+          "amount_usd": 14500,
+          "named_defendants": [
+            "Suleman Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $14,500 from a STAR DISTRIBUTION LLC account to GM Financial for a loan payment of a 2018 GMC Yukon"
+        },
+        {
+          "count": 44,
+          "date_on_or_about": "2021-09-22",
+          "page": 36,
+          "amount_usd": 12571,
+          "named_defendants": [
+            "Suleman Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $12,571 from an account controlled by defendant SULEMAN YUSUF MOHAMED and A.M.G. to Ideal Credit Union for the loan payoff of a 2015 Land Rover"
+        },
+        {
+          "count": 45,
+          "date_on_or_about": "2021-10-22",
+          "page": 36,
+          "amount_usd": 12680,
+          "named_defendants": [
+            "Gandi Yusuf Mohamed"
+          ],
+          "transaction": "Bankcard transfer in the amount of approximately $12,680 from a G.A.K. Properties LLC account to Twin City Hardware"
+        },
+        {
+          "count": 46,
+          "date_on_or_about": "2021-11-06",
+          "page": 36,
+          "amount_usd": 14300,
+          "named_defendants": [
+            "Ikram Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $14,300 from a IM CONSULTATION LLC account to GM Financial for a loan payoff of a 2018 GMC Yukon"
+        },
+        {
+          "count": 47,
+          "date_on_or_about": "2021-12-31",
+          "page": 36,
+          "amount_usd": 14509,
+          "named_defendants": [
+            "Gandi Yusuf Mohamed"
+          ],
+          "transaction": "ACH transfer in the amount of approximately $14,509 from a G.A.K. Properties LLC account to 403 Union Street LLC for a contract-for-deed payment",
+          "notes": "OCR read the count numeral as AT; visual is Count 47."
+        }
+      ]
+    }
+  ],
+  "counts_summary": [
+    {
+      "counts": "1",
+      "n": 1,
+      "statute": "18 U.S.C. §§ 371, 1343",
+      "title": "Conspiracy to commit wire fraud",
+      "defendants": "all 7",
+      "pages": "8-25"
+    },
+    {
+      "counts": "2-20",
+      "n": 19,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "defendants": "all 7 (charging paragraph)",
+      "pages": "25-28"
+    },
+    {
+      "counts": "21",
+      "n": 1,
+      "statute": "18 U.S.C. § 371 (object §§ 666(a)(1)(B), (a)(2))",
+      "title": "Conspiracy to commit federal programs bribery",
+      "defendants": "all except Gandi Yusuf Mohamed",
+      "pages": "28-31"
+    },
+    {
+      "counts": "22-37",
+      "n": 16,
+      "statute": "18 U.S.C. §§ 666(a)(1)(B) and (a)(2)",
+      "title": "Federal programs bribery",
+      "defendants": "per row; Ikram on every row",
+      "pages": "31-33"
+    },
+    {
+      "counts": "38",
+      "n": 1,
+      "statute": "18 U.S.C. § 1956(h)",
+      "title": "Conspiracy to commit money laundering",
+      "defendants": "all 7",
+      "pages": "33-34"
+    },
+    {
+      "counts": "39-47",
+      "n": 9,
+      "statute": "18 U.S.C. § 1957",
+      "title": "Money laundering",
+      "defendants": "per row (Suleman / Gandi / Ikram)",
+      "pages": "35-36"
+    }
+  ],
+  "total_counts_on_face": 47,
+  "forfeiture": {
+    "pages": "36-37",
+    "statutes": [
+      "18 U.S.C. § 981(a)(1)(C)",
+      "28 U.S.C. § 2461(c)",
+      "18 U.S.C. § 982(a)(1)",
+      "21 U.S.C. § 853(p)"
+    ],
+    "notes": "Para 126 incorporates Counts 1 through 47. Para 127: if convicted of any of Counts 1-37, proceeds-traceable forfeiture under § 981(a)(1)(C) and § 2461(c). Para 128: if convicted of any of Counts 38-47, forfeiture under § 982(a)(1) of property involved in a 1956/1957 transaction. Para 129: substitute-asset allegation under § 853(p). No dollar amount is stated in the forfeiture paragraphs."
+  },
+  "amounts": [
+    {
+      "value": 12000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2020-12",
+      "period_end": "2021-11",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 25,
+      "para": 91,
+      "quote": "In all, the defendants fraudulently claimed to have served more than 4.8 million meals at their sites between December 2020 and November 2021. Based on these fraudulent claims, they received more than $12 million in Federal Child Nutrition Program funds.",
+      "notes": "Face language is received (amount_paid), not billed and not proven_loss. Case-level family figure. Overlaps United Youth / Youth International / Inspiring Youth / Active Minds site receipts and the FOF-to-site wire-count payments. Do not add to HSS. Do not add to Bock $250M charging headline without this overlap_group_id. CHARGED_ALLEGED."
+    },
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "provider": "United Youth of MPLS LLC",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 6,
+      "para": 20,
+      "quote": "In 2021, United Youth received approximately $2.2 million in Federal Child Nutrition Program funds for food and meals it purportedly provided to children.",
+      "notes": "Received / paid. Same United Youth $2.2M restated at para 43 as FOF paid approximately $2.2 million to United Youth. Do not sum para 20 + para 43."
+    },
+    {
+      "value": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2020-12",
+      "period_end": "2021-11",
+      "provider": "United Youth of MPLS LLC",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 12,
+      "para": 43,
+      "quote": "Based on these fraudulent figures, Feeding Our Future paid approximately $2.2 million to United Youth and another approximately $2.8 million to related entities for meals purportedly served at the United Youth site.",
+      "notes": "Same $2.2M as para 20 plus a separate $2.8M to related entities. Do not treat $2.2M+$2.8M as independent of the >$12M family total."
+    },
+    {
+      "value": 2800000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2020-12",
+      "period_end": "2021-11",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 12,
+      "para": 43,
+      "quote": "Feeding Our Future paid approximately $2.2 million to United Youth and another approximately $2.8 million to related entities for meals purportedly served at the United Youth site.",
+      "notes": "Related-entities payment, not a second United Youth receipt. Overlaps family $12M and Star inflows."
+    },
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-03",
+      "period_end": "2021-11",
+      "provider": "Youth International Club LLC",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 14,
+      "para": 51,
+      "quote": "Based on these fraudulent claims, they received more than $1.4 million in Federal Child Nutrition Program funds.",
+      "notes": "Matches para 22 2021 receipt of approximately $1.4 million. Do not sum para 22 + para 51."
+    },
+    {
+      "value": 1500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-02",
+      "period_end": "2021-11",
+      "provider": "Inspiring Youth & Out Reach LLC",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 16,
+      "para": 60,
+      "quote": "Based on these fraudulent claims, Inspiring Youth received more than $1.5 million in federal child nutrition program funds—which represented all the deposits into the account (besides the $100 initial opening deposit).",
+      "notes": "Matches para 19 approximately $1.5 million. Do not sum with para 19."
+    },
+    {
+      "value": 1000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-02",
+      "period_end": "2021-06",
+      "provider": "Active Mind’s Youth LLC",
+      "overlap_group_id": "mohamed-24cr015-family-receipts",
+      "page": 20,
+      "para": 72,
+      "quote": "Based on these fraudulent claims, Active Mind’s Youth received more than $1 million in federal child nutrition program funds—which represented all the deposits into the account.",
+      "notes": "Matches para 21 approximately $1 million. Do not sum with para 21."
+    },
+    {
+      "value": 10000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-02",
+      "period_end": "2022-04",
+      "provider": "Star Distribution LLC",
+      "overlap_group_id": "mohamed-24cr015-star-distribution",
+      "page": 22,
+      "para": 80,
+      "quote": "From approximately February 2021 through April 2022, Star Distribution received approximately $10 million in Federal Child Nutrition Program funds, including more than $4.9 million from Feeding Our Future, $1.6 million from United Youth of Mpls, and $1 million from Inspiring Youth & Outreach.",
+      "notes": "Received / paid. The $4.9M+$1.6M+$1M are components of the $10M, not add-ons. Star inflows overlap United Youth/Inspiring Youth receipts and the family $12M. Do not add Star $10M to $12M. Do not add to HSS or to Bock $250M without overlap notes."
+    },
+    {
+      "value": 4900000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "provider": "Star Distribution LLC",
+      "overlap_group_id": "mohamed-24cr015-star-distribution",
+      "page": 22,
+      "para": 80,
+      "quote": "including more than $4.9 million from Feeding Our Future",
+      "notes": "Component of Star ~$10M. Not independent."
+    },
+    {
+      "value": 200000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "nearly",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 12,
+      "quote": "Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021.",
+      "notes": "FOF-sponsor-wide recital, not this family's alleged loss. Same $200M figure as in the Bock indictment / DOJ charging materials. Do not add to the Mohamed $12M. Do not add to HSS. Do not add to the Bock $250M charging headline — it already contains this pass-through."
+    },
+    {
+      "value": 3400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2019-01",
+      "period_end": "2019-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 12,
+      "quote": "receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019",
+      "notes": "FOF-sponsor-wide 2019 baseline recital. Not Mohamed-family loss. Not HSS."
+    },
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "nearly",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 14,
+      "quote": "Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021.",
+      "notes": "FOF-sponsor admin-fee recital, not this family's site receipts. Overlaps Bock $250M / $18M admin-fee charging language. Not HSS."
+    },
+    {
+      "value": 250000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "exact",
+      "page": 24,
+      "para": 89,
+      "overlap_group_id": "mohamed-24cr015-afrique-ikram",
+      "quote": "On or about June 9, 2021, Mukhtar Mohamed Sharriff used Federal Child Nutrition Program funds to obtain a $250,000 cashier's check payable to IKRAM YUSUF MOHAMED.",
+      "notes": "Alleged personal proceeds via Afrique Hospitality Group / Mukhtar Mohamed Shariff (not a caption defendant here). Overlaps the ~$500k Afrique payments in para 88. Not amount_billed. Not HSS. Not an add-on to Bock $250M."
+    },
+    {
+      "value": 500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-03",
+      "period_end": "2021-05",
+      "overlap_group_id": "mohamed-24cr015-afrique-ikram",
+      "page": 24,
+      "para": 88,
+      "quote": "Active Mind’s Youth, Inspiring Youth, United Youth of MPLS, and Star Distribution paid approximately $500,000 in Federal Child Nutrition Program funds to Afrique Hospitality Group in April and May 2021.",
+      "notes": "Face table on p.24 lists five approximate checks totaling $273,435 (including two March dates despite the April–May prose). Table is a subset; remaining Afrique rows were not invented. Overlaps site receipts / Star $10M / $250k cashier's check."
+    }
+  ],
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 200000000,
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "quote": "nearly $200 million in 2021",
+      "page": 4,
+      "notes": "FOF-network sponsor pass-through. overlap_group_id fof-network-scheme-size. Do not add to Mohamed $12M, HSS, or Bock $250M."
+    },
+    {
+      "value": 5000,
+      "metric_type": "unknown_or_disputed",
+      "exact_or_approximate": "exact",
+      "quote": "anything of value of $5,000 or more",
+      "page": 28,
+      "notes": "Statutory § 666 transactional threshold, not a case total."
+    },
+    {
+      "value": 10000,
+      "metric_type": "unknown_or_disputed",
+      "exact_or_approximate": "exact",
+      "quote": "Feeding Our Future received benefits in excess of $10,000 under federal programs",
+      "page": 28,
+      "notes": "Statutory § 666 organizational-benefits threshold, not a case total."
+    }
+  ],
+  "other_face_facts": [
+    "Para 1: multi-million-dollar scheme to defraud the federal child nutrition program; qualitative, no dollar.",
+    "Para 91: more than 4.8 million meals claimed December 2020–November 2021.",
+    "United Youth: more than 1.3 million meals claimed (para 43).",
+    "Youth International: nearly 700,000 meals March–November 2021 (para 51).",
+    "Inspiring Youth: more than one million meals February–November 2021 (para 59).",
+    "Active Mind’s Youth: more than 500,000 meals February–June 2021; meal sheets alleged to claim exactly 2,016 children a day (paras 67, 71).",
+    "Aimee Bock is named as FOF founder/ED and appears in Count 15's wire (email to Bock) but is not a defendant in this instrument.",
+    "Mukhtar Mohamed Shariff / Afrique Hospitality Group and Farhiya Mohamud / Dua Supplies are named as third parties, not caption defendants.",
+    "Count 21 excludes Gandi Yusuf Mohamed.",
+    "June 1, 2021 $14,700 Active Mind’s Youth check (para 104) is a Count 21 overt act only; not a Count 22–37 row."
+  ],
+  "do_not": [
+    "Do not mark ADJUDICATED. This extract is the face of ECF 1 (CHARGED_ALLEGED) even if later pleas exist in other sources.",
+    "Do not sum overlapping dollars (family >$12M + site receipts + Star $10M + Afrique $500k + $250k cashier's check + IM Consultation kickbacks + FOF $200M/$18M recitals).",
+    "Do not add these dollars to HSS billed/paid figures.",
+    "Do not add FOF $200M / $18M recitals or the Mohamed $12M to the Bock $250M charging headline without overlap_group_id (fof-network-scheme-size / mohamed-24cr015-family-receipts).",
+    "Do not invent a count for the June 1, 2021 $14,700 check.",
+    "Do not treat $ figures in this indictment as proven_loss."
+  ]
+}

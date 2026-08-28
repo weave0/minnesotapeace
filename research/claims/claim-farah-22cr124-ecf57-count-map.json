@@ -1,0 +1,95 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-farah-22cr124-ecf57-count-map",
+  "claim_text": "On September 13, 2022, a grand jury in the District of Minnesota returned a 43-count superseding indictment in United States v. Abdiaziz Shafii Farah, Mohamed Jama Ismail, Mahad Ibrahim, Abdimajid Mohamed Nur, Said Shafii Farah, Abdiwahab Maalim Aftin, Mukhtar Mohamed Shariff, and Hayat Mohamed Nur, No. 0:22-cr-00124 (ECF 57). Count 1 charges all eight with conspiracy to commit wire fraud, 18 U.S.C. sections 371 and 1343. Counts 2-12 charge wire fraud, 18 U.S.C. section 1343, named per row (interstate emails). Count 13 charges Abdiaziz Farah, Said Farah, and Mukhtar Shariff with conspiracy to commit federal programs bribery, 18 U.S.C. section 371 (object 666(a)(2)). Counts 14-19 charge federal programs bribery, 18 U.S.C. section 666, named per row. Count 20 charges seven defendants (all except Hayat Mohamed Nur) with conspiracy to commit money laundering, 18 U.S.C. section 1956(h). Counts 21-42 charge money laundering, 18 U.S.C. section 1957, named per row. Count 43 charges Abdiaziz Farah only with a false statement in a passport application, 18 U.S.C. section 1542. Forfeiture allegations incorporate Counts 1-42 and split Counts 1-19 (proceeds, section 981) from Counts 20-42 (sections 1956/1957, section 982); Count 43 is not incorporated. These are charging allegations, not adjudicated facts. Feeding Our Future / Empire family, not HSS.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "organizations": [
+    "org-feeding-our-future",
+    "org-empire-cuisine-and-market"
+  ],
+  "statutes": [
+    "18 U.S.C. § 371",
+    "18 U.S.C. § 666",
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 1542",
+    "18 U.S.C. § 1956",
+    "18 U.S.C. § 1957"
+  ],
+  "date_start": "2020-04-01",
+  "date_end": "2022-09-30",
+  "event_date": "2022-09-13",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 1,
+      "quote": "UNITED STATES OF AMERICA, Plaintiff, v. 1. ABDIAZIZ SHAFII FARAH, 2. MOHAMED JAMA ISMAIL, 3. MAHAD IBRAHIM, 4. ABDIMAJID MOHAMED NUR, 5. SAID SHAFII FARAH, 6. ABDIWAHAB MAALIM AFTIN, 7. MUKHTAR MOHAMED SHARIFF, 8. HAYAT MOHAMED NUR, Defendants. SUPERSEDING INDICTMENT 18 U.S.C. § 371 18 U.S.C. § 666 18 U.S.C. § 1343 18 U.S.C. § 1542 18 U.S.C. § 1956 18 U.S.C. § 1957"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 10,
+      "quote": "Count 1 (Wire Fraud Conspiracy) ... in violation of Title 18, United States Code, Sections 371 and 1343."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 30,
+      "quote": "Counts 2-12 (Wire Fraud)"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 31,
+      "quote": "All in violation of Title 18, United States Code, Section 1343."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 32,
+      "quote": "Count 13 (Conspiracy to Commit Federal Programs Bribery)"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 35,
+      "quote": "All in violation of Title 18, United States Code, Section 371. Counts 14-19 (Federal Programs Bribery)"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 36,
+      "quote": "All in violation of Title 18, United States Code, Section 666. Count 20 (Conspiracy to Commit Money Laundering)"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 39,
+      "quote": "All in violation of Title 18, United States Code, Section 1956(h). Counts 21-42 (Money Laundering)"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 43,
+      "quote": "All in violation of Title 18, United States Code, Section 1957. Count 43 (False Statement in a Passport Application) ... Section 1542."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 44,
+      "quote": "Counts 1 through 42 of this Superseding Indictment are incorporated by reference for the purpose of alleging forfeiture"
+    }
+  ],
+  "qualifiers": [
+    "as of superseding-indictment date 2022-09-13",
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "caption section 1343 confirmed visually after OCR misread section 1348",
+    "Hayat Mohamed Nur is not named in Counts 13-20",
+    "Count 43 is Abdiaziz Farah only and is outside forfeiture Counts 1-42",
+    "Feeding Our Future / Empire family, not HSS"
+  ],
+  "editorial_notes": "Count numerals 8-9 and 41 restored from page images after table OCR drops. Count 17 table date August 13 vs para 146 August 17 for the same $10,000 check - not invented as two counts."
+}

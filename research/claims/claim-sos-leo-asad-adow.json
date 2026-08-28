@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-08-27T03:20:00Z",
+  "created_at": "2026-08-27T03:20:00Z",
+  "updated_at": "2026-08-27T03:20:00Z",
+  "is_inference": false,
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "claim_id": "claim-sos-leo-asad-adow",
+  "claim_text": "Minnesota SOS lists Leo Human Services L.L.C., file 1305222600022, formed 2022-03-24, Active / In Good Standing, registered agent and manager Asad Adow.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-leo-human-services"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "organizations": [
+    "org-leo-human-services"
+  ]
+}

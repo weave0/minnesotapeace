@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-fof-990-fy2020-reported-revenue",
+  "claim_text": "On its Form 990 for the fiscal period ending September 30, 2020, Feeding Our Future reported total revenue of $2,441,298 (Part I line 12) and total expenses of $2,458,600. The Minnesota Attorney General later alleged those 990s do not reflect revenue described in FBI warrants. These line items are what the organization reported to the IRS, not proven program receipts and not alleged-loss.",
+  "claim_type": "AMOUNT",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-irs-990-fof-fy2020",
+    "src-ago-fof-dissolution-petition-copy"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-irs-990-fof-fy2020",
+      "page": 1,
+      "quote": "Total revenue ... Current Year 2,441,298"
+    },
+    {
+      "source_id": "src-ago-fof-dissolution-petition-copy",
+      "page": 5,
+      "quote": "Feeding Our Future's most recent 990s do not reflect revenue brought into the organization that is described in the FBI warrants as detailed below."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 2441298,
+      "currency": "USD",
+      "metric_type": "unknown_or_disputed",
+      "period_start": "2019-10-01",
+      "period_end": "2020-09-30",
+      "exact_or_approximate": "exact",
+      "methodology": "Form 990 Part I line 12 as filed by the organization. Not program_spend, not alleged_loss, not proven_loss."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "editorial_notes": "Do not publish this $2.44M as a fraud total or add it to the ~$250M charged scheme figure.",
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

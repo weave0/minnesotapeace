@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-pin-990-fy2021-reported-revenue",
+  "claim_text": "On its Form 990 for the fiscal period ending September 30, 2021, Partners In Nutrition reported total revenue of $140,746,408 and total expenses of $130,432,328. This is PIN-reported volume, not a Feeding Our Future loss figure, and must not be added to FOF charged amounts.",
+  "claim_type": "AMOUNT",
+  "subject_ids": [
+    "org-partners-in-nutrition"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-irs-990-pin-fy2021"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-irs-990-pin-fy2021",
+      "page": 1,
+      "quote": "Gross receipts $140,746,408 ... Total revenue Current Year 140,746,408"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 140746408,
+      "currency": "USD",
+      "metric_type": "unknown_or_disputed",
+      "period_start": "2020-10-01",
+      "period_end": "2021-09-30",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": "pin-990-fy2021",
+      "methodology": "Form 990 Part I line 12 as filed by Partners In Nutrition. Not alleged_loss and not FOF program_spend."
+    }
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "organizations": [
+    "org-partners-in-nutrition"
+  ]
+}

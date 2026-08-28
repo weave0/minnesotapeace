@@ -1,0 +1,294 @@
+{
+  "docket_number": "0:25-cr-00482",
+  "ecf": 1,
+  "filed": "2025-12-16",
+  "pages": 8,
+  "instrument": "indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Kaamil Omar Sallah",
+  "short_caption": "United States v. Sallah",
+  "header_case_id": "0:25-cr-00482-JWB-JFD",
+  "handwritten_assignment": "CR 25-482 SRN/DLM",
+  "source_pdf": "research/court/pdfs/0_25-cr-00482_ecf1_sallah-hss.pdf",
+  "sha256": "c4b12be63b3345498ada7349ba2f64620d48236194ad9bfdc33bab74ad1794c8",
+  "bytes": 4399478,
+  "ocr_text": "research/court/raw/sallah-25-cr-482-ecf1.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
+  "stub": false,
+  "caption_statutes": [
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 981(a)(1)(C)",
+    "21 U.S.C. § 853(p)",
+    "28 U.S.C. § 2461(c)"
+  ],
+  "ocr_corrections": [
+    {
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 1348. Visual inspection of the scan and the count-closing line on p.7 both show 18 U.S.C. § 1343 (wire fraud). 1348 is securities fraud and is not charged.",
+      "used": "18 U.S.C. § 1343"
+    },
+    {
+      "page": 1,
+      "issue": "Handwritten assignment OCR'd as 'CA 25-482 st /DLMY'. Visual: CR 25-482 SRN/DLM. Scan stamp is SCANNED DEC 16 2025 (OCR dropped the 6).",
+      "used": "CR 25-482 SRN/DLM; SCANNED DEC 16 2025"
+    },
+    {
+      "page": 3,
+      "issue": "Para 8 OCR'd '$74 million in 2028'. Visual: $74 million in 2023 (same statewide HSS boilerplate as Aden/Falade/Hussein).",
+      "used": "2023"
+    },
+    {
+      "page": 6,
+      "issue": "Paragraph 26 OCR'd as 'Onor about'. Visual: 'On or about'.",
+      "used": "On or about"
+    },
+    {
+      "page": 7,
+      "issue": "Count-table OCR dropped the numeral 3 on the July 12, 2024 row. Visual inspection of the table shows Count 3, Email from KAAMIL SALLAH attaching a client list.",
+      "used": "Count 3, July 12, 2024"
+    },
+    {
+      "page": "1-8",
+      "issue": "CM/ECF header fragments and missing spaces (1of8, 6of8, 8of8). Count emails, dates, $1.4 million / $1.3 million / $150,000 figures were checked against the page images."
+    }
+  ],
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Kaamil Omar Sallah",
+      "role_on_face": "Owner and operator of SafeLodgings, Inc.; registered with MN SOS in March 2023 and enrolled as HSS provider the same month; alleged responsible for billing."
+    }
+  ],
+  "providers": [
+    {
+      "name": "SafeLodgings, Inc.",
+      "aliases_on_face": [
+        "SafeLodgings"
+      ],
+      "role_on_face": "HSS provider registered with MN SOS in March 2023 by Sallah; enrolled as HSS provider the same month. Alleged operations from a building in Forest Lake, Minnesota.",
+      "entity_id": "org-safelodgings-inc"
+    }
+  ],
+  "scheme_period": {
+    "start": "2023-03",
+    "end": "2025-08",
+    "page": 4,
+    "para": 15
+  },
+  "counts": [
+    {
+      "count": 1,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Kaamil Omar Sallah"
+      ],
+      "date_on_or_about": "2024-03-15",
+      "wire": "Email from KAAMIL SALLAH to Conspirator 1, including electronic health records login information",
+      "page": 7
+    },
+    {
+      "count": 2,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Kaamil Omar Sallah"
+      ],
+      "date_on_or_about": "2024-05-22",
+      "wire": "Email exchanges with KAAMIL SALLAH concerning purported beneficiary Imani C.",
+      "page": 7
+    },
+    {
+      "count": 3,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Kaamil Omar Sallah"
+      ],
+      "date_on_or_about": "2024-07-12",
+      "wire": "Email from KAAMIL SALLAH attaching a client list",
+      "page": 7
+    },
+    {
+      "count": 4,
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "named_defendants": [
+        "Kaamil Omar Sallah"
+      ],
+      "date_on_or_about": "2024-10-27",
+      "wire": "Email to KAAMIL SALLAH concerning purported beneficiary J. Johnson",
+      "page": 7
+    }
+  ],
+  "counts_closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+  "forfeiture": {
+    "pages": "7-8",
+    "statutes": [
+      "18 U.S.C. § 981(a)(1)(C)",
+      "28 U.S.C. § 2461(c)",
+      "21 U.S.C. § 853(p)"
+    ],
+    "notes": "If convicted of any of Counts 1-4, forfeiture of proceeds-traceable property; substitute-asset allegation under § 853(p). No dollar amount is stated in the forfeiture paragraphs."
+  },
+  "amounts": [
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "period_start": "2023-03",
+      "period_end": "2025-08",
+      "provider": "SafeLodgings, Inc.",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "page": 4,
+      "para": 13,
+      "quote": "In all, between approximately March 2023 and August 2025, SALLAH and his company fraudulently claimed to be entitled to approximately $1.4 million for providing Housing Stabilization Services and received nearly $1.3 million.",
+      "notes": "Same paragraph as the $1.3 million received figure; do not add $1.4M + $1.3M. Restated as claimed-entitled about $1.4 million in para 23. CHARGED_ALLEGED, not proven_loss. Do not add to first-wave HSS or FOF."
+    },
+    {
+      "value": 1300000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2023-03",
+      "period_end": "2025-08",
+      "provider": "SafeLodgings, Inc.",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "page": 4,
+      "para": 13,
+      "quote": "In all, between approximately March 2023 and August 2025, SALLAH and his company fraudulently claimed to be entitled to approximately $1.4 million for providing Housing Stabilization Services and received nearly $1.3 million.",
+      "notes": "Face language is received nearly $1.3 million — amount_paid to the provider, not proven_loss. Same paragraph as $1.4M claimed; do not add. Schema has no amount_received; amount_paid is the matching metric. Do not add to first-wave HSS or FOF."
+    },
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "exact_or_approximate": "approximate",
+      "provider": "SafeLodgings, Inc.",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "page": 6,
+      "para": 23,
+      "quote": "Ultimately, SALLAH fraudulently claimed to service nearly 150 different beneficiaries through SafeLodgings and for such services claimed to be entitled to about $1.4 million.",
+      "notes": "Same ~$1.4M claimed-entitled as para 13; do not sum. Also alleges nearly 150 purported beneficiaries and that operations provided only a fraction of the claimed total."
+    },
+    {
+      "value": 150000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "sallah-safelodgings-1.4m-claimed-1.3m-received",
+      "page": 6,
+      "para": 22,
+      "quote": "SALLAH diverted much of his fraud proceeds to conspirators, including to his employees at SafeLodgings, and he spent much of it on himself and on investments, including nearly $150,000 in a cryptocurrency exchange.",
+      "notes": "Alleged diversion of proceeds into a cryptocurrency exchange — not a Medicaid billed or paid figure and not an additional loss on top of the $1.3M received. Overlaps the received $1.3M. Do not add to first-wave HSS or FOF."
+    }
+  ],
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 174,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Consultants could bill Medicaid about $174 for a consulting session.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital, not a SafeLodgings total."
+    },
+    {
+      "value": 68,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Providers can bill about $68 per hour of transition services provided.",
+      "page": 2,
+      "notes": "Statewide HSS rate recital."
+    },
+    {
+      "value": 3000,
+      "metric_type": "amount_billed",
+      "exact_or_approximate": "approximate",
+      "quote": "Moving expenses of up to $3,000, subject to conditions.",
+      "page": 2,
+      "notes": "Statewide HSS cap recital."
+    },
+    {
+      "value": 2600000,
+      "metric_type": "program_authorization",
+      "exact_or_approximate": "approximate",
+      "quote": "Before the Program’s inaugural year, DHS predicted the Program would cost about $2.6 million annually.",
+      "page": 3,
+      "notes": "DHS prediction recital, not this case."
+    }
+  ],
+  "statewide_hss_program_payouts_recital": {
+    "overlap_group_id": "hss-statewide-program-payouts-2021-2025h1-indictment-recital",
+    "metric_type": "program_spend",
+    "page": 3,
+    "para": 8,
+    "quote": "In 2021 alone, the Program paid out more than $21 million in claims. That figure ballooned in the following years: $42 million in 2022, $74 million in 2023, $104 million in 2024. In just the first six months of 2025, the Program paid out another $61 million.",
+    "already_claimed": "claim-hss-25cr-indictments-statewide-program-payouts",
+    "rows": [
+      {
+        "period": "2021",
+        "value": 21000000,
+        "exact_or_approximate": "approximate",
+        "qualifier": "more than"
+      },
+      {
+        "period": "2022",
+        "value": 42000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2023",
+        "value": 74000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2024",
+        "value": 104000000,
+        "exact_or_approximate": "approximate"
+      },
+      {
+        "period": "2025-H1",
+        "value": 61000000,
+        "exact_or_approximate": "approximate"
+      }
+    ],
+    "notes": "Statewide HSS program_spend recitals, not Sallah alleged_loss. Identical boilerplate also appears in Aden/Falade/Hussein. Already claimed; do not invent a second program-spend claim. Do not add these to SafeLodgings $1.4M/$1.3M, first-wave HSS, or FOF $250M."
+  },
+  "leo_human_services_mention": {
+    "page": 5,
+    "para": 21,
+    "quote": "One of SALLAH’s employees, Employee A, had previously worked at another HSS Provider, Leo Human Services. Employee A had been fired from Leo—which itself submitted millions of dollars in fraudulent HSS bills—because Employee A’s fraudulent conduct at that company was too brazen.",
+    "notes": "Recital about Employee A’s prior employment at Leo Human Services. Not a charging document against Asad Adow / Leo. The 'millions of dollars' phrase is qualitative and is not a new Leo dollar claim; Asad/Leo remains the first-wave $2.7M amount_paid allegation. Do not add Sallah dollars to Asad."
+  },
+  "other_face_facts": [
+    "Para 1: scheme to fraudulently receive Medicaid benefits from Minnesota's Housing Stability Services Program; alleged misappropriation of more than a million dollars (qualitative; overlaps the $1.4M/$1.3M figures, do not treat as a third case total).",
+    "Face stamp: SCANNED DEC 16 2025 U.S. DISTRICT COURT MPLS.",
+    "Para 10-11: Sallah owned and operated SafeLodgings, Inc.; registered with MN SOS in March 2023 and enrolled as HSS provider the same month.",
+    "Para 17: purported to service individuals from a building in Forest Lake, Minnesota.",
+    "Para 18: Sallah responsible for billing; bills submitted through a third-party EHR company on a subscription; alleged inflated and fraudulent bills.",
+    "Para 19: alleged double billing — employees claimed to service multiple beneficiaries in the same one- or two-hour blocks.",
+    "Para 20: Sallah claimed to have personally provided more than 3,600 billable service hours in 2024 alone, including double billing. Hours, not a dollar figure.",
+    "Para 24: November 2025 grand jury subpoena for company records; Sallah retained counsel then fled; on or about November 26 flew MSP to Amsterdam and has not returned. Flight is a face allegation, not a count.",
+    "Page 8 is signature page (A TRUE BILL / UNITED STATES ATTORNEY / FOREPERSON); no additional counts."
+  ],
+  "related_to_asad_adow": "Named in 0:25-cr-00354 ECF 18 reassignment of related case 25-CR-482 (SRN/DLM) to Judge Blackwell. Not a charging instrument against Asad Adow.",
+  "docket_id": 72184616,
+  "pacer_case_id": "229752",
+  "recap_document_id": 475952427,
+  "filepath_local": "recap/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+  "filepath_ia": "https://archive.org/download/gov.uscourts.mnd.229752/gov.uscourts.mnd.229752.1.0.pdf",
+  "alt_docket_id": 72065130,
+  "do_not": [
+    "Do not mark ADJUDICATED.",
+    "Do not add $1.4M claimed + $1.3M received + $150k crypto + statewide program payouts + qualitative 'more than a million'.",
+    "Do not add SafeLodgings dollars to first-wave HSS (Aden/Falade/Anwar/Asad) or to FOF $250M.",
+    "Do not treat the Leo Human Services recital as a charge against Asad Adow.",
+    "Do not treat $ figures in this indictment as proven_loss.",
+    "Do not invent a second statewide HSS program_spend claim; overlap_group already claimed."
+  ]
+}

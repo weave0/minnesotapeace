@@ -1,0 +1,575 @@
+[
+  {
+    "money_id": "fof-m-001",
+    "amount": 250000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "DOJ 2022-09-20 charging headline: $250 million fraud scheme. Not proven_loss. Not a restitution total. Not a court-certified network loss.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-002",
+        "notes": "Same headline also recitable as fraud_estimate."
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-003",
+        "notes": ">$240 million obtained/disbursed is a related pass-through figure, not additive."
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-026",
+        "notes": "Later IRS-CI language of over $300 million is a later agency recap, not a replacement proven_loss."
+      }
+    ],
+    "period_start": "2019-01-01",
+    "period_end": "2022-09-20"
+  },
+  {
+    "money_id": "fof-m-002",
+    "amount": 250000000,
+    "currency": "USD",
+    "metric_type": "fraud_estimate",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Same $250 million charging headline, typed as fraud_estimate so it cannot be treated as proven_loss.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-003",
+    "amount": 240000000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S12",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "approximate",
+    "notes": "DOJ post-trial (Bock sentencing PR): FOF fraudulently obtained and disbursed more than $240 million. Pass-through through the sponsor, not a court-certified net-loss finding and not proven_loss for the entire network.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-001"
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-004"
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-005"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-004",
+    "amount": 3400000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "FOF receiving and disbursing approximately $3.4 million in federal funds in 2019.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-003"
+      }
+    ],
+    "period_start": "2019-01-01",
+    "period_end": "2019-12-31",
+    "recipient_id": "org-feeding-our-future"
+  },
+  {
+    "money_id": "fof-m-005",
+    "amount": 200000000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "FOF nearly $200 million in 2021 (DOJ).",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-003"
+      }
+    ],
+    "period_start": "2021-01-01",
+    "period_end": "2021-12-31",
+    "recipient_id": "org-feeding-our-future"
+  },
+  {
+    "money_id": "fof-m-006",
+    "amount": 18000000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "More than $18 million in administrative fees to Feeding Our Future (alleged as to entitlement; repeated post-trial in S12).",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-003"
+      }
+    ],
+    "recipient_id": "org-feeding-our-future"
+  },
+  {
+    "money_id": "fof-m-007",
+    "amount": 47920514,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S06",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Abdimajid Mohamed Nur, sentenced 2025-11-24. Restitution $47,920,514. Likely joint-and-several with Abdiaziz Farah on a shared Empire-group loss. Do not add to fof-m-008.",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-008",
+        "notes": "Same dollar figure on Farah's fraud sentence (S07/S21); likely joint-and-several. Do not treat as two independent recoveries."
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-009",
+        "notes": "USAO post-trial group-loss characterization of more than $47 million."
+      },
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001",
+        "notes": "Individual restitution sits inside the charging-headline scheme estimate; do not add to $250 million."
+      }
+    ],
+    "recipient_id": "fof-p-abdimajid-mohamed-nur"
+  },
+  {
+    "money_id": "fof-m-008",
+    "amount": 47920514,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S21",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Abdiaziz Shafii Farah fraud sentence 2025-08-06. IRS-CI states restitution $47,920,514 / $47.92 million (S07/S21). Full S07 page returned a historical stub. Likely joint-and-several with Nur. Do not add to fof-m-007.",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-007",
+        "notes": "Likely joint-and-several restitution on a shared Empire loss."
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-009"
+      },
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ],
+    "recipient_id": "fof-p-abdiaziz-shafii-farah"
+  },
+  {
+    "money_id": "fof-m-009",
+    "amount": 47000000,
+    "currency": "USD",
+    "metric_type": "proven_loss",
+    "source_id": "S06",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "approximate",
+    "notes": "USAO post-trial characterization: Empire Cuisine group stole more than $47 million as demonstrated at trial (18 million meals at 30+ sites). Group/site loss, not necessarily any one defendant's personal take. Not a substitute for a court-certified network proven_loss.",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-007"
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-008"
+      },
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-010",
+    "amount": 900000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S06",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "approximate",
+    "notes": "Nur Consulting received more than $900,000 (USAO post-trial).",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-009"
+      }
+    ],
+    "recipient_id": "org-nur-consulting"
+  },
+  {
+    "money_id": "fof-m-011",
+    "amount": 8662287,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S11",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Suleman Yusuf Mohamed agreed restitution $8,662,287 (plea 2026-04-02).",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001",
+        "notes": "Do not add individual restitution orders to the $250 million headline or to one another as recovered_amount."
+      }
+    ],
+    "recipient_id": "fof-p-suleman-yusuf-mohamed"
+  },
+  {
+    "money_id": "fof-m-012",
+    "amount": 1300000,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S11",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "approximate",
+    "notes": "Gandi Yusuf Mohamed: ~$1.3 million laundered, agreed as restitution (plea 2026-04-09).",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-011",
+        "notes": "Same 24-cr-15 family grouping; do not assume non-overlap."
+      }
+    ],
+    "recipient_id": "fof-p-gandi-yusuf-mohamed"
+  },
+  {
+    "money_id": "fof-m-013",
+    "amount": 866458,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S11",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Abdullahe Nur Jesow ordered restitution $866,458 (sentenced 2026-04-09).",
+    "recipient_id": "fof-p-abdullahe-nur-jesow"
+  },
+  {
+    "money_id": "fof-m-014",
+    "amount": 5000240,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S19",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Sahra Mohamed Nur ordered restitution $5,000,240.",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-024",
+        "notes": "S&S Catering group alleged_loss at charging may already contain this later restitution."
+      }
+    ],
+    "recipient_id": "fof-p-sahra-mohamed-nur"
+  },
+  {
+    "money_id": "fof-m-015",
+    "amount": 50000000,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S21",
+    "evidence_class": "AGENCY_POSITION",
+    "exact_or_approximate": "approximate",
+    "notes": "IRS Pub 3583: Mukhtar Mohamed Shariff almost $50 million restitution and 210 months. Agency recap, not the judgment PDF.",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-007",
+        "notes": "Almost $50 million is close to the $47.92 million Empire figure; possible joint-and-several or overlapping recap. Do not add."
+      }
+    ],
+    "recipient_id": "fof-p-mukhtar-mohamed-shariff"
+  },
+  {
+    "money_id": "fof-m-016",
+    "amount": 2400000,
+    "currency": "USD",
+    "metric_type": "restitution_ordered",
+    "source_id": "S21",
+    "evidence_class": "AGENCY_POSITION",
+    "exact_or_approximate": "approximate",
+    "notes": "IRS Pub 3583: Sharon Denise Ross $2.4 million restitution and 43 months.",
+    "recipient_id": "fof-p-sharon-denise-ross"
+  },
+  {
+    "money_id": "fof-m-017",
+    "amount": 14600000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S10",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Mohamed et al. (24-cr-15) group alleged to have stolen/laundered $14.6 million.",
+    "overlap_group_id": "fof-mohamed-24cr15",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-018",
+    "amount": 10100000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S11",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "approximate",
+    "notes": "Star Distribution received ~$10.1 million (Suleman Yusuf Mohamed plea PR).",
+    "overlap_group_id": "fof-mohamed-24cr15",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-011"
+      },
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-017"
+      }
+    ],
+    "recipient_id": "org-star-distribution"
+  },
+  {
+    "money_id": "fof-m-019",
+    "amount": 4286088,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S11",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Academy for Youth Excellence / S&S Catering received $4,286,088 (Jesow sentencing PR; fraudulent claims characterization).",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-024"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-020",
+    "amount": 32000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Safari group >$32 million at charging.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-021",
+    "amount": 16000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Safari restaurant >$16 million at charging.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "INCLUDED_IN",
+        "other_money_id": "fof-m-020"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-022",
+    "amount": 40000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Empire group >$40 million at charging.",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      },
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-009",
+        "notes": "Charging >$40 million vs post-trial >$47 million; later figure may supersede for the Empire group but is still USAO characterization."
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-023",
+    "amount": 28000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Empire Cuisine >$28 million at charging.",
+    "overlap_group_id": "fof-empire-47920514",
+    "overlaps": [
+      {
+        "relation": "INCLUDED_IN",
+        "other_money_id": "fof-m-022"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-024",
+    "amount": 18000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "S&S Catering group >$18 million at charging (S01). S14 later says S&S group alleged $17.4 million.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-025",
+    "amount": 25000000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S01",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "Haji group >$25 million at charging.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-026",
+    "amount": 300000000,
+    "currency": "USD",
+    "metric_type": "fraud_estimate",
+    "source_id": "S21",
+    "evidence_class": "AGENCY_POSITION",
+    "exact_or_approximate": "approximate",
+    "notes": "IRS-CI Pub 3583 (Rev. 3-2026) describes the scheme as over $300 million. Agency recap, not a court net-loss finding, not proven_loss, and not additive to $250 million.",
+    "overlap_group_id": "fof-scheme-loss",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-001",
+        "notes": "Later vintage of scheme-size language; do not sum $250M + $300M."
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-027",
+    "amount": 120000,
+    "currency": "USD",
+    "metric_type": "forfeiture_ordered",
+    "source_id": "S23",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "Nur juror-bribery plea: agreed forfeiture of $120,000 currency plus other seized cash under 18 U.S.C. § 981(a)(1)(C) and 28 U.S.C. § 2461(c). Bribe proceeds, not program loss.",
+    "overlaps": [
+      {
+        "relation": "NON_OVERLAPPING",
+        "other_money_id": "fof-m-001",
+        "notes": "Bribe cash is not CACFP/SFSP program loss."
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-028",
+    "amount": 2700000,
+    "currency": "USD",
+    "metric_type": "amount_paid",
+    "source_id": "S03",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "New Vision Foundation received approximately $2.7 million Feb 2021–Jan 2022 (Hussein Mohamed Farah information, 73rd defendant).",
+    "overlaps": [
+      {
+        "relation": "PARTIAL_COMPONENT_OF",
+        "other_money_id": "fof-m-001"
+      }
+    ],
+    "period_start": "2021-02-01",
+    "period_end": "2022-01-31",
+    "recipient_id": "org-new-vision-foundation"
+  },
+  {
+    "money_id": "fof-m-029",
+    "amount": 17400000,
+    "currency": "USD",
+    "metric_type": "alleged_loss",
+    "source_id": "S14",
+    "evidence_class": "CHARGED_ALLEGED",
+    "exact_or_approximate": "approximate",
+    "notes": "U.S. v. Hassan et al., 22-cr-224; S&S Catering group alleged $17.4 million (Jesow plea PR).",
+    "overlaps": [
+      {
+        "relation": "MAY_OVERLAP",
+        "other_money_id": "fof-m-024",
+        "notes": "S01 said S&S >$18 million; S14 says $17.4 million. Same group, later vintage."
+      }
+    ]
+  },
+  {
+    "money_id": "fof-m-030",
+    "amount": 310000,
+    "currency": "USD",
+    "metric_type": "unknown_or_disputed",
+    "source_id": "S22",
+    "evidence_class": "ADJUDICATED",
+    "exact_or_approximate": "exact",
+    "notes": "$310,000 daycare-center check treated by the Bock/Said jury as a bribe (element of § 666). Not program meal-reimbursement loss.",
+    "overlaps": [
+      {
+        "relation": "NON_OVERLAPPING",
+        "other_money_id": "fof-m-001",
+        "notes": "Bribe instrument, not a meal-claim total."
+      }
+    ]
+  }
+]

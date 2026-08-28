@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/event.schema.json",
+  "title": "Minnesota Fraud Research Event",
+  "description": "Canonical chronology event. Every event must cite its source. Typical types include program launch, enrollment, provider approval, complaints, internal warnings, audits, litigation, judicial rulings, payments, suspensions, search warrants, indictments, superseding indictments, guilty pleas, trials, verdicts, sentencing, restitution, corrective action plans, legislative hearings, policy reforms, program closures, and administrative sanctions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "summary",
+    "source_ids"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Controlled or free-text type, e.g. program_launch, enrollment, provider_approval, complaint, internal_warning, state_audit, litigation, judicial_ruling, payment, provider_suspension, search_warrant, indictment, superseding_indictment, guilty_plea, trial, verdict, sentencing, restitution, forfeiture, corrective_action_plan, legislative_hearing, policy_reform, program_closure, administrative_sanction."
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Principal date. Null only when the date is genuinely unknown; then explain in summary."
+    },
+    "end_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "If the event spans a period."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "related_entity_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "related_claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "investigation_family": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "family_id this event belongs to."
+    },
+    "jurisdiction": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

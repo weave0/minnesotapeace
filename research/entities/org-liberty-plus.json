@@ -1,0 +1,42 @@
+{
+  "entity_id": "org-liberty-plus",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Liberty Plus LLC",
+  "business_reg_ids": [
+    "MN-SOS-1349782500024"
+  ],
+  "officers": [
+    {
+      "name": "Anwar A Adow",
+      "title": "Registered agent",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    },
+    {
+      "name": "Anwar Ahmed Adow",
+      "title": "Manager",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "line1": "2355 Highway 36 W",
+      "line2": "Ste 438",
+      "city": "Roseville",
+      "state": "MN",
+      "postal_code": "55113",
+      "country": "US",
+      "raw": "2355 HIGHWAY 36 W STE 438, ROSEVILLE, MN 55113, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1349782500024, formed 2022-11-17, Active. Agent/manager Anwar Adow. Name-matched to HSS 25-cr-353; SOS record is not the indictment.",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

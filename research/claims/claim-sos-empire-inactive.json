@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-08-27T03:20:00Z",
+  "created_at": "2026-08-27T03:20:00Z",
+  "updated_at": "2026-08-27T03:20:00Z",
+  "is_inference": false,
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "claim_id": "claim-sos-empire-inactive",
+  "claim_text": "Minnesota SOS lists Empire Cuisine And Market LLC, file 1151747200022, original filing 2020-04-01, status Inactive after Administrative Termination on 2022-02-02. Registered office 13825 Edgewood Ave S, Savage, MN 55378.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-empire-cuisine-and-market"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-sos-mbls-2026-08-26"
+  ],
+  "organizations": [
+    "org-empire-cuisine-and-market"
+  ]
+}

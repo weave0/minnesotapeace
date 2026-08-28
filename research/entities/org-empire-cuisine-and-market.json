@@ -1,0 +1,42 @@
+{
+  "entity_id": "org-empire-cuisine-and-market",
+  "entity_type": "BUSINESS",
+  "canonical_name": "Empire Cuisine And Market LLC",
+  "aliases": [
+    "Empire Cuisine & Market"
+  ],
+  "ein": null,
+  "business_reg_ids": [
+    "MN-SOS-1151747200022"
+  ],
+  "addresses": [
+    {
+      "line1": "232 Marschall Road",
+      "line2": null,
+      "city": "Shakopee",
+      "state": "MN",
+      "postal_code": "55379",
+      "country": "US",
+      "raw": "232 MARSCHALL ROAD, SHAKOPEE, MN 55379",
+      "source_ids": [
+        "src-irs-990-pin-fy2021"
+      ]
+    },
+    {
+      "line1": "13825 Edgewood Ave S",
+      "city": "Savage",
+      "state": "MN",
+      "postal_code": "55378",
+      "country": "US",
+      "raw": "13825 Edgewood Ave S, Savage, MN 55378, USA",
+      "source_ids": [
+        "src-mn-sos-mbls-2026-08-26"
+      ]
+    }
+  ],
+  "notes": "SOS file 1151747200022, LLC formed 2020-04-01, Inactive after administrative termination 2022-02-02. Registered office on SOS is Savage, MN. PIN FY2021 990 listed contractor address 232 Marschall Road, Shakopee, MN 55379. Those addresses disagree; both kept. No manager listed on the current SOS snapshot.",
+  "source_ids": [
+    "src-irs-990-pin-fy2021",
+    "src-mn-sos-mbls-2026-08-26"
+  ]
+}

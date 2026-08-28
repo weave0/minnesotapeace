@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/entity.schema.json",
+  "title": "Minnesota Fraud Research Entity",
+  "description": "Canonical entity independent of any article. IDs are durable; names are not keys. Entity merging MUST require evidence. Do not accidentally combine people or organizations with similar names. Shared address is not conspiracy; shared attorney, accountant, neighborhood, bank, program, or vendor is not automatically evidence of conspiracy.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "entity_id",
+    "entity_type",
+    "canonical_name"
+  ],
+  "$defs": {
+    "officer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "person_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Resolved PERSON entity_id if known."
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "valid_from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "valid_until": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "addressItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "address_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ADDRESS entity_id if the address is itself a node."
+        },
+        "line1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "line2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postal_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": "US"
+        },
+        "raw": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Unparsed address as it appears in the source."
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "mergeEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Required documentation when this entity absorbs another. Must not merge on similar names without evidence (shared unique identifier, court caption identity, filing that equates the names, etc.).",
+      "required": [
+        "merged_from",
+        "evidence_source_ids",
+        "rationale"
+      ],
+      "properties": {
+        "merged_from": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "entity_ids absorbed into this canonical record.",
+          "minItems": 1
+        },
+        "evidence_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Sources that establish identity, not mere name similarity.",
+          "minItems": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "properties": {
+    "entity_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "PERSON",
+        "ORGANIZATION",
+        "BUSINESS",
+        "NONPROFIT",
+        "GOVERNMENT_AGENCY",
+        "PROGRAM",
+        "SERVICE_PROVIDER",
+        "MEAL_SITE",
+        "ADDRESS",
+        "BANK_ACCOUNT",
+        "PROPERTY",
+        "VEHICLE"
+      ],
+      "description": "SERVICE_PROVIDER is the token for 'service provider'."
+    },
+    "canonical_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Alternate spellings, nicknames, transliterations."
+    },
+    "former_names": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "dba": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Doing-business-as names."
+    },
+    "npi": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "National Provider Identifier, when public."
+    },
+    "medicaid_provider_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ein": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Employer Identification Number, when public."
+    },
+    "business_reg_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "State business-registration, file, or charter numbers."
+    },
+    "officers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/officer"
+      }
+    },
+    "addresses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/addressItem"
+      }
+    },
+    "merge_evidence": {
+      "$ref": "#/$defs/mergeEvidence"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Sources establishing this entity's existence or identifiers."
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-08-27T21:15:00Z",
+  "created_at": "2026-08-27T21:15:00Z",
+  "updated_at": "2026-08-27T21:15:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mohamed-24cr015-ecf1-fof-sponsor-200m-recital",
+  "claim_text": "The January 24, 2024 Mohamed indictment, No. 0:24-cr-00015 (ECF 1) para 12, recites that Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021, and para 14 recites that Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021. These are FOF-sponsor-wide recitals (amount_paid), not the Mohamed family's alleged loss. They overlap the Bock $250 million charging headline (overlap_group_id fof-network-scheme-size) and must not be added to that headline, to the Mohamed >$12 million figure, or to HSS.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:24-cr-00015",
+  "source_ids": [
+    "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "date_start": "2019-01-01",
+  "date_end": "2021-12-31",
+  "event_date": "2024-01-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 4,
+      "locator": "para 12",
+      "quote": "Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021."
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "page": 4,
+      "locator": "para 14",
+      "quote": "Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 3400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2019-01-01",
+      "period_end": "2019-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 12 FOF 2019 sponsor disbursements. Network recital, not Mohamed-family loss."
+    },
+    {
+      "value": 200000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 12 FOF 2021 sponsor disbursements. Same figure as Bock/DOJ charging materials."
+    },
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 14 FOF 2021 administrative fees. Overlaps Bock $18M admin-fee language."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "FOF-sponsor-wide recital, not Mohamed-family alleged_loss",
+    "overlap_group_id fof-network-scheme-size — do not add to Bock $250M",
+    "do not add to HSS",
+    "do not add to Mohamed >$12M family receipts"
+  ],
+  "editorial_notes": "Kept as a separate claim so the $200M/$18M recitals are not silently rolled into Mohamed-family dollars or the Bock headline."
+}

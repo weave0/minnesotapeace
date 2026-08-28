@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/money.schema.json",
+  "title": "Minnesota Fraud Research Money Record",
+  "description": "First-class money record. Never sum overlapping dollars. amount billed ≠ amount paid ≠ amount stolen ≠ proven amount ≠ program spending ≠ identified-for-recovery ≠ recovered money ≠ restitution ordered ≠ restitution collected. A program-wide alleged-fraud estimate may already contain amounts charged in individual cases; those cases cannot be added to the program estimate. Never put a TOTAL FRAUD number on a homepage.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "money_id",
+    "amount",
+    "currency",
+    "metric_type"
+  ],
+  "$defs": {
+    "metricType": {
+      "type": "string",
+      "enum": [
+        "program_spend",
+        "amount_billed",
+        "amount_paid",
+        "alleged_loss",
+        "intended_loss",
+        "proven_loss",
+        "restitution_ordered",
+        "forfeiture_ordered",
+        "recovered_amount",
+        "identified_for_recovery",
+        "civil_settlement",
+        "improper_payment_estimate",
+        "error_rate",
+        "fraud_estimate",
+        "unknown_or_disputed",
+        "program_authorization",
+        "amount_requested",
+        "amount_claimed",
+        "amount_approved",
+        "actual_loss",
+        "improper_payment",
+        "restitution_requested",
+        "forfeiture_sought",
+        "assets_seized",
+        "assets_recovered",
+        "administrative_recoupment"
+      ],
+      "description": "Dollar figures are not interchangeable. amount_billed ≠ amount_paid ≠ alleged_loss ≠ proven_loss ≠ restitution_ordered ≠ recovered_amount. Never collapse figures into a headline TOTAL FRAUD number. The circulating '$9 billion' Minnesota Medicaid figure is a fraud_estimate or investigative hypothesis, not proven_loss."
+    },
+    "evidenceClass": {
+      "type": "string",
+      "enum": [
+        "ADJUDICATED",
+        "CHARGED_ALLEGED",
+        "CIVIL_ALLEGED_OR_RESOLVED",
+        "AUDIT_FINDING",
+        "AGENCY_POSITION",
+        "SWORN_TESTIMONY",
+        "LEGISLATIVE_FINDING_OR_ALLEGATION",
+        "SECONDARY_VERIFIED",
+        "LEAD_UNVERIFIED",
+        "DERIVED_INFERENCE"
+      ],
+      "description": "Evidentiary class of the supporting record. An indictment is CHARGED_ALLEGED (what prosecutors alleged), not ADJUDICATED. An official source is not independently proven merely because it is official."
+    },
+    "exactOrApproximate": {
+      "type": "string",
+      "enum": [
+        "exact",
+        "approximate",
+        "unknown"
+      ],
+      "description": "Whether the amount is a precise figure from the source or an approximation/rounding."
+    },
+    "grossOrNet": {
+      "type": "string",
+      "enum": [
+        "gross",
+        "net",
+        "unknown"
+      ],
+      "description": "Whether the amount is gross or net of offsets, recoveries, or other adjustments."
+    },
+    "overlapRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation",
+        "other_money_id"
+      ],
+      "properties": {
+        "relation": {
+          "type": "string",
+          "enum": [
+            "INCLUDED_IN",
+            "OVERLAPS_WITH",
+            "SUPERSEDES",
+            "PARTIAL_COMPONENT_OF",
+            "MAY_OVERLAP",
+            "NON_OVERLAPPING"
+          ],
+          "description": "INCLUDED_IN: this amount is already inside other_money_id. OVERLAPS_WITH: partial unknown overlap. SUPERSEDES: this figure replaces other_money_id. PARTIAL_COMPONENT_OF: this is a component of a larger figure. MAY_OVERLAP: overlap suspected but not demonstrated. NON_OVERLAPPING: reviewers confirmed these may be considered separately."
+        },
+        "other_money_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The related money record."
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "properties": {
+    "money_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "amount": {
+      "type": "number",
+      "description": "Numeric value. Distinct from claim.amounts[].value, which remains the claim-embedded field name."
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD",
+      "minLength": 1
+    },
+    "metric_type": {
+      "$ref": "#/$defs/metricType"
+    },
+    "period_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "period_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "program_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Program entity_id."
+    },
+    "payer_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Entity that paid or was billed as payer."
+    },
+    "recipient_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Entity that received or claimed the funds."
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Primary source of this figure."
+    },
+    "evidence_class": {
+      "$ref": "#/$defs/evidenceClass"
+    },
+    "exact_or_approximate": {
+      "$ref": "#/$defs/exactOrApproximate"
+    },
+    "gross_or_net": {
+      "$ref": "#/$defs/grossOrNet"
+    },
+    "overlap_group_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Optional grouping key for amounts that must not be summed."
+    },
+    "methodology": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "overlaps": {
+      "type": "array",
+      "description": "Explicit overlap graph. Never sum overlapping dollars. Preferred field name: overlaps. Alias: overlap_relations. Items: {relation, other_money_id, notes}.",
+      "items": {
+        "$ref": "#/$defs/overlapRelation"
+      }
+    },
+    "overlap_relations": {
+      "type": "array",
+      "description": "Alias of overlaps. Same items: {relation, other_money_id, notes}.",
+      "items": {
+        "$ref": "#/$defs/overlapRelation"
+      }
+    }
+  }
+}

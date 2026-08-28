@@ -1,0 +1,14 @@
+{
+  "source_id": "src-irs-bmf-mn-2026-08",
+  "canonical_url": "https://www.irs.gov/pub/irs-soi/eo_mn.csv",
+  "issuing_body": "Internal Revenue Service, Exempt Organizations Business Master File extract (Minnesota)",
+  "title": "IRS EO BMF Minnesota extract (retrieved 2026-08-26)",
+  "publication_date": null,
+  "retrieval_date": "2026-08-26",
+  "document_type": "agency_record",
+  "local_path": "research/entities/raw/bmf-mn-hits.json",
+  "access_status": "archived",
+  "notes": "Full statewide CSV was retrieved (eo_mn.csv) but is not committed (size). bmf-mn-hits.json holds name/EIN hits for this harvest. Feeding Our Future EIN 814343304 is absent from this extract. Partners In Nutrition EIN 474302258 is present.",
+  "source_tier": 7,
+  "source_status": "PRIMARY_AGENCY_RECORD"
+}

@@ -1,0 +1,41 @@
+{
+  "last_checked": "2026-08-26",
+  "notes": "Statutes and precedent indexed from official locators. See harvest markdown for full citations. Kousisis 2025 official PDF on disk.",
+  "federal_statutes": [
+    "18 USC 1343",
+    "18 USC 1347",
+    "18 USC 1349",
+    "18 USC 371",
+    "18 USC 666",
+    "18 USC 1956",
+    "18 USC 1957",
+    "18 USC 201",
+    "18 USC 1512",
+    "42 USC 1320a-7b(b)",
+    "31 USC 3729-3733"
+  ],
+  "minnesota": [
+    "Minn. Stat. ch. 15C",
+    "Minn. Stat. ch. 609 (relevant public-program fraud provisions)"
+  ],
+  "precedent": [
+    "Escobar, 579 U.S. 176 (2016)",
+    "Schutte, 598 U.S. 739 (2023)",
+    "Cairns, 42 F.4th 828 (8th Cir. 2022)",
+    "Ciminelli, 598 U.S. 306 (2023)",
+    "Sabri, 541 U.S. 600 (2004)",
+    "Fischer, 529 U.S. 667 (2000)",
+    "Kousisis v. United States (2025)"
+  ],
+  "fof_statutes_found_in_fetched_court_text": [
+    "18 USC 371",
+    "18 USC 1343",
+    "18 USC 666",
+    "18 USC 1956(a)",
+    "18 USC 1957",
+    "18 USC 201"
+  ],
+  "fof_statutes_not_found_in_fetched_charging_text": [
+    "18 USC 1349"
+  ]
+}

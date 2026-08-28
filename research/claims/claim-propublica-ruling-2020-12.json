@@ -1,0 +1,23 @@
+{
+  "reviewed_at": "2026-08-27T03:05:00Z",
+  "created_at": "2026-08-27T03:05:00Z",
+  "updated_at": "2026-08-27T03:05:00Z",
+  "is_inference": false,
+  "claim_id": "claim-propublica-irs-index-ruling-2020-12",
+  "claim_text": "ProPublica Nonprofit Explorer, drawing IRS organization index data, reports Feeding Our Future EIN 81-4343304 ruling_date 2020-12-01 and tax-exempt since Dec. 2020.",
+  "claim_type": "IDENTITY",
+  "subject_ids": [
+    "org-feeding-our-future"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-propublica-fof-814343304"
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "editorial_notes": "Conflicts with AGO petition date of 2017-02-28. Contradiction left open; possible reconciliation is a later official ruling-date field vs an earlier determination letter.",
+  "organizations": [
+    "org-feeding-our-future"
+  ]
+}

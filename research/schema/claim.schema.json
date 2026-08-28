@@ -1,0 +1,569 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/claim.schema.json",
+  "title": "Minnesota Fraud Research Claim",
+  "description": "Atomic unit of the MinnesotaPeace evidence corpus. Extended from the committed GitHub claim.schema.json on branch research/minnesota-fraud-corpus (required fields, evidence_class, original lowercase status values, and original metric_type values are preserved so previously written claim files remain valid). A claim is not an article. Public wording must reflect status. Do not write 'X stole $14 million' when the evidence only supports 'prosecutors alleged that X participated in a scheme involving approximately $14 million'.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "claim_text",
+    "evidence_class",
+    "status",
+    "source_ids",
+    "confidence",
+    "is_allegation",
+    "is_inference",
+    "reviewed_at"
+  ],
+  "$defs": {
+    "idString": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "evidenceClass": {
+      "type": "string",
+      "enum": [
+        "ADJUDICATED",
+        "CHARGED_ALLEGED",
+        "CIVIL_ALLEGED_OR_RESOLVED",
+        "AUDIT_FINDING",
+        "AGENCY_POSITION",
+        "SWORN_TESTIMONY",
+        "LEGISLATIVE_FINDING_OR_ALLEGATION",
+        "SECONDARY_VERIFIED",
+        "LEAD_UNVERIFIED",
+        "DERIVED_INFERENCE"
+      ],
+      "description": "Evidentiary class of the supporting record. An indictment is CHARGED_ALLEGED (what prosecutors alleged), not ADJUDICATED. An official source is not independently proven merely because it is official."
+    },
+    "metricType": {
+      "type": "string",
+      "enum": [
+        "program_spend",
+        "amount_billed",
+        "amount_paid",
+        "alleged_loss",
+        "intended_loss",
+        "proven_loss",
+        "restitution_ordered",
+        "forfeiture_ordered",
+        "recovered_amount",
+        "identified_for_recovery",
+        "civil_settlement",
+        "improper_payment_estimate",
+        "error_rate",
+        "fraud_estimate",
+        "unknown_or_disputed",
+        "program_authorization",
+        "amount_requested",
+        "amount_claimed",
+        "amount_approved",
+        "actual_loss",
+        "improper_payment",
+        "restitution_requested",
+        "forfeiture_sought",
+        "assets_seized",
+        "assets_recovered",
+        "administrative_recoupment"
+      ],
+      "description": "Dollar figures are not interchangeable. amount_billed ≠ amount_paid ≠ alleged_loss ≠ proven_loss ≠ restitution_ordered ≠ recovered_amount. Never collapse figures into a headline TOTAL FRAUD number. The circulating '$9 billion' Minnesota Medicaid figure is a fraud_estimate or investigative hypothesis, not proven_loss."
+    },
+    "exactOrApproximate": {
+      "type": "string",
+      "enum": [
+        "exact",
+        "approximate",
+        "unknown"
+      ],
+      "description": "Whether the amount is a precise figure from the source or an approximation/rounding."
+    },
+    "grossOrNet": {
+      "type": "string",
+      "enum": [
+        "gross",
+        "net",
+        "unknown"
+      ],
+      "description": "Whether the amount is gross or net of offsets, recoveries, or other adjustments."
+    },
+    "supportingPassage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Source identifier of the supporting document."
+        },
+        "page": {
+          "type": [
+            "integer",
+            "string",
+            "null"
+          ],
+          "description": "Page number or page range (e.g. 14 or '14-16') in the cited document."
+        },
+        "quote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Verbatim supporting passage. Prefer exact source language over paraphrase."
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional non-page locator (paragraph, Bates number, PDF destination, transcript timestamp)."
+        }
+      }
+    },
+    "amountItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "currency",
+        "metric_type"
+      ],
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "Numeric amount. Original field name; do not rename."
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD",
+          "minLength": 1
+        },
+        "metric_type": {
+          "$ref": "#/$defs/metricType"
+        },
+        "period_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "Inclusive start of the period the amount covers."
+        },
+        "period_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "Inclusive end of the period the amount covers."
+        },
+        "methodology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "How the figure was derived, if the source states a method."
+        },
+        "exact_or_approximate": {
+          "$ref": "#/$defs/exactOrApproximate"
+        },
+        "gross_or_net": {
+          "$ref": "#/$defs/grossOrNet"
+        },
+        "overlap_group_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Identifier grouping amounts that must not be summed because they overlap (e.g. a program-wide estimate that already contains charged-case amounts)."
+        }
+      }
+    },
+    "assertionLadder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim",
+        "evidence_available",
+        "missing_evidence",
+        "current_assessment"
+      ],
+      "description": "For major or controversial claims, show how far the evidence actually goes. Example: claim 'officials knowingly facilitated fraud' may have evidence of complaints received, inadequate investigations, and continued payments, while missing evidence that a specified official knowingly joined the scheme. Current assessment might then be: strong evidence of oversight failure; insufficient evidence for criminal participation by specified officials.",
+      "properties": {
+        "claim": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The controversial or high-stakes formulation being tested."
+        },
+        "evidence_available": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "What the record actually shows, each item sourced elsewhere in this claim."
+        },
+        "missing_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "What would be required to support a stronger formulation and is not yet in the corpus."
+        },
+        "current_assessment": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Qualified assessment that preserves A–E proposition boundaries."
+        }
+      }
+    }
+  },
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable claim identifier. Never reuse."
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Atomic, testable statement as currently formulated."
+    },
+    "normalized_claim": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional canonical restatement used for comparison, search, and contradiction detection."
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "COUNT",
+        "AMOUNT",
+        "LEGAL_ELEMENT",
+        "CHRONOLOGY",
+        "RELATIONSHIP",
+        "WARNING",
+        "DISPOSITION",
+        "OVERSIGHT",
+        "IDENTITY",
+        "METHODOLOGY",
+        "OTHER"
+      ],
+      "description": "Optional classification of the kind of proposition."
+    },
+    "subject_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Original field. Entity IDs this claim is about."
+    },
+    "evidence_class": {
+      "$ref": "#/$defs/evidenceClass"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "adjudicated",
+        "charged",
+        "alleged",
+        "disputed",
+        "superseded",
+        "withdrawn",
+        "unresolved",
+        "ALLEGED",
+        "CHARGED",
+        "ADMITTED",
+        "STIPULATED",
+        "PROVEN_AT_TRIAL",
+        "JUDICIAL_FINDING",
+        "AUDIT_FINDING",
+        "AGENCY_FINDING",
+        "ADMINISTRATIVE_FINDING",
+        "DISPUTED",
+        "PARTIALLY_CORROBORATED",
+        "CORROBORATED",
+        "RETRACTED",
+        "OVERTURNED",
+        "UNRESOLVED",
+        "ANALYTICAL_INFERENCE"
+      ],
+      "description": "Lifecycle / legal status of the proposition. Lowercase values (confirmed, adjudicated, charged, alleged, disputed, superseded, withdrawn, unresolved) are the original schema and remain valid. Uppercase values are mandate extensions. Public-facing wording must reflect this status. Preserve historical progression via valid_from / valid_until / superseded_by rather than overwriting history."
+    },
+    "proposition_class": {
+      "type": "string",
+      "enum": [
+        "A_FRAUD_AGAINST_STATE",
+        "B_OVERSIGHT_FAILURE",
+        "C_NEGLIGENCE_MISADMINISTRATION",
+        "D_OFFICIAL_MISCONDUCT",
+        "E_GOVERNMENT_CRIMINAL_PARTICIPATION"
+      ],
+      "description": "A–E epistemic class. These are not interchangeable. A = private actors intentionally defrauded government-funded programs. B = agency failed to prevent, identify, stop, investigate, or respond. C = negligence, incompetence, misadministration, or policy failure. D = an individual official knowingly violated a legal/ethical/administrative duty. E = a public official knowingly participated in criminal conduct. Evidence of B does not establish C; C does not establish D; D does not establish E. Never collapse B or C into D/E without actor-specific evidence."
+    },
+    "event_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Original field. Principal date of the claimed event, if a single date applies."
+    },
+    "date_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Inclusive start of the claimed period (extends event_date for ranges)."
+    },
+    "date_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Inclusive end of the claimed period."
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Identifiers of sources that support this claim.",
+      "minItems": 1
+    },
+    "source_locator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original field. Free-text locator within a source when supporting_passages is not used."
+    },
+    "supporting_passages": {
+      "type": "array",
+      "description": "Exact supporting text/pages bound to source_ids. Quality gate 2 (Passage).",
+      "items": {
+        "$ref": "#/$defs/supportingPassage"
+      }
+    },
+    "jurisdiction": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original field."
+    },
+    "case_number": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original field. Court case / docket number if applicable."
+    },
+    "program_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Original field. Program entity IDs."
+    },
+    "persons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Person entity_ids named in this claim."
+    },
+    "organizations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Organization/business/nonprofit entity_ids."
+    },
+    "agencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Government-agency entity_ids."
+    },
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Program entity_ids (may overlap program_ids; both are valid)."
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Location/address entity_ids."
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Case IDs this claim relates to."
+    },
+    "statutes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Statute citations or legal-record IDs."
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Event IDs this claim relates to."
+    },
+    "amounts": {
+      "type": "array",
+      "description": "Original field, extended with exact_or_approximate, gross_or_net, overlap_group_id.",
+      "items": {
+        "$ref": "#/$defs/amountItem"
+      }
+    },
+    "corroborating_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Original field. Additional sources that independently corroborate."
+    },
+    "contradicting_claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Original field. Claim IDs that conflict with this one."
+    },
+    "qualifiers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Scope, hedging, or caveats that must travel with the claim (e.g. 'as of indictment date', 'settlement contains no-determination language')."
+    },
+    "confidence": {
+      "description": "How strongly the available record supports this formulation of the claim. A numeric 0–1 score (original schema) or a qualitative enum. Confidence does not replace legal/evidentiary status: 'high confidence prosecutors alleged X' is not 'high confidence X occurred'.",
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Original numeric confidence in [0, 1]."
+        },
+        {
+          "type": "string",
+          "enum": [
+            "VERY_HIGH",
+            "HIGH",
+            "MODERATE",
+            "LOW",
+            "UNVERIFIED"
+          ]
+        }
+      ]
+    },
+    "is_allegation": {
+      "type": "boolean",
+      "description": "True if the claim restates an allegation rather than an adjudicated fact."
+    },
+    "is_inference": {
+      "type": "boolean",
+      "description": "True if the claim is a derived analytical conclusion. Must never masquerade as a source fact."
+    },
+    "assertion_ladder": {
+      "$ref": "#/$defs/assertionLadder"
+    },
+    "editorial_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Internal notes. Not a substitute for sourced claim_text."
+    },
+    "review_notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original field."
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this claim was last human- or agent-reviewed."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Start of the temporal state this record describes. Never overwrite history."
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "End of the temporal state. Null means currently valid."
+    },
+    "superseded_by": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "claim_id of the record that replaces this one (plea superseding allegation, later count, correction)."
+    }
+  }
+}

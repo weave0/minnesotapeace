@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "status": "alleged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "event_date": "2022-09-13",
+  "claim_id": "claim-farah-22cr124-ecf57-thinktechact-receipts",
+  "claim_text": "The September 13, 2022 Farah superseding indictment, No. 0:22-cr-00124 (ECF 57) paras 22 and 37, alleges that ThinkTechAct / Mind Foundry received more than $18 million in Federal Child Nutrition Program funds from Sponsor A and another $3.7 million from Feeding Our Future between in or about February 2021 and January 2022, based on claims of serving more than 25,000 children a day. Para 40 recites that ThinkTechAct transferred more than 70 percent of the $21 million it received to Empire Cuisine and Market and related entities. Face language is received (amount_paid). The $18 million, $3.7 million, and $21 million are components of one ThinkTechAct receipt figure and a subset of the $40 million Empire-group alleged_loss; they must not be summed with each other, with Empire $28 million, with Bock $250 million, with HSS, or with Mohamed $12 million.",
+  "claim_type": "AMOUNT",
+  "organizations": [
+    "org-feeding-our-future",
+    "org-empire-cuisine-and-market"
+  ],
+  "date_start": "2021-02-01",
+  "date_end": "2022-01-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 7,
+      "locator": "para 22",
+      "quote": "In all, between in or about February 2021 and January 2022, ThinkTechAct received more than $18 million in Federal Child Nutrition Program funds from Sponsor A and another $3.7 million from Feeding Our Future."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 13,
+      "locator": "para 40",
+      "quote": "ThinkTechAct transferred more than 70 percent of the $21 million in Federal Child Nutrition Program funds it received to Empire Cuisine and Market and related entities."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-02-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 22: more than $18 million from Sponsor A. Component of para 40 $21 million."
+    },
+    {
+      "value": 3700000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-02-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 22: $3.7 million from Feeding Our Future. Component of para 40 $21 million. Distinct from FOF's $18 million 2021 admin-fee recital."
+    },
+    {
+      "value": 21000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-02-01",
+      "period_end": "2022-01-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "methodology": "Para 40 rounds $18M+$3.7M to $21 million. Not independent."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "received / amount_paid, not billed",
+    "ThinkTechAct $18M from Sponsor A is not the FOF $18M admin-fee recital",
+    "subset of empire-22cr124-40m-scheme; inflows also overlap Empire $28M",
+    "do not add to Bock $250M, HSS, or Mohamed $12M"
+  ]
+}

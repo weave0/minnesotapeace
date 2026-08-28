@@ -1,0 +1,91 @@
+[
+  {
+    "file": "foundation-first-services.html",
+    "fields": {
+      "Business Type": "Limited Liability Company (Domestic)",
+      "MN Statute": "322C",
+      "File Number": "1392114100023",
+      "Home Jurisdiction": "Minnesota",
+      "Filing Date": "5/18/2023",
+      "Status": "Active / In Good Standing",
+      "Renewal Due Date": "12/31/2026",
+      "Registered Office Address": "1821 UNIVERSITY AVE W STE 158, SAINT PAUL, MN 55104&ndash;2895, USA",
+      "Registered Agent(s)": "(Optional) Currently No Agent",
+      "Principal Executive Office Address": "1821 UNIVERSITY AVE W STE 158, SAINT PAUL, MN 55104&ndash;2895, USA",
+      "Manager": "Abdifitah M Mohamed",
+      "Mailing Address": "None Provided, ,"
+    },
+    "history": [
+      {
+        "date": "5/18/2023",
+        "filing": "Original Filing - Limited Liability Company (Domestic)&lt;br/> (Business Name: Foundation First Services L.L.C.)"
+      },
+      {
+        "date": "4/21/2024",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "12/4/2024",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "4/14/2025",
+        "filing": "Registered Office and/or Agent - Limited Liability Company (Domestic)"
+      },
+      {
+        "date": "7/16/2025",
+        "filing": "Amendment - Limited Liability Company (Domestic)"
+      }
+    ]
+  },
+  {
+    "file": "bet-on-better-future.html",
+    "fields": {
+      "Business Type": "Nonprofit Corporation (Domestic)",
+      "MN Statute": "317A",
+      "File Number": "1240557200029",
+      "Home Jurisdiction": "Minnesota",
+      "Filing Date": "6/21/2021",
+      "Status": "Inactive",
+      "Renewal Due Date": "12/31/2024",
+      "Registered Office Address": "2722 Park Avenue, Suite 303, Minneapolis, MN 55407, USA",
+      "Registered Agent(s)": "United States Corporation Agents, Inc.",
+      "Mailing Address": "None Provided",
+      "President": "Abdulkadir Salah"
+    },
+    "history": [
+      {
+        "date": "6/21/2021",
+        "filing": "Original Filing - Nonprofit Corporation (Domestic)&lt;br/> (Business Name: Bet On Better Future)"
+      },
+      {
+        "date": "6/29/2021",
+        "filing": "Amendment - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "9/22/2021",
+        "filing": "Global Registered Office and/or Agent - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "11/1/2021",
+        "filing": "Registered Office - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "1/25/2023",
+        "filing": "Involuntary Dissolution - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/20/2023",
+        "filing": "Annual Reinstatement - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/23/2023",
+        "filing": "Intent to Dissolve - Nonprofit Corporation (Domestic)"
+      },
+      {
+        "date": "10/23/2023",
+        "filing": "Dissolution  - Nonprofit Corporation (Domestic)"
+      }
+    ]
+  }
+]

@@ -1,5 +1,8 @@
 name: Deploy to Cloudflare Pages
 
+# Cloudflare Pages project `minnesotapeace` deploys from `main`.
+# `main` is the MN Peace public site (community healing + The Record).
+
 on:
     push:
         branches:

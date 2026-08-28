@@ -1,0 +1,1135 @@
+{
+  "docket_number": "0:22-cr-00124",
+  "ecf": 57,
+  "filed": "2022-09-13",
+  "unsealed": "2022-09-20",
+  "unsealed_note": "Unsealed date is from the prior stub / docket harvest, not printed as a date on the face of page 1. Face stamp: SCANNED SEP 13 2022 U.S. DISTRICT COURT MPLS. PDF CreationDate 2022-09-13T22:18:49Z (PaperStream fi-7700).",
+  "pages": 48,
+  "instrument": "superseding_indictment",
+  "court": "United States District Court, District of Minnesota",
+  "caption": "United States of America v. Abdiaziz Shafii Farah, Mohamed Jama Ismail, Mahad Ibrahim, Abdimajid Mohamed Nur, Said Shafii Farah, Abdiwahab Maalim Aftin, Mukhtar Mohamed Shariff, and Hayat Mohamed Nur",
+  "short_caption": "United States v. Farah, et al.",
+  "header_case_id": "0:22-cr-00124-NEB-TNL",
+  "face_criminal_no": "22-124 (NEB/TNL)",
+  "judge": "Nancy Ellen Brasel",
+  "magistrate": "Tony N. Leung",
+  "source_pdf": "research/court/pdfs/0_22-cr-00124_ecf57_Superseding-Indictment.pdf",
+  "recap_path": "recap/gov.uscourts.mnd.201530/gov.uscourts.mnd.201530.57.0.pdf",
+  "pacer_case_id_note": "CL has two Farah docket records: 65361787 (pacer 201529) and 63409881 (pacer 201530). This PDF is the 201530 RECAP object for ECF 57. The 201529 IA bundle does not contain 57.0.pdf.",
+  "sha256": "b20c786a70f454083482ed82e533f379f0dc1bab9272cee21b5d8854d766609c",
+  "bytes": 3021230,
+  "ocr_text": "research/court/raw/farah-22-cr-124-ecf57.txt",
+  "ocr_dpi": 180,
+  "ocr_engine": "tesseract 5.5.0 psm 6, pdftoppm PNG",
+  "evidence_class": "CHARGED_ALLEGED",
+  "evidentiary_status": "CHARGED_ALLEGED",
+  "not_adjudicated": true,
+  "investigation_family": "feeding-our-future",
+  "not_hss": true,
+  "not_mohamed_family": true,
+  "caption_statutes": [
+    "18 U.S.C. § 371",
+    "18 U.S.C. § 666",
+    "18 U.S.C. § 1343",
+    "18 U.S.C. § 1542",
+    "18 U.S.C. § 1956",
+    "18 U.S.C. § 1957"
+  ],
+  "ocr_corrections": [
+    {
+      "page": 1,
+      "issue": "Tesseract read caption statute as 18 U.S.C. § 1348 and defendant 5 as SAID SHAFT FARAH. Visual inspection of the scan shows 18 U.S.C. § 1343 and SAID SHAFII FARAH.",
+      "used": "18 U.S.C. § 1343; Said Shafii Farah"
+    },
+    {
+      "page": "30-31",
+      "issue": "Wire-fraud table OCR dropped count numerals 8 and 9 (rows still present). Visual inspection shows Count 8 Mukhtar Shariff Oct 21, 2021 email to Feeding Our Future and Count 9 Abdiaziz Farah Nov 1, 2021 email to Sponsor A.",
+      "used": "Counts 8-9 restored from page images"
+    },
+    {
+      "page": 32,
+      "issue": "Count 13 defendant OCR ABDIAZIZ SHAFT FARAH / SAID SHAFT FARAH. Visual: ABDIAZIZ SHAFII FARAH and SAID SHAFII FARAH.",
+      "used": "Abdiaziz Shafii Farah; Said Shafii Farah"
+    },
+    {
+      "page": 43,
+      "issue": "Money-laundering table OCR read Count 41 as Al. Visual inspection shows Count 41.",
+      "used": "Count 41, September 30, 2021, approximately $34,777"
+    },
+    {
+      "page": 45,
+      "issue": "180-dpi tesseract read forfeiture item e as 6594 Candy Cove Trail SE. 400-dpi recrop and visual inspection show 5594 Candy Cove Trail SE (adjacent to 5604 Candy Cove Trail SE in item f).",
+      "used": "5594 Candy Cove Trail SE, Prior Lake, Minnesota"
+    },
+    {
+      "page": "45-46",
+      "issue": "Forfeiture list letters garbled (53 for j., i for l., Bi for s.). Cash amounts and account names restored from page images.",
+      "used": "items i-t as listed in forfeiture[]"
+    },
+    {
+      "page": "1-48",
+      "issue": "Missing spaces (Allin); paragraph numerals 2:/5:/15,/47./429./91,; name variants SHAFT/SHAFII, ABIDIMAJID/ABDIMAJID, ABDIJAMID, ABIDAZIZ. Count tables and headline dollars were checked against page images."
+    },
+    {
+      "page": 41,
+      "issue": "Count 34 transaction on face reads 2019 Nissan Ultima. Forfeiture item x on p.46 reads 2019 Nissan Altima. Kept each as written on that page; not silently merged.",
+      "used": "Ultima on Count 34 row; Altima on forfeiture list"
+    }
+  ],
+  "defendants_caption": [
+    {
+      "n": 1,
+      "name": "Abdiaziz Shafii Farah",
+      "role_on_face": "Co-owner/operator of Empire Cuisine and Market LLC (registered ~April 2020) and Empire Enterprises LLC (created ~April 2021). Named on Count 43 (passport)."
+    },
+    {
+      "n": 2,
+      "name": "Mohamed Jama Ismail",
+      "role_on_face": "Co-owner/operator of Empire Cuisine and Market; owner of MZ Market LLC (~June 2021)."
+    },
+    {
+      "n": 3,
+      "name": "Mahad Ibrahim",
+      "role_on_face": "President/owner of ThinkTechAct Foundation / Mind Foundry Learning Foundation; owner of MIB Holdings LLC. Abdiaziz Farah alleged board member of ThinkTechAct."
+    },
+    {
+      "n": 4,
+      "name": "Abdimajid Mohamed Nur",
+      "role_on_face": "Created/submitted alleged fake meal counts, invoices, and attendance rosters; created Nur Consulting LLC ~April 2021."
+    },
+    {
+      "n": 5,
+      "name": "Said Shafii Farah",
+      "role_on_face": "Brother of Abdiaziz; co-owner of Bushra Wholesalers LLC with Abdiwahab Aftin (registered ~February 2021). Also alleged owner of Lafey Plaza LLC."
+    },
+    {
+      "n": 6,
+      "name": "Abdiwahab Maalim Aftin",
+      "role_on_face": "Co-owner of Bushra Wholesalers LLC."
+    },
+    {
+      "n": 7,
+      "name": "Mukhtar Mohamed Shariff",
+      "role_on_face": "Alleged meal-count/roster/invoice submitter for a Bloomington site (up to 3,500 children/day); CEO of Afrique Hospitality Group LLC (created January 2021)."
+    },
+    {
+      "n": 8,
+      "name": "Hayat Mohamed Nur",
+      "role_on_face": "Sister of Abdimajid Nur; alleged fake meal counts/invoices, including backdated shell-company invoices. Named in Count 1 and some wire/ML rows; NOT named in Counts 13-20."
+    }
+  ],
+  "providers": [
+    {
+      "name": "Empire Cuisine and Market LLC",
+      "aliases_on_face": [
+        "Empire Cuisine and Market",
+        "Empire Cuisine & Market"
+      ],
+      "role_on_face": "For-profit restaurant in Shakopee, MN. Alleged site and meal vendor under Feeding Our Future and Sponsor A. Face: received more than $28 million May 2020-January 2022.",
+      "entity_id": "org-empire-cuisine-and-market"
+    },
+    {
+      "name": "Empire Enterprises LLC",
+      "aliases_on_face": [
+        "Empire Enterprises"
+      ],
+      "role_on_face": "Alleged shell created by Abdiaziz Farah ~April 2021; received/laundered more than / nearly $7 million."
+    },
+    {
+      "name": "ThinkTechAct Foundation",
+      "aliases_on_face": [
+        "ThinkTechAct",
+        "TTA"
+      ],
+      "role_on_face": "MN nonprofit; Mahad Ibrahim president/owner. More than two dozen alleged sites. Face: received more than $18 million from Sponsor A and $3.7 million from Feeding Our Future, February 2021-January 2022."
+    },
+    {
+      "name": "Mind Foundry Learning Foundation",
+      "aliases_on_face": [
+        "Mind Foundry",
+        "Mindfoundry",
+        "MF"
+      ],
+      "role_on_face": "Operating name of ThinkTechAct on the face."
+    },
+    {
+      "name": "The Free Minded Institute LLC",
+      "aliases_on_face": [
+        "The Free Minded Institute",
+        "FMI"
+      ],
+      "role_on_face": "Created by Individual J.S. (Sponsor A employee/board member) July 2021; nearly $2.5 million from Sponsor A October 2021-January 2022; over 97 percent paid to Empire Cuisine and Market."
+    },
+    {
+      "name": "Bushra Wholesalers LLC",
+      "aliases_on_face": [
+        "Bushra Wholesalers"
+      ],
+      "role_on_face": "Alleged sham meal vendor; Said Farah and Abdiwahab Aftin; more than $4.5 million February 2021-January 2022."
+    },
+    {
+      "name": "Afrique Hospitality Group LLC",
+      "aliases_on_face": [
+        "Afrique Hospitality Group"
+      ],
+      "role_on_face": "Mukhtar Shariff CEO, created January 2021; alleged shell; source of the June 9, 2021 $250,000 cashier's check to Individual I.M."
+    },
+    {
+      "name": "Nur Consulting LLC",
+      "aliases_on_face": [
+        "Nur Consulting"
+      ],
+      "role_on_face": "Abdimajid Nur; more than $800,000 April 2021-January 2022."
+    },
+    {
+      "name": "MIB Holdings LLC",
+      "aliases_on_face": [
+        "MIB Holdings"
+      ],
+      "role_on_face": "Mahad Ibrahim; more than $2 million received/laundered."
+    },
+    {
+      "name": "MZ Market LLC",
+      "aliases_on_face": [
+        "MZ Market"
+      ],
+      "role_on_face": "Mohamed Ismail shell ~June 2021."
+    },
+    {
+      "name": "Mizal Consulting LLC",
+      "aliases_on_face": [
+        "Mizal Consulting"
+      ],
+      "role_on_face": "Hadith Yusuf Ahmed (FOF employee) shell; alleged kickback vehicle from Bushra Wholesalers."
+    },
+    {
+      "name": "Lafey Plaza LLC",
+      "aliases_on_face": [
+        "Lafey Plaza"
+      ],
+      "role_on_face": "Alleged Said Farah shell; $152,000 from Bushra Oct 15, 2021."
+    },
+    {
+      "name": "Feeding Our Future",
+      "aliases_on_face": [
+        "FOF"
+      ],
+      "role_on_face": "Sponsoring nonprofit; Aimee Bock named founder/ED. Not a defendant in this instrument.",
+      "entity_id": "org-feeding-our-future"
+    },
+    {
+      "name": "Sponsor A",
+      "aliases_on_face": [],
+      "role_on_face": "Unnamed sponsoring nonprofit on the face (2019 ~$5.6 million to 2021 more than $200 million). Not identified by legal name in this instrument."
+    }
+  ],
+  "scheme_period": {
+    "start": "2020-04",
+    "end": "2022",
+    "page": 10,
+    "para": 32,
+    "notes": "Count 1: April 2020 through in or about 2022. Para 47 recites approximately $40 million fraudulently received May 2020-January 2022. Count 13 runs February 2021-September 2022. Count 43 is March 22, 2022."
+  },
+  "counts": [
+    {
+      "count": 1,
+      "statute": "18 U.S.C. §§ 371 and 1343",
+      "title": "Wire fraud conspiracy",
+      "pages": "10-29",
+      "heading_page": 10,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
+      "object_quote": "The object and purpose of the conspiracy was to carry out a fraudulent scheme to obtain millions of dollars in Federal Child Nutrition Program funds by causing the submission of fraudulent information, including falsified invoices and meal count records with substantially inflated figures.",
+      "named_defendants": [
+        "Abdiaziz Shafii Farah",
+        "Mohamed Jama Ismail",
+        "Mahad Ibrahim",
+        "Abdimajid Mohamed Nur",
+        "Said Shafii Farah",
+        "Abdiwahab Maalim Aftin",
+        "Mukhtar Mohamed Shariff",
+        "Hayat Mohamed Nur"
+      ],
+      "period": {
+        "start": "2020-04",
+        "end": "2022"
+      },
+      "notes": "All eight caption defendants. Charging paragraph cites sections 371 and 1343; closing line is 371. Para 47: fraudulently received approximately $40 million May 2020-January 2022 (same figure as para 1 $40 million scheme)."
+    },
+    {
+      "count": "2-12",
+      "statute": "18 U.S.C. § 1343",
+      "title": "Wire fraud",
+      "pages": "30-31",
+      "heading_page": 30,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1343.",
+      "named_defendants_note": "Charging paragraph: the defendants as set forth below. Not all eight on every row. Abdiwahab Aftin is not named on any Count 2-12 row.",
+      "period": {
+        "start": "2020-04",
+        "end": "2022"
+      },
+      "notes": "Interstate emails (servers outside Minnesota). No dollar amounts in the table. OCR dropped numerals 8 and 9; restored from page images.",
+      "rows": [
+        {
+          "count": 2,
+          "date_on_or_about": "2020-06-01",
+          "page": 30,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Mohamed Jama Ismail"
+          ],
+          "wire": "An email from ABDIAZIZ FARAH to Sponsor A and MOHAMED ISMAIL attaching meal counts"
+        },
+        {
+          "count": 3,
+          "date_on_or_about": "2021-06-21",
+          "page": 30,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur"
+          ],
+          "wire": "An email from ABDIMAJID NUR to Sponsor A attaching Empire Cuisine and Market catering contract"
+        },
+        {
+          "count": 4,
+          "date_on_or_about": "2021-06-21",
+          "page": 31,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur",
+            "Hayat Mohamed Nur"
+          ],
+          "wire": "An email from ABDIMAJID NUR to HAYAT NUR containing meal counts"
+        },
+        {
+          "count": 5,
+          "date_on_or_about": "2021-08-02",
+          "page": 31,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Mahad Ibrahim"
+          ],
+          "wire": "An email from ABDIAZIZ FARAH to Sponsor A, copying MAHAD IBRAHIM, attaching meal counts, invoices, and menus"
+        },
+        {
+          "count": 6,
+          "date_on_or_about": "2021-08-16",
+          "page": 31,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur",
+            "Abdiaziz Shafii Farah"
+          ],
+          "wire": "An email from ABDIMAJID NUR to ABDIAZIZ FARAH attaching a site authorization form"
+        },
+        {
+          "count": 7,
+          "date_on_or_about": "2021-10-18",
+          "page": 31,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Mahad Ibrahim"
+          ],
+          "wire": "An email from ABDIAZIZ FARAH to MAHAD IBRAHIM attaching an invoice"
+        },
+        {
+          "count": 8,
+          "date_on_or_about": "2021-10-21",
+          "page": 31,
+          "named_defendants": [
+            "Mukhtar Mohamed Shariff"
+          ],
+          "wire": "An email from MUKHTAR SHARIFF to Feeding Our Future, attaching meal count sheets, rosters, and invoices",
+          "notes": "OCR dropped the count numeral; confirmed on page-31 image."
+        },
+        {
+          "count": 9,
+          "date_on_or_about": "2021-11-01",
+          "page": 31,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "wire": "An email from ABDIAZIZ FARAH to Sponsor A, attaching invoices and meal count sheets",
+          "notes": "OCR dropped the count numeral; confirmed on page-31 image."
+        },
+        {
+          "count": 10,
+          "date_on_or_about": "2022-01-05",
+          "page": 31,
+          "named_defendants": [
+            "Hayat Mohamed Nur",
+            "Abdiaziz Shafii Farah"
+          ],
+          "wire": "An email from HAYAT NUR to Sponsor A and ABDIAZIZ FARAH, attaching invoices and meal count sheets"
+        },
+        {
+          "count": 11,
+          "date_on_or_about": "2022-01-12",
+          "page": 31,
+          "named_defendants": [
+            "Hayat Mohamed Nur",
+            "Abdiaziz Shafii Farah"
+          ],
+          "wire": "An email from HAYAT NUR to ABDIAZIZ FARAH, attaching invoices"
+        },
+        {
+          "count": 12,
+          "date_on_or_about": "2022-01-23",
+          "page": 31,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur",
+            "Said Shafii Farah"
+          ],
+          "wire": "An email from ABDIMAJID NUR to SAID FARAH attaching invoices"
+        }
+      ]
+    },
+    {
+      "count": 13,
+      "statute": "18 U.S.C. § 371",
+      "object_statute": "18 U.S.C. § 666(a)(2)",
+      "title": "Conspiracy to commit federal programs bribery",
+      "pages": "32-35",
+      "heading_page": 32,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 371.",
+      "named_defendants": [
+        "Abdiaziz Shafii Farah",
+        "Said Shafii Farah",
+        "Mukhtar Mohamed Shariff"
+      ],
+      "period": {
+        "start": "2021-02",
+        "end": "2022-09"
+      },
+      "notes": "Only Abdiaziz Farah, Said Farah, and Mukhtar Shariff. Co-conspirators named: Hadith Yusuf Ahmed and Individual I.M. (FOF employees). $5,000 and $10,000 are statutory 666 thresholds, not case totals. Para 139/144 $250,000 Mukhtar to I.M. is the same check as Count 15 and Count 31. Para 146 date August 17 vs Count 17 table August 13 for the $10,000 Empire Enterprises to J.S. check - face inconsistency; count row uses the table date."
+    },
+    {
+      "count": "14-19",
+      "statute": "18 U.S.C. § 666",
+      "title": "Federal programs bribery",
+      "pages": "35-36",
+      "heading_page": 35,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 666.",
+      "notes": "Named per row. Kickback/bribe checks are alleged scheme payments, not amount_billed and not proven_loss. Do not sum with the $40M / $28M received figures as additional FOF loss. Closing cites 666 generally (Count 13 object was 666(a)(2)).",
+      "rows": [
+        {
+          "count": 14,
+          "date_on_or_about": "2021-02-01",
+          "page": 36,
+          "amount_usd": 10000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "payment": "A $10,000 check from Empire Cuisine and Market to Hadith Ahmed"
+        },
+        {
+          "count": 15,
+          "date_on_or_about": "2021-06-09",
+          "page": 36,
+          "amount_usd": 250000,
+          "named_defendants": [
+            "Mukhtar Mohamed Shariff"
+          ],
+          "payment": "A $250,000 check from Afrique Hospitality Group to Individual I.M.",
+          "notes": "Same June 9, 2021 cashier's check as Count 13 overt act 144 and Count 31."
+        },
+        {
+          "count": 16,
+          "date_on_or_about": "2021-07-25",
+          "page": 36,
+          "amount_usd": 65250,
+          "named_defendants": [
+            "Said Shafii Farah"
+          ],
+          "payment": "A $65,250 check from Bushra Wholesalers to Mizal Consulting"
+        },
+        {
+          "count": 17,
+          "date_on_or_about": "2021-08-13",
+          "page": 36,
+          "amount_usd": 10000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "payment": "A $10,000 check from Empire Enterprises to Individual J.S.",
+          "notes": "Table date August 13, 2021. Para 146 recites August 17, 2021 for a $10,000 Empire Enterprises check to Individual J.S. Not invented as a second count."
+        },
+        {
+          "count": 18,
+          "date_on_or_about": "2021-09-09",
+          "page": 36,
+          "amount_usd": 35000,
+          "named_defendants": [
+            "Said Shafii Farah"
+          ],
+          "payment": "A $35,000 check from Bushra Wholesalers to Mizal Consulting"
+        },
+        {
+          "count": 19,
+          "date_on_or_about": "2021-10-11",
+          "page": 36,
+          "amount_usd": 20000,
+          "named_defendants": [
+            "Said Shafii Farah"
+          ],
+          "payment": "A $20,000 check from Bushra Wholesalers to Mizal Consulting"
+        }
+      ]
+    },
+    {
+      "count": 20,
+      "statute": "18 U.S.C. § 1956(h)",
+      "object_statute": "18 U.S.C. § 1956(a)(1)(B)(i)",
+      "title": "Conspiracy to commit money laundering",
+      "pages": "36-39",
+      "heading_page": 36,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1956(h).",
+      "named_defendants": [
+        "Abdiaziz Shafii Farah",
+        "Mohamed Jama Ismail",
+        "Mahad Ibrahim",
+        "Abdimajid Mohamed Nur",
+        "Said Shafii Farah",
+        "Abdiwahab Maalim Aftin",
+        "Mukhtar Mohamed Shariff"
+      ],
+      "period": {
+        "start": "2020-04",
+        "end": "2022"
+      },
+      "notes": "Hayat Mohamed Nur is NOT named in Count 20. Specified unlawful activity is wire fraud 1343. Concealment laundering."
+    },
+    {
+      "count": "21-42",
+      "statute": "18 U.S.C. § 1957",
+      "title": "Money laundering",
+      "pages": "39-43",
+      "heading_page": 39,
+      "closing_quote": "All in violation of Title 18, United States Code, Section 1957.",
+      "notes": "Named per row. Transaction dollars are alleged monetary transactions in criminally derived property >$10,000, not a second alleged_loss pile. Overlap the $40M scheme / Empire $28M / entity receipts. Count 31 is the same $250,000 Afrique to I.M. check as Count 15. Count 41 numeral OCR'd as Al; restored from page-43 image. Do not sum these rows as additional loss.",
+      "rows": [
+        {
+          "count": 21,
+          "date_on_or_about": "2021-03-11",
+          "page": 39,
+          "amount_usd": 118258,
+          "named_defendants": [
+            "Said Shafii Farah"
+          ],
+          "transaction": "A check for approximately $118,258 from Empire Cuisine and Market to Bushra Wholesalers for \"groceries\""
+        },
+        {
+          "count": 22,
+          "date_on_or_about": "2021-03-15",
+          "page": 39,
+          "amount_usd": 500000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $500,000 from Empire Cuisine and Market to Johnson-Reiland custom home builders towards the construction of a new house in Prior Lake, Minnesota"
+        },
+        {
+          "count": 23,
+          "date_on_or_about": "2021-04-15",
+          "page": 40,
+          "amount_usd": 575000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A wire transfer of approximately $575,000 from Empire Enterprises to Trademark Title Services, Inc. towards the purchase of a single-family home located at 15418 Hampshire Lane, Savage, Minnesota"
+        },
+        {
+          "count": 24,
+          "date_on_or_about": "2021-05-04",
+          "page": 40,
+          "amount_usd": 204795,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A wire transfer of approximately $204,795 from Empire Enterprises to Capital View Properties Ltd. in Nairobi, Kenya"
+        },
+        {
+          "count": 25,
+          "date_on_or_about": "2021-05-11",
+          "page": 40,
+          "amount_usd": 300000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A wire transfer of $300,000 from Empire Enterprises to Capital View Properties Ltd. in Nairobi, Kenya"
+        },
+        {
+          "count": 26,
+          "date_on_or_about": "2021-05-15",
+          "page": 40,
+          "amount_usd": 250000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $250,000 from Empire Cuisine and Market to Johnson-Reiland custom home builders towards the construction of a new lakefront house in Prior Lake, Minnesota"
+        },
+        {
+          "count": 27,
+          "date_on_or_about": "2021-05-17",
+          "page": 40,
+          "amount_usd": 200000,
+          "named_defendants": [
+            "Abdiwahab Maalim Aftin"
+          ],
+          "transaction": "A wire transfer of approximately $200,000 from Bushra Wholesalers to Capital View Properties Ltd. in Nairobi, Kenya"
+        },
+        {
+          "count": 28,
+          "date_on_or_about": "2021-05-27",
+          "page": 40,
+          "amount_usd": 137270,
+          "named_defendants": [
+            "Mohamed Jama Ismail"
+          ],
+          "transaction": "A payment of approximately $137,270 from MOHAMED ISMAIL to U.S. Bank towards the purchase of a townhouse located at 13825 Edgewood Ave, Savage, Minnesota"
+        },
+        {
+          "count": 29,
+          "date_on_or_about": "2021-06-01",
+          "page": 41,
+          "amount_usd": 206428,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah",
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A wire transfer of approximately $206,428 from Empire Enterprises to Capital View Properties Ltd. in Nairobi, Kenya"
+        },
+        {
+          "count": 30,
+          "date_on_or_about": "2021-06-01",
+          "page": 41,
+          "amount_usd": 120000,
+          "named_defendants": [
+            "Mahad Ibrahim"
+          ],
+          "transaction": "A payment of approximately $120,000 from MIB Holdings LLC to 3 Pillar Homes towards the construction of a new single-family home located at 5657 Maple Drive, Lewis Center, Ohio"
+        },
+        {
+          "count": 31,
+          "date_on_or_about": "2021-06-09",
+          "page": 41,
+          "amount_usd": 250000,
+          "named_defendants": [
+            "Mukhtar Mohamed Shariff"
+          ],
+          "transaction": "The purchase of a $250,000 cashier's check from Afrique Hospitality Group to Individual I.M.",
+          "notes": "Same check as Count 15 / Count 13 overt act. Do not add a second $250,000."
+        },
+        {
+          "count": 32,
+          "date_on_or_about": "2021-07-07",
+          "page": 41,
+          "amount_usd": 1041986,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $1,041,986 from Empire Enterprises to Trademark Title Services, Inc. towards the purchase of two lakefront lots in Prior Lake, Minnesota"
+        },
+        {
+          "count": 33,
+          "date_on_or_about": "2021-07-31",
+          "page": 41,
+          "amount_usd": 29083,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $29,083 from Empire Cuisine and Market to Porsche Minneapolis towards the purchase of a 2021 Porsche Macan"
+        },
+        {
+          "count": 34,
+          "date_on_or_about": "2021-08-09",
+          "page": 41,
+          "amount_usd": 11504,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur",
+            "Hayat Mohamed Nur"
+          ],
+          "transaction": "A payment of approximately $11,504 from Nur Consulting to Wings Financial Credit Union towards the purchase of a 2019 Nissan Ultima",
+          "notes": "Face of Count 34 says Ultima. Forfeiture item x says Altima."
+        },
+        {
+          "count": 35,
+          "date_on_or_about": "2021-08-17",
+          "page": 42,
+          "amount_usd": 64406,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A payment of approximately $64,406 from Nur Consulting to Dodge of Burnsville towards the purchase of a 2021 Dodge Ram 1500"
+        },
+        {
+          "count": 36,
+          "date_on_or_about": "2021-08-20",
+          "page": 42,
+          "amount_usd": 200000,
+          "named_defendants": [
+            "Mahad Ibrahim"
+          ],
+          "transaction": "A payment of approximately $200,000 from MAHAD IBRAHIM to 3 Pillar Homes towards the construction of a new single-family home in Lewis Center, Ohio"
+        },
+        {
+          "count": 37,
+          "date_on_or_about": "2021-08-21",
+          "page": 42,
+          "amount_usd": 65005,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $65,005 from Empire Cuisine & Market to Lupient towards the purchase of a 2021 GMC Sierra pick-up truck"
+        },
+        {
+          "count": 38,
+          "date_on_or_about": "2021-09-01",
+          "page": 42,
+          "amount_usd": 30000,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A payment of approximately $30,000 from ABDIMAJID NUR to Farhia Jewelry in Dubai, United Arab Emirates"
+        },
+        {
+          "count": 39,
+          "date_on_or_about": "2021-09-20",
+          "page": 42,
+          "amount_usd": 150000,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $150,000 from Empire Cuisine and Market to Johnson-Reiland custom home builders towards the construction of a new lakefront house in Prior Lake, Minnesota"
+        },
+        {
+          "count": 40,
+          "date_on_or_about": "2021-09-21",
+          "page": 42,
+          "amount_usd": 66506,
+          "named_defendants": [
+            "Said Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $66,506 from Empire Cuisine and Market to Bushra Wholesalers for \"groceries\""
+        },
+        {
+          "count": 41,
+          "date_on_or_about": "2021-09-30",
+          "page": 43,
+          "amount_usd": 34777,
+          "named_defendants": [
+            "Abdimajid Mohamed Nur"
+          ],
+          "transaction": "A payment of approximately $34,777 from ABDIMAJID NUR to Morrie's 394 Hyundai towards the purchase of a 2021 Hyundai Santa Fe",
+          "notes": "OCR dropped/garbled the numeral as Al; confirmed Count 41 on page-43 image."
+        },
+        {
+          "count": 42,
+          "date_on_or_about": "2021-10-12",
+          "page": 43,
+          "amount_usd": 334632,
+          "named_defendants": [
+            "Abdiaziz Shafii Farah"
+          ],
+          "transaction": "A payment of approximately $334,632 from Empire Enterprises to Trademark Title Services, Inc. towards the purchase of a townhouse located at 438 Stonewood Lane, Burnsville, Minnesota"
+        }
+      ]
+    },
+    {
+      "count": 43,
+      "statute": "18 U.S.C. § 1542",
+      "title": "False statement in a passport application",
+      "pages": "43",
+      "heading_page": 43,
+      "closing_quote": "all in violation of Title 18, United States Code, Section 1542.",
+      "named_defendants": [
+        "Abdiaziz Shafii Farah"
+      ],
+      "date_on_or_about": "2022-03-22",
+      "notes": "Same passport theory as ECF 22 (one-count 1542 against Abdiaziz only), now Count 43 of the superseding instrument. Not incorporated into the forfeiture allegations (para 167 incorporates Counts 1-42 only)."
+    }
+  ],
+  "forfeiture": {
+    "pages": "44-48",
+    "incorporates_counts": "1-42",
+    "excludes_count": 43,
+    "split": [
+      {
+        "counts": "1-19",
+        "statute": "18 U.S.C. § 981(a)(1)(C) and 28 U.S.C. § 2461(c)",
+        "theory": "proceeds traceable"
+      },
+      {
+        "counts": "20-42",
+        "statute": "18 U.S.C. § 982(a)(1)",
+        "theory": "property involved in sections 1956 and 1957 transactions"
+      }
+    ],
+    "substitute_property": "21 U.S.C. § 853(p) as incorporated by 28 U.S.C. § 2461(c)",
+    "real_property": [
+      "15418 Hampshire Lane, Savage, Minnesota",
+      "13825 Edgewood Avenue South, Savage, Minnesota",
+      "3847 Cane Run Road, Louisville, Kentucky",
+      "438 Stonewood Lane, Burnsville, Minnesota",
+      "5594 Candy Cove Trail SE, Prior Lake, Minnesota",
+      "5604 Candy Cove Trail SE, Prior Lake, Minnesota",
+      "5657 Maple Drive, Lewis Center, Ohio",
+      "6200 South 3rd Street, Louisville, Kentucky"
+    ],
+    "seized_cash": [
+      {
+        "value": 424695.03,
+        "holder": "Empire Cuisine and Market LLC",
+        "bank": "US Bank",
+        "page": 45
+      },
+      {
+        "value": 1842797.55,
+        "holder": "ThinkTechAct Foundation",
+        "bank": "US Bank",
+        "page": 45
+      },
+      {
+        "value": 4000422.57,
+        "holder": "Empire Cuisine and Market LLC",
+        "bank": "JP Morgan Chase Bank",
+        "page": 45
+      },
+      {
+        "value": 1286805.76,
+        "holder": "Empire Enterprises LLC",
+        "bank": "JP Morgan Chase Bank",
+        "page": 45
+      },
+      {
+        "value": 1249912.71,
+        "holder": "Johnson-Reiland Builders and Remodelers Inc.",
+        "bank": "1st United Bank",
+        "page": 45
+      },
+      {
+        "value": 460319.56,
+        "holder": "Abdiaziz Farah",
+        "bank": "JP Morgan Chase Bank",
+        "page": 46
+      },
+      {
+        "value": 45649.27,
+        "holder": "Nur Consulting LLC",
+        "bank": "JP Morgan Chase Bank",
+        "page": 46
+      },
+      {
+        "value": 77895.32,
+        "holder": "Bushra Wholesalers LLC",
+        "bank": "TruStone Financial Credit Union",
+        "page": 46
+      },
+      {
+        "value": 6442.25,
+        "holder": "Mohamed Ismail",
+        "bank": "Wells Fargo",
+        "page": 46
+      },
+      {
+        "value": 456968.36,
+        "holder": "MIB Holdings LLC",
+        "bank": "Spire Credit Union acct 752231-00",
+        "page": 46
+      },
+      {
+        "value": 448285.14,
+        "holder": "MIB Holdings LLC",
+        "bank": "Spire Credit Union acct 752231-11",
+        "page": 46
+      },
+      {
+        "value": 132449.9,
+        "holder": "BBI, LLC",
+        "bank": "Stock Yards Bank and Trust",
+        "page": 46
+      },
+      {
+        "value": 60350,
+        "holder": "currency from 2021 GMC Sierra PK",
+        "page": 47
+      },
+      {
+        "value": 5954.55,
+        "holder": "currency from 15418 Hampshire Lane",
+        "page": 47
+      },
+      {
+        "value": 865.3,
+        "holder": "currency from Marschall Road, Shakopee",
+        "page": 47
+      },
+      {
+        "value": 506,
+        "holder": "currency from 2713 5th Avenue South, Minneapolis",
+        "page": 47
+      }
+    ],
+    "notes": "Face language is seized from (assets_seized) listed as property subject to forfeiture (forfeiture_sought). Do not add seized cash to the $40M alleged_loss or to Bock $250M. Account numbers appear on the face; not repeated here beyond what is needed to identify the item."
+  },
+  "dollar_figures": [
+    {
+      "value": 40000000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "qualifier": "$40 million scheme",
+      "period_start": "2020-05",
+      "period_end": "2022-01",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 1,
+      "para": 1,
+      "quote": "The defendants devised and carried out a $40 million scheme to defraud the federal child nutrition program",
+      "notes": "Charging allegation, not proven_loss. Same Empire-group figure as para 47. Overlaps Bock $250M network alleged_loss. Do not add to $250M, HSS, or Mohamed $12M."
+    },
+    {
+      "value": 40000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "fraudulently received approximately",
+      "period_start": "2020-05",
+      "period_end": "2022-01",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 14,
+      "para": 47,
+      "quote": "In total, the defendants fraudulently received approximately $40 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022.",
+      "notes": "Face language is received (amount_paid). Same $40M as para 1 scheme. Not a second $40M."
+    },
+    {
+      "value": 28000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2020-05",
+      "period_end": "2022-01",
+      "provider": "Empire Cuisine and Market LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 6,
+      "para": 18,
+      "quote": "In all, Empire Cuisine and Market received more than $28 million in Federal Child Nutrition Program funds between approximately May 2020 and January 2022.",
+      "notes": "Repeated para 43 p.13. Subset of the $40M. Not billed. Not HSS."
+    },
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-02",
+      "period_end": "2022-01",
+      "provider": "ThinkTechAct Foundation",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 7,
+      "para": 22,
+      "quote": "ThinkTechAct received more than $18 million in Federal Child Nutrition Program funds from Sponsor A and another $3.7 million from Feeding Our Future.",
+      "notes": "Repeated para 37. Component of ~$21 million in para 40. Subset of $40M."
+    },
+    {
+      "value": 3700000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-02",
+      "period_end": "2022-01",
+      "provider": "ThinkTechAct Foundation",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 7,
+      "para": 22,
+      "quote": "another $3.7 million from Feeding Our Future",
+      "notes": "Component of ThinkTechAct receipts / para 40 $21 million. Subset of $40M."
+    },
+    {
+      "value": 21000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "provider": "ThinkTechAct Foundation",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 13,
+      "para": 40,
+      "quote": "ThinkTechAct transferred more than 70 percent of the $21 million in Federal Child Nutrition Program funds it received to Empire Cuisine and Market and related entities.",
+      "notes": "Face rounds $18M+$3.7M to $21 million. Not independent of those two figures or of Empire $28M inflows."
+    },
+    {
+      "value": 7000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than / nearly",
+      "provider": "Empire Enterprises LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 7,
+      "para": 19,
+      "quote": "used Empire Enterprises to receive and launder more than $7 million in Federal Child Nutrition Program funds.",
+      "notes": "Para 96 says nearly $7 million. Same figure, two phrasings."
+    },
+    {
+      "value": 2000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "provider": "MIB Holdings LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 8,
+      "para": 23,
+      "quote": "MAHAD IBRAHIM used MIB Holdings to receive and launder more than $2 million in Federal Child Nutrition Program funds."
+    },
+    {
+      "value": 800000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-04",
+      "period_end": "2022-01",
+      "provider": "Nur Consulting LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 8,
+      "para": 25,
+      "quote": "ABDIMAJID NUR used Nur Consulting to receive and launder more than $800,000 in Federal Child Nutrition Program funds between approximately April 2021 and January 2022."
+    },
+    {
+      "value": 4500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-02",
+      "period_end": "2022-01",
+      "provider": "Bushra Wholesalers LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 8,
+      "para": 26,
+      "quote": "Bushra Wholesalers was used to receive and launder more than $4.5 million in Federal Child Nutrition Program funds between approximately February 2021 and January 2022."
+    },
+    {
+      "value": 2500000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "nearly",
+      "period_start": "2021-10",
+      "period_end": "2022-01",
+      "provider": "The Free Minded Institute LLC",
+      "overlap_group_id": "empire-22cr124-40m-scheme",
+      "page": 9,
+      "para": 29,
+      "quote": "The Free Minded Institute received nearly $2.5 million in Federal Child Nutrition Program funds from Sponsor A from October 2021 to January 2022. J.S. paid over 97 percent of these funds to Empire Cuisine and Market."
+    },
+    {
+      "value": 3400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2019-01",
+      "period_end": "2019-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 12,
+      "quote": "Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021."
+    },
+    {
+      "value": 200000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "nearly",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 12,
+      "quote": "nearly $200 million in 2021",
+      "notes": "FOF-network sponsor pass-through. Do not add to Empire $40M, Mohamed $12M, HSS, or Bock $250M."
+    },
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "nearly",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "overlap_group_id": "fof-network-scheme-size",
+      "page": 4,
+      "para": 14,
+      "quote": "Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021.",
+      "notes": "FOF-sponsor admin-fee recital, not Empire site receipts. Distinct from ThinkTechAct's $18M from Sponsor A."
+    },
+    {
+      "value": 5600000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2019-01",
+      "period_end": "2019-12",
+      "overlap_group_id": "sponsor-a-network-scheme-size",
+      "page": 5,
+      "para": 17,
+      "quote": "The company went from receiving and disbursing approximately $5.6 million in federal funds to sites under its sponsorship in 2019 to more than $200 million in 2021."
+    },
+    {
+      "value": 200000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "qualifier": "more than",
+      "period_start": "2021-01",
+      "period_end": "2021-12",
+      "overlap_group_id": "sponsor-a-network-scheme-size",
+      "page": 5,
+      "para": 17,
+      "quote": "more than $200 million in 2021",
+      "notes": "Sponsor A 2021 sponsor pass-through. Not added to FOF $200M or Bock $250M."
+    }
+  ],
+  "program_rate_recitals_not_case_totals": [
+    {
+      "value": 5000,
+      "metric_type": "unknown_or_disputed",
+      "exact_or_approximate": "exact",
+      "quote": "anything of value of $5,000 or more",
+      "page": 32,
+      "notes": "Statutory 666 transactional threshold, not a case total."
+    },
+    {
+      "value": 10000,
+      "metric_type": "unknown_or_disputed",
+      "exact_or_approximate": "exact",
+      "quote": "Feeding Our Future received benefits in excess of $10,000 under federal programs",
+      "page": 32,
+      "notes": "Statutory 666 organizational-benefits threshold, not a case total. Counts 21-42 also use $10,000 as the 1957 transactional floor."
+    }
+  ],
+  "other_face_facts": [
+    "Para 1 / 47: $40 million Empire-group scheme / fraudulently received May 2020-January 2022.",
+    "ThinkTechAct/Mind Foundry claimed more than 25,000 children a day (paras 22, 37); more than two dozen sites.",
+    "Mukhtar Shariff alleged up to 3,500 children a day at a Bloomington site (para 27).",
+    "Aimee Bock is named as FOF founder/ED (paras 10-14, 72-74) but is not a defendant in this instrument.",
+    "Hadith Yusuf Ahmed and Individual I.M. are named as FOF employees who solicited/received kickbacks; not caption defendants.",
+    "Individual J.S. is a Sponsor A employee/board member who created The Free Minded Institute; not a caption defendant.",
+    "Count 13 and Counts 14-19 name only Abdiaziz Farah, Said Farah, and/or Mukhtar Shariff (per row).",
+    "Count 20 omits Hayat Mohamed Nur.",
+    "Count 43 is Abdiaziz Farah only and is outside forfeiture Counts 1-42.",
+    "Count 17 table date August 13 vs para 146 August 17 for the $10,000 Empire Enterprises to J.S. check.",
+    "Search warrants executed on or about January 20, 2022 (para 141) at Empire Cuisine and Market, ThinkTechAct, and Said Farah's residence.",
+    "This is Feeding Our Future / Empire family, not HSS."
+  ],
+  "do_not": [
+    "Do not mark ADJUDICATED. This extract is the face of ECF 57 (CHARGED_ALLEGED) even if later pleas, verdicts, or sentences exist in other sources.",
+    "Do not add the $40 million Empire alleged_loss to the Bock $250 million charging headline (network alleged_loss; use overlap_group_id empire-22cr124-40m-scheme and fof-network-scheme-size).",
+    "Do not add these dollars to HSS billed/paid figures.",
+    "Do not add these dollars to the Mohamed family $12 million.",
+    "Do not sum Empire $28M + ThinkTechAct $18M+$3.7M + Bushra $4.5M + Empire Enterprises $7M + MIB $2M + Nur $800k + FMI $2.5M + ML-row purchases + seized cash as additional loss; they overlap the $40M.",
+    "Do not add FOF $200M / $18M admin or Sponsor A $200M recitals to the $40M or to Bock $250M.",
+    "Do not treat dollar figures in this indictment as proven_loss.",
+    "Do not invent counts beyond 1-43 as they appear on the face.",
+    "Do not identify Sponsor A by a legal name from this instrument; the face leaves it unnamed."
+  ]
+}

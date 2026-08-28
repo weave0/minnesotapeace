@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://minnesotapeace.com/research/schema/relationship.schema.json",
+  "title": "Minnesota Fraud Research Relationship",
+  "description": "Directed evidence-backed edge between two entity, claim, case, or source IDs. CRITICAL: a shared address is NOT conspiracy. SHARES_ADDRESS_WITH must be stored and displayed as a shared address. Do not transform it into a 'connected fraud network' unless independent evidence supports that conclusion. Likewise common attorney, accountant, employee, ethnic community, neighborhood, bank, program, or vendor are not automatically evidence of conspiracy. relationship_status distinguishes observed relationship from analytical inference from criminal allegation from adjudicated criminal relationship. Every relationship must resolve back to evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "relationship_id",
+    "from_id",
+    "to_id",
+    "edge_type",
+    "relationship_status"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Durable identifier. Never use a display name as a key."
+    },
+    "from_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Source node ID."
+    },
+    "to_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Target node ID."
+    },
+    "edge_type": {
+      "type": "string",
+      "enum": [
+        "OWNS",
+        "CO_OWNS",
+        "MANAGES",
+        "DIRECTS",
+        "EMPLOYS",
+        "WORKS_FOR",
+        "FOUNDED",
+        "REGISTERED",
+        "LOCATED_AT",
+        "SHARES_ADDRESS_WITH",
+        "PAID",
+        "RECEIVED_PAYMENT_FROM",
+        "TRANSFERRED_TO",
+        "BILLED",
+        "REIMBURSED",
+        "ENROLLED_IN",
+        "LICENSED_BY",
+        "ADMINISTERED_BY",
+        "REGULATED_BY",
+        "AUDITED_BY",
+        "INVESTIGATED_BY",
+        "CHARGED_BY",
+        "PROSECUTED_BY",
+        "REPRESENTED_BY",
+        "RELATED_TO_CASE",
+        "NAMED_IN",
+        "ALLEGED_TO_CONTROL",
+        "ADMITTED_TO",
+        "CONVICTED_OF",
+        "ACQUITTED_OF",
+        "COMPLAINED_ABOUT",
+        "RECEIVED_COMPLAINT",
+        "RESPONDED_TO",
+        "FAILED_TO_RESPOND_TO",
+        "WARNED",
+        "TERMINATED",
+        "SUSPENDED",
+        "WITHHELD_PAYMENT",
+        "REFERRED_TO_LAW_ENFORCEMENT",
+        "SUPPORTS_CLAIM",
+        "CONTRADICTS_CLAIM"
+      ]
+    },
+    "relationship_status": {
+      "type": "string",
+      "enum": [
+        "OBSERVED",
+        "ALLEGED",
+        "ANALYTICAL_INFERENCE",
+        "ADJUDICATED"
+      ],
+      "description": "OBSERVED = documented non-criminal or structural fact (e.g. registered agent, shared address). ALLEGED = asserted in a charging instrument or similar. ANALYTICAL_INFERENCE = derived by the research system and must be labeled as such. ADJUDICATED = established by plea, verdict, or final judgment."
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Sources that support this edge."
+    },
+    "valid_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "valid_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

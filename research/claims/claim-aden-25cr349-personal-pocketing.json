@@ -1,0 +1,64 @@
+{
+  "reviewed_at": "2026-08-27T20:30:00Z",
+  "created_at": "2026-08-27T20:30:00Z",
+  "updated_at": "2026-08-27T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-aden-25cr349-personal-pocketing",
+  "claim_text": "The September 17, 2025 indictment in United States v. Aden et al., No. 0:25-cr-00349 (ECF 1) paragraph 23 alleges that from about April 2023 through about May 2025 each of the four defendants personally pocketed between about $300,000 and $400,000 from Brilliant Minds. That is alleged personal pocketing / proceeds from the company, not a Medicaid amount_billed or amount_paid figure. It overlaps the Brilliant Minds ~$2.3 million claims figure. Do not multiply the range by four, do not add it to Falade billed dollars, and do not add it to Feeding Our Future $250 million charging headlines.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:25-cr-00349",
+  "source_ids": [
+    "src-mnd-25-cr-00349-ecf1-aden-indictment"
+  ],
+  "subject_ids": [
+    "org-brilliant-minds-services"
+  ],
+  "organizations": [
+    "org-brilliant-minds-services"
+  ],
+  "date_start": "2023-04-01",
+  "date_end": "2025-05-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "page": 7,
+      "locator": "para 23",
+      "quote": "From about April 2023 through about May 2025, each of the defendants personally pocketed between about $300,000 and $400,000 from Brilliant Minds."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 300000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "period_start": "2023-04-01",
+      "period_end": "2025-05-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-brilliant-minds-personal-pocketing-range",
+      "methodology": "Lower bound of alleged per-defendant personal pocketing from Brilliant Minds. Not amount_billed. Do not multiply by 4."
+    },
+    {
+      "value": 400000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "period_start": "2023-04-01",
+      "period_end": "2025-05-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "aden-brilliant-minds-personal-pocketing-range",
+      "methodology": "Upper bound of alleged per-defendant personal pocketing from Brilliant Minds. Not amount_billed. Do not treat 300000+400000 as 700000 and do not multiply by 4."
+    }
+  ],
+  "qualifiers": [
+    "personal pocketing not billing",
+    "per defendant range not a four-person total",
+    "overlaps Brilliant Minds $2.3M billed",
+    "do not add to Falade or FOF $250M"
+  ],
+  "editorial_notes": "metric_type alleged_loss is used only because the schema has no personal-proceeds token; public wording must say personally pocketed, not stole and not billed."
+}

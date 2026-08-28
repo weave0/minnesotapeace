@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-08-27T21:55:00Z",
+  "created_at": "2026-08-27T21:55:00Z",
+  "updated_at": "2026-08-27T21:55:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "status": "alleged",
+  "case_number": "0:22-cr-00124",
+  "source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
+  ],
+  "event_date": "2022-09-13",
+  "claim_id": "claim-farah-22cr124-ecf57-fof-sponsor-recitals",
+  "claim_text": "The September 13, 2022 Farah superseding indictment, No. 0:22-cr-00124 (ECF 57) paras 12 and 14, recites that Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021, and that Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021. These are FOF-sponsor-wide recitals (amount_paid), not the Empire $40 million alleged_loss. They overlap the Bock $250 million charging headline (overlap_group_id fof-network-scheme-size) and must not be added to that headline, to the Empire $40 million, to HSS, or to Mohamed $12 million. The FOF $18 million admin-fee recital is not the ThinkTechAct $18 million from Sponsor A.",
+  "claim_type": "AMOUNT",
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "date_start": "2019-01-01",
+  "date_end": "2021-12-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 4,
+      "locator": "para 12",
+      "quote": "Feeding Our Future went from receiving and disbursing approximately $3.4 million in federal funds to sites under its sponsorship in 2019 to nearly $200 million in 2021."
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "page": 4,
+      "locator": "para 14",
+      "quote": "Feeding Our Future received nearly $18 million in Federal Child Nutrition Program funds as administrative fees in 2021."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 3400000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2019-01-01",
+      "period_end": "2019-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 12 FOF 2019 sponsor disbursements. Network recital, not Empire loss."
+    },
+    {
+      "value": 200000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 12 FOF 2021 sponsor disbursements. Same figure as Bock/DOJ charging materials."
+    },
+    {
+      "value": 18000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "overlap_group_id": "fof-network-scheme-size",
+      "methodology": "Para 14 FOF 2021 administrative fees. Not ThinkTechAct's $18M from Sponsor A."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED",
+    "FOF-sponsor-wide recital, not Empire alleged_loss",
+    "overlap_group_id fof-network-scheme-size - do not add to Bock $250M",
+    "do not add to HSS",
+    "do not add to Empire $40M or Mohamed $12M"
+  ],
+  "editorial_notes": "Kept separate so the $200M/$18M recitals are not rolled into Empire dollars or the Bock headline."
+}
