@@ -1,0 +1,74 @@
+name: Complete canonical social metadata
+
+on:
+  push:
+    branches:
+      - agent/backfill-social-metadata-2026-08-28
+    paths:
+      - '.github/workflows/backfill-social-metadata-v2.yml'
+
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/backfill-social-metadata-2026-08-28
+      - name: Complete social metadata contract
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          from pathlib import Path
+          import re
+
+          files=[Path('index.html'),Path('record/index.html'),Path('status/index.html'),Path('good/index.html'),Path('guide/index.html'),Path('oversight/index.html')]
+          new='https://minnesotapeace.com/assets/og/mn-peace-og-v2.png'
+          alt='MN Peace editorial card with a geometric Minnesota monogram and cyan-and-gold evidence lines'
+          for path in files:
+              text=path.read_text(encoding='utf-8')
+              og=f'<meta property="og:image" content="{new}">'
+              if og not in text:
+                  raise SystemExit(f'{path}: og image missing')
+
+              additions=[]
+              if 'property="og:image:width"' not in text: additions.append('<meta property="og:image:width" content="1200">')
+              if 'property="og:image:height"' not in text: additions.append('<meta property="og:image:height" content="630">')
+              if 'property="og:image:alt"' not in text: additions.append(f'<meta property="og:image:alt" content="{alt}">')
+              if additions:
+                  anchor='<meta property="og:image:type" content="image/png">'
+                  text=text.replace(anchor, anchor+'\n  '+'\n  '.join(additions), 1)
+
+              if 'property="og:locale"' not in text:
+                  site='<meta property="og:site_name" content="MN Peace">'
+                  text=text.replace(site, site+'\n  <meta property="og:locale" content="en_US">', 1)
+
+              og_title=re.search(r'<meta property="og:title" content="([^"]*)">', text)
+              og_desc=re.search(r'<meta property="og:description" content="([^"]*)">', text)
+              card='<meta name="twitter:card" content="summary_large_image">'
+              prefix=[]
+              if 'name="twitter:title"' not in text and og_title:
+                  prefix.append(f'<meta name="twitter:title" content="{og_title.group(1)}">')
+              if 'name="twitter:description"' not in text and og_desc:
+                  prefix.append(f'<meta name="twitter:description" content="{og_desc.group(1)}">')
+              if prefix:
+                  text=text.replace(card, card+'\n  '+'\n  '.join(prefix), 1)
+
+              path.write_text(text,encoding='utf-8')
+
+          for path in files:
+              text=path.read_text(encoding='utf-8')
+              for needle in ['og:image:width','og:image:height','og:image:alt','og:locale','twitter:title','twitter:description','twitter:image','twitter:image:alt']:
+                  assert needle in text, (path, needle)
+          PY
+          git diff --check
+      - name: Commit completed metadata
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html record/index.html status/index.html good/index.html guide/index.html oversight/index.html
+          git commit -m 'Complete MN Peace social metadata contract'
+          git push origin HEAD:agent/backfill-social-metadata-2026-08-28
