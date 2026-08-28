@@ -34,8 +34,10 @@ jobs:
                   test -f public/css/discovery.css
                   test -f public/css/status.css
                   test -f public/css/good.css
+                  test -f public/css/good-v2.css
                   test -f public/js/discovery.js
                   test -f public/js/discovery-v5.js
+                  test -f public/js/discovery-v6.js
                   test -f public/status/index.html
                   test -f public/good/index.html
                   test -f public/guide/index.html
@@ -78,9 +80,16 @@ jobs:
                   grep -Fq '26' public/status/index.html
                   grep -Fq 'Minnesota is more than what went wrong.' public/good/index.html
                   grep -Fq 'What was the money for?' public/good/index.html
+                  grep -Fq 'Good work has an address.' public/good/index.html
+                  grep -Fq '12 local stories' public/good/index.html
+                  grep -Fq 'Reported work · 2024 + continuing' public/good/index.html
+                  grep -Fq 'Funding approved · 2025' public/good/index.html
+                  grep -Fq 'Southside Hoops' public/good/index.html
                   grep -Fq 'No formal DFL electoral organizations' public/good/index.html
                   grep -Fq 'Minnesota Young Republicans' public/good/index.html
                   grep -Fq 'Minnesota Chiefs of Police Foundation' public/good/index.html
+                  grep -Fq '/css/good-v2.css' public/good/index.html
+                  grep -Fq '.field-map-shell' public/css/good-v2.css
                   grep -Fq 'Who is who' public/guide/index.html
                   grep -Fq 'Court language' public/guide/index.html
                   grep -Fq 'The fraud story is only half the story.' public/oversight/index.html
@@ -89,10 +98,10 @@ jobs:
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
                   grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
-                  grep -Fq 'context-first-v5.1' public/functions/_middleware.js
-                  grep -Fq '/js/discovery-v5.js' public/functions/_middleware.js
+                  grep -Fq 'context-first-v6' public/functions/_middleware.js
+                  grep -Fq '/js/discovery-v6.js' public/functions/_middleware.js
                   grep -Fq '78 defendants had been charged' public/functions/_middleware.js
-                  grep -Fq 'Minnesotans helping Minnesotans' public/js/discovery-v5.js
+                  grep -Fq 'Good work has an address.' public/js/discovery-v6.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -148,7 +157,7 @@ jobs:
 
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/briefs.js /tmp/discovery-v5.js
+                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/briefs.js /tmp/discovery-v6.js /tmp/good-v2.css
                     rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers
 
                     curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' -o /tmp/home.html "https://minnesotapeace.com/" || true
@@ -158,24 +167,29 @@ jobs:
                     curl -fsSL -D /tmp/guide.headers -H 'Cache-Control: no-cache' -o /tmp/guide.html "https://minnesotapeace.com/guide/" || true
                     curl -fsSL -D /tmp/oversight.headers -H 'Cache-Control: no-cache' -o /tmp/oversight.html "https://minnesotapeace.com/oversight/" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/briefs.js "https://minnesotapeace.com/record/js/briefs.js" || true
-                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v5.js "https://minnesotapeace.com/js/discovery-v5.js" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v6.js "https://minnesotapeace.com/js/discovery-v6.js" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/good-v2.css "https://minnesotapeace.com/css/good-v2.css" || true
 
                     misses=0
                     check_text /tmp/home.html 'What happened' 'homepage' || misses=1
                     check_text /tmp/home.html 'status-value">78<' 'homepage current charged milestone' || misses=1
-                    check_text /tmp/home.html '/js/discovery-v5.js' 'homepage discovery injection' || misses=1
+                    check_text /tmp/home.html '/js/discovery-v6.js' 'homepage discovery injection' || misses=1
                     check_text /tmp/status.html 'Where do the cases actually stand now?' 'status desk' || misses=1
                     check_text /tmp/status.html '78th defendant charged' 'status desk charged source' || misses=1
                     check_text /tmp/good.html 'Minnesota is more than what went wrong.' 'civic good-work page' || misses=1
+                    check_text /tmp/good.html 'Good work has an address.' 'statewide good-work map' || misses=1
+                    check_text /tmp/good.html '12 local stories' 'statewide good-work map count' || misses=1
                     check_text /tmp/good.html 'No formal DFL electoral organizations' 'civic scope disclosure' || misses=1
+                    check_text /tmp/good.html '/css/good-v2.css' 'versioned civic map stylesheet' || misses=1
+                    check_text /tmp/good-v2.css '.field-map-shell' 'civic map CSS' || misses=1
                     check_text /tmp/guide.html 'Who is who' 'field guide' || misses=1
                     check_text /tmp/oversight.html 'The fraud story is only half the story.' 'oversight' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1
                     check_text /tmp/record.html '/record/js/briefs.js' 'record briefs asset' || misses=1
-                    check_text /tmp/record.html '/js/discovery-v5.js' 'record discovery injection' || misses=1
+                    check_text /tmp/record.html '/js/discovery-v6.js' 'record discovery injection' || misses=1
                     check_text /tmp/briefs.js 'Start with a case, not a data table.' 'briefs JS' || misses=1
-                    check_text /tmp/discovery-v5.js 'Minnesotans helping Minnesotans' 'versioned discovery JS' || misses=1
-                    check_header /tmp/home.headers '^x-mnpeace-publication: context-first-v5\.1' 'homepage version' || misses=1
+                    check_text /tmp/discovery-v6.js 'Good work has an address.' 'versioned discovery JS' || misses=1
+                    check_header /tmp/home.headers '^x-mnpeace-publication: context-first-v6' 'homepage version' || misses=1
                     check_header /tmp/home.headers '^cache-control: .*no-store' 'homepage cache' || misses=1
                     check_header /tmp/status.headers '^cache-control: .*no-store' 'status cache' || misses=1
                     check_header /tmp/good.headers '^cache-control: .*no-store' 'civic page cache' || misses=1
