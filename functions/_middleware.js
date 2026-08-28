@@ -116,7 +116,7 @@ export async function onRequest(context) {
             <h3>More than 2.6 million pounds of food in 2025.</h3>
             <p>Catholic Charities of the Diocese of St. Cloud reports that its Food Shelf provided more than 2.6 million pounds of food in 2025 and served more than 20,000 people. Its March 2026 Pack the Porches drive added 6,615 pounds of donated food and $24,665 in cash support.</p>
             <p class="example-line">The Catholic identity is disclosed because the organization makes it part of its mission; the measurable service is why it appears here.</p>
-            <div class="purpose-links"><a class="story-source" href="https://www.ccstcloud.org/annual-report">Catholic Charities · 2025 annual report →</a><a class="story-source" href="https://www.ccstcloud.org/post/pack-the-porches-2026-a-community-success">Pack the Porches · 2026 results →</a></div>
+            <div class="purpose-links"><a class="story-source" href="https://www.ccstcloud.org/annual-report">Catholic Charities · 2025 annual report →</a><a class="story-source" href="https://www.ccstcloud.org/pack-the-porches-2026">Pack the Porches · 2026 results →</a></div>
           </article>
         </div>
       </div>
