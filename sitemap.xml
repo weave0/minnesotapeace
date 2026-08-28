@@ -19,6 +19,12 @@
         <priority>0.95</priority>
     </url>
     <url>
+        <loc>https://minnesotapeace.com/good/</loc>
+        <lastmod>2026-08-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
         <loc>https://minnesotapeace.com/guide/</loc>
         <lastmod>2026-08-28</lastmod>
         <changefreq>monthly</changefreq>
