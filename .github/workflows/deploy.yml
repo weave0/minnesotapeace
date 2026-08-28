@@ -24,7 +24,7 @@ jobs:
                   set -euo pipefail
                   mkdir -p public
                   cp _headers _redirects index.html 404.html robots.txt sitemap.xml favicon.svg public/
-                  cp -a css js assets record guide oversight public/
+                  cp -a css js assets record status guide oversight public/
                   mkdir -p public/functions
                   cp -a functions/. public/functions/
 
@@ -32,7 +32,9 @@ jobs:
                   test -f public/css/publication.css
                   test -f public/css/deepdive.css
                   test -f public/css/discovery.css
+                  test -f public/css/status.css
                   test -f public/js/discovery.js
+                  test -f public/status/index.html
                   test -f public/guide/index.html
                   test -f public/oversight/index.html
                   test -f public/_headers
@@ -58,7 +60,7 @@ jobs:
                     exit 1
                   fi
 
-                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/guide/index.html public/oversight/index.html; then
+                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/status/index.html public/guide/index.html public/oversight/index.html; then
                     echo "internal research vocabulary leaked into visitor-facing HTML" >&2
                     exit 1
                   fi
@@ -67,6 +69,10 @@ jobs:
                   grep -Fq 'The story in 90 seconds' public/index.html
                   grep -Fq 'How the systems worked' public/index.html
                   grep -Fq 'Where things stand' public/index.html
+                  grep -Fq 'Where do the cases actually stand now?' public/status/index.html
+                  grep -Fq '78' public/status/index.html
+                  grep -Fq '68' public/status/index.html
+                  grep -Fq '26' public/status/index.html
                   grep -Fq 'Who is who' public/guide/index.html
                   grep -Fq 'Court language' public/guide/index.html
                   grep -Fq 'The fraud story is only half the story.' public/oversight/index.html
@@ -75,8 +81,9 @@ jobs:
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
                   grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
-                  grep -Fq 'x-mnpeace-publication' public/functions/_middleware.js
+                  grep -Fq 'context-first-v4' public/functions/_middleware.js
                   grep -Fq '/js/discovery.js' public/functions/_middleware.js
+                  grep -Fq '78 defendants had been charged' public/functions/_middleware.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -108,25 +115,30 @@ jobs:
                   set -euo pipefail
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    rm -f /tmp/home.headers /tmp/record.headers /tmp/guide.headers /tmp/oversight.headers
+                    rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/guide.headers /tmp/oversight.headers
                     HOME=$(curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/" || true)
                     RECORD=$(curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/" || true)
+                    STATUS=$(curl -fsSL -D /tmp/status.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/status/" || true)
                     GUIDE=$(curl -fsSL -D /tmp/guide.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/guide/" || true)
                     OVERSIGHT=$(curl -fsSL -D /tmp/oversight.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/oversight/" || true)
                     BRIEFS=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/js/briefs.js" || true)
                     DISCOVERY=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/js/discovery.js" || true)
 
                     if printf '%s' "$HOME" | grep -Fq 'What happened' \
+                      && printf '%s' "$HOME" | grep -Fq 'status-value">78<' \
                       && printf '%s' "$HOME" | grep -Fq '/js/discovery.js' \
+                      && printf '%s' "$STATUS" | grep -Fq 'Where do the cases actually stand now?' \
+                      && printf '%s' "$STATUS" | grep -Fq '78th defendant charged' \
                       && printf '%s' "$GUIDE" | grep -Fq 'Who is who' \
                       && printf '%s' "$OVERSIGHT" | grep -Fq 'The fraud story is only half the story.' \
                       && printf '%s' "$RECORD" | grep -Fq 'Evidence room' \
                       && printf '%s' "$RECORD" | grep -Fq '/record/js/briefs.js' \
                       && printf '%s' "$RECORD" | grep -Fq '/js/discovery.js' \
                       && printf '%s' "$BRIEFS" | grep -Fq 'Start with a case, not a data table.' \
-                      && printf '%s' "$DISCOVERY" | grep -Fq 'Field guide' \
-                      && grep -qi '^x-mnpeace-publication: context-first-v3' /tmp/home.headers \
+                      && printf '%s' "$DISCOVERY" | grep -Fq 'Current status' \
+                      && grep -qi '^x-mnpeace-publication: context-first-v4' /tmp/home.headers \
                       && grep -qi '^cache-control: .*no-store' /tmp/home.headers \
+                      && grep -qi '^cache-control: .*no-store' /tmp/status.headers \
                       && grep -qi '^cache-control: .*no-store' /tmp/guide.headers \
                       && grep -qi '^cache-control: .*no-store' /tmp/oversight.headers; then
                       ok=1
