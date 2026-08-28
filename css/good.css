@@ -48,7 +48,8 @@
 .place-card { position:relative; overflow:hidden; display:flex; flex-direction:column; min-height:16.5rem; padding:1.2rem 1.25rem 1.25rem; border:1px solid var(--border-subtle); border-radius:var(--radius-xl); background:linear-gradient(145deg,rgba(18,18,27,.96),rgba(9,9,14,.96)); }
 .place-card::before { content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(circle at 92% 0%,rgba(34,211,238,.07),transparent 38%); }
 .place-card:nth-child(even)::before { background:radial-gradient(circle at 92% 0%,rgba(245,158,11,.065),transparent 38%); }
-.place-city { position:relative; z-index:1; margin:0 0 .55rem; color:var(--cyan); font-family:var(--font-mono); font-size:.66rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; }
+.place-city { position:relative; z-index:1; margin:0 0 .55rem; }
+.place-card .place-city { color:var(--cyan); font-family:var(--font-mono); font-size:.66rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; }
 .place-card h3 { position:relative; z-index:1; margin:0 0 .7rem; font-family:var(--font-display); font-size:clamp(1.15rem,1.8vw,1.45rem); line-height:1.18; letter-spacing:-.03em; }
 .place-card p { position:relative; z-index:1; color:var(--text-muted); font-size:.92rem; line-height:1.68; }
 .place-card .story-source,.place-sources { position:relative; z-index:1; margin-top:auto; padding-top:1.1rem; }
