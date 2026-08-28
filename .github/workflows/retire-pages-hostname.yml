@@ -1,0 +1,62 @@
+name: Retire legacy Pages hostname
+
+on:
+  push:
+    branches:
+      - agent/retire-legacy-pages-hostname-2026-08-28
+    paths:
+      - '.github/workflows/retire-pages-hostname.yml'
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/retire-legacy-pages-hostname-2026-08-28
+
+      - name: Add canonical host redirect and release checks
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          from pathlib import Path
+
+          middleware = Path('functions/_middleware.js')
+          text = middleware.read_text(encoding='utf-8')
+          old = '  const { pathname } = new URL(context.request.url);\n'
+          new = '''  const requestUrl = new URL(context.request.url);\n  const { pathname, hostname } = requestUrl;\n\n  // Retire the inherited Pages development hostname without rebuilding the project.\n  // Preserve path/query while permanently canonicalizing visitors and crawlers to MN Peace.\n  if (hostname === "jamie-mediation.pages.dev") {\n    requestUrl.protocol = "https:";\n    requestUrl.hostname = "minnesotapeace.com";\n    requestUrl.port = "";\n    return Response.redirect(requestUrl.toString(), 308);\n  }\n'''
+          if 'hostname === "jamie-mediation.pages.dev"' not in text:
+              if old not in text:
+                  raise SystemExit('middleware URL parse anchor not found')
+              text = text.replace(old, new, 1)
+              middleware.write_text(text, encoding='utf-8')
+
+          deploy = Path('.github/workflows/deploy.yml')
+          d = deploy.read_text(encoding='utf-8')
+          assembly_anchor = "                  grep -Fq '/js/discovery-v6.js' public/functions/_middleware.js\n"
+          assembly_add = assembly_anchor + "                  grep -Fq 'jamie-mediation.pages.dev' public/functions/_middleware.js\n                  grep -Fq 'Response.redirect(requestUrl.toString(), 308)' public/functions/_middleware.js\n"
+          if "grep -Fq 'jamie-mediation.pages.dev' public/functions/_middleware.js" not in d:
+              if assembly_anchor not in d:
+                  raise SystemExit('deploy assembly anchor not found')
+              d = d.replace(assembly_anchor, assembly_add, 1)
+
+          verify_anchor = '''                  code=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://minnesotapeace.com/research/ARCHITECTURE.md")\n'''
+          verify_block = '''                  legacy_headers=/tmp/legacy-pages.headers\n                  legacy_code=$(curl -sS --max-redirs 0 -D "$legacy_headers" -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://jamie-mediation.pages.dev/")\n                  if [ "$legacy_code" != "308" ]; then\n                    echo "Expected legacy Pages hostname to redirect permanently; got HTTP $legacy_code" >&2\n                    exit 1\n                  fi\n                  check_header "$legacy_headers" '^location: https://minnesotapeace\\.com/?' 'legacy Pages canonical redirect'\n\n''' + verify_anchor
+          if 'legacy-pages.headers' not in d:
+              if verify_anchor not in d:
+                  raise SystemExit('deploy verification anchor not found')
+              d = d.replace(verify_anchor, verify_block, 1)
+          deploy.write_text(d, encoding='utf-8')
+          PY
+          git diff --check
+
+      - name: Commit permanent hostname retirement
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add functions/_middleware.js .github/workflows/deploy.yml
+          git commit -m 'Retire legacy Pages hostname at the edge'
+          git push origin HEAD:agent/retire-legacy-pages-hostname-2026-08-28
