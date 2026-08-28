@@ -1,0 +1,40 @@
+name: Fix GitHub About metadata
+
+on:
+  push:
+    branches:
+      - agent/fix-github-about-2026-08-28
+    paths:
+      - '.github/workflows/fix-github-about.yml'
+
+permissions: write-all
+
+jobs:
+  update-about:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Replace stale repository description and website
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          body='{"description":"MN Peace — a primary-source guide to Minnesota’s public-program fraud cases, oversight failures, reforms, and civic context.","homepage":"https://minnesotapeace.com"}'
+          code=$(curl -sS -o /tmp/repo-update.json -w '%{http_code}' -X PATCH \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            "https://api.github.com/repos/${REPO}" \
+            -d "$body")
+          cat /tmp/repo-update.json
+          if [ "$code" != "200" ]; then
+            echo "Repository metadata update not permitted with GITHUB_TOKEN (HTTP $code)." >&2
+            exit 1
+          fi
+          python3 - <<'PY'
+          import json
+          d=json.load(open('/tmp/repo-update.json', encoding='utf-8'))
+          assert d.get('description') == 'MN Peace — a primary-source guide to Minnesota’s public-program fraud cases, oversight failures, reforms, and civic context.'
+          assert d.get('homepage') == 'https://minnesotapeace.com'
+          print('Repository About metadata verified.')
+          PY
