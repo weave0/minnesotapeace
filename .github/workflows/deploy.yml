@@ -101,6 +101,8 @@ jobs:
                   grep -Fq 'context-first-v6' public/functions/_middleware.js
                   grep -Fq '/js/discovery-v6.js' public/functions/_middleware.js
                   grep -Fq '78 defendants had been charged' public/functions/_middleware.js
+                  grep -Fq 'jamie-mediation.pages.dev' public/functions/_middleware.js
+                  grep -Fq 'Response.redirect(requestUrl.toString(), 308)' public/functions/_middleware.js
                   grep -Fq 'Good work has an address.' public/js/discovery-v6.js
 
             - name: Deploy to Cloudflare Pages
@@ -208,6 +210,14 @@ jobs:
                     echo "The exact public URLs are not serving the current publication build." >&2
                     exit 1
                   fi
+
+                  legacy_headers=/tmp/legacy-pages.headers
+                  legacy_code=$(curl -sS --max-redirs 0 -D "$legacy_headers" -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://jamie-mediation.pages.dev/")
+                  if [ "$legacy_code" != "308" ]; then
+                    echo "Expected legacy Pages hostname to redirect permanently; got HTTP $legacy_code" >&2
+                    exit 1
+                  fi
+                  check_header "$legacy_headers" '^location: https://minnesotapeace\.com/?' 'legacy Pages canonical redirect'
 
                   code=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://minnesotapeace.com/research/ARCHITECTURE.md")
                   if [ "$code" != "404" ]; then
