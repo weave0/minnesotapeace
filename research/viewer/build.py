@@ -20,6 +20,7 @@ EXTRACTS_DIR = ROOT / "research" / "court" / "extracts"
 SOURCES_DIR = ROOT / "research" / "sources"
 ENTITIES_DIR = ROOT / "research" / "entities"
 OUT_DIR = Path(__file__).resolve().parent / "data"
+PUBLIC_DATA_DIR = ROOT / "record" / "data"
 SKIP_EXTRACTS = {"farah-22-cr-124-ecf57-superseding.json"}
 
 # Catalog of charging instruments this viewer exposes. Metadata describes documents
@@ -622,15 +623,26 @@ def main() -> None:
         "gaps": len(GAPS),
         "entities": len(entities),
         "money_rows": len(money_rows),
+        "families": len(FAMILIES),
     }
     stats_js = OUT_DIR / "stats.js"
     stats_js.write_text(
         "window.__CORPUS_STATS__ = " + json.dumps(stats, ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
+    PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    public_json = PUBLIC_DATA_DIR / "corpus.json"
+    public_js = PUBLIC_DATA_DIR / "corpus.js"
+    public_stats = PUBLIC_DATA_DIR / "stats.js"
+    public_json.write_text(json_path.read_text(encoding="utf-8"), encoding="utf-8")
+    public_js.write_text(js_path.read_text(encoding="utf-8"), encoding="utf-8")
+    public_stats.write_text(stats_js.read_text(encoding="utf-8"), encoding="utf-8")
     print(f"wrote {json_path.relative_to(ROOT)} ({json_path.stat().st_size} bytes)")
     print(f"wrote {js_path.relative_to(ROOT)} ({js_path.stat().st_size} bytes)")
     print(f"wrote {stats_js.relative_to(ROOT)}")
+    print(f"wrote {public_json.relative_to(ROOT)}")
+    print(f"wrote {public_js.relative_to(ROOT)}")
+    print(f"wrote {public_stats.relative_to(ROOT)}")
     print(f"claims={len(claims)} cases={len(cases_out)} money_rows={len(money_rows)} entities={len(entities)}")
 
 
