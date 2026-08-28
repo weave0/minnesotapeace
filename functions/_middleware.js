@@ -51,6 +51,7 @@ export async function onRequest(context) {
 
   let body = await response.text();
   const isHome = pathname === "/" || pathname === "/index.html";
+  const isGood = pathname === "/good" || pathname === "/good/" || pathname === "/good/index.html";
 
   // The narrative homepage is comparatively stable; aggregate legal milestones are not.
   // Rewrite each stale field independently so harmless whitespace/layout changes cannot
@@ -67,8 +68,17 @@ export async function onRequest(context) {
   // Version the discovery asset path. Static asset caches can outlive a Pages deployment
   // when a zone-level purge is unavailable; a content-versioned URL makes each public
   // release independently verifiable without depending on purge permission.
-  const tag = '<script src="/js/discovery-v6.js" defer></script>';
-  if (!body.includes('/js/discovery-v6.js')) body = body.replace("</body>", tag + "\n</body>");
+  const discoveryTag = '<script src="/js/discovery-v6.js" defer></script>';
+  if (!body.includes('/js/discovery-v6.js')) body = body.replace("</body>", discoveryTag + "\n</body>");
+
+  // The first statewide story-map outline was too schematic. v6.1 replaces its geometry
+  // at the publication edge with a boundary-derived Minnesota silhouette and projected
+  // city locations, while retaining the same accessible story links.
+  if (isGood) {
+    const mapTag = '<script src="/js/good-map-v61.js" defer></script>';
+    if (!body.includes('/js/good-map-v61.js')) body = body.replace("</body>", mapTag + "\n</body>");
+  }
+
   headers.delete("content-length");
 
   return new Response(body, {
