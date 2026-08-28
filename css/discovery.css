@@ -1,0 +1,10 @@
+.deep-discovery { background:linear-gradient(180deg,rgba(168,85,247,.035),rgba(34,211,238,.025)); }
+.deep-discovery .orientation-copy h2 { max-width:27ch; }
+.deep-discovery-actions { display:grid; gap:.75rem; }
+.deep-discovery-link { display:block; padding:1.1rem 1.15rem; border:1px solid var(--border-subtle); border-radius:var(--radius-lg); background:rgba(10,10,15,.72); color:var(--text); text-decoration:none; transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease; }
+.deep-discovery-link:hover,.deep-discovery-link:focus-visible { border-color:rgba(34,211,238,.45); transform:translateY(-2px); box-shadow:0 0 28px rgba(34,211,238,.09); }
+.deep-discovery-link span { display:block; margin-bottom:.3rem; color:var(--cyan); font-family:var(--font-mono); font-size:.65rem; letter-spacing:.14em; text-transform:uppercase; }
+.deep-discovery-link strong { display:block; font-family:var(--font-display); font-size:1.05rem; letter-spacing:-.02em; }
+.deep-discovery-link small { display:block; margin-top:.35rem; color:var(--text-muted); font-size:.84rem; line-height:1.5; }
+.deep-discovery-link.is-gold span { color:var(--gold); }
+.nav-links a[data-deep-link] { color:var(--text-muted); }
