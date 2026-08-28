@@ -38,7 +38,7 @@ export async function onRequest(context) {
   headers.set("cache-control", "no-store, no-cache, must-revalidate, max-age=0");
   headers.set("pragma", "no-cache");
   headers.set("expires", "0");
-  headers.set("x-mnpeace-publication", "context-first-v5");
+  headers.set("x-mnpeace-publication", "context-first-v5.1");
 
   const contentType = response.headers.get("content-type") || "";
   if (!contentType.includes("text/html")) {
@@ -64,8 +64,11 @@ export async function onRequest(context) {
       .replace(/https:\/\/www\.justice\.gov\/usao-mn\/pr\/77th-defendant-charged-feeding-our-future-fraud-scheme/g, "https://www.justice.gov/usao-mn/pr/78th-defendant-charged-feeding-our-future-fraud-scheme");
   }
 
-  const tag = '<script src="/js/discovery.js" defer></script>';
-  if (!body.includes('/js/discovery.js')) body = body.replace("</body>", tag + "\n</body>");
+  // Version the discovery asset path. Static asset caches can outlive a Pages deployment
+  // when a zone-level purge is unavailable; a content-versioned URL makes each public
+  // release independently verifiable without depending on purge permission.
+  const tag = '<script src="/js/discovery-v5.js" defer></script>';
+  if (!body.includes('/js/discovery-v5.js')) body = body.replace("</body>", tag + "\n</body>");
   headers.delete("content-length");
 
   return new Response(body, {
