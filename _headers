@@ -6,7 +6,25 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/record/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/record/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
 /*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/css/publication.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/record/css/context.css
   Cache-Control: public, max-age=0, must-revalidate
 
 /css/*
