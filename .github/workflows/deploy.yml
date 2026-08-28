@@ -34,8 +34,10 @@ jobs:
                   test -f public/_redirects
                   test -f public/record/index.html
                   test -f public/record/js/viewer.js
+                  test -f public/record/js/briefs.js
                   test -f public/record/css/viewer.css
                   test -f public/record/css/context.css
+                  test -f public/record/css/briefs.css
                   test -f public/record/data/corpus.js
                   test -f public/record/data/stats.js
                   test -f public/record/documents/25-cr-00349-ecf1.pdf
@@ -61,6 +63,9 @@ jobs:
                   grep -Fq 'How the systems worked' public/index.html
                   grep -Fq 'Where things stand' public/index.html
                   grep -Fq 'Evidence room' public/record/index.html
+                  grep -Fq '/record/js/briefs.js' public/record/index.html
+                  grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
+                  grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -94,7 +99,8 @@ jobs:
                   for attempt in 1 2 3 4 5 6; do
                     HOME=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/?build=${GITHUB_SHA}" || true)
                     RECORD=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/?build=${GITHUB_SHA}" || true)
-                    if printf '%s' "$HOME" | grep -Fq 'What happened' && printf '%s' "$HOME" | grep -Fq 'The story in 90 seconds' && printf '%s' "$RECORD" | grep -Fq 'Evidence room'; then
+                    BRIEFS=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/js/briefs.js?build=${GITHUB_SHA}" || true)
+                    if printf '%s' "$HOME" | grep -Fq 'What happened' && printf '%s' "$HOME" | grep -Fq 'The story in 90 seconds' && printf '%s' "$RECORD" | grep -Fq 'Evidence room' && printf '%s' "$RECORD" | grep -Fq '/record/js/briefs.js' && printf '%s' "$BRIEFS" | grep -Fq 'Start with a case, not a data table.'; then
                       ok=1
                       break
                     fi
