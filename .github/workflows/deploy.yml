@@ -81,6 +81,17 @@ jobs:
                   grep -Fq 'No formal DFL electoral organizations' public/good/index.html
                   grep -Fq 'Minnesota Young Republicans' public/good/index.html
                   grep -Fq 'Minnesota Chiefs of Police Foundation' public/good/index.html
+                  grep -Fq 'Around Minnesota' public/good/index.html
+                  grep -Fq 'western Minnesota is not in it' public/good/index.html
+                  grep -Fq 'bemidji-casting-with-cops' public/good/index.html
+                  grep -Fq 'mankato-ctk-community-supper' public/good/index.html
+                  grep -Fq 'Also reported: Fairmont Sentinel' public/good/index.html
+                  grep -Fq 'Also reported: KEYC' public/good/index.html
+                  if grep -E 'Detroit Lakes|Winthrop|affiliation_label|CHARGED_ALLEGED|metric_type|9 billion' public/good/index.html; then
+                    echo "Around Minnesota leaked excluded towns, intern fields or statewide totals" >&2
+                    exit 1
+                  fi
+                  test "$(grep -c 'class="place-card"' public/good/index.html)" -eq 10
                   grep -Fq 'Who is who' public/guide/index.html
                   grep -Fq 'Court language' public/guide/index.html
                   grep -Fq 'The fraud story is only half the story.' public/oversight/index.html
@@ -168,6 +179,8 @@ jobs:
                     check_text /tmp/status.html '78th defendant charged' 'status desk charged source' || misses=1
                     check_text /tmp/good.html 'Minnesota is more than what went wrong.' 'civic good-work page' || misses=1
                     check_text /tmp/good.html 'No formal DFL electoral organizations' 'civic scope disclosure' || misses=1
+                    check_text /tmp/good.html 'Around Minnesota' 'civic place-story layer' || misses=1
+                    check_text /tmp/good.html 'western Minnesota is not in it' 'civic western-gap disclosure' || misses=1
                     check_text /tmp/guide.html 'Who is who' 'field guide' || misses=1
                     check_text /tmp/oversight.html 'The fraud story is only half the story.' 'oversight' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1

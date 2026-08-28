@@ -106,9 +106,85 @@ Own site says members focus on education, Republican grassroots political involv
 Source: https://mngop.com/affiliate-groups/
 Useful as authoritative affiliation verification. Current listed groups include Minnesota Federation of Republican Women, Republican Seniors of Minnesota, Minnesota Young Republicans, Minnesota College Republicans, Hispanic Republican Assembly of MN, Log Cabin Republicans of Minnesota, Asian American Republicans of Minnesota, Minnesota Republican Liberty Caucus, Minnesota Organization of Republican Veterans and American Indian Republican Affiliate.
 
+## Around Minnesota place stories — added 2026-08-28
+
+Public `/good/#around` is a place-story layer, not a GIS map. Grouping is north / central / south. Western Minnesota is absent from this set; do not invent western stories to fill the hole.
+
+Editorial method for these cards:
+- Form: place → people → problem → action → result → source.
+- City name is the kicker. Counts that come from a city, department or organization stay attributed.
+- No organization logos.
+- No MCPF-as-only-visible-source when a city, PD, school or church page exists.
+- For Fairmont autism kits and Mankato Operation Turkey Drop, the MCPF Oct. 31, 2025 C-Notes list is the finding; journalism is a second “also reported” link.
+- Do not treat MCPF grant-resources boilerplate as a finding.
+- People on these cards are not labeled Republican or Democrat. Christ the King is labeled Lutheran because the church says so. ECHO has no faith/political affiliation label.
+- Do not merge Belle Plaine Hook, Line and Heroes with Scott County’s Cedar Lake derby.
+- Do not add Detroit Lakes, Adrian, Winthrop or other MCPF-list towns unless independently sourced as their own stories.
+
+Excluded-from-this-set reminders: Detroit Lakes Shop with a Cop; Adrian Lights & Sirens of Giving; Winthrop Slide & Slice with Cops; Cannon Falls / Zumbrota / Goodhue County Sheriff skate items from the 2024 MCPF list; NC veterans nonprofit Hook Line & Heroes.
+
+### bemidji-casting-with-cops — Bemidji, Beltrami, north
+Primary: https://www.ci.bemidji.mn.us/uploads/dm/73247/State_of_the_City_2024
+Document title: State of the City – 2025 (covers 2024). Author metadata: Jorge Prince. Created Feb. 19, 2025.
+Parks section: partnership with Bemidji Police Department and local sponsors for “Casting with Cops” at Diamond Point / Lake Bemidji; 100 rods/reels; over $9,000 cash and in-kind.
+Police section: event held with Beltrami County Sheriff’s Office, Parks and Rec and local donors; city claim of “positive relationships with over 100 kids.”
+Contrary / context in the same address (do not moralize): PD operated four officers short in 2024; the address also makes a city crime-rate claim. Public card carries one quiet staffing clause only.
+Also listed: MCPF 2025 C-Notes, “Bemidji Police Department – Casting with Cops.” Not used as the visible source because the city document exists.
+Research-brief named additional partners (fire, DNR, HS fishing team). Public card follows the city document (PD, Parks, sheriff, local donors/sponsors).
+
+### keewatin-spartan-care-closet — Keewatin/Nashwauk, Itasca, Iron Range / north
+Primary: https://www.isd319.org/article/2533866 (Nov. 6, 2025)
+Title: “Keewatin Police Department receives funding to support the Spartan Care Closet.”
+District lists dollars: $2,000 MCPF, plus other local donations. District marketing copy says “ensuring no student goes without.” Do not convert the dollar list into that outcome. Public card treats the dollars as the district’s donation list.
+Also listed: MCPF 2025 C-Notes, “Keewatin Police Department – School Snack and Clothing Drive.”
+
+### st-cloud-southside-hoops — St. Cloud, Stearns, central
+Primary: https://ci.stcloud.mn.us/1804/Southside-Hoops
+Title: Southside Hoops.
+City page: free 3-on-3 at Haws Park; officers organize, coach and referee; ages 8–18; August Tue/Wed games plus last-Saturday tournament; city says approximately 300 participants.
+Also listed: MCPF 2025 C-Notes, “St. Cloud Police Department – South Side Hoops Basketball.”
+
+### belle-plaine-hook-line-heroes — Belle Plaine, Scott County, south
+Primary calendars:
+- https://www.belleplainemn.gov/Calendar.aspx?EID=1189 — Hook, Line and Heroes, Fishing Event, Aug. 16, 2025, Court Square Park.
+- https://www.belleplainemn.gov/Calendar.aspx?EID=914 — same event title, Aug. 17, 2024, Prairie Park.
+Result not stated on the calendars.
+Also listed: MCPF 2024 and 2025, “Belle Plaine Police Department – Hook, Line, and Heroes Youth River Fishing Derby.”
+NOT Scott County’s Cedar Lake derby. NOT the NC veterans nonprofit Hook Line & Heroes.
+
+### fairmont-autism-toolkits — Fairmont, Martin County, south
+Finding: https://www.mnchiefs.org/news/c-notes-10-31-25 — “Fairmont Police Department – The Bean and Bear Project and Autism Tool Kits” (Oct. 31, 2025).
+Journalism corroboration, not the finding: https://www.fairmontsentinel.com/news/local-news/2026/02/04/police-department-adopts-toolkit-for-people-with-disabilities/
+Fairmont Sentinel (Daniel Olson, Feb. 4, 2026): kits arrived ~Christmas; officer said already utilized; training planned not completed; program still very new. Do not treat “positive response” as outcome data. PD website does not describe the kits.
+
+### mankato-operation-turkey-drop — Mankato, Blue Earth, south
+Finding: https://www.mnchiefs.org/news/c-notes-10-31-25 — “Mankato Public Safety – Operation Turkey Drop.”
+Journalism corroboration: https://www.keyc.com/2025/11/24/mankato-public-safety-handed-out-100-holiday-meals-those-need/
+KEYC (Nov. 24, 2025) quotes Commander Sam McGinnis: 100 families identified through Blue Earth County human services and the school district; Hy-Vee matched the grant; first time DPS had done this; invitation-only. Attribute the 100 as the department’s statement via KEYC. City outreach page did not currently list the program.
+
+### mankato-echo-food-shelf — Mankato/North Mankato
+Primary: https://www.echofoodshelf.org/ (page updated 2026-08-18)
+Title: Working Hard to Feed our communities.
+Org says monthly 160,000 pounds to about 1,700 households (self-reported). Client-choice since May 2010. Began in a church basement in 1981; current site does not claim denominational identity. affiliation_label: none.
+
+### scott-county-youth-fishing-derby — Cedar Lake, New Prague, Scott County, south
+Primary: https://www.scottcountymn.gov/1564/Annual-Youth-Fishing-Derby
+Title: Annual Youth Fishing Derby.
+Sheriff’s Office; free; ages 10–15; 2026-06-10; county says registration full. Moved from Minnesota River to Cedar Lake in 2018. Distinct from Belle Plaine. Slogan “Get Hooked on Fishing, Not on Drugs!” is the county’s slogan, not a drug-use outcome.
+
+### red-wing-police-skating — Red Wing, Goodhue, south
+Primary: https://www.redwingmn.gov/Calendar.aspx?EID=3572
+Title: (Pol)ice Skating. Feb. 17, 2024, Prairie Island Ice Arena; free; rental gear, snacks, beverages.
+MCPF 2024 listed Skate with a Cop and also named Cannon Falls, Zumbrota and Goodhue County Sheriff — those are not this card. 2025 MCPF item for Red Wing is Bike Rodeo, not skating. Do not claim the skate recurred in 2025.
+
+### mankato-ctk-community-supper — Mankato
+Primary: https://ctkmankato.org/worship/wednesday-nights
+Title: Wednesday Nights.
+Free Wednesday Community Supper 5 p.m., open to anyone; worship 6 p.m.; then Rainbow Room, faith formation, confirmation, choir. Faith: Lutheran, sourced from the church. Result not stated. Do not flatten into a secular food bank.
+
 ## Next research queue
 
-1. Build a geographically balanced set of local police-community grant stories from northern, central, southern and western Minnesota.
+1. Western Minnesota remains a hole in the Around Minnesota set; source local stories there rather than stretching this ten-card list.
 2. Add independently verifiable outcome/financial data where available; do not turn self-reported outputs into claims of effectiveness.
 3. Find additional Republican-affiliated groups with documented direct service rather than campaign activity.
 4. Add veterans and rural service organizations with strong Minnesota-specific evidence.
