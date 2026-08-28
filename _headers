@@ -18,5 +18,14 @@
 /assets/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 
-/research/viewer/data/*
+/record/css/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/record/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/record/documents/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/record/data/*
   Cache-Control: public, max-age=300, must-revalidate

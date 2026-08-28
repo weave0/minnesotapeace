@@ -594,7 +594,7 @@ main,
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--border-subtle);
   border: 1px solid var(--border-subtle);
@@ -827,7 +827,7 @@ main,
   font-size: 0.82em;
 }
 
-/* Actor classes */
+/* Type cards (unused on the public homepage; keep tokens for layout) */
 .actor-grid {
   container-type: inline-size;
   display: grid;
@@ -924,9 +924,10 @@ main,
 
 .read-points strong {
   color: var(--text);
-  font-family: var(--font-mono);
-  font-size: 0.82em;
-  letter-spacing: 0.04em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: inherit;
+  letter-spacing: -0.02em;
 }
 
 /* Record families */

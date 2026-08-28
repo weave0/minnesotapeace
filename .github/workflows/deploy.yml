@@ -2,6 +2,7 @@ name: Deploy to Cloudflare Pages
 
 # Cloudflare Pages project `minnesotapeace` deploys from `main`.
 # `main` is the MN Peace public site (community healing + The Record).
+# research/ stays in git as the lab and is not copied into the Pages artifact.
 
 on:
     push:
@@ -19,9 +20,33 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
+            - name: Assemble public site
+              run: |
+                  set -euo pipefail
+                  mkdir -p public
+                  cp _headers _redirects index.html 404.html robots.txt sitemap.xml favicon.svg public/
+                  cp -a css js assets record public/
+                  test -f public/index.html
+                  test -f public/_headers
+                  test -f public/_redirects
+                  test -f public/record/index.html
+                  test -f public/record/js/viewer.js
+                  test -f public/record/css/viewer.css
+                  test -f public/record/data/corpus.js
+                  test -f public/record/data/stats.js
+                  test -f public/record/documents/25-cr-00349-ecf1.pdf
+                  if [ -e public/research ] || [ -e public/.git ] || [ -e public/.github ]; then
+                    echo "lab paths leaked into the public artifact" >&2
+                    exit 1
+                  fi
+                  if grep -R -n --include='*.html' --include='*.js' --include='*.css' --include='*.xml' -E '(href|src)="/research/' public; then
+                    echo "public artifact still points at /research/" >&2
+                    exit 1
+                  fi
+
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
               with:
                   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                  command: pages deploy . --project-name minnesotapeace --branch main
+                  command: pages deploy public --project-name minnesotapeace --branch main

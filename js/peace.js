@@ -71,7 +71,7 @@
   }
   function fillStats() {
     if (!stats) return;
-    ["documents", "claims", "mapped_cases", "gaps"].forEach(function (key) {
+    ["mapped_cases", "families", "claims", "documents", "gaps"].forEach(function (key) {
       var el = document.querySelector('[data-stat="' + key + '"]');
       if (el && stats[key] != null) countUp(el, Number(stats[key]));
     });
