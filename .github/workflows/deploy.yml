@@ -66,6 +66,7 @@ jobs:
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
                   grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
+                  grep -Fq 'x-mnpeace-publication' public/functions/_middleware.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -92,26 +93,37 @@ jobs:
                     -H "Content-Type: application/json" \
                     --data '{"purge_everything":true}'
 
-            - name: Verify custom domain serves the publication build
+            - name: Verify exact public URLs serve the publication build
               run: |
                   set -euo pipefail
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    HOME=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/?build=${GITHUB_SHA}" || true)
-                    RECORD=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/?build=${GITHUB_SHA}" || true)
-                    BRIEFS=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/js/briefs.js?build=${GITHUB_SHA}" || true)
-                    if printf '%s' "$HOME" | grep -Fq 'What happened' && printf '%s' "$HOME" | grep -Fq 'The story in 90 seconds' && printf '%s' "$RECORD" | grep -Fq 'Evidence room' && printf '%s' "$RECORD" | grep -Fq '/record/js/briefs.js' && printf '%s' "$BRIEFS" | grep -Fq 'Start with a case, not a data table.'; then
+                    rm -f /tmp/home.headers /tmp/record.headers
+                    HOME=$(curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/" || true)
+                    RECORD=$(curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/" || true)
+                    BRIEFS=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/js/briefs.js" || true)
+
+                    if printf '%s' "$HOME" | grep -Fq 'What happened' \
+                      && printf '%s' "$HOME" | grep -Fq 'The story in 90 seconds' \
+                      && printf '%s' "$RECORD" | grep -Fq 'Evidence room' \
+                      && printf '%s' "$RECORD" | grep -Fq '/record/js/briefs.js' \
+                      && printf '%s' "$BRIEFS" | grep -Fq 'Start with a case, not a data table.' \
+                      && grep -qi '^x-mnpeace-publication: context-first-v2' /tmp/home.headers \
+                      && grep -qi '^cache-control: .*no-store' /tmp/home.headers; then
                       ok=1
                       break
                     fi
                     sleep 5
                   done
+
                   if [ "$ok" -ne 1 ]; then
-                    echo "Custom domain is not serving the publication build after deploy." >&2
+                    echo "The exact public URLs are not serving the current publication build." >&2
+                    echo "Homepage response headers:" >&2
+                    cat /tmp/home.headers >&2 || true
                     exit 1
                   fi
 
-                  code=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://minnesotapeace.com/research/ARCHITECTURE.md?build=${GITHUB_SHA}")
+                  code=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://minnesotapeace.com/research/ARCHITECTURE.md")
                   if [ "$code" != "404" ]; then
                     echo "Expected /research/ to remain private from the public origin; got HTTP $code" >&2
                     exit 1
