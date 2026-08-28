@@ -81,7 +81,7 @@ jobs:
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
                   grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
-                  grep -Fq 'context-first-v4' public/functions/_middleware.js
+                  grep -Fq 'context-first-v4.1' public/functions/_middleware.js
                   grep -Fq '/js/discovery.js' public/functions/_middleware.js
                   grep -Fq '78 defendants had been charged' public/functions/_middleware.js
 
@@ -92,7 +92,7 @@ jobs:
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                   command: pages deploy public --project-name minnesotapeace --branch main
 
-            - name: Purge Cloudflare cache
+            - name: Purge Cloudflare cache if permitted
               env:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
               run: |
@@ -101,56 +101,84 @@ jobs:
                     "https://api.cloudflare.com/client/v4/zones?name=minnesotapeace.com")
                   ZONE_ID=$(python3 -c 'import json,sys; d=json.loads(sys.argv[1]); r=d.get("result") or []; print(r[0]["id"] if r else "")' "$ZONE_JSON")
                   if [ -z "$ZONE_ID" ]; then
-                    echo "No zone id; skipping purge (Pages token may lack Zone.Cache Purge)."
-                    echo "$ZONE_JSON" | python3 -c 'import json,sys; print(json.dumps(json.load(sys.stdin).get("errors", []), indent=2))'
+                    echo "No zone id; cache purge permission unavailable. Public HTML is no-store, so continuing."
                     exit 0
                   fi
-                  curl -sS -X POST "https://api.cloudflare.com/client/v4/zones/${ZONE_ID}/purge_cache" \
+                  PURGE_JSON=$(curl -sS -X POST "https://api.cloudflare.com/client/v4/zones/${ZONE_ID}/purge_cache" \
                     -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
                     -H "Content-Type: application/json" \
-                    --data '{"purge_everything":true}'
+                    --data '{"purge_everything":true}')
+                  PURGE_OK=$(python3 -c 'import json,sys; print("true" if json.loads(sys.argv[1]).get("success") else "false")' "$PURGE_JSON")
+                  if [ "$PURGE_OK" != "true" ]; then
+                    echo "Cloudflare cache purge was not permitted. Public HTML is no-store; exact-origin verification will decide deployment health."
+                  fi
 
             - name: Verify exact public URLs serve the publication build
               run: |
                   set -euo pipefail
+
+                  check_text() {
+                    file="$1"
+                    needle="$2"
+                    label="$3"
+                    if ! grep -Fq "$needle" "$file"; then
+                      echo "VERIFY MISS: $label did not contain: $needle" >&2
+                      return 1
+                    fi
+                  }
+
+                  check_header() {
+                    file="$1"
+                    pattern="$2"
+                    label="$3"
+                    if ! grep -Eqi "$pattern" "$file"; then
+                      echo "VERIFY HEADER MISS: $label did not match: $pattern" >&2
+                      return 1
+                    fi
+                  }
+
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
+                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/guide.html /tmp/oversight.html /tmp/briefs.js /tmp/discovery.js
                     rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/guide.headers /tmp/oversight.headers
-                    HOME=$(curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/" || true)
-                    RECORD=$(curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/" || true)
-                    STATUS=$(curl -fsSL -D /tmp/status.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/status/" || true)
-                    GUIDE=$(curl -fsSL -D /tmp/guide.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/guide/" || true)
-                    OVERSIGHT=$(curl -fsSL -D /tmp/oversight.headers -H 'Cache-Control: no-cache' "https://minnesotapeace.com/oversight/" || true)
-                    BRIEFS=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/js/briefs.js" || true)
-                    DISCOVERY=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/js/discovery.js" || true)
 
-                    if printf '%s' "$HOME" | grep -Fq 'What happened' \
-                      && printf '%s' "$HOME" | grep -Fq 'status-value">78<' \
-                      && printf '%s' "$HOME" | grep -Fq '/js/discovery.js' \
-                      && printf '%s' "$STATUS" | grep -Fq 'Where do the cases actually stand now?' \
-                      && printf '%s' "$STATUS" | grep -Fq '78th defendant charged' \
-                      && printf '%s' "$GUIDE" | grep -Fq 'Who is who' \
-                      && printf '%s' "$OVERSIGHT" | grep -Fq 'The fraud story is only half the story.' \
-                      && printf '%s' "$RECORD" | grep -Fq 'Evidence room' \
-                      && printf '%s' "$RECORD" | grep -Fq '/record/js/briefs.js' \
-                      && printf '%s' "$RECORD" | grep -Fq '/js/discovery.js' \
-                      && printf '%s' "$BRIEFS" | grep -Fq 'Start with a case, not a data table.' \
-                      && printf '%s' "$DISCOVERY" | grep -Fq 'Current status' \
-                      && grep -qi '^x-mnpeace-publication: context-first-v4' /tmp/home.headers \
-                      && grep -qi '^cache-control: .*no-store' /tmp/home.headers \
-                      && grep -qi '^cache-control: .*no-store' /tmp/status.headers \
-                      && grep -qi '^cache-control: .*no-store' /tmp/guide.headers \
-                      && grep -qi '^cache-control: .*no-store' /tmp/oversight.headers; then
+                    curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' -o /tmp/home.html "https://minnesotapeace.com/" || true
+                    curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' -o /tmp/record.html "https://minnesotapeace.com/record/" || true
+                    curl -fsSL -D /tmp/status.headers -H 'Cache-Control: no-cache' -o /tmp/status.html "https://minnesotapeace.com/status/" || true
+                    curl -fsSL -D /tmp/guide.headers -H 'Cache-Control: no-cache' -o /tmp/guide.html "https://minnesotapeace.com/guide/" || true
+                    curl -fsSL -D /tmp/oversight.headers -H 'Cache-Control: no-cache' -o /tmp/oversight.html "https://minnesotapeace.com/oversight/" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/briefs.js "https://minnesotapeace.com/record/js/briefs.js" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery.js "https://minnesotapeace.com/js/discovery.js" || true
+
+                    misses=0
+                    check_text /tmp/home.html 'What happened' 'homepage' || misses=1
+                    check_text /tmp/home.html 'status-value">78<' 'homepage current charged milestone' || misses=1
+                    check_text /tmp/home.html '/js/discovery.js' 'homepage discovery injection' || misses=1
+                    check_text /tmp/status.html 'Where do the cases actually stand now?' 'status desk' || misses=1
+                    check_text /tmp/status.html '78th defendant charged' 'status desk charged source' || misses=1
+                    check_text /tmp/guide.html 'Who is who' 'field guide' || misses=1
+                    check_text /tmp/oversight.html 'The fraud story is only half the story.' 'oversight' || misses=1
+                    check_text /tmp/record.html 'Evidence room' 'record' || misses=1
+                    check_text /tmp/record.html '/record/js/briefs.js' 'record briefs asset' || misses=1
+                    check_text /tmp/record.html '/js/discovery.js' 'record discovery injection' || misses=1
+                    check_text /tmp/briefs.js 'Start with a case, not a data table.' 'briefs JS' || misses=1
+                    check_text /tmp/discovery.js 'Current status' 'discovery JS' || misses=1
+                    check_header /tmp/home.headers '^x-mnpeace-publication: context-first-v4\.1' 'homepage version' || misses=1
+                    check_header /tmp/home.headers '^cache-control: .*no-store' 'homepage cache' || misses=1
+                    check_header /tmp/status.headers '^cache-control: .*no-store' 'status cache' || misses=1
+                    check_header /tmp/guide.headers '^cache-control: .*no-store' 'guide cache' || misses=1
+                    check_header /tmp/oversight.headers '^cache-control: .*no-store' 'oversight cache' || misses=1
+
+                    if [ "$misses" -eq 0 ]; then
                       ok=1
                       break
                     fi
+                    echo "Exact-origin verification attempt ${attempt} did not pass; retrying." >&2
                     sleep 5
                   done
 
                   if [ "$ok" -ne 1 ]; then
                     echo "The exact public URLs are not serving the current publication build." >&2
-                    echo "Homepage response headers:" >&2
-                    cat /tmp/home.headers >&2 || true
                     exit 1
                   fi
 
