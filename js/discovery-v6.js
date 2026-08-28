@@ -82,7 +82,7 @@
       '  <div class="deep-discovery-actions reveal d1">',
       '    <a class="deep-discovery-link is-purple" href="/status/"><span>Current status</span><strong>Where do the cases actually stand now?</strong><small>78 charged. 68 convicted. 26 sentenced in Feeding Our Future — each with its own date and source — plus current HSS outcomes.</small></a>',
       '    <a class="deep-discovery-link is-cyan" href="/good/"><span>Minnesotans helping Minnesotans</span><strong>Good work has an address.</strong><small>Open the statewide story map: police-community work, first-responder support, faith-based care, neighbors helping neighbors and explicitly labeled Republican civic service.</small></a>',
-      '    <a class="deep-discovery-link" href="/guide/"><span>Field guide</span><strong>Who is who — and what do all these words mean?</strong><small>Agencies, organizations, court terms, money labels and a global-reader system map.</small></a>',
+      '    <a class="deep-discovery-link" href="/guide/"><span>Field guide</span><strong>Who is who — and what do all these words mean?</strong><small>Agencies, organizations, court terms and money labels — explained in plain language.</small></a>',
       '    <a class="deep-discovery-link is-gold" href="/oversight/"><span>Oversight</span><strong>The fraud story is only half the story.</strong><small>Warnings, auditor findings, the agency response, HSS vulnerabilities and reforms.</small></a>',
       '  </div>',
       '</div>'
