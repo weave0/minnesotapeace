@@ -18,6 +18,9 @@ export async function onRequest(context) {
     "/record",
     "/record/",
     "/record/index.html",
+    "/status",
+    "/status/",
+    "/status/index.html",
     "/guide",
     "/guide/",
     "/guide/index.html",
@@ -32,11 +35,10 @@ export async function onRequest(context) {
   headers.set("cache-control", "no-store, no-cache, must-revalidate, max-age=0");
   headers.set("pragma", "no-cache");
   headers.set("expires", "0");
-  headers.set("x-mnpeace-publication", "context-first-v3");
+  headers.set("x-mnpeace-publication", "context-first-v4");
 
-  const shouldInjectDiscovery = pathname === "/" || pathname === "/index.html" || pathname === "/record" || pathname === "/record/" || pathname === "/record/index.html";
   const contentType = response.headers.get("content-type") || "";
-  if (!shouldInjectDiscovery || !contentType.includes("text/html")) {
+  if (!contentType.includes("text/html")) {
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
