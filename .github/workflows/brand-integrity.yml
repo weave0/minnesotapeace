@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Reject legacy Jamie Rigling branding
+      - name: Reject stale branding and internal publication copy
         run: |
           set -euo pipefail
 
@@ -25,6 +25,11 @@ jobs:
             guide/index.html
             oversight/index.html
           )
+          public_discovery=(
+            js/discovery.js
+            js/discovery-v5.js
+            js/discovery-v6.js
+          )
 
           if grep -RniE \
             --include='*.html' \
@@ -33,6 +38,13 @@ jobs:
             'Jamie[[:space:]]+Rigling|Family Law Mediation|Rule 114 certified mediator' \
             index.html record status good guide oversight functions; then
             echo 'Legacy Jamie Rigling branding leaked into the MN Peace publication.' >&2
+            exit 1
+          fi
+
+          if grep -niE \
+            'global-reader|U\.S\. criminal procedure uses words that sound similar|almost every case update|internal copy|Later, not now|Editorial, not a vibe' \
+            "${public_html[@]}" "${public_discovery[@]}"; then
+            echo 'Internal/editorial scaffold leaked into visitor-facing publication copy.' >&2
             exit 1
           fi
 
