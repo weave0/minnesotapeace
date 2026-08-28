@@ -53,6 +53,25 @@ export async function onRequest(context) {
   const isHome = pathname === "/" || pathname === "/index.html";
   const isGood = pathname === "/good" || pathname === "/good/" || pathname === "/good/index.html";
 
+  // Social crawlers cache image URLs aggressively. The original OG filename contained a
+  // legacy pre-MN-Peace binary even after the page copy was rebuilt for this publication.
+  // Rewrite every public HTML response to a clean, versioned MN Peace asset so old social
+  // caches cannot continue to attach the unrelated image to current pages or deep links.
+  const socialImage = "https://minnesotapeace.com/assets/og/mn-peace-og-v2.png";
+  body = body
+    .replaceAll("https://minnesotapeace.com/assets/og/mn-peace-og.jpg", socialImage)
+    .replace(
+      /<meta property="og:image:alt" content="[^"]*">/g,
+      '<meta property="og:image:alt" content="MN Peace editorial card with a geometric Minnesota monogram and cyan-and-gold evidence lines">'
+    );
+
+  if (!body.includes('name="twitter:image"')) {
+    body = body.replace(
+      '<meta name="twitter:card" content="summary_large_image">',
+      '<meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="' + socialImage + '">'
+    );
+  }
+
   // The narrative homepage is comparatively stable; aggregate legal milestones are not.
   // Rewrite each stale field independently so harmless whitespace/layout changes cannot
   // prevent a newer official ordinal from reaching crawlers or no-JS readers.
