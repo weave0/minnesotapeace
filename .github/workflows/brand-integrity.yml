@@ -17,6 +17,15 @@ jobs:
         run: |
           set -euo pipefail
 
+          public_html=(
+            index.html
+            record/index.html
+            status/index.html
+            good/index.html
+            guide/index.html
+            oversight/index.html
+          )
+
           if grep -RniE \
             --include='*.html' \
             --include='*.xml' \
@@ -34,6 +43,25 @@ jobs:
             exit 1
           fi
 
+          if grep -nF 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' "${public_html[@]}"; then
+            echo 'Canonical public HTML still references the retired OG URL.' >&2
+            exit 1
+          fi
+
+          for page in "${public_html[@]}"; do
+            grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' "$page"
+            grep -Fq 'property="og:image:width" content="1200"' "$page"
+            grep -Fq 'property="og:image:height" content="630"' "$page"
+            grep -Fq 'property="og:image:type" content="image/png"' "$page"
+            grep -Fq 'property="og:image:alt"' "$page"
+            grep -Fq 'name="twitter:title"' "$page"
+            grep -Fq 'name="twitter:description"' "$page"
+            grep -Fq 'name="twitter:image" content="https://minnesotapeace.com/assets/og/mn-peace-og-v2.png"' "$page"
+            grep -Fq 'name="twitter:image:alt"' "$page"
+            grep -Fq 'max-image-preview:large' "$page"
+          done
+
+          # The retired URL remains only as an edge migration rule so old cached links resolve cleanly.
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' functions/_middleware.js
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' functions/_middleware.js
           grep -Fq '/assets/og/mn-peace-og.jpg  /assets/og/mn-peace-og-v2.png  301' _redirects
