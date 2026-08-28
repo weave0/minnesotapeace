@@ -1,5 +1,15 @@
 export async function onRequest(context) {
-  const { pathname } = new URL(context.request.url);
+  const requestUrl = new URL(context.request.url);
+  const { pathname, hostname } = requestUrl;
+
+  // Retire the inherited Pages development hostname without rebuilding the project.
+  // Preserve path/query while permanently canonicalizing visitors and crawlers to MN Peace.
+  if (hostname === "jamie-mediation.pages.dev") {
+    requestUrl.protocol = "https:";
+    requestUrl.hostname = "minnesotapeace.com";
+    requestUrl.port = "";
+    return Response.redirect(requestUrl.toString(), 308);
+  }
 
   if (pathname === "/research" || pathname.startsWith("/research/")) {
     return new Response("Not found", {
