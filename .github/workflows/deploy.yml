@@ -1,8 +1,7 @@
 name: Deploy to Cloudflare Pages
 
 # Cloudflare Pages project `minnesotapeace` deploys from `main`.
-# `main` is the MN Peace public site (community healing + The Record).
-# research/ stays in git as the lab and is not copied into the Pages artifact.
+# research/ stays in git as the lab and is never copied into the Pages artifact.
 
 on:
     push:
@@ -20,7 +19,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
 
-            - name: Assemble public site
+            - name: Assemble and validate public site
               run: |
                   set -euo pipefail
                   mkdir -p public
@@ -28,24 +27,40 @@ jobs:
                   cp -a css js assets record public/
                   mkdir -p public/functions
                   cp -a functions/. public/functions/
+
                   test -f public/index.html
+                  test -f public/css/publication.css
                   test -f public/_headers
                   test -f public/_redirects
                   test -f public/record/index.html
                   test -f public/record/js/viewer.js
                   test -f public/record/css/viewer.css
+                  test -f public/record/css/context.css
                   test -f public/record/data/corpus.js
                   test -f public/record/data/stats.js
                   test -f public/record/documents/25-cr-00349-ecf1.pdf
                   test -f public/functions/_middleware.js
+
                   if [ -e public/research ] || [ -e public/.git ] || [ -e public/.github ]; then
                     echo "lab paths leaked into the public artifact" >&2
                     exit 1
                   fi
-                  if grep -R -n --include='*.html' --include='*.js' --include='*.css' --include='*.xml' -E '(href|src)="/research/' public; then
+
+                  if grep -R -n --include='*.html' --include='*.xml' -E '(href|src)="/research/' public; then
                     echo "public artifact still points at /research/" >&2
                     exit 1
                   fi
+
+                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html; then
+                    echo "internal research vocabulary leaked into visitor-facing HTML" >&2
+                    exit 1
+                  fi
+
+                  grep -Fq 'What happened' public/index.html
+                  grep -Fq 'The story in 90 seconds' public/index.html
+                  grep -Fq 'How the systems worked' public/index.html
+                  grep -Fq 'Where things stand' public/index.html
+                  grep -Fq 'Evidence room' public/record/index.html
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -54,7 +69,7 @@ jobs:
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                   command: pages deploy public --project-name minnesotapeace --branch main
 
-            - name: Purge cached lab paths
+            - name: Purge Cloudflare cache
               env:
                   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
               run: |
@@ -71,3 +86,27 @@ jobs:
                     -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
                     -H "Content-Type: application/json" \
                     --data '{"purge_everything":true}'
+
+            - name: Verify custom domain serves the publication build
+              run: |
+                  set -euo pipefail
+                  ok=0
+                  for attempt in 1 2 3 4 5 6; do
+                    HOME=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/?build=${GITHUB_SHA}" || true)
+                    RECORD=$(curl -fsSL -H 'Cache-Control: no-cache' "https://minnesotapeace.com/record/?build=${GITHUB_SHA}" || true)
+                    if printf '%s' "$HOME" | grep -Fq 'What happened' && printf '%s' "$HOME" | grep -Fq 'The story in 90 seconds' && printf '%s' "$RECORD" | grep -Fq 'Evidence room'; then
+                      ok=1
+                      break
+                    fi
+                    sleep 5
+                  done
+                  if [ "$ok" -ne 1 ]; then
+                    echo "Custom domain is not serving the publication build after deploy." >&2
+                    exit 1
+                  fi
+
+                  code=$(curl -sS -o /dev/null -w '%{http_code}' -H 'Cache-Control: no-cache' "https://minnesotapeace.com/research/ARCHITECTURE.md?build=${GITHUB_SHA}")
+                  if [ "$code" != "404" ]; then
+                    echo "Expected /research/ to remain private from the public origin; got HTTP $code" >&2
+                    exit 1
+                  fi

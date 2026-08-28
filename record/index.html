@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#050507">
-  <title>The Record — MN Peace</title>
-  <meta name="description" content="The Record inside MN Peace: charging documents, read slowly. A charge is not a conviction. Not a fraud-total dashboard.">
+  <title>The Record — Sources and case files | MN Peace</title>
+  <meta name="description" content="The evidence room beneath Minnesota Peace: case-by-case charging documents, sourced dollar figures, organizations and original PDFs. Use the main story for context; use The Record to verify it.">
   <link rel="canonical" href="https://minnesotapeace.com/record/">
   <meta property="og:title" content="The Record — MN Peace">
-  <meta property="og:description" content="Charging documents, read slowly. A charge is not a conviction. No statewide fraud total.">
+  <meta property="og:description" content="Inspect the primary case records behind Minnesota Peace: charging documents, case status, sourced money figures and original PDFs.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://minnesotapeace.com/record/">
   <meta property="og:image" content="https://minnesotapeace.com/assets/og/mn-peace-og.jpg">
@@ -21,9 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/peace.css">
   <link rel="stylesheet" href="/record/css/viewer.css">
+  <link rel="stylesheet" href="/record/css/context.css">
 </head>
 <body class="record-page">
-  <a class="skip-link" href="#app">Skip to the record</a>
+  <a class="skip-link" href="#app">Skip to the case files</a>
 
   <header class="site-header is-scrolled record-header" id="nav">
     <a class="logo" href="/">MN <em>Peace</em></a>
@@ -33,33 +34,41 @@
     <div class="nav-panel" id="site-nav">
       <a class="nav-cta" href="/record/" aria-current="page">The Record</a>
       <ul class="nav-links" role="list">
-        <li><a href="/#heal">Why</a></li>
-        <li><a href="/#read">How to read</a></li>
-        <li><a href="/#wont">Limits</a></li>
+        <li><a href="/#story">Start here</a></li>
+        <li><a href="/#systems">How it worked</a></li>
+        <li><a href="/#status">Where it stands</a></li>
+        <li><a href="/#timeline">Timeline</a></li>
       </ul>
       <nav class="record-nav" aria-label="Record sections">
         <a href="#/cases" data-nav="cases">Cases</a>
-        <a href="#/index" data-nav="index">How to read</a>
+        <a href="#/index" data-nav="index">Reading guide</a>
         <a href="#/money" data-nav="money">Money</a>
-        <a href="#/entities" data-nav="entities">Entities</a>
+        <a href="#/entities" data-nav="entities">Organizations</a>
         <button type="button" class="density-toggle" id="density-toggle" aria-pressed="false" aria-label="Paper density for long reading">Paper</button>
       </nav>
     </div>
   </header>
 
-  <main id="app">Loading the record…</main>
+  <div class="record-context" role="note">
+    <div>
+      <span>Evidence room</span>
+      <p>Need the story first? <a href="/#story">Start with the 90-second explanation.</a> The material below is the source layer: cases, filings, money and organizations.</p>
+    </div>
+  </div>
+
+  <main id="app">Loading the case files…</main>
 
   <footer class="site-footer record-foot">
     <div class="footer-bottom">
-      <p>Allegations remain allegations until adjudicated. No statewide fraud total.</p>
-      <p><a href="/">MN Peace</a> · The Record</p>
+      <p>Charges are allegations until adjudicated. Convictions, pleas and sentences are labeled separately when the public record supports them.</p>
+      <p><a href="/">MN Peace story</a> · The Record</p>
     </div>
   </footer>
 
   <noscript>
     <div class="record-fallback">
-      <p>The Record needs JavaScript to open the charging documents.</p>
-      <p><a href="/">Back to MN Peace</a></p>
+      <p>The Record needs JavaScript to open its case files.</p>
+      <p><a href="/">Read the Minnesota Peace overview</a></p>
     </div>
   </noscript>
 
