@@ -1,0 +1,175 @@
+{
+  "as_of": "2026-08-29",
+  "title": "Program-integrity notice chain — 2026 House transcribed interviews",
+  "purpose": "Resolve, where possible, who communicated program-integrity concerns to whom and distinguish direct recollection from inference, speculation, missing memory, and independently corroborated agency events.",
+  "interview_procedure_note": "The Schmitter, Lourey, and Honer interviews were voluntary and not sworn. In each transcript the Committee expressly stated that federal law required truthful answers and that knowingly false statements could be criminally prosecuted. They are classified TRANSCRIBED_INTERVIEW, not SWORN_TESTIMONY.",
+  "records": [
+    {
+      "record_id": "2019-lourey-to-schmitter-program-integrity",
+      "timeframe": "2019",
+      "from": "Tony Lourey, DHS Commissioner",
+      "to": "Christopher Schmitter, Governor's Chief of Staff",
+      "subject": "Program-integrity tools and authority involving medication-assisted therapy, NEMT, and CCAP",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-02-06-tony-lourey-interview",
+        "src-house-oversight-2026-02-27-chris-schmitter-interview"
+      ],
+      "status": "directly_recalled_by_lourey_partially_recalled_by_schmitter",
+      "analysis": "Lourey directly recalled communicating with Schmitter about program-integrity issues and needed oversight/tools/authority. Schmitter independently recalled the Tribal MAT/program-integrity issue and broader 2019 integrity context but did not remember Lourey communications about NEMT or CCAP. This is an asymmetry of recollection, not proof either witness was false.",
+      "locators": [
+        "Lourey PDF pp.39-40, extracted lines 971-996",
+        "Schmitter PDF pp.26-29 and 88-89, extracted lines 669-729 and 2157-2195"
+      ]
+    },
+    {
+      "record_id": "2019-schmitter-to-walz-program-integrity",
+      "timeframe": "2019",
+      "from": "Christopher Schmitter / Governor's office",
+      "to": "Tim Walz",
+      "subject": "Program-integrity issues",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-02-27-chris-schmitter-interview",
+        "src-house-oversight-2026-02-06-tony-lourey-interview"
+      ],
+      "status": "specific_notice_partially_established_only_for_example",
+      "analysis": "Schmitter gave Tribal MAT as an example of a sufficiently significant 2019 issue that he believed would have reached the legal team, then him, and then the Governor. Lourey could not testify to conversations he was not part of; when expressly asked to speculate whether high-level integrity concerns likely reached Walz, he said likely. This does not establish that Walz personally received every Lourey concern about NEMT or CCAP.",
+      "locators": [
+        "Schmitter PDF p.33, extracted lines 799-818",
+        "Lourey PDF p.40, extracted lines 987-996"
+      ]
+    },
+    {
+      "record_id": "2020-fof-litigation-governor-office-awareness",
+      "timeframe": "2020",
+      "from": "MDE / state litigation process",
+      "to": "Governor's office",
+      "subject": "Feeding Our Future litigation",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-02-27-chris-schmitter-interview",
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "status": "general_office_awareness_supported_specific_april_notice_unresolved",
+      "analysis": "Schmitter said he believed the Governor's office was generally aware of FOF litigation in 2020 but did not remember being briefed on the April 2020 site denials, draft complaint, or litigation hold. Walz later testified under oath that he believed agency/MDE awareness by May 2020 was correct while distinguishing it from his personal notice. Together these records support general agency/office awareness but do not establish a precise April 28 notification to Walz personally.",
+      "locators": [
+        "Schmitter PDF pp.97-99, extracted lines 2387-2429",
+        "Part II GPO HTML lines 2441-2469"
+      ]
+    },
+    {
+      "record_id": "2020-usda-oig-referral",
+      "timeframe": "October 2020",
+      "from": "MDE staff",
+      "to": "USDA Office of Inspector General",
+      "subject": "Feeding Our Future concerns",
+      "evidence_class": "TRANSCRIBED_INTERVIEW_CORROBORATED_BY_AUDIT",
+      "source_ids": [
+        "src-house-oversight-2026-01-29-emily-honer-interview",
+        "src-mn-ola-2024-fof-oversight"
+      ],
+      "status": "corroborated_agency_referral",
+      "analysis": "Honer recalled a formal USDA OIG complaint around October 2020, prepared with Monica Herrera, and continued advocacy for OIG assistance into early 2021. OLA independently records MDE officials saying concerns were shared with USDA OIG in October or November 2020. The referral is well supported; USDA OIG's internal response remains a separate evidentiary question.",
+      "locators": [
+        "Honer PDF pp.23-25, extracted lines 566-614",
+        "OLA FOF source record: late-2020 USDA OIG referral binding"
+      ]
+    },
+    {
+      "record_id": "2020-2022-usda-oig-response",
+      "timeframe": "October 2020 through summer 2022",
+      "from": "USDA Office of Inspector General",
+      "to": "MDE",
+      "subject": "Response to Feeding Our Future referral",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-01-29-emily-honer-interview"
+      ],
+      "status": "witness_recollection_primary_usda_record_still_missing",
+      "analysis": "Honer said she found USDA OIG's response absent/insufficient and recalled no USDA OIG update on FOF until after the January 2022 FBI raids, with OIG seeking to work with MDE in summer 2022. This is a primary interview record of Honer's recollection, not USDA OIG's own activity log or work product.",
+      "locators": [
+        "Honer PDF pp.23-25, extracted lines 584-600",
+        "Honer PDF p.135, extracted lines 3347-3361"
+      ]
+    },
+    {
+      "record_id": "2021-fbi-contact",
+      "timeframe": "March 2021 onward",
+      "from": "MDE / Emily Honer",
+      "to": "FBI",
+      "subject": "Feeding Our Future growth and suspected misconduct",
+      "evidence_class": "TRANSCRIBED_INTERVIEW_CORROBORATED_BY_AUDIT",
+      "source_ids": [
+        "src-house-oversight-2026-01-29-emily-honer-interview",
+        "src-mn-ola-2024-fof-oversight"
+      ],
+      "status": "corroborated_law_enforcement_contact",
+      "analysis": "Honer recalled FBI conversations beginning around March 2021 every two to four weeks; OLA separately records MDE providing FBI information about fraud suspicions in April 2021 and the FBI beginning an investigation in May 2021. The records are consistent on a spring-2021 federal investigative escalation, though exact first-contact dates differ by recollection/source framing.",
+      "locators": [
+        "Honer PDF pp.25-26, extracted lines 601-626",
+        "OLA FOF source record: April 2021 FBI referral binding"
+      ]
+    },
+    {
+      "record_id": "2021-usao-contact",
+      "timeframe": "August or September 2021 onward",
+      "from": "MDE / Emily Honer",
+      "to": "U.S. Attorney's Office",
+      "subject": "Feeding Our Future investigation",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-01-29-emily-honer-interview"
+      ],
+      "status": "direct_witness_recollection",
+      "analysis": "Honer recalled USAO involvement beginning around August or September 2021 and recurring conversations thereafter. She said DOJ did not instruct MDE to continue funding Feeding Our Future despite outstanding concerns.",
+      "locators": [
+        "Honer PDF pp.25-26, extracted lines 618-626"
+      ]
+    },
+    {
+      "record_id": "2021-governor-office-payment-resumption",
+      "timeframe": "spring 2021",
+      "from": "Governor's office",
+      "to": "MDE payment decision",
+      "subject": "Feeding Our Future reimbursement resumption",
+      "evidence_class": "TRANSCRIBED_INTERVIEW_WITH_PRIMARY_JUDICIAL_CORRECTION",
+      "source_ids": [
+        "src-house-oversight-2026-02-27-chris-schmitter-interview",
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction"
+      ],
+      "status": "no_schmitter_recollection_of_governor_office_involvement",
+      "analysis": "Schmitter said he could not recall the Governor's office being involved in MDE's voluntary resumption of FOF payments, while repeatedly qualifying that he did not remember specifics from that period. The Minnesota Judicial Branch independently establishes that the court did not order the payment resumption. Neither record alone proves who inside MDE made the operational decision or what internal executive discussions occurred.",
+      "locators": [
+        "Schmitter PDF pp.103-105, extracted lines 2543-2576",
+        "Minnesota Judicial Branch 2022-09-23 correction"
+      ]
+    },
+    {
+      "record_id": "fraud-ignore-retaliation-denials",
+      "timeframe": "2019-2025",
+      "from": "Schmitter and Lourey",
+      "to": "Committee investigators",
+      "subject": "Alleged direction to ignore fraud or retaliation",
+      "evidence_class": "TRANSCRIBED_INTERVIEW",
+      "source_ids": [
+        "src-house-oversight-2026-02-27-chris-schmitter-interview",
+        "src-house-oversight-2026-02-06-tony-lourey-interview"
+      ],
+      "status": "interviewee_denials_not_independent_resolution",
+      "analysis": "Schmitter denied that he or Walz discouraged reporting/investigating fraud or criminal referrals and denied intimidation; Lourey denied that Walz or Ellison directed him to ignore fraud and said he had no reason to believe either knowingly ignored DHS fraud. These accounts materially counter stronger legislative/witness allegations but do not independently resolve specific whistleblower retaliation claims.",
+      "locators": [
+        "Schmitter PDF pp.126-127, extracted lines 3097-3119",
+        "Lourey PDF pp.96-97, extracted lines 2348-2361"
+      ]
+    }
+  ],
+  "current_conclusions": [
+    "The record supports 2019 program-integrity communication from DHS Commissioner Lourey to the Governor's chief of staff about tools/authority and several named programs.",
+    "The current interviews do not establish that Lourey personally briefed Walz or that Schmitter passed each named program concern to Walz; Lourey explicitly could not speak to conversations he was not part of and characterized Governor notice as speculation when asked.",
+    "For Feeding Our Future, Schmitter supports general Governor's-office awareness of litigation in 2020 but does not recall specific April 2020 briefing events; he remembers serious criminal-fraud allegations around the January 2022 federal raids.",
+    "The late-2020 USDA OIG referral and spring-2021 FBI escalation are now supported by both OLA and Honer's transcribed interview.",
+    "USDA OIG's actual handling of the late-2020 referral remains a primary-document gap.",
+    "No interview record acquired here is evidence that Walz, Ellison, Schmitter, Lourey, Honer, or another state official joined a fraud conspiracy."
+  ]
+}
