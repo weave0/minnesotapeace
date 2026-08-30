@@ -1,0 +1,43 @@
+name: Evidence route hotfix
+
+on:
+  push:
+    branches:
+      - hotfix/evidence-route-cache-2026-08-29
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: hotfix/evidence-route-cache-2026-08-29
+      - name: Patch middleware and version discovery asset
+        run: |
+          set -euo pipefail
+          if [ -f js/discovery-v7.js ]; then
+            echo "Hotfix already applied."
+            exit 0
+          fi
+          cp js/discovery-v6.js js/discovery-v7.js
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('functions/_middleware.js')
+          text = path.read_text()
+          anchor = '    "/oversight/index.html",\n'
+          addition = anchor + '    "/programs",\n    "/programs/",\n    "/programs/index.html",\n    "/money",\n    "/money/",\n    "/money/index.html",\n    "/authority",\n    "/authority/",\n    "/authority/index.html",\n'
+          if '    "/programs/index.html",' not in text:
+              if anchor not in text:
+                  raise SystemExit('middleware public-path anchor missing')
+              text = text.replace(anchor, addition, 1)
+          text = text.replace('/js/discovery-v6.js', '/js/discovery-v7.js')
+          path.write_text(text)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add functions/_middleware.js js/discovery-v7.js
+          git commit -m "Fix evidence route cache and no-store handling"
+          git push origin HEAD:hotfix/evidence-route-cache-2026-08-29
