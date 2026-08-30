@@ -1,0 +1,245 @@
+{
+  "timeline_id": "fof-warning-response",
+  "title": "Feeding Our Future — warning, authority, response, and later findings",
+  "as_of": "2026-08-29",
+  "purpose": "Separate warnings received, oversight actions, court activity, law-enforcement referrals, later criminal allegations, and audit findings without inferring criminal intent by public officials.",
+  "events": [
+    {
+      "event_date": "2018-06",
+      "event_type": "warning_received",
+      "actor": "Minnesota Department of Education",
+      "summary": "OLA says MDE received the first of at least 30 complaints involving Feeding Our Future or its sites beginning in June 2018; complaints continued through December 2021.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report p.49; PDF index 56",
+      "qualification": "Complaint received does not mean complaint substantiated."
+    },
+    {
+      "event_date": "2018-07",
+      "event_type": "complaint_handling",
+      "actor": "Minnesota Department of Education",
+      "summary": "OLA says recruitment-related complaints began in July 2018 and later found MDE repeatedly assigned initial fact-finding/dispute resolution to Feeding Our Future and the complainant.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report p.55; PDF index 62"
+    },
+    {
+      "event_date": "2018-12",
+      "event_type": "administrative_review",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE conducted its only CACFP administrative review of Feeding Our Future. OLA says it resulted in 22 findings across 11 of 13 review areas and required follow-up, but MDE never conducted a follow-up review.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report pp.37, 40-41; PDF text pp.44, 47-48",
+      "response_status": "follow_up_not_completed"
+    },
+    {
+      "event_date": "2020-08",
+      "event_type": "administrative_review",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE began an SFSP administrative review after Feeding Our Future entered SFSP; OLA says the review was paused in October 2020 after virtual site visits were not working and was not completed.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report pp.41-42; PDF text pp.48-49",
+      "qualification": "OLA acknowledged COVID-19 and waiver conditions affected decisions but said MDE could have used other review methods."
+    },
+    {
+      "event_date": "2020-10-12",
+      "event_type": "warning_received",
+      "actor": "Minnesota Department of Education",
+      "summary": "OLA's timeline records a sponsor complaint alleging fraud in CACFP and SFSP, including an alleged fraud ring.",
+      "evidence_class": "AUDIT_FINDING_OF_COMPLAINT_RECEIPT",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Appendix A; PDF p.92 text extraction",
+      "qualification": "The complaint itself was an allegation, not an adjudicated finding."
+    },
+    {
+      "event_date": "2020-10/11",
+      "event_type": "federal_referral",
+      "actor": "Minnesota Department of Education",
+      "recipient": "USDA Office of Inspector General",
+      "summary": "MDE officials told OLA that MDE escalated concerns about Feeding Our Future to USDA OIG in October or November 2020, primarily concerning the sponsor's growth. OLA says the exact date was unclear.",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report p.50 / Appendix A; PDF p.57 and p.92 text extraction",
+      "qualification": "The corpus still lacks USDA OIG's own Minnesota-specific work product showing what it did with the referral."
+    },
+    {
+      "event_date": "2020-11",
+      "event_type": "civil_litigation",
+      "actor": "Feeding Our Future",
+      "recipient": "Ramsey County District Court",
+      "summary": "Feeding Our Future sued MDE over handling of applications for new food-distribution sites and race-discrimination claims.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch lines 23-26"
+    },
+    {
+      "event_date": "2020-12-22",
+      "event_type": "court_order",
+      "actor": "Ramsey County District Court",
+      "summary": "The parties reached an agreement and the court approved a consent order requiring MDE to handle federally regulated site applications reasonably promptly.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch lines 25-26",
+      "qualification": "This order concerned application processing; it was not an order to resume reimbursement payments."
+    },
+    {
+      "event_date": "2021-01-15",
+      "event_type": "serious_deficiency",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE issued a first set of serious deficiencies for CACFP and SFSP tied to nonprofit-status and federal audit-requirement issues.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Chapter 5 timeline, report p.63; PDF index 70"
+    },
+    {
+      "event_date": "2021-02",
+      "event_type": "law_enforcement_warning",
+      "actor": "Federal Bureau of Investigation",
+      "recipient": "Minnesota Department of Education",
+      "summary": "OLA says the FBI notified MDE in February 2021 of allegations it had received involving Feeding Our Future; OLA notes those allegations would later be reflected in federal charges.",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report p.65; PDF p.72 text extraction"
+    },
+    {
+      "event_date": "2021-03-29",
+      "event_type": "termination_process",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE initiated a process to terminate Feeding Our Future's CACFP sponsorship after determining the January serious deficiencies were not fully corrected.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Appendix A report p.88; PDF index 95"
+    },
+    {
+      "event_date": "2021-03-31",
+      "event_type": "serious_deficiency_and_payment_hold",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE issued a second set of serious deficiencies related to financial viability/management, administrative capabilities, and program accountability. OLA records that MDE also stopped paying Feeding Our Future reimbursement claims and stopped issuing site IDs for new sites.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Appendix A report p.88; PDF index 95"
+    },
+    {
+      "event_date": "2021-04-01",
+      "event_type": "authority_confirmation",
+      "actor": "USDA Midwest Regional Office",
+      "recipient": "Minnesota Department of Education",
+      "summary": "According to MDE as recorded by OLA, USDA Midwest Regional Office supported MDE's decision to stop reimbursement payments and indicated MDE had authority to do so.",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Appendix A report p.88; PDF index 95",
+      "qualification": "This is OLA's record of what MDE said USDA told it; a USDA record would be stronger for the federal position."
+    },
+    {
+      "event_date": "2021-04",
+      "event_type": "law_enforcement_referral",
+      "actor": "Minnesota Department of Education",
+      "recipient": "Federal Bureau of Investigation",
+      "summary": "OLA records that MDE provided the FBI information about fraud suspicions involving Feeding Our Future and sponsored sites; MDE believed some sites were submitting fraudulent documents and inflating meal counts. OLA says the FBI began an investigation in May 2021.",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Appendix A report p.88; PDF index 95"
+    },
+    {
+      "event_date": "2021-04",
+      "event_type": "civil_litigation",
+      "actor": "Feeding Our Future",
+      "recipient": "Ramsey County District Court",
+      "summary": "Feeding Our Future sought an order requiring payments to resume and sanctions after MDE suspended payments. The Judicial Branch later stated Judge Guthmann never ordered MDE to resume reimbursements.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch lines 28-29"
+    },
+    {
+      "event_date": "2021-05-13",
+      "event_type": "termination_process_deferred",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE vacated the proposed termination/disqualification notice and deferred the first set of serious deficiencies.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "Chapter 5 timeline, report p.63; PDF index 70"
+    },
+    {
+      "event_date": "2021-06-04",
+      "event_type": "serious_deficiency_deferred",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE deferred the second set of serious deficiencies. OLA says Feeding Our Future was then no longer under any serious deficiencies and could continue operating; OLA later found MDE lacked sufficient evidence that the deficiencies had been fully and permanently addressed.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "source_locator": "report pp.63-65; PDF pp.70-72"
+    },
+    {
+      "event_date": "2021-06 onward",
+      "event_type": "payment_resumption",
+      "actor": "Minnesota Department of Education",
+      "summary": "The Judicial Branch states MDE voluntarily resumed reimbursement payments after suspending them; the court did not order payment resumption. MDE later told the court Feeding Our Future's serious deficiencies were resolved as of June 4, 2021.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch lines 28-35"
+    },
+    {
+      "event_date": "2022-01",
+      "event_type": "federal_investigation_public",
+      "actor": "Federal law enforcement",
+      "summary": "The Minnesota Judicial Branch says the law-enforcement investigation became public in January 2022.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch line 24"
+    },
+    {
+      "event_date": "2022-09-20",
+      "event_type": "federal_charges",
+      "actor": "U.S. Department of Justice",
+      "summary": "DOJ announced charges against 47 defendants in the initial public charging wave, alleging a roughly $250 million scheme involving Federal Child Nutrition Program funds.",
+      "evidence_class": "CHARGED_ALLEGED",
+      "source_id": "src-doj-2022-09-20-fof-47-charged",
+      "qualification": "Charging allegations are not adjudicated findings, and the $250 million figure is not a restitution/collection total."
+    },
+    {
+      "event_date": "2022-09-23",
+      "event_type": "public_record_correction",
+      "actor": "Minnesota Judicial Branch / Ramsey County District Court",
+      "summary": "The Judicial Branch issued a correction stating Judge Guthmann never ordered MDE to resume food reimbursement payments and that all such resumed payments were made voluntarily by MDE.",
+      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "source_locator": "Judicial Branch lines 20-35"
+    },
+    {
+      "event_date": "2024-06-13",
+      "event_type": "audit_finding",
+      "actor": "Minnesota Office of the Legislative Auditor",
+      "summary": "OLA concluded MDE's inadequate oversight created opportunities for fraud, citing warning signs, application/administrative-review failures, complaint-investigation failures, and shortcomings in the serious-deficiency process.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "qualification": "OLA did not find that MDE officials joined the criminal fraud scheme."
+    }
+  ],
+  "derived_conclusions": [
+    {
+      "conclusion": "The record supports a long warning-and-oversight-failure chronology beginning before the pandemic, while also showing MDE took some significant enforcement/referral actions in 2020-2021.",
+      "evidence_class": "DERIVED_INFERENCE",
+      "supporting_source_ids": [
+        "src-mn-ola-2024-fof-oversight",
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-doj-2022-09-20-fof-47-charged"
+      ]
+    },
+    {
+      "conclusion": "The primary record contradicts the claim that Judge Guthmann forced MDE to resume Feeding Our Future reimbursements.",
+      "evidence_class": "DERIVED_INFERENCE",
+      "supporting_source_ids": [
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction"
+      ]
+    },
+    {
+      "conclusion": "The current primary/audit record supports oversight and administrative-failure propositions but does not, without actor-specific evidence, establish that a named MDE or statewide elected official knowingly joined the fraudulent scheme.",
+      "evidence_class": "DERIVED_INFERENCE",
+      "supporting_source_ids": [
+        "src-mn-ola-2024-fof-oversight",
+        "src-doj-2022-09-20-fof-47-charged"
+      ]
+    }
+  ]
+}
