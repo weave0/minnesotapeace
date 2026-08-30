@@ -1,0 +1,29 @@
+{
+  "source_id": "src-mncro-62-cv-20-5492-reply-2021-04-30",
+  "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+  "issuing_body": "Feeding Our Future (plaintiff's counsel, Martin Hild PA)",
+  "title": "Reply in Support of Renewed Motion for an Emergency Temporary Restraining Order and Order for Contempt of Court",
+  "case_number": "62-CV-20-5492",
+  "court": "Ramsey County District Court",
+  "document_date": "2021-04-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "brief",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "local_path": "retrieved via MCRO document download, Index #43 (5 pages), not committed to the repository",
+  "notes": "Filed 4/30/2021 1:19 PM, i.e. before that day's 3:00 PM TRO hearing. This is the single most important document for resolving the 'was the stop-pay lifted before or because of the April 30 hearing' question: it directly quotes MDE's own brief stating the stop-pay was already removed because of the April 21 hearing, not the April 30 one. Like FOF's other filings in this case, it is advocacy, not a neutral or adjudicated record.",
+  "supports": [
+    "FOF's reply, filed at 1:19 PM on 2021-04-30 (before that day's 3:00 PM hearing), quotes MDE's own opposition brief directly: 'pursuant to the Court's guidance at the April 21, 2021, hearing, it has removed the \"stop pay\" status for Plaintiff in its computer system, and payments will be sent out in the near future.' (cited as 'MDE Brief, p.6, n.5'). This is MDE's own contemporaneous filing attributing the stop-pay removal to the April 21 hearing, not the April 30 hearing -- confirming the stop-pay flag had already been lifted before the April 30 hearing began.",
+    "FOF disputes that MDE's action fully resolved the dispute, arguing that removing the 'stop pay' status in MDE's CLiCS system is not the same as actually processing and paying the claims, and that as of this filing MDE had not shown the claims as processed or paid.",
+    "FOF states MDE sent a letter the prior day (2021-04-29) denying 149 pending applications, framing MDE's timing as suspect ('on the eve of a contempt hearing') given some applications had been pending over 150 days.",
+    "FOF's reply references two then-pending motions to amend its complaint: a First Amended Complaint addressing MDE's 'illegal withholding of funds,' and a Second Amended Complaint addressing MDE's 'more recent decision to make false allegations in the media that Feeding Our Future and its sites have committed fraud.' The latter is FOF's own characterization of MDE's public statements; this record does not itself quote or verify what MDE said in the media.",
+    "The reply argues that voluntary cessation of the challenged conduct (i.e., MDE lifting the stop-pay) does not moot the case, citing federal voluntary-cessation doctrine (Already, LLC v. Nike; Knox v. Serv. Emps.), on the theory that MDE could resume the stop-pay after dismissal."
+  ],
+  "does_not_support": [
+    "MDE's own brief text directly; this record only has FOF's quotation of a single footnote from it. MDE's full opposition brief was not retrieved in this pass.",
+    "That FOF's claim of 149 denied applications is consistent with the June 24, 2021 order's later reference to 143 denied applications (of 144 site-ID requests); this numerical difference is unreconciled and may reflect different counting methods, a typo in one filing, or additional applications processed between April 30 and the order.",
+    "The specific content or veracity of MDE's alleged 'fraud' statements to media; this is FOF's characterization in a litigation filing, not independently verified media reporting captured in this corpus."
+  ]
+}
