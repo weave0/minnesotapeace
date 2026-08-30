@@ -39,6 +39,7 @@ jobs:
                   test -f public/js/discovery.js
                   test -f public/js/discovery-v5.js
                   test -f public/js/discovery-v6.js
+                  test -f public/js/discovery-v7.js
                   test -f public/status/index.html
                   test -f public/good/index.html
                   test -f public/guide/index.html
@@ -109,14 +110,14 @@ jobs:
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
                   grep -Fq 'What prosecutors allege in this filing' public/record/js/briefs.js
                   grep -Fq 'context-first-v6' public/functions/_middleware.js
-                  grep -Fq '/js/discovery-v6.js' public/functions/_middleware.js
+                  grep -Fq '/js/discovery-v7.js' public/functions/_middleware.js
                   grep -Fq '78 defendants had been charged' public/functions/_middleware.js
                   grep -Fq 'jamie-mediation.pages.dev' public/functions/_middleware.js
                   grep -Fq 'Response.redirect(requestUrl.toString(), 308)' public/functions/_middleware.js
-                  grep -Fq 'Good work has an address.' public/js/discovery-v6.js
-                  grep -Fq 'Programs & controls' public/js/discovery-v6.js
-                  grep -Fq 'Money & recovery' public/js/discovery-v6.js
-                  grep -Fq 'Authority & notice' public/js/discovery-v6.js
+                  grep -Fq 'Good work has an address.' public/js/discovery-v7.js
+                  grep -Fq 'Programs & controls' public/js/discovery-v7.js
+                  grep -Fq 'Money & recovery' public/js/discovery-v7.js
+                  grep -Fq 'Authority & notice' public/js/discovery-v7.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -172,7 +173,7 @@ jobs:
 
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/programs.html /tmp/money.html /tmp/authority.html /tmp/briefs.js /tmp/discovery-v6.js /tmp/good-v2.css /tmp/evidence.css
+                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/programs.html /tmp/money.html /tmp/authority.html /tmp/briefs.js /tmp/discovery-v7.js /tmp/good-v2.css /tmp/evidence.css
                     rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers /tmp/programs.headers /tmp/money.headers /tmp/authority.headers
 
                     curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' -o /tmp/home.html "https://minnesotapeace.com/" || true
@@ -185,14 +186,14 @@ jobs:
                     curl -fsSL -D /tmp/money.headers -H 'Cache-Control: no-cache' -o /tmp/money.html "https://minnesotapeace.com/money/" || true
                     curl -fsSL -D /tmp/authority.headers -H 'Cache-Control: no-cache' -o /tmp/authority.html "https://minnesotapeace.com/authority/" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/briefs.js "https://minnesotapeace.com/record/js/briefs.js" || true
-                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v6.js "https://minnesotapeace.com/js/discovery-v6.js" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v7.js "https://minnesotapeace.com/js/discovery-v7.js" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/good-v2.css "https://minnesotapeace.com/css/good-v2.css" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/evidence.css "https://minnesotapeace.com/css/evidence.css" || true
 
                     misses=0
                     check_text /tmp/home.html 'What happened' 'homepage' || misses=1
                     check_text /tmp/home.html 'status-value">78<' 'homepage current charged milestone' || misses=1
-                    check_text /tmp/home.html '/js/discovery-v6.js' 'homepage discovery injection' || misses=1
+                    check_text /tmp/home.html '/js/discovery-v7.js' 'homepage discovery injection' || misses=1
                     check_text /tmp/status.html 'Where do the cases actually stand now?' 'status desk' || misses=1
                     check_text /tmp/status.html '78th defendant charged' 'status desk charged source' || misses=1
                     check_text /tmp/good.html 'Minnesota is more than what went wrong.' 'civic good-work page' || misses=1
@@ -212,12 +213,12 @@ jobs:
                     check_text /tmp/evidence.css '.authority-table' 'evidence depth CSS' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1
                     check_text /tmp/record.html '/record/js/briefs.js' 'record briefs asset' || misses=1
-                    check_text /tmp/record.html '/js/discovery-v6.js' 'record discovery injection' || misses=1
+                    check_text /tmp/record.html '/js/discovery-v7.js' 'record discovery injection' || misses=1
                     check_text /tmp/briefs.js 'Start with a case, not a data table.' 'briefs JS' || misses=1
-                    check_text /tmp/discovery-v6.js 'Good work has an address.' 'versioned discovery JS' || misses=1
-                    check_text /tmp/discovery-v6.js 'Programs & controls' 'evidence discovery programs' || misses=1
-                    check_text /tmp/discovery-v6.js 'Money & recovery' 'evidence discovery money' || misses=1
-                    check_text /tmp/discovery-v6.js 'Authority & notice' 'evidence discovery authority' || misses=1
+                    check_text /tmp/discovery-v7.js 'Good work has an address.' 'versioned discovery JS' || misses=1
+                    check_text /tmp/discovery-v7.js 'Programs & controls' 'evidence discovery programs' || misses=1
+                    check_text /tmp/discovery-v7.js 'Money & recovery' 'evidence discovery money' || misses=1
+                    check_text /tmp/discovery-v7.js 'Authority & notice' 'evidence discovery authority' || misses=1
                     check_header /tmp/home.headers '^x-mnpeace-publication: context-first-v6' 'homepage version' || misses=1
                     check_header /tmp/home.headers '^cache-control: .*no-store' 'homepage cache' || misses=1
                     check_header /tmp/status.headers '^cache-control: .*no-store' 'status cache' || misses=1
