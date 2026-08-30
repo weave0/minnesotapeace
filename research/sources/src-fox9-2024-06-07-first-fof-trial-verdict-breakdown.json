@@ -1,0 +1,30 @@
+{
+  "source_id": "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown",
+  "canonical_url": "https://www.fox9.com/news/feeding-our-future-verdicts-full-list",
+  "issuing_body": "FOX 9 Minneapolis-St. Paul (KMSP)",
+  "author": "FOX 9 Staff",
+  "title": "Feeding Our Future verdicts: Full list of each charge and verdict",
+  "publication_date": "2024-06-07",
+  "retrieval_date": "2026-08-30",
+  "document_type": "news_article",
+  "case_number": "22-CR-124",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Retrieved via direct fetch of the article's own schema.org NewsArticle JSON-LD articleBody field, not a rendered/summarized copy -- the quotes below are the outlet's own published sentences verbatim. Confirmed via raw metadata: datePublished 2024-06-07T15:31:40-05:00.",
+  "supports": [
+    "Said Shafii Farah 'was found not guilty on all nine counts.'",
+    "Abdiwahab Maalim Aftin 'was found not guilty of all three counts.'",
+    "Abdiaziz Shafii Farah 'is guilty on 23 of 24 counts.'",
+    "Mohamed Jama Ismail 'was found guilty on three of the four counts against him.'",
+    "Abdimajid Mohamed Nur 'was found guilty on 10 of the 13 counts.'",
+    "Mukhtar Mohamed Shariff 'was found guilty on three of six counts.'",
+    "Hayat Mohamed Nur 'was found guilty on three of five counts.'",
+    "The article states the seven trial defendants were 'the first of 70 to stand trial' in the prosecution."
+  ],
+  "does_not_support": [
+    "A count-by-count identification of which specific charges (by count number) each mixed-verdict defendant was acquitted on -- the article gives guilty/total ratios per defendant, not a full verdict form.",
+    "Any figure for defendants tried separately from this seven-defendant June 2024 trial group."
+  ]
+}
