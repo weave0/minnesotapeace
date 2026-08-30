@@ -1,0 +1,25 @@
+{
+  "source_id": "src-mnd-22-cr-00226-ecf1-salad-indictment",
+  "canonical_url": "https://www.justice.gov/usao-mn/media/1246521/dl",
+  "issuing_body": "U.S. District Court, District of Minnesota; publicly hosted by U.S. Department of Justice",
+  "title": "United States v. Haji Osman Salad et al. — Indictment, ECF No. 1",
+  "case_number": "0:22-cr-00226-NEB-TNL",
+  "document_date": "2022-09-13",
+  "retrieval_date": "2026-08-30",
+  "document_type": "indictment",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CHARGED_ALLEGED",
+  "notes": "Original 39-page ECF No. 1 indictment. The official DOJ-hosted PDF was directly readable in this pass and its first page was visually checked. The caption identifies Doc. 1 filed 2022-09-13 and lists the face statutes.",
+  "supports": [
+    "The indictment names Haji Osman Salad, Fahad Nur, Anab Artan Awad, Sharmarke Issa, and Farhiya Mohamud.",
+    "The face of the original indictment lists 18 U.S.C. §§ 1343, 1956, and 1957.",
+    "The original indictment charges substantive wire fraud and money-laundering offenses; it does not charge a wire-fraud conspiracy under either § 371 or § 1349.",
+    "The indictment alleges a scheme involving at least approximately $25 million in Federal Child Nutrition Program funds."
+  ],
+  "does_not_support": [
+    "A network-wide conclusion about § 1349 in other Feeding Our Future charging instruments.",
+    "Adjudicated guilt; these are charging allegations."
+  ]
+}
