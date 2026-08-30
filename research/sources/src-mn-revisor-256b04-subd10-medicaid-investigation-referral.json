@@ -1,0 +1,26 @@
+{
+  "source_id": "src-mn-revisor-256b04-subd10-medicaid-investigation-referral",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/256B.04",
+  "session_law_url": "https://www.revisor.mn.gov/laws/2026/0/121/laws.4.26.0",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 256B.04, subd. 10 — Investigation of Certain Claims",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE_WITH_2026_SESSION_LAW",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "The Commissioner of Human Services must establish criteria and procedures for identifying and promptly investigating suspected Medicaid fraud, theft, abuse, false or duplicate claims, medically unreasonable or unnecessary claims, and material false statements by vendors.",
+    "The 2026 amendment expressly authorizes both prepayment and postpayment claims-review systems and says payment after prepayment review does not prevent later postpayment review, administrative action, or monetary recovery.",
+    "When it appears to the state Medicaid agency that a vendor may have acted in a manner warranting civil or criminal proceedings, the agency shall inform the Attorney General in writing."
+  ],
+  "selected_locators": [
+    "§ 256B.04 subd. 10 current text",
+    "2026 Minn. Laws ch. 121 art. 4 § 26"
+  ],
+  "important_qualifications": [
+    "This provision describes state-agency investigation/referral duties; it does not make every agency referral a finding of fraud.",
+    "The written-referral duty helps explain the institutional handoff from DHS program integrity to the Attorney General/MFCU but does not by itself establish when a referral occurred in a specific case."
+  ]
+}
