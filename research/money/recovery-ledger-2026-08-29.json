@@ -92,13 +92,13 @@
     }
   ],
   "known_missing_components": [
-    "Actual cash collections by case and year",
-    "Outstanding restitution balances",
+    "Actual cash collections by case and year (partially resolved for MFCU criminal restitution — see research/money/recovery-ledger-addendum-2-2026-08-29.json)",
+    "Outstanding restitution balances (partially resolved for MFCU criminal restitution — see recovery-ledger-addendum-2-2026-08-29.json)",
     "Forfeiture ordered versus forfeiture realized",
     "Administrative recoupments assessed versus collected",
     "Provider payment holds later released versus permanently retained",
-    "Breakdown of the AG's $90M mixed judgments/recoveries figure",
-    "Breakdown of DHS >$56M identified-for-recovery into assessed debt and collected amounts"
+    "Breakdown of the AG's $90M mixed judgments/recoveries figure (partially resolved — see recovery-ledger-addendum-2-2026-08-29.json; civil-judgments component still DHS-unconfirmed)",
+    "Breakdown of DHS >$56M identified-for-recovery into assessed debt and collected amounts (still unresolved; DHS public pages repeat the >$56M headline without a collection ledger)"
   ],
   "publication_instruction": "A public Recovery page should show separate columns/stacks for ordered, identified, potential, collected, forfeited, and avoided. Never display a single 'money recovered' total unless every component is collected and non-overlapping."
 }

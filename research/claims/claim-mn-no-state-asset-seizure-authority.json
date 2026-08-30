@@ -1,0 +1,30 @@
+{
+  "claim_id": "claim-mn-no-state-asset-seizure-authority",
+  "claim_text": "The Minnesota Attorney General's office told KSTP that Minnesota law does not allow the state to seize assets from convicted Medicaid fraudsters to satisfy restitution, contrasting this with federal authorities, who were reported to have recovered $60-70 million in cash and assets in the Feeding Our Future investigation.",
+  "claim_type": "LEGAL_ELEMENT",
+  "normalized_claim": "AG's office position: MN state law lacks asset-seizure authority for restitution collection that federal prosecutors have (per FOF forfeiture comparison).",
+  "subject_ids": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "unresolved",
+  "source_ids": [
+    "src-kstp-2026-08-03-restitution-collection-analysis"
+  ],
+  "jurisdiction": "Minnesota",
+  "qualifiers": [
+    "This is the AG's office's characterization of state law as relayed by a reporter, not a cited Minnesota statute or a legal analysis performed by this corpus.",
+    "Not yet cross-checked against the statutory-authority crosswalk produced in PR #27 (research on DHS/AG/county-attorney/BCA authority). Should be verified against actual Minnesota forfeiture and restitution-collection statutes (e.g., Minn. Stat. ch. 609.5311 et seq. criminal forfeiture provisions) before being treated as an established legal fact.",
+    "The $60-70M federal FOF cash/asset figure is a separate, already-tracked figure elsewhere in the corpus; this claim only concerns the state-vs-federal authority comparison, not a new money figure to reconcile."
+  ],
+  "confidence": "LOW",
+  "is_allegation": false,
+  "is_inference": false,
+  "editorial_notes": "Follow-up research task: verify or refute this AGENCY_POSITION against Minnesota forfeiture/restitution statutes before it is used to support any public-facing claim about why collection rates are low.",
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

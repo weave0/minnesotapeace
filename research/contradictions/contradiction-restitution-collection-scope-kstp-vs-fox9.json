@@ -1,0 +1,11 @@
+{
+  "contradiction_id": "contradiction-restitution-collection-scope-kstp-vs-fox9",
+  "claim_a": "claim-mfcu-restitution-ordered-vs-collected-2019-2026",
+  "claim_b": "claim-fox9-48case-restitution-ordered-collected-2026-05",
+  "source_a": "src-kstp-2026-08-03-restitution-collection-analysis",
+  "source_b": "src-fox9-2026-05-17-restitution-collection-analysis",
+  "nature_of_conflict": "Two independent news investigations report materially different Minnesota Medicaid-fraud restitution figures for overlapping subject matter: KSTP (2026-08-03) reports ~$32M ordered since 2019 with ~$3M (~9%) collected as of May 2026, while FOX 9 (2026-05-17) reports ~$13.3M ordered across a specific 48-case set since 2020 with ~$2.355M (~17.7%) collected as of spring 2026. Neither the totals nor the collection-rate percentages match, and the two outlets used different start years (2019 vs 2020) and apparently different case populations (all MFCU-prosecuted cases vs. a reviewed 48-case sample).",
+  "possible_reconciliation": "Most likely explanation is scope, not error: FOX 9's 48 cases appear to be a specific reviewed subset (not stated to be exhaustive) while KSTP's figure appears to describe the full MFCU-prosecuted caseload since 2019. The three-month gap between publications (May to August 2026) could also account for some case-count growth, but is too small to explain a $32M vs $13.3M gap on its own. This should be treated as two distinct, non-additive measurements of a related but not identical population until a primary source (e.g., a court-administration restitution ledger) can define the exact case population each outlet used.",
+  "status": "open",
+  "notes": "Do not average, sum, or otherwise blend these two collection-rate percentages into a single 'Minnesota's restitution collection rate is X%' public statement. Publish both, attributed and scoped, per research/money publication_instruction."
+}
