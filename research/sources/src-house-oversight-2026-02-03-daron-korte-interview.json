@@ -1,0 +1,42 @@
+{
+  "source_id": "src-house-oversight-2026-02-03-daron-korte-interview",
+  "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Daron-Korte-Transcript.pdf",
+  "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+  "title": "Transcribed Interview of Daron Korte",
+  "publication_date": "2026-06-01",
+  "document_date": "2026-02-03",
+  "retrieval_date": "2026-08-29",
+  "document_type": "congressional_transcribed_interview",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+  "evidence_class": "TRANSCRIBED_INTERVIEW",
+  "interview_status": {
+    "voluntary": true,
+    "sworn": false,
+    "truthfulness_warning": "Committee staff stated that although Korte would not be sworn, federal law required truthful answers to Congress and congressional staff and knowingly false statements could be criminally prosecuted.",
+    "counsel_present": true,
+    "locator": "PDF pp.6-7, transcript pages 6-7"
+  },
+  "supports": [
+    "Korte confirmed that MDE removed Feeding Our Future's stop-pay nine days after the 2021-04-21 Ramsey County hearing, consistent with the 2024 OLA timeline's 2021-04-30 date.",
+    "Korte recalled that MDE decided internally to lift the stop-pay voluntarily because officials believed forcing a judicial ruling was highly likely to produce an adverse result and additional contempt or attorney-fee sanctions.",
+    "Korte identified himself, Monica Herrera, and Emily Honer as participants in the payment-resumption discussion; he recalled informing then-Commissioner Heather Mueller about how MDE would proceed rather than seeking her approval.",
+    "Korte said he did not think the Governor's Office participated in making the payment-resumption decision, although he would have updated the Governor's education policy and legal advisers about the decision.",
+    "Korte said attorneys from the Minnesota Attorney General's Office who represented MDE in the Feeding Our Future lawsuit were involved in the decision.",
+    "Korte said there were no negotiations with Feeding Our Future driving the decision to lift the stop-pay.",
+    "Korte recalled that MDE knew an FBI investigation was underway or imminent and hoped resumed payments would last only briefly until the FBI and U.S. Attorney's Office intervened; he said the FBI never instructed MDE to resume payments.",
+    "Korte said he did not believe he signed a stipulation or other document memorializing the payment-resumption decision."
+  ],
+  "selected_locators": [
+    "PDF pp.130-132: April 21 hearing, voluntary stop-pay removal, rationale, participants, Governor's Office/AG roles, FBI timing, and lack of remembered memorializing document",
+    "PDF pp.126-128: Korte's role in the March 2021 serious-deficiency/termination process and stop-pay context",
+    "PDF pp.6-7: voluntary unsworn interview and legal duty of truthful response"
+  ],
+  "important_qualifications": [
+    "This interview was not sworn; it is classified TRANSCRIBED_INTERVIEW because the Committee expressly imposed a legal duty of truthful response and warned of false-statement prosecution.",
+    "Korte was a participant in the relevant MDE decision chain, but his 2026 account is retrospective recollection. Contemporaneous MDE emails, meeting notes, memoranda, and complete Ramsey County filings would be stronger evidence of the exact April 2021 internal deliberation.",
+    "Korte's assessment that a judicial ruling was likely to favor Feeding Our Future and lead to sanctions is his recollection of MDE's decision rationale, not a court holding. The Minnesota Judicial Branch separately confirms no court order required payment resumption.",
+    "The transcript expressly brackets privileged attorney communications. It establishes that MDE's litigating Attorney General attorneys were involved, but not the substance of privileged legal advice.",
+    "Updating Governor's Office advisers about a decision is not equivalent to their participating in or directing that decision; Korte specifically said he did not think the Governor's Office was involved in making it."
+  ]
+}
