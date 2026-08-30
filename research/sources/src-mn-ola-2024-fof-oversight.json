@@ -13,6 +13,14 @@
   "overall_finding": "OLA found that MDE's inadequate oversight of Feeding Our Future created opportunities for fraud, including failures to act on known warning signs, shortcomings in exercising oversight authority, and inadequate preparation to respond to issues encountered with Feeding Our Future.",
   "bound_findings": [
     {
+      "finding_id": "fof-ola-2018-admin-review",
+      "claim": "MDE's only administrative review of Feeding Our Future's CACFP operations, conducted in December 2018, produced 22 findings across 11 of 13 review areas and warranted follow-up, but MDE never conducted a follow-up review.",
+      "report_pages": [37,40,41],
+      "pdf_page_indexes": [44,47,48],
+      "locator": "Application and Administrative Reviews; text extraction PDF pp.44 and 47-48 lines 1837-1875 and 2059-2109",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
       "finding_id": "fof-ola-complaints-30",
       "claim": "Between June 2018 and December 2021, MDE received at least 30 complaints involving Feeding Our Future or its sites.",
       "report_page": 49,
