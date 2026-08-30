@@ -49,9 +49,10 @@ What this collection could **not** verify in a primary source as of 2026-08-26. 
 
 ## 7. USDA OIG work product on Minnesota FOF
 
-- No USDA OIG audit report, investigation closeout, or press release specifically quantifying MN CACFP/SFSP FOF fraud was found.
+- No USDA OIG audit report, investigation closeout, or press release specifically quantifying MN CACFP/SFSP FOF fraud was found. **Still true as of 2026-08-29 recheck.**
 - OLA (p. 50) records that MDE told OLA it informed USDA OIG of suspected SFSP fraud in **October or November 2020**, and that USDA OIG had previously issued **general** warnings about nutrition-program fraud risk. OLA does not publish an OIG investigative finding.
-- House Education and the Workforce subpoenaed USDA OIG (2024); the OIG’s production is not in this corpus.
+- House Education and the Workforce subpoenaed USDA OIG (2024); the OIG’s production is not in this corpus. **Confirmed and dated (2026-08-29 pass):** Committee Chairwoman Virginia Foxx issued the subpoena to USDA Secretary Vilsack and USDA Inspector General Phyllis Fong on **2024-09-04**, with a **2024-09-18** compliance deadline (`src-edworkforce-house-2024-09-04-subpoena-walz-usda-oig`). No public record of USDA/USDA OIG’s response, production, or compliance with that subpoena was located; assume this requires a direct records/FOIA request or a committee-records search rather than further open-web search.
+- New in this pass: HuffPost (2026-01-30, `src-huffpost-2026-01-30-usda-knew-did-nothing`), drawing on the 2024 OLA audit plus original reporting, adds specific detail MDE previously flagged to USDA — a **~252% vs. ~14%** reimbursement-growth disparity and a "perfect attendance" pattern USDA dismissed as consistent with pandemic waivers — and quotes an **anonymous** former USDA official describing internal recognition of likely fraud and a decision by superiors not to get involved. This deepens the MDE-side and journalistic account of the referral’s aftermath but is still not USDA/USDA-OIG’s own work product, and the anonymous quote should not be elevated above LEAD-tier confidence.
 - FNS integrity rulemaking cites 2011/2013 OIG audits that are **national** and predate FOF.
 
 ## 8. Court-certified network loss / recovery totals
