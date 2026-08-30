@@ -1,0 +1,35 @@
+{
+  "source_id": "src-mnd-26-cv-01701-ecf43-deferral-pi-order",
+  "canonical_url": "https://law.justia.com/cases/federal/district-courts/minnesota/mndce/0%3A2026cv01701/232324/43/",
+  "court_docket_url": "https://www.courtlistener.com/docket/72353395/state-of-minnesota-v-oz/",
+  "issuing_body": "United States District Court, District of Minnesota",
+  "title": "Opinion and Order, State of Minnesota et al. v. Oz et al., No. 0:26-cv-01701, ECF 43",
+  "publication_date": "2026-04-06",
+  "retrieval_date": "2026-08-29",
+  "document_type": "federal_court_opinion_and_order",
+  "case_number": "0:26-cv-01701-ECT-DTS",
+  "court": "United States District Court, District of Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD_THIRD_PARTY_HOSTED_COPY",
+  "evidence_class": "ADJUDICATED_PROCEDURAL_RULING",
+  "supports": [
+    "Minnesota challenged the CMS February 25, 2026 Medicaid deferral in federal court and sought temporary and preliminary injunctive relief.",
+    "On April 6, 2026, Judge Eric C. Tostrud denied Minnesota's motion for a temporary restraining order and expedited preliminary injunction.",
+    "The order treats the CMS deferral as an ongoing administrative process rather than a final agency determination that the deferred claims are disallowed.",
+    "The court states that CMS had identified approximately $164.2 million in federal financial participation associated with questionable variances and approximately $79.6 million associated with claims from providers CMS identified as high-risk for fraud or aberrant billing practices, and had requested supporting documentation or decreasing adjustments.",
+    "The court expressly notes that the deferral notice did not conclude that the questioned claims would ultimately be disallowed and that a deferral may later result in disallowance of all, part, or none of the questioned amount depending on the administrative process.",
+    "The court also records that CMS approved Minnesota's January 30 revised corrective action plan on March 19, 2026, but treated the CAP approval and the Medicaid-claim deferral as distinct processes."
+  ],
+  "important_qualifications": [
+    "Denial of preliminary relief was not a merits judgment that the deferred Medicaid claims were fraudulent or unallowable.",
+    "The ruling did not finally resolve the amount of federal funding Minnesota will receive or lose.",
+    "The court's factual recitation of CMS's questioned-claim categories describes the administrative record; it does not convert those claims into adjudicated fraud loss.",
+    "The linked Justia page is a public copy of the federal court order. CourtListener identifies the underlying docket but may restrict automated access."
+  ],
+  "selected_locators": [
+    "ECF 43, Opinion and Order dated 2026-04-06",
+    "discussion of February 25 deferral notice and requested documentation",
+    "discussion of March 19 CAP approval",
+    "final order denying preliminary relief"
+  ]
+}
