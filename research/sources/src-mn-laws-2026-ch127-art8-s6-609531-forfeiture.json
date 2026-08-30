@@ -1,0 +1,27 @@
+{
+  "source_id": "src-mn-laws-2026-ch127-art8-s6-609531-forfeiture",
+  "canonical_url": "https://www.revisor.mn.gov/laws/2026/0/Session+Law/Chapter/127/",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "2026 Minnesota Laws, Chapter 127, Article 8, Section 6 — amendment to Minn. Stat. § 609.531, subd. 1",
+  "publication_date": "2026",
+  "retrieval_date": "2026-08-29",
+  "document_type": "session_law",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_SESSION_LAW",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "The 2026 amendment to Minn. Stat. § 609.531, subd. 1 defines 'appropriate agency' for chapter 609 forfeiture and does not list the Minnesota Attorney General's Medicaid Fraud Control Unit.",
+    "The same amendment adds new Minn. Stat. § 609.467 medical assistance fraud to the definition of a 'designated offense' for chapter 609 forfeiture.",
+    "The statute separately defines 'prosecuting authority' as the attorney responsible for prosecuting the offense that is the basis for forfeiture."
+  ],
+  "selected_locators": [
+    "Chapter 127, Article 8, Sec. 6, § 609.531 subd. 1(e) — appropriate agency",
+    "Sec. 6, § 609.531 subd. 1(f)(3) — designated offenses include § 609.467",
+    "Sec. 6, § 609.531 subd. 1(h) — prosecuting authority"
+  ],
+  "important_qualifications": [
+    "The omission of MFCU from the 'appropriate agency' list supports a narrow conclusion about MFCU's own chapter 609 forfeiture role; it does not mean Minnesota law categorically forbids state asset seizure.",
+    "The 2026 Legislature simultaneously made medical assistance fraud a designated forfeiture offense, so publication must distinguish offense coverage from which agency may seize or hold property."
+  ]
+}

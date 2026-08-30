@@ -1,0 +1,24 @@
+{
+  "source_id": "src-mn-revisor-6095312-designated-offense-forfeiture",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/609.5312",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 609.5312 — Forfeiture of Property Associated with Designated Offenses",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "Personal property used or intended to commit or facilitate a designated offense is subject to forfeiture, subject to statutory limitations.",
+    "Money and other real or personal property representing proceeds of a designated offense are subject to forfeiture, subject to statutory limitations."
+  ],
+  "selected_locators": [
+    "Subd. 1(a) — property and proceeds subject to forfeiture",
+    "Subd. 2 — limitations on forfeiture and ownership/security-interest protections"
+  ],
+  "important_qualifications": [
+    "This section defines property subject to forfeiture; § 609.531 and related provisions govern who is an 'appropriate agency' and the procedure.",
+    "Forfeiture is legally distinct from enforcing a restitution judgment against a debtor's nonexempt assets."
+  ]
+}

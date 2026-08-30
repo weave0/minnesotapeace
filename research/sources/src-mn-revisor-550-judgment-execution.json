@@ -1,0 +1,26 @@
+{
+  "source_id": "src-mn-revisor-550-judgment-execution",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/550/full",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minnesota Statutes Chapter 550 — Executions, Redemption, Exemptions",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute_chapter",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "Minn. Stat. § 550.01 authorizes a judgment creditor to enforce a judgment in the manner provided by law.",
+    "Minn. Stat. § 550.011 provides for disclosure of a judgment debtor's assets, liabilities, and earnings sufficient to permit satisfaction by execution on nonexempt assets and earnings.",
+    "Minn. Stat. § 550.135 authorizes sheriff levy on specified personal property, money, or indebtedness, subject to exemptions and procedural limits."
+  ],
+  "selected_locators": [
+    "§ 550.01 — enforcement of judgment",
+    "§ 550.011 — judgment debtor disclosure and execution on nonexempt assets",
+    "§ 550.135, subds. 2-4 — levy on personal property, money, or indebtedness and exemptions"
+  ],
+  "important_qualifications": [
+    "Chapter 550 execution is subject to exemptions and other procedural requirements.",
+    "The existence of civil execution tools does not establish that any specific restitution creditor used or could successfully use them against a particular asset."
+  ]
+}

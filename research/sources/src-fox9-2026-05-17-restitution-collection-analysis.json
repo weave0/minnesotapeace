@@ -17,9 +17,10 @@
     "Individual case restitution amounts in the reviewed set ranged from $69 to $1.7 million.",
     "Defendant Ali Ismail Warsame was reported to owe $667,719 in restitution.",
     "Defendant Xiaoyan Hu was ordered to pay restitution of more than $500,000; more than $284,000 was reported recovered from Hu's accounts.",
-    "A pending asset-seizure action in a separate case was reported at $650,000.",
+    "A pending attempt to reach a separate $650,000 corporate account was reported in another restitution case.",
     "One case's restitution order, reported at $21,590, was tied to a case that was later dismissed.",
-    "Attorney General Keith Ellison acknowledged the federal government has tools (such as asset seizure) that Minnesota state prosecutors reportedly lack, and noted Minnesota probation terms can end before restitution is fully paid."
+    "Attorney General Keith Ellison said MFCU cannot itself use criminal or civil forfeiture as federal authorities do; FOX 9 separately noted that Minnesota's forfeiture law lists certain law-enforcement agencies but does not explicitly list MFCU.",
+    "FOX 9 reported that prosecutors can seek court orders freezing bank accounts for restitution and documented account funds actually applied toward restitution, demonstrating a collection mechanism distinct from chapter 609 forfeiture."
   ],
   "system_metrics": [
     {
@@ -45,6 +46,7 @@
   ],
   "does_not_support": [
     "That the 48-case, $13.3M/2020-forward set is the same population as KSTP's 2019-forward, $32M MFCU-wide figure; the case counts, start years, and totals differ and the source does not reconcile them.",
-    "A full accounting of every MFCU restitution case; this is a reviewed sample, not stated to be exhaustive."
+    "A full accounting of every MFCU restitution case; this is a reviewed sample, not stated to be exhaustive.",
+    "The categorical proposition that Minnesota law forbids state asset seizure. The article's narrower point is that MFCU is not explicitly listed as a chapter 609 forfeiture 'appropriate agency,' while other collection tools remain available."
   ]
 }
