@@ -1,0 +1,81 @@
+{
+  "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+  "claim_text": "On June 24, 2021, Ramsey County District Court Judge John Guthmann found the Minnesota Department of Education in civil contempt of a December 22, 2020 stipulated order requiring MDE to promptly process Feeding Our Future's site applications — a separate issue from the reimbursement stop-pay, which the same order resolved as moot. The court ordered MDE to pay Feeding Our Future a $35,750 contempt sanction plus $11,750 in stipulated attorneys' fees, a combined $47,500.",
+  "claim_type": "AMOUNT",
+  "normalized_claim": "Ramsey County District Court ordered MDE to pay a $35,750 civil contempt sanction plus $11,750 stipulated attorneys' fees on 2021-06-24, for $47,500 combined, arising from site-application processing delay rather than the reimbursement stop-pay.",
+  "status": "confirmed",
+  "evidence_class": "ADJUDICATED_CIVIL",
+  "proposition_class": "B_OVERSIGHT_FAILURE",
+  "source_ids": [
+    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "page": 2,
+      "locator": "para 1.b",
+      "quote": "Feeding Our Future’s motions to find MDE in contempt of the stipulated December 22, 2020 Order (‘Order’) is granted. The Court finds MDE’s violation of the Order sanctionable and hereby orders MDE to pay Feeding Our Future $35,750."
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "page": 2,
+      "locator": "para 1.c",
+      "quote": "As part of the ruling on the motions for contempt, MDE is also ordered to pay Feeding Our Future’s reasonable attorneys’ fees for pursuing its motions for contempt of court in the amount of $11,750, which was stipulated by the parties."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 35750,
+      "currency": "USD",
+      "metric_type": "civil_contempt_sanction",
+      "period_start": null,
+      "period_end": null,
+      "exact_or_approximate": "exact",
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "methodology": "Civil contempt sanction ordered for MDE's violation of the December 22, 2020 stipulated order."
+    },
+    {
+      "value": 11750,
+      "currency": "USD",
+      "metric_type": "attorneys_fees_ordered",
+      "period_start": null,
+      "period_end": null,
+      "exact_or_approximate": "exact",
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "methodology": "Stipulated attorneys' fees ordered alongside the contempt sanction, for pursuing the contempt motions."
+    },
+    {
+      "value": 47500,
+      "currency": "USD",
+      "metric_type": "combined_total",
+      "period_start": null,
+      "period_end": null,
+      "exact_or_approximate": "exact",
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "methodology": "Sum of the $35,750 sanction and $11,750 attorneys' fees ordered in the same order. Do not add this total to its two components again."
+    }
+  ],
+  "qualifiers": [
+    "This sanction concerns MDE's delay processing Feeding Our Future's site applications under a December 22, 2020 order — not the reimbursement stop-pay, which the same June 24 order separately resolved as moot because MDE had already voluntarily lifted it.",
+    "This is a civil contempt sanction against a state agency for a compliance failure, not a criminal or fraud finding."
+  ],
+  "editorial_notes": "Keep the $35,750 sanction, $11,750 attorneys' fees, and $47,500 combined total in one overlap group so the public money view cannot double-count the same obligation.",
+  "case_number": "62-CV-20-5492",
+  "subject_ids": [
+    "org-mn-department-education",
+    "org-feeding-our-future"
+  ],
+  "organizations": [
+    "org-mn-department-education",
+    "org-feeding-our-future"
+  ],
+  "jurisdiction": "Ramsey County District Court, Minnesota",
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "date_start": "2021-06-24",
+  "date_end": "2021-06-24",
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z"
+}
