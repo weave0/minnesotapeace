@@ -1,0 +1,23 @@
+{
+  "source_id": "src-mn-dhs-2026-08-25-eidbi-authorization-backlog",
+  "canonical_url": "https://mn.gov/dhs/partners-and-providers/news-initiatives-reports-workgroups/minnesota-health-care-programs/provider-news/",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Early Intensive Developmental and Behavioral Intervention (EIDBI) service authorization timeline update",
+  "publication_date": "2026-08-25",
+  "retrieval_date": "2026-08-29",
+  "document_type": "provider_news",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_POSITION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS states its medical review agent Acentra Health is experiencing longer-than-required EIDBI service-authorization timelines because of increased review volume.",
+    "DHS and Acentra say they are increasing review capacity, improving workflow efficiency, and prioritizing initial CMDE/ITP cases and renewals at risk of authorization gaps.",
+    "DHS states EIDBI authorizations may be retroactively approved up to 180 days, but not beyond that window, and advises providers to submit at least 30 days before intended service start."
+  ],
+  "does_not_support": [
+    "The backlog is not itself evidence of fraud by providers or recipients.",
+    "The source does not quantify the number of delayed authorizations or affected children.",
+    "The source does not establish that program-integrity review is the sole cause of increased review volume."
+  ],
+  "source_locator": "MHCP provider news lines 150-187 as retrieved 2026-08-29"
+}
