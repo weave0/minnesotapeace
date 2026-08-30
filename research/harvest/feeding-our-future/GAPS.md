@@ -1,34 +1,29 @@
 # Feeding Our Future — Gaps
 
-What this collection could **not** verify in a primary source as of 2026-08-29. Journalism and ChatGPT claims are noted as leads, not as facts.
+What this collection could **not** verify in a primary source as of 2026-08-30. Journalism and ChatGPT claims are noted as leads, not as facts.
 
 ---
 
 ## 1. Latest official defendant count after the 77th (Nov 20, 2025)
 
 - Verified: 77th defendant **Ousman Camara**, 2025-11-20 (IRS-CI / USAO announcement).
-- USAO-MN URL exists for a **78th** defendant (`https://www.justice.gov/usao-mn/pr/78th-defendant-charged-feeding-our-future-fraud-scheme`) but returned an Akamai interstitial; body not captured.
-- Journalism (KSTP, Star Tribune Aug 19, 2026) says **80 charged**. Not verified on a fetched .gov page.
-- **76th defendant name** not captured on a readable IRS/DOJ page.
+- **78th defendant RESOLVED (2026-08-30 pass):** the previously Akamai-blocked USAO-MN page is now directly readable. USAO-MN identifies **Abdirashid Bixi Dool** as the **78th defendant charged** on 2025-11-24 (`src-usao-mn-2025-11-24-dool-78th-fof-defendant`).
+- DOJ's current 2026 Minnesota fraud case-summary page independently confirms that **Fahima Mahamud** was federally charged in connection with Future Leaders Early Learning Center (`src-doj-criminal-2026-minnesota-hcf-case-summaries`), but that DOJ page does **not** assign her an ordinal within the Feeding Our Future case. Contemporary journalism and a congressional report describe her as the **79th** defendant; preserve that distinction rather than converting a secondary ordinal into a DOJ statement.
+- Current journalism (including the Minnesota Star Tribune) identifies **Mahamoud Warsame** as the **80th** defendant charged in July 2026. No directly retrieved DOJ/USAO page in this pass assigns Warsame that ordinal, so **80 charged remains secondary-confirmed rather than primary-ordinal-confirmed** in this corpus.
+- **76th defendant name** remains uncaptured on a readable IRS/DOJ page.
 
-## 2. ChatGPT claim: 68 convictions as of July 24, 2026
+## 2. Scheme-wide conviction count after April 2026
 
-- **Not verified** on a DOJ OPA or IRS-CI page retrieved in this collection.
-- Last **verified** official conviction count: **65 on April 9, 2026** (DOJ OPA, S11).
-- Prior verified: **63** on March 20, 2026; **56** on Sept 18, 2025.
-- KSTP reported Abdirashid Bixi Dool as 68th conviction (plea July 13, 2026) and an editor’s note that DOJ first said 70th then corrected to 68th. That is a **lead**, not a captured primary.
-- Star Tribune Aug 19, 2026: 69 convicted / 80 charged — **lead**.
+- **Official 68 count now verified.** A USAO-MN release published 2026-07-21 identifies **Abdirashid Bixi Dool** as the **68th Feeding Our Future defendant convicted**, based on his July 13 guilty plea.
+- That official ordinal conflicts with contemporaneous reporting that **Fahima Mahamud** pleaded guilty on July 9 and was the 68th conviction, which would make Dool the 69th. The Minnesota Star Tribune reported **69 convicted / 80 charged** as of August 19 and again August 24, 2026.
+- Do **not** silently resolve this by arithmetic. The official USAO release is primary for what DOJ publicly stated, while the secondary chronology suggests DOJ's ordinal may omit or classify Mahamud differently. A primary plea record or later DOJ release explicitly stating the scheme-wide count after both pleas is still needed to reconcile the counting convention.
+- Prior verified official count: **65 on April 9, 2026** (DOJ OPA). Prior verified: **63** on March 20, 2026; **56** on Sept. 18, 2025.
 
-## 3. July 2026 120-month juror-bribery sentence (Abdiaziz Farah)
+## 3. July 2026 120-month juror-bribery sentence (Abdiaziz Farah) — RESOLVED
 
-- Requested: DOJ release for a defendant sentenced July 2026 to 120 months for juror bribery.
-- **Not retrieved** from justice.gov or irs.gov.
-- Journalism (Star Tribune, Fox 9, KSTP, Red Lake Nation News reprint) identifies **Abdiaziz Shafii Farah**, sentenced **July 22, 2026**, by Judge **Eric C. Tostrud**, 120 months consecutive to 28 years.
-- What **is** on .gov:
-  - Abdiaziz Farah **plea** June 17, 2025, bribery of a juror (IRS-CI).
-  - **Abdulkarim** Farah sentenced **57 months** March 4, 2026 (DOJ OPA) — different person, different term.
-  - Nur plea agreement case number **24-cr-173**.
-- Likely USAO-MN page was blocked by Akamai in the same way as other 2026 MN PRs.
+- **Primary source captured.** USAO-MN's July 24, 2026 release (`src-usao-mn-2026-07-24-farah-juror-bribery-sentence`) states that **Abdiaziz Shafii Farah** was sentenced on **July 22, 2026** by U.S. District Judge **Eric C. Tostrud** to **120 months' imprisonment** for attempting to bribe a federal juror during his 2024 Feeding Our Future fraud trial.
+- Keep this sentence distinct from Farah's separate 2025 Feeding Our Future fraud sentence. The USAO release itself does not establish how the terms run relative to one another; use the judgment if concurrency/consecutiveness is material.
+- The older journalism-only gap is closed. No further open-source chase is needed merely to prove the 120-month sentence existed.
 
 ## 4. Full indictment PDFs (PACER)
 
@@ -77,7 +72,7 @@ What this collection could **not** verify in a primary source as of 2026-08-29. 
 
 ## 11. Technical access limits
 
-- `justice.gov/usao-mn/pr/*` frequently returned Akamai “Powered and protected by” pages (403/empty) via WebFetch.
+- `justice.gov/usao-mn/pr/*` frequently returned Akamai “Powered and protected by” pages (403/empty) via WebFetch. Some previously blocked pages were directly readable on the 2026-08-30 pass; treat this as intermittent access rather than a permanent block.
 - IRS-CI pages sometimes returned “Historical Content” stubs (e.g., Abdiaziz Farah 28-year sentence page).
 - mncourts.gov WebFetch timed out; curl succeeded.
 
