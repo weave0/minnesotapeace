@@ -22,7 +22,8 @@
     "src-mn-ola-2024-fof-oversight",
     "src-mn-judicial-2022-09-23-fof-guthmann-correction",
     "src-house-oversight-2026-02-03-daron-korte-interview",
-    "src-house-oversight-2026-01-29-emily-honer-interview"
+    "src-house-oversight-2026-01-29-emily-honer-interview",
+    "src-mncro-62-cv-20-5492-register-of-actions"
   ],
   "jurisdiction": "Minnesota",
   "date_start": "2021-04-21",
@@ -34,7 +35,8 @@
     "Korte said he did not think the Governor's Office was involved in making the decision; he distinguished decision-making from later or contemporaneous updates to the Governor's education policy and legal advisers.",
     "Korte said Attorney General attorneys representing MDE in the lawsuit were involved, but the transcript does not disclose privileged legal advice and should not be used to infer its content.",
     "Korte said the FBI never instructed MDE to resume payments; he recalled MDE hoped the resumption would be temporary until federal law enforcement intervened.",
-    "No contemporaneous internal MDE memorandum, email chain, meeting notes, or stipulation memorializing the April 30 decision has yet been captured in the corpus."
+    "No contemporaneous internal MDE memorandum, email chain, meeting notes, or stipulation memorializing the April 30 decision has yet been captured in the corpus.",
+    "The Ramsey County register of actions (case 62-CV-20-5492) shows a second Temporary Restraining Order Hearing was held before Judge Guthmann on 2021-04-30 itself, the same day MDE removed the stop-pay, with several same-day filings and an order taking the matter under advisement. This hearing was not previously reflected in this corpus and is not specifically addressed in Korte's or Honer's interviews or in the OLA report; it establishes contemporaneity with, not causation of, MDE's decision."
   ],
   "confidence": "HIGH",
   "is_allegation": false,
