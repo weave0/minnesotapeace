@@ -4,7 +4,9 @@ on:
   pull_request:
     paths:
       - 'research/**'
+      - 'record/data/**'
       - 'scripts/check-research-integrity.py'
+      - 'scripts/test-publication-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -12,7 +14,9 @@ on:
       - main
     paths:
       - 'research/**'
+      - 'record/data/**'
       - 'scripts/check-research-integrity.py'
+      - 'scripts/test-publication-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -25,3 +29,28 @@ jobs:
 
       - name: Validate research corpus
         run: python3 scripts/check-research-integrity.py
+
+      # Research is a non-public substrate. A claim, source, or entity existing
+      # under research/ must never become public merely by existing -- only the
+      # publication manifest (research/publication/record-v1.json) can promote
+      # it, and only by exact content hash. build.py enforces this and fails
+      # closed (unknown manifest id, duplicate id, hash mismatch, or a claim
+      # citing an unapproved source all abort the build non-zero).
+      - name: Validate publication manifest and build the public corpus
+        run: python3 research/viewer/build.py
+
+      - name: Regression-test the publication boundary itself
+        run: python3 scripts/test-publication-boundary.py
+
+      # If this fails, someone edited research/ (or the manifest) without
+      # regenerating record/data and research/viewer/data, or edited those
+      # generated files by hand instead of through build.py. Either way the
+      # committed public corpus no longer matches what canonical research +
+      # the publication manifest actually approve.
+      - name: Fail if the committed public corpus is stale
+        run: |
+          git diff --exit-code -- record/data research/viewer/data || {
+            echo "::error::record/data and/or research/viewer/data are out of date." >&2
+            echo "::error::Run 'python3 research/viewer/build.py' and commit the result." >&2
+            exit 1
+          }

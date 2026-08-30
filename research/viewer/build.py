@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Build research/viewer/data/corpus.json from canonical claims, extracts, sources, entities.
 
+Research is a non-public substrate. A claim, source, or entity existing under research/
+does not make it public. Only artifacts listed -- by ID and exact content hash -- in the
+publication manifest (research/publication/record-v1.json) are emitted to corpus["claims"],
+corpus["sources"], corpus["entities"], or corpus["money"]. Everything else in research/
+claims, research/sources, research/entities is loaded only to validate the manifest against
+it (existence, hash match, referential integrity) and is otherwise invisible to the output.
+
 Does not invent claims. Does not sum overlapping dollars. Skips the leftover Farah
 ECF 57 stub (empty count map). Asad 0:25-cr-00354 is emitted as a gap card.
 
@@ -9,6 +16,7 @@ Run from repo root:  python3 research/viewer/build.py
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from datetime import datetime, timezone
@@ -19,6 +27,7 @@ CLAIMS_DIR = ROOT / "research" / "claims"
 EXTRACTS_DIR = ROOT / "research" / "court" / "extracts"
 SOURCES_DIR = ROOT / "research" / "sources"
 ENTITIES_DIR = ROOT / "research" / "entities"
+MANIFEST_PATH = ROOT / "research" / "publication" / "record-v1.json"
 OUT_DIR = Path(__file__).resolve().parent / "data"
 PUBLIC_DATA_DIR = ROOT / "record" / "data"
 SKIP_EXTRACTS = {"farah-22-cr-124-ecf57-superseding.json"}
@@ -231,6 +240,102 @@ SLIM_DROP = {
 
 def load_json(path: Path) -> dict | list:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def index_by_field(directory: Path, glob: str, id_field: str, kind: str) -> dict[str, Path]:
+    """Glob directory for files matching glob and index by their internal id_field.
+
+    Filenames in this corpus do not reliably match their internal IDs (e.g.
+    research/claims/claim-fof-990-officers.json has claim_id
+    "claim-fof-990-fy2020-officers"), so the manifest must be checked against
+    internal IDs discovered by reading every file, not against guessed paths.
+    """
+    by_id: dict[str, Path] = {}
+    for path in sorted(directory.glob(glob)):
+        try:
+            obj = load_json(path)
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"invalid JSON in {path.relative_to(ROOT)}: {exc}")
+        ident = obj.get(id_field)
+        if not ident:
+            raise SystemExit(f"{path.relative_to(ROOT)} has no {id_field}")
+        if ident in by_id:
+            raise SystemExit(
+                f"duplicate {kind} id {ident!r} in research/: "
+                f"{by_id[ident].relative_to(ROOT)} and {path.relative_to(ROOT)}"
+            )
+        by_id[ident] = path
+    return by_id
+
+
+def load_manifest() -> dict:
+    if not MANIFEST_PATH.exists():
+        raise SystemExit(
+            f"publication manifest missing: {MANIFEST_PATH.relative_to(ROOT)}. "
+            "Research is a non-public substrate -- nothing publishes without an explicit, "
+            "hash-pinned manifest entry."
+        )
+    manifest = load_json(MANIFEST_PATH)
+    if manifest.get("schema_version") != 1:
+        raise SystemExit(f"unsupported publication manifest schema_version: {manifest.get('schema_version')!r}")
+
+    seen_claim_ids: set[str] = set()
+    for entry in manifest.get("claims", []):
+        cid = entry.get("claim_id")
+        if not cid or not entry.get("sha256"):
+            raise SystemExit(f"malformed manifest claim entry: {entry!r}")
+        if cid in seen_claim_ids:
+            raise SystemExit(f"duplicate claim id in publication manifest: {cid}")
+        seen_claim_ids.add(cid)
+
+    for label in ("sources", "entities"):
+        seen: set[str] = set()
+        for ident in manifest.get(label, []):
+            if ident in seen:
+                raise SystemExit(f"duplicate {label[:-1]} id in publication manifest: {ident}")
+            seen.add(ident)
+
+    return manifest
+
+
+def resolve_approved_claims(manifest: dict, claim_index: dict[str, Path]) -> list[dict]:
+    approved = []
+    for entry in manifest.get("claims", []):
+        cid = entry["claim_id"]
+        path = claim_index.get(cid)
+        if path is None:
+            raise SystemExit(
+                f"publication manifest approves claim {cid!r}, but no research/claims/*.json "
+                "file declares that claim_id. Unknown manifest id."
+            )
+        actual_hash = sha256_file(path)
+        if actual_hash != entry["sha256"]:
+            raise SystemExit(
+                f"publication manifest hash mismatch for {cid!r} ({path.relative_to(ROOT)}).\n"
+                f"  manifest sha256: {entry['sha256']}\n"
+                f"  actual   sha256: {actual_hash}\n"
+                "The canonical claim file changed since it was approved for publication. "
+                "Re-review the claim and update its sha256 in "
+                f"{MANIFEST_PATH.relative_to(ROOT)} to renew approval, or revert the claim file."
+            )
+        approved.append(load_json(path))
+    return approved
+
+
+def resolve_approved_ids(manifest_key: str, manifest: dict, index: dict[str, Path], dir_name: str) -> list[str]:
+    approved = []
+    for ident in manifest.get(manifest_key, []):
+        if ident not in index:
+            raise SystemExit(
+                f"publication manifest approves {manifest_key[:-1]} {ident!r}, but no matching "
+                f"research/{dir_name}/*.json file declares that id. Unknown manifest id."
+            )
+        approved.append(ident)
+    return approved
 
 
 def docket_key(value: str | None) -> str | None:
@@ -470,19 +575,41 @@ def build_money_rows(claims: list[dict]) -> list[dict]:
 
 
 def main() -> None:
-    claims = []
-    for path in sorted(CLAIMS_DIR.glob("claim-*.json")):
-        claims.append(slim_claim(load_json(path)))
+    manifest = load_manifest()
+
+    claim_index = index_by_field(CLAIMS_DIR, "claim-*.json", "claim_id", "claim")
+    source_index = index_by_field(SOURCES_DIR, "src-*.json", "source_id", "source")
+    entity_index = index_by_field(ENTITIES_DIR, "org-*.json", "entity_id", "entity")
+
+    approved_claims_raw = resolve_approved_claims(manifest, claim_index)
+    approved_source_ids = set(resolve_approved_ids("sources", manifest, source_index, "sources"))
+    approved_entity_ids = set(resolve_approved_ids("entities", manifest, entity_index, "entities"))
+
+    # A published claim may not cite a source that isn't itself approved for
+    # publication. Research-only sources (and whatever is in their `notes`)
+    # must not leak into the public record just because an approved claim
+    # points at them.
+    for claim in approved_claims_raw:
+        for source_id in claim.get("source_ids") or []:
+            if source_id not in approved_source_ids:
+                raise SystemExit(
+                    f"claim {claim['claim_id']!r} is approved for publication but cites source "
+                    f"{source_id!r}, which is not in the publication manifest's approved sources. "
+                    "Add it to research/publication/record-v1.json (sources) or remove the citation."
+                )
+
+    claims = [slim_claim(c) for c in approved_claims_raw]
     claims_by_id = {c["claim_id"]: c for c in claims}
 
-    sources = {}
-    for path in sorted(SOURCES_DIR.glob("src-*.json")):
-        src = load_json(path)
-        sources[src["source_id"]] = slim_source(src)
+    sources = {
+        source_id: slim_source(load_json(source_index[source_id]))
+        for source_id in sorted(approved_source_ids)
+    }
 
-    entities = []
-    for path in sorted(ENTITIES_DIR.glob("org-*.json")):
-        entities.append(slim_entity(load_json(path)))
+    entities = [
+        slim_entity(load_json(entity_index[entity_id]))
+        for entity_id in sorted(approved_entity_ids)
+    ]
 
     extracts: dict[str, dict] = {}
     for path in sorted(EXTRACTS_DIR.glob("*.json")):
