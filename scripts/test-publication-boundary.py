@@ -186,9 +186,59 @@ def main() -> int:
         result = run_build()
         note(
             result.returncode != 0
-            and "not in the publication manifest" in (result.stdout + result.stderr).lower(),
+            and "not (or no longer) approved" in (result.stdout + result.stderr).lower(),
             "build.py refuses to publish a claim that cites an unapproved source",
         )
+
+        # --- Test 4: editing an approved SOURCE invalidates its approval (mirrors Test 2 for claims) ---
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        first_source_id = manifest["sources"][0]["source_id"]
+        source_path = None
+        for path in (ROOT / "research" / "sources").glob("src-*.json"):
+            obj = json.loads(path.read_text(encoding="utf-8"))
+            if obj.get("source_id") == first_source_id:
+                source_path = path
+                break
+        note(source_path is not None, "located the canonical file for the first approved manifest source")
+
+        if source_path is not None:
+            original_bytes = source_path.read_bytes()
+            try:
+                tampered = json.loads(original_bytes)
+                tampered["notes"] = (tampered.get("notes") or "") + " (tampered by regression test)"
+                source_path.write_text(json.dumps(tampered, indent=2), encoding="utf-8")
+                result = run_build()
+                note(
+                    result.returncode != 0 and "hash mismatch" in (result.stdout + result.stderr).lower(),
+                    "build.py fails closed when an approved source's content changes without renewing its manifest hash",
+                )
+            finally:
+                source_path.write_bytes(original_bytes)
+
+        # --- Test 5: editing an approved ENTITY invalidates its approval (mirrors Test 2 for claims) ---
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        first_entity_id = manifest["entities"][0]["entity_id"]
+        entity_path = None
+        for path in (ROOT / "research" / "entities").glob("org-*.json"):
+            obj = json.loads(path.read_text(encoding="utf-8"))
+            if obj.get("entity_id") == first_entity_id:
+                entity_path = path
+                break
+        note(entity_path is not None, "located the canonical file for the first approved manifest entity")
+
+        if entity_path is not None:
+            original_bytes = entity_path.read_bytes()
+            try:
+                tampered = json.loads(original_bytes)
+                tampered["notes"] = (tampered.get("notes") or "") + " (tampered by regression test)"
+                entity_path.write_text(json.dumps(tampered, indent=2), encoding="utf-8")
+                result = run_build()
+                note(
+                    result.returncode != 0 and "hash mismatch" in (result.stdout + result.stderr).lower(),
+                    "build.py fails closed when an approved entity's content changes without renewing its manifest hash",
+                )
+            finally:
+                entity_path.write_bytes(original_bytes)
 
     finally:
         if FIXTURE_PATH.exists() and not fixture_existed_before:

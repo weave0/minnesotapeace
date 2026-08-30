@@ -281,6 +281,19 @@ def index_by_field(directory: Path, glob: str, id_field: str, kind: str) -> dict
     return by_id
 
 
+# Every manifest section (claims, sources, entities) uses the same shape:
+# a list of {<id_field>: ..., "sha256": ...}. Approval attaches to a specific
+# reviewed byte-for-byte version of the file, not merely to its identity --
+# a plain ID allowlist would let someone materially rewrite an
+# already-approved source or entity (including its `notes` field) and have
+# it keep publishing unreviewed, since only the ID would need to still match.
+MANIFEST_SECTIONS = {
+    "claims": "claim_id",
+    "sources": "source_id",
+    "entities": "entity_id",
+}
+
+
 def load_manifest() -> dict:
     if not MANIFEST_PATH.exists():
         raise SystemExit(
@@ -292,59 +305,108 @@ def load_manifest() -> dict:
     if manifest.get("schema_version") != 1:
         raise SystemExit(f"unsupported publication manifest schema_version: {manifest.get('schema_version')!r}")
 
-    seen_claim_ids: set[str] = set()
-    for entry in manifest.get("claims", []):
-        cid = entry.get("claim_id")
-        if not cid or not entry.get("sha256"):
-            raise SystemExit(f"malformed manifest claim entry: {entry!r}")
-        if cid in seen_claim_ids:
-            raise SystemExit(f"duplicate claim id in publication manifest: {cid}")
-        seen_claim_ids.add(cid)
-
-    for label in ("sources", "entities"):
+    for section, id_field in MANIFEST_SECTIONS.items():
         seen: set[str] = set()
-        for ident in manifest.get(label, []):
+        for entry in manifest.get(section, []):
+            ident = entry.get(id_field) if isinstance(entry, dict) else None
+            sha = entry.get("sha256") if isinstance(entry, dict) else None
+            if not ident or not sha:
+                raise SystemExit(
+                    f"malformed manifest {section} entry (expected {{{id_field!r}, 'sha256'}}): {entry!r}"
+                )
             if ident in seen:
-                raise SystemExit(f"duplicate {label[:-1]} id in publication manifest: {ident}")
+                raise SystemExit(f"duplicate {id_field} in publication manifest {section}: {ident}")
             seen.add(ident)
 
     return manifest
 
 
-def resolve_approved_claims(manifest: dict, claim_index: dict[str, Path]) -> list[dict]:
-    approved = []
-    for entry in manifest.get("claims", []):
-        cid = entry["claim_id"]
-        path = claim_index.get(cid)
+def resolve_approved(
+    section: str, manifest: dict, index: dict[str, Path], dir_name: str
+) -> tuple[list[dict], set[str]]:
+    """Validate one manifest section against the files it names.
+
+    Returns (loaded JSON objects in manifest order, set of approved ids).
+    Fatal on: unknown id (manifest names something research/ doesn't have),
+    or hash mismatch (the file changed since it was approved).
+    """
+    id_field = MANIFEST_SECTIONS[section]
+    approved_objs: list[dict] = []
+    approved_ids: set[str] = set()
+    for entry in manifest.get(section, []):
+        ident = entry[id_field]
+        path = index.get(ident)
         if path is None:
             raise SystemExit(
-                f"publication manifest approves claim {cid!r}, but no research/claims/*.json "
-                "file declares that claim_id. Unknown manifest id."
+                f"publication manifest approves {section[:-1]} {ident!r}, but no matching "
+                f"research/{dir_name}/*.json file declares that {id_field}. Unknown manifest id."
             )
         actual_hash = sha256_file(path)
         if actual_hash != entry["sha256"]:
             raise SystemExit(
-                f"publication manifest hash mismatch for {cid!r} ({path.relative_to(ROOT)}).\n"
+                f"publication manifest hash mismatch for {section[:-1]} {ident!r} ({path.relative_to(ROOT)}).\n"
                 f"  manifest sha256: {entry['sha256']}\n"
                 f"  actual   sha256: {actual_hash}\n"
-                "The canonical claim file changed since it was approved for publication. "
-                "Re-review the claim and update its sha256 in "
-                f"{MANIFEST_PATH.relative_to(ROOT)} to renew approval, or revert the claim file."
+                f"The canonical {section[:-1]} file changed since it was approved for publication. "
+                "Re-review it and update its sha256 in "
+                f"{MANIFEST_PATH.relative_to(ROOT)} to renew approval, or revert the file."
             )
-        approved.append(load_json(path))
-    return approved
+        approved_objs.append(load_json(path))
+        approved_ids.add(ident)
+    return approved_objs, approved_ids
 
 
-def resolve_approved_ids(manifest_key: str, manifest: dict, index: dict[str, Path], dir_name: str) -> list[str]:
-    approved = []
-    for ident in manifest.get(manifest_key, []):
-        if ident not in index:
-            raise SystemExit(
-                f"publication manifest approves {manifest_key[:-1]} {ident!r}, but no matching "
-                f"research/{dir_name}/*.json file declares that id. Unknown manifest id."
-            )
-        approved.append(ident)
-    return approved
+def collect_source_references(claims: list[dict], entities: list[dict], cases_specs: list[dict]) -> dict[str, list[str]]:
+    """Every place a source_id can survive slimming into public output.
+
+    Returns {source_id: [human-readable locations citing it]}, so an
+    unapproved reference can be reported with enough context to fix it
+    instead of just failing with a bare id.
+    """
+    refs: dict[str, list[str]] = {}
+
+    def add(source_id: str | None, where: str) -> None:
+        if not source_id:
+            return
+        refs.setdefault(source_id, []).append(where)
+
+    for claim in claims:
+        cid = claim.get("claim_id", "?")
+        for sid in claim.get("source_ids") or []:
+            add(sid, f"claim {cid!r} source_ids")
+        for passage in claim.get("supporting_passages") or []:
+            add(passage.get("source_id"), f"claim {cid!r} supporting_passages")
+
+    for entity in entities:
+        eid = entity.get("entity_id", "?")
+        for sid in entity.get("source_ids") or []:
+            add(sid, f"entity {eid!r} source_ids")
+        for officer in entity.get("officers") or []:
+            for sid in officer.get("source_ids") or []:
+                add(sid, f"entity {eid!r} officer {officer.get('name')!r} source_ids")
+
+    for spec in cases_specs:
+        for sid in spec.get("source_ids") or []:
+            add(sid, f"case {spec.get('id')!r} source_ids")
+
+    return refs
+
+
+def enforce_source_referential_closure(refs: dict[str, list[str]], approved_source_ids: set[str]) -> None:
+    unapproved = {sid: where for sid, where in refs.items() if sid not in approved_source_ids}
+    if not unapproved:
+        return
+    lines = [
+        "publication references source id(s) that are not (or no longer) approved in "
+        f"{MANIFEST_PATH.relative_to(ROOT)}:"
+    ]
+    for sid, where in sorted(unapproved.items()):
+        lines.append(f"  {sid!r} cited by: {', '.join(where)}")
+    lines.append(
+        "Add each source to the manifest's sources section (with its content sha256), "
+        "or remove the citation."
+    )
+    raise SystemExit("\n".join(lines))
 
 
 def docket_key(value: str | None) -> str | None:
@@ -590,35 +652,26 @@ def main() -> None:
     source_index = index_by_field(SOURCES_DIR, "src-*.json", "source_id", "source")
     entity_index = index_by_field(ENTITIES_DIR, "org-*.json", "entity_id", "entity")
 
-    approved_claims_raw = resolve_approved_claims(manifest, claim_index)
-    approved_source_ids = set(resolve_approved_ids("sources", manifest, source_index, "sources"))
-    approved_entity_ids = set(resolve_approved_ids("entities", manifest, entity_index, "entities"))
-
-    # A published claim may not cite a source that isn't itself approved for
-    # publication. Research-only sources (and whatever is in their `notes`)
-    # must not leak into the public record just because an approved claim
-    # points at them.
-    for claim in approved_claims_raw:
-        for source_id in claim.get("source_ids") or []:
-            if source_id not in approved_source_ids:
-                raise SystemExit(
-                    f"claim {claim['claim_id']!r} is approved for publication but cites source "
-                    f"{source_id!r}, which is not in the publication manifest's approved sources. "
-                    "Add it to research/publication/record-v1.json (sources) or remove the citation."
-                )
+    approved_claims_raw, _ = resolve_approved("claims", manifest, claim_index, "claims")
+    approved_sources_raw, approved_source_ids = resolve_approved("sources", manifest, source_index, "sources")
+    approved_entities_raw, approved_entity_ids = resolve_approved("entities", manifest, entity_index, "entities")
 
     claims = [slim_claim(c) for c in approved_claims_raw]
     claims_by_id = {c["claim_id"]: c for c in claims}
+    entities = [slim_entity(e) for e in approved_entities_raw]
+
+    # Referential closure: a published claim, entity (including its officers),
+    # or hardcoded case spec may not cite a source that isn't itself approved
+    # for publication -- at its currently-approved hash. Research-only
+    # sources (and whatever is in their `notes`) must not leak into the
+    # public record just because something approved points at them.
+    source_refs = collect_source_references(claims, entities, CASES)
+    enforce_source_referential_closure(source_refs, approved_source_ids)
 
     sources = {
-        source_id: slim_source(load_json(source_index[source_id]))
-        for source_id in sorted(approved_source_ids)
+        src["source_id"]: slim_source(src)
+        for src in approved_sources_raw
     }
-
-    entities = [
-        slim_entity(load_json(entity_index[entity_id]))
-        for entity_id in sorted(approved_entity_ids)
-    ]
 
     extracts: dict[str, dict] = {}
     for path in sorted(EXTRACTS_DIR.glob("*.json")):

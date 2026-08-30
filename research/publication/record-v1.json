@@ -185,42 +185,147 @@
     }
   ],
   "sources": [
-    "src-ago-fof-dissolution-petition-copy",
-    "src-house-oversight-2026-01-29-emily-honer-interview",
-    "src-house-oversight-2026-02-03-daron-korte-interview",
-    "src-irs-990-fof-fy2020",
-    "src-irs-990-pin-fy2021",
-    "src-irs-bmf-mn-2026-08",
-    "src-mn-judicial-2022-09-23-fof-guthmann-correction",
-    "src-mn-ola-2024-fof-oversight",
-    "src-mn-sos-mbls-2026-08-26",
-    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
-    "src-mncro-62-cv-20-5492-register-of-actions",
-    "src-mncro-62-cv-20-5492-reply-2021-04-30",
-    "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
-    "src-mnd-22-cr-00124-ecf57-farah-superseding",
-    "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
-    "src-mnd-25-cr-00349-ecf1-aden-indictment",
-    "src-mnd-25-cr-00351-ecf1-falade-indictment",
-    "src-mnd-25-cr-00354-adow-asad-recap-gap",
-    "src-mnd-25-cr-00479-ecf1-hussein-indictment",
-    "src-mnd-25-cr-00482-ecf1-sallah-indictment",
-    "src-propublica-fof-814343304",
-    "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
-    "src-us-v-adow-anwar-25cr353-ecf1"
+    {
+      "source_id": "src-ago-fof-dissolution-petition-copy",
+      "sha256": "36382936aaae4f9ff1916af1dd7b37ea9cd1f959af1c823c8f3c2289a81ed587"
+    },
+    {
+      "source_id": "src-house-oversight-2026-01-29-emily-honer-interview",
+      "sha256": "4247b83d4ec5e6eafd474f91b653c0cd052f6c0cb50bf52f652b265f85ba909f"
+    },
+    {
+      "source_id": "src-house-oversight-2026-02-03-daron-korte-interview",
+      "sha256": "7b8e54eb32c674e67585e63f9258d8e39ac89c4d02b61a57d88b83eea4212b90"
+    },
+    {
+      "source_id": "src-irs-990-fof-fy2020",
+      "sha256": "fbf48ba33ddf10432b9c979f5ad765376c73d5727128860766bc6bb6898a59b2"
+    },
+    {
+      "source_id": "src-irs-990-pin-fy2021",
+      "sha256": "4d79bac4d93cb671e21040d46d7abc67944a166d602b0cf28aa87b8a97c08318"
+    },
+    {
+      "source_id": "src-irs-bmf-mn-2026-08",
+      "sha256": "ecade5d80b203c7131b279266eff5288396dc7cec1c1eec82e39d68c9cad1edb"
+    },
+    {
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "sha256": "d5f36954d9aa4d5e23413ae73e1a6c7526457f949d68421477c13637ee20e3c3"
+    },
+    {
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "sha256": "0386eca817063335dde9751f3f8c08c71c362f545bfff52a7e35a5714611cdb6"
+    },
+    {
+      "source_id": "src-mn-sos-mbls-2026-08-26",
+      "sha256": "b2b7afb7a17fcfb60ec9bd19c9a3aa0bf151feae37b07dec5a54506bcd4f1cc4"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "sha256": "40cc01bd4aa387cc5a432bb7e8bace444ef21287affd8cb0fd489eb0aeb214c6"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
+      "sha256": "af218455ec6979e675388f2c57fe4658ad8df86947f957f0882508e77a1dd6e3"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-reply-2021-04-30",
+      "sha256": "653e9b9d5335f02013eec73f1988ebbb97b114a211aea06c458dc7cfa61a1d76"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+      "sha256": "7a8000af32c7d2caf68f1dcdf34136b5511124758cdd66056642b5fac1c9b4e6"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "sha256": "b2ce37b0172b6f46afbce49f14cab9918cc5e51492b1a2bfaf2885e99a791abd"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "sha256": "44991e23715a2d95ea7d570ed1bf97eb0e307c8175c8778db59a6e56d7522f1c"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "sha256": "43390eb12d2d98d14ecf60c7e6d0573b1daef55c2288398f9be936de1658b515"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00351-ecf1-falade-indictment",
+      "sha256": "eda1b87964a62fa53ccbadd6abd99f5cc93a5356e13db9ae85015acb20b97c70"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00354-adow-asad-recap-gap",
+      "sha256": "57882900792e4d398553e728d940a1be95a7aace8112489cbd67a12c423a4f03"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "sha256": "8931c95d24c57c2d1107c2848685ea946bee3b219f3252ecd9e68f4fa7896828"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "sha256": "ebed7f3b0c2ef58564516026b99688181bbac4daff1150c28b91d8ed066e8055"
+    },
+    {
+      "source_id": "src-propublica-fof-814343304",
+      "sha256": "6bd4de1c5225a669d75b2ba75786ba35b72477a3bcd85fa7ef53993fa024c403"
+    },
+    {
+      "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+      "sha256": "acada626de7bd48dfba589b1196c40f09f1671d0b854a1b10f7c349d2520cb6e"
+    },
+    {
+      "source_id": "src-us-v-adow-anwar-25cr353-ecf1",
+      "sha256": "c6f84ddbba9ef22f63a1f8743469a94bed6c1b16f827f6aeed7193dd8f3ef10b"
+    }
   ],
   "entities": [
-    "org-bet-on-better-future",
-    "org-brilliant-minds-services",
-    "org-empire-cuisine-and-market",
-    "org-faladcare-inc",
-    "org-faladcare-llc",
-    "org-feeding-our-future",
-    "org-feeding-our-future-ii",
-    "org-foundation-first-services",
-    "org-leo-human-services",
-    "org-liberty-plus",
-    "org-mn-department-education",
-    "org-partners-in-nutrition"
+    {
+      "entity_id": "org-bet-on-better-future",
+      "sha256": "600265a099349fde82ab333f2a7b9c0277670e27af1565e76b2aad8bd7ef0ac6"
+    },
+    {
+      "entity_id": "org-brilliant-minds-services",
+      "sha256": "68d5dc6f19c623520e2a22501c708cea5779e0cb992272396441309a24888b48"
+    },
+    {
+      "entity_id": "org-empire-cuisine-and-market",
+      "sha256": "52e75d2fe988365064304d6667145ed44a7bcefc6e32e03fd0e9a6d488303be9"
+    },
+    {
+      "entity_id": "org-faladcare-inc",
+      "sha256": "7104e1fc99b7d5dc68b9c363a131c49a8119a6cc49ff10baa98ca45837e320ea"
+    },
+    {
+      "entity_id": "org-faladcare-llc",
+      "sha256": "25fcb93b2bc3dae16abb5bf6e9d1d440394f5532b63f7dfe1279119e84778dc0"
+    },
+    {
+      "entity_id": "org-feeding-our-future",
+      "sha256": "746bcafbb6cacf5369a7295a444cfdb27609410ba17b651e4528646b4abb5943"
+    },
+    {
+      "entity_id": "org-feeding-our-future-ii",
+      "sha256": "742c8a14d8bb64ef8379f90751255ce80f0f2840365eb1f7a60b4de9282706ac"
+    },
+    {
+      "entity_id": "org-foundation-first-services",
+      "sha256": "3fa5d6ffb1f4e45c3f34afb7f9d468845a81215a05c29333f17291aed3a4d9ae"
+    },
+    {
+      "entity_id": "org-leo-human-services",
+      "sha256": "e250f475231f18dcb3c4c62078a3ea3e3ca1f0902212c4d86a8c377ea6dc5fbb"
+    },
+    {
+      "entity_id": "org-liberty-plus",
+      "sha256": "dc0b5bd14f8d886132f6cdab4e4b7639deb9de7a43a5c0bb9b3c1bbf8f74d956"
+    },
+    {
+      "entity_id": "org-mn-department-education",
+      "sha256": "a219c19d5898e6c9bdcd1d8da176b239a02fb0bff6efa1f1b82fd5b0ac4ae61e"
+    },
+    {
+      "entity_id": "org-partners-in-nutrition",
+      "sha256": "77b86d8efbd28b9ff43784b45f8ab86f7584a184669318e164efc16d2bc070bb"
+    }
   ]
 }
