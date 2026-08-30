@@ -1,0 +1,35 @@
+{
+  "source_id": "src-hhs-oig-2025-05-20-nuway-corporate-integrity-agreement",
+  "canonical_url": "https://oig.hhs.gov/documents/cias/10847/Nuway_05202025.pdf",
+  "index_url": "https://oig.hhs.gov/compliance/corporate-integrity-agreements/browse-cias/nuway/",
+  "issuing_body": "U.S. Department of Health and Human Services, Office of Inspector General",
+  "title": "Corporate Integrity Agreement Between HHS-OIG and NUWAY",
+  "publication_date": "2025-05-20",
+  "retrieval_date": "2026-08-29",
+  "document_type": "corporate_integrity_agreement",
+  "jurisdiction": "Federal health care programs / Minnesota Medicaid provider",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_COMPLIANCE_AGREEMENT",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "supports": [
+    "NUWAY entered a five-year Corporate Integrity Agreement with HHS-OIG contemporaneously with its federal settlement.",
+    "The CIA covers NUWAY Alliance and specified NUWAY counseling entities and requires compliance with Medicare, Medicaid, and other Federal health-care program requirements.",
+    "Within 90 days NUWAY must establish or maintain formal compliance governance including a Compliance Officer, Compliance Committee, Board oversight, management certifications, written standards, training, risk assessment, and a disclosure program.",
+    "NUWAY must engage an Independent Review Organization within 90 days to perform reviews required by the CIA.",
+    "The Claims Review population consists of Medicaid Paid Claims for the relevant 12-month reporting period, subject to OIG discretion to select subsets.",
+    "For each Claims Review the IRO must draw a random sample of 100 Paid Claims and evaluate medical necessity, documentation, coding, submission, and reimbursement under Medicaid requirements.",
+    "A sampled claim without supporting documentation is treated as an error and its full reimbursement as an Overpayment for the CIA claims-review methodology.",
+    "The IRO must estimate the actual Overpayment in the population using a point estimate and two-sided 90 percent confidence interval; NUWAY must repay the lower limit of that confidence interval within 60 days after receiving the Claims Review Report.",
+    "The CIA requires annual reporting and permits HHS-OIG enforcement remedies, including stipulated penalties and potential exclusion procedures for material breach."
+  ],
+  "important_qualifications": [
+    "A Corporate Integrity Agreement is a compliance obligation associated with a civil resolution; it is not itself a criminal conviction.",
+    "Claims-review error and overpayment determinations under the CIA are compliance/payment measures and should not automatically be labeled criminal fraud.",
+    "The CIA's five-year term is distinct from the $18.5M settlement amount; the agreement should be used to track compliance outcomes over time rather than treated as another monetary recovery."
+  ],
+  "locators": [
+    "CIA pp.1-2 preamble, parties, five-year term",
+    "CIA pp.3-8 compliance governance, training, IRO and risk assessment",
+    "CIA Appendix B pp.26-29 Claims Review sample, documentation, overpayment estimation and repayment"
+  ]
+}
