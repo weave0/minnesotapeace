@@ -1,0 +1,38 @@
+{
+  "source_id": "src-house-oversight-2026-01-29-emily-honer-interview",
+  "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Emily-Honer-Transcript.pdf",
+  "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+  "title": "Transcribed Interview of Emily Honer",
+  "publication_date": "2026-06-01",
+  "document_date": "2026-01-29",
+  "retrieval_date": "2026-08-29",
+  "document_type": "congressional_transcribed_interview",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+  "evidence_class": "TRANSCRIBED_INTERVIEW",
+  "interview_status": {
+    "voluntary": true,
+    "sworn": false,
+    "truthfulness_warning": "Committee staff stated that although Honer would not be sworn, federal law required truthful answers to Congress and congressional staff and knowingly false statements could be criminally prosecuted.",
+    "counsel_present": true,
+    "locator": "PDF pp.5-6, extracted lines 116-144"
+  },
+  "supports": [
+    "Honer testified that a formal complaint to USDA OIG regarding Feeding Our Future was made around October 2020 and that she helped Monica Herrera prepare it.",
+    "Honer testified that from roughly November 2020 through February 2021 she continued advocating for USDA OIG assistance and found USDA OIG's response insufficient, describing the response as absent.",
+    "Honer testified that her FBI conversations concerning Feeding Our Future began around March 2021 and recurred approximately every two to four weeks, with concerns about Feeding Our Future's growth and a need for investigative assistance after MDE had used available administrative tools.",
+    "Honer recalled the U.S. Attorney's Office becoming involved around August or September 2021 and said DOJ did not instruct MDE to continue funding Feeding Our Future despite outstanding concerns.",
+    "Honer testified that to her recollection she did not hear back from USDA OIG about Feeding Our Future until after the January 2022 FBI raids became public, and recalled USDA OIG seeking to work with MDE in summer 2022.",
+    "Honer said MDE leadership was largely supportive of the FBI investigation once the FBI became involved."
+  ],
+  "selected_locators": [
+    "PDF pp.23-26, extracted lines 566-626: October 2020 USDA OIG complaint, subsequent advocacy, FBI/USAO contact chronology",
+    "PDF pp.134-135, extracted lines 3322-3361: stop-pay context, FBI public investigation, lack of USDA OIG response until after raids"
+  ],
+  "important_qualifications": [
+    "This interview was not sworn; it is classified TRANSCRIBED_INTERVIEW because the Committee expressly imposed a legal duty of truthful response and warned of false-statement prosecution.",
+    "Honer's statements about what USDA OIG did or did not do are her recollections; a USDA OIG work product, referral log, or correspondence would be the stronger independent source for USDA OIG's actions.",
+    "The interview materially corroborates OLA's record that MDE reported a late-2020 USDA OIG referral, but does not by itself establish USDA OIG's internal handling of the referral.",
+    "Honer distinguished the FBI relationship from payment authority; she said she did not discuss canceling funding with the FBI and that DOJ did not instruct MDE to continue funding."
+  ]
+}

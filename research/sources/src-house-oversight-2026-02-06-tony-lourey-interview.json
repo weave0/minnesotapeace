@@ -1,0 +1,39 @@
+{
+  "source_id": "src-house-oversight-2026-02-06-tony-lourey-interview",
+  "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Tony-Lourey-Transcript.pdf",
+  "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+  "title": "Transcribed Interview of Tony Lourey",
+  "publication_date": "2026-06-01",
+  "document_date": "2026-02-06",
+  "retrieval_date": "2026-08-29",
+  "document_type": "congressional_transcribed_interview",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+  "evidence_class": "TRANSCRIBED_INTERVIEW",
+  "interview_status": {
+    "voluntary": true,
+    "sworn": false,
+    "truthfulness_warning": "Committee staff stated that although Lourey would not be sworn, federal law required truthful answers to Congress and congressional staff and knowingly false statements could be criminally prosecuted.",
+    "counsel_present": true,
+    "locator": "PDF pp.5-6, extracted lines 114-141"
+  },
+  "supports": [
+    "Lourey testified that during his 2019 tenure as DHS commissioner he communicated with then-chief of staff Christopher Schmitter about program-integrity concerns and the oversight tools and authority DHS needed for medication-assisted therapy, nonemergency medical transportation, and Child Care Assistance Program issues.",
+    "Lourey said he could not speak to conversations he was not involved in and therefore could not say whether Schmitter passed those concerns to Governor Walz.",
+    "When explicitly asked to speculate whether program-integrity concerns at that level likely would have been brought to the Governor's attention, Lourey said it was likely. That response is speculation, not personal-knowledge testimony.",
+    "Lourey testified that he did not recall resistance from Governor's-office staff to raising fraud/program-integrity concerns and did not know of Governor's-office staff who pushed back on efforts to strengthen anti-fraud tools.",
+    "Lourey denied that Walz or Ellison directed him to ignore fraud and said he had no reason to believe either knowingly ignored fraud in DHS-administered programs.",
+    "Lourey testified that his resignation from DHS was unrelated to fraud or the Walz administration's handling of fraud."
+  ],
+  "selected_locators": [
+    "PDF pp.13-16, extracted lines 316-390: fraud/program-integrity discussions and no recalled pushback",
+    "PDF pp.39-40, extracted lines 971-996: 2019 Schmitter communications and explicit speculation about Governor notice",
+    "PDF pp.90-92, extracted lines 2200-2233: resignation unrelated to fraud",
+    "PDF pp.96-97, extracted lines 2348-2361: denials of direction to ignore fraud"
+  ],
+  "important_qualifications": [
+    "This interview was not sworn; it is classified TRANSCRIBED_INTERVIEW because the Committee expressly imposed a legal duty of truthful response and warned of false-statement prosecution.",
+    "Lourey's statement that Governor notice was 'likely' was given only after the questioner expressly asked him to speculate. It must not be presented as a statement of personal knowledge that Walz was briefed.",
+    "The interview does establish 2019 program-integrity communications between Lourey and Schmitter at the Governor's-office level, but it does not close the notice chain from Schmitter to Walz."
+  ]
+}

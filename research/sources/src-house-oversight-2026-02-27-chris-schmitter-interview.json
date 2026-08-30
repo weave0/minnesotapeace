@@ -1,0 +1,39 @@
+{
+  "source_id": "src-house-oversight-2026-02-27-chris-schmitter-interview",
+  "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Chris-Schmitter-Transcript.pdf",
+  "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+  "title": "Transcribed Interview of Christopher Schmitter",
+  "publication_date": "2026-06-01",
+  "document_date": "2026-02-27",
+  "retrieval_date": "2026-08-29",
+  "document_type": "congressional_transcribed_interview",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+  "evidence_class": "TRANSCRIBED_INTERVIEW",
+  "interview_status": {
+    "voluntary": true,
+    "sworn": false,
+    "truthfulness_warning": "Committee staff stated that although Schmitter would not be sworn, federal law required truthful answers to Congress and congressional staff and knowingly false statements could be criminally prosecuted.",
+    "counsel_present": true,
+    "locator": "PDF pp.4-5, extracted lines 107-130"
+  },
+  "supports": [
+    "Schmitter testified that as Governor Walz's chief of staff he believed the Governor's office was generally aware of Feeding Our Future litigation in 2020, but he did not remember exactly what the office knew or when.",
+    "Schmitter said he did not remember being briefed in April 2020 when MDE denied Feeding Our Future site applications or when Feeding Our Future served MDE with a draft complaint and litigation hold.",
+    "Schmitter said the first time he personally remembered serious criminal-fraud allegations involving Feeding Our Future was around the January 2022 federal raids.",
+    "Schmitter said he could not recall the Governor's office being involved in MDE's voluntary resumption of Feeding Our Future payments in 2021.",
+    "Schmitter denied that he or Walz discouraged fraud reporting, fraud investigations, or criminal referrals, and denied that Walz or Ellison directed him to ignore fraud.",
+    "Schmitter said he had no reason to believe Walz was aware of fraud within MDE- or DHS-administered programs and chose to ignore it."
+  ],
+  "selected_locators": [
+    "PDF pp.97-99, extracted lines 2387-2429: 2020 FOF litigation/general awareness and no recalled April 2020 briefing",
+    "PDF pp.103-105, extracted lines 2543-2576: voluntary payment resumption and Governor's-office involvement",
+    "PDF pp.126-127, extracted lines 3097-3119: fraud-reporting/ignore-fraud denials"
+  ],
+  "important_qualifications": [
+    "This interview was not sworn. It is classified TRANSCRIBED_INTERVIEW because the Committee expressly warned that truthful answers were legally required and knowingly false statements could be prosecuted.",
+    "Schmitter repeatedly qualified answers by lack of present recollection. A lack of recollection is not proof an event did not occur.",
+    "His denial of personal knowledge or direction is evidence of his account, not an independent finding that no other documentary record exists.",
+    "His understanding of court/payment events does not override the Minnesota Judicial Branch's primary correction that Judge Guthmann did not order MDE to resume reimbursements."
+  ]
+}
