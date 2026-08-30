@@ -1,0 +1,37 @@
+{
+  "reviewed_at": "2026-08-30T20:25:00Z",
+  "created_at": "2026-08-30T20:25:00Z",
+  "updated_at": "2026-08-30T20:25:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-hassan-22cr224-ecf1-wire-fraud-conspiracy-statute",
+  "claim_text": "The original September 13, 2022 indictment in United States v. Qamar Ahmed Hassan et al., No. 0:22-cr-00224 (ECF 1), charges Count 1 conspiracy to commit wire fraud in violation of 18 U.S.C. §§ 371 and 1343. It does not charge Count 1 under 18 U.S.C. § 1349.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:22-cr-00224",
+  "event_date": "2022-09-13",
+  "source_ids": [
+    "src-mnd-22-cr-00224-ecf1-hassan-indictment"
+  ],
+  "statutes": [
+    "18 U.S.C. § 371",
+    "18 U.S.C. § 1343"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mnd-22-cr-00224-ecf1-hassan-indictment",
+      "page": 8,
+      "locator": "Count 1",
+      "quote": "in violation of Title 18, United States Code, Sections 371 and 1343"
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "case-specific statute finding only",
+    "do not generalize absence of § 1349 to charging instruments not yet checked"
+  ]
+}
