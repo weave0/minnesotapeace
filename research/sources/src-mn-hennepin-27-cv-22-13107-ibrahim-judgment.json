@@ -1,0 +1,74 @@
+{
+  "source_id": "src-mn-hennepin-27-cv-22-13107-ibrahim-judgment",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/docs/13107_Ibrahim_Judgment.pdf",
+  "press_release_url": "https://www.ag.state.mn.us/Office/Communications/2026/06/12_Ibrahim.asp",
+  "issuing_body": "Minnesota District Court, Hennepin County, Fourth Judicial District",
+  "title": "Order for Judgment, Minnesota Department of Education v. Emadeldin Ibrahim, Court File No. 27-CV-22-13107",
+  "publication_date": "2026-06-09",
+  "retrieval_date": "2026-08-29",
+  "document_type": "civil_order_for_judgment",
+  "case_number": "27-CV-22-13107",
+  "judge": "Laura M. Thomas",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_CIVIL",
+  "supports": [
+    "The court ordered judgment for the Minnesota Department of Education against Emadeldin Ibrahim in the amount of $2,481,310.08 plus prejudgment interest.",
+    "The jury's April 23, 2026 unanimous verdict found Ibrahim knowingly submitted 90,636 false or fraudulent claims in 2021 under the Minnesota False Claims Act.",
+    "The court states MDE incurred $188,350.84 in damages from Ibrahim's false claims submitted through the At-Risk Afterschool Meal component of CACFP.",
+    "The court trebled compensatory damages to $565,052.52 under Minn. Stat. § 15C.02(a).",
+    "The court imposed a $1,695,157.56 civil penalty, applying a 9:1 ratio to the $188,350.84 compensatory damages after considering the Excessive Fines Clause and Minnesota/Eighth Circuit authority.",
+    "The court awarded $220,700 in attorneys' fees and $400 in court costs, totaling $221,100 in fees/costs.",
+    "The order states the court held $106,978.10 previously deposited by Wells Fargo and that a separate order releasing those funds to MDE would issue after entry of judgment."
+  ],
+  "money": [
+    {
+      "amount": 2481310.08,
+      "currency": "USD",
+      "metric_type": "civil_judgment",
+      "notes": "Order for judgment amount excluding prejudgment interest to be calculated separately."
+    },
+    {
+      "amount": 188350.84,
+      "currency": "USD",
+      "metric_type": "proven_civil_damages",
+      "notes": "Jury-found MDE damages from false claims; this amount is included in the treble-damages calculation and must not be added again to the total judgment."
+    },
+    {
+      "amount": 565052.52,
+      "currency": "USD",
+      "metric_type": "treble_damages",
+      "notes": "Three times the $188,350.84 compensatory damages; component of the total judgment."
+    },
+    {
+      "amount": 1695157.56,
+      "currency": "USD",
+      "metric_type": "civil_penalty",
+      "notes": "Component of the total judgment."
+    },
+    {
+      "amount": 221100,
+      "currency": "USD",
+      "metric_type": "attorneys_fees_and_costs",
+      "notes": "Component of the total judgment: $220,700 attorneys' fees + $400 court costs."
+    },
+    {
+      "amount": 106978.10,
+      "currency": "USD",
+      "metric_type": "funds_held_pending_release",
+      "notes": "Court states these funds were already held and a separate release order to MDE would issue; do not treat the full $2.48M judgment as collected."
+    }
+  ],
+  "important_qualifications": [
+    "This is a civil Minnesota False Claims Act adjudication, not a criminal conviction.",
+    "The total judgment components are nested and must not be summed on top of the $2,481,310.08 total.",
+    "Judgment entered is not the same as judgment collected. The order itself identifies only $106,978.10 as funds already held by the court pending release, not full satisfaction of the judgment.",
+    "This CACFP case is separate from Feeding Our Future unless a source establishes a direct case relationship."
+  ],
+  "locators": [
+    "PDF p.1 order for $2,481,310.08 plus prejudgment interest",
+    "PDF p.2 jury damages and treble damages",
+    "PDF pp.2-4 civil-penalty analysis",
+    "PDF pp.4-5 attorneys' fees/costs and $106,978.10 held funds"
+  ]
+}
