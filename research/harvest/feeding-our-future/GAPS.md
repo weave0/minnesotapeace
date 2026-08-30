@@ -1,6 +1,6 @@
 # Feeding Our Future — Gaps
 
-What this collection could **not** verify in a primary source as of 2026-08-26. Journalism and ChatGPT claims are noted as leads, not as facts.
+What this collection could **not** verify in a primary source as of 2026-08-29. Journalism and ChatGPT claims are noted as leads, not as facts.
 
 ---
 
@@ -84,3 +84,12 @@ Local copies under `primary/`:
 - `ola-2024-mdefof.txt` (extracted text)
 - `mncourts-guthmann-2022-09-23.html`
 - `bock-said-order-acquittal-2025-08-22.pdf` (Brasel, Aug 22, 2025)
+
+## 13. April 2021 MDE payment-resumption decision record
+
+- **Substantially resolved as to event, date, decision path, and remembered rationale.** OLA records that MDE removed the Feeding Our Future stop-pay on **2021-04-30**, nine days after the April 21 Ramsey County hearing, and says MDE did so because of the court's April 21 statements. The Minnesota Judicial Branch independently confirms the court never ordered payment resumption and that MDE resumed voluntarily.
+- A newly captured primary congressional transcribed interview with then-MDE Assistant Commissioner **Daron Korte** (`src-house-oversight-2026-02-03-daron-korte-interview`) supplies the participant-level chain that was previously missing. Korte recalled the internal decision included himself, **Monica Herrera**, and **Emily Honer**; he said then-Commissioner **Heather Mueller** was informed how MDE would proceed rather than asked for approval; and he said the Attorney General attorneys representing MDE in the lawsuit were involved.
+- Korte said he did **not** think the Governor's Office participated in making the decision, although he would have updated its education policy and legal advisers. Preserve that distinction: notification is not decision-making or direction.
+- Korte's stated rationale was that MDE believed forcing a judicial ruling was highly likely to produce the same substantive outcome plus additional contempt/attorney-fee sanctions. He also recalled that MDE expected or knew of federal law-enforcement involvement and hoped resumed payments would be short-lived until the FBI/U.S. Attorney's Office intervened. He said the FBI never instructed MDE to resume payments.
+- Honer's separate transcribed interview corroborates the March 31 stop-pay and lack of a final court ruling, but she did **not** remember the post-hearing deliberations about whether the stop-pay would continue. That memory limit should not be converted into either corroboration or contradiction of Korte's account.
+- **Still open:** no contemporaneous internal MDE email chain, meeting notes, memorandum, or stipulation memorializing the April 30 decision has been captured. Korte said he did not believe he signed such a document. The exact substance of any privileged advice from the Attorney General's litigating attorneys also remains unavailable. The complete Ramsey County docket/orders remain a related primary-record gap under item 9.
