@@ -1,0 +1,42 @@
+{
+  "source_id": "src-mn-ag-2026-08-17-armhs-pca-charges",
+  "canonical_url": "https://ag.state.mn.us/Office/Communications/2026/08/17_Medicaid-Fraud.asp",
+  "issuing_body": "Minnesota Attorney General, Medicaid Fraud Control Unit",
+  "title": "Attorney General Ellison announces criminal charges involving over $1.5 million in Medicaid fraud",
+  "publication_date": "2026-08-17",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "jurisdiction": "Minnesota state courts",
+  "access_status": "live_official_host",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_ENFORCEMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "Salman Ahmed Elmi was charged with eight felony theft offenses related to Reva Health and more than $1 million in Medicaid-funded ARMHS services alleged to have been unprovided or ineligible.",
+    "The Reva Health allegations include falsified documentation, recipient kickbacks, use of ineligible providers, and claims of supervision the AG says was inadequate.",
+    "Mohamed Haji Rashid was charged with nine felony theft offenses related to Liberty Home Health Care and more than $300,000 in Medicaid-funded services alleged to have been unprovided or ineligible.",
+    "The AG says Liberty billed PCA services not provided on more than 3,300 occasions.",
+    "The AG describes the Elmi and Rashid matters as separate and independent cases."
+  ],
+  "money": [
+    {
+      "amount": 1000000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "qualifier": "more_than",
+      "subject": "Reva Health / Salman Ahmed Elmi"
+    },
+    {
+      "amount": 300000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "qualifier": "more_than",
+      "subject": "Liberty Home Health Care / Mohamed Haji Rashid"
+    }
+  ],
+  "does_not_support": [
+    "Charges are allegations and do not establish guilt.",
+    "Do not merge the two cases into one conspiracy.",
+    "Do not add the AG's combined headline amount to the two component allegations as a separate loss."
+  ]
+}
