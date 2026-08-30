@@ -1,0 +1,61 @@
+{
+  "source_id": "src-gpo-2026-01-07-mn-fraud-hearing-part-i",
+  "canonical_url": "https://www.govinfo.gov/app/details/CHRG-119hhrg62434/CHRG-119hhrg62434",
+  "transcript_url": "https://www.govinfo.gov/content/pkg/CHRG-119hhrg62434/pdf/CHRG-119hhrg62434.pdf",
+  "issuing_body": "U.S. Government Publishing Office / U.S. House Committee on Oversight and Government Reform",
+  "title": "Oversight of Fraud and Misuse of Federal Funds in Minnesota: Part I",
+  "publication_date": "2026-01-07",
+  "retrieval_date": "2026-08-29",
+  "document_type": "official_congressional_hearing_transcript",
+  "serial_number": "119-54",
+  "congress": "119th Congress, Second Session",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_HEARING_TRANSCRIPT",
+  "evidence_class": "MIXED_SWORN_TESTIMONY_AND_LEGISLATIVE_STATEMENTS",
+  "witnesses": [
+    {
+      "name": "Kristin Robbins",
+      "role": "Minnesota House Representative; Chair, Fraud Prevention and State Agency Oversight Policy Committee",
+      "sworn": true
+    },
+    {
+      "name": "Walter Hudson",
+      "role": "Minnesota House Representative; member, Fraud Prevention and State Agency Oversight Policy Committee",
+      "sworn": true
+    },
+    {
+      "name": "Marion Rarick",
+      "role": "Minnesota House Representative; member, Fraud Prevention and State Agency Oversight Policy Committee",
+      "sworn": true
+    },
+    {
+      "name": "Brendan Ballou",
+      "role": "Former Special Counsel, U.S. Department of Justice; minority witness",
+      "sworn": true
+    }
+  ],
+  "oath_locator": "GPO transcript p.12, lines 459-465 in the extracted PDF text: Committee Rule 9(g) oath; transcript records a chorus of affirmative answers.",
+  "supports": [
+    "The official hearing record confirms all four witnesses testified under oath.",
+    "Robbins testified that Minnesota had documented fraud/control concerns predating the Walz administration and offered her opinion that Governor Walz knew about fraud from the beginning of his term.",
+    "Hudson testified to his opinion that Minnesota political incentives contributed to inadequate fraud response. The hearing itself labels the relevant exchange as his opinion and does not independently prove motive.",
+    "Rarick testified that whistleblowers reported retaliation, blacklisting, threats, and surveillance-related concerns. These remain sworn allegations unless independently corroborated by personnel, investigative, judicial, or audit records.",
+    "Ballou acknowledged serious Minnesota public-program fraud and the federal prosecutions while arguing for broader national context and warning against using those crimes to stigmatize an entire community.",
+    "The transcript records committee discussion repeatedly presenting the approximately $9 billion Medicaid estimate as though it were established fraud; the hearing does not supply an audit or adjudication validating that amount as proven loss."
+  ],
+  "selected_locators": [
+    "p.12: witness identities and oath, extracted lines 447-465",
+    "pp.16-17: Rarick opening testimony describing whistleblower retaliation allegations, extracted lines 650-675",
+    "p.17: Ballou opening testimony on FOF and later Medicaid prosecutions, extracted lines 679-700",
+    "pp.20-21: Robbins/Hudson/Rarick testimony on knowledge and alleged political motive, extracted lines 807-855",
+    "pp.42-43: Rarick testimony alleging whistleblower retaliation, extracted lines 1814-1845",
+    "pp.94-95: discussion of the $9B estimate, extracted lines 4188-4240"
+  ],
+  "does_not_support": [
+    "A witness's opinion about political motive is not proof of criminal intent or conspiracy by an elected official.",
+    "Sworn testimony is a primary record of what the witness said; it does not make every underlying factual assertion independently verified.",
+    "Questions or assertions made by committee members are legislative statements, not witness admissions or adjudicated facts.",
+    "The hearing does not establish $9 billion as audited, adjudicated, or proven Minnesota Medicaid fraud.",
+    "Generalized demographic or partisan assertions in the hearing should not be used to infer wrongdoing by communities, political groups, or individuals."
+  ]
+}
