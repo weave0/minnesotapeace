@@ -1,0 +1,63 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-mahamud-26cr097-program-amounts",
+  "claim_text": "The May 20, 2026 Information in United States v. Fahima Egeh Mahamud alleges two program-specific dollar figures that must remain separate: Future Leaders received more than $850,000 in Federal Child Nutrition Program funds through Feeding Our Future between approximately January and July 2021, while Future Leaders submitted approximately $4.6 million in Child Care Assistance Program reimbursement claims between approximately October 2022 and December 2025 in the separate alleged co-payment scheme. The first figure is program funds received; the second is claims submitted. Neither is a proven-loss figure, and they should not be collapsed into a single Feeding Our Future loss total.",
+  "claim_type": "AMOUNT",
+  "status": "alleged",
+  "case_number": "0:26-cr-00097-JWB",
+  "source_ids": [
+    "src-doj-criminal-2026-05-20-mahamud-information"
+  ],
+  "date_start": "2021-01-01",
+  "date_end": "2025-12-31",
+  "supporting_passages": [
+    {
+      "source_id": "src-doj-criminal-2026-05-20-mahamud-information",
+      "page": 8,
+      "locator": "para 32",
+      "quote": "Future Leaders received more than $850,000 in Federal Child Nutrition Program funds"
+    },
+    {
+      "source_id": "src-doj-criminal-2026-05-20-mahamud-information",
+      "page": 10,
+      "locator": "para 38",
+      "quote": "submitted claims for reimbursement from CCAP in the amount of approximately $4.6 million"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 850000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "period_start": "2021-01-01",
+      "period_end": "2021-07-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mahamud-future-leaders-fcnp-receipts-2021",
+      "methodology": "Charging document states more than $850,000 received; $850,000 is stored as the stated threshold and must be displayed as more-than/approximate, not as an exact total."
+    },
+    {
+      "value": 4600000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "period_start": "2022-10-01",
+      "period_end": "2025-12-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mahamud-future-leaders-ccap-claims-2022-2025",
+      "methodology": "Charging document states approximately $4.6 million in CCAP reimbursement claims; this is a claims figure, not automatically amount_paid or proven_loss."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED, not ADJUDICATED",
+    "The child-nutrition and CCAP figures concern different programs, periods, and alleged conduct",
+    "Do not sum these into a Feeding Our Future scheme-wide total",
+    "The $850,000 stored value represents a source-stated lower threshold ('more than'), not an exact amount"
+  ]
+}
