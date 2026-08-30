@@ -25,11 +25,11 @@ What this collection could **not** verify in a primary source as of 2026-08-30. 
 - Keep this sentence distinct from Farah's separate 2025 Feeding Our Future fraud sentence. The USAO release itself does not establish how the terms run relative to one another; use the judgment if concurrency/consecutiveness is material.
 - The older journalism-only gap is closed. No further open-source chase is needed merely to prove the 120-month sentence existed.
 
-## 4. Full indictment PDFs (PACER)
+## 4. Charging instruments / original indictment PDFs — PARTIALLY RESOLVED
 
-- CourtListener/RECAP opinions and motions quoting the 61-count Bock indictment were fetched (S22, S24).
-- The **original indictment PDFs** (ECF 1 in 22-CR-223, 22-CR-124, etc.) were not downloaded in full from PACER.
-- Consequently **18 U.S.C. § 1349** was **not found** in fetched charging text. Conspiracy is charged in the documents we have as **§ 371 + § 1343**, plus § 666, § 1956(a), § 1957, and juror bribery **§ 201**. Passport false-statement statute number for Abdiaziz Farah was not captured.
+- **22-CR-124 superseding indictment is fully captured.** The 48-page September 13, 2022 superseding indictment at **ECF 57** is already in the corpus with a canonical extract (`research/court/extracts/farah-22-cr-124-ecf57.json`) and count-map claim (`claim-farah-22cr124-ecf57-count-map`). It charges 43 counts and identifies **Count 43, Abdiaziz Shafii Farah, false statement in a passport application, as 18 U.S.C. § 1542**. The prior ledger statement that Farah's passport statute was uncaptured was stale.
+- **Original ECF 1 set still incomplete.** The corpus has not systematically captured the original indictment PDFs at ECF 1 across the original Feeding Our Future cases (including the original charging instrument preceding the 22-CR-124 superseding indictment). Preserve the distinction between an already-captured superseding indictment and still-missing original instruments.
+- **18 U.S.C. § 1349 remains unsupported in captured Feeding Our Future charging text.** The captured 22-CR-124 superseding indictment uses **§ 371 + § 1343** for wire-fraud conspiracy, plus § 666, § 1542, § 1956, and § 1957. Do not generalize absence of § 1349 to any original charging instrument that has not yet been captured and checked.
 
 ## 5. First-trial (June 2024) complete verdict roster — SUBSTANTIALLY RESOLVED
 
