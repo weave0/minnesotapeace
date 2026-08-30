@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T22:52:50Z",
+  "generated_at": "2026-08-30T05:36:48Z",
   "corpus_name": "MinnesotaPeace public-program fraud research corpus",
   "viewer": "research/viewer v1",
   "mandate": "Citation-rich investigative corpus. The atomic unit is a claim, not an article. This viewer is The Record inside MinnesotaPeace.com — not a fraud-total dashboard.",
@@ -48,6 +48,12 @@
       "title": "Anwar Adow 0:25-cr-00353 source record has no CourtListener URL",
       "detail": "The felony information is locally archived and count-mapped. src-us-v-adow-anwar-25cr353-ecf1 has canonical_url null. Local PDF + SHA-256 remain the durable copy.",
       "case_id": "anwar-adow-25cr353"
+    },
+    {
+      "id": "mde-fof-april30-opposition-brief",
+      "title": "MDE's written April 30, 2021 opposition brief is not yet captured",
+      "detail": "The April 30, 2021 hearing transcript and Feeding Our Future's reply brief both quote MDE's opposition brief, but the standalone filing itself has not been retrieved. FOF's reply says MDE's April 29, 2021 letter denied 149 site applications; the June 24, 2021 order instead describes 143 of 144 site-ID applications as denied. That numeric difference is unresolved.",
+      "case_id": null
     }
   ],
   "cases": [
@@ -5961,6 +5967,143 @@
       "is_allegation": false,
       "is_inference": false,
       "reviewed_at": "2026-08-27T03:20:00Z"
+    },
+    {
+      "claim_id": "claim-mde-fof-stop-pay-voluntary-not-ordered",
+      "claim_text": "The Minnesota Department of Education voluntarily removed its stop-pay on Feeding Our Future's federal meal-program reimbursement claims on April 30, 2021. No court ordered the resumption. The Minnesota Judicial Branch issued a public correction stating Judge John Guthmann never ordered MDE to resume payments, and the court's own June 24, 2021 written order independently confirms this: it denies Feeding Our Future's motion to force an end to the stop-pay as moot, “because MDE lifted its stop pay ... and paid the reimbursement claims that were the subject of the motion.” At a hearing that same day, MDE's attorney told the court on the record that the stop-pay was no longer being enforced and that claims were expected to be scheduled for payment the following week.",
+      "claim_type": "CHRONOLOGY",
+      "status": "confirmed",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "proposition_class": "B_OVERSIGHT_FAILURE",
+      "source_ids": [
+        "src-mn-ola-2024-fof-oversight",
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-mncro-62-cv-20-5492-register-of-actions",
+        "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+        "src-mncro-62-cv-20-5492-reply-2021-04-30",
+        "src-ramsey-62-cv-20-5492-transcript-2021-04-30"
+      ],
+      "supporting_passages": [
+        {
+          "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+          "page": 2,
+          "locator": "para 1.a",
+          "quote": "Feeding Our Future’s Motion and Renewed Motion for a Temporary Restraining Order seeking an Order requiring MDE to end its “stop pay” policy as to Feeding Our Future and to timely pay Feeding Our Future’s claims is denied as moot because MDE lifted its “stop pay” as to Feeding Our Future’s claims and paid the reimbursement claims that were the subject of the motion."
+        },
+        {
+          "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+          "page": null,
+          "locator": "hearing transcript, excerpt pp. 9-14",
+          "quote": "MDE is not claiming and is not continuing the stop pay on ... Feeding Our Future’s claims."
+        },
+        {
+          "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+          "page": null,
+          "locator": "Judicial Branch correction, lines 28-35",
+          "quote": null
+        }
+      ],
+      "amounts": [],
+      "qualifiers": [
+        "MDE's decision to remove the stop-pay is distinct from the exact date every reimbursement dollar was actually received; the April 30 hearing transcript records MDE's attorney saying claims were expected to show as scheduled for payment the following Thursday or Friday, not that they had already been paid that day.",
+        "A congressional interview of then-MDE Assistant Commissioner Daron Korte adds that MDE's internal decision also involved Monica Herrera and Emily Honer, that then-Commissioner Heather Mueller was informed rather than asked to approve, and that MDE's Attorney General litigating attorneys were involved. Korte was later named personally as a defendant in Feeding Our Future's civil complaint — relevant context for weighing his account, though it has independently checked out against the primary court record on every point verified here.",
+        "This is an oversight-and-compliance record, not a fraud finding against MDE. MDE is not charged with fraud anywhere in this corpus."
+      ],
+      "editorial_notes": null,
+      "case_number": "62-CV-20-5492",
+      "subject_ids": [
+        "org-mn-department-education",
+        "org-feeding-our-future"
+      ],
+      "organizations": [
+        "org-mn-department-education",
+        "org-feeding-our-future"
+      ],
+      "jurisdiction": "Ramsey County District Court, Minnesota",
+      "confidence": "HIGH",
+      "is_allegation": false,
+      "is_inference": false,
+      "date_start": "2021-04-21",
+      "date_end": "2021-04-30",
+      "reviewed_at": "2026-08-30T00:00:00Z"
+    },
+    {
+      "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+      "claim_text": "On June 24, 2021, Ramsey County District Court Judge John Guthmann found the Minnesota Department of Education in civil contempt of a December 22, 2020 stipulated order requiring MDE to promptly process Feeding Our Future's site applications — a separate issue from the reimbursement stop-pay, which the same order resolved as moot. The court ordered MDE to pay Feeding Our Future a $35,750 contempt sanction plus $11,750 in stipulated attorneys' fees, a combined $47,500.",
+      "claim_type": "AMOUNT",
+      "status": "confirmed",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "proposition_class": "B_OVERSIGHT_FAILURE",
+      "source_ids": [
+        "src-mncro-62-cv-20-5492-order-2021-06-24-contempt"
+      ],
+      "supporting_passages": [
+        {
+          "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+          "page": 2,
+          "locator": "para 1.b",
+          "quote": "Feeding Our Future’s motions to find MDE in contempt of the stipulated December 22, 2020 Order (“Order”) is granted. The Court finds MDE’s violation of the Order sanctionable and hereby orders MDE to pay Feeding Our Future $35,750."
+        },
+        {
+          "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+          "page": 2,
+          "locator": "para 1.c",
+          "quote": "As part of the ruling on the motions for contempt, MDE is also ordered to pay Feeding Our Future’s reasonable attorneys’ fees for pursuing its motions for contempt of court in the amount of $11,750, which was stipulated by the parties."
+        }
+      ],
+      "amounts": [
+        {
+          "value": 35750,
+          "currency": "USD",
+          "metric_type": "civil_contempt_sanction",
+          "period_start": null,
+          "period_end": null,
+          "exact_or_approximate": "exact",
+          "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+          "methodology": "Civil contempt sanction ordered for MDE's violation of the December 22, 2020 stipulated order."
+        },
+        {
+          "value": 11750,
+          "currency": "USD",
+          "metric_type": "attorneys_fees_ordered",
+          "period_start": null,
+          "period_end": null,
+          "exact_or_approximate": "exact",
+          "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+          "methodology": "Stipulated attorneys' fees ordered alongside the contempt sanction, for pursuing the contempt motions."
+        },
+        {
+          "value": 47500,
+          "currency": "USD",
+          "metric_type": "combined_total",
+          "period_start": null,
+          "period_end": null,
+          "exact_or_approximate": "exact",
+          "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+          "methodology": "Sum of the $35,750 sanction and $11,750 attorneys' fees ordered in the same paragraph of the same order. Do not add this total to its two components again."
+        }
+      ],
+      "qualifiers": [
+        "This sanction concerns MDE's delay processing Feeding Our Future's site applications under a December 22, 2020 order — not the reimbursement stop-pay, which the same order separately resolved as moot because MDE had already voluntarily lifted it.",
+        "This is a civil contempt sanction against a state agency for a compliance failure, not a criminal or fraud finding."
+      ],
+      "editorial_notes": null,
+      "case_number": "62-CV-20-5492",
+      "subject_ids": [
+        "org-mn-department-education",
+        "org-feeding-our-future"
+      ],
+      "organizations": [
+        "org-mn-department-education",
+        "org-feeding-our-future"
+      ],
+      "jurisdiction": "Ramsey County District Court, Minnesota",
+      "confidence": "HIGH",
+      "is_allegation": false,
+      "is_inference": false,
+      "date_start": "2021-06-24",
+      "date_end": "2021-06-24",
+      "reviewed_at": "2026-08-30T00:00:00Z"
     }
   ],
   "sources": {
@@ -6257,6 +6400,195 @@
       "source_tier": 1,
       "source_status": "PRIMARY_COURT_RECORD",
       "notes": "Felony information, not an indictment. Text PDF (not a scan). All dollar figures are charging allegations. Paragraph 8 program-wide HSS payouts are background program_spend, not Anwar Adow's alleged receipts. Do not add them to the >$1.2 million Liberty Plus figure or to FOF amounts."
+    },
+    "src-mn-ola-2024-fof-oversight": {
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "title": "Minnesota Department of Education: Oversight of Feeding Our Future",
+      "canonical_url": "https://www.auditor.leg.state.mn.us/sreview/pdf/2024-mdefof.pdf",
+      "archive_url": null,
+      "issuing_body": "Minnesota Office of the Legislative Auditor",
+      "document_type": "special_review",
+      "document_date": "2024-06-13",
+      "publication_date": "2024-06-13",
+      "retrieval_date": "2026-08-29",
+      "case_number": null,
+      "court": null,
+      "docket_id": null,
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 4,
+      "source_status": "PRIMARY_AUDIT_REPORT",
+      "notes": "Special review finding MDE's oversight of Feeding Our Future created opportunities for fraud. Then-Commissioner Willie Jett disputed OLA's characterization in the agency response. Does not find MDE officials joined the criminal scheme."
+    },
+    "src-mn-judicial-2022-09-23-fof-guthmann-correction": {
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "title": "Feeding Our Future v. Minnesota Department of Education: Correcting Media Reports and Statements by Governor Tim Walz Concerning Orders Issued by the Court",
+      "canonical_url": "https://mncourts.gov/about-the-courts/newsandannouncements/feeding-our-future-v-minnesota-department-of-education-correcting-media-reports-and-statements-by-governor-tim-walz-concerning-orders-issued-by-the-court",
+      "archive_url": null,
+      "issuing_body": "Minnesota Judicial Branch / Ramsey County District Court",
+      "document_type": "judicial_branch_public_record_correction",
+      "document_date": "2022-09-23",
+      "publication_date": "2022-09-23",
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court",
+      "docket_id": null,
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 5,
+      "source_status": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+      "notes": "The Judicial Branch's own public correction stating Judge Guthmann never ordered MDE to resume Feeding Our Future reimbursement payments and that all resumed payments were voluntary."
+    },
+    "src-mncro-62-cv-20-5492-register-of-actions": {
+      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
+      "title": "Register of Actions, Feeding Our Future vs. Minnesota Department of Education, Case No. 62-CV-20-5492 (Ramsey County District Court)",
+      "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+      "archive_url": null,
+      "issuing_body": "Minnesota Judicial Branch (Minnesota Court Records Online / MCRO)",
+      "document_type": "docket",
+      "document_date": null,
+      "publication_date": null,
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court, Ramsey Civil",
+      "docket_id": "62-CV-20-5492",
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 1,
+      "source_status": "PRIMARY_COURT_RECORD",
+      "notes": "MCRO states it is a service copy and not the certified official court case record. Docket metadata only; underlying filing text is cited to separately retrieved documents."
+    },
+    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt": {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "title": "Order Granting and Denying Motions for Contempt, Injunctive Relief, and Amendment of the Complaint",
+      "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+      "archive_url": null,
+      "issuing_body": "Ramsey County District Court, Second Judicial District",
+      "document_type": "order",
+      "document_date": "2021-06-24",
+      "publication_date": null,
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court",
+      "docket_id": "62-CV-20-5492",
+      "local_path": null,
+      "sha256": null,
+      "page_count": 8,
+      "access_status": "available",
+      "source_tier": 1,
+      "source_status": "PRIMARY_COURT_RECORD",
+      "notes": "Signed by Judge John H. Guthmann. Retrieved directly from MCRO (Index #95). Denies FOF's stop-pay motion as moot and separately finds MDE in contempt of a December 22, 2020 order on a different issue (site-application processing delay)."
+    },
+    "src-mncro-62-cv-20-5492-reply-2021-04-30": {
+      "source_id": "src-mncro-62-cv-20-5492-reply-2021-04-30",
+      "title": "Reply in Support of Renewed Motion for an Emergency Temporary Restraining Order and Order for Contempt of Court",
+      "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+      "archive_url": null,
+      "issuing_body": "Feeding Our Future (plaintiff's counsel, Martin Hild PA)",
+      "document_type": "brief",
+      "document_date": "2021-04-30",
+      "publication_date": null,
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court",
+      "docket_id": "62-CV-20-5492",
+      "local_path": null,
+      "sha256": null,
+      "page_count": 5,
+      "access_status": "available",
+      "source_tier": 1,
+      "source_status": "PRIMARY_COURT_RECORD",
+      "notes": "Filed 1:19 PM, before that day's 3:00 PM hearing. Plaintiff's advocacy filing; quotes MDE's own opposition brief attributing the stop-pay removal to the April 21 hearing."
+    },
+    "src-ramsey-62-cv-20-5492-transcript-2021-04-30": {
+      "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+      "title": "Official Court Transcript, Motion Hearing, Feeding Our Future v. Minnesota Department of Education",
+      "canonical_url": "https://files.americanexperiment.org/wp-content/uploads/2022/10/2021.4.30-motion-hearing-official-transcript.pdf",
+      "archive_url": null,
+      "issuing_body": "Ramsey County District Court, Second Judicial District",
+      "document_type": "official_court_transcript_public_mirror",
+      "document_date": "2021-04-30",
+      "publication_date": null,
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court",
+      "docket_id": "62-CV-20-5492",
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 1,
+      "source_status": "PRIMARY_COURT_RECORD_MIRROR",
+      "notes": "Court reporter's official transcript of the 2021-04-30 hearing before Judge Guthmann, bearing a 2021-07-06 district-court filing stamp. Hosting domain is a third-party advocacy site, not the Minnesota Judicial Branch, but the document itself is the court reporter's record."
+    },
+    "src-house-oversight-2026-02-03-daron-korte-interview": {
+      "source_id": "src-house-oversight-2026-02-03-daron-korte-interview",
+      "title": "Transcribed Interview of Daron Korte",
+      "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Daron-Korte-Transcript.pdf",
+      "archive_url": null,
+      "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+      "document_type": "congressional_transcribed_interview",
+      "document_date": "2026-02-03",
+      "publication_date": "2026-06-01",
+      "retrieval_date": "2026-08-29",
+      "case_number": null,
+      "court": null,
+      "docket_id": null,
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 6,
+      "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+      "notes": "Voluntary, unsworn interview under an explicit committee-imposed legal duty of truthful response. Korte was a participant in MDE's April 2021 decision and was later named personally as a defendant in the underlying civil case — a personal litigant, not a disinterested witness, though his account has checked out against the primary record on every point independently verified."
+    },
+    "src-house-oversight-2026-01-29-emily-honer-interview": {
+      "source_id": "src-house-oversight-2026-01-29-emily-honer-interview",
+      "title": "Transcribed Interview of Emily Honer",
+      "canonical_url": "https://oversight.house.gov/wp-content/uploads/2026/06/Emily-Honer-Transcript.pdf",
+      "archive_url": null,
+      "issuing_body": "U.S. House Committee on Oversight and Government Reform",
+      "document_type": "congressional_transcribed_interview",
+      "document_date": "2026-01-29",
+      "publication_date": "2026-06-01",
+      "retrieval_date": "2026-08-29",
+      "case_number": null,
+      "court": null,
+      "docket_id": null,
+      "local_path": null,
+      "sha256": null,
+      "page_count": null,
+      "access_status": "available",
+      "source_tier": 6,
+      "source_status": "PRIMARY_CONGRESSIONAL_INTERVIEW_RECORD",
+      "notes": "Voluntary, unsworn interview under an explicit committee-imposed legal duty of truthful response. Honer confirmed the March 31, 2021 stop-pay and the lack of a final court ruling requiring resumption, but did not remember the specific post-hearing deliberations Korte later described."
+    },
+    "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30": {
+      "source_id": "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+      "title": "Second Amended Complaint and Jury Demand (redline)",
+      "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+      "archive_url": null,
+      "issuing_body": "Feeding Our Future (plaintiff's counsel, Martin Hild PA)",
+      "document_type": "complaint",
+      "document_date": "2021-04-30",
+      "publication_date": null,
+      "retrieval_date": "2026-08-29",
+      "case_number": "62-CV-20-5492",
+      "court": "Ramsey County District Court",
+      "docket_id": "62-CV-20-5492",
+      "local_path": null,
+      "sha256": null,
+      "page_count": 25,
+      "access_status": "available",
+      "source_tier": 1,
+      "source_status": "PRIMARY_COURT_RECORD",
+      "notes": "Filed 6:51 PM, after that day's hearing. Plaintiff's own pleading; adds Daron Korte personally as a defendant. Every substantive factual allegation is FOF's characterization, not adjudicated fact."
     }
   },
   "entities": [
@@ -6812,6 +7144,37 @@
         "src-irs-990-pin-fy2021",
         "src-irs-bmf-mn-2026-08",
         "src-mn-sos-mbls-2026-08-26"
+      ]
+    },
+    {
+      "entity_id": "org-mn-department-education",
+      "entity_type": "STATE_AGENCY",
+      "canonical_name": "Minnesota Department of Education",
+      "ein": null,
+      "business_reg_ids": [],
+      "officers": [
+        {
+          "name": "Heather Mueller",
+          "title": "Commissioner (as of April 2021, per Korte's 2026 congressional interview)",
+          "source_ids": [
+            "src-house-oversight-2026-02-03-daron-korte-interview"
+          ]
+        },
+        {
+          "name": "Daron Korte",
+          "title": "Assistant Commissioner; named personally, “officially and personally,” as a defendant in Feeding Our Future's Second Amended Complaint filed 2021-04-30",
+          "source_ids": [
+            "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+            "src-house-oversight-2026-02-03-daron-korte-interview"
+          ]
+        }
+      ],
+      "addresses": [],
+      "notes": "State agency defendant in Feeding Our Future v. MDE (Ramsey County District Court, No. 62-CV-20-5492). The claims sourced here concern MDE's April 2021 stop-pay on Feeding Our Future's reimbursement claims and its removal — an oversight-and-compliance matter, not a fraud charge. MDE itself is not charged with fraud anywhere in this record.",
+      "source_ids": [
+        "src-mn-ola-2024-fof-oversight",
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-mncro-62-cv-20-5492-register-of-actions"
       ]
     }
   ],
@@ -7870,6 +8233,66 @@
         "do not add to Aden $2.3M, Falade $2.2M, Anwar $1.2M, Asad $2.7M, or FOF $250M",
         "para 1 'more than a million dollars' is qualitative and overlaps these figures",
         "statewide $21M/$42M/$74M/$104M/$61M recitals belong to overlap_group hss-statewide-program-payouts-2021-2025h1-indictment-recital and are already claimed"
+      ]
+    },
+    {
+      "row_id": "claim-mde-fof-contempt-sanction-2021-06-24#0",
+      "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+      "case_number": "62-CV-20-5492",
+      "value": 35750,
+      "currency": "USD",
+      "metric_type": "civil_contempt_sanction",
+      "exact_or_approximate": "exact",
+      "period_start": null,
+      "period_end": null,
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "overlap_label": "MDE contempt sanction and fees, June 24, 2021 order (62-CV-20-5492)",
+      "methodology": "Civil contempt sanction ordered for MDE's violation of the December 22, 2020 stipulated order.",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "status": "confirmed",
+      "qualifiers": [
+        "This sanction concerns MDE's delay processing Feeding Our Future's site applications under a December 22, 2020 order — not the reimbursement stop-pay, which the same order separately resolved as moot because MDE had already voluntarily lifted it.",
+        "This is a civil contempt sanction against a state agency for a compliance failure, not a criminal or fraud finding."
+      ]
+    },
+    {
+      "row_id": "claim-mde-fof-contempt-sanction-2021-06-24#1",
+      "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+      "case_number": "62-CV-20-5492",
+      "value": 11750,
+      "currency": "USD",
+      "metric_type": "attorneys_fees_ordered",
+      "exact_or_approximate": "exact",
+      "period_start": null,
+      "period_end": null,
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "overlap_label": "MDE contempt sanction and fees, June 24, 2021 order (62-CV-20-5492)",
+      "methodology": "Stipulated attorneys' fees ordered alongside the contempt sanction, for pursuing the contempt motions.",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "status": "confirmed",
+      "qualifiers": [
+        "This sanction concerns MDE's delay processing Feeding Our Future's site applications under a December 22, 2020 order — not the reimbursement stop-pay, which the same order separately resolved as moot because MDE had already voluntarily lifted it.",
+        "This is a civil contempt sanction against a state agency for a compliance failure, not a criminal or fraud finding."
+      ]
+    },
+    {
+      "row_id": "claim-mde-fof-contempt-sanction-2021-06-24#2",
+      "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+      "case_number": "62-CV-20-5492",
+      "value": 47500,
+      "currency": "USD",
+      "metric_type": "combined_total",
+      "exact_or_approximate": "exact",
+      "period_start": null,
+      "period_end": null,
+      "overlap_group_id": "mde-fof-contempt-sanction-and-fees-2021-06-24",
+      "overlap_label": "MDE contempt sanction and fees, June 24, 2021 order (62-CV-20-5492)",
+      "methodology": "Sum of the $35,750 sanction and $11,750 attorneys' fees ordered in the same paragraph of the same order. Do not add this total to its two components again.",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "status": "confirmed",
+      "qualifiers": [
+        "This sanction concerns MDE's delay processing Feeding Our Future's site applications under a December 22, 2020 order — not the reimbursement stop-pay, which the same order separately resolved as moot because MDE had already voluntarily lifted it.",
+        "This is a civil contempt sanction against a state agency for a compliance failure, not a criminal or fraud finding."
       ]
     }
   ],

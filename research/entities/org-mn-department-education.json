@@ -1,0 +1,41 @@
+{
+  "entity_id": "org-mn-department-education",
+  "entity_type": "STATE_AGENCY",
+  "canonical_name": "Minnesota Department of Education",
+  "aliases": [
+    "MDE"
+  ],
+  "ein": null,
+  "business_reg_ids": [],
+  "officers": [
+    {
+      "name": "Heather Mueller",
+      "title": "Commissioner (as described in the April 2021 decision context in Korte's 2026 congressional interview)",
+      "person_id": "person-heather-mueller",
+      "source_ids": [
+        "src-house-oversight-2026-02-03-daron-korte-interview"
+      ],
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "name": "Daron Korte",
+      "title": "Assistant Commissioner; named personally, officially and personally, as a defendant in Feeding Our Future's Second Amended Complaint filed 2021-04-30",
+      "person_id": "person-daron-korte",
+      "source_ids": [
+        "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+        "src-house-oversight-2026-02-03-daron-korte-interview"
+      ],
+      "valid_from": null,
+      "valid_until": null
+    }
+  ],
+  "addresses": [],
+  "notes": "Minnesota state agency defendant in Feeding Our Future v. Minnesota Department of Education, Ramsey County District Court No. 62-CV-20-5492. The claims attached here concern MDE's April 2021 stop-pay and site-application processing obligations — an oversight-and-compliance record, not a fraud charge. MDE itself is not charged with fraud anywhere in this corpus.",
+  "source_ids": [
+    "src-mn-ola-2024-fof-oversight",
+    "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+    "src-mncro-62-cv-20-5492-register-of-actions",
+    "src-house-oversight-2026-02-03-daron-korte-interview"
+  ]
+}
