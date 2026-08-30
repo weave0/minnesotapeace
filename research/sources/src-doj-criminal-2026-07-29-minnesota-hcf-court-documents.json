@@ -1,0 +1,23 @@
+{
+  "source_id": "src-doj-criminal-2026-07-29-minnesota-hcf-court-documents",
+  "canonical_url": "https://www.justice.gov/criminal/criminal-fraud/health-care-fraud-unit/2026-minnesota-hcf-court-documents",
+  "issuing_body": "U.S. Department of Justice, Criminal Division, Fraud Section",
+  "title": "2026 Minnesota Medicaid and Benefits Fraud Takedown — Court Documents",
+  "publication_date": "2026-07-29",
+  "retrieval_date": "2026-08-30",
+  "document_type": "court_document_index",
+  "jurisdiction": "District of Minnesota",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DOJ's public Minnesota court-document index, updated July 29, 2026, lists U.S. v. Fahima Mahamud with an Information as the available linked court document.",
+    "As retrieved on August 30, 2026, the index does not list a Mahamud plea agreement, change-of-plea minute, or judgment."
+  ],
+  "does_not_support": [
+    "That Mahamud did not plead guilty; absence from this curated DOJ document index is not evidence that the reported July 9 plea did not occur.",
+    "That no primary plea record exists on PACER or another court system; this source establishes only the state of DOJ's public curated index as retrieved.",
+    "Any Feeding Our Future conviction ordinal."
+  ],
+  "notes": "Use this source to document the provenance gap, not to negate contemporaneous court reporting. DOJ's separate July 29 case-summary page likewise continued to describe Mahamud at the charging stage."
+}

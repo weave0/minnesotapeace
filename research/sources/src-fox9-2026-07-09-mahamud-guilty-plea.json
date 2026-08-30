@@ -1,0 +1,25 @@
+{
+  "source_id": "src-fox9-2026-07-09-mahamud-guilty-plea",
+  "canonical_url": "https://www.fox9.com/news/mn-fraud-minneapolis-day-care-owner-feeding-our-future-defendant-pleads-guilty-jul-8-2026",
+  "issuing_body": "FOX 9 Minneapolis-St. Paul",
+  "author": "Kilat Fitzgerald",
+  "title": "MN fraud: Day care owner, Feeding Our Future defendant pleads guilty to wire fraud and conspiracy",
+  "publication_date": "2026-07-09",
+  "retrieval_date": "2026-08-30",
+  "document_type": "news_article",
+  "case_number": "0:26-cr-00097-JWB",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "supports": [
+    "Contemporaneous federal-court reporting states that Fahima Egeh Mahamud pleaded guilty on July 9, 2026 to wire fraud and conspiracy to defraud the United States.",
+    "The report states that prosecutors attributed more than $4.6 million in false Child Care Assistance Program claims and approximately $850,000 in Federal Child Nutrition Program funds to the conduct resolved by the plea.",
+    "The report states that court documents showed a plea-agreement guideline range of 27 to 33 months, while making clear the sentencing judge retained final sentencing authority."
+  ],
+  "does_not_support": [
+    "A scheme-wide Feeding Our Future conviction ordinal for Mahamud; the article reports the plea but does not establish DOJ's counting convention.",
+    "A final sentence; sentencing was still pending at publication.",
+    "Primary judicial proof of the plea; the plea agreement, change-of-plea minute, and judgment remain preferred sources when captured."
+  ]
+}
