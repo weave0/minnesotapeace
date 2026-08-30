@@ -1,0 +1,63 @@
+{
+  "source_id": "src-gpo-2026-03-04-mn-fraud-hearing-part-ii",
+  "canonical_url": "https://www.govinfo.gov/app/details/CHRG-119hhrg63019/CHRG-119hhrg63019",
+  "transcript_url": "https://www.govinfo.gov/content/pkg/CHRG-119hhrg63019/html/CHRG-119hhrg63019.htm",
+  "issuing_body": "U.S. Government Publishing Office / U.S. House Committee on Oversight and Government Reform",
+  "title": "Oversight of Fraud and Misuse of Federal Funds in Minnesota: Part II",
+  "publication_date": "2026-03-04",
+  "retrieval_date": "2026-08-29",
+  "document_type": "official_congressional_hearing_transcript",
+  "serial_number": "119-59",
+  "congress": "119th Congress, Second Session",
+  "source_tier": 6,
+  "source_status": "PRIMARY_CONGRESSIONAL_HEARING_TRANSCRIPT",
+  "evidence_class": "MIXED_SWORN_TESTIMONY_AND_LEGISLATIVE_STATEMENTS",
+  "witnesses": [
+    {
+      "name": "Tim Walz",
+      "role": "Governor of Minnesota",
+      "sworn": true
+    },
+    {
+      "name": "Keith Ellison",
+      "role": "Attorney General of Minnesota",
+      "sworn": true
+    },
+    {
+      "name": "Mariah Furness Tollgaard",
+      "role": "Senior Pastor, Hamline Church United Methodist; minority witness",
+      "sworn": true
+    }
+  ],
+  "oath_locator": "GPO HTML lines 562-571: Committee Rule 9(g) oath; Walz, Ellison, and Tollgaard each answered in the affirmative.",
+  "supports": [
+    "Walz testified that by late 2020 his administration had begun seeing Feeding Our Future irregularities being flagged, while saying he could not provide a specific date when he personally first became aware.",
+    "When asked whether the administration was aware of Feeding Our Future fraud concerns by May 2020, Walz said he believed that was correct with the Department of Education and USDA, while distinguishing agency awareness from his own specific personal notice.",
+    "Walz testified that a former chief of staff having been notified by commissioners 'could be correct,' but said he did not recall whether the chief of staff notified him at that time.",
+    "Walz testified that he did not specifically recall early-2019 reports cited by a committee member but said his administration took program-integrity actions beginning in 2019.",
+    "Walz explained that his reference to lowering the standard for administrative-fraud disqualification meant lowering an evidentiary threshold he said had been too difficult to satisfy, not relaxing fraud controls.",
+    "Ellison testified that his office does not have authority to order Medicaid stop-payments and said his office prosecutes Medicaid cases presented by the responsible agency.",
+    "Ellison testified that his office had obtained 300 Medicaid-fraud convictions and recovered more than $80 million. Treat these as sworn agency-leader claims to be reconciled against dated MFCU statistical records rather than as an independently audited cumulative total.",
+    "Walz denied that whistleblowers should be retaliated against and said he could not speak to specific retaliation allegations discussed by committee members.",
+    "The transcript preserves multiple committee-member assertions about personal knowledge, retaliation, motive, and scale that the witnesses either disputed, qualified, or said they did not recall. Those assertions are not witness admissions."
+  ],
+  "selected_locators": [
+    "GPO HTML lines 562-571: oath",
+    "lines 590-672: Walz opening statement",
+    "lines 680-715: Ellison opening statement and jurisdiction/recovery claims",
+    "lines 1243-1304: stop-payment questioning and Walz responses",
+    "lines 1344-1361: Ellison on lack of stop-payment authority",
+    "lines 1508-1550: Walz on first awareness and late-2020 irregularities",
+    "lines 2415-2469: Walz on preexisting fraud concerns, agency awareness by May 2020, personal notice, and chief-of-staff question",
+    "lines 2501-2519: administrative-fraud disqualification evidentiary-standard explanation",
+    "lines 4151-4244: whistleblower-retaliation questioning and Walz responses"
+  ],
+  "does_not_support": [
+    "Walz's acknowledgment of agency awareness or possible chief-of-staff notice is not proof that he personally knew every underlying allegation at the same time.",
+    "The hearing does not establish that Walz, Ellison, or another Minnesota official joined a criminal fraud scheme.",
+    "Committee-member summaries and accusations are legislative allegations, not adjudicated facts or witness admissions merely because they appear in an official transcript.",
+    "Sworn testimony records a witness's statement under oath but does not independently validate the statement's underlying facts.",
+    "The hearing does not convert the $9 billion estimate into proven, audited, or adjudicated fraud loss.",
+    "Ellison's cumulative conviction/recovery claims require definition/time-period reconciliation before they are combined with MFCU annual statistics or case-level recovery figures."
+  ]
+}
