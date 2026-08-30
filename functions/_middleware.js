@@ -40,6 +40,15 @@ export async function onRequest(context) {
     "/oversight",
     "/oversight/",
     "/oversight/index.html",
+    "/programs",
+    "/programs/",
+    "/programs/index.html",
+    "/money",
+    "/money/",
+    "/money/index.html",
+    "/authority",
+    "/authority/",
+    "/authority/index.html",
   ]);
   const isPublicHtml = publicHtmlPaths.has(pathname);
   if (!isPublicHtml) return response;
@@ -160,8 +169,8 @@ export async function onRequest(context) {
   // Version the discovery asset path. Static asset caches can outlive a Pages deployment
   // when a zone-level purge is unavailable; a content-versioned URL makes each public
   // release independently verifiable without depending on purge permission.
-  const discoveryTag = '<script src="/js/discovery-v6.js" defer></script>';
-  if (!body.includes('/js/discovery-v6.js')) body = body.replace("</body>", discoveryTag + "\n</body>");
+  const discoveryTag = '<script src="/js/discovery-v7.js" defer></script>';
+  if (!body.includes('/js/discovery-v7.js')) body = body.replace("</body>", discoveryTag + "\n</body>");
 
   // The first statewide story-map outline was too schematic. v6.1 replaces its geometry
   // at the publication edge with a boundary-derived Minnesota silhouette and projected

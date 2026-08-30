@@ -32,6 +32,7 @@ jobs:
             js/discovery.js
             js/discovery-v5.js
             js/discovery-v6.js
+            js/discovery-v7.js
           )
 
           if grep -RniE \
@@ -52,6 +53,7 @@ jobs:
           fi
 
           test -f assets/og/mn-peace-og-v2.png
+          test -f js/discovery-v7.js
 
           if [ -e assets/og/mn-peace-og.jpg ]; then
             echo 'Legacy OG binary must not return to the repository.' >&2
@@ -81,6 +83,7 @@ jobs:
           grep -Fq 'https://minnesotapeace.com/programs/' sitemap.xml
           grep -Fq 'https://minnesotapeace.com/money/' sitemap.xml
           grep -Fq 'https://minnesotapeace.com/authority/' sitemap.xml
+          grep -Fq '/js/discovery-v7.js' functions/_middleware.js
 
           # The retired URL remains only as an edge migration rule so old cached links resolve cleanly.
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' functions/_middleware.js
