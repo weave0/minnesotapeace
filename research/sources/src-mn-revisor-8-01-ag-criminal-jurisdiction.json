@@ -1,0 +1,22 @@
+{
+  "source_id": "src-mn-revisor-8-01-ag-criminal-jurisdiction",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/8.01",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 8.01 — Appearance",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "The Attorney General shall appear for the state in criminal causes in the supreme and federal courts when the state is directly interested.",
+    "In other criminal cases, the Attorney General may appear at the request of the county attorney when the Attorney General deems it proper.",
+    "The Governor may make a written request that the Attorney General prosecute a person charged with an indictable offense, in which event the Attorney General exercises all powers of a county attorney in the matter."
+  ],
+  "important_qualifications": [
+    "This is general Attorney General authority and is not an exclusive catalogue of every subject-specific criminal or civil power granted elsewhere in Minnesota law.",
+    "Medicaid-specific authority under Minn. Stat. § 256B.12 is broader and should be cited directly for Medical Assistance matters.",
+    "Do not reduce Minnesota Attorney General criminal jurisdiction to the claim that the office can act only when a county attorney asks; § 8.01 itself also contains a Governor-request pathway, and other statutes grant direct subject-matter authority."
+  ]
+}
