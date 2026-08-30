@@ -1,0 +1,32 @@
+{
+  "source_id": "src-mn-revisor-299c061-financial-crimes-fraud-section",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/299C.061",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 299C.061 — Financial Crimes and Fraud Section",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "The Bureau of Criminal Apprehension must operate a Financial Crimes and Fraud Section to investigate financial crimes and fraud involving state-funded or administered programs or services.",
+    "State agencies generally must refer suspected covered fraud of $100,000 or more to the Section; the Section decides whether to investigate, return the matter for regulatory action, or refer it to another law-enforcement agency.",
+    "Suspected covered fraud below $100,000 may be referred discretionarily.",
+    "The statute expressly says the mandatory BCA referral rule does not apply where the state agency is required to refer the matter to the state Medicaid Fraud Control Unit under federal law and Minn. Stat. § 256B.04, subd. 10.",
+    "The statute expressly preserves the Attorney General's independent authority to investigate and enforce Minnesota civil or criminal law.",
+    "The Section must report investigation and referral outcomes and specified state Medicaid Fraud Control Unit referral counts."
+  ],
+  "selected_locators": [
+    "Subd. 2 — creation and investigatory role",
+    "Subd. 3 — duties",
+    "Subd. 4(a)-(d) — mandatory referrals, discretion, Attorney General preservation, Medicaid carveout",
+    "Subd. 5 — discretionary referrals below $100,000",
+    "Subd. 8 — annual reporting and MFCU referral statistics"
+  ],
+  "important_qualifications": [
+    "The Revisor page records that § 299C.061 was created in 2025 and amended in 2026; it should not be projected backward as authority or a referral mandate existing during earlier Feeding Our Future events.",
+    "Referral to the Section is not a finding of fraud, and the Section retains discretion over whether to investigate further.",
+    "Medicaid suspected-fraud referrals follow the separate MFCU pathway where the cited federal/state requirements apply."
+  ]
+}

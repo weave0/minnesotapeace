@@ -1,0 +1,30 @@
+{
+  "source_id": "src-mn-revisor-256b064-medicaid-sanctions",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/256B.064",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 256B.064 — Sanctions; Monetary Recovery",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "The Commissioner of Human Services may impose Medicaid sanctions including suspension or withholding of payments and suspension or termination from the program for specified misconduct.",
+    "The commissioner determines monetary recovery and sanctions under the section and may suspend or reduce payment before a hearing after notice when necessary to protect public welfare and program interests.",
+    "Absent federally recognized good cause, the commissioner shall withhold or reduce payments without advance notice when a provider is convicted of specified conduct or when the commissioner determines there is a credible allegation of fraud for which an investigation is pending.",
+    "A credible allegation may arise from sources including fraud-hotline complaints, claims data mining, provider-audit patterns, civil false-claims cases, and law-enforcement investigations, but the state must verify the allegation and review the evidence carefully case by case.",
+    "The section requires withholding to end when the commissioner determines evidence is insufficient or relevant legal proceedings are completed, unless another sanctions/recovery notice has issued."
+  ],
+  "selected_locators": [
+    "Subd. 1a — grounds for sanctions",
+    "Subd. 1b — sanctions available",
+    "Subd. 2(a)-(d) — commissioner decision, pre-hearing suspension, credible-allegation withholding, termination conditions"
+  ],
+  "important_qualifications": [
+    "This section assigns the Medicaid administrative payment-withhold/suspension authority described here to the commissioner, not to the Attorney General.",
+    "The statute contains a federal-good-cause exception to mandatory credible-allegation withholding under 42 C.F.R. § 455.23(e)-(f).",
+    "The existence of statutory authority does not establish whether its prerequisites were satisfied in a particular case; case-specific use requires the contemporaneous administrative record.",
+    "The Revisor page notes 2026 amendments; current publication should be read with the applicable session-law effective dates for conduct/actions occurring around those amendments."
+  ]
+}
