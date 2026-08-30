@@ -1,0 +1,26 @@
+{
+  "source_id": "src-mn-msgc-2026-medical-assistance-fraud-rankings",
+  "canonical_url": "https://mn.gov/sentencing-guidelines/assets/2026_Adopted_Modifications_Minn_Sentencing_Guidelines_tcm30-762327.pdf",
+  "alternate_url": "https://mn.gov/sentencing-guidelines/assets/2026_Minn_Sentencing_Guidelines_Commentary_tcm30-762325.pdf",
+  "issuing_body": "Minnesota Sentencing Guidelines Commission",
+  "title": "2026 Minnesota Sentencing Guidelines — Medical Assistance Fraud offense rankings",
+  "publication_date": "2026",
+  "retrieval_date": "2026-08-29",
+  "document_type": "sentencing_guidelines",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 2,
+  "source_status": "PRIMARY_SENTENCING_GUIDELINE",
+  "evidence_class": "CONTROLLING_GUIDELINE_TEXT",
+  "supports": [
+    "The 2026 adopted modifications rank Medical Assistance Fraud involving $100,000 or less at Severity Level 2.",
+    "The 2026 adopted modifications rank Medical Assistance Fraud involving $100,001 through $1,000,000 at Severity Level 6.",
+    "The 2026 adopted modifications rank Medical Assistance Fraud involving more than $1,000,000 at Severity Level 8.",
+    "The 2026 Guidelines are effective for felony offenses committed on or after August 1, 2026, subject to applicable sentencing law."
+  ],
+  "does_not_support": [
+    "Severity Level 8 does not by itself state the sentence in an individual case; criminal-history score, grid rules, departures and other sentencing law remain relevant.",
+    "The guideline ranking should not be retroactively assigned to pre-effective-date conduct without legal analysis."
+  ],
+  "notes": "For public explanation, cite the actual offense ranking and grid rather than paraphrasing only the Attorney General's Aug. 3 press release."
+}
