@@ -1,0 +1,24 @@
+{
+  "source_id": "src-hhs-oig-2026-08-14-mn-mfcu-recommendation-status",
+  "canonical_url": "https://oig.hhs.gov/reports/recommendations/tracker/?hhs-agency=all&search=OEI-06-22-00430&view-mode=report-grouped",
+  "issuing_body": "U.S. Department of Health and Human Services, Office of Inspector General",
+  "title": "Recommendation Tracker — Minnesota Medicaid Fraud Control Unit: 2022 Inspection",
+  "publication_date": "2026-08-14",
+  "retrieval_date": "2026-08-29",
+  "document_type": "recommendation_status_tracker",
+  "report_id": "OEI-06-22-00430",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_STATUS_RECORD",
+  "evidence_class": "AGENCY_DETERMINATION",
+  "supports": [
+    "HHS-OIG's tracker, last updated 2026-08-14, shows four recommendations from Minnesota's 2022 MFCU inspection.",
+    "Recommendation 22-E-06-042.01 (second-line supervisor) is Closed Implemented, closed 2024-05-16.",
+    "Recommendation 22-E-06-042.02 (increase patient-abuse/neglect referrals) is Closed Implemented, closed 2024-05-16.",
+    "Recommendation 22-E-06-042.03 (implement a comprehensive case-management system) remains Open Unimplemented; the tracker shows the last update received 2024-05-10.",
+    "Recommendation 22-E-06-042.04 (consistent/documented supervisory reviews) is Closed Implemented, closed 2024-05-16."
+  ],
+  "important_qualifications": [
+    "The July 1, 2026 conditional recertification letter separately imposes current special conditions and specifically requires implementation of the still-open case-management recommendation.",
+    "Recommendation identifiers 26-E-07-010 belong to the Oklahoma MFCU 2025 inspection and must not be attributed to Minnesota."
+  ]
+}
