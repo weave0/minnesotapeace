@@ -1,0 +1,65 @@
+{
+  "claim_id": "claim-mde-fof-stop-pay-voluntary-not-ordered",
+  "claim_text": "The Minnesota Department of Education voluntarily removed its stop-pay on Feeding Our Future's federal meal-program reimbursement claims on April 30, 2021. No court ordered the resumption. The Minnesota Judicial Branch issued a public correction stating Judge John Guthmann never ordered MDE to resume payments, and the court's own June 24, 2021 written order independently confirms this by denying Feeding Our Future's stop-pay motion as moot because MDE had lifted the stop-pay and paid the reimbursement claims at issue. At the April 30 hearing, MDE's attorney also told the court on the record that the stop-pay was no longer being enforced and that claims were expected to be scheduled for payment the following week.",
+  "claim_type": "CHRONOLOGY",
+  "normalized_claim": "MDE voluntarily removed the Feeding Our Future stop-pay on 2021-04-30 without a court order requiring payment resumption; April 30 is the administrative return-to-processing date, not necessarily the date every reimbursement dollar cleared or was received.",
+  "status": "confirmed",
+  "evidence_class": "ADJUDICATED_CIVIL",
+  "proposition_class": "B_OVERSIGHT_FAILURE",
+  "source_ids": [
+    "src-mn-ola-2024-fof-oversight",
+    "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+    "src-mncro-62-cv-20-5492-register-of-actions",
+    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+    "src-mncro-62-cv-20-5492-reply-2021-04-30",
+    "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+    "src-house-oversight-2026-02-03-daron-korte-interview",
+    "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "page": 2,
+      "locator": "para 1.a",
+      "quote": "Feeding Our Future’s Motion and Renewed Motion for a Temporary Restraining Order seeking an Order requiring MDE to end its ‘stop pay’ policy as to Feeding Our Future and to timely pay Feeding Our Future’s claims is denied as moot because MDE lifted its ‘stop pay’ as to Feeding Our Future’s claims and paid the reimbursement claims that were the subject of the motion."
+    },
+    {
+      "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+      "page": null,
+      "locator": "hearing transcript, excerpt pp. 9-14",
+      "quote": "MDE is not claiming and is not continuing the stop pay on ... Feeding Our Future’s claims."
+    }
+  ],
+  "amounts": [],
+  "qualifiers": [
+    "MDE's decision to remove the stop-pay is distinct from the exact date every reimbursement dollar was actually received; the April 30 hearing transcript records MDE's attorney saying claims were expected to show as scheduled for payment the following Thursday or Friday, not that they had already been paid that day.",
+    "A congressional interview of then-MDE Assistant Commissioner Daron Korte adds that MDE's internal decision involved Korte, Monica Herrera, and Emily Honer, that then-Commissioner Heather Mueller was informed rather than asked to approve, and that MDE's Attorney General litigating attorneys were involved. This is a retrospective participant account, not an adjudicated finding.",
+    "Korte was named personally, officially and personally, as a defendant in Feeding Our Future's Second Amended Complaint filed later on April 30, 2021. That is relevant context for weighing his later account, though it does not itself establish that his testimony was inaccurate.",
+    "This is an oversight-and-compliance record, not a fraud finding against MDE. MDE is not charged with fraud anywhere in this corpus."
+  ],
+  "editorial_notes": "Publication rule: say MDE voluntarily removed the stop-pay on April 30, 2021, after the April 21 hearing and without a court order. Do not equate administrative stop-pay removal with proof that all funds were received on April 30.",
+  "case_number": "62-CV-20-5492",
+  "subject_ids": [
+    "org-mn-department-education",
+    "org-feeding-our-future"
+  ],
+  "organizations": [
+    "org-mn-department-education",
+    "org-feeding-our-future"
+  ],
+  "persons": [
+    "person-daron-korte",
+    "person-monica-herrera",
+    "person-emily-honer",
+    "person-heather-mueller"
+  ],
+  "jurisdiction": "Ramsey County District Court, Minnesota",
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "date_start": "2021-04-21",
+  "date_end": "2021-04-30",
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z"
+}
