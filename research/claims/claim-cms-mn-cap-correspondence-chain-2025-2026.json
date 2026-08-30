@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "AGENCY_POSITION",
+  "confidence": "HIGH",
+  "jurisdiction": "Minnesota; federal (CMS)",
+  "proposition_class": "B_OVERSIGHT_FAILURE",
+  "claim_id": "claim-cms-mn-cap-correspondence-chain-2025-2026",
+  "claim_text": "Minnesota DHS's own primary corrective-action-plan filings establish a documented CMS-DHS correspondence chain: CMS sent Minnesota a letter dated December 5, 2025 requesting a program-integrity corrective action plan; DHS replied on December 17, 2025; DHS submitted its original Corrective Action Plan on December 31, 2025; CMS Administrator Mehmet Oz sent a further letter dated January 6, 2026; DHS and CMS staff held in-person meetings on January 21 and 22, 2026; and DHS submitted a revised, comprehensive Corrective Action Plan on January 30, 2026.",
+  "claim_type": "CHRONOLOGY",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-dhs-2025-12-31-cap-original",
+    "src-mn-dhs-2026-01-30-cap-revised"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mn-dhs-2025-12-31-cap-original",
+      "locator": "p.1",
+      "quote": "This Corrective Action Plan (CAP) is in response to your letter of December 5, 2025 ... As we stated in our December 17 reply to your letter, we strongly agree that assertive, ongoing action is necessary."
+    },
+    {
+      "source_id": "src-mn-dhs-2026-01-30-cap-revised",
+      "locator": "p.1",
+      "quote": "The Minnesota Department of Human Services (DHS) is submitting this revised, comprehensive corrective action plan on behalf of Governor Tim Walz in response to the letter from Administrator Oz dated January 6, 2026 ... the Department hosted in-person meetings with CMS staff on January 21 and 22."
+    }
+  ],
+  "amounts": [],
+  "qualifiers": [
+    "This resolves an internal date ambiguity already flagged in research/harvest/oversight-law/GAPS.md item 2, which had the CMS deficiency letter referenced elsewhere in this corpus only as a 'January 6, 2026' letter reproduced in a third-party circulation (CMS-FILE_6607) without independent primary confirmation of that date. DHS's own January 30 filing independently confirms January 6, 2026 and names Administrator Oz as the letter's author.",
+    "The December 5, 2025 CMS letter, the December 17, 2025 DHS reply, and the January 6, 2026 Oz letter are each referenced and dated by DHS's own filings, but none of the three has itself been independently retrieved and read in this corpus. Treat their existence and dates as agency-confirmed; treat their specific content only through DHS's own characterization of it.",
+    "Both CAP letters are DHS's own account of its conduct and CMS's requests; they are not an independent audit finding and should not be read as proof that DHS's characterization of CMS's demands is complete or unbiased."
+  ],
+  "editorial_notes": "Retrieved directly from mn.gov/dhs (the department's own program-integrity factcheck page), not a third-party mirror. Closes the 'December 31, 2025 first CAP PDF -- Not fetched' item in research/harvest/oversight-law/GAPS.md item 2."
+}

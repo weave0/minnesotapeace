@@ -20,14 +20,18 @@ A gap is not proof that a document does not exist. It means this pass did not re
 
 ## 2. CMS documents not retrieved from cms.gov HTML
 
+**2026-08-30 pass:** Both Minnesota CAP letters retrieved directly from mn.gov/dhs (DHS's own program-integrity factcheck page, not a third-party mirror): `src-mn-dhs-2025-12-31-cap-original` (5 pp.) and `src-mn-dhs-2026-01-30-cap-revised` (20 pp., redacted). See `claim-cms-mn-cap-correspondence-chain-2025-2026` and `claim-mn-dhs-hss-termination-and-disenrollment-2025`.
+
 | Missing item | Lead | Status |
 |---|---|---|
-| Administrator Oz **6 January 2026** letter to Gov. Walz (cms.gov / HHS original PDF) | Reproduced inside a CMS “notice of opportunity for hearing” circulating as CMS-FILE_6607 | Text used from that reproduction and from the State’s 30 Jan CAP, which answers the letter. **Need Federal Register citation** for the § 1904 hearing notice. |
-| CMS letter **approving** the revised CAP (state says **19 March 2026**) | https://mn.gov/dhs/program-integrity/factcheck/ | State claim only; CMS original not fetched |
-| 31 December 2025 first CAP PDF | Referenced as deficient | Not fetched |
-| CMS 5 December 2025 correspondence recommending moratoria | Cited in 30 Jan CAP | Not fetched |
+| Administrator Oz **6 January 2026** letter to Gov. Walz (cms.gov / HHS original PDF) | Reproduced inside a CMS “notice of opportunity for hearing” circulating as CMS-FILE_6607 | **Date independently confirmed (2026-08-30).** DHS's own January 30, 2026 CAP states it responds to "the letter from Administrator Oz dated January 6, 2026," corroborating the previously third-party-only date. The letter's own full text is still not retrieved. **Need Federal Register citation** for the § 1904 hearing notice. |
+| CMS letter **approving** the revised CAP (state says **19 March 2026**) | https://mn.gov/dhs/program-integrity/factcheck/ | State claim only; CMS original (reported elsewhere as signed by Kim Brandt) still not fetched from a primary host |
+| 31 December 2025 first CAP PDF | Referenced as deficient | **RESOLVED (2026-08-30).** Retrieved: `src-mn-dhs-2025-12-31-cap-original`. |
+| CMS 5 December 2025 correspondence recommending moratoria | Cited in 30 Jan CAP | Directly quoted/referenced (not attached) in the now-retrieved December 31, 2025 original CAP as well; still not itself fetched from a primary host. |
 | Focused CMS-64 review workpapers for the 14 high-risk services | Described in 6 Jan letter | Not public |
 | Full 25 February 2026 deferral letter on cms.gov | DocumentCloud https://s3.documentcloud.org/documents/27420090/cms-medicaid-deferral-letter-q4-2025.pdf plus CMS press release | Letter appears genuine CMS stationery; still a third-party host |
+| **New (2026-08-30): December 17, 2025 DHS-to-CMS reply** | The now-retrieved December 31, 2025 CAP states "as we stated in our December 17 reply to your letter" -- a DHS communication between the December 5 CMS letter and the December 31 CAP that was previously entirely unknown to this corpus. | Not fetched; existence and date confirmed only by DHS's own later reference to it. |
+| **New (2026-08-30): January 21-22, 2026 in-person CMS-DHS meetings** | The January 30, 2026 revised CAP states DHS "hosted in-person meetings with CMS staff on January 21 and 22." | No minutes, agenda, or readout captured; dates only. |
 
 ---
 
