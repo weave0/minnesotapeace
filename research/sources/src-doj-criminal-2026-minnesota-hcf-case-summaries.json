@@ -1,0 +1,24 @@
+{
+  "source_id": "src-doj-criminal-2026-minnesota-hcf-case-summaries",
+  "canonical_url": "https://www.justice.gov/criminal/criminal-fraud/health-care-fraud-unit/2026-minnesota-hcf-case-summaries",
+  "issuing_body": "U.S. Department of Justice, Criminal Division, Fraud Section",
+  "title": "2026 Minnesota Medicaid and Benefits Fraud Takedown — Case Summaries",
+  "publication_date": "2026-07-29",
+  "retrieval_date": "2026-08-30",
+  "document_type": "case_summary",
+  "jurisdiction": "District of Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "DOJ's 2026 Minnesota case-summary page lists U.S. v. Fahima Mahamud and states that Mahamud, age 50, was charged by Information with one count of wire fraud and one count of conspiracy to defraud the United States.",
+    "The page describes an alleged Federal Child Nutrition Program scheme involving Future Leaders Early Learning Center and approximately $854,000 in program funds, alongside a separate alleged Child Care Assistance Program scheme.",
+    "The DOJ page confirms Mahamud's federal charge but does not itself assign her an ordinal number within the Feeding Our Future defendant count."
+  ],
+  "does_not_support": [
+    "Do not cite this page alone for the statement that Mahamud was the 79th Feeding Our Future defendant; the page does not state that ordinal.",
+    "Charging allegations are not adjudicated facts."
+  ],
+  "notes": "Useful primary-source confirmation of Fahima Mahamud's charge. Preserve the distinction between a verified charge and secondary reporting that labels her the 79th Feeding Our Future defendant."
+}
