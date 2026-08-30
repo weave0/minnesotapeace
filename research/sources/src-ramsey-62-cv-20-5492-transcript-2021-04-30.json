@@ -1,0 +1,32 @@
+{
+  "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+  "canonical_url": "https://files.americanexperiment.org/wp-content/uploads/2022/10/2021.4.30-motion-hearing-official-transcript.pdf",
+  "issuing_body": "Ramsey County District Court, Second Judicial District",
+  "title": "Official Court Transcript, Motion Hearing, Feeding Our Future v. Minnesota Department of Education",
+  "case_number": "62-CV-20-5492",
+  "court": "Ramsey County District Court",
+  "document_date": "2021-04-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "official_court_transcript_public_mirror",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD_MIRROR",
+  "evidence_class": "PRIMARY_JUDICIAL_RECORD",
+  "notes": "Public mirror of a docket-stamped official court transcript excerpt. The transcript itself is the court reporter's record of the 2021-04-30 hearing; the hosting domain is not the Minnesota Judicial Branch. The visible copy bears case number 62-CV-20-5492 and a 2021-07-06 district-court filing stamp. Use the transcript for what was said on the record, not as proof of later bank settlement or receipt of funds.",
+  "supports": [
+    "At the April 30 hearing, Assistant Attorney General Kristine Nogosek stated that MDE was not continuing the stop-pay on Feeding Our Future's claims and that the stop-pay had been removed.",
+    "Nogosek told the court that the claims were expected to show in CLiCS after 5:00 p.m. that day as scheduled to be paid the following Thursday or Friday. This directly distinguishes removal of the administrative stop-pay on April 30 from final payment completion or receipt of funds.",
+    "Nogosek stated on the record that MDE had heard the court's interpretation at the prior hearing and that seriously deficient sponsors' claims were being returned to normal processing. This independently corroborates the sequence already reflected in OLA and FOF's April 30 reply: the April 21 hearing drove MDE's change in course, not the later April 30 hearing.",
+    "Judge Guthmann referred during the April 30 hearing to an April 29 MDE letter containing 149 entries marked 'site ID denied,' and MDE counsel addressed that letter. This supports that the 149 figure in FOF's April 30 reply was grounded in a contemporaneous MDE letter, while leaving unresolved why the June 24 order later described 143 of 144 site-ID applications as denied."
+  ],
+  "selected_locators": [
+    "Transcript excerpt pp.9-14: MDE counsel states stop-pay is no longer continuing, stop-pay removed, and claims expected to show after 5:00 p.m. as payable the following Thursday or Friday.",
+    "Transcript excerpt pp.17-19: MDE counsel ties the changed processing position to the court's interpretation at the prior hearing; Judge Guthmann addresses the April 29 letter and 149 site-ID denials."
+  ],
+  "does_not_support": [
+    "The exact date on which every reimbursement dollar cleared, reached Feeding Our Future, or reached sponsored sites; the transcript gives an expected processing/payment schedule, not bank-settlement evidence.",
+    "The exact total amount actually paid on April 30 or in the following week.",
+    "The full text of MDE's April 30 written opposition brief; that standalone filing remains uncaptured in this corpus.",
+    "Any proposition that Judge Guthmann ordered MDE to resume reimbursement payments; the transcript and later Judicial Branch correction show otherwise."
+  ]
+}
