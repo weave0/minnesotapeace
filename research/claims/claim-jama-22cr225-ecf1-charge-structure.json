@@ -1,0 +1,35 @@
+{
+  "reviewed_at": "2026-08-30T20:30:00Z",
+  "created_at": "2026-08-30T20:30:00Z",
+  "updated_at": "2026-08-30T20:30:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-jama-22cr225-ecf1-charge-structure",
+  "claim_text": "A November 21, 2024 federal court order summarizing the original indictment in United States v. Sharmake Jama et al., No. 0:22-cr-00225, states that ECF 1 charges wire fraud, federal programs bribery, conspiracy to commit money laundering, and money laundering. The original Jama indictment therefore does not contain a wire-fraud-conspiracy charge under either 18 U.S.C. § 371 or § 1349.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "0:22-cr-00225",
+  "event_date": "2022-09-13",
+  "source_ids": [
+    "src-govinfo-22-cr-00225-doc173-jama-indictment-order",
+    "src-doj-2022-09-20-fof-47-charged"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-govinfo-22-cr-00225-doc173-jama-indictment-order",
+      "page": 3,
+      "locator": "Background — indictment charge structure",
+      "quote": "The Indictment charges Defendants with (1) wire fraud; (2) federal programs bribery; (3) conspiracy to commit money laundering; and (4) money laundering."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED not ADJUDICATED",
+    "charge structure established by a primary judicial source citing ECF 1",
+    "original ECF 1 binary remains uncaptured",
+    "case-specific finding only; do not generalize to unchecked charging instruments"
+  ]
+}
