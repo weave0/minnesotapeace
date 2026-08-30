@@ -1,0 +1,48 @@
+{
+  "source_id": "src-hhs-oig-2026-07-01-mn-mfcu-recertification",
+  "canonical_url": "https://oig.hhs.gov/documents/medicaid-fraud-control-units/11768/Minnesota_Medicaid_Fraud_Control_Unit_-_2026_Recertification_Letter.pdf",
+  "issuing_body": "U.S. Department of Health and Human Services, Office of Inspector General",
+  "title": "Minnesota Medicaid Fraud Control Unit - 2026 Recertification Letter",
+  "publication_date": "2026-07-01",
+  "retrieval_date": "2026-08-29",
+  "document_type": "recertification_determination",
+  "jurisdiction": "Minnesota Medicaid Fraud Control Unit",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_RECORD",
+  "evidence_class": "AGENCY_DETERMINATION",
+  "supports": [
+    "HHS-OIG conditionally recertified the Minnesota MFCU beginning 2026-07-01, subject to special corrective conditions.",
+    "OIG determined the Unit generally complied with applicable laws, regulations, and policy transmittals but was not adhering to all MFCU Performance Standards and needed additional action.",
+    "For FY2025, Minnesota MFCU reported 32 approved staff positions, 31 filled; OIG estimated approximately 41 staff based on Minnesota Medicaid expenditures of $21.4 billion.",
+    "The Unit reported that the May 2026 Legislature approved 18 additional positions: nine investigators, four attorneys, two auditors, and three support staff.",
+    "PIU/MCO referrals rose from 119 in FY2025 to nearly 790 between 2025-10-01 and 2026-05-14; the Unit reported quality decreased for many referrals, especially PIU referrals with limited preliminary analysis or information.",
+    "OIG found case progression effective; approximately 24 percent of open cases were more than three years old.",
+    "The Unit reported 30 open joint investigations with HHS-OIG's Office of Investigations.",
+    "OIG identified FY2024/FY2025 fiscal-control issues including late deliverables and an FY2025 Federal-grant 'overmatch' that the Unit attributed to staffing changes and turnover.",
+    "Minnesota MFCU reported 36 fraud convictions in FY2025, 115 fraud convictions over three years, 187 fraud investigations, 49 fraud indictments, 8 civil settlements and judgments, and more than $24 million in total monetary recoveries in FY2025.",
+    "OIG found Minnesota MFCU effective in investigating/prosecuting Medicaid fraud but said it should obtain law-enforcement authority to improve operational effectiveness.",
+    "OIG found the Unit was not using its resources effectively enough for patient-abuse/neglect matters; it reported two such convictions, 15 investigations, and one indictment in FY2025.",
+    "Special conditions require a fiscal-management corrective plan/progress report and implementation of the remaining 2022 inspection recommendation for a comprehensive case-management system."
+  ],
+  "money": [
+    {
+      "amount": 24000000,
+      "currency": "USD",
+      "metric_type": "recovered_amount_mixed_criminal_civil",
+      "qualifier": "more_than",
+      "period": "FY2025",
+      "notes": "Minnesota MFCU annual-statistical-report figure quoted by HHS-OIG as total monetary recoveries. Do not combine with DHS identified-for-recovery or individual restitution figures without determining overlap."
+    }
+  ],
+  "important_qualifications": [
+    "Conditional recertification is an administrative determination, not a criminal finding against MFCU staff.",
+    "The $24M figure is a Unit-reported annual recovery measure quoted by HHS-OIG; it may include multiple criminal/civil recovery types and should not be treated as one cash-restitution category.",
+    "Do not import the seven recommendation statuses numbered 26-E-07-010 from HHS-OIG's tracker into Minnesota; those belong to the Oklahoma MFCU 2025 inspection."
+  ],
+  "locators": [
+    "letter pp.1-2 conditional recertification",
+    "letter p.3 staffing/referrals/case progression",
+    "letter p.4 fiscal control/fraud outcomes",
+    "letter pp.5-6 patient abuse and special conditions"
+  ]
+}
