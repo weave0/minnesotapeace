@@ -31,11 +31,11 @@ What this collection could **not** verify in a primary source as of 2026-08-30. 
 - The **original indictment PDFs** (ECF 1 in 22-CR-223, 22-CR-124, etc.) were not downloaded in full from PACER.
 - Consequently **18 U.S.C. § 1349** was **not found** in fetched charging text. Conspiracy is charged in the documents we have as **§ 371 + § 1343**, plus § 666, § 1956(a), § 1957, and juror bribery **§ 201**. Passport false-statement statute number for Abdiaziz Farah was not captured.
 
-## 5. First-trial (June 2024) complete verdict roster
+## 5. First-trial (June 2024) complete verdict roster — SUBSTANTIALLY RESOLVED
 
-- IRS-CI confirms Abdiaziz Farah and Abdimajid Nur were convicted after the seven-week trial that began April 22, 2024.
-- No DOJ “jury verdict” press release listing all seven defendants’ guilty/not-guilty counts was captured.
-- Journalism says two defendants were acquitted of the fraud (including Said Farah, later convicted of juror bribery). **Unverified** in a primary.
+- **Primary conviction roster captured (2026-08-30 pass).** USAO-MN's June 7, 2024 verdict release (`src-usao-mn-2024-06-07-first-fof-trial-verdict`) identifies all five defendants convicted after the six-week jury trial in **22-CR-124** — **Abdiaziz Shafii Farah, Mohamed Jama Ismail, Abdimajid Mohamed Nur, Mukhtar Mohamed Shariff, and Hayat Mohamed Nur** — and supplies each defendant's guilty-count breakdown. The release also states that, as proven at trial, the convicted defendants carried out a **$40 million** Federal Child Nutrition Program fraud scheme.
+- **Two full acquittals secondary-verified.** Contemporaneous Minnesota Reformer courthouse reporting (`src-minnesotareformer-2024-06-07-first-fof-trial-verdict`) identifies **Said Shafii Farah** and **Abdiwahab Maalim Aftin** as acquitted of all charges. Preserve those identities as **SECONDARY_VERIFIED** until the verdict forms, minute entry, judgments, or another primary court record are captured.
+- **Still open:** primary judicial proof of the two full acquittals and a complete count-by-count record of not-guilty verdicts for defendants who received mixed verdicts. Do not infer omitted not-guilty counts merely from the USAO release's list of guilty counts.
 
 ## 6. Complete plea/sentence status for the original 47
 
