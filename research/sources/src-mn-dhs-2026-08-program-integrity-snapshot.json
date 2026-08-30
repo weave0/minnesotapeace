@@ -1,0 +1,37 @@
+{
+  "source_id": "src-mn-dhs-2026-08-program-integrity-snapshot",
+  "canonical_url": "https://mn.gov/dhs/program-integrity/",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Program Integrity",
+  "publication_date": "2026-08-12",
+  "retrieval_date": "2026-08-29",
+  "document_type": "agency_status_page",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_POSITION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS reported 3,068 open program-integrity intakes and 1,647 open cases, with the page marking those figures updated 2026-08-04.",
+    "DHS reported 490 Medicaid payment withholds imposed in 2025, more than triple 2024.",
+    "DHS reported more than 3,500 investigations and more than 1,150 law-enforcement referrals since 2020.",
+    "DHS reported more than $56 million identified for recovery since 2020; identified_for_recovery is not recovered_amount.",
+    "DHS reported 2,061 providers of high-risk services approved through Revalidate 2026 after complete applications and unannounced site-visit evidence.",
+    "DHS reported 18,109 inactive providers terminated between October 2025 and March 2026 in connection with the CMS corrective action plan, in addition to 761 provider agencies terminated for inactivity in October 2025.",
+    "DHS lists 14 Medicaid service provider types as high risk, including ARMHS, EIDBI, HSS, IHS, ICS, NEMT and other services."
+  ],
+  "money": [
+    {
+      "amount": 56000000,
+      "currency": "USD",
+      "metric_type": "identified_for_recovery",
+      "qualifier": "more_than",
+      "notes": "Agency-reported cumulative amount since 2020. Do not label as fraud proven, restitution, or cash recovered."
+    }
+  ],
+  "does_not_support": [
+    "A high-risk designation does not establish fraud by every provider in the category.",
+    "Open intakes and open cases are not criminal case counts.",
+    "The $56 million figure is not a recovered-cash total."
+  ]
+}
