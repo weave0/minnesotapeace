@@ -5,183 +5,183 @@
   "claims": [
     {
       "claim_id": "claim-aden-25cr349-amex-charges",
-      "sha256": "015442912880de92b04809b37b9a34e1aa9b1e452f8805b663085a7c95dad152"
+      "sha256": "462e197f15d1a1c9b038dcb74886f2a04b8baa18b918502d9e6b16da0cde8c36"
     },
     {
       "claim_id": "claim-aden-25cr349-brilliant-minds-amount-billed",
-      "sha256": "1b2221a12c08a2c23585784dbd06a0212d83d9e8449d1eb23503d54b05966b8e"
+      "sha256": "795af0a6c5369e7cbfbedcad50223e1f7586d5c23a50f46f8b7f3a9b587dadd2"
     },
     {
       "claim_id": "claim-aden-25cr349-ecf1-wire-fraud-counts",
-      "sha256": "91c1946e2c6c4443a8029a3d31fbe2b7c6d46b53f03047ed045e65de9624c841"
+      "sha256": "d99050700f93ed00f4fbdc38de37495a9d2a7c86ecee560ba502ea965ccde2b3"
     },
     {
       "claim_id": "claim-aden-25cr349-foundation-first-amount-billed",
-      "sha256": "409a780b615e58e6b95476a2315e1fb4db9e730c90a7ec8e1682536cfc55a993"
+      "sha256": "9b8f298950e3c761219f2554c67b23eb0eb3402e9dda8539e9deae3eaccedd4e"
     },
     {
       "claim_id": "claim-aden-25cr349-personal-pocketing",
-      "sha256": "c209abb279bdb24d709f1ca79ab36fc8fa03c47b871f88f497776b1d1f09477b"
+      "sha256": "d484c3568425b7ba4b7c48bfc5853ae844ce5c86fc652b781846574578dd0b04"
     },
     {
       "claim_id": "claim-adow-anwar-counts-1-4-1343",
-      "sha256": "2183ceac3a36dd022b323e65f3e9ecb4a8623b605fc2f2db391ab289137def25"
+      "sha256": "489c7ab24b8be04f6a2150e32df3bde2278fffde02c9cf4c421e2227a29c6c30"
     },
     {
       "claim_id": "claim-adow-anwar-liberty-plus-owner",
-      "sha256": "bdb0978c390f08bcc3212df62bbe7eb5b805a19c45d2d003738023a80b1cedcd"
+      "sha256": "c6f4e08c8516a85c2275f294e54330056c5d9c9ac9d451867e8f15a1e805f089"
     },
     {
       "claim_id": "claim-adow-anwar-liberty-plus-received-1.2m",
-      "sha256": "8c31c1f27798b19a0e6308e54bdde451256899e4fecd9810d4821903f24bd902"
+      "sha256": "7dbbc168d03534c986090eeee1474d12a51dddc4608cc5e0409f9cac81f0f751"
     },
     {
       "claim_id": "claim-ago-petition-fof-sos-incorporation",
-      "sha256": "5ee8a8b0c3ae8353d2f405e1b8ce872f7e5e428882a1e20f38de4ce37543392d"
+      "sha256": "1ca29281c223a98e94b948d5eef7bbd1f166a09d8456d30dd2349d2abbecb036"
     },
     {
       "claim_id": "claim-ago-petition-irs-501c3-2017-02-28",
-      "sha256": "672d490dd74ae3f5a18c47d492666849d86c984701f6d7413455bef2a486c569"
+      "sha256": "86001e6341a8bf49f18cb730a5f28b2a329a94797bc77bb3742beac37238bb02"
     },
     {
       "claim_id": "claim-falade-25cr351-ecf1-wire-fraud-counts",
-      "sha256": "afbab7588475b618e06509d49dd3a1947e5fc83bed322393a753aa7fa8f5d695"
+      "sha256": "b1a348188d08d5db8e27bcebcfb4dbf738ba533807db0452b6afeaf03c0869f3"
     },
     {
       "claim_id": "claim-falade-25cr351-faladcare-amount-billed",
-      "sha256": "9f5c9551ce5bd95fd51ecd75448472e3a80896df324a15de12ac819b4c28cc66"
+      "sha256": "db9d07c84413f07b420a9c8cc3a2781dde9e95a22e7541bb3d6896ec8e4e66de"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-40m-scheme",
-      "sha256": "832c9b50d0fec859ac2b0dc2ea9c713f9b50c1063004096850f206b78d6fdca3"
+      "sha256": "3d798d60ff9ea656c787ca1b3bd366fa67ec7225057f3f4fdca82a29b18db3dc"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-count-map",
-      "sha256": "03d652e9a6966c7593e68a1ff323087f14eec4db337a77bd73c4be6ed7aee9d5"
+      "sha256": "098904f84502422d635bb60cbeadb212cc752a91a8702f93524d66adac028467"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-empire-received-28m",
-      "sha256": "2282227df4d8df248ce676f72ab186aeb649372de31dc60f81440de45e4a3be5"
+      "sha256": "ece469b73ef00e30c4ba090bba4e86be94adab7bd31af6f2c46d3d39f84d3055"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-entity-shell-receipts",
-      "sha256": "6a3176f9592a92eb64ad5885800bf7cd0d2d13ef4a67b7139c91890492e6bacb"
+      "sha256": "d3902b31334d8376802eee365360cd3e9eebe93ebbea27edc556fc8ba7a58bef"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-fof-sponsor-recitals",
-      "sha256": "3223b66dbce833c5a606a1d42b9514ef3c3fc1ec07d76e225838ced574d5256e"
+      "sha256": "b389f8804c033a875463d6c0ba6c225c2f40d36fd536224ff42f57b6a85196e0"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-sponsor-a-recitals",
-      "sha256": "5cb60b181a50228728e9eecc196136d74f4652bc14dc09086f2edd728c12bf0f"
+      "sha256": "2f40e45c8ef981fb4097b6c04c04d06863be80a1f367aff13198703f7871419a"
     },
     {
       "claim_id": "claim-farah-22cr124-ecf57-thinktechact-receipts",
-      "sha256": "b7d294345db1a4e166b177ea477e8d2a91bf5f2b33b5b144181fe4962841aea0"
+      "sha256": "1be3bab88fe77512a7be909d5f7c1132c49d0d185540df14febbba583a4819ed"
     },
     {
       "claim_id": "claim-fof-990-fy2020-officers",
-      "sha256": "76589e6cd6c67eca6bb07d0ab758c1d93bbaa51dd9e4c4fccb776574929cd933"
+      "sha256": "1fdac1e8e456e3e7a90137f08183055b6d52243c741b4498b571f5ace2ae3eab"
     },
     {
       "claim_id": "claim-fof-990-fy2020-reported-revenue",
-      "sha256": "c10213b81ee76e913db79028fe008189d73a3fb72f5b0833200ef3e1e60b5f8f"
+      "sha256": "5be62f3330aecaeddf858417985b7c1c08227d46f0a5e243c16a25053e1d4043"
     },
     {
       "claim_id": "claim-fof-absent-from-irs-bmf-2026-08",
-      "sha256": "9e738fcf77205ae60ad04586835fe73f00060f5187cc8cb1f90a12dbbb5fb991"
+      "sha256": "def46f243fbd8ac7150e3aabc2a0ac429fb82f1f2eae452213d902dc1e80d468"
     },
     {
       "claim_id": "claim-fof-ein-81-4343304",
-      "sha256": "e9ecfe732b5da14b4cd6818abd334bd0af247eebac453ba1edd9a82e7909eeb3"
+      "sha256": "8a21cee5e570c479635aacfa0845a883b75aa0b13ff80c6e4352fd86b556a7b3"
     },
     {
       "claim_id": "claim-hss-25cr-indictments-statewide-program-payouts",
-      "sha256": "640ec7afdce3c522755ea1c26f972549e9f93077e9598eb2298cc42b9f9f24c8"
+      "sha256": "a6171862ad6b999d1a8fce517a1b688b6e90e74fefc13f74eda3b64d558067e3"
     },
     {
       "claim_id": "claim-hss-program-spend-in-adow-information-para8",
-      "sha256": "d15f82a24352d3a5cc09e1dca64e5f1e588ae3cb6766116fc68326dcb2dd485f"
+      "sha256": "b2f69ff8c1b92ac6a4f2d84a9e333317161851fbd25d4ccc0f5992189d88a749"
     },
     {
       "claim_id": "claim-hussein-25cr479-ecf1-wire-fraud-counts",
-      "sha256": "8408c395b23677e3a6a3f784c0db4cc5980824bbab1b7c82c99463b2c1202807"
+      "sha256": "2b37c60af495a321ccdbe7103697a7da24feaaa8636121768feb33de5a881cc0"
     },
     {
       "claim_id": "claim-hussein-25cr479-pristine-amount-claimed",
-      "sha256": "cba1cd7587152ed5a234c6e199531a13abcc406d3448644662289d378f302d09"
+      "sha256": "4c7033920a11efd50693a25bd6e8e5137653ba38ea5e4fb942a829c7abd3804d"
     },
     {
       "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
-      "sha256": "45f6ef56ff3db4e6bfc397254b822ddbb83c47d8c9d81a325d4d7c0ad709f412"
+      "sha256": "b88e82ba38001fc691dd6528f4024d4398eb1704d4e47d7ae3686e0e017d55bd"
     },
     {
       "claim_id": "claim-mde-fof-stop-pay-voluntary-not-ordered",
-      "sha256": "04fe4a08d4daa3996ad1beabfb01a802985730f3150cd60c0a3c546430b4b6a6"
+      "sha256": "2d1e17a47fd3912763e58a7184a71085d368a91512aa4343fc546211a5632f5a"
     },
     {
       "claim_id": "claim-mohamed-24cr015-ecf1-count-map",
-      "sha256": "c609acddd9d42a0b3e7f36d7cbba76b419f9decbbe1d00424403192986cf423d"
+      "sha256": "873139cb411eda196b908b5c59e18f6a7309bd795d49b1005bc9d6565bf0cd23"
     },
     {
       "claim_id": "claim-mohamed-24cr015-ecf1-family-received-12m",
-      "sha256": "de81827037cdea748e1a2fd44d06fb6c0a36b5e3d8050afd38b2842c84742d14"
+      "sha256": "1dc3600826933e0dd8e9eba1e109f670d13195bb4959d7fe2297990cc1ffe920"
     },
     {
       "claim_id": "claim-mohamed-24cr015-ecf1-fof-sponsor-200m-recital",
-      "sha256": "c4799147c6270565fe49302a13207c35cdf5cc54a47732d0cdcc53086432baee"
+      "sha256": "d02b25558babd4167f8483feef1bdeec0954957a6bf03f3548f066f95a752c85"
     },
     {
       "claim_id": "claim-mohamed-24cr015-ecf1-site-receipts",
-      "sha256": "b84be18fad3304b7a55333de8c94a8ee6408cd8dc30d8650831f68f353688ea3"
+      "sha256": "1f74acc97d3e85e175cbe091c8525379410c28fe1b1370a85c4a37a4c8e2d6e7"
     },
     {
       "claim_id": "claim-mohamed-24cr015-ecf1-star-distribution-received-10m",
-      "sha256": "3e45e3cb56d6feb052acf189c88aff9f11fbe1f0cbfe37de040578bc90ea5656"
+      "sha256": "b376b890027af4ec9ee0a5837812a2b5877acb92f82357366d25ec096c769809"
     },
     {
       "claim_id": "claim-pin-990-fy2021-contractor-empire",
-      "sha256": "52eec331da62c48ac4bd92a275b868cd2f091e8bfa1be38d23e327d5e70e7cbd"
+      "sha256": "54b7c9d92b146d26f1d02dd5431870ba8cab6546ea3d010e0d12add66cd793d6"
     },
     {
       "claim_id": "claim-pin-990-fy2021-reported-revenue",
-      "sha256": "2d3f9e0dea772d208850459f357b214fe8650aa51ca5ef74a5cfe64cc8a999fb"
+      "sha256": "00195978891d742bc5c47d0e98928f9deececaee72a696e7159784801e4c13c7"
     },
     {
       "claim_id": "claim-propublica-irs-index-ruling-2020-12",
-      "sha256": "c1a8a462d4f947037b2eb7ab6c9f98fc592c8e8d618d982b85345d7869862873"
+      "sha256": "df8e96ee08d40bce09dbf0be47b22a28d34f1e21d3c20cce4d61d67fa41fbd87"
     },
     {
       "claim_id": "claim-sallah-25cr482-crypto-150k",
-      "sha256": "b0bbcc9f4d9671fd0197b640e234696f5cbee9c1fdf86ee9442d911ed17c16cd"
+      "sha256": "2a9ad4c6e9b016d005ead194bb217432c96c683bdb5e4ba9e7014d4879be2925"
     },
     {
       "claim_id": "claim-sallah-25cr482-ecf1-wire-fraud-counts",
-      "sha256": "c31372a4e79e876f78e9d11e739e93d779a2d5d6667e09b7fbd31db6ed035b2e"
+      "sha256": "3cac357dd9fffde8a7186ebdaaf42699e14293c7a881e8da345a3c1f7bf3af02"
     },
     {
       "claim_id": "claim-sallah-25cr482-safelodgings-claimed-and-received",
-      "sha256": "9294673cd9d1c53b36a84b068d209a38fc0ff24df088dc67e4c5b37779e8ac14"
+      "sha256": "5417e1cdc7b3c1efaf82d862d4daee13906ae5709797228839bcea1a3a631682"
     },
     {
       "claim_id": "claim-sos-empire-inactive",
-      "sha256": "b0ea2281a5d58a10f53a9ca33423fb9d0eb773b3f2b62e71c644b4128c5f3dc8"
+      "sha256": "010133b20e334541458bac6c0b3fa432b7085d1239271f6be72aa52a8a1a6317"
     },
     {
       "claim_id": "claim-sos-fof-current-president-ali-egal",
-      "sha256": "0705fc391f2e004cebad9092205cdb4a1d3cb247db990bcbb500571fde0c26c6"
+      "sha256": "a4215e852af15b6136b6a510f2c881cc444eb5362497ee1e5de886c54dad4e1d"
     },
     {
       "claim_id": "claim-sos-fof-file-913838800020",
-      "sha256": "173393f608f7d7260a329172f01cfb283dcafb88ebd0c2b2855e8107f951eb97"
+      "sha256": "61ad589be44cdf63049d526e0ebebf29b749fa818816caedcb9929a4f7c9a997"
     },
     {
       "claim_id": "claim-sos-leo-asad-adow",
-      "sha256": "dd9f094081ffe698ac814ca7d0cf0f83f86999a77a4fe09272d99d4e0c1dcb40"
+      "sha256": "9f80c8808df250c734c0ac9fcc06f6e7f4e42e40ac795ec50bc9fced82b0b59c"
     },
     {
       "claim_id": "claim-sos-liberty-plus-anwar-adow",
-      "sha256": "8e001925704c9c2ed252f301c3e5ffd4f8ebfe45f6f7ae995eba293662de91a5"
+      "sha256": "c071e5d70ea62b31ba33caaac40eeaf31affb0fb585e5ed0f0a137a7b2cd3059"
     }
   ],
   "sources": [

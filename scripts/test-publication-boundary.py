@@ -171,9 +171,14 @@ def main() -> int:
         fixture["source_ids"] = ["src-this-source-id-does-not-exist-anywhere"]
         FIXTURE_PATH.write_text(json.dumps(fixture, indent=2), encoding="utf-8")
 
-        import hashlib
+        # Use build.py's own hash function (line-ending-normalized), not a raw
+        # hashlib.sha256 of the file bytes -- otherwise this step of the test
+        # would fail on a hash mismatch instead of exercising the check it's
+        # meant to exercise (an approved claim citing an unapproved source).
+        sys.path.insert(0, str(BUILD_SCRIPT.parent))
+        import build as build_module  # noqa: E402
 
-        fixture_hash = hashlib.sha256(FIXTURE_PATH.read_bytes()).hexdigest()
+        fixture_hash = build_module.sha256_file(FIXTURE_PATH)
         manifest_with_fixture = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         manifest_with_fixture["claims"].append({"claim_id": FIXTURE_CLAIM_ID, "sha256": fixture_hash})
         MANIFEST_PATH.write_text(json.dumps(manifest_with_fixture, indent=2), encoding="utf-8")

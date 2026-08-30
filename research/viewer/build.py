@@ -243,7 +243,16 @@ def load_json(path: Path) -> dict | list:
 
 
 def sha256_file(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    """Hash file content, not file bytes.
+
+    Approval must not flap depending on whether the working tree currently
+    has CRLF or LF line endings (Windows vs. Linux CI, or a local
+    core.autocrlf setting) when nothing about the JSON content changed.
+    Normalize line endings before hashing so the same logical content
+    always produces the same approval hash on every platform.
+    """
+    normalized = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(normalized).hexdigest()
 
 
 def index_by_field(directory: Path, glob: str, id_field: str, kind: str) -> dict[str, Path]:
