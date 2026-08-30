@@ -1,0 +1,24 @@
+{
+  "source_id": "src-americanexperiment-2026-07-28-warsame-80th-charged",
+  "canonical_url": "https://www.americanexperiment.org/80th-feeding-our-future-defendant-charged/",
+  "issuing_body": "Center of the American Experiment",
+  "author": "Bill Glahn",
+  "title": "80th Feeding Our Future defendant charged",
+  "publication_date": "2026-07-28",
+  "retrieval_date": "2026-08-30",
+  "document_type": "advocacy_news_article",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 9,
+  "source_status": "SECONDARY_ADVOCACY_REPORTING",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Politically aligned advocacy outlet. Used here only for the reported federal case number and as corroboration of the charge; supersede with the court docket/Information when captured. The article links to KARE 11 reporting but does not reproduce the primary filing.",
+  "supports": [
+    "The article reports that the Warsame case was filed as Case No. 26-cr-135 and charged one count of felony wire fraud.",
+    "The article identifies Mahamoud Warsame as the 80th Feeding Our Future defendant charged and says a guilty plea was scheduled shortly afterward."
+  ],
+  "does_not_support": [
+    "Treating Case No. 26-cr-135 as a fully normalized docket identifier with judge initials before the primary docket is captured.",
+    "Proof of the guilty plea itself; the article predates the plea proceeding.",
+    "Any stronger factual finding beyond what the charging record allegedly states."
+  ]
+}

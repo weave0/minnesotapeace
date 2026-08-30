@@ -1,0 +1,44 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MODERATE",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-warsame-26cr135-secondary-charge",
+  "claim_text": "Current Minnesota reporting identifies Mahamoud Warsame, associated with Metro Area Catering, as the 80th person charged in the Feeding Our Future investigation. Sahan Journal's updated defendant roster says he was charged on July 22, 2026 via a felony information with one count of wire fraud, and Center of the American Experiment reports the case number as 26-cr-135. The underlying federal Information/docket has not yet been captured in this corpus, so the charge identity and ordinal are SECONDARY_VERIFIED rather than primary-court-record verified. The alleged fraud conduct itself remains a charging allegation, not an adjudicated fact.",
+  "claim_type": "COUNT",
+  "status": "charged",
+  "case_number": "26-cr-135",
+  "source_ids": [
+    "src-sahan-2026-07-28-fof-defendant-roster",
+    "src-americanexperiment-2026-07-28-warsame-80th-charged"
+  ],
+  "corroborating_source_ids": [
+    "src-startribune-2026-07-30-warsame-guilty-plea"
+  ],
+  "statutes": [
+    "18 U.S.C. § 1343"
+  ],
+  "event_date": "2026-07-22",
+  "supporting_passages": [
+    {
+      "source_id": "src-sahan-2026-07-28-fof-defendant-roster",
+      "locator": "entry 80",
+      "quote": "charged with one count of wire fraud"
+    },
+    {
+      "source_id": "src-americanexperiment-2026-07-28-warsame-80th-charged",
+      "locator": "article body",
+      "quote": "Case No. 26-cr-135"
+    }
+  ],
+  "qualifiers": [
+    "Primary federal Information/docket not yet captured; supersede this source basis when the court record is retrieved",
+    "Sahan renders the first name as Mohamoud while the Star Tribune and American Experiment render it as Mahamoud; preserve the discrepancy until the primary caption is captured",
+    "The 80th-defendant ordinal is corroborated by multiple current local reports but is not yet tied to a directly captured DOJ/USAO statement"
+  ]
+}

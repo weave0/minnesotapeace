@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MODERATE",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-warsame-26cr135-guilty-plea-secondary",
+  "claim_text": "The Minnesota Star Tribune's contemporaneous report from federal court states that Mahamoud Warsame pleaded guilty on July 30, 2026 to the wire-fraud charge associated with his Feeding Our Future case. The report says Warsame admitted that Metro Area Catering submitted false or inflated meal claims and that he used proceeds for personal purchases. The primary plea agreement and docket minute have not yet been captured in this corpus, so the disposition is SECONDARY_VERIFIED pending primary-record replacement.",
+  "claim_type": "DISPOSITION",
+  "status": "confirmed",
+  "case_number": "26-cr-135",
+  "source_ids": [
+    "src-startribune-2026-07-30-warsame-guilty-plea"
+  ],
+  "corroborating_source_ids": [
+    "src-sahan-2026-07-28-fof-defendant-roster"
+  ],
+  "statutes": [
+    "18 U.S.C. § 1343"
+  ],
+  "event_date": "2026-07-30",
+  "supporting_passages": [
+    {
+      "source_id": "src-startribune-2026-07-30-warsame-guilty-plea",
+      "locator": "court report",
+      "quote": "pleaded guilty to his role"
+    }
+  ],
+  "qualifiers": [
+    "Primary plea agreement/minute entry not yet captured; do not treat this secondary claim as a substitute for the court record",
+    "The Star Tribune reports more than $4.7 million in federal child-nutrition funds, but this disposition claim does not convert that reporting into a court-certified proven-loss amount",
+    "Do not use this claim to resolve the separate scheme-wide 68/69 conviction-count discrepancy; the article reports 69 convictions as of publication but that is not a court-certified aggregate"
+  ]
+}
