@@ -2,9 +2,9 @@
 
 **Primary source:** U.S. Attorney's Office, District of Minnesota, “Defendants Charged in First Wave of Housing Stabilization Fraud Cases,” Sept. 18, 2025.
 
-**Evidence class:** `CHARGED_ALLEGED` for defendant conduct; `AGENCY_POSITION` for broader prosecutorial descriptions of program vulnerability and investigative scope.
+**Evidence class:** `CHARGED_ALLEGED` for unresolved defendant conduct; `ADJUDICATED` for guilty pleas described below; `AGENCY_POSITION` for broader prosecutorial descriptions of program vulnerability and investigative scope.
 
-**Publication rule:** Every defendant is presumed innocent unless and until convicted. Amounts below are alleged billing/payment figures reported by DOJ from charging documents, not adjudicated loss unless separately established by judgment or plea.
+**Publication rule:** Every defendant is presumed innocent unless and until convicted or a guilty plea is accepted. Amounts below retain their source metric; a guilty plea does not automatically convert every earlier charging allegation into a court-certified loss or restitution figure.
 
 ## Program context stated by DOJ
 
@@ -35,8 +35,31 @@ DOJ alleged Brilliant Minds submitted approximately **$2.3 million** in HSS reim
 
 Metric handling:
 
-- `$2.3M` → `amount_billed` / `CHARGED_ALLEGED`
+- `$2.3M` → `amount_billed` / original `CHARGED_ALLEGED`
 - personal distributions described by DOJ → alleged proceeds, not proven loss
+
+### July 2026 guilty-plea update
+
+DOJ Office of Public Affairs reported on **2026-07-24** that all four Brilliant Minds defendants pleaded guilty to **one count of wire fraud each** in separate hearings held between **2026-07-07 and 2026-07-23**:
+
+- Moktar Hassan Aden
+- Mustafa Dayib Ali
+- Khalid Ahmed Dayib
+- Abdifitah Mohamud Mohamed
+
+Primary source: https://www.justice.gov/opa/pr/four-men-plead-guilty-2m-minnesota-medicaid-fraud  
+Local source record: `research/sources/src-doj-opa-2026-07-24-hss-brilliant-minds-pleas.json`
+
+DOJ's post-plea account states that the four enrolled approximately **350 people** for HSS, billed for services not provided or materially inflated, and obtained approximately **$2.2 million** from Minnesota Medicaid. DOJ also states that when insurers requested supporting documentation, the defendants fabricated records using **ChatGPT** in an effort to conceal the conduct.
+
+Status handling:
+
+- guilt on the pleaded wire-fraud offense → `ADJUDICATED`;
+- approximately `$2.2M` → preserve as DOJ's post-plea scheme amount pending plea-agreement/judgment capture; **not** `restitution_ordered` and **not** `recovered_amount`;
+- the `$2.2M` substantially overlaps the earlier approximately `$2.3M amount_billed` figure — **do not add them**;
+- DOJ said sentencing dates had not yet been set as of the release.
+
+This supersedes older research text that described the four defendants simply as `charged`.
 
 ## 25-cr-351 — United States v. Christopher Falade et al.
 
@@ -65,7 +88,7 @@ DOJ alleged employees were encouraged to maximize hours and manufacture service 
 
 Metric handling:
 
-- `$2.7M` → `amount_paid` / `CHARGED_ALLEGED`
+- `$2.7M` → `amount_paid` / `CHARGED_ALLEGED` in charging narrative
 
 ## 25-cr-353 — United States v. Anwar Ahmed Adow
 
@@ -79,7 +102,7 @@ DOJ alleged Liberty Plus received more than **$1.2 million** in Medicaid funds f
 
 Metric handling:
 
-- `>$1.2M` → `amount_paid` / `CHARGED_ALLEGED`
+- `>$1.2M` → `amount_paid` / original `CHARGED_ALLEGED`
 
 ## Case-family relationships to preserve
 
@@ -91,7 +114,9 @@ Metric handling:
 
 Asad Adow `25-cr-354` information remains missing from RECAP (re-checked 2026-08-27; no PACER buy). Aden, Falade, Anwar Adow, Hussein 25-cr-479, and Sallah 25-cr-482 charging instruments are count-mapped from the face of ECF 1.
 
-## Source
+For `25-cr-349`, acquire the four July 2026 plea agreements/minutes and later judgments so the exact admitted factual basis, loss calculation, restitution, forfeiture and sentence can replace press-release-level detail.
+
+## Original first-wave source
 
 https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabilization-fraud-cases
 
@@ -108,9 +133,9 @@ https://www.justice.gov/usao-mn/pr/defendants-charged-first-wave-housing-stabili
 Do not sum the $2.3M / >$2.2M / $2.7M / >$1.2M figures. They are overlapping program-family billing/payment allegations across four matters.
 
 
-## Guilty-plea docket facts (not yet judgments)
+## Other guilty-plea docket facts (not yet judgments)
 
-These come from CourtListener docket minutes, not from archived plea-agreement PDFs. Sentence/restitution are **not** entered on these dockets as of the May 2026 related-case notices.
+These come from CourtListener docket minutes, not from archived plea-agreement PDFs. Sentence/restitution are **not** entered on these dockets as of the May 2026 related-case notices unless superseded by later records.
 
 - **Anwar Ahmed Adow, 25-cr-353, ECF 7 (2025-10-23):** Judge Magnuson; “Plea entered … Guilty as to Count 1 of the Information.” Waiver of indictment ECF 8. Plea agreement ECF 9 exists and is **not** on RECAP. PSR is pending; objection deadline continued 2026-01-05. Treat Count 1 guilt as a court-minute fact; do not invent a sentence or restitution number.
 - **Asad Ahmed Adow, 25-cr-354, ECF 12 (2025-11-17):** Judge Blackwell; guilty as to Count 1. Waiver ECF 13. Plea agreement ECF 14 **not** on RECAP. The felony information itself is still not on RECAP.
