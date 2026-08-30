@@ -1,0 +1,25 @@
+{
+  "source_id": "src-govinfo-22-cr-00225-doc173-jama-indictment-order",
+  "canonical_url": "https://www.govinfo.gov/content/pkg/USCOURTS-mnd-0_22-cr-00225/pdf/USCOURTS-mnd-0_22-cr-00225-5.pdf",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Jama et al. — Order discussing the Indictment and search warrants, Doc. 173",
+  "case_number": "0:22-cr-00225-NEB-DTS",
+  "document_date": "2024-11-21",
+  "retrieval_date": "2026-08-30",
+  "document_type": "court_order",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CHARGED_ALLEGED",
+  "notes": "Primary federal court source summarizing the original ECF No. 1 indictment. The original indictment binary remains uncaptured in the corpus, but this order cites the indictment paragraphs supporting the charge structure.",
+  "supports": [
+    "The court states that the 22-CR-225 Indictment charges Defendants with wire fraud, federal programs bribery, conspiracy to commit money laundering, and money laundering, citing Indictment paragraphs 48, 49, 51, 53, and 63.",
+    "The court's description contains no wire-fraud-conspiracy charge in the original Jama indictment.",
+    "The court states that the indictment alleges more than 1.7 million meals falsely claimed, about $5.6 million paid by MDE, and approximately $4.3 million received by Defendants."
+  ],
+  "does_not_support": [
+    "That the original ECF No. 1 PDF itself has been captured in this corpus.",
+    "A network-wide conclusion about § 1349 in other Feeding Our Future charging instruments.",
+    "Adjudicated guilt from the indictment allegations."
+  ]
+}
