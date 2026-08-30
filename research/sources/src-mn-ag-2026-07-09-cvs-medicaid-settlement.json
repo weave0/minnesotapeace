@@ -1,0 +1,42 @@
+{
+  "source_id": "src-mn-ag-2026-07-09-cvs-medicaid-settlement",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/07/09_CVS.asp",
+  "federal_mirror_url": "https://oig.hhs.gov/fraud/enforcement/ag-campbell-announces-365-million-multistate-settlement-with-cvs-for-allegedly-over-dispensing-insulin-pens/",
+  "issuing_body": "Minnesota Attorney General",
+  "title": "Attorney General Ellison holds CVS accountable for submitting false Medicaid claims related to insulin pens",
+  "publication_date": "2026-07-09",
+  "retrieval_date": "2026-08-29",
+  "document_type": "civil_false_claims_settlement_release",
+  "jurisdiction": "Minnesota / multistate federal-state settlement",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_ENFORCEMENT_RELEASE",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "supports": [
+    "Minnesota joined a $36.5 million national settlement resolving allegations that CVS submitted false claims to government health programs relating to insulin-pen dispensing.",
+    "The Minnesota Attorney General states CVS will pay more than $850,000 attributable to conduct in Minnesota, including more than $400,000 in direct restitution to Minnesota's Medical Assistance program.",
+    "The allegations cover 2010 through 2020 and involve over-dispensing insulin pens, under-reporting days of supply, and premature refill claims.",
+    "The release states CVS accepted responsibility for specified conduct as part of the settlement."
+  ],
+  "money": [
+    {
+      "amount": 850000,
+      "currency": "USD",
+      "metric_type": "civil_settlement",
+      "qualifier": "more_than",
+      "scope": "Minnesota-attributable settlement amount"
+    },
+    {
+      "amount": 400000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered_or_settlement_restitution",
+      "qualifier": "more_than",
+      "scope": "direct restitution to Minnesota Medical Assistance",
+      "notes": "Settlement restitution, not a criminal restitution order."
+    }
+  ],
+  "important_qualifications": [
+    "This is a civil settlement resolving allegations; do not describe it as a criminal conviction.",
+    "The Minnesota-attributable settlement amount and direct Medicaid restitution are nested/overlapping figures and must not be added together.",
+    "This recovery should remain separate from the MFCU annual $24M recovery statistic unless overlap is resolved."
+  ]
+}
