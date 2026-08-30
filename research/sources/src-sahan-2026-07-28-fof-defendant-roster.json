@@ -1,0 +1,25 @@
+{
+  "source_id": "src-sahan-2026-07-28-fof-defendant-roster",
+  "canonical_url": "https://sahanjournal.com/news/feeding-our-future-indictments-who-charged-food-fraud-minnesota/",
+  "issuing_body": "Sahan Journal",
+  "author": "Hibah Ansari",
+  "title": "Who’s been charged in the Feeding Our Future food fraud investigation?",
+  "publication_date": "2022-09-20",
+  "retrieval_date": "2026-08-30",
+  "document_type": "news_article_updated_roster",
+  "jurisdiction": "Minnesota / D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Continuously updated Sahan Journal defendant roster; page states Updated July 28, 2026. The older general disclaimer near the top was not rewritten for every later disposition, so use the dated individual roster entries rather than treating that boilerplate as current disposition evidence.",
+  "supports": [
+    "The roster states 80 people had been charged in the Feeding Our Future investigation as of its July 28, 2026 update.",
+    "Entry 80 identifies Warsame, operator of Metro Area Catering, as charged on July 22, 2026 with one count of wire fraud via a felony information.",
+    "The roster attributes to the charges allegations that Metro Area Catering inflated meal counts and that Warsame obtained more than $4.7 million from Federal Child Nutrition Programs."
+  ],
+  "does_not_support": [
+    "This source is journalism, not the charging instrument itself.",
+    "The roster does not establish the later guilty plea by itself.",
+    "The spelling of Warsame's first name on this roster differs from other current reporting; resolve canonical spelling from the primary court filing when captured."
+  ]
+}
