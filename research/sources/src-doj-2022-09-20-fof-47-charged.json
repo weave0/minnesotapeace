@@ -1,0 +1,25 @@
+{
+  "source_id": "src-doj-2022-09-20-fof-47-charged",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/us-attorney-announces-federal-charges-against-47-defendants-250-million-feeding-our",
+  "archive_url": "https://www.justice.gov/archives/opa/pr/us-attorney-announces-federal-charges-against-47-defendants-250-million-feeding-our-future",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota / U.S. Department of Justice",
+  "title": "U.S. Attorney Announces Federal Charges Against 47 Defendants in $250 Million Feeding Our Future Fraud Scheme",
+  "publication_date": "2022-09-20",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_CHARGING_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "DOJ announced federal criminal charges against 47 defendants in the initial public Feeding Our Future charging wave on 2022-09-20.",
+    "DOJ alleged a scheme involving approximately $250 million in Federal Child Nutrition Program funds and stated Feeding Our Future opened more than 250 sites and fraudulently obtained and disbursed more than $240 million.",
+    "DOJ alleged Feeding Our Future employees recruited individuals/entities to open sites, false meal counts and attendance rosters were used, and shell companies were used to receive/launder proceeds.",
+    "DOJ's charging narrative states that when MDE pressed Aimee Bock for clarification, Bock accused MDE of discrimination/unfair scrutiny and that Feeding Our Future sued over denied site applications."
+  ],
+  "does_not_support": [
+    "The $250 million figure is a charging/alleged scheme figure, not a court-certified restitution or collected-loss total.",
+    "The release does not prove every allegation against every defendant; indictments are allegations until adjudicated.",
+    "The fact that Feeding Our Future litigated against MDE does not establish that a court ordered MDE to resume reimbursement payments; the Minnesota Judicial Branch separately corrected that claim."
+  ]
+}
