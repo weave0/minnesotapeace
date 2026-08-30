@@ -192,6 +192,27 @@
       "qualification": "The court's comments influenced MDE's later decision according to OLA and Korte, but comments are not an order."
     },
     {
+      "event_date": "2021-04-23",
+      "event_type": "civil_litigation_motion",
+      "actor": "Feeding Our Future",
+      "recipient": "Ramsey County District Court",
+      "summary": "Feeding Our Future filed a Motion-Contempt (Index #32, 11 pages) two days after the April 21 hearing, one week before MDE removed the stop-pay.",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
+      "source_locator": "Register of Actions, 04/23/2021 Index #32",
+      "qualification": "The motion text itself was not retrieved (docket index/metadata only); its specific legal basis and requested relief are not yet confirmed."
+    },
+    {
+      "event_date": "2021-04-30",
+      "event_type": "stop_pay_hearing",
+      "actor": "Ramsey County District Court",
+      "summary": "A second Temporary Restraining Order Hearing was held before Judge Guthmann at 3:00 PM (remote), the same calendar day MDE voluntarily removed the stop-pay per OLA's timeline. The docket records several same-day filings (two 25-page 'Other Document' entries, two attorney affidavits, a 5-page brief, and a 3-page affidavit) and an 'Order for Submissions-Under Advisement' issued that day.",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
+      "source_locator": "Register of Actions, 04/30/2021 hearing record and Index #42-#50",
+      "qualification": "This second hearing was not previously reflected in this corpus's timeline, which had described only the April 21 hearing as preceding the April 30 resumption. The docket establishes the hearing and MDE's decision were contemporaneous; it does not establish which caused which, and neither OLA's account nor Korte's 2026 interview specifically references this second hearing. Treat as an open sequencing question, not a resolved causal link."
+    },
+    {
       "event_date": "2021-04-30",
       "event_type": "payment_resumption",
       "actor": "Minnesota Department of Education",
@@ -200,10 +221,11 @@
       "source_id": "src-mn-ola-2024-fof-oversight",
       "corroborating_source_ids": [
         "src-mn-judicial-2022-09-23-fof-guthmann-correction",
-        "src-house-oversight-2026-02-03-daron-korte-interview"
+        "src-house-oversight-2026-02-03-daron-korte-interview",
+        "src-mncro-62-cv-20-5492-register-of-actions"
       ],
       "source_locator": "OLA Appendix A p.89 / PDF p.96; Judicial Branch lines 28-35; Korte transcript pp.130-132",
-      "qualification": "Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal discussion; recalled Heather Mueller was informed rather than asked for approval; said MDE's AG litigating attorneys were involved; and said he did not think the Governor's Office made the decision, though its education policy and legal advisers would have been updated. Those participant/rationale details are retrospective recollection, not a contemporaneous decision memo."
+      "qualification": "Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal discussion; recalled Heather Mueller was informed rather than asked for approval; said MDE's AG litigating attorneys were involved; and said he did not think the Governor's Office made the decision, though its education policy and legal advisers would have been updated. Those participant/rationale details are retrospective recollection, not a contemporaneous decision memo. The Ramsey County docket additionally shows this decision fell on the same day as a second, previously-uncaptured TRO hearing (see the preceding event); Korte's account does not specifically address that hearing."
     },
     {
       "event_date": "2021-05-13",
