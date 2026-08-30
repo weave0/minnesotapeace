@@ -22,13 +22,14 @@
     {
       "amount": 2200000,
       "currency": "USD",
-      "metric_type": "proven_loss",
+      "metric_type": "amount_paid",
       "qualifier": "approximately",
-      "notes": "DOJ describes the approximately $2.2 million as money the defendants stole after guilty pleas. Do not add this to the earlier approximately $2.3 million Brilliant Minds amount_billed allegation as if they are separate losses."
+      "amount_status": "post_plea_government_characterization",
+      "notes": "DOJ's post-plea release says the defendants fraudulently obtained approximately $2.2 million. Treat guilt as adjudicated, but do not upgrade this press-release figure to restitution_ordered, recovered_amount, or a judgment-certified proven_loss without the plea agreements or judgments. It overlaps the earlier approximately $2.3 million amount_billed allegation."
     }
   ],
   "does_not_support": [
-    "No sentence or restitution order is stated in this release.",
-    "The $2.2 million admitted/prosecutorial figure overlaps the earlier Brilliant Minds billing allegations and must not be summed with them."
+    "No sentence, restitution order, forfeiture order, or collected-recovery amount is stated in this release.",
+    "The $2.2 million post-plea government characterization overlaps the earlier Brilliant Minds billing allegation and must not be summed with it."
   ]
 }
