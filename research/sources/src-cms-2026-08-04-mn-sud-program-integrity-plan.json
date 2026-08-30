@@ -19,16 +19,18 @@
     "The Minnesota plan states that its program-integrity measures are not limited to the SUD waiver population and align with Minnesota's broader CMS corrective-action work.",
     "The plan records January 2026 pre-payment review for high-risk services, provider revalidation, inactive-provider terminations, enhanced analytics, post-payment review, law-enforcement referrals, program assessments, and additional controls.",
     "The plan states that Minnesota Medicaid managed-care plans serve more than 80 percent of approximately 1.2 million Medicaid enrollees and that the Legislature appropriated funds for additional managed-care post-payment review.",
-    "The plan states that current analytics are rules-based and descriptive and do not include automated decision-making or machine-learning models."
+    "The plan states that current analytics are rules-based and descriptive and do not include automated decision-making or machine-learning models.",
+    "Attachment A contains the complete signed 2026-03-19 CMS letter approving Minnesota's broader Medicaid Corrective Action Plan; that attachment is separately normalized as src-cms-2026-03-19-mn-medicaid-cap-approval."
   ],
   "important_qualifications": [
     "CMS approval of the plan is approval of a compliance/oversight framework, not a finding that every listed vulnerability or suspicious claim is fraud.",
     "Agency-reported counts and recovery figures embedded in the state plan retain AGENCY_POSITION status unless independently audited or adjudicated.",
-    "The plan's reference to CMS approval of Minnesota's broader corrective action plan on 2026-03-19 is evidence within a CMS-approved federal record, but the standalone March 19 approval letter should still be captured if available."
+    "CMS's March 19 CAP approval letter requires continued implementation and monitoring; approval is not a finding that all deficiencies were already cured."
   ],
   "locators": [
-    "CMS approval letter PDF p.1",
-    "approved plan pp.1-7",
+    "CMS SUD approval letter PDF p.1",
+    "approved SUD program-integrity plan pp.1-7",
+    "Attachment A: CMS Medicaid CAP approval letter dated 2026-03-19, PDF pp.10-11",
     "Medicaid.gov administrative record dated 2026-08-04"
   ]
 }
