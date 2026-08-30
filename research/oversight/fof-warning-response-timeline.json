@@ -163,14 +163,47 @@
       "source_locator": "Appendix A report p.88; PDF index 95"
     },
     {
-      "event_date": "2021-04",
-      "event_type": "civil_litigation",
+      "event_date": "2021-04-13",
+      "event_type": "civil_litigation_motion",
       "actor": "Feeding Our Future",
       "recipient": "Ramsey County District Court",
-      "summary": "Feeding Our Future sought an order requiring payments to resume and sanctions after MDE suspended payments. The Judicial Branch later stated Judge Guthmann never ordered MDE to resume reimbursements.",
-      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
-      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
-      "source_locator": "Judicial Branch lines 28-29"
+      "summary": "Feeding Our Future moved for a temporary restraining order challenging MDE's withholding of reimbursements and separately sought to hold MDE in contempt over application processing under the December 2020 consent order.",
+      "evidence_class": "AUDIT_FINDING_CORROBORATED_BY_JUDICIAL_RECORD",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "corroborating_source_ids": [
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction"
+      ],
+      "source_locator": "OLA Appendix A, report p.89 / PDF p.96; Judicial Branch lines 28-29",
+      "qualification": "The application-processing contempt issue and the reimbursement stop-pay issue were legally distinct."
+    },
+    {
+      "event_date": "2021-04-21",
+      "event_type": "stop_pay_hearing",
+      "actor": "Ramsey County District Court",
+      "summary": "At the hearing, the court determined MDE's stop-pay issue was outside the scope of the existing lawsuit and therefore not within its jurisdiction in that case, while also characterizing MDE's nonpayment as a serious problem. No order requiring payment resumption issued.",
+      "evidence_class": "AUDIT_FINDING_CORROBORATED_BY_JUDICIAL_RECORD",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "corroborating_source_ids": [
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-house-oversight-2026-02-03-daron-korte-interview",
+        "src-house-oversight-2026-01-29-emily-honer-interview"
+      ],
+      "source_locator": "OLA report p.69 / Appendix A p.89; Judicial Branch lines 28-35; Korte transcript pp.130-132",
+      "qualification": "The court's comments influenced MDE's later decision according to OLA and Korte, but comments are not an order."
+    },
+    {
+      "event_date": "2021-04-30",
+      "event_type": "payment_resumption",
+      "actor": "Minnesota Department of Education",
+      "summary": "MDE removed Feeding Our Future's stop-pay in its claims system and voluntarily resumed reimbursements. OLA says MDE removed the stop-pay because of the court's April 21 statements; the Judicial Branch confirms no court order required resumption. In a 2026 transcribed interview, Daron Korte recalled that MDE internally chose to lift the stop-pay rather than force a likely adverse ruling and additional sanctions.",
+      "evidence_class": "PRIMARY_AND_AUDIT_CORROBORATED",
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "corroborating_source_ids": [
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-house-oversight-2026-02-03-daron-korte-interview"
+      ],
+      "source_locator": "OLA Appendix A p.89 / PDF p.96; Judicial Branch lines 28-35; Korte transcript pp.130-132",
+      "qualification": "Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal discussion; recalled Heather Mueller was informed rather than asked for approval; said MDE's AG litigating attorneys were involved; and said he did not think the Governor's Office made the decision, though its education policy and legal advisers would have been updated. Those participant/rationale details are retrospective recollection, not a contemporaneous decision memo."
     },
     {
       "event_date": "2021-05-13",
@@ -189,15 +222,6 @@
       "evidence_class": "AUDIT_FINDING",
       "source_id": "src-mn-ola-2024-fof-oversight",
       "source_locator": "report pp.63-65; PDF pp.70-72"
-    },
-    {
-      "event_date": "2021-06 onward",
-      "event_type": "payment_resumption",
-      "actor": "Minnesota Department of Education",
-      "summary": "The Judicial Branch states MDE voluntarily resumed reimbursement payments after suspending them; the court did not order payment resumption. MDE later told the court Feeding Our Future's serious deficiencies were resolved as of June 4, 2021.",
-      "evidence_class": "PRIMARY_JUDICIAL_BRANCH_RECORD",
-      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
-      "source_locator": "Judicial Branch lines 28-35"
     },
     {
       "event_date": "2022-01",
@@ -257,10 +281,20 @@
       ]
     },
     {
-      "conclusion": "The primary record contradicts the claim that Judge Guthmann forced MDE to resume Feeding Our Future reimbursements.",
+      "conclusion": "The primary record contradicts the claim that Judge Guthmann forced MDE to resume Feeding Our Future reimbursements. OLA fixes the voluntary resumption date at April 30, 2021, and Korte's later participant account supplies an internal rationale without converting the judge's comments into an order.",
       "evidence_class": "DERIVED_INFERENCE",
       "supporting_source_ids": [
-        "src-mn-judicial-2022-09-23-fof-guthmann-correction"
+        "src-mn-ola-2024-fof-oversight",
+        "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+        "src-house-oversight-2026-02-03-daron-korte-interview"
+      ]
+    },
+    {
+      "conclusion": "The internal payment-resumption chain is now substantially identified through Korte's participant account, but contemporaneous MDE deliberation records and the substance of privileged Attorney General legal advice remain unverified.",
+      "evidence_class": "DERIVED_INFERENCE",
+      "supporting_source_ids": [
+        "src-house-oversight-2026-02-03-daron-korte-interview",
+        "src-house-oversight-2026-01-29-emily-honer-interview"
       ]
     },
     {

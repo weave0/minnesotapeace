@@ -67,18 +67,33 @@ This is stronger evidence than the popular claim that a judge forced MDE to pay.
 
 OLA records that MDE provided the FBI information in April 2021 about suspected fraud by Feeding Our Future/sites, including suspected fraudulent documents and inflated meal counts. OLA states the FBI began an investigation in May 2021.
 
-### The court did not order payments resumed
+### April 21 and April 30 — court comments, then a voluntary MDE decision
 
-After MDE suspended payments, Feeding Our Future asked Judge John Guthmann to order payment resumption and sanctions. The Minnesota Judicial Branch later issued an explicit public correction:
+After MDE suspended payments, Feeding Our Future asked Judge John Guthmann to order payment resumption and sanctions. OLA records that at the **April 21, 2021** hearing the court determined the stop-pay issue was outside the scope of the existing lawsuit and therefore outside its jurisdiction in that case, while also indicating MDE's nonpayment was "a real problem." OLA then fixes the payment-resumption date: on **April 30, 2021**, MDE removed the stop-pay from its claims system because of the court's April 21 statements.
+
+The Minnesota Judicial Branch later issued an explicit public correction:
 
 - Judge Guthmann **never** ordered MDE to resume reimbursements;
 - MDE resumed payments **voluntarily**;
 - MDE asked the court to treat the nonpayment-sanctions issue as moot after it voluntarily resumed paying;
-- MDE told the court Feeding Our Future's serious deficiencies were resolved as of June 4, 2021.
+- MDE later told the court Feeding Our Future's serious deficiencies were resolved as of June 4, 2021.
 
 The Judicial Branch says **all** MDE food-reimbursement payments to Feeding Our Future were made voluntarily, without a court order requiring payment.
 
-This resolves the narrow factual dispute about who ordered payment resumption. It does **not** by itself answer why MDE chose to resume payments or prove criminal intent.
+A newly captured 2026 House Oversight transcribed interview with then-MDE Assistant Commissioner **Daron Korte** now supplies the participant-level explanation that was previously missing. Korte recalled that MDE officials believed forcing the stop-pay question to a ruling was highly likely to produce an adverse result and additional contempt or attorney-fee sanctions, so they chose to lift the stop-pay voluntarily instead. He identified himself, **Monica Herrera**, and **Emily Honer** as participants in the internal discussion; said then-Commissioner **Heather Mueller** was informed how MDE would proceed rather than asked for approval; and said the Attorney General attorneys representing MDE in the lawsuit were involved.
+
+Korte also drew two important boundaries. He said he did **not** think the Governor's Office participated in making the decision, although he would have updated its education policy and legal advisers. And he said the FBI never instructed MDE to resume payments. Korte recalled that MDE hoped the payment resumption would be short-lived because an FBI investigation was underway or imminent and federal law enforcement would intervene.
+
+Honer's separate transcribed interview is useful precisely because its memory limits differ. She recalled the March 31 stop-pay and understood that no final court ruling required resumption, but she did not remember the internal post-hearing discussions about whether the stop-pay would continue. That does not contradict Korte's participant account; it marks the limit of Honer's present recollection.
+
+This closes the broad "why did MDE voluntarily resume?" gap enough to state a sourced participant account. It does **not** close the documentary record. Korte said he did not believe he signed a stipulation or other document memorializing the decision, and the corpus still lacks contemporaneous internal emails, meeting notes, or a memorandum showing the full deliberation. The transcript also establishes Attorney General attorney involvement without revealing privileged legal advice.
+
+Primary/audit/interview records:
+
+- `research/sources/src-mn-ola-2024-fof-oversight.json`
+- `research/sources/src-mn-judicial-2022-09-23-fof-guthmann-correction.json`
+- `research/sources/src-house-oversight-2026-02-03-daron-korte-interview.json`
+- `research/sources/src-house-oversight-2026-01-29-emily-honer-interview.json`
 
 ### June 4 — serious deficiencies deferred
 
@@ -114,16 +129,18 @@ The evidence supports all of the following at once:
 1. **Warnings existed years before the federal charges.** Complaints began in 2018 and MDE's own 2018 administrative review identified significant issues.
 2. **MDE did take consequential actions.** It escalated concerns to USDA OIG, issued serious deficiencies, initiated termination, stopped payments, and provided fraud concerns to the FBI.
 3. **OLA found those actions and MDE's broader oversight insufficient.** It specifically identified missed follow-up, inadequate complaint investigations and deficient serious-deficiency follow-through.
-4. **The court did not force MDE to resume payments.** The Minnesota Judicial Branch says MDE resumed voluntarily.
-5. **Nothing in these sources establishes that a named MDE official or statewide elected official knowingly joined the Feeding Our Future criminal conspiracy.** That proposition would require actor-specific evidence of criminal participation, not an inference from administrative failure.
+4. **The court did not force MDE to resume payments.** MDE lifted the stop-pay voluntarily on April 30, 2021. Korte's later participant account says MDE did so because officials expected forcing a ruling would not change the outcome and would risk additional sanctions; that remembered rationale is not itself a judicial finding.
+5. **The available participant evidence does not support saying the Governor's Office ordered payment resumption.** Korte said he did not think the Governor's Office participated in making the decision, while distinguishing that from updating its education policy and legal advisers.
+6. **Nothing in these sources establishes that a named MDE official or statewide elected official knowingly joined the Feeding Our Future criminal conspiracy.** That proposition would require actor-specific evidence of criminal participation, not an inference from administrative failure.
 
-That five-part distinction should be preserved in the public site. Removing any one of those points would make the story less accurate.
+Those distinctions should be preserved in the public site. Removing any one of them would make the story less accurate.
 
 ## Remaining primary-source gaps
 
 - USDA OIG's own record of the October/November 2020 MDE referral and any response/investigation.
 - Contemporaneous USDA Midwest Regional Office documentation of the April 1, 2021 stop-payment-authority discussion.
 - Complete Ramsey County civil docket/orders underlying the 2020–2021 litigation.
-- Any internal MDE decision record explaining the voluntary payment-resumption decision beyond what is already reflected in court/audit records.
+- Contemporaneous internal MDE records memorializing the April 30, 2021 payment-resumption decision (emails, meeting notes, memorandum, or equivalent).
+- The substance of privileged legal advice from Attorney General attorneys involved in the payment-resumption decision is not available and should not be inferred from their participation.
 
 Until those are acquired, the site should state what the existing records show and label the remaining questions rather than fill them with political inference.

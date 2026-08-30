@@ -1,0 +1,46 @@
+{
+  "claim_id": "claim-mde-fof-payment-resumption-decision-2021-04-30",
+  "claim_text": "On April 30, 2021, the Minnesota Department of Education voluntarily removed its stop-pay on Feeding Our Future. OLA ties that action to the Ramsey County court's April 21 comments while confirming the court lacked jurisdiction over the stop-pay issue; the Minnesota Judicial Branch separately confirms no court order required payment resumption. In a 2026 transcribed interview, then-MDE assistant commissioner Daron Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal decision, said Commissioner Heather Mueller was informed rather than asked to approve, said MDE's Attorney General litigating attorneys were involved, and said he did not think the Governor's Office participated in making the decision although its education policy and legal advisers would have been updated.",
+  "claim_type": "FACT",
+  "normalized_claim": "MDE voluntarily lifted the FOF stop-pay on 2021-04-30; no court ordered resumption. Korte's retrospective participant account identifies the internal decision participants and remembered rationale while leaving contemporaneous documentary deliberations partly unresolved.",
+  "subject_ids": [
+    "org-mn-department-education"
+  ],
+  "agencies": [
+    "org-mn-department-education",
+    "org-mn-attorney-general"
+  ],
+  "persons": [
+    "person-daron-korte",
+    "person-monica-herrera",
+    "person-emily-honer",
+    "person-heather-mueller"
+  ],
+  "evidence_class": "TRANSCRIBED_INTERVIEW",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-ola-2024-fof-oversight",
+    "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+    "src-house-oversight-2026-02-03-daron-korte-interview",
+    "src-house-oversight-2026-01-29-emily-honer-interview"
+  ],
+  "jurisdiction": "Minnesota",
+  "date_start": "2021-04-21",
+  "date_end": "2021-04-30",
+  "qualifiers": [
+    "The April 30 date, voluntary character of the payment resumption, and absence of a court order are independently supported by OLA and the Minnesota Judicial Branch; they do not depend on Korte's later recollection.",
+    "Korte's description of participants and rationale is a retrospective participant account given in a voluntary, unsworn congressional transcribed interview under an explicit legal duty to answer truthfully.",
+    "Korte recalled that MDE expected an adverse result and additional sanctions if it forced a ruling and therefore chose to lift the stop-pay voluntarily. That is evidence of MDE's remembered decision rationale, not a judicial finding that payment resumption was legally required.",
+    "Korte said he did not think the Governor's Office was involved in making the decision; he distinguished decision-making from later or contemporaneous updates to the Governor's education policy and legal advisers.",
+    "Korte said Attorney General attorneys representing MDE in the lawsuit were involved, but the transcript does not disclose privileged legal advice and should not be used to infer its content.",
+    "Korte said the FBI never instructed MDE to resume payments; he recalled MDE hoped the resumption would be temporary until federal law enforcement intervened.",
+    "No contemporaneous internal MDE memorandum, email chain, meeting notes, or stipulation memorializing the April 30 decision has yet been captured in the corpus."
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "editorial_notes": "Publication rule: state that MDE resumed payments voluntarily on April 30, 2021, after the court's April 21 comments but without a court order. Attribute the internal participant/rationale details to Korte's 2026 transcribed interview and preserve the remaining documentary/privilege gaps.",
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}
