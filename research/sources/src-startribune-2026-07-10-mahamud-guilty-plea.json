@@ -1,0 +1,25 @@
+{
+  "source_id": "src-startribune-2026-07-10-mahamud-guilty-plea",
+  "canonical_url": "https://www.startribune.com/edina-day-care-center-fraud/601866545",
+  "issuing_body": "The Minnesota Star Tribune",
+  "author": "Paul Walsh",
+  "title": "Edina day care owner tied to Feeding Our Future admits to more than $5 million in fraud",
+  "publication_date": "2026-07-10",
+  "event_date": "2026-07-09",
+  "retrieval_date": "2026-08-30",
+  "document_type": "news_article",
+  "case_number": "0:26-cr-00097-JWB",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "supports": [
+    "Contemporaneous federal-court reporting states that Fahima Egeh Mahamud pleaded guilty on July 9, 2026 in U.S. District Court to wire fraud and conspiracy to defraud the United States.",
+    "The report separately describes approximately $4.6 million tied to false child-care claims and approximately $850,000 tied to false or inflated federal child-nutrition claims."
+  ],
+  "does_not_support": [
+    "A DOJ-issued scheme-wide conviction ordinal for Mahamud.",
+    "A final sentence or judgment.",
+    "A reason DOJ later corrected Abdirashid Bixi Dool's public ordinal to 68 rather than 69."
+  ]
+}
