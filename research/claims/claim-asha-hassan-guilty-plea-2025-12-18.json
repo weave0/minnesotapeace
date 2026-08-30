@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "AGENCY_POSITION",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-asha-hassan-guilty-plea-2025-12-18",
+  "claim_text": "USAO-MN states that on December 18, 2025, Asha Farhan Hassan pleaded guilty before U.S. District Judge David Doty to one count of wire fraud for her role in the schemes charged against her. The same release reiterates that Hassan had been charged in both the EIDBI autism-fraud scheme and the Feeding Our Future scheme. The plea is a primary-government-reported disposition, but the plea agreement and judgment are not yet captured here, so this claim does not allocate an admitted loss amount between the two programs or state a final sentence.",
+  "claim_type": "DISPOSITION",
+  "status": "confirmed",
+  "source_ids": [
+    "src-usao-mn-2025-12-18-asha-hassan-guilty-plea"
+  ],
+  "event_date": "2025-12-18",
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2025-12-18-asha-hassan-guilty-plea",
+      "locator": "EIDBI Autism Fraud Scheme section",
+      "quote": "Hassan pled guilty to one count of wire fraud"
+    }
+  ],
+  "qualifiers": [
+    "Primary USAO disposition report; plea agreement and judgment remain to be captured",
+    "Do not infer how the plea allocates amounts between the EIDBI autism and Feeding Our Future conduct without the plea agreement",
+    "Do not assign a scheme-wide Feeding Our Future conviction ordinal from this source; USAO-MN does not state one"
+  ]
+}
