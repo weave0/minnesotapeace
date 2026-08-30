@@ -1,0 +1,51 @@
+{
+  "source_id": "src-hhs-oig-2025-ccap-attendance",
+  "canonical_url": "https://oig.hhs.gov/reports/all/2025/minnesota-could-better-ensure-that-childcare-assistance-providers-comply-with-attendance-requirements/",
+  "highlights_pdf": "https://oig.hhs.gov/documents/audit/10321/A-05-24-00001-highlights.pdf",
+  "issuing_body": "U.S. Department of Health and Human Services, Office of Inspector General",
+  "title": "Minnesota Could Better Ensure That Childcare Assistance Providers Comply With Attendance Requirements",
+  "report_number": "A-05-24-00001",
+  "publication_date": "2025-05-21",
+  "retrieval_date": "2026-08-29",
+  "document_type": "federal_audit",
+  "source_tier": 4,
+  "source_status": "PRIMARY_FEDERAL_AUDIT",
+  "evidence_class": "AUDIT_FINDING",
+  "scope": {
+    "program": "Minnesota Child Care Assistance Program (CCAP)",
+    "year": 2023,
+    "licensed_centers_population": 1155,
+    "random_sample_payments": 200
+  },
+  "findings": [
+    "For 38 of 200 randomly selected childcare assistance payments, Minnesota did not comply with attendance/payment requirements; OIG found no attendance/payment errors in the other 162 sampled payments.",
+    "OIG estimated that 11 percent of payments made to 1,155 licensed childcare centers in 2023 had one or more attendance/payment errors.",
+    "OIG concluded Minnesota's limited oversight of attendance documentation resulted in overpayments to providers."
+  ],
+  "recommendations": [
+    "Work with childcare providers to collect, as appropriate, overpayments identified by the audit.",
+    "Strengthen monitoring to include routine reviews of CCAP attendance records for accuracy.",
+    "Continue steps toward real-time electronic childcare attendance reporting, as Minnesota OLA had previously recommended."
+  ],
+  "recommendation_status_as_of_2026_08_14": {
+    "source": "HHS-OIG Recommendations Tracker",
+    "total": 3,
+    "open_unimplemented": 3,
+    "implemented": 0,
+    "closed": 0,
+    "response_status": "Overdue",
+    "next_update_expected_displayed": "2026-06-01",
+    "notes": "Tracker was last updated 2026-08-14 and still displayed all three recommendations as Open Unimplemented."
+  },
+  "source_locators": {
+    "audit_highlights": "one-page HHS-OIG Report Highlights; screenshot captured 2026-08-29",
+    "recommendations_tracker": "HHS-OIG tracker, last updated 2026-08-14"
+  },
+  "does_not_support": [
+    "The 11 percent estimate is an attendance/payment error rate, not a fraud rate.",
+    "The audit does not say 11 percent of CCAP payments were stolen.",
+    "An attendance-documentation error may have multiple causes; the audit does not establish criminal intent for every error.",
+    "The report does not provide a statewide criminal-fraud loss total.",
+    "Open-unimplemented recommendation status is an implementation-status record, not proof that no corrective activity has occurred; Minnesota had concurred and described planned/actions taken."
+  ]
+}
