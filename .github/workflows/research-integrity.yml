@@ -7,6 +7,7 @@ on:
       - 'record/data/**'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
+      - 'scripts/verify-public-corpus-fresh.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -17,6 +18,7 @@ on:
       - 'record/data/**'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
+      - 'scripts/verify-public-corpus-fresh.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -36,21 +38,18 @@ jobs:
       # it, and only by exact content hash. build.py enforces this and fails
       # closed (unknown manifest id, duplicate id, hash mismatch, or a claim
       # citing an unapproved source all abort the build non-zero).
-      - name: Validate publication manifest and build the public corpus
-        run: python3 research/viewer/build.py
+      #
+      # This single step both validates the manifest (by actually running
+      # build.py -- a validation failure aborts here with build.py's own error)
+      # and checks the committed record/data + research/viewer/data are not
+      # stale relative to what canonical research + the manifest currently
+      # approve. It must run before the regression test below, and nothing
+      # earlier in this job may have already run build.py against a real
+      # checkout -- otherwise the "committed" snapshot it captures would
+      # already be a fresh build's output, not what's actually in git, and
+      # the comparison would be meaningless.
+      - name: Verify the public corpus is not stale
+        run: python3 scripts/verify-public-corpus-fresh.py
 
       - name: Regression-test the publication boundary itself
         run: python3 scripts/test-publication-boundary.py
-
-      # If this fails, someone edited research/ (or the manifest) without
-      # regenerating record/data and research/viewer/data, or edited those
-      # generated files by hand instead of through build.py. Either way the
-      # committed public corpus no longer matches what canonical research +
-      # the publication manifest actually approve.
-      - name: Fail if the committed public corpus is stale
-        run: |
-          git diff --exit-code -- record/data research/viewer/data || {
-            echo "::error::record/data and/or research/viewer/data are out of date." >&2
-            echo "::error::Run 'python3 research/viewer/build.py' and commit the result." >&2
-            exit 1
-          }
