@@ -1,0 +1,13 @@
+{
+  "source_id": "src-propublica-fof-814343304",
+  "canonical_url": "https://projects.propublica.org/nonprofits/organizations/814343304",
+  "issuing_body": "ProPublica Nonprofit Explorer (index of IRS 990 data)",
+  "title": "Feeding Our Future — Nonprofit Explorer",
+  "retrieval_date": "2026-08-26",
+  "document_type": "agency_record",
+  "local_path": "research/entities/raw/990-feeding-our-future-814343304.json",
+  "access_status": "available",
+  "notes": "Used as an index. Line-item facts in the corpus are taken from the IRS PDF (src-irs-990-fof-fy2020) or the IRS BMF extract, not from ProPublica journalism. API reports ruling_date 2020-12-01 and that the org is not on the current IRS exempt list.",
+  "source_tier": 7,
+  "source_status": "PRIMARY_FINANCIAL_RECORD"
+}
