@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "description": "Fail-closed publication manifest for The Record (record/data/corpus.*). A research artifact is public only if its ID appears here AND its current file hash matches the pinned sha256. Editing an approved claim invalidates its approval until the hash is deliberately renewed.",
+  "approved_at": "2026-08-30",
+  "claims": [
+    {
+      "claim_id": "claim-aden-25cr349-amex-charges",
+      "sha256": "462e197f15d1a1c9b038dcb74886f2a04b8baa18b918502d9e6b16da0cde8c36"
+    },
+    {
+      "claim_id": "claim-aden-25cr349-brilliant-minds-amount-billed",
+      "sha256": "795af0a6c5369e7cbfbedcad50223e1f7586d5c23a50f46f8b7f3a9b587dadd2"
+    },
+    {
+      "claim_id": "claim-aden-25cr349-ecf1-wire-fraud-counts",
+      "sha256": "d99050700f93ed00f4fbdc38de37495a9d2a7c86ecee560ba502ea965ccde2b3"
+    },
+    {
+      "claim_id": "claim-aden-25cr349-foundation-first-amount-billed",
+      "sha256": "9b8f298950e3c761219f2554c67b23eb0eb3402e9dda8539e9deae3eaccedd4e"
+    },
+    {
+      "claim_id": "claim-aden-25cr349-personal-pocketing",
+      "sha256": "d484c3568425b7ba4b7c48bfc5853ae844ce5c86fc652b781846574578dd0b04"
+    },
+    {
+      "claim_id": "claim-adow-anwar-counts-1-4-1343",
+      "sha256": "489c7ab24b8be04f6a2150e32df3bde2278fffde02c9cf4c421e2227a29c6c30"
+    },
+    {
+      "claim_id": "claim-adow-anwar-liberty-plus-owner",
+      "sha256": "c6f4e08c8516a85c2275f294e54330056c5d9c9ac9d451867e8f15a1e805f089"
+    },
+    {
+      "claim_id": "claim-adow-anwar-liberty-plus-received-1.2m",
+      "sha256": "7dbbc168d03534c986090eeee1474d12a51dddc4608cc5e0409f9cac81f0f751"
+    },
+    {
+      "claim_id": "claim-ago-petition-fof-sos-incorporation",
+      "sha256": "1ca29281c223a98e94b948d5eef7bbd1f166a09d8456d30dd2349d2abbecb036"
+    },
+    {
+      "claim_id": "claim-ago-petition-irs-501c3-2017-02-28",
+      "sha256": "86001e6341a8bf49f18cb730a5f28b2a329a94797bc77bb3742beac37238bb02"
+    },
+    {
+      "claim_id": "claim-falade-25cr351-ecf1-wire-fraud-counts",
+      "sha256": "b1a348188d08d5db8e27bcebcfb4dbf738ba533807db0452b6afeaf03c0869f3"
+    },
+    {
+      "claim_id": "claim-falade-25cr351-faladcare-amount-billed",
+      "sha256": "db9d07c84413f07b420a9c8cc3a2781dde9e95a22e7541bb3d6896ec8e4e66de"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-40m-scheme",
+      "sha256": "3d798d60ff9ea656c787ca1b3bd366fa67ec7225057f3f4fdca82a29b18db3dc"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-count-map",
+      "sha256": "098904f84502422d635bb60cbeadb212cc752a91a8702f93524d66adac028467"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-empire-received-28m",
+      "sha256": "ece469b73ef00e30c4ba090bba4e86be94adab7bd31af6f2c46d3d39f84d3055"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-entity-shell-receipts",
+      "sha256": "d3902b31334d8376802eee365360cd3e9eebe93ebbea27edc556fc8ba7a58bef"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-fof-sponsor-recitals",
+      "sha256": "b389f8804c033a875463d6c0ba6c225c2f40d36fd536224ff42f57b6a85196e0"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-sponsor-a-recitals",
+      "sha256": "2f40e45c8ef981fb4097b6c04c04d06863be80a1f367aff13198703f7871419a"
+    },
+    {
+      "claim_id": "claim-farah-22cr124-ecf57-thinktechact-receipts",
+      "sha256": "1be3bab88fe77512a7be909d5f7c1132c49d0d185540df14febbba583a4819ed"
+    },
+    {
+      "claim_id": "claim-fof-990-fy2020-officers",
+      "sha256": "1fdac1e8e456e3e7a90137f08183055b6d52243c741b4498b571f5ace2ae3eab"
+    },
+    {
+      "claim_id": "claim-fof-990-fy2020-reported-revenue",
+      "sha256": "5be62f3330aecaeddf858417985b7c1c08227d46f0a5e243c16a25053e1d4043"
+    },
+    {
+      "claim_id": "claim-fof-absent-from-irs-bmf-2026-08",
+      "sha256": "def46f243fbd8ac7150e3aabc2a0ac429fb82f1f2eae452213d902dc1e80d468"
+    },
+    {
+      "claim_id": "claim-fof-ein-81-4343304",
+      "sha256": "8a21cee5e570c479635aacfa0845a883b75aa0b13ff80c6e4352fd86b556a7b3"
+    },
+    {
+      "claim_id": "claim-hss-25cr-indictments-statewide-program-payouts",
+      "sha256": "a6171862ad6b999d1a8fce517a1b688b6e90e74fefc13f74eda3b64d558067e3"
+    },
+    {
+      "claim_id": "claim-hss-program-spend-in-adow-information-para8",
+      "sha256": "b2f69ff8c1b92ac6a4f2d84a9e333317161851fbd25d4ccc0f5992189d88a749"
+    },
+    {
+      "claim_id": "claim-hussein-25cr479-ecf1-wire-fraud-counts",
+      "sha256": "2b37c60af495a321ccdbe7103697a7da24feaaa8636121768feb33de5a881cc0"
+    },
+    {
+      "claim_id": "claim-hussein-25cr479-pristine-amount-claimed",
+      "sha256": "4c7033920a11efd50693a25bd6e8e5137653ba38ea5e4fb942a829c7abd3804d"
+    },
+    {
+      "claim_id": "claim-mde-fof-contempt-sanction-2021-06-24",
+      "sha256": "b88e82ba38001fc691dd6528f4024d4398eb1704d4e47d7ae3686e0e017d55bd"
+    },
+    {
+      "claim_id": "claim-mde-fof-stop-pay-voluntary-not-ordered",
+      "sha256": "2d1e17a47fd3912763e58a7184a71085d368a91512aa4343fc546211a5632f5a"
+    },
+    {
+      "claim_id": "claim-mohamed-24cr015-ecf1-count-map",
+      "sha256": "873139cb411eda196b908b5c59e18f6a7309bd795d49b1005bc9d6565bf0cd23"
+    },
+    {
+      "claim_id": "claim-mohamed-24cr015-ecf1-family-received-12m",
+      "sha256": "1dc3600826933e0dd8e9eba1e109f670d13195bb4959d7fe2297990cc1ffe920"
+    },
+    {
+      "claim_id": "claim-mohamed-24cr015-ecf1-fof-sponsor-200m-recital",
+      "sha256": "d02b25558babd4167f8483feef1bdeec0954957a6bf03f3548f066f95a752c85"
+    },
+    {
+      "claim_id": "claim-mohamed-24cr015-ecf1-site-receipts",
+      "sha256": "1f74acc97d3e85e175cbe091c8525379410c28fe1b1370a85c4a37a4c8e2d6e7"
+    },
+    {
+      "claim_id": "claim-mohamed-24cr015-ecf1-star-distribution-received-10m",
+      "sha256": "b376b890027af4ec9ee0a5837812a2b5877acb92f82357366d25ec096c769809"
+    },
+    {
+      "claim_id": "claim-pin-990-fy2021-contractor-empire",
+      "sha256": "54b7c9d92b146d26f1d02dd5431870ba8cab6546ea3d010e0d12add66cd793d6"
+    },
+    {
+      "claim_id": "claim-pin-990-fy2021-reported-revenue",
+      "sha256": "00195978891d742bc5c47d0e98928f9deececaee72a696e7159784801e4c13c7"
+    },
+    {
+      "claim_id": "claim-propublica-irs-index-ruling-2020-12",
+      "sha256": "df8e96ee08d40bce09dbf0be47b22a28d34f1e21d3c20cce4d61d67fa41fbd87"
+    },
+    {
+      "claim_id": "claim-sallah-25cr482-crypto-150k",
+      "sha256": "2a9ad4c6e9b016d005ead194bb217432c96c683bdb5e4ba9e7014d4879be2925"
+    },
+    {
+      "claim_id": "claim-sallah-25cr482-ecf1-wire-fraud-counts",
+      "sha256": "3cac357dd9fffde8a7186ebdaaf42699e14293c7a881e8da345a3c1f7bf3af02"
+    },
+    {
+      "claim_id": "claim-sallah-25cr482-safelodgings-claimed-and-received",
+      "sha256": "5417e1cdc7b3c1efaf82d862d4daee13906ae5709797228839bcea1a3a631682"
+    },
+    {
+      "claim_id": "claim-sos-empire-inactive",
+      "sha256": "010133b20e334541458bac6c0b3fa432b7085d1239271f6be72aa52a8a1a6317"
+    },
+    {
+      "claim_id": "claim-sos-fof-current-president-ali-egal",
+      "sha256": "a4215e852af15b6136b6a510f2c881cc444eb5362497ee1e5de886c54dad4e1d"
+    },
+    {
+      "claim_id": "claim-sos-fof-file-913838800020",
+      "sha256": "61ad589be44cdf63049d526e0ebebf29b749fa818816caedcb9929a4f7c9a997"
+    },
+    {
+      "claim_id": "claim-sos-leo-asad-adow",
+      "sha256": "9f80c8808df250c734c0ac9fcc06f6e7f4e42e40ac795ec50bc9fced82b0b59c"
+    },
+    {
+      "claim_id": "claim-sos-liberty-plus-anwar-adow",
+      "sha256": "c071e5d70ea62b31ba33caaac40eeaf31affb0fb585e5ed0f0a137a7b2cd3059"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "src-ago-fof-dissolution-petition-copy",
+      "sha256": "36382936aaae4f9ff1916af1dd7b37ea9cd1f959af1c823c8f3c2289a81ed587"
+    },
+    {
+      "source_id": "src-house-oversight-2026-01-29-emily-honer-interview",
+      "sha256": "4247b83d4ec5e6eafd474f91b653c0cd052f6c0cb50bf52f652b265f85ba909f"
+    },
+    {
+      "source_id": "src-house-oversight-2026-02-03-daron-korte-interview",
+      "sha256": "7b8e54eb32c674e67585e63f9258d8e39ac89c4d02b61a57d88b83eea4212b90"
+    },
+    {
+      "source_id": "src-irs-990-fof-fy2020",
+      "sha256": "fbf48ba33ddf10432b9c979f5ad765376c73d5727128860766bc6bb6898a59b2"
+    },
+    {
+      "source_id": "src-irs-990-pin-fy2021",
+      "sha256": "4d79bac4d93cb671e21040d46d7abc67944a166d602b0cf28aa87b8a97c08318"
+    },
+    {
+      "source_id": "src-irs-bmf-mn-2026-08",
+      "sha256": "ecade5d80b203c7131b279266eff5288396dc7cec1c1eec82e39d68c9cad1edb"
+    },
+    {
+      "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+      "sha256": "d5f36954d9aa4d5e23413ae73e1a6c7526457f949d68421477c13637ee20e3c3"
+    },
+    {
+      "source_id": "src-mn-ola-2024-fof-oversight",
+      "sha256": "0386eca817063335dde9751f3f8c08c71c362f545bfff52a7e35a5714611cdb6"
+    },
+    {
+      "source_id": "src-mn-sos-mbls-2026-08-26",
+      "sha256": "b2b7afb7a17fcfb60ec9bd19c9a3aa0bf151feae37b07dec5a54506bcd4f1cc4"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "sha256": "40cc01bd4aa387cc5a432bb7e8bace444ef21287affd8cb0fd489eb0aeb214c6"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
+      "sha256": "af218455ec6979e675388f2c57fe4658ad8df86947f957f0882508e77a1dd6e3"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-reply-2021-04-30",
+      "sha256": "653e9b9d5335f02013eec73f1988ebbb97b114a211aea06c458dc7cfa61a1d76"
+    },
+    {
+      "source_id": "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+      "sha256": "7a8000af32c7d2caf68f1dcdf34136b5511124758cdd66056642b5fac1c9b4e6"
+    },
+    {
+      "source_id": "src-mnd-22-cr-00124-ecf57-farah-superseding",
+      "sha256": "b2ce37b0172b6f46afbce49f14cab9918cc5e51492b1a2bfaf2885e99a791abd"
+    },
+    {
+      "source_id": "src-mnd-24-cr-00015-ecf1-mohamed-indictment",
+      "sha256": "44991e23715a2d95ea7d570ed1bf97eb0e307c8175c8778db59a6e56d7522f1c"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00349-ecf1-aden-indictment",
+      "sha256": "43390eb12d2d98d14ecf60c7e6d0573b1daef55c2288398f9be936de1658b515"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00351-ecf1-falade-indictment",
+      "sha256": "eda1b87964a62fa53ccbadd6abd99f5cc93a5356e13db9ae85015acb20b97c70"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00354-adow-asad-recap-gap",
+      "sha256": "57882900792e4d398553e728d940a1be95a7aace8112489cbd67a12c423a4f03"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00479-ecf1-hussein-indictment",
+      "sha256": "8931c95d24c57c2d1107c2848685ea946bee3b219f3252ecd9e68f4fa7896828"
+    },
+    {
+      "source_id": "src-mnd-25-cr-00482-ecf1-sallah-indictment",
+      "sha256": "ebed7f3b0c2ef58564516026b99688181bbac4daff1150c28b91d8ed066e8055"
+    },
+    {
+      "source_id": "src-propublica-fof-814343304",
+      "sha256": "6bd4de1c5225a669d75b2ba75786ba35b72477a3bcd85fa7ef53993fa024c403"
+    },
+    {
+      "source_id": "src-ramsey-62-cv-20-5492-transcript-2021-04-30",
+      "sha256": "acada626de7bd48dfba589b1196c40f09f1671d0b854a1b10f7c349d2520cb6e"
+    },
+    {
+      "source_id": "src-us-v-adow-anwar-25cr353-ecf1",
+      "sha256": "c6f84ddbba9ef22f63a1f8743469a94bed6c1b16f827f6aeed7193dd8f3ef10b"
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "org-bet-on-better-future",
+      "sha256": "600265a099349fde82ab333f2a7b9c0277670e27af1565e76b2aad8bd7ef0ac6"
+    },
+    {
+      "entity_id": "org-brilliant-minds-services",
+      "sha256": "68d5dc6f19c623520e2a22501c708cea5779e0cb992272396441309a24888b48"
+    },
+    {
+      "entity_id": "org-empire-cuisine-and-market",
+      "sha256": "52e75d2fe988365064304d6667145ed44a7bcefc6e32e03fd0e9a6d488303be9"
+    },
+    {
+      "entity_id": "org-faladcare-inc",
+      "sha256": "7104e1fc99b7d5dc68b9c363a131c49a8119a6cc49ff10baa98ca45837e320ea"
+    },
+    {
+      "entity_id": "org-faladcare-llc",
+      "sha256": "25fcb93b2bc3dae16abb5bf6e9d1d440394f5532b63f7dfe1279119e84778dc0"
+    },
+    {
+      "entity_id": "org-feeding-our-future",
+      "sha256": "746bcafbb6cacf5369a7295a444cfdb27609410ba17b651e4528646b4abb5943"
+    },
+    {
+      "entity_id": "org-feeding-our-future-ii",
+      "sha256": "742c8a14d8bb64ef8379f90751255ce80f0f2840365eb1f7a60b4de9282706ac"
+    },
+    {
+      "entity_id": "org-foundation-first-services",
+      "sha256": "3fa5d6ffb1f4e45c3f34afb7f9d468845a81215a05c29333f17291aed3a4d9ae"
+    },
+    {
+      "entity_id": "org-leo-human-services",
+      "sha256": "e250f475231f18dcb3c4c62078a3ea3e3ca1f0902212c4d86a8c377ea6dc5fbb"
+    },
+    {
+      "entity_id": "org-liberty-plus",
+      "sha256": "dc0b5bd14f8d886132f6cdab4e4b7639deb9de7a43a5c0bb9b3c1bbf8f74d956"
+    },
+    {
+      "entity_id": "org-mn-department-education",
+      "sha256": "a219c19d5898e6c9bdcd1d8da176b239a02fb0bff6efa1f1b82fd5b0ac4ae61e"
+    },
+    {
+      "entity_id": "org-partners-in-nutrition",
+      "sha256": "77b86d8efbd28b9ff43784b45f8ab86f7584a184669318e164efc16d2bc070bb"
+    }
+  ]
+}

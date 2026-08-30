@@ -4,7 +4,10 @@ on:
   pull_request:
     paths:
       - 'research/**'
+      - 'record/data/**'
       - 'scripts/check-research-integrity.py'
+      - 'scripts/test-publication-boundary.py'
+      - 'scripts/verify-public-corpus-fresh.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -12,7 +15,10 @@ on:
       - main
     paths:
       - 'research/**'
+      - 'record/data/**'
       - 'scripts/check-research-integrity.py'
+      - 'scripts/test-publication-boundary.py'
+      - 'scripts/verify-public-corpus-fresh.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -25,3 +31,25 @@ jobs:
 
       - name: Validate research corpus
         run: python3 scripts/check-research-integrity.py
+
+      # Research is a non-public substrate. A claim, source, or entity existing
+      # under research/ must never become public merely by existing -- only the
+      # publication manifest (research/publication/record-v1.json) can promote
+      # it, and only by exact content hash. build.py enforces this and fails
+      # closed (unknown manifest id, duplicate id, hash mismatch, or a claim
+      # citing an unapproved source all abort the build non-zero).
+      #
+      # This single step both validates the manifest (by actually running
+      # build.py -- a validation failure aborts here with build.py's own error)
+      # and checks the committed record/data + research/viewer/data are not
+      # stale relative to what canonical research + the manifest currently
+      # approve. It must run before the regression test below, and nothing
+      # earlier in this job may have already run build.py against a real
+      # checkout -- otherwise the "committed" snapshot it captures would
+      # already be a fresh build's output, not what's actually in git, and
+      # the comparison would be meaningless.
+      - name: Verify the public corpus is not stale
+        run: python3 scripts/verify-public-corpus-fresh.py
+
+      - name: Regression-test the publication boundary itself
+        run: python3 scripts/test-publication-boundary.py
