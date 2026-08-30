@@ -1,6 +1,6 @@
 {
   "claim_id": "claim-mde-fof-payment-resumption-decision-2021-04-30",
-  "claim_text": "On April 30, 2021, the Minnesota Department of Education voluntarily removed its stop-pay on Feeding Our Future. OLA ties that action to the Ramsey County court's April 21 comments while confirming the court lacked jurisdiction over the stop-pay issue; the Minnesota Judicial Branch separately confirms no court order required payment resumption. In a 2026 transcribed interview, then-MDE assistant commissioner Daron Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal decision, said Commissioner Heather Mueller was informed rather than asked to approve, said MDE's Attorney General litigating attorneys were involved, and said he did not think the Governor's Office participated in making the decision although its education policy and legal advisers would have been updated.",
+  "claim_text": "On April 30, 2021, the Minnesota Department of Education voluntarily removed its stop-pay on Feeding Our Future. OLA ties that action to the Ramsey County court's April 21 comments while confirming the court lacked jurisdiction over the stop-pay issue; the Minnesota Judicial Branch separately confirms no court order required payment resumption. The Ramsey County District Court's own June 24, 2021 order independently confirms this, denying FOF's stop-pay TRO motion as moot 'because MDE lifted its stop pay ... and paid the reimbursement claims that were the subject of the motion.' In a 2026 transcribed interview, then-MDE assistant commissioner Daron Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal decision, said Commissioner Heather Mueller was informed rather than asked to approve, said MDE's Attorney General litigating attorneys were involved, and said he did not think the Governor's Office participated in making the decision although its education policy and legal advisers would have been updated.",
   "claim_type": "FACT",
   "normalized_claim": "MDE voluntarily lifted the FOF stop-pay on 2021-04-30; no court ordered resumption. Korte's retrospective participant account identifies the internal decision participants and remembered rationale while leaving contemporaneous documentary deliberations partly unresolved.",
   "subject_ids": [
@@ -23,7 +23,8 @@
     "src-mn-judicial-2022-09-23-fof-guthmann-correction",
     "src-house-oversight-2026-02-03-daron-korte-interview",
     "src-house-oversight-2026-01-29-emily-honer-interview",
-    "src-mncro-62-cv-20-5492-register-of-actions"
+    "src-mncro-62-cv-20-5492-register-of-actions",
+    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt"
   ],
   "jurisdiction": "Minnesota",
   "date_start": "2021-04-21",
@@ -36,7 +37,8 @@
     "Korte said Attorney General attorneys representing MDE in the lawsuit were involved, but the transcript does not disclose privileged legal advice and should not be used to infer its content.",
     "Korte said the FBI never instructed MDE to resume payments; he recalled MDE hoped the resumption would be temporary until federal law enforcement intervened.",
     "No contemporaneous internal MDE memorandum, email chain, meeting notes, or stipulation memorializing the April 30 decision has yet been captured in the corpus.",
-    "The Ramsey County register of actions (case 62-CV-20-5492) shows a second Temporary Restraining Order Hearing was held before Judge Guthmann on 2021-04-30 itself, the same day MDE removed the stop-pay, with several same-day filings and an order taking the matter under advisement. This hearing was not previously reflected in this corpus and is not specifically addressed in Korte's or Honer's interviews or in the OLA report; it establishes contemporaneity with, not causation of, MDE's decision."
+    "The Ramsey County register of actions (case 62-CV-20-5492) shows a further Temporary Restraining Order Hearing was held before Judge Guthmann on 2021-04-30 itself, the same day MDE removed the stop-pay, with several same-day filings and an order taking the matter under advisement. Neither Korte's nor Honer's interviews nor the OLA report specifically addresses this hearing; it establishes contemporaneity with, not causation of, MDE's decision.",
+    "The court's June 24, 2021 written order (src-mncro-62-cv-20-5492-order-2021-06-24-contempt) is now the strongest available confirmation of voluntariness: it is the court's own contemporaneous adjudication, not a later recollection or agency characterization, and it denies FOF's stop-pay TRO motion as moot specifically because MDE had already lifted the stop-pay and paid the claims. That same order also clarifies that MDE was separately found in contempt -- for delay in processing 144 site-ID applications under the December 22, 2020 order, not for the reimbursement stop-pay -- and ordered to pay a $35,750 sanction plus $11,750 in stipulated attorneys' fees ($47,500 total)."
   ],
   "confidence": "HIGH",
   "is_allegation": false,

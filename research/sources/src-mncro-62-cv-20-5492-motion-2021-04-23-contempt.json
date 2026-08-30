@@ -1,0 +1,33 @@
+{
+  "source_id": "src-mncro-62-cv-20-5492-motion-2021-04-23-contempt",
+  "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+  "issuing_body": "Feeding Our Future (plaintiff's counsel, Martin Hild PA)",
+  "title": "Notice of Motion and Renewed Motion for an Emergency Temporary Restraining Order and Order for Contempt of Court",
+  "case_number": "62-CV-20-5492",
+  "court": "Ramsey County District Court",
+  "document_date": "2021-04-23",
+  "retrieval_date": "2026-08-29",
+  "document_type": "motion",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "local_path": "retrieved via MCRO document download, Index #32 (11 pages), not committed to the repository",
+  "notes": "This is FOF's own advocacy filing, not a neutral or adjudicated record; treat its factual assertions (site closures, precise withheld amount, characterization of MDE's conduct as bad faith) as one party's allegations, filed under a Minn. Stat. 549.211 sanctions-warning acknowledgment, not as court-established fact. The withheld-dollar figure is independently useful because it is a specific, sourced number attributed to a declaration (Bock Decl.), not an unsupported assertion, but it remains FOF-side testimony pending independent confirmation.",
+  "supports": [
+    "As of the April 21, 2021 hearing, MDE had issued a stop-pay and refused to process $20,529,177.32 in claims FOF says were due and owing, per a Declaration of Aimee Bock filed as Exhibit 1 to this motion.",
+    "FOF alleges that, since the March 31, 2021 stop-pay letter, MDE additionally issued stop-pay on over $18 million in new claims submitted after that date.",
+    "FOF alleges that as of the hearing, 3 sites collectively serving 5,000 children/day had closed, and that by the time of this April 23 filing, 18 more sites serving 19,500 children/day had also closed -- a total FOF describes as nearly 25,000 children losing food access daily. These are FOF's own claims, not independently verified in this pass.",
+    "The motion quotes MDE's March 31, 2021 letter directly: 'No additional site ID requests will be created in CLiCS nor transferred to Feeding Our Future and all pending CACFP applications will be suspended effective as of March 31, 2021.'",
+    "FOF states MDE did not identify what 'meal validation documentation' it required until April 15, 2021 -- two days after FOF's April 13 TRO motion and two weeks after the March 31 stop-pay notice.",
+    "FOF states it had 148 CACFP/SFSP applications pending as of this filing: 143 pending 30+ days, 103 pending 60+ days, 23 pending 90+ days, 8 pending 120+ days, and 5 pending 144+ days.",
+    "The motion requests: an order restraining MDE's stop-pay; an order restraining MDE's claim-validation process; an order restraining MDE's refusal to process applications; an order requiring MDE to approve or deny pending applications within 15 days; a finding that MDE is in contempt of the December 22, 2020 order; and an order requiring MDE to pay FOF's attorneys' fees and costs.",
+    "The motion's legal theory rests on 2 C.F.R. 200.339, 2 C.F.R. 200.208, 7 C.F.R. 226.7(k), and a cited 2002 USDA policy memorandum, arguing MDE's stop-pay and claim-validation process violated federal grant-administration law because MDE had not alleged any specific claim was inaccurate or invalid.",
+    "The filing contains an internal apparent drafting error: it refers on one page to 'the Court's December 22, 2019, Order' when the actual stipulated order (independently confirmed elsewhere in this corpus and in the June 24, 2021 order) was entered December 22-23, 2020; the motion's formal request for relief correctly cites 'December 22, 2020.' The signature block is also dated 'April 23, 2020,' one year off from the filing date shown on the court's own filing stamp (4/23/2021)."
+  ],
+  "does_not_support": [
+    "That the $20,529,177.32 figure, the site-closure counts, or the children-affected estimate were ever adjudicated or independently verified; they are FOF's own declaration-based assertions in an advocacy filing.",
+    "That MDE's stop-pay was in fact illegal; the court later denied this specific TRO request as moot without ruling on the underlying legal theory (see src-mncro-62-cv-20-5492-order-2021-06-24-contempt).",
+    "Any MDE response or counter-declaration; MDE's opposition brief was not retrieved in this pass."
+  ]
+}

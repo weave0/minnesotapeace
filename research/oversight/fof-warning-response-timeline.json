@@ -196,36 +196,53 @@
       "event_type": "civil_litigation_motion",
       "actor": "Feeding Our Future",
       "recipient": "Ramsey County District Court",
-      "summary": "Feeding Our Future filed a Motion-Contempt (Index #32, 11 pages) two days after the April 21 hearing, one week before MDE removed the stop-pay.",
-      "evidence_class": "SECONDARY_VERIFIED",
-      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
-      "source_locator": "Register of Actions, 04/23/2021 Index #32",
-      "qualification": "The motion text itself was not retrieved (docket index/metadata only); its specific legal basis and requested relief are not yet confirmed."
+      "summary": "Feeding Our Future filed a renewed emergency TRO/contempt motion (Index #32, 11 pages). FOF's motion, supported by a declaration from Aimee Bock, asserted MDE had stop-paid $20,529,177.32 in claims as of the April 21 hearing (plus over $18 million in newly stop-paid claims since March 31), that 21 sites serving roughly 24,500 children/day had closed, and that 148 CACFP/SFSP site applications were pending (143 for 30+ days). It sought orders restraining the stop-pay and claim-validation process, requiring MDE to act on pending applications within 15 days, holding MDE in contempt of the December 22, 2020 order, and awarding fees.",
+      "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+      "source_id": "src-mncro-62-cv-20-5492-motion-2021-04-23-contempt",
+      "corroborating_source_ids": [
+        "src-mncro-62-cv-20-5492-register-of-actions"
+      ],
+      "source_locator": "FOF Motion, 2021-04-23, pp.1-11",
+      "qualification": "These are FOF's own allegations in an advocacy filing (site-closure counts, children-affected estimate, characterization of MDE's conduct), not adjudicated facts. The $20,529,177.32 stop-pay figure is attributed to a Bock declaration and is a specific, sourced number, but remains one party's assertion pending independent confirmation."
     },
     {
       "event_date": "2021-04-30",
       "event_type": "stop_pay_hearing",
       "actor": "Ramsey County District Court",
-      "summary": "A second Temporary Restraining Order Hearing was held before Judge Guthmann at 3:00 PM (remote), the same calendar day MDE voluntarily removed the stop-pay per OLA's timeline. The docket records several same-day filings (two 25-page 'Other Document' entries, two attorney affidavits, a 5-page brief, and a 3-page affidavit) and an 'Order for Submissions-Under Advisement' issued that day.",
-      "evidence_class": "SECONDARY_VERIFIED",
-      "source_id": "src-mncro-62-cv-20-5492-register-of-actions",
-      "source_locator": "Register of Actions, 04/30/2021 hearing record and Index #42-#50",
-      "qualification": "This second hearing was not previously reflected in this corpus's timeline, which had described only the April 21 hearing as preceding the April 30 resumption. The docket establishes the hearing and MDE's decision were contemporaneous; it does not establish which caused which, and neither OLA's account nor Korte's 2026 interview specifically references this second hearing. Treat as an open sequencing question, not a resolved causal link."
+      "summary": "A further Temporary Restraining Order hearing was held before Judge Guthmann at 3:00 PM (remote), the same calendar day MDE voluntarily removed the stop-pay per OLA's timeline. The June 24, 2021 order confirms this April 30 hearing was one of a series (April 23, April 30, June 18, June 23) addressing FOF's TRO, contempt, and amended-complaint motions together.",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "corroborating_source_ids": [
+        "src-mncro-62-cv-20-5492-register-of-actions"
+      ],
+      "source_locator": "Order, 2021-06-24, p.1 (hearing dates); Register of Actions, 04/30/2021 hearing record and Index #42-#50",
+      "qualification": "The court's June 24 order resolves the stop-pay TRO motion as moot because MDE had already lifted the stop-pay and paid the claims (see the payment_resumption event below); it does not identify what, if anything, happened at the April 30 hearing itself that specifically produced that outcome that day."
     },
     {
       "event_date": "2021-04-30",
       "event_type": "payment_resumption",
       "actor": "Minnesota Department of Education",
-      "summary": "MDE removed Feeding Our Future's stop-pay in its claims system and voluntarily resumed reimbursements. OLA says MDE removed the stop-pay because of the court's April 21 statements; the Judicial Branch confirms no court order required resumption. In a 2026 transcribed interview, Daron Korte recalled that MDE internally chose to lift the stop-pay rather than force a likely adverse ruling and additional sanctions.",
+      "summary": "MDE removed Feeding Our Future's stop-pay in its claims system and voluntarily resumed reimbursements. OLA says MDE removed the stop-pay because of the court's April 21 statements; the Judicial Branch confirms no court order required resumption. In a 2026 transcribed interview, Daron Korte recalled that MDE internally chose to lift the stop-pay rather than force a likely adverse ruling and additional sanctions. The court's own June 24, 2021 order independently confirms this: it denies FOF's stop-pay TRO motion as moot 'because MDE lifted its stop pay ... and paid the reimbursement claims that were the subject of the motion.'",
       "evidence_class": "PRIMARY_AND_AUDIT_CORROBORATED",
       "source_id": "src-mn-ola-2024-fof-oversight",
       "corroborating_source_ids": [
         "src-mn-judicial-2022-09-23-fof-guthmann-correction",
         "src-house-oversight-2026-02-03-daron-korte-interview",
-        "src-mncro-62-cv-20-5492-register-of-actions"
+        "src-mncro-62-cv-20-5492-register-of-actions",
+        "src-mncro-62-cv-20-5492-order-2021-06-24-contempt"
       ],
-      "source_locator": "OLA Appendix A p.89 / PDF p.96; Judicial Branch lines 28-35; Korte transcript pp.130-132",
-      "qualification": "Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal discussion; recalled Heather Mueller was informed rather than asked for approval; said MDE's AG litigating attorneys were involved; and said he did not think the Governor's Office made the decision, though its education policy and legal advisers would have been updated. Those participant/rationale details are retrospective recollection, not a contemporaneous decision memo. The Ramsey County docket additionally shows this decision fell on the same day as a second, previously-uncaptured TRO hearing (see the preceding event); Korte's account does not specifically address that hearing."
+      "source_locator": "OLA Appendix A p.89 / PDF p.96; Judicial Branch lines 28-35; Korte transcript pp.130-132; Order 2021-06-24 p.2 para.1.a",
+      "qualification": "Korte identified himself, Monica Herrera, and Emily Honer as participants in the internal discussion; recalled Heather Mueller was informed rather than asked for approval; said MDE's AG litigating attorneys were involved; and said he did not think the Governor's Office made the decision, though its education policy and legal advisers would have been updated. Those participant/rationale details are retrospective recollection, not a contemporaneous decision memo. The Ramsey County docket additionally shows this decision fell on the same day as a further TRO hearing (see the preceding event); neither Korte's account nor the court's order explains what happened at that specific hearing to produce the same-day timing."
+    },
+    {
+      "event_date": "2021-06-24",
+      "event_type": "contempt_order",
+      "actor": "Ramsey County District Court",
+      "summary": "Judge Guthmann issued a written order granting in part and denying in part FOF's TRO/contempt motions. He found MDE in contempt of the December 22, 2020 order -- for delay in acting on 144 CACFP site-ID applications, not for the reimbursement stop-pay -- and ordered MDE to pay a $35,750 sanction plus $11,750 in stipulated attorneys' fees for the contempt motions (total $47,500). He denied as moot FOF's separate motion to force an end to the stop-pay, because MDE had already voluntarily lifted it.",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+      "source_locator": "Order, 2021-06-24, pp.1-8",
+      "qualification": "This resolves a discrepancy previously flagged in GAPS.md item 9 between a '$35,750' figure already in this corpus and a Sahan Journal report of 'more than $47,000' in penalties and fees: $35,750 is the contempt sanction alone; $47,500 is that sanction plus the separately-ordered $11,750 in attorneys' fees, which rounds to Sahan Journal's figure. The contempt finding concerned application-processing delay under the December 22, 2020 order; it is legally distinct from the reimbursement stop-pay, which the court did not rule on because FOF's motion regarding it was moot."
     },
     {
       "event_date": "2021-05-13",

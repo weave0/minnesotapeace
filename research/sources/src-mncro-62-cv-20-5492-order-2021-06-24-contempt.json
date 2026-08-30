@@ -1,0 +1,33 @@
+{
+  "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+  "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+  "issuing_body": "Ramsey County District Court, Second Judicial District",
+  "title": "Order Granting and Denying Motions for Contempt, Injunctive Relief, and Amendment of the Complaint",
+  "case_number": "62-CV-20-5492",
+  "court": "Ramsey County District Court",
+  "document_date": "2021-06-24",
+  "retrieval_date": "2026-08-29",
+  "document_type": "order",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_CIVIL",
+  "local_path": "retrieved via MCRO document download, Index #95 (8 pages), not committed to the repository",
+  "notes": "Signed by Judge John H. Guthmann. Retrieved directly from MCRO's per-document download endpoint (a session-bound form POST) rather than a static URL; the canonical_url points to the case-search portal, not a direct document link, because MCRO does not expose one. This is the single most authoritative document yet captured on the April-June 2021 stop-pay/contempt dispute.",
+  "supports": [
+    "The order resulted from hearings held April 23, April 30, June 18, and June 23, 2021, addressing: FOF's April 13, 2021 motion for a TRO and contempt; FOF's April 21, 2021 motion to amend its complaint; FOF's April 23, 2021 renewed TRO/contempt motion; FOF's April 29, 2021 motion for leave to file a second amended complaint; the court's April 30, 2021 order to show cause; and FOF's May 28, 2021 motion to compel discovery.",
+    "Paragraph 1.a: FOF's motion and renewed motion for a TRO seeking an order requiring MDE to end its stop-pay and timely pay FOF's claims is DENIED AS MOOT 'because MDE lifted its stop pay as to Feeding Our Future's claims and paid the reimbursement claims that were the subject of the motion.' This is the court's own order, not a paraphrase, directly confirming MDE acted voluntarily and that the court did not rule on the merits of the stop-pay's legality.",
+    "Paragraph 1.b: The court GRANTED FOF's motion to find MDE in contempt of the stipulated December 22, 2020 order (concerning prompt processing of CACFP/SFSP site applications, not the reimbursement stop-pay), found MDE's violation sanctionable, and ordered MDE to pay Feeding Our Future $35,750 within 30 days.",
+    "Paragraph 1.c: As part of the contempt ruling, MDE was separately ordered to pay Feeding Our Future's reasonable attorneys' fees for pursuing the contempt motions, in the amount of $11,750, stipulated by the parties, within 30 days.",
+    "The $35,750 sanction plus the $11,750 attorneys'-fee award total $47,500. This reconciles the two previously-inconsistent journalism figures in this corpus's GAPS.md ($35,750 vs. Sahan Journal's 'more than $47,000'): $35,750 is the contempt sanction alone; $47,500 (rounded down to 'more than $47,000' by Sahan Journal) is the sanction plus the separately-ordered attorneys' fees.",
+    "The contempt finding concerned MDE's delay in acting on 144 site-ID applications submitted between 2020-11-30 and 2021-04-13: only the April 13 application was timely acted upon (approved); the remaining 143 were denied in a letter dated 2021-04-29 that MDE said was based on FOF's alleged serious deficiencies. MDE took more than 45 days to act on 129 of the applications and more than 80 days on 72 of them, in violation of the December 22, 2020 order's 'reasonably prompt' requirement and 7 C.F.R. 226.6(b)(3)'s 30-day standard.",
+    "Footnote 1 states that, according to counsel, FOF filed an administrative appeal of the application denials which was pending as of the order, and that FOF, working with MDE, cured its serious deficiencies by June 4, 2021 and (per MDE counsel) was by the time of the order a CACFP program sponsor in good standing -- independently corroborating this corpus's existing June 4, 2021 deficiencies-resolved date from a second primary source.",
+    "The court denied FOF's motion for leave to add claims for civil theft, conversion, abuse of process, and fraud, while granting leave to add a defamation claim and other amendments in FOF's proposed Second/Third Amended Complaint.",
+    "The order's legal reasoning for the contempt finding rests on Minnesota's civil contempt statute (Minn. Stat. ch. 588) and courts' inherent contempt authority, citing Minnesota Supreme Court and Court of Appeals precedent (e.g., Erickson v. Erickson, State v. Sports & Health Club, Hopp v. Hopp)."
+  ],
+  "does_not_support": [
+    "That MDE was held in contempt for the reimbursement stop-pay itself; the contempt finding was specifically about the separate December 22, 2020 order governing site-application processing speed. The stop-pay TRO motion was resolved as moot, not decided on the merits.",
+    "Any claim about why MDE chose the specific date of April 30, 2021 to lift the stop-pay; the order records that MDE had already done so by the time of this order but does not itself explain MDE's internal timing or reasoning (see src-house-oversight-2026-02-03-daron-korte-interview for MDE's own retrospective account of that decision).",
+    "A ruling on the legality of MDE's stop-pay policy; because the TRO motion was mooted, the court did not decide whether the stop-pay itself violated federal law as FOF had argued."
+  ]
+}
