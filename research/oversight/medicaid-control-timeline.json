@@ -1,0 +1,247 @@
+{
+  "timeline_id": "minnesota-medicaid-program-integrity-controls",
+  "title": "Minnesota Medicaid — federal findings, state controls, enforcement, and service impacts",
+  "as_of": "2026-08-29",
+  "purpose": "Track federal/state program-integrity actions in chronological order without treating administrative findings, fraud allegations, improper-payment measurements, claim flags, disenrollment, or criminal cases as interchangeable.",
+  "events": [
+    {
+      "event_date": "2024-07",
+      "event_type": "federal_oversight",
+      "actor": "CMS",
+      "program": "Housing Stabilization Services",
+      "summary": "CMS says it began working with Minnesota on potential HSS fraud concerns through Unified Program Integrity Contractor audits.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity",
+      "source_locator": "Federal Register notice embedded letter, PDF pp.6-7"
+    },
+    {
+      "event_date": "2024-10",
+      "event_type": "state_program_review",
+      "actor": "Minnesota DHS",
+      "program": "EIDBI",
+      "summary": "DHS says it began a top-to-bottom onsite review process of autism-service providers, later described in its corrective action planning as part of a shift from tip-driven oversight toward proactive program integrity.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2025-04",
+      "event_type": "federal_audit_preliminary_findings",
+      "actor": "CMS / UPIC",
+      "program": "HSS",
+      "summary": "CMS says preliminary findings from audits of three HSS providers were presented to Minnesota for input on payment policies and state exceptions to rules.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity",
+      "source_locator": "Federal Register embedded letter, PDF pp.6-7"
+    },
+    {
+      "event_date": "2025-06",
+      "event_type": "state_investigation_transfer",
+      "actor": "Minnesota DHS",
+      "program": "HSS",
+      "summary": "CMS says Minnesota requested that the HSS provider audits be transferred to the state for investigation.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity"
+    },
+    {
+      "event_date": "2025-08-01",
+      "event_type": "program_termination_request",
+      "actor": "Minnesota DHS",
+      "recipient": "CMS",
+      "program": "HSS",
+      "summary": "Minnesota's later CAP says DHS requested CMS assistance to terminate the HSS Medicaid benefit to protect fiscal integrity; CMS ultimately approved closure at the end of October 2025.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2025-09-17",
+      "event_type": "executive_control_action",
+      "actor": "Governor of Minnesota / Minnesota DHS",
+      "summary": "DHS corrective-action materials cite Executive Order 25-10 as part of a broader expansion of program-integrity work, including provider/payment controls.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2025-10",
+      "event_type": "administrative_controls",
+      "actor": "Minnesota DHS",
+      "summary": "DHS says it established/enhanced pre-payment review, moved to improve stop-payment efficiency, and began terminating inactive providers. HSS ended after October 31, 2025.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_ids": [
+        "src-mn-dhs-2026-08-program-integrity-snapshot",
+        "src-mn-dhs-2026-07-high-risk-moratoria-extension"
+      ]
+    },
+    {
+      "event_date": "2025-12-05",
+      "event_type": "federal_corrective_action_request",
+      "actor": "CMS",
+      "recipient": "Minnesota DHS",
+      "summary": "CMS formally directed Minnesota to submit a comprehensive program-integrity corrective action plan by December 31, 2025.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity"
+    },
+    {
+      "event_date": "2025-12-23",
+      "event_type": "prepayment_review",
+      "actor": "Minnesota DHS / Optum",
+      "summary": "Minnesota's revised CAP says DHS paused fee-for-service payments for 14 high-risk services for enhanced prepayment review. Flagged claims were to be reviewed rather than presumed fraudulent.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2025-12-31",
+      "event_type": "state_cap_submission",
+      "actor": "Minnesota DHS",
+      "recipient": "CMS",
+      "summary": "Minnesota submitted its initial CAP. CMS later deemed it deficient, citing temporary/future-contingent measures, inadequate timelines/metrics and insufficient detail on accountability and recovery.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity"
+    },
+    {
+      "event_date": "2026-01-06",
+      "event_type": "federal_noncompliance_determination",
+      "actor": "CMS",
+      "summary": "CMS Administrator found Minnesota substantially out of compliance with federal Medicaid program-integrity requirements under §1902(a)(64) and 42 CFR Part 455, Subpart A. CMS described a focused CMS-64 review and an estimated quarterly FFP withholding formula of $515,154,947.56 pending compliance/hearing process.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity",
+      "qualification": "The withholding formula is not a fraud-loss measurement and the notice is an administrative determination, not criminal adjudication."
+    },
+    {
+      "event_date": "2026-01-20",
+      "event_type": "improper_payment_measurement",
+      "actor": "CMS",
+      "summary": "CMS separately notified Minnesota that its RY2025 PERM overall improper-payment rate was 2.16% for a sample of payments made July 2023-June 2024; CMS explicitly states improper payments do not necessarily represent expenses that should not have occurred.",
+      "evidence_class": "AUDIT_FINDING",
+      "source_id": "src-cms-2026-01-20-mn-perm-ry2025",
+      "qualification": "PERM is not a fraud rate and does not answer the same question as CMS's program-integrity compliance determination."
+    },
+    {
+      "event_date": "2026-01-22",
+      "event_type": "enhanced_screening",
+      "actor": "Minnesota DHS",
+      "summary": "DHS implemented enhanced enrollment screening for high-risk provider types, including fingerprinting/site-visit requirements where applicable.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-07-high-risk-moratoria-extension"
+    },
+    {
+      "event_date": "2026-01-23/28",
+      "event_type": "revalidation_notice",
+      "actor": "Minnesota DHS",
+      "summary": "DHS says it sent off-cycle revalidation requirements to all 5,640 providers in the then-defined high-risk service universe, with site visits/background/credential verification planned.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap",
+      "source_locator": "CAP PDF pp.11-13"
+    },
+    {
+      "event_date": "2026-01-27/30",
+      "event_type": "provider_enrollment_moratorium",
+      "actor": "Minnesota DHS / CMS",
+      "summary": "Minnesota implemented a freeze on new provider enrollment for high-risk service categories; EIDBI already had a separate moratorium and HSS had closed. Later extensions use different service/geographic scopes and are separately tracked.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-07-high-risk-moratoria-extension"
+    },
+    {
+      "event_date": "2026-01-30",
+      "event_type": "state_revised_cap",
+      "actor": "Minnesota DHS",
+      "recipient": "CMS",
+      "summary": "Minnesota submitted a revised comprehensive CAP containing additional actions, implementation timeframes and performance metrics, including revalidation and enhanced prepayment review.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2026-01-30",
+      "event_type": "payment_integrity_report",
+      "actor": "Optum for Minnesota DHS",
+      "summary": "Optum's Phase 1 report described over $52.3M in direct recoupment opportunities, over $1.7B in potential recovery opportunities and over $165M in cost avoidance from fee-for-service analysis. Managed care was outside Phase 1 scope.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-optum-2026-01-30-phase1-payment-integrity",
+      "qualification": "None of these figures is a statewide proven-fraud or cash-recovered total."
+    },
+    {
+      "event_date": "2026-02-25",
+      "event_type": "federal_funding_deferral",
+      "actor": "CMS",
+      "summary": "CMS announced a $259,505,491 deferral of federal matching funds for Minnesota's Q4 FY2025 Medicaid spending while further review was completed, including $243.8M described as unsupported or potentially fraudulent claims and $15.4M tied to immigration-status documentation.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-cms-2026-02-25-minnesota-medicaid-deferral",
+      "qualification": "Deferral is not final disallowance or adjudicated fraud loss."
+    },
+    {
+      "event_date": "2026-03-19",
+      "event_type": "cap_approval_reported",
+      "actor": "CMS",
+      "summary": "Minnesota DHS states CMS approved the revised CAP on March 19, 2026.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-program-integrity-factcheck",
+      "qualification": "The corpus still lacks the standalone CMS approval letter on an official CMS host; preserve the approval date as a state-reported federal action until that primary federal document is captured."
+    },
+    {
+      "event_date": "2026-05-31",
+      "event_type": "revalidation_target",
+      "actor": "Minnesota DHS",
+      "summary": "Minnesota's CAP targeted completion of high-risk provider revalidation and deactivation of noncompliant providers by May 31, 2026.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-01-30-revised-cap"
+    },
+    {
+      "event_date": "2026-07-15",
+      "event_type": "moratorium_extension",
+      "actor": "Minnesota DHS / CMS",
+      "summary": "DHS announced CMS approval to extend the pause on new Medicaid providers in 12 high-risk services through January 27, 2027, while EIDBI and NEMT/HSS rules have separate scopes/statuses.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-07-high-risk-moratoria-extension"
+    },
+    {
+      "event_date": "2026-08-12",
+      "event_type": "revalidation_snapshot",
+      "actor": "Minnesota DHS",
+      "summary": "DHS's current Revalidate snapshot reports 3,070 high-risk providers revalidated, 1,627 appealing disenrollment, 128 choosing termination rather than revalidation and 660 whose appeal windows closed and were terminated.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-08-program-integrity-snapshot",
+      "qualification": "Administrative termination/disenrollment is not a criminal conviction."
+    },
+    {
+      "event_date": "2026-08-24",
+      "event_type": "claims_review",
+      "actor": "Minnesota DHS / Myers & Stauffer",
+      "program": "NEMT",
+      "summary": "DHS announced NEMT provider-claim compliance reviews continuing through 2026.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-08-24-nemt-program-reviews",
+      "qualification": "Selection for review is not an accusation of fraud."
+    },
+    {
+      "event_date": "2026-08-25",
+      "event_type": "service_access_impact",
+      "actor": "Minnesota DHS / Acentra Health",
+      "program": "EIDBI",
+      "summary": "DHS reported longer-than-required EIDBI service-authorization timelines because of increased review volume and said review capacity/workflows were being expanded and prioritized.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-08-25-eidbi-authorization-backlog",
+      "qualification": "The source does not establish that fraud controls are the sole cause of delays or quantify the number affected."
+    },
+    {
+      "event_date": "2026-08-28",
+      "event_type": "program_transition",
+      "actor": "Minnesota DHS",
+      "program": "CFSS/PCA",
+      "summary": "DHS announced extended PCA services will end September 30, 2026 as the transition to CFSS continues; regular PCA can continue until individual transition is complete.",
+      "evidence_class": "AGENCY_POSITION",
+      "source_id": "src-mn-dhs-2026-08-28-cfss-transition"
+    }
+  ],
+  "interpretive_rules": [
+    "PERM improper-payment rate is not a fraud rate and should not be used to validate or refute criminal-fraud estimates.",
+    "CMS substantial noncompliance is an administrative program-integrity determination, not a criminal conviction of state officials.",
+    "Claim flagging, payment holds, moratoria, revalidation, disenrollment and sanctions are control actions and must remain distinct from charged or adjudicated fraud.",
+    "The $515.2M withholding formula, $259.5M deferral, Optum $52.3M direct recoupment opportunities, $1.7B potential recoveries, and DHS >$56M identified for recovery all use different definitions and must not be summed."
+  ],
+  "open_primary_source_gaps": [
+    "CMS December 5, 2025 letter to Minnesota on an official CMS host",
+    "Standalone CMS March 19, 2026 revised-CAP approval letter",
+    "Final disposition of the February 25, 2026 $259.5M deferral by component",
+    "Focused CMS-64 review workpapers/results for the 14 high-risk services",
+    "Actual collected recoveries corresponding to DHS/Optum identified-recovery opportunities"
+  ]
+}
