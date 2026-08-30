@@ -1,0 +1,43 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-asha-hassan-smart-therapy-fcnp-465k",
+  "claim_text": "USAO-MN states that Asha Farhan Hassan was charged by federal information on September 24, 2025 with wire fraud and with participating in the Feeding Our Future fraud scheme through Smart Therapy. For the Federal Child Nutrition Program conduct, the release alleges that between 2020 and 2021 Hassan claimed nearly 200,000 meals and approximately $465,000 in program funds. This child-nutrition allegation is separate from the release's more-than-$14-million EIDBI autism-program allegation and must not be merged into one Feeding Our Future amount.",
+  "claim_type": "AMOUNT",
+  "status": "charged",
+  "source_ids": [
+    "src-usao-mn-2025-09-24-asha-hassan-autism-fof"
+  ],
+  "event_date": "2025-09-24",
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2025-09-24-asha-hassan-autism-fof",
+      "locator": "Federal Child Nutrition Program section",
+      "quote": "approximately $465,000 in Federal Child Nutrition Program funds"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 465000,
+      "currency": "USD",
+      "metric_type": "amount_claimed",
+      "period_start": "2020-01-01",
+      "period_end": "2021-12-31",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "asha-hassan-smart-therapy-fcnp-2020-2021",
+      "methodology": "USAO-MN states Hassan claimed approximately $465,000 in Federal Child Nutrition Program funds; this is a charging allegation and not proven loss."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED, not ADJUDICATED",
+    "The approximately $465,000 Federal Child Nutrition Program figure is separate from the more-than-$14-million EIDBI autism-program allegation",
+    "The USAO release verifies Hassan's name and federal charge but does not itself assign her the 76th Feeding Our Future defendant ordinal"
+  ]
+}
