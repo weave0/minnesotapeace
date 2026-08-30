@@ -1,0 +1,24 @@
+{
+  "source_id": "src-fox9-2024-06-07-fof-verdict-count-matrix",
+  "canonical_url": "https://www.fox9.com/news/feeding-our-future-verdicts-full-list",
+  "issuing_body": "FOX 9 Minneapolis-St. Paul",
+  "title": "Feeding Our Future verdicts: Full list of each charge and verdict",
+  "publication_date": "2024-06-07",
+  "retrieval_date": "2026-08-30",
+  "document_type": "news_article",
+  "case_number": "22-CR-124",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "supports": [
+    "Contemporaneous verdict reporting states that Said Shafii Farah was found not guilty on all nine counts against him: Count 1 wire-fraud conspiracy; Count 12 wire fraud; Count 13 conspiracy to commit federal-programs bribery; Counts 16, 18, and 19 federal-programs bribery; Count 20 conspiracy to commit money laundering; and Counts 21 and 40 money laundering.",
+    "The same report states that Abdiwahab Maalim Aftin was found not guilty on all three counts against him: Count 1 wire-fraud conspiracy, Count 20 conspiracy to commit money laundering, and Count 27 money laundering.",
+    "The report provides count-by-count guilty/not-guilty outcomes for all seven trial defendants."
+  ],
+  "does_not_support": [
+    "Primary judicial proof of the verdicts; verdict forms, a minute entry, or another court record remain the preferred source.",
+    "A scheme-wide conviction count after June 7, 2024."
+  ],
+  "notes": "The nine-count denominator for Said Farah and three-count denominator for Aftin align with the count assignments in the captured ECF 57 superseding indictment. Minnesota Reformer contemporaneously reported the same full-acquittal outcome but later described Said Farah as acquitted of 'all eight charges'; that denominator is inconsistent with both FOX 9's count matrix and the primary indictment count assignments."
+}
