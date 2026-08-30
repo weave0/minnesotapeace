@@ -24,7 +24,7 @@ jobs:
                   set -euo pipefail
                   mkdir -p public
                   cp _headers _redirects index.html 404.html robots.txt sitemap.xml favicon.svg public/
-                  cp -a css js assets record status good guide oversight public/
+                  cp -a css js assets record status good guide oversight programs money authority public/
                   mkdir -p public/functions
                   cp -a functions/. public/functions/
 
@@ -35,6 +35,7 @@ jobs:
                   test -f public/css/status.css
                   test -f public/css/good.css
                   test -f public/css/good-v2.css
+                  test -f public/css/evidence.css
                   test -f public/js/discovery.js
                   test -f public/js/discovery-v5.js
                   test -f public/js/discovery-v6.js
@@ -42,6 +43,9 @@ jobs:
                   test -f public/good/index.html
                   test -f public/guide/index.html
                   test -f public/oversight/index.html
+                  test -f public/programs/index.html
+                  test -f public/money/index.html
+                  test -f public/authority/index.html
                   test -f public/_headers
                   test -f public/_redirects
                   test -f public/record/index.html
@@ -65,7 +69,7 @@ jobs:
                     exit 1
                   fi
 
-                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/status/index.html public/good/index.html public/guide/index.html public/oversight/index.html; then
+                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/status/index.html public/good/index.html public/guide/index.html public/oversight/index.html public/programs/index.html public/money/index.html public/authority/index.html; then
                     echo "internal research vocabulary leaked into visitor-facing HTML" >&2
                     exit 1
                   fi
@@ -94,6 +98,12 @@ jobs:
                   grep -Fq 'Court language' public/guide/index.html
                   grep -Fq 'The fraud story is only half the story.' public/oversight/index.html
                   grep -Fq 'Legislative Auditor' public/oversight/index.html
+                  grep -Fq 'High-risk is a control label. It is not a verdict.' public/programs/index.html
+                  grep -Fq 'Fourteen programs. Different evidence.' public/programs/index.html
+                  grep -Fq 'There is no honest single “money recovered” number yet.' public/money/index.html
+                  grep -Fq 'Six figures. Six different meanings.' public/money/index.html
+                  grep -Fq '“Who knew?” and “who could act?” are different questions.' public/authority/index.html
+                  grep -Fq 'The law divides the work.' public/authority/index.html
                   grep -Fq 'Evidence room' public/record/index.html
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
@@ -104,6 +114,9 @@ jobs:
                   grep -Fq 'jamie-mediation.pages.dev' public/functions/_middleware.js
                   grep -Fq 'Response.redirect(requestUrl.toString(), 308)' public/functions/_middleware.js
                   grep -Fq 'Good work has an address.' public/js/discovery-v6.js
+                  grep -Fq 'Programs & controls' public/js/discovery-v6.js
+                  grep -Fq 'Money & recovery' public/js/discovery-v6.js
+                  grep -Fq 'Authority & notice' public/js/discovery-v6.js
 
             - name: Deploy to Cloudflare Pages
               uses: cloudflare/wrangler-action@v3
@@ -159,8 +172,8 @@ jobs:
 
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/briefs.js /tmp/discovery-v6.js /tmp/good-v2.css
-                    rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers
+                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/programs.html /tmp/money.html /tmp/authority.html /tmp/briefs.js /tmp/discovery-v6.js /tmp/good-v2.css /tmp/evidence.css
+                    rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers /tmp/programs.headers /tmp/money.headers /tmp/authority.headers
 
                     curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' -o /tmp/home.html "https://minnesotapeace.com/" || true
                     curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' -o /tmp/record.html "https://minnesotapeace.com/record/" || true
@@ -168,9 +181,13 @@ jobs:
                     curl -fsSL -D /tmp/good.headers -H 'Cache-Control: no-cache' -o /tmp/good.html "https://minnesotapeace.com/good/" || true
                     curl -fsSL -D /tmp/guide.headers -H 'Cache-Control: no-cache' -o /tmp/guide.html "https://minnesotapeace.com/guide/" || true
                     curl -fsSL -D /tmp/oversight.headers -H 'Cache-Control: no-cache' -o /tmp/oversight.html "https://minnesotapeace.com/oversight/" || true
+                    curl -fsSL -D /tmp/programs.headers -H 'Cache-Control: no-cache' -o /tmp/programs.html "https://minnesotapeace.com/programs/" || true
+                    curl -fsSL -D /tmp/money.headers -H 'Cache-Control: no-cache' -o /tmp/money.html "https://minnesotapeace.com/money/" || true
+                    curl -fsSL -D /tmp/authority.headers -H 'Cache-Control: no-cache' -o /tmp/authority.html "https://minnesotapeace.com/authority/" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/briefs.js "https://minnesotapeace.com/record/js/briefs.js" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v6.js "https://minnesotapeace.com/js/discovery-v6.js" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/good-v2.css "https://minnesotapeace.com/css/good-v2.css" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/evidence.css "https://minnesotapeace.com/css/evidence.css" || true
 
                     misses=0
                     check_text /tmp/home.html 'What happened' 'homepage' || misses=1
@@ -186,17 +203,30 @@ jobs:
                     check_text /tmp/good-v2.css '.field-map-shell' 'civic map CSS' || misses=1
                     check_text /tmp/guide.html 'Who is who' 'field guide' || misses=1
                     check_text /tmp/oversight.html 'The fraud story is only half the story.' 'oversight' || misses=1
+                    check_text /tmp/programs.html 'High-risk is a control label. It is not a verdict.' 'programs desk' || misses=1
+                    check_text /tmp/programs.html 'Nonemergency Medical Transportation' 'programs NEMT coverage' || misses=1
+                    check_text /tmp/money.html 'There is no honest single “money recovered” number yet.' 'money desk' || misses=1
+                    check_text /tmp/money.html '&gt;$1.7B' 'money desk potential recovery distinction' || misses=1
+                    check_text /tmp/authority.html '“Who knew?” and “who could act?” are different questions.' 'authority desk' || misses=1
+                    check_text /tmp/authority.html 'The court did not order reimbursements resumed' 'authority notice chain' || misses=1
+                    check_text /tmp/evidence.css '.authority-table' 'evidence depth CSS' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1
                     check_text /tmp/record.html '/record/js/briefs.js' 'record briefs asset' || misses=1
                     check_text /tmp/record.html '/js/discovery-v6.js' 'record discovery injection' || misses=1
                     check_text /tmp/briefs.js 'Start with a case, not a data table.' 'briefs JS' || misses=1
                     check_text /tmp/discovery-v6.js 'Good work has an address.' 'versioned discovery JS' || misses=1
+                    check_text /tmp/discovery-v6.js 'Programs & controls' 'evidence discovery programs' || misses=1
+                    check_text /tmp/discovery-v6.js 'Money & recovery' 'evidence discovery money' || misses=1
+                    check_text /tmp/discovery-v6.js 'Authority & notice' 'evidence discovery authority' || misses=1
                     check_header /tmp/home.headers '^x-mnpeace-publication: context-first-v6' 'homepage version' || misses=1
                     check_header /tmp/home.headers '^cache-control: .*no-store' 'homepage cache' || misses=1
                     check_header /tmp/status.headers '^cache-control: .*no-store' 'status cache' || misses=1
                     check_header /tmp/good.headers '^cache-control: .*no-store' 'civic page cache' || misses=1
                     check_header /tmp/guide.headers '^cache-control: .*no-store' 'guide cache' || misses=1
                     check_header /tmp/oversight.headers '^cache-control: .*no-store' 'oversight cache' || misses=1
+                    check_header /tmp/programs.headers '^cache-control: .*no-store' 'programs cache' || misses=1
+                    check_header /tmp/money.headers '^cache-control: .*no-store' 'money cache' || misses=1
+                    check_header /tmp/authority.headers '^cache-control: .*no-store' 'authority cache' || misses=1
 
                     if [ "$misses" -eq 0 ]; then
                       ok=1

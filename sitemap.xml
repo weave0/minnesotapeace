@@ -3,42 +3,60 @@
     xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1">
     <url>
         <loc>https://minnesotapeace.com/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://minnesotapeace.com/assets/og/mn-peace-og.jpg</image:loc>
+            <image:loc>https://minnesotapeace.com/assets/og/mn-peace-og-v2.png</image:loc>
             <image:title>MN Peace</image:title>
-            <image:caption>Cyan and gold river of light over dark river ice — MN Peace</image:caption>
+            <image:caption>MN Peace editorial card with a geometric Minnesota monogram and cyan-and-gold evidence lines</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://minnesotapeace.com/status/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
+        <loc>https://minnesotapeace.com/programs/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://minnesotapeace.com/money/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://minnesotapeace.com/authority/</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
         <loc>https://minnesotapeace.com/good/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://minnesotapeace.com/guide/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://minnesotapeace.com/oversight/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://minnesotapeace.com/record/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-08-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>

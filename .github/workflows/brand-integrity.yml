@@ -24,6 +24,9 @@ jobs:
             good/index.html
             guide/index.html
             oversight/index.html
+            programs/index.html
+            money/index.html
+            authority/index.html
           )
           public_discovery=(
             js/discovery.js
@@ -36,7 +39,7 @@ jobs:
             --include='*.xml' \
             --include='*.js' \
             'Jamie[[:space:]]+Rigling|Family Law Mediation|Rule 114 certified mediator' \
-            index.html record status good guide oversight functions; then
+            index.html record status good guide oversight programs money authority functions; then
             echo 'Legacy Jamie Rigling branding leaked into the MN Peace publication.' >&2
             exit 1
           fi
@@ -55,10 +58,12 @@ jobs:
             exit 1
           fi
 
-          if grep -nF 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' "${public_html[@]}"; then
-            echo 'Canonical public HTML still references the retired OG URL.' >&2
+          if grep -nF 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' "${public_html[@]}" sitemap.xml; then
+            echo 'Canonical publication metadata still references the retired OG URL.' >&2
             exit 1
           fi
+
+          grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' sitemap.xml
 
           for page in "${public_html[@]}"; do
             grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' "$page"
@@ -72,6 +77,10 @@ jobs:
             grep -Fq 'name="twitter:image:alt"' "$page"
             grep -Fq 'max-image-preview:large' "$page"
           done
+
+          grep -Fq 'https://minnesotapeace.com/programs/' sitemap.xml
+          grep -Fq 'https://minnesotapeace.com/money/' sitemap.xml
+          grep -Fq 'https://minnesotapeace.com/authority/' sitemap.xml
 
           # The retired URL remains only as an edge migration rule so old cached links resolve cleanly.
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' functions/_middleware.js
