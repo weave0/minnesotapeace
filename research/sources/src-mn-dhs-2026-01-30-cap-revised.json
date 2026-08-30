@@ -1,0 +1,27 @@
+{
+  "source_id": "src-mn-dhs-2026-01-30-cap-revised",
+  "canonical_url": "https://mn.gov/dhs/assets/2026-01-30_cap-response_final_redacted_tcm1053-728931.pdf",
+  "issuing_body": "Minnesota Department of Human Services",
+  "author": "John Connolly, Deputy Commissioner and Minnesota Medicaid Director",
+  "title": "Corrective Action Plan for Program Integrity Update (revised, to CMS)",
+  "document_date": "2026-01-30",
+  "retrieval_date": "2026-08-30",
+  "document_type": "corrective_action_plan",
+  "jurisdiction": "Minnesota; federal (CMS)",
+  "source_tier": 2,
+  "source_status": "PRIMARY_AGENCY_RECORD",
+  "evidence_class": "AGENCY_POSITION",
+  "page_count": 20,
+  "notes": "Redacted version, released by DHS itself via its program-integrity factcheck page. Addressed to the same CMS officials (Brandt, Brillman) as the December 31 original CAP (src-mn-dhs-2025-12-31-cap-original).",
+  "supports": [
+    "DHS states this revised CAP is submitted 'in response to the letter from Administrator Oz dated January 6, 2026.' This resolves, from a primary Minnesota-agency source, the exact date and signatory of the CMS deficiency letter that research/harvest/oversight-law/GAPS.md item 2 previously listed with an uncertain date (referenced there as a '6 January 2026 letter to Gov. Walz' reproduced only in a third-party circulation, CMS-FILE_6607).",
+    "DHS states it 'hosted in-person meetings with CMS staff on January 21 and 22' 2026 as part of finalizing the corrective action plan -- a previously undocumented pair of dated meetings.",
+    "This CAP is submitted 'on behalf of Governor Tim Walz' and identifies itself as a 'revised, comprehensive corrective action plan' proposing 'additional program integrity actions' with implementation timeframes and performance metrics.",
+    "The letter repeats the same background narrative as the December 31, 2025 original CAP (EO 25-10 on September 17, 2025; the October 2024 EIDBI on-site audit process; the high-risk EIDBI/HSS designation), indicating continuity between the two submissions rather than a materially different factual predicate."
+  ],
+  "does_not_support": [
+    "The full text of CMS Administrator Oz's January 6, 2026 deficiency letter itself; only DHS's characterization and response to it.",
+    "The March 19, 2026 CMS approval letter (reported in contemporaneous journalism as signed by Kim Brandt) or its content; that document postdates this filing and was not located as a directly retrievable primary PDF in this pass.",
+    "The specific 17 corrective-action elements journalism describes (e.g., pausing new providers in 13 high-risk service categories, revalidating 5,500+ providers); this source record captures the letter's framing only, not a itemized element-by-element extraction of the full 20-page attachment in this pass."
+  ]
+}

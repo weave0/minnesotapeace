@@ -1,0 +1,28 @@
+{
+  "source_id": "src-mn-dhs-2025-12-31-cap-original",
+  "canonical_url": "https://mn.gov/dhs/assets/2025-12-31_corrective-action-plan_tcm1053-728930.pdf",
+  "issuing_body": "Minnesota Department of Human Services",
+  "author": "Shireen Gandhi, Temporary Commissioner",
+  "title": "Corrective Action Plan for Program Integrity (original, to CMS)",
+  "document_date": "2025-12-31",
+  "retrieval_date": "2026-08-30",
+  "document_type": "corrective_action_plan",
+  "jurisdiction": "Minnesota; federal (CMS)",
+  "source_tier": 2,
+  "source_status": "PRIMARY_AGENCY_RECORD",
+  "evidence_class": "AGENCY_POSITION",
+  "page_count": 5,
+  "notes": "Addressed to Kim Brandt (CMS Chief Operating Officer and Deputy Administrator) and Daniel Brillman (Deputy Administrator). Closes the 'first CAP PDF not fetched' gap in research/harvest/oversight-law/GAPS.md item 2.",
+  "supports": [
+    "DHS states this CAP is submitted 'in response to your letter of December 5, 2025, in which you requested a plan from Minnesota to strengthen program integrity and anti-fraud actions within its Medicaid program' -- primary-source confirmation of the existence, approximate subject, and exact date of the CMS letter that GAPS.md previously listed only as 'cited in the 30 Jan CAP,' not itself fetched.",
+    "DHS states 'as we stated in our December 17 reply to your letter, we strongly agree that assertive, ongoing action is necessary' -- this discloses a previously-unknown DHS-to-CMS communication dated December 17, 2025, an interim reply between the December 5 CMS letter and this December 31 CAP. Not previously known to this corpus.",
+    "Governor Walz issued Executive Order 25-10 on September 17, 2025 to bolster and expand Medicaid program-integrity work.",
+    "DHS states it designated EIDBI and Housing Stabilization Services (HSS) as high-risk 'early in 2025,' providing additional program-integrity tools including unannounced on-site visits.",
+    "DHS states it requested CMS assistance on August 1, 2025 to terminate the HSS benefit, and that CMS approved shuttering the HSS program 'at the end of October' 2025.",
+    "DHS states it disenrolled 'over 800 inactive providers in October 2025 alone,' following a CMS suggestion made during HSS termination discussions."
+  ],
+  "does_not_support": [
+    "The text of the December 5, 2025 CMS letter itself, or the December 17, 2025 DHS reply -- both are referenced here but not attached or quoted at length, and neither has been independently retrieved.",
+    "Any claim about what specific program-integrity actions the December 5 CMS letter demanded beyond 'strengthen program integrity and anti-fraud actions'; that characterization is DHS's own summary of CMS's letter, not a direct quotation of it."
+  ]
+}

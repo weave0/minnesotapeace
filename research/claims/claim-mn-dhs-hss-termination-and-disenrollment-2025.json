@@ -1,0 +1,37 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "AGENCY_POSITION",
+  "confidence": "HIGH",
+  "jurisdiction": "Minnesota; federal (CMS)",
+  "proposition_class": "B_OVERSIGHT_FAILURE",
+  "claim_id": "claim-mn-dhs-hss-termination-and-disenrollment-2025",
+  "claim_text": "Minnesota DHS's December 31, 2025 Corrective Action Plan states that DHS requested CMS assistance on August 1, 2025 to terminate Minnesota's Housing Stabilization Services (HSS) Medicaid benefit to protect program fiscal integrity, that CMS approved shuttering the HSS program effective the end of October 2025, and that DHS disenrolled more than 800 inactive Medicaid providers in October 2025 alone, following a CMS suggestion made during the HSS termination discussions. DHS also states it designated EIDBI and HSS as high-risk services 'early in 2025,' unlocking additional program-integrity tools including unannounced on-site visits.",
+  "claim_type": "CHRONOLOGY",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-dhs-2025-12-31-cap-original"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-mn-dhs-2025-12-31-cap-original",
+      "locator": "p.1",
+      "quote": "DHS requested assistance from CMS on August 1, 2025, to take the unprecedented action to terminate the agency's Housing Stabilization Services (HSS) benefit to protect the fiscal integrity of Minnesota's Medicaid program. ... which resulted in CMS approval to shutter the HSS program at the end of October."
+    },
+    {
+      "source_id": "src-mn-dhs-2025-12-31-cap-original",
+      "locator": "p.2",
+      "quote": "During HSS termination discussions, CMS suggested that DHS disenroll inactive health care providers to further safeguard against fraudulent billing. DHS immediately acted on that suggestion disenrolling over 800 inactive providers in October 2025 alone."
+    }
+  ],
+  "amounts": [],
+  "qualifiers": [
+    "This is DHS's own account of the HSS termination and disenrollment actions, offered in a filing meant to demonstrate proactive program-integrity conduct to CMS; it is not an independent audit finding.",
+    "The '800 inactive providers' figure describes disenrollment of inactive providers as a fraud-prevention safeguard; it does not itself establish that any of the 800 were engaged in fraud, and this corpus should not present it as a fraud-recovery or enforcement-action count.",
+    "Cross-reference against this corpus's existing HSS case-family research (research/cases/HSS-FIRST-WAVE.md and related claims) for the criminal-enforcement side of HSS; this claim covers only the administrative termination/disenrollment timeline."
+  ],
+  "editorial_notes": "New primary timeline anchor for the HSS program's administrative wind-down, independent of and complementary to the criminal HSS prosecutions already tracked elsewhere in this corpus."
+}
