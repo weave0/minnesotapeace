@@ -1,0 +1,65 @@
+{
+  "source_id": "src-mn-ola-2026-bha-grants",
+  "canonical_url": "https://www.auditor.leg.state.mn.us/fad/pdf/fad2601.pdf",
+  "summary_url": "https://www.auditor.leg.state.mn.us/fad/2026/fad26-01.htm",
+  "issuing_body": "Minnesota Office of the Legislative Auditor",
+  "title": "Department of Human Services: Behavioral Health Administration Grants",
+  "publication_date": "2026-01-06",
+  "retrieval_date": "2026-08-29",
+  "document_type": "performance_audit",
+  "source_tier": 4,
+  "source_status": "PRIMARY_STATE_AUDIT",
+  "evidence_class": "AUDIT_FINDING",
+  "scope": {
+    "audit_period": "2022-07-01 through 2024-12-31",
+    "unique_grant_agreements": 830,
+    "ngo_grant_agreements": 590,
+    "approx_ngo_organizations": 270,
+    "annual_grant_expenses": [
+      {"fiscal_year": 2023, "amount": 182000000, "currency": "USD", "qualifier": "almost"},
+      {"fiscal_year": 2024, "amount": 191000000, "currency": "USD"},
+      {"period": "first six months FY2025", "amount": 53000000, "currency": "USD"}
+    ]
+  },
+  "conclusion": "OLA concluded BHA did not comply with most requirements tested and did not have adequate internal controls over grant funds.",
+  "integrity_issue": {
+    "claim": "During the audit, OLA identified a number of documents that BHA either backdated or created after the audit began; OLA said it could not fully rely on that documentation.",
+    "locator": "PDF p.2, lines 43-63; visually confirmed on page screenshot",
+    "evidence_class": "AUDIT_FINDING",
+    "qualification": "This is a serious audit-evidence integrity issue. It is not by itself a criminal charge, conviction, or proof that the documents were created to facilitate theft."
+  },
+  "selected_findings": [
+    "Unjustified or insufficiently documented single-source grants.",
+    "Grant agreements lacking required statutory-authority citations.",
+    "Late grant amendments and payments for work before fully executed grant agreements.",
+    "Two grantees were overpaid a total of $41,803.",
+    "No competitive-bid process for certain mental-health provider-supervision grants.",
+    "Prior findings remained unresolved regarding progress reports, monitoring visits, financial reconciliations, and grantee-performance evaluations.",
+    "Payments were made for some costs not incurred or not properly supported by source documentation.",
+    "The Legislature had not established an oversight mechanism for certain payments to legislatively named entities.",
+    "Staff described poor leadership practices and insufficient grant-management training."
+  ],
+  "money": [
+    {
+      "amount": 41803,
+      "currency": "USD",
+      "metric_type": "audit_identified_overpayment",
+      "evidence_class": "AUDIT_FINDING",
+      "notes": "OLA tested 55 of 57 grant agreements to 18 grantees in the relevant payment comparison and found two grantees overpaid a combined $41,803 on two reimbursement requests. This is not a $41,803 criminal-fraud finding.",
+      "source_locator": "report p.19 / PDF p.24, lines 758-768; visually confirmed on screenshot"
+    }
+  ],
+  "source_locators": {
+    "audit_scope_and_spend": "PDF pp.12-14, especially lines 270-317 and 303-308",
+    "backdated_created_documents": "PDF p.2, lines 43-63",
+    "overpayment_finding": "report p.19 / PDF p.24, lines 765-768",
+    "summary_findings": "PDF pp.8-11 / OLA HTML report summary"
+  },
+  "does_not_support": [
+    "The audit does not establish a statewide amount of behavioral-health grant fraud.",
+    "The $41,803 audit-identified overpayment is not a criminal stolen-funds total.",
+    "Backdating/creating documents after audit commencement is not, from this audit alone, a criminal adjudication against BHA staff.",
+    "The annual grant-expense figures are program spending, not fraud losses.",
+    "Audit findings involving unsupported or not-incurred costs require recovery/reconciliation follow-up and should not automatically be labeled intentional fraud."
+  ]
+}
