@@ -1,0 +1,21 @@
+{
+  "source_id": "src-mn-dhs-2026-07-24-recuperative-prior-auth",
+  "canonical_url": "https://mn.gov/dhs/partners-and-providers/news-initiatives-reports-workgroups/minnesota-health-care-programs/provider-news/news-and-updates.jsp",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Recuperative Care Service Prior Authorization now available",
+  "publication_date": "2026-07-24",
+  "effective_date": "2026-08-01",
+  "retrieval_date": "2026-08-29",
+  "document_type": "provider_news",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_POSITION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS requires prior authorization for all recuperative care services effective 2026-08-01.",
+    "Providers must use DHS-8900 for services on or after the effective date, replacing the prior 21-day extended-stay process."
+  ],
+  "does_not_support": [
+    "The prior-authorization requirement is a control change and is not evidence that recuperative-care providers committed fraud.",
+    "The notice does not provide a fraud, improper-payment, or recovery amount."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "as_of": "2026-08-29",
+  "purpose": "Prevent unlike recovery, judgment, restitution, recoupment-opportunity, and cost-avoidance figures from being collapsed into one taxpayer-recovery total.",
+  "rules": [
+    "identified_for_recovery is not recovered_amount",
+    "potential_recovery is not fraud loss and is not cash recovered",
+    "restitution_ordered is not restitution_collected",
+    "judgments_and_recoveries is a mixed agency aggregate unless components are published",
+    "cost_avoidance is not cash returned to the treasury",
+    "joint-and-several or overlapping restitution orders must not be summed across defendants"
+  ],
+  "entries": [
+    {
+      "entry_id": "dhs-identified-recovery-since-2020",
+      "amount": 56000000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "identified_for_recovery",
+      "period": "since 2020 through Aug. 2026 snapshot",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-mn-dhs-2026-08-program-integrity-snapshot",
+      "interpretation": "DHS says more than $56M has been identified for recovery. This does not establish how much has actually been collected."
+    },
+    {
+      "entry_id": "mfcu-judgments-and-recoveries-since-2019",
+      "amount": 90000000,
+      "currency": "USD",
+      "qualifier": "agency_cumulative_figure",
+      "metric_type": "mixed_judgments_and_recoveries",
+      "period": "2019 through 2026-06-23",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-mn-ag-2026-06-23-national-takedown-seven",
+      "interpretation": "The Attorney General combines judgments and recoveries in one figure. Do not render this as $90M cash recovered unless a component ledger proves collection."
+    },
+    {
+      "entry_id": "optum-direct-recoveries",
+      "amount": 52300000,
+      "currency": "USD",
+      "qualifier": "over",
+      "metric_type": "identified_for_recovery",
+      "source_term": "direct recoveries",
+      "period": "Phase 1, late Oct. 2025-Jan. 2026 analysis of 46 months FFS paid claims",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-mn-optum-2026-01-30-phase1-payment-integrity",
+      "interpretation": "Optum defines these as funds that can be recouped for clearly defined policy violations. The report does not establish that the full amount was collected."
+    },
+    {
+      "entry_id": "optum-potential-recoveries",
+      "amount": 1700000000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "potential_recovery",
+      "period": "Phase 1 paid-claims analysis",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-mn-optum-2026-01-30-phase1-payment-integrity",
+      "interpretation": "Potential corrective-action opportunities that may involve missing/vague policy and medical-necessity review. Not proven fraud, not identified final debt, and not collected."
+    },
+    {
+      "entry_id": "optum-cost-avoidance",
+      "amount": 165000000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "cost_avoidance",
+      "period": "Q3 2025 to Q4 2025 comparison described in Phase 1",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-mn-optum-2026-01-30-phase1-payment-integrity",
+      "interpretation": "Optum defines cost avoidance as prevention of future expense; it is not recovered money."
+    },
+    {
+      "entry_id": "fof-farah-nur-restitution-overlap",
+      "amount": 47920514,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "evidence_class": "ADJUDICATED",
+      "subjects": [
+        "Abdiaziz Shafii Farah",
+        "Abdimajid Mohamed Nur"
+      ],
+      "source_basis": "Captured USAO/IRS-CI sentencing materials in Feeding Our Future corpus",
+      "interpretation": "The same $47,920,514 restitution figure appears for both defendants in the same Empire Cuisine case family. Treat as an overlap/joint-and-several risk and do not add the two orders into $95.8M without the judgments proving they are independent obligations.",
+      "research_reference": "research/reports/RESEARCH-STATE-2026-08-26.md"
+    },
+    {
+      "entry_id": "hussein-farah-new-vision-restitution-pending-primary",
+      "amount": 471000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "subject": "Hussein Mohamed Farah / New Vision Foundation",
+      "source_record": "src-fox9-2026-08-27-hussein-farah-sentencing",
+      "interpretation": "Reported restitution order. Keep out of a court-certified restitution ledger until the judgment or sentencing minute is captured."
+    }
+  ],
+  "known_missing_components": [
+    "Actual cash collections by case and year",
+    "Outstanding restitution balances",
+    "Forfeiture ordered versus forfeiture realized",
+    "Administrative recoupments assessed versus collected",
+    "Provider payment holds later released versus permanently retained",
+    "Breakdown of the AG's $90M mixed judgments/recoveries figure",
+    "Breakdown of DHS >$56M identified-for-recovery into assessed debt and collected amounts"
+  ],
+  "publication_instruction": "A public Recovery page should show separate columns/stacks for ordered, identified, potential, collected, forfeited, and avoided. Never display a single 'money recovered' total unless every component is collected and non-overlapping."
+}

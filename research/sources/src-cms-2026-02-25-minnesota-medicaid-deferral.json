@@ -1,0 +1,44 @@
+{
+  "source_id": "src-cms-2026-02-25-minnesota-medicaid-deferral",
+  "canonical_url": "https://www.cms.gov/newsroom/press-releases/trump-administration-prioritizes-affordability-announcing-major-crackdown-health-care-fraud",
+  "issuing_body": "Centers for Medicare & Medicaid Services",
+  "title": "Trump Administration Prioritizes Affordability by Announcing Major Crackdown on Health Care Fraud",
+  "publication_date": "2026-02-25",
+  "retrieval_date": "2026-08-29",
+  "document_type": "federal_agency_press_release",
+  "source_tier": 3,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_RELEASE",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "CMS announced a $259,505,491 deferral of federal matching funds associated with Minnesota's Q4 FY2025 Medicaid spending while further review/investigation was completed.",
+    "CMS described $243.8 million of the deferral as related to unsupported or potentially fraudulent Medicaid claims and approximately $15.4 million as related to claims involving individuals lacking satisfactory immigration status.",
+    "CMS stated that a deferral is among federal financial-management tools available when state obligations are not met and tied the action to its broader Minnesota program-integrity review."
+  ],
+  "money": [
+    {
+      "amount": 259505491,
+      "currency": "USD",
+      "metric_type": "federal_funding_deferral",
+      "qualifier": "announced_by_cms",
+      "notes": "Deferral is not final disallowance, adjudicated fraud loss, restitution, or money recovered."
+    },
+    {
+      "amount": 243800000,
+      "currency": "USD",
+      "metric_type": "federal_funding_deferral_component",
+      "qualifier": "cms_described_as_unsupported_or_potentially_fraudulent_claims",
+      "notes": "Potentially fraudulent or unsupported is not the same as proven fraud."
+    },
+    {
+      "amount": 15400000,
+      "currency": "USD",
+      "metric_type": "federal_funding_deferral_component",
+      "qualifier": "cms_immigration_status_documentation_component"
+    }
+  ],
+  "does_not_support": [
+    "The $259.5 million deferral is not a court finding that $259.5 million was stolen.",
+    "A deferred federal match can later be resolved through documentation, adjustment, disallowance, or other federal-state financial processes; the release does not establish the final disposition of every dollar.",
+    "The release is an agency position and financial-control action, not a criminal charging instrument against Minnesota officials."
+  ]
+}

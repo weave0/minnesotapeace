@@ -1,0 +1,27 @@
+{
+  "source_id": "src-mn-hennepin-27-cr-26-1082-omarxeyd-complaint",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/docs/Omarxeyd_Complaint.pdf",
+  "issuing_body": "State of Minnesota, Hennepin County District Court",
+  "host": "Minnesota Attorney General",
+  "title": "State of Minnesota v. Mohamed Abdirashid Omarxeyd — Criminal Complaint",
+  "case_number": "27-CR-26-1082",
+  "filing_date": "2026-01-13",
+  "retrieval_date": "2026-08-29",
+  "document_type": "criminal_complaint",
+  "jurisdiction": "Hennepin County District Court",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_FILING",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "The complaint alleges fraudulent billing by Guardian Home Health Services across PCA and several HCBS service types, including companion care, individualized home supports, homemaking, respite, and comprehensive community support.",
+    "The complaint explains that adult companion care includes assistance with daily living, errands, and social engagement, and that the UA modifier can indicate night supervision.",
+    "The complaint alleges ineligible overnight/sleep-hour billing, including more than $45,000 in IHS payments for services alleged to have been provided during a child's primary sleeping hours.",
+    "The complaint alleges more than $3.2 million was unlawfully received across the broader Guardian scheme; service-specific figures overlap and must not be summed into a new total."
+  ],
+  "does_not_support": [
+    "The complaint is an allegation, not a conviction.",
+    "The total alleged loss cannot be allocated entirely to Adult Companion Services, IHS, or Night Supervision because multiple service types are involved.",
+    "A billing modifier or description of night supervision in the complaint does not establish a separate Night Supervision conspiracy or case family."
+  ],
+  "notes": "High-value mixed-service primary filing for the 14-high-risk matrix. Use it to mark Adult Companion, IHS, and Night Supervision as having direct allegation coverage while preserving mixed-service scope."
+}

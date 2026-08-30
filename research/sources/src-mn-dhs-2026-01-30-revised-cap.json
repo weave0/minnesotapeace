@@ -1,0 +1,31 @@
+{
+  "source_id": "src-mn-dhs-2026-01-30-revised-cap",
+  "canonical_url": "https://mn.gov/dhs/assets/2026-01-30_cap-response_final_redacted_tcm1053-728931.pdf",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Corrective Action Plan for Program Integrity Update",
+  "publication_date": "2026-01-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "state_corrective_action_plan",
+  "recipient": "Centers for Medicare & Medicaid Services",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_PLAN",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "Minnesota submitted a revised program-integrity CAP in response to CMS Administrator Oz's January 6, 2026 letter.",
+    "DHS said notices of revalidation requirements were sent to all 5,640 providers in the then-defined high-risk service categories between January 23 and January 28, 2026.",
+    "DHS planned high-risk revalidation to include in-person/unannounced site visits, fingerprint background studies for controlling-interest individuals, and verification of provider credentials.",
+    "DHS set an April 1, 2026 application deadline and May 31, 2026 target to complete revalidation and deactivate noncompliant providers.",
+    "DHS described an enhanced prepayment-review project in which Optum would flag potentially concerning fee-for-service claims each payment cycle, while unflagged claims could be released and flagged claims routed for policy/program review and possible OIG investigation.",
+    "DHS stated it paused payments for 14 high-risk services on December 23, 2025 for enhanced prepayment review; in the first cycle roughly 1,700 claims were flagged and 14 were denied after DHS review/policy consultation, while the others were released."
+  ],
+  "source_locators": {
+    "revalidation_plan": "PDF pp.11-13; text lines 363-445; screenshots indexes 11 and 13",
+    "prepayment_review": "PDF pp.13-14; text from line 446 onward; screenshot index 13"
+  },
+  "does_not_support": [
+    "A revalidation notice or disenrollment is not proof of fraud.",
+    "A claim flagged by Optum is not necessarily fraudulent or ultimately denied.",
+    "The 5,640 figure was a plan-stage provider universe and should not be confused with later revalidation outcome counts.",
+    "This state CAP is Minnesota's proposed/committed response; CMS's assessment of adequacy is a separate federal source."
+  ]
+}

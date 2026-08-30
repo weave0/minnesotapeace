@@ -1,0 +1,99 @@
+{
+  "source_id": "src-mn-ola-2024-fof-oversight",
+  "canonical_url": "https://www.auditor.leg.state.mn.us/sreview/pdf/2024-mdefof.pdf",
+  "summary_url": "https://www.auditor.leg.state.mn.us/sreview/2024/mdefof-sum.htm",
+  "issuing_body": "Minnesota Office of the Legislative Auditor",
+  "title": "Minnesota Department of Education: Oversight of Feeding Our Future",
+  "publication_date": "2024-06-13",
+  "retrieval_date": "2026-08-29",
+  "document_type": "special_review",
+  "source_tier": 4,
+  "source_status": "PRIMARY_AUDIT_REPORT",
+  "evidence_class": "AUDIT_FINDING",
+  "overall_finding": "OLA found that MDE's inadequate oversight of Feeding Our Future created opportunities for fraud, including failures to act on known warning signs, shortcomings in exercising oversight authority, and inadequate preparation to respond to issues encountered with Feeding Our Future.",
+  "bound_findings": [
+    {
+      "finding_id": "fof-ola-2018-admin-review",
+      "claim": "MDE's only administrative review of Feeding Our Future's CACFP operations, conducted in December 2018, produced 22 findings across 11 of 13 review areas and warranted follow-up, but MDE never conducted a follow-up review.",
+      "report_pages": [37,40,41],
+      "pdf_page_indexes": [44,47,48],
+      "locator": "Application and Administrative Reviews; text extraction PDF pp.44 and 47-48 lines 1837-1875 and 2059-2109",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-complaints-30",
+      "claim": "Between June 2018 and December 2021, MDE received at least 30 complaints involving Feeding Our Future or its sites.",
+      "report_page": 49,
+      "pdf_page_index": 56,
+      "locator": "Chapter 4 opening, report p.49; PDF screenshot/index 56",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-complaint-practices",
+      "claim": "OLA found many MDE complaint-investigation procedures/practices inappropriate or of limited usefulness in the context of the alleged fraud, and said MDE continued asking Feeding Our Future to resolve complaints about itself despite having reason to doubt the sponsor's trustworthiness.",
+      "report_page": 49,
+      "pdf_page_index": 56,
+      "locator": "Chapter 4 opening, report p.49; PDF screenshot/index 56",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-investigate-itself",
+      "claim": "OLA specifically found that MDE inappropriately asked Feeding Our Future to investigate complaints about itself; from July 2018 to January 2020 MDE repeatedly assigned initial fact-finding and dispute resolution to Feeding Our Future and the complainant in recruitment complaints.",
+      "report_page": 55,
+      "pdf_page_index": 62,
+      "locator": "Complaint Investigations, report p.55; PDF screenshot/index 62",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-usda-oig-referral",
+      "claim": "MDE officials told OLA that MDE shared concerns about Feeding Our Future with USDA's Office of Inspector General in October or November 2020; OLA noted the exact date was unclear and that the referral did not eliminate MDE's separate duty to investigate complaints and correct irregularities.",
+      "report_page": 50,
+      "pdf_page_index": 57,
+      "locator": "Complaint Investigations, report p.50; text extraction PDF p.57 lines 2480-2519",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT"
+    },
+    {
+      "finding_id": "fof-ola-serious-deficiency-timeline",
+      "claim": "MDE issued serious deficiencies in January and March 2021, initiated a CACFP termination process on March 29, stopped reimbursement payments, then ultimately deferred the deficiencies; by June 4, 2021 Feeding Our Future was no longer under any serious deficiencies and could continue operating.",
+      "report_pages": [63,64,65],
+      "pdf_page_indexes": [70,71,72],
+      "locator": "Chapter 5 opening/timeline, report pp.63-65; screenshot/index 70 and text extraction PDF pp.70-72",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-insufficient-corrective-evidence",
+      "claim": "OLA found MDE ultimately deferred all Feeding Our Future serious deficiencies without taking reasonable steps to ensure corrective actions were implemented, and without sufficient evidence that identified deficiencies were fully and permanently addressed.",
+      "report_page": 65,
+      "pdf_page_index": 72,
+      "locator": "Serious Deficiency Process, report p.65; text extraction PDF p.72 lines 3126-3159",
+      "evidence_class": "AUDIT_FINDING"
+    },
+    {
+      "finding_id": "fof-ola-stop-pay-authority",
+      "claim": "OLA's Appendix A records that on April 1, 2021 MDE and USDA Midwest Regional Office discussed the serious-deficiency/termination process and, according to MDE, USDA supported MDE's decision to stop reimbursement payments and indicated MDE had authority to do so.",
+      "report_page": 88,
+      "pdf_page_index": 95,
+      "locator": "Appendix A, report p.88; PDF screenshot/index 95",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT"
+    },
+    {
+      "finding_id": "fof-ola-fbi-referral-april-2021",
+      "claim": "OLA's Appendix A records that MDE provided the FBI information about fraud suspicions in April 2021; MDE believed some sites were submitting fraudulent documents and artificially inflating meal counts, and the FBI began an investigation in May 2021.",
+      "report_page": 88,
+      "pdf_page_index": 95,
+      "locator": "Appendix A, report p.88; PDF screenshot/index 95",
+      "evidence_class": "AUDIT_FINDING_WITH_AGENCY_REPORTED_COMPONENT"
+    }
+  ],
+  "agency_response": {
+    "summary": "Commissioner Willie Jett disputed OLA's characterization of MDE's oversight and said responsibility for the fraud lies with indicted and convicted fraudsters. He also described reforms including an MDE Office of Inspector General, General Counsel's Office, fraud-reporting training, and contracted financial reviews.",
+    "evidence_class": "AGENCY_POSITION",
+    "locator": "OLA summary, Summary of Agency Response"
+  },
+  "does_not_support": [
+    "The audit does not find that MDE officials joined the Feeding Our Future criminal conspiracy or stole program funds.",
+    "An oversight failure, complaint-handling failure, or voluntary resumption of payments is not itself proof of criminal intent.",
+    "MDE's reported USDA-OIG/FBI referrals are documented through OLA's review; they do not establish what USDA OIG or FBI did absent their own records.",
+    "The report should not be used to imply every complaint was substantiated."
+  ]
+}

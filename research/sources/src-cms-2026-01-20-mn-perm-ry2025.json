@@ -1,0 +1,61 @@
+{
+  "source_id": "src-cms-2026-01-20-mn-perm-ry2025",
+  "canonical_url": "https://mn.gov/dhs/assets/2025-medicaid-error-notification_tcm1053-720555.pdf",
+  "issuing_body": "Centers for Medicare & Medicaid Services",
+  "host": "Minnesota Department of Human Services",
+  "title": "Notification of RY 2025 Medicaid Improper Payment Rates — Minnesota",
+  "publication_date": "2026-01-20",
+  "retrieval_date": "2026-08-29",
+  "document_type": "perm_improper_payment_notification",
+  "source_tier": 3,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_MEASUREMENT",
+  "evidence_class": "AUDIT_FINDING",
+  "measurement_window": "Payments made 2023-07-01 through 2024-06-30",
+  "rates": [
+    {
+      "component": "overall",
+      "sample_size": 900,
+      "improper_payment_rate": 0.0216,
+      "ci95_low": 0.0076,
+      "ci95_high": 0.0356
+    },
+    {
+      "component": "fee_for_service",
+      "sample_size": 605,
+      "improper_payment_rate": 0.0132,
+      "ci95_low": 0.0044,
+      "ci95_high": 0.0220
+    },
+    {
+      "component": "managed_care",
+      "sample_size": 69,
+      "improper_payment_rate": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    },
+    {
+      "component": "eligibility",
+      "sample_size": 226,
+      "improper_payment_rate": 0.0152,
+      "ci95_low": 0.0018,
+      "ci95_high": 0.0287
+    }
+  ],
+  "supports": [
+    "CMS measured Minnesota's RY2025 Medicaid overall improper-payment rate at 2.16% based on a 900-review sample covering payments from July 2023 through June 2024.",
+    "CMS explicitly warns that improper payments do not necessarily represent expenses that should not have occurred and may include documentation or enrollment-process errors.",
+    "CMS defines some technically improper payments as payments to the right recipient for the right amount for which recovery is not required.",
+    "The managed-care component rate was 0.00% in the PERM sample, but this measures the PERM managed-care component and does not establish an absence of provider fraud inside managed-care plans."
+  ],
+  "source_locators": {
+    "rates_table": "PDF p.2 / text lines 51-84",
+    "technical_improper_payment_explanation": "PDF p.2 / text lines 75-100",
+    "measurement_window": "PDF p.1 / text lines 22-41"
+  },
+  "does_not_support": [
+    "The 2.16% improper-payment rate is not a fraud rate.",
+    "The PERM sample and methodology do not validate or refute the separate prosecutor $9 billion fraud estimate/hypothesis.",
+    "The 0% managed-care PERM component does not measure all underlying managed-care provider claims for fraud.",
+    "PERM and CMS's January 2026 program-integrity noncompliance determination concern different methods, periods, scopes and questions and should not be treated as mutually exclusive."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "source_id": "src-mn-judicial-2022-09-23-fof-guthmann-correction",
+  "canonical_url": "https://mncourts.gov/about-the-courts/newsandannouncements/feeding-our-future-v-minnesota-department-of-education-correcting-media-reports-and-statements-by-governor-tim-walz-concerning-orders-issued-by-the-court",
+  "issuing_body": "Minnesota Judicial Branch / Ramsey County District Court",
+  "title": "Feeding Our Future v. Minnesota Department of Education: Correcting Media Reports and Statements by Governor Tim Walz Concerning Orders Issued by the Court",
+  "publication_date": "2022-09-23",
+  "retrieval_date": "2026-08-29",
+  "document_type": "judicial_branch_public_record_correction",
+  "jurisdiction": "Ramsey County District Court, Minnesota",
+  "source_tier": 5,
+  "source_status": "PRIMARY_JUDICIAL_BRANCH_RECORD",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "The original November 2020 civil lawsuit concerned MDE's handling of applications for new food-distribution sites and race-discrimination claims; a December 22, 2020 consent order required site applications to be handled reasonably promptly.",
+    "The Judicial Branch states Judge John Guthmann never ordered MDE to resume Feeding Our Future reimbursement payments in April 2021 or at any other time.",
+    "The Judicial Branch states MDE voluntarily resumed payments and later asked the court to deny Feeding Our Future's nonpayment-sanctions motion as moot because MDE had resumed payments voluntarily.",
+    "The Judicial Branch states MDE advised the court that Feeding Our Future's serious deficiencies were resolved as of June 4, 2021.",
+    "The Judicial Branch states all MDE food-reimbursement payments to Feeding Our Future were made voluntarily, without any court order requiring payment."
+  ],
+  "source_locators": {
+    "civil_case_scope_and_consent_order": "lines 23-26",
+    "payment_suspension_and_no_payment_order": "lines 28-30",
+    "correction_of_public_claims": "lines 31-35"
+  },
+  "contradiction_target": "Public/media/official claims that Judge Guthmann ordered MDE to resume or continue Feeding Our Future reimbursements in April 2021.",
+  "does_not_support": [
+    "The correction does not say MDE was legally free of all constraints in its treatment of Feeding Our Future; the civil litigation involved application-processing obligations and other disputes.",
+    "The fact that payment resumption was voluntary does not by itself establish criminal intent, corruption, or knowledge of the full later-charged scheme.",
+    "This record does not establish why every individual MDE payment decision was made; it resolves the specific claim that the court ordered reimbursement payments resumed."
+  ]
+}

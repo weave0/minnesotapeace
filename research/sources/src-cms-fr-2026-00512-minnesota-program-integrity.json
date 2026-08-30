@@ -1,0 +1,54 @@
+{
+  "source_id": "src-cms-fr-2026-00512-minnesota-program-integrity",
+  "canonical_url": "https://www.federalregister.gov/documents/2026/01/14/2026-00512/notice-of-opportunity-for-hearing-on-compliance-of-minnesota-state-plan-provisions-concerning",
+  "public_inspection_pdf": "https://public-inspection.federalregister.gov/2026-00512.pdf",
+  "issuing_body": "Centers for Medicare & Medicaid Services, U.S. Department of Health and Human Services",
+  "title": "Notice of Opportunity for Hearing on Compliance of Minnesota State Plan Provisions Concerning Program Integrity and Fraud, Waste, and Abuse With Title XIX (Medicaid) of the Social Security Act",
+  "publication_date": "2026-01-14",
+  "embedded_letter_date": "2026-01-06",
+  "retrieval_date": "2026-08-29",
+  "document_type": "federal_register_notice_and_embedded_cms_determination_letter",
+  "federal_register": "91 FR 1539-1542",
+  "document_number": "2026-00512",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_DETERMINATION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "CMS Administrator found Minnesota's Medicaid agency substantially out of compliance with Social Security Act §1902(a)(64) and 42 CFR Part 455, Subpart A, because CMS concluded Minnesota failed to adequately identify, prevent, and address fraud, waste, and abuse.",
+    "CMS said its concerns were not limited to isolated incidents and cited historical deficiencies in proactive detection, especially data analytics and monitoring.",
+    "CMS said analysis of the 14 high-risk services showed approximately $3.75 billion in federal and state resources and extraordinary provider/payment growth in several services; $3.75 billion is program-resource/spending context, not a fraud-loss finding.",
+    "CMS records that it began working with Minnesota on HSS fraud concerns in July 2024 through UPIC audits; preliminary findings from three HSS provider audits were presented in April 2025; Minnesota requested transfer of the audits to the state for investigation in June 2025.",
+    "CMS formally requested a comprehensive corrective action plan on December 5, 2025 and deemed Minnesota's December 31 plan deficient.",
+    "CMS announced a focused CMS-64 review of all 14 high-risk services beginning with Q4 federal FY2025.",
+    "Subject to the hearing process, CMS described a quarterly FFP withholding formula estimated at $515,154,947.56, continuing until Minnesota fully and satisfactorily implemented a comprehensive CAP; the amount is a federal-funding withholding formula, not a fraud-loss amount."
+  ],
+  "money": [
+    {
+      "amount": 3750000000,
+      "currency": "USD",
+      "metric_type": "program_spend",
+      "qualifier": "cms_analysis_fourteen_high_risk_services",
+      "source_locator": "public inspection PDF p.6 / lines 156-162"
+    },
+    {
+      "amount": 515154947.56,
+      "currency": "USD",
+      "metric_type": "federal_funding_withholding_formula",
+      "qualifier": "estimated_quarterly_ffp_withhold",
+      "source_locator": "public inspection PDF p.10 / lines 254-266",
+      "notes": "Not alleged loss, proven loss, restitution, or recovered amount."
+    }
+  ],
+  "source_locators": {
+    "substantial_noncompliance": "PDF pp.0-2 and pp.9-11; text lines 15-46 and 250-291",
+    "fourteen_services_3_75b": "PDF p.6; text lines 156-162",
+    "cms_hss_history": "PDF pp.6-7; text lines 183-200",
+    "withholding_formula": "PDF p.10; text lines 250-266"
+  },
+  "does_not_support": [
+    "The $515.2 million quarterly withholding formula is not a measurement of fraudulent claims.",
+    "The $3.75 billion amount for 14 high-risk services is not a finding that the spending was fraudulent.",
+    "CMS's substantial-noncompliance determination is an administrative/federal funding determination, not a criminal charge against Minnesota officials.",
+    "The notice offered Minnesota a hearing and should not be paraphrased as a criminal adjudication."
+  ]
+}

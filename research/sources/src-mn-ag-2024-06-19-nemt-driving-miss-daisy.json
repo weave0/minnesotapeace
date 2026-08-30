@@ -1,0 +1,32 @@
+{
+  "source_id": "src-mn-ag-2024-06-19-nemt-driving-miss-daisy",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2024/06/19_MedicaidFraud.asp",
+  "issuing_body": "Minnesota Attorney General, Medicaid Fraud Control Unit",
+  "title": "Medicaid fraud charges including Driving Miss Daisy non-emergency medical transportation case",
+  "publication_date": "2024-06-19",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "jurisdiction": "Hennepin County District Court",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_ENFORCEMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "Charles Omato and LaTonia Jackson were charged in a Minnesota Medicaid fraud case involving Driving Miss Daisy, a non-emergency medical transportation company.",
+    "The Attorney General alleged more than $1.4 million in Medicaid fraud through transportation services not provided and claims involving travel times that could not have occurred as billed.",
+    "The case was part of the PITSTOP66 multi-agency investigation involving Minnesota MFCU, HHS-OIG and the Minnesota Commerce Fraud Bureau, with FBI and DHS assistance."
+  ],
+  "money": [
+    {
+      "amount": 1400000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "qualifier": "more_than",
+      "subject": "Driving Miss Daisy / NEMT"
+    }
+  ],
+  "does_not_support": [
+    "The charging release does not establish guilt or a final restitution amount.",
+    "Do not treat the PITSTOP66 investigation as a single conspiracy unless a charging instrument says so."
+  ],
+  "status_followup": "A current DHS excluded-provider list shows Charles Omato with a Medicare/Medicaid exclusion effective 2025-12-17, but this source record does not infer the disposition of the criminal case from that exclusion."
+}

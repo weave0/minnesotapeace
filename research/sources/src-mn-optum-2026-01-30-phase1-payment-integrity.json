@@ -1,0 +1,72 @@
+{
+  "source_id": "src-mn-optum-2026-01-30-phase1-payment-integrity",
+  "canonical_url": "https://www.lrl.mn.gov/docs/2026/other/260346/mn-pi-phase-1-summary-report-13026-final-redacted.pdf",
+  "issuing_body": "Optum State Government Solutions for Minnesota Department of Human Services",
+  "repository_host": "Minnesota Legislative Reference Library",
+  "title": "Minnesota Payment Integrity: Phase 1 Summary Report – Achievements, Findings and Recommendations",
+  "document_date": "2026-01-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "contractor_payment_integrity_report",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_CONTRACTOR_REPORT",
+  "evidence_class": "AGENCY_POSITION",
+  "scope": {
+    "claims_window": "46 months of fee-for-service paid claims",
+    "managed_care_in_scope": false,
+    "service_areas": 14,
+    "analytics_executed": 192
+  },
+  "money": [
+    {
+      "amount": 52300000,
+      "currency": "USD",
+      "metric_type": "identified_for_recovery",
+      "qualifier": "over",
+      "source_term": "direct recoveries",
+      "notes": "Report defines these as funds that can be recouped based on identified issues/policy violations. Do not assume the full amount was already collected in cash."
+    },
+    {
+      "amount": 1700000000,
+      "currency": "USD",
+      "metric_type": "identified_for_recovery",
+      "qualifier": "more_than_potential",
+      "source_term": "potential recoveries",
+      "notes": "Report says these may reflect missing/vague policy vulnerabilities and may require medical-necessity record review. Not a fraud-loss or cash-recovery figure."
+    },
+    {
+      "amount": 165000000,
+      "currency": "USD",
+      "metric_type": "cost_avoidance",
+      "qualifier": "more_than",
+      "notes": "Report describes decline in inappropriate billing from Q3 to Q4 2025 and defines cost avoidance as preventing future expense, not reducing current spending."
+    },
+    {
+      "amount": 21000000,
+      "currency": "USD",
+      "metric_type": "provider_findings_for_review",
+      "qualifier": "over",
+      "notes": "Paid-claim high-risk service-area provider findings reported to the State for review as of 2026-01-13."
+    },
+    {
+      "amount": 2900000,
+      "currency": "USD",
+      "metric_type": "prepay_analytic_findings",
+      "qualifier": "over",
+      "notes": "Pre-pay warrant-cycle analytic findings reported to the State for review as of 2026-01-15."
+    }
+  ],
+  "supports": [
+    "The report evaluated 14 named high-risk service/program areas using fee-for-service paid-claims data; managed-care claims were outside scope.",
+    "The report's service list includes HSS, Peer Recovery, EIDBI, ICS, NEMT, ARMHS, PCA/CFSS, Adult Day, Recuperative Care, IHS, Adult Companion, Night Supervision, ACT and IRTS."
+  ],
+  "does_not_support": [
+    "The >$1.7B potential-recovery figure is not proven fraud, stolen money, restitution, or cash recovered.",
+    "The >$52.3M source term 'direct recoveries' should not be rendered as cash collected unless DHS separately documents collection; the report itself defines it as funds that can be recouped.",
+    "Managed-care claims were not part of the Phase 1 data scope, so the report is not a complete statewide Medicaid-claims measurement.",
+    "The 14 high-risk categories are not 14 criminal case families."
+  ],
+  "source_locators": {
+    "executive_summary": "PDF p. 1",
+    "scope_and_14_service_list": "PDF p. 5"
+  }
+}

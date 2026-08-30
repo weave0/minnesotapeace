@@ -1,0 +1,49 @@
+{
+  "source_id": "src-mn-ola-2019-ccap-fraud-allegations",
+  "canonical_url": "https://www.auditor.leg.state.mn.us/sreview/ccap.pdf",
+  "issuing_body": "Minnesota Office of the Legislative Auditor",
+  "title": "Child Care Assistance Program: Assessment of Fraud Allegations",
+  "publication_date": "2019-03-13",
+  "retrieval_date": "2026-08-29",
+  "document_type": "special_review",
+  "source_tier": 4,
+  "source_status": "PRIMARY_STATE_SPECIAL_REVIEW",
+  "evidence_class": "AUDIT_FINDING",
+  "scope": "Assessment of specific allegations, not a comprehensive performance audit of CCAP or a full fraud-rate measurement.",
+  "findings": [
+    "OLA did not find evidence to substantiate the allegation that Minnesota CCAP fraud was $100 million annually.",
+    "OLA believed actual CCAP fraud exceeded the $5 million to $6 million prosecutors had been able to prove at that time, but said it could not offer a reliable estimate of how much fraud existed in the program.",
+    "OLA was unable to substantiate the allegation that Minnesota CCAP fraud money was sent to a foreign country and obtained/used by a terrorist organization.",
+    "OLA found a claim that a politician interfered with a DHS investigation was misleading and concluded the case was properly handled."
+  ],
+  "money": [
+    {
+      "amount": 100000000,
+      "currency": "USD",
+      "metric_type": "fraud_estimate",
+      "status": "not_substantiated_by_ola",
+      "period": "annual allegation",
+      "notes": "Do not publish as a validated Minnesota CCAP fraud figure."
+    },
+    {
+      "amount_low": 5000000,
+      "amount_high": 6000000,
+      "currency": "USD",
+      "metric_type": "proven_loss_or_prosecutor_proven_fraud_as_described_by_ola",
+      "status": "historical_2019_context",
+      "notes": "OLA said prosecutors had been able to prove roughly $5M-$6M, while believing actual fraud was higher but not reliably estimable. Do not turn this historical range into a current fraud figure."
+    }
+  ],
+  "source_locators": {
+    "summary_100m": "report p.5 / PDF p.10, lines 127-144; visually confirmed on screenshot",
+    "terrorism_allegation": "report p.5 / PDF p.10, lines 145-153",
+    "scope_limits": "PDF pp.7-8, lines 97-124"
+  },
+  "does_not_support": [
+    "The report does not establish that CCAP was free of fraud; it explicitly said proven cases likely understated the true level.",
+    "The report does not provide a reliable overall fraud rate or loss estimate.",
+    "The report's inability to substantiate the terrorism-funding allegation should not be rewritten as proof that no remitted money from any source ever reached a terrorist organization; the review addressed the specific allegation linking CCAP fraud money.",
+    "This 2019 review is historical and should not be used as a current-dollar estimate for 2026."
+  ],
+  "editorial_value": "This is a strong Minnesota precedent for distinguishing a widely repeated fraud estimate from proven cases: rejecting an unsupported headline estimate does not require pretending the underlying fraud problem is zero."
+}
