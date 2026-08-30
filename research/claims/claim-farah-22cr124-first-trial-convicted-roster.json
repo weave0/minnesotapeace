@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-08-30T20:10:00Z",
+  "created_at": "2026-08-30T20:10:00Z",
+  "updated_at": "2026-08-30T20:10:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "ADJUDICATED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-farah-22cr124-first-trial-convicted-roster",
+  "claim_text": "On June 7, 2024, after a six-week federal jury trial in United States v. Abdiaziz Shafii Farah et al., No. 22-CR-124, Abdiaziz Shafii Farah, Mohamed Jama Ismail, Abdimajid Mohamed Nur, Mukhtar Mohamed Shariff, and Hayat Mohamed Nur were convicted. USAO-MN reports the guilty-count breakdown as follows: Abdiaziz Farah — conspiracy to commit wire fraud (1), wire fraud (6), conspiracy to commit federal programs bribery (1), federal programs bribery (2), conspiracy to commit money laundering (1), money laundering (11), and false statements in a passport application (1); Ismail — conspiracy to commit wire fraud (1), conspiracy to commit money laundering (1), and money laundering (1); Abdimajid Nur — conspiracy to commit wire fraud (1), wire fraud (4), conspiracy to commit money laundering (1), and money laundering (4); Shariff — conspiracy to commit wire fraud (1), wire fraud (1), conspiracy to commit money laundering (1), and money laundering (1); Hayat Nur — conspiracy to commit wire fraud (1) and wire fraud (2).",
+  "claim_type": "DISPOSITION",
+  "status": "PROVEN_AT_TRIAL",
+  "case_number": "22-CR-124",
+  "event_date": "2024-06-07",
+  "source_ids": [
+    "src-usao-mn-2024-06-07-first-fof-trial-verdict"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2024-06-07-first-fof-trial-verdict",
+      "locator": "USAO-MN June 7, 2024 conviction roster",
+      "quote": "The following five defendants ... were found guilty by a federal jury"
+    }
+  ],
+  "qualifiers": [
+    "ADJUDICATED jury verdict",
+    "guilty counts only; this claim does not infer not-guilty counts omitted from the USAO release",
+    "the separate two-defendant full-acquittal roster remains supported by a secondary source until verdict forms or docket minutes are captured"
+  ],
+  "editorial_notes": "This claim replaces the prior incomplete corpus state that named only Abdiaziz Farah and Abdimajid Nur as first-trial convictions. Do not use the broader $250 million prosecution characterization as this trial group's proven loss."
+}
