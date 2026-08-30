@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "created_at": "2026-08-30T00:00:00Z",
+  "updated_at": "2026-08-30T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-farah-22cr124-first-trial-guilty-count-ratios-fox9",
+  "claim_text": "FOX 9's June 7, 2024 verdict report gives a guilty-count-to-total-count ratio for each of the seven defendants tried in the first Feeding Our Future trial (No. 22-CR-124): Abdiaziz Shafii Farah guilty on 23 of 24 counts; Mohamed Jama Ismail guilty on 3 of 4; Abdimajid Mohamed Nur guilty on 10 of 13; Mukhtar Mohamed Shariff guilty on 3 of 6; Hayat Mohamed Nur guilty on 3 of 5; Said Shafii Farah acquitted on all 9; Abdiwahab Maalim Aftin acquitted on all 3.",
+  "claim_type": "COUNT",
+  "status": "SECONDARY_VERIFIED",
+  "case_number": "22-CR-124",
+  "event_date": "2024-06-07",
+  "source_ids": [
+    "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown",
+      "locator": "FOX 9 verdict-by-count list, June 7, 2024",
+      "quote": "Abdiaziz is guilty on 23 of 24 counts. Ismail was found guilty on three of the four counts against him. Abdimajid was found guilty on 10 of the 13 counts. Said was found not guilty on all nine counts. Aftin was found not guilty of all three counts. Shariff was found guilty on three of six counts. Hayat was found guilty on three of five counts."
+    }
+  ],
+  "amounts": [],
+  "qualifiers": [
+    "For four of the five convicted defendants, these ratios independently reconcile exactly against this corpus's existing per-charge-type guilty-count breakdown sourced from USAO-MN's release (claim-farah-22cr124-first-trial-convicted-roster): Abdiaziz 23, Ismail 3, Abdimajid Nur 10, and Hayat Nur 3 all match precisely when that claim's per-charge-type counts are summed.",
+    "For Mukhtar Mohamed Shariff, the two sources DISAGREE and this corpus does not resolve the disagreement: summing the per-charge-type guilty counts in claim-farah-22cr124-first-trial-convicted-roster (conspiracy to commit wire fraud (1) + wire fraud (1) + conspiracy to commit money laundering (1) + money laundering (1)) yields 4 guilty counts, while FOX 9 reports Shariff guilty on 3 of 6. Do not silently prefer either figure; both are preserved as reported.",
+    "This claim supplies denominators (total counts per defendant) that USAO-MN's press release does not state; USAO-MN's release lists only guilty counts, not each defendant's total charge count.",
+    "Not a substitute for a verdict form, minute entry, or judgment; FOX 9's own reporting does not identify which specific counts (by number) each mixed-verdict defendant was acquitted on."
+  ],
+  "editorial_notes": "Substantially closes the GAPS.md item 5 request for 'a complete count-by-count record' at the ratio level (guilty-of-total per defendant), while leaving the Shariff 4-vs-3 discrepancy and the exact identity of individual not-guilty counts open. Do not merge or average the Shariff figures.",
+  "contradicting_claim_ids": [
+    "claim-farah-22cr124-first-trial-convicted-roster"
+  ]
+}

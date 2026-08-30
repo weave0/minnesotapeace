@@ -19,6 +19,7 @@
   ],
   "does_not_support": [
     "Primary judicial proof of the two full acquittals; verdict forms, minute entries, or judgments remain preferable and should supersede this source when captured.",
-    "Any scheme-wide conviction or charged-defendant count after June 7, 2024."
+    "Any scheme-wide conviction or charged-defendant count after June 7, 2024.",
+    "A specific 'eight' count figure for Said Farah's acquittal that circulates in some secondary aggregation of this coverage; this corpus could not directly re-fetch this article's body in a 2026-08-30 pass (client-rendered page returned no article text to a direct request) to confirm whether that figure originates in Reformer's own wording or in a downstream aggregator. FOX 9's independently and directly re-fetched count (src-fox9-2024-06-07-first-fof-trial-verdict-breakdown) reports 9, not 8."
   ]
 }

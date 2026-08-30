@@ -1,0 +1,11 @@
+{
+  "contradiction_id": "contradiction-shariff-guilty-count-usao-vs-fox9",
+  "claim_a": "claim-farah-22cr124-first-trial-convicted-roster",
+  "claim_b": "claim-farah-22cr124-first-trial-guilty-count-ratios-fox9",
+  "source_a": "src-usao-mn-2024-06-07-first-fof-trial-verdict",
+  "source_b": "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown",
+  "nature_of_conflict": "Mukhtar Mohamed Shariff's total guilty-count after the June 7, 2024 first Feeding Our Future trial. Summing the per-charge-type guilty counts USAO-MN reported for Shariff (conspiracy to commit wire fraud, wire fraud, conspiracy to commit money laundering, money laundering -- one count each) yields 4 guilty counts. FOX 9's independently reported ratio for Shariff is 'guilty on three of six counts.' The same cross-check against USAO's figures for the other four convicted defendants (Abdiaziz Farah 23, Ismail 3, Abdimajid Nur 10, Hayat Nur 3) reconciles exactly with FOX 9's ratios, so this is not a general pattern of one source being wrong -- it is specific to Shariff.",
+  "possible_reconciliation": "Possibilities include: USAO's press release omitted or mis-typed one of Shariff's charge-type counts; FOX 9's on-the-spot courtroom count undercounted by one; or one of the four 'one count each' charge types attributed to Shariff by USAO actually resulted in a not-guilty verdict that the press release's guilty-counts-only framing does not surface. None of these can be confirmed without the verdict form or minute entry for Shariff specifically.",
+  "status": "open",
+  "notes": "Do not silently correct either figure. If a verdict form or docket minute for Shariff is later captured, it should supersede both claims rather than being used to quietly edit one of them."
+}

@@ -27,7 +27,11 @@
   "qualifiers": [
     "ADJUDICATED jury verdict",
     "guilty counts only; this claim does not infer not-guilty counts omitted from the USAO release",
-    "the separate two-defendant full-acquittal roster remains supported by a secondary source until verdict forms or docket minutes are captured"
+    "the separate two-defendant full-acquittal roster remains supported by a secondary source until verdict forms or docket minutes are captured",
+    "Summing this claim's per-charge-type guilty counts for Mukhtar Mohamed Shariff yields 4, which conflicts with FOX 9's independently reported '3 of 6' for Shariff (claim-farah-22cr124-first-trial-guilty-count-ratios-fox9). Unresolved; preserved as an open discrepancy rather than corrected by inference."
   ],
-  "editorial_notes": "This claim replaces the prior incomplete corpus state that named only Abdiaziz Farah and Abdimajid Nur as first-trial convictions. Do not use the broader $250 million prosecution characterization as this trial group's proven loss."
+  "editorial_notes": "This claim replaces the prior incomplete corpus state that named only Abdiaziz Farah and Abdimajid Nur as first-trial convictions. Do not use the broader $250 million prosecution characterization as this trial group's proven loss.",
+  "contradicting_claim_ids": [
+    "claim-farah-22cr124-first-trial-guilty-count-ratios-fox9"
+  ]
 }
