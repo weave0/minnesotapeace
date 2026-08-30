@@ -1,0 +1,26 @@
+{
+  "as_of": "2026-08-29",
+  "case_number": "0:26-cv-01701-ECT-DTS",
+  "subject": "CMS February 25, 2026 Minnesota Medicaid deferral",
+  "status": "administrative_deferral_unresolved_federal_litigation_ongoing",
+  "source_ids": [
+    "src-cms-2026-02-25-minnesota-medicaid-deferral",
+    "src-mnd-26-cv-01701-ecf43-deferral-pi-order",
+    "src-mn-ag-2026-08-29-litigation-tracker-cms-deferral"
+  ],
+  "findings": [
+    "CMS deferred $259,505,491 in federal matching funds on February 25, 2026.",
+    "Minnesota's federal lawsuit challenges the approximately $243.8 million program-integrity portion of the deferral; the approximately $15.4 million immigration-status component is distinct.",
+    "On April 6, 2026, the district court denied Minnesota's request for temporary/preliminary injunctive relief.",
+    "The court characterized the deferral as an ongoing administrative inquiry rather than a final disallowance and emphasized that CMS had not yet made a final allowability decision on the questioned claims.",
+    "CMS's March 19 approval of Minnesota's corrective action plan did not itself terminate or release the deferral; the court treated those processes separately.",
+    "As of August 29, the Minnesota Attorney General's litigation tracker continues to list the CMS deferral lawsuit with the preliminary-injunction denial as its current status."
+  ],
+  "publication_rule": "Do not describe the $259.5M as fraud proven, money permanently lost, money returned, or a resolved dispute. The presently supported description is a federal funding deferral under ongoing administrative review, with Minnesota's challenge to the program-integrity component still in litigation after denial of preliminary relief.",
+  "open_questions": [
+    "Whether CMS has made any final allowability/disallowance determinations for the sampled or questioned claims.",
+    "Whether any portion of the $259,505,491 has since been released, adjusted, or converted into a final disallowance.",
+    "Current docket filings after the April 6 preliminary-injunction order and any schedule for merits adjudication.",
+    "Disposition of the separate approximately $15.4M immigration-status component."
+  ]
+}
