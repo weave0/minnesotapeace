@@ -1,0 +1,22 @@
+{
+  "source_id": "src-mn-ag-2026-08-29-litigation-tracker-cms-deferral",
+  "canonical_url": "https://www.ag.state.mn.us/Rule-Of-Law/Litigation/",
+  "issuing_body": "Minnesota Attorney General's Office",
+  "title": "Minnesota Litigation Tracker — CMS Deferral Lawsuit",
+  "retrieval_date": "2026-08-29",
+  "document_type": "state_litigation_status_tracker",
+  "case_number": "0:26-cv-01701-ECT-DTS",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_STATUS_RECORD",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "The Minnesota Attorney General's current litigation tracker identifies the CMS Deferral Lawsuit as filed March 2, 2026 to challenge the $243 million Medicaid deferral component at issue in the suit.",
+    "The tracker records the status as the district court having denied the preliminary injunction motion.",
+    "The litigation remains listed on the Attorney General's active federal litigation tracker as of retrieval on August 29, 2026."
+  ],
+  "important_qualifications": [
+    "This status page is the plaintiff state's litigation tracker, not an independent federal-court docket determination of every current deadline or filing.",
+    "The full February 25 CMS deferral was $259,505,491; Minnesota's federal suit challenged the approximately $243.8 million program-integrity component rather than the separate approximately $15.4 million immigration-status component.",
+    "The tracker does not establish final disposition of the administrative deferral or final allowability of the questioned Medicaid claims."
+  ]
+}
