@@ -1,0 +1,30 @@
+{
+  "source_id": "src-mn-laws-2026-ch127-art7-medical-assistance-fraud",
+  "canonical_url": "https://www.revisor.mn.gov/laws/2026/0/Session%2BLaw/Chapter/127/",
+  "issuing_body": "Minnesota Legislature / Office of the Revisor of Statutes",
+  "title": "2026 Minnesota Laws, Chapter 127, Article 7 — Medical Assistance Fraud",
+  "publication_date": "2026",
+  "retrieval_date": "2026-08-29",
+  "document_type": "session_law",
+  "jurisdiction": "Minnesota",
+  "statute_created": "Minn. Stat. § 609.467",
+  "access_status": "live_official_host",
+  "source_tier": 2,
+  "source_status": "PRIMARY_LAW",
+  "evidence_class": "STATUTORY_TEXT",
+  "supports": [
+    "2026 Minn. Laws ch. 127, art. 7 creates Minn. Stat. § 609.467, Medical Assistance Fraud.",
+    "The offense covers specified intentional fraudulent schemes and false or ineligible Medical Assistance claims, specified false enrollment information, participation by barred owners/operators, false or altered records, specified PCA/CFSS false claims, and intentional destruction of records after a lawful request.",
+    "For a violation involving loss of $100,000 or less, the statute provides a maximum of 10 years imprisonment and/or a $20,000 fine.",
+    "For a violation involving loss greater than $100,000 but not more than $1,000,000, the statute provides a maximum of 20 years imprisonment and/or a $100,000 fine.",
+    "For a violation involving loss greater than $1,000,000, the statute provides a maximum of 30 years imprisonment and/or a $1,000,000 fine.",
+    "The statute contains a restitution provision allowing the court, with notice and the prosecution bearing the burden of proof, to include certain similar related conduct in restitution.",
+    "The new section is effective August 1, 2026 and applies to crimes committed on or after that date."
+  ],
+  "does_not_support": [
+    "The new offense cannot be assumed to govern conduct completed before its effective date.",
+    "The statutory maximum penalties are not presumptive sentences; sentencing-guideline treatment is a separate source question.",
+    "Creation of the offense is not evidence that any particular provider or official committed it."
+  ],
+  "notes": "Use the Revisor session-law text for conduct-date analysis until the codified 2026 statute display is confirmed. Preserve the effective-date limitation in any public explainer."
+}
