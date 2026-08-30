@@ -1,0 +1,31 @@
+{
+  "source_id": "src-mn-dhs-2026-program-integrity-factcheck",
+  "canonical_url": "https://mn.gov/dhs/program-integrity/factcheck/",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Program Integrity — Fact check",
+  "publication_date": "2026",
+  "retrieval_date": "2026-08-29",
+  "document_type": "agency_fact_check_page",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_POSITION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS states it completed 444 onsite visits to EIDBI service providers after increasing scrutiny beginning in October 2024.",
+    "DHS states it opened 73 new EIDBI investigations, made 25 EIDBI law-enforcement referrals, and imposed 35 EIDBI administrative sanctions after increasing scrutiny.",
+    "The page states DHS conducted 3,594 investigations and identified more than $56 million for recovery since 2020, resulting in 1,150 law-enforcement referrals.",
+    "The page states DHS had shut off payments to 540 Medicaid providers and made approximately 300 law-enforcement referrals in the prior year in the context of its fraud-fighting actions.",
+    "The page describes state actions including freezes on new providers in high-risk programs, third-party fee-for-service prepayment review, HSS discontinuation, EIDBI audits/site visits, inactive-provider disenrollment, analytics expansion, fraud-reporting training, autism-center licensure implementation, managed-care oversight planning, and a payment-review call center."
+  ],
+  "does_not_support": [
+    "The page is DHS's own factual/policy position and is not an independent audit of agency performance.",
+    "An EIDBI investigation, referral, sanction, site visit, or payment shutoff is not itself a criminal conviction.",
+    "The page's statement that payments were shut off to 540 providers should not be treated as interchangeable with the separate Program Integrity page's count of 490 payment withholds imposed in 2025; the units/time wording differ and require reconciliation before comparison.",
+    "The $56 million identified-for-recovery figure is not cash recovered."
+  ],
+  "contradiction_or_reconciliation_leads": [
+    "Program Integrity main page: 490 payment withholds imposed in 2025.",
+    "Fact-check page: payments shut off to 540 Medicaid providers 'last year.' Determine whether provider count, action count, period, or later revision explains the difference before publication."
+  ]
+}
