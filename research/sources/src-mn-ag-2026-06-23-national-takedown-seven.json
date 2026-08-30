@@ -1,0 +1,25 @@
+{
+  "source_id": "src-mn-ag-2026-06-23-national-takedown-seven",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/06/23_Medicaid-Fraud.asp",
+  "issuing_body": "Minnesota Attorney General, Medicaid Fraud Control Unit",
+  "title": "Attorney General Ellison announces Medicaid fraud charges against seven as part of National Health Care Fraud Takedown Day",
+  "publication_date": "2026-06-23",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "jurisdiction": "Minnesota state courts",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_ENFORCEMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "supports": [
+    "Seven individual providers were charged in separate Minnesota Medicaid fraud matters with a combined headline allegation of more than $700,000.",
+    "Tremayne Lamar Jackson was charged with seven felony theft offenses and alleged to have claimed more than 6,000 hours of PCA, companion care, and homemaker services that could not have been provided, with an alleged loss of more than $125,000.",
+    "Jessica Wavra was charged with five theft offenses and alleged to have billed more than $29,000 for ARMHS and targeted case-management services she did not provide.",
+    "The release also describes separate PCA, psychotherapy, counseling, and identity-theft cases involving Christine Pryor, Fernando Navarro, Shawki Elsaid, Ahmed Agwa, and Edward Sherrod."
+  ],
+  "does_not_support": [
+    "The Jackson amount is a mixed-service allegation and cannot be allocated among PCA, Adult Companion Services, and homemaking from the press release alone.",
+    "The Wavra amount is a mixed ARMHS/targeted-case-management allegation and cannot be assigned entirely to ARMHS without the complaint.",
+    "Charges are allegations; the combined headline amount must not be added again to the individual component allegations."
+  ],
+  "notes": "Useful for the 14-high-risk matrix because Adult Companion Services and ARMHS have current Minnesota enforcement coverage, but only at mixed-service level in these matters."
+}
