@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-08-29",
+  "purpose": "Map recurring Minnesota fraud-oversight claims to controlling legal authority without converting political descriptions of authority into law.",
+  "authorities": [
+    {
+      "question": "Who can administratively suspend or withhold Minnesota Medicaid provider payments?",
+      "answer": "Minnesota DHS commissioner under Minn. Stat. § 256B.064, subject to the statute's predicates and federal good-cause rules.",
+      "source_ids": ["src-mn-revisor-256b064-medicaid-sanctions"],
+      "qualification": "The existence of authority does not prove that its case-specific prerequisites were satisfied or that suspension was legally required on a particular date."
+    },
+    {
+      "question": "Who investigates and refers suspected Medicaid fraud inside the state Medicaid agency?",
+      "answer": "The Medicaid agency must establish methods to identify/investigate suspected fraud and inform the Attorney General in writing when facts may warrant civil or criminal proceedings.",
+      "source_ids": ["src-mn-revisor-256b04-subd10-medicaid-investigation-referral"]
+    },
+    {
+      "question": "Can the Minnesota Attorney General directly prosecute Medicaid fraud?",
+      "answer": "Yes. Minn. Stat. § 256B.12 authorizes the Attorney General or appropriate county attorney to institute specified criminal or civil Medicaid actions and recovery proceedings.",
+      "source_ids": ["src-mn-revisor-256b12-medicaid-legal-representation"],
+      "qualification": "This subject-specific authority should not be generalized to every Minnesota felony."
+    },
+    {
+      "question": "Who ordinarily prosecutes Minnesota felonies outside subject-specific grants?",
+      "answer": "County attorneys have the general statutory duty to prosecute felonies. The Attorney General may appear on county-attorney request and may prosecute an indictable offense on the Governor's written request; other statutes can grant additional direct authority.",
+      "source_ids": ["src-mn-revisor-388051-county-attorney-duties", "src-mn-revisor-8-01-ag-criminal-jurisdiction"]
+    },
+    {
+      "question": "What is the BCA Financial Crimes and Fraud Section's role?",
+      "answer": "It investigates covered financial crimes and state-program fraud. State agencies generally must refer covered suspected fraud of at least $100,000, but Medicaid referrals subject to MFCU requirements are expressly carved out into the MFCU pathway.",
+      "source_ids": ["src-mn-revisor-299c061-financial-crimes-fraud-section"],
+      "qualification": "The section was created in 2025 and cannot be projected backward onto 2019-2022 events."
+    },
+    {
+      "question": "Did Minnesota lower the criminal burden of proof for CCAP fraud in 2019?",
+      "answer": "No. The 2019 law created an administrative-disqualification remedy when criminal action had not been pursued. In that administrative process, intent could be shown through a pattern of rule violations and the agency bore a preponderance burden on appeal.",
+      "source_ids": ["src-mn-laws-2019-ch9-art2-s107-ccap-admin-disqualification"],
+      "qualification": "This did not alter the beyond-a-reasonable-doubt burden required for a criminal conviction."
+    }
+  ],
+  "publication_rules": [
+    "Describe payment-control authority and prosecution authority separately.",
+    "Do not use the phrase 'lowered the fraud standard' without specifying that the 2019 change concerned administrative disqualification rather than criminal conviction.",
+    "Do not use current BCA referral law to infer what agencies were legally required to do before the section existed.",
+    "For any case-specific claim that an official should have exercised an authority, cite the contemporaneous factual record establishing that the statutory predicates were met."
+  ]
+}
