@@ -22,8 +22,10 @@ The standalone full text of MDE's April 30 written opposition brief is still unc
 
 The exact date on which every reimbursement payment cleared or was received also remains distinct from the stop-pay-removal date. The transcript provides an expected processing/payment schedule but not bank-settlement evidence.
 
-The transcript also strengthens, but does not resolve, the **149 vs. 143** site-application count issue. Judge Guthmann referred on April 30 to an MDE letter containing 149 entries marked "site ID denied"; the June 24 order later described 143 of 144 site-ID applications as denied. The reason for that difference remains unproven.
+The previously noted **149 vs. 143** site-application discrepancy is now substantially resolved as a cohort-definition issue rather than a contradictory count. Judge Guthmann referred on April 30 to MDE's April 29 letter containing **149** entries marked "site ID denied," and the Office of the Legislative Auditor independently reports that **149 of 184** sites denied on April 29 were denied site IDs. The June 24 order addresses a narrower contempt cohort: **144 site-ID applications submitted from November 30, 2020 through April 13, 2021; the April 13 application was approved and the remaining 143 were denied**. OLA further reports that by July 2 MDE agreed to process **143 of the 149** April 29 site-ID denials. Accordingly, 149 and 143 should not be presented as rival totals for the same population. What remains unestablished in this corpus is the exact identity/category of the additional six April 29 site-ID denials that were outside the court's 144-application contempt cohort.
 
 ## Publication consequence
 
 Public language should say that **MDE voluntarily removed the stop-pay on April 30, 2021 after the April 21 hearing, without a court order requiring payment resumption**. If discussing when money actually moved, use more precise language and do not equate stop-pay removal with same-day receipt of all funds.
+
+If discussing the site-application counts, distinguish the cohorts explicitly: **149 site-ID denials in MDE's April 29 action; 143 denials within the 144-application cohort analyzed by the June 24 contempt order**. Do not frame 149 and 143 as an unresolved contradiction.
