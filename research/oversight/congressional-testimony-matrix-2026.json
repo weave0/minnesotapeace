@@ -1,0 +1,202 @@
+{
+  "as_of": "2026-08-29",
+  "title": "2026 congressional Minnesota fraud testimony — statement and corroboration matrix",
+  "purpose": "Separate sworn witness statements, committee-member assertions, personal knowledge, agency awareness, opinions, and independently corroborated facts so the public record does not turn an official hearing transcript into proof of every statement made in it.",
+  "records": [
+    {
+      "record_id": "part2-walz-late-2020-awareness",
+      "speaker": "Tim Walz",
+      "speaker_role": "Governor of Minnesota",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "personal_knowledge",
+      "statement_summary": "Walz testified that he could not provide a specific date when he personally first became aware of Feeding Our Future fraud, but said that by late 2020 the administration began seeing irregularities being flagged.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 1508-1525",
+      "corroboration_status": "partially_corroborated_at_agency_level",
+      "corroborating_source_ids": [
+        "src-mn-ola-2024-fof-oversight"
+      ],
+      "corroboration_note": "OLA independently documents longstanding complaints and says MDE officials reported sharing FOF concerns with USDA OIG in October or November 2020. That corroborates agency-level concern by late 2020, not the date of Walz's personal knowledge."
+    },
+    {
+      "record_id": "part2-walz-may-2020-agency-awareness",
+      "speaker": "Tim Walz",
+      "speaker_role": "Governor of Minnesota",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "agency_awareness",
+      "statement_summary": "When asked whether his administration was aware of Feeding Our Future fraud concerns by May 2020, Walz testified that he believed that was correct with the Department of Education and USDA.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 2441-2449",
+      "corroboration_status": "partially_corroborated_but_specific_date_unresolved",
+      "corroborating_source_ids": [
+        "src-mn-ola-2024-fof-oversight"
+      ],
+      "corroboration_note": "OLA establishes complaints and concerns before May 2020, but the current normalized OLA record does not independently pin an MDE/USDA fraud-awareness event specifically to May 2020."
+    },
+    {
+      "record_id": "part2-walz-chief-of-staff-notice",
+      "speaker": "Tim Walz",
+      "speaker_role": "Governor of Minnesota",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "personal_vs_staff_knowledge",
+      "statement_summary": "After a committee member asserted that a former chief of staff had been notified by commissioners, Walz said that could be correct but said he did not recall whether the chief of staff notified him at the time.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 2459-2469",
+      "corroboration_status": "unresolved",
+      "corroboration_note": "The witness did not adopt the committee member's underlying factual assertion as a specific recollection. A transcribed interview or contemporaneous communication is needed to establish who notified whom and when."
+    },
+    {
+      "record_id": "part2-ellison-stop-payment-authority",
+      "speaker": "Keith Ellison",
+      "speaker_role": "Minnesota Attorney General",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "jurisdiction_authority",
+      "statement_summary": "Ellison testified that his office does not have authority to order a stop-payment and that it prosecutes Medicaid fraud cases presented by the responsible agency.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 1344-1361",
+      "corroboration_status": "requires_statutory_crosswalk",
+      "corroboration_note": "Do not treat this legal-position testimony as the last word on statutory authority until the relevant Minnesota Attorney General, DHS, MFCU and payment-withhold statutes are cross-walked."
+    },
+    {
+      "record_id": "part2-ellison-300-80m",
+      "speaker": "Keith Ellison",
+      "speaker_role": "Minnesota Attorney General",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "money_and_enforcement_claim",
+      "statement_summary": "Ellison testified that his office had won 300 Medicaid-fraud convictions and recovered more than $80 million for Minnesota taxpayers.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 692-705",
+      "corroboration_status": "not_directly_comparable_to_current_annual_statistics",
+      "corroborating_source_ids": [
+        "src-hhs-oig-2026-07-01-mn-mfcu-recertification"
+      ],
+      "corroboration_note": "HHS-OIG later quotes Minnesota MFCU FY2025 and three-year statistics, including 36 FY2025 fraud convictions, 115 over three years, and >$24M FY2025 monetary recoveries. Different periods/definitions mean these figures should be reconciled, not treated as contradictions or added together."
+    },
+    {
+      "record_id": "part2-walz-administrative-fraud-standard",
+      "speaker": "Tim Walz",
+      "speaker_role": "Governor of Minnesota",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "oversight_action",
+      "statement_summary": "Walz said a 2019 change lowered the evidentiary threshold needed to prove administrative fraud disqualification because he said the prior threshold was too difficult to satisfy.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 2501-2519",
+      "corroboration_status": "requires_statutory_or_rule_binding",
+      "corroboration_note": "The exchange should never be excerpted as 'lowered fraud standards' without the witness's explanation that he meant lowering the proof threshold for administrative fraud disqualification."
+    },
+    {
+      "record_id": "part2-walz-whistleblower-retaliation-denial",
+      "speaker": "Tim Walz",
+      "speaker_role": "Governor of Minnesota",
+      "hearing": "Part II",
+      "sworn": true,
+      "category": "retaliation_response",
+      "statement_summary": "Walz testified that whistleblowers should not be retaliated against, said Minnesota has protections, and said he could not speak to the specific retaliation allegations raised by committee members.",
+      "evidence_class": "SWORN_TESTIMONY",
+      "source_ids": [
+        "src-gpo-2026-03-04-mn-fraud-hearing-part-ii"
+      ],
+      "source_locator": "GPO HTML lines 4151-4244",
+      "corroboration_status": "contested_unresolved",
+      "corroboration_note": "Part I witnesses offered sworn retaliation allegations. The hearing record contains competing sworn accounts; independent personnel, investigation, judicial, or audit records are required to resolve individual retaliation claims."
+    },
+    {
+      "record_id": "part1-robbins-walz-knew-from-beginning",
+      "speaker": "Kristin Robbins",
+      "speaker_role": "Minnesota House Representative",
+      "hearing": "Part I",
+      "sworn": true,
+      "category": "opinion_inference_about_knowledge",
+      "statement_summary": "Robbins testified that in her view Walz knew about fraud from the beginning of his administration because fraud prosecutions, an OLA report, and public cases already existed when he took office.",
+      "evidence_class": "SWORN_TESTIMONY_OPINION",
+      "source_ids": [
+        "src-gpo-2026-01-07-mn-fraud-hearing-part-i"
+      ],
+      "source_locator": "GPO PDF p.20, extracted lines 807-822",
+      "corroboration_status": "inference_not_personal_knowledge_proof",
+      "corroborating_source_ids": [
+        "src-mn-ola-2024-fof-oversight"
+      ],
+      "corroboration_note": "Prior fraud reports and prosecutions can establish public warning context but do not by themselves prove the Governor's personal knowledge of a particular case or allegation."
+    },
+    {
+      "record_id": "part1-hudson-political-coverup-opinion",
+      "speaker": "Walter Hudson",
+      "speaker_role": "Minnesota House Representative",
+      "hearing": "Part I",
+      "sworn": true,
+      "category": "political_motive_opinion",
+      "statement_summary": "Hudson testified to his opinion that political incentives led Minnesota Democrats to overlook fraud and agreed with the committee member's characterization of a political incentive to cover it up.",
+      "evidence_class": "SWORN_TESTIMONY_OPINION",
+      "source_ids": [
+        "src-gpo-2026-01-07-mn-fraud-hearing-part-i"
+      ],
+      "source_locator": "GPO PDF pp.20-21, extracted lines 823-855",
+      "corroboration_status": "opinion_inference_unresolved",
+      "corroboration_note": "The transcript establishes that Hudson gave this opinion under oath. It does not supply actor-specific evidence proving a criminal cover-up or political motive."
+    },
+    {
+      "record_id": "part1-rarick-retaliation",
+      "speaker": "Marion Rarick",
+      "speaker_role": "Minnesota House Representative",
+      "hearing": "Part I",
+      "sworn": true,
+      "category": "retaliation_claim",
+      "statement_summary": "Rarick testified that whistleblowers described retaliation including threats of firing, blacklisting, surveillance-related concerns, and intimidation, and later testified that the administration retaliated against and dismissed whistleblowers.",
+      "evidence_class": "SWORN_TESTIMONY_ALLEGATION",
+      "source_ids": [
+        "src-gpo-2026-01-07-mn-fraud-hearing-part-i"
+      ],
+      "source_locator": "GPO PDF pp.16-17 and 42-43, extracted lines 650-675 and 1828-1845",
+      "corroboration_status": "unresolved_by_current_primary_records",
+      "corroboration_note": "Store as a sworn allegation. Do not publish as an established retaliation finding unless independent records substantiate the specific employment actions and responsible actors."
+    },
+    {
+      "record_id": "part1-nine-billion-treatment",
+      "speaker": "Kristin Robbins and committee members",
+      "speaker_role": "witness and legislators",
+      "hearing": "Part I",
+      "sworn": true,
+      "category": "fraud_estimate_repetition",
+      "statement_summary": "The hearing repeatedly discussed approximately $9 billion as an estimate of Minnesota Medicaid fraud, with Robbins attributing the estimate to the U.S. Attorney's assessment of high-risk Medicaid spending.",
+      "evidence_class": "SWORN_TESTIMONY_REPEATING_EXTERNAL_ESTIMATE_AND_LEGISLATIVE_STATEMENTS",
+      "source_ids": [
+        "src-gpo-2026-01-07-mn-fraud-hearing-part-i"
+      ],
+      "source_locator": "GPO PDF pp.94-95, extracted lines 4188-4240",
+      "corroboration_status": "not_independent_measurement",
+      "corroboration_note": "The hearing is not an independent audit or loss calculation. Retain $9B as a fraud estimate/investigative hypothesis under the corpus's existing money rules."
+    }
+  ],
+  "global_rules": [
+    "Sworn testimony establishes what a witness said under oath; it does not automatically establish the underlying proposition as true.",
+    "A committee member's premise inside a question is not converted into a witness admission unless the witness actually adopts it.",
+    "Agency awareness, staff awareness, and an elected official's personal knowledge are separate propositions.",
+    "Opinion about motive or cover-up requires actor-specific corroboration before it may be presented as fact.",
+    "Money claims in testimony must be reconciled to dated audit, judgment, settlement, or agency-statistical records before aggregation."
+  ]
+}
