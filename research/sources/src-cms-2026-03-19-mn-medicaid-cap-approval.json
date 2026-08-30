@@ -1,0 +1,27 @@
+{
+  "source_id": "src-cms-2026-03-19-mn-medicaid-cap-approval",
+  "canonical_url": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/mn-sud-reform-cms-apprvd-integ-plan-08042026.pdf",
+  "parent_record": "src-cms-2026-08-04-mn-sud-program-integrity-plan",
+  "issuing_body": "Centers for Medicare & Medicaid Services",
+  "title": "March 19, 2026 CMS approval of Minnesota Medicaid Corrective Action Plan",
+  "publication_date": "2026-03-19",
+  "retrieval_date": "2026-08-29",
+  "document_type": "corrective_action_plan_approval_letter",
+  "jurisdiction": "Minnesota Medicaid",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_RECORD_EMBEDDED_IN_OFFICIAL_CMS_PDF",
+  "evidence_class": "AGENCY_DETERMINATION",
+  "locator": "Attachment A, PDF pp.10-11 / document pages headed March 19, 2026",
+  "supports": [
+    "CMS states that Minnesota's 2025-12-31 CAP had deficiencies and that CMS identified required revisions in a 2026-01-12 communication.",
+    "CMS states Minnesota's revised CAP submitted 2026-01-30 addressed those deficiencies and explicitly concludes: 'Therefore, the CAP is approved.'",
+    "CMS states Minnesota had met the February 1 and March 1 milestones and expected continued implementation, weekly reporting, and milestone-based meetings until completion.",
+    "CMS identified off-cycle revalidation of high-risk provider types as a critical initiative and requested continued outcome/status reporting.",
+    "CMS requested that Minnesota's appeal of the January 6 potential withholding action be stayed pending complete implementation of the approved CAP because successful completion would moot the appeal."
+  ],
+  "important_qualifications": [
+    "CAP approval does not mean CMS found all underlying program-integrity problems cured; the letter expressly requires continued implementation and monitoring.",
+    "Approval of the CAP is separate from the February 2026 federal-funds deferral and does not convert deferred amounts into fraud findings.",
+    "The standalone March 19 PDF has not been separately indexed on cms.gov in this research pass, but the complete signed letter is embedded as Attachment A in an official Medicaid.gov/CMS PDF, providing a primary federal source."
+  ]
+}

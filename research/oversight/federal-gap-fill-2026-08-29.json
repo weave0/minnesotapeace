@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-08-29",
+  "purpose": "Add primary federal oversight events resolved after the main Medicaid control timeline was generated.",
+  "events": [
+    {
+      "event_date": "2026-03-19",
+      "event_type": "cap_approval_primary_confirmed",
+      "actor": "Centers for Medicare & Medicaid Services",
+      "program": "Minnesota Medicaid program integrity",
+      "summary": "CMS's signed March 19 letter states Minnesota's January 30 revised Corrective Action Plan addressed the deficiencies CMS identified and explicitly approves the CAP, while requiring continued implementation and milestone reporting.",
+      "evidence_class": "AGENCY_DETERMINATION",
+      "source_id": "src-cms-2026-03-19-mn-medicaid-cap-approval",
+      "supersedes_timeline_status": "The main timeline previously classified March 19 approval as state-reported pending a federal primary. The complete signed CMS letter is now captured as Attachment A in an official Medicaid.gov PDF, so that evidence gap is closed.",
+      "qualification": "CAP approval is not a finding that all deficiencies were cured and is separate from the February federal-funds deferral."
+    },
+    {
+      "event_date": "2026-07-01",
+      "event_type": "mfcu_conditional_recertification",
+      "actor": "HHS Office of Inspector General",
+      "program": "Minnesota Medicaid Fraud Control Unit",
+      "summary": "HHS-OIG conditionally recertified Minnesota's MFCU subject to special corrective conditions involving fiscal management and implementation of the still-open comprehensive case-management-system recommendation, while also finding the Unit effective at Medicaid-fraud investigation/prosecution.",
+      "evidence_class": "AGENCY_DETERMINATION",
+      "source_id": "src-hhs-oig-2026-07-01-mn-mfcu-recertification",
+      "qualification": "Conditional recertification is an administrative oversight action, not a criminal finding against MFCU personnel."
+    },
+    {
+      "event_date": "2026-08-04",
+      "event_type": "sud_program_integrity_plan_approved",
+      "actor": "Centers for Medicare & Medicaid Services",
+      "program": "Minnesota Substance Use Disorder System Reform 1115 demonstration",
+      "summary": "CMS approved Minnesota's SUD Program Integrity Plan under STC 3.16. The plan documents program-integrity controls that extend beyond the SUD demonstration and incorporate Minnesota's broader CAP, provider screening, pre/post-payment review, utilization controls, analytics, and fraud-referral mechanisms.",
+      "evidence_class": "AGENCY_DETERMINATION",
+      "source_id": "src-cms-2026-08-04-mn-sud-program-integrity-plan",
+      "qualification": "Approval of a control plan is not a clean-bill-of-health finding and does not adjudicate suspected fraud."
+    }
+  ],
+  "remaining_federal_primary_gaps": [
+    "CMS December 5, 2025 initial CAP-request letter on an official federal host",
+    "Final public disposition, if any, of the February 25, 2026 $259,505,491 federal matching-funds deferral",
+    "Focused CMS-64 review workpapers/results for the high-risk-service claims underlying the deferral",
+    "Any later HHS-OIG notice lifting Minnesota MFCU's July 1 conditional recertification special conditions"
+  ],
+  "search_result_notes": [
+    "A 2026-08-29 search of CMS/Medicaid/Federal Register did not locate a later federal release resolving the $259.5M deferral. Minnesota DHS still publicly describes the funds as deferred.",
+    "Do not import HHS-OIG recommendation identifiers 26-E-07-010 into Minnesota; those recommendation records belong to the Oklahoma MFCU 2025 inspection."
+  ]
+}

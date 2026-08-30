@@ -1,0 +1,36 @@
+{
+  "source_id": "src-cms-2026-08-04-mn-sud-program-integrity-plan",
+  "canonical_url": "https://www.medicaid.gov/medicaid/section-1115-demonstrations/downloads/mn-sud-reform-cms-apprvd-integ-plan-08042026.pdf",
+  "index_url": "https://www.medicaid.gov/medicaid/section-1115-demo/demonstration-and-waiver-list/82216",
+  "issuing_body": "Centers for Medicare & Medicaid Services, State Demonstrations Group",
+  "title": "Minnesota SUD Program Integrity Approval Letter and Approved Program Integrity Plan",
+  "publication_date": "2026-08-04",
+  "retrieval_date": "2026-08-29",
+  "document_type": "federal_demonstration_approval_and_program_integrity_plan",
+  "jurisdiction": "Minnesota Medicaid Section 1115(a) demonstration",
+  "demonstration_number": "11-W-00320/5",
+  "source_tier": 2,
+  "source_status": "PRIMARY_FEDERAL_AGENCY_RECORD",
+  "evidence_class": "AGENCY_DETERMINATION",
+  "supports": [
+    "CMS approved Minnesota's Program Integrity Plan for the Minnesota Substance Use Disorder System Reform section 1115(a) demonstration on 2026-08-04, finding it consistent with STC 3.16.",
+    "The current demonstration period runs through 2031-03-31; the approved plan states the extension period is 2026-04-01 through 2031-03-31.",
+    "CMS states the program-integrity obligation includes provider screening and enrollment, pre- and post-payment review, payment methodologies and rate setting, utilization controls, identifying/investigating/referring suspected fraud, complaint intake, and safeguards against fraud, waste and abuse.",
+    "The Minnesota plan states that its program-integrity measures are not limited to the SUD waiver population and align with Minnesota's broader CMS corrective-action work.",
+    "The plan records January 2026 pre-payment review for high-risk services, provider revalidation, inactive-provider terminations, enhanced analytics, post-payment review, law-enforcement referrals, program assessments, and additional controls.",
+    "The plan states that Minnesota Medicaid managed-care plans serve more than 80 percent of approximately 1.2 million Medicaid enrollees and that the Legislature appropriated funds for additional managed-care post-payment review.",
+    "The plan states that current analytics are rules-based and descriptive and do not include automated decision-making or machine-learning models.",
+    "Attachment A contains the complete signed 2026-03-19 CMS letter approving Minnesota's broader Medicaid Corrective Action Plan; that attachment is separately normalized as src-cms-2026-03-19-mn-medicaid-cap-approval."
+  ],
+  "important_qualifications": [
+    "CMS approval of the plan is approval of a compliance/oversight framework, not a finding that every listed vulnerability or suspicious claim is fraud.",
+    "Agency-reported counts and recovery figures embedded in the state plan retain AGENCY_POSITION status unless independently audited or adjudicated.",
+    "CMS's March 19 CAP approval letter requires continued implementation and monitoring; approval is not a finding that all deficiencies were already cured."
+  ],
+  "locators": [
+    "CMS SUD approval letter PDF p.1",
+    "approved SUD program-integrity plan pp.1-7",
+    "Attachment A: CMS Medicaid CAP approval letter dated 2026-03-19, PDF pp.10-11",
+    "Medicaid.gov administrative record dated 2026-08-04"
+  ]
+}

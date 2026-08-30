@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-08-29",
+  "purpose": "Supplement recovery-ledger-2026-08-29.json with newly verified federal MFCU, civil-settlement, and court-judgment records while preserving overlap warnings.",
+  "entries": [
+    {
+      "entry_id": "mn-mfcu-fy2025-total-monetary-recoveries",
+      "amount": 24000000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "recovered_amount_mixed_criminal_civil",
+      "period": "FY2025",
+      "evidence_class": "AGENCY_DETERMINATION_WITH_UNIT_REPORTED_STATISTIC",
+      "source_record": "src-hhs-oig-2026-07-01-mn-mfcu-recertification",
+      "interpretation": "HHS-OIG's July 1 recertification letter quotes Minnesota MFCU's FY2025 annual statistical report as reporting more than $24M in total monetary recoveries. The aggregate combines recovery types and should not be added to component settlements or restitution without overlap reconciliation."
+    },
+    {
+      "entry_id": "nuway-total-civil-settlement",
+      "amount": 18500000,
+      "currency": "USD",
+      "metric_type": "civil_settlement",
+      "period": "settlement announced 2025-06-26",
+      "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+      "source_record": "src-usao-mn-2025-06-26-nuway-medicaid-settlement",
+      "interpretation": "Total federal/state settlement resolving allegations; DOJ states there was no determination of liability or wrongdoing. Because it was resolved in FY2025 with Minnesota MFCU involvement, it may be included in the >$24M FY2025 MFCU aggregate."
+    },
+    {
+      "entry_id": "nuway-minnesota-share",
+      "amount": 8000000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "civil_settlement_state_share",
+      "period": "settlement announced 2025-06-26",
+      "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+      "source_record": "src-usao-mn-2025-06-26-nuway-medicaid-settlement",
+      "interpretation": "Minnesota Attorney General says Minnesota receives more than $8M. This is nested within the $18.5M total and must not be added to it."
+    },
+    {
+      "entry_id": "cvs-minnesota-attributable-settlement",
+      "amount": 850000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "civil_settlement",
+      "period": "settlement announced 2026-07-09",
+      "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+      "source_record": "src-mn-ag-2026-07-09-cvs-medicaid-settlement",
+      "interpretation": "Minnesota-attributable amount in the national CVS insulin-pen False Claims settlement."
+    },
+    {
+      "entry_id": "cvs-minnesota-medicaid-direct-restitution",
+      "amount": 400000,
+      "currency": "USD",
+      "qualifier": "more_than",
+      "metric_type": "settlement_restitution",
+      "period": "settlement announced 2026-07-09",
+      "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+      "source_record": "src-mn-ag-2026-07-09-cvs-medicaid-settlement",
+      "interpretation": "Direct restitution to Minnesota Medical Assistance reported by the Minnesota Attorney General. It is nested within the >$850K Minnesota-attributable settlement amount and is not criminal restitution."
+    },
+    {
+      "entry_id": "ibrahim-cacfp-civil-judgment",
+      "amount": 2481310.08,
+      "currency": "USD",
+      "metric_type": "civil_judgment",
+      "period": "judgment ordered 2026-06-09",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "source_record": "src-mn-hennepin-27-cv-22-13107-ibrahim-judgment",
+      "interpretation": "Hennepin County District Court ordered judgment for MDE against Emadeldin Ibrahim for $2,481,310.08 plus prejudgment interest after a Minnesota False Claims Act jury verdict. This is an entered civil judgment, not evidence the full amount has been collected."
+    },
+    {
+      "entry_id": "ibrahim-cacfp-funds-held",
+      "amount": 106978.10,
+      "currency": "USD",
+      "metric_type": "funds_held_pending_release",
+      "period": "as stated in 2026-06-09 judgment memorandum",
+      "evidence_class": "ADJUDICATED_CIVIL",
+      "source_record": "src-mn-hennepin-27-cv-22-13107-ibrahim-judgment",
+      "interpretation": "The judgment memorandum states the court already held $106,978.10 deposited by Wells Fargo and would separately order release to MDE after judgment. This is a much narrower collection-status fact than the full $2.48M judgment."
+    }
+  ],
+  "overlap_rules": [
+    "Do not add NUWAY's $18.5M total to its >$8M Minnesota share.",
+    "Do not add CVS's >$850K Minnesota-attributable settlement to its >$400K direct Medicaid restitution component.",
+    "Do not add individual FY2025 settlements, restitution, or recoveries to Minnesota MFCU's >$24M FY2025 total unless the annual statistical report establishes they are excluded from that aggregate.",
+    "Do not combine MFCU FY2025 >$24M recoveries with the AG's 2019-2026 $90M judgments-and-recoveries aggregate as if they are separate time periods; FY2025 is nested inside the longer period.",
+    "Do not add the $106,978.10 already held in the Ibrahim case to the $2,481,310.08 judgment; the held funds are a collection-status component, not an additional award.",
+    "The Ibrahim judgment's damages, treble damages, civil penalty, and fees are nested components of the $2,481,310.08 total and must not be added to the total again.",
+    "Recovered, settled, or adjudicated amounts remain distinct from DHS identified-for-recovery and Optum potential-recovery/cost-avoidance measures."
+  ]
+}
