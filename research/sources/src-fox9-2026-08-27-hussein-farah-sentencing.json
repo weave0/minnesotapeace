@@ -1,0 +1,27 @@
+{
+  "source_id": "src-fox9-2026-08-27-hussein-farah-sentencing",
+  "canonical_url": "https://www.fox9.com/news/feeding-our-future-fraudster-sentenced-prison-restitution-aug-27-2026",
+  "issuing_body": "FOX 9 Minneapolis-St. Paul",
+  "title": "Feeding Our Future fraudsters sentenced to prison, ordered to pay restitution",
+  "publication_date": "2026-08-27",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_report",
+  "case_number": "0:25-cr-00297",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_publisher_host",
+  "source_tier": 8,
+  "source_status": "SECONDARY_VERIFIED_PENDING_PRIMARY_JUDGMENT",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "supports": [
+    "FOX 9 reported that Hussein Mohamed Farah was sentenced on 2026-08-27 to 20 months in federal prison, two years of supervised release, and $471,000 restitution for wire fraud.",
+    "FOX 9 identified New Vision Foundation as Farah's nonprofit and reported approximately $2.7 million in Federal Child Nutrition Program receipts during the charged period."
+  ],
+  "corroboration": [
+    "The federal hearing calendar listed Hussein Mohamed Farah, case 25-cr-297, for sentencing before Judge Nancy E. Brasel at 10:00 a.m. on 2026-08-27.",
+    "USAO-MN's 2025-08-06 release confirms Farah was the 73rd Feeding Our Future defendant charged, by information, and identifies the New Vision Foundation $2.7 million figure."
+  ],
+  "does_not_support": [
+    "Until a judgment, sentencing minute, or new USAO release is captured, the 20-month term and $471,000 restitution should not be represented as independently verified from a primary court record.",
+    "Do not use this report to change the official USAO statement that Ahmed, Ghedi, and Omar-Hashim were the 24th through 26th defendants sentenced without preserving the apparent sequencing discrepancy."
+  ]
+}
