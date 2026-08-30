@@ -65,6 +65,26 @@
       "qualification": "The corpus still lacks USDA OIG's own Minnesota-specific work product showing what it did with the referral."
     },
     {
+      "event_date": "2020",
+      "event_type": "fraud_indicator_flagged",
+      "actor": "Minnesota Department of Education",
+      "recipient": "U.S. Department of Agriculture",
+      "summary": "Per HuffPost's reporting on the 2024 OLA audit, MDE alerted USDA that Feeding Our Future's reimbursements had risen approximately 252% while statewide reimbursements rose about 14% over the same period, and separately flagged 'perfect daycare attendance over an extended period' at FOF sites as a fraud indicator.",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_id": "src-huffpost-2026-01-30-usda-knew-did-nothing",
+      "qualification": "Sourced to a news article's characterization of the OLA audit; the exact 252%/14% figures were not independently located in this corpus's own copy of the OLA report text."
+    },
+    {
+      "event_date": "2020",
+      "event_type": "agency_response",
+      "actor": "U.S. Department of Agriculture",
+      "recipient": "Minnesota Department of Education",
+      "summary": "HuffPost reports, citing the 2024 OLA audit, that 'USDA was unresponsive' and 'pushed responsibility back to MDE,' and that USDA told MDE the perfect-attendance pattern 'would be possible due to the waivers' in effect during the pandemic.",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_id": "src-huffpost-2026-01-30-usda-knew-did-nothing",
+      "qualification": "An anonymous former USDA official is separately quoted by HuffPost describing internal recognition that the numbers looked like fraud and a decision by superiors not to get involved; that quote is anonymous-sourced and not independently corroborated by a named official or a USDA/USDA-OIG document."
+    },
+    {
       "event_date": "2020-11",
       "event_type": "civil_litigation",
       "actor": "Feeding Our Future",
@@ -214,6 +234,16 @@
       "evidence_class": "AUDIT_FINDING",
       "source_id": "src-mn-ola-2024-fof-oversight",
       "qualification": "OLA did not find that MDE officials joined the criminal fraud scheme."
+    },
+    {
+      "event_date": "2024-09-04",
+      "event_type": "congressional_subpoena",
+      "actor": "U.S. House Committee on Education and the Workforce",
+      "recipient": "Gov. Tim Walz; Minnesota Department of Education; USDA Secretary Tom Vilsack; USDA Inspector General Phyllis Fong",
+      "summary": "Committee Chairwoman Virginia Foxx issued subpoenas to Walz, MDE, USDA, and USDA's Inspector General compelling production of records on oversight of Feeding Our Future, stating MDE's prior production had been 'neither timely nor fully responsive.' Documents were due by noon on 2024-09-18.",
+      "evidence_class": "LEGISLATIVE_FINDING_OR_ALLEGATION",
+      "source_id": "src-edworkforce-house-2024-09-04-subpoena-walz-usda-oig",
+      "qualification": "Issued by the committee's Republican majority; underlying allegations against Walz/MDE/USDA are committee characterizations, not adjudicated findings. No public record of USDA or USDA OIG's compliance, production, or response to this subpoena was located in this research pass."
     }
   ],
   "derived_conclusions": [

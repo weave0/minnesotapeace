@@ -1,0 +1,24 @@
+{
+  "source_id": "src-edworkforce-house-2024-09-04-subpoena-walz-usda-oig",
+  "canonical_url": "https://edworkforce.house.gov/news/documentsingle.aspx?DocumentID=411885",
+  "issuing_body": "U.S. House Committee on Education and the Workforce (Chairwoman Virginia Foxx)",
+  "title": "Chair Foxx Subpoenas Walz's Minnesota Department of Education to Demand Accountability in \"Largest COVID-19 Fraud Scheme in the Nation\"",
+  "publication_date": "2024-09-04",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "jurisdiction": "U.S. House of Representatives",
+  "source_tier": 6,
+  "source_status": "LEGISLATIVE_RECORD",
+  "evidence_class": "LEGISLATIVE_FINDING_OR_ALLEGATION",
+  "notes": "Official committee press release announcing compulsory process. Issued by the Republican majority; treat allegations against Gov. Walz/MDE/USDA as majority-committee characterizations, not adjudicated findings. Retrieved via direct fetch after WebFetch returned HTTP 403.",
+  "supports": [
+    "On 2024-09-04, the House Education and Workforce Committee, chaired by Rep. Virginia Foxx, issued subpoenas to Gov. Tim Walz, MDE, USDA Secretary Tom Vilsack, and USDA Inspector General Phyllis Fong, compelling production of records about oversight of Feeding Our Future.",
+    "The Committee's press release states MDE's prior document production 'has been neither timely nor fully responsive,' which the Committee gives as its reason for moving to compulsory process against USDA and its OIG as well as MDE/Walz.",
+    "The subpoena cover letter to Gov. Walz, quoted in the release, states press statements by Walz and his representatives 'indicate that you and other executive officers were involved, or had knowledge of, MDE's administration' of the federal child nutrition programs, and that responses to date 'do not explain how your agency and the USDA failed to identify' the fraud.",
+    "Subpoenaed parties were required to produce documents by noon on 2024-09-18."
+  ],
+  "does_not_support": [
+    "Any USDA or USDA OIG compliance, production, or substantive response to the subpoena; this release only announces the subpoena's issuance and deadline.",
+    "Any adjudicated finding that Walz, MDE, USDA, or USDA OIG officials knowingly facilitated fraud; these are committee allegations underlying a document demand, not proven facts."
+  ]
+}

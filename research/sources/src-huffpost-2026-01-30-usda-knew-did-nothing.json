@@ -1,0 +1,27 @@
+{
+  "source_id": "src-huffpost-2026-01-30-usda-knew-did-nothing",
+  "canonical_url": "https://www.huffpost.com/entry/minnesota-fraud-feeding-our-future-trump-usda_n_697bc72ee4b04b6f3b7f3b34",
+  "issuing_body": "HuffPost",
+  "title": "Trump Administration Knew About Minnesota Fraud And Did Nothing",
+  "publication_date": "2026-01-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_article",
+  "jurisdiction": "Minnesota; federal (USDA)",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Combines the already-captured 2024 OLA audit (src-mn-ola-2024-fof-oversight) with new HuffPost original reporting, including an anonymous former USDA official's account. The anonymous quote is a LEAD-tier assertion within an otherwise reputable outlet's reporting; treat the specific attributed quote with more caution than the OLA-sourced material in the same article.",
+  "supports": [
+    "In 2020, MDE alerted USDA that Feeding Our Future's federal meal-program reimbursements had increased approximately 252% while statewide reimbursements rose only about 14% in the same period, and flagged this disparity as a fraud indicator.",
+    "MDE also flagged 'perfect daycare attendance over an extended period' at FOF-sponsored sites as a fraud indicator; USDA's response, per the article citing the 2024 OLA audit, was that such attendance 'would be possible due to the waivers' in effect during the pandemic.",
+    "The article states, citing the 2024 Minnesota legislative audit, that 'USDA was unresponsive' and 'pushed responsibility back to MDE.'",
+    "Then-MDE-Commissioner Willie Jett is quoted (via the audit) stating that the state also brought concerns to USDA's Office of Inspector General, which 'did not resolve the issue either.'",
+    "An anonymous former USDA official told HuffPost: 'These numbers don't look right, and the state is justified in the action it is taking. We discussed it as being fraud,' and said the official urged superiors to support Minnesota's fraud suspicions but 'they declined. They didn't want to get involved.'",
+    "Former USDA Secretary Sonny Perdue did not respond to HuffPost's request for comment."
+  ],
+  "does_not_support": [
+    "Any USDA OIG investigative report, closeout memo, or other OIG-authored work product specific to Minnesota/Feeding Our Future; the article, like the OLA audit it draws on, describes USDA's and USDA OIG's response only through MDE's and an anonymous ex-official's account, not through a USDA/USDA-OIG document.",
+    "The identity, title, or exact tenure dates of the anonymous former USDA official.",
+    "Any claim that named, identified USDA or USDA OIG officials personally recognized fraud and chose inaction; the corroborating quote is anonymous and unverified against a named individual."
+  ]
+}
