@@ -17,11 +17,12 @@ Every substantive statement must be classified before publication:
 3. **CIVIL_ALLEGED_OR_RESOLVED** — False Claims Act complaint, settlement, consent order, corporate integrity agreement, or other civil disposition; settlement language must preserve any express denial/no-determination caveat.
 4. **AUDIT_FINDING** — finding of OLA, HHS OIG, USDA OIG, CMS, GAO, or another identified audit authority.
 5. **AGENCY_POSITION** — factual or legal position advanced by MDE, DHS, DCYF, Attorney General, Governor, CMS, USDA, etc.; not treated as independent proof merely because an agency states it.
-6. **SWORN_TESTIMONY** — testimony under oath, deposition, transcribed interview, or legislative hearing testimony.
-7. **LEGISLATIVE_FINDING_OR_ALLEGATION** — committee report, member statement, hearing summary, or legislative investigative claim. Record party/committee provenance and distinguish majority/minority material.
-8. **SECONDARY_VERIFIED** — high-quality reporting that is independently corroborated or that documents facts not available in a primary source.
-9. **LEAD_UNVERIFIED** — social media, anonymous tip, partisan assertion, or other lead awaiting verification. Never publish as established fact.
-10. **DERIVED_INFERENCE** — an analytical conclusion produced from cited evidence. Must identify its supporting records and must never masquerade as a source fact.
+6. **SWORN_TESTIMONY** — testimony actually given under oath or affirmation, including a sworn legislative hearing, deposition, or other oath-bound record. Do not assume a congressional transcribed interview was sworn; verify the procedure in the record.
+7. **TRANSCRIBED_INTERVIEW** — formal congressional, legislative, inspector-general, or investigative interview that was not sworn but was recorded and conducted under an explicit duty of truthful response (for example, a congressional staff interview where false statements may be criminally punishable). Preserve whether the interview was voluntary, whether counsel was present, and the precise truthfulness warning. This class records what the interviewee said; it does not independently prove the underlying proposition.
+8. **LEGISLATIVE_FINDING_OR_ALLEGATION** — committee report, member statement, hearing summary, or legislative investigative claim. Record party/committee provenance and distinguish majority/minority material.
+9. **SECONDARY_VERIFIED** — high-quality reporting that is independently corroborated or that documents facts not available in a primary source.
+10. **LEAD_UNVERIFIED** — social media, anonymous tip, partisan assertion, or other lead awaiting verification. Never publish as established fact.
+11. **DERIVED_INFERENCE** — an analytical conclusion produced from cited evidence. Must identify its supporting records and must never masquerade as a source fact.
 
 ## Money taxonomy
 
@@ -90,7 +91,7 @@ Prefer, in order:
 3. DOJ / USAO / FBI / IRS-CI / HHS-OIG / USDA-OIG / CMS / state MFCU primary materials.
 4. Minnesota Office of the Legislative Auditor and other formal audit reports.
 5. Minnesota Judicial Branch, Revisor, Legislature, agency records and licensing/enforcement records.
-6. Sworn congressional/state legislative testimony and investigative materials, clearly labeled by provenance.
+6. Sworn congressional/state legislative testimony and formal transcribed investigative interviews, with oath/truthfulness status verified from the record and clearly labeled by provenance.
 7. Corporate, charity, property, campaign-finance, tax-exempt organization, licensing, UCC and other public records when relevant.
 8. Credible news reporting for context, chronology, interviews, or leads.
 9. Social media and anonymous material only as leads to independently verify.
