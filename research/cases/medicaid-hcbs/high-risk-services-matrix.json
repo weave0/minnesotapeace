@@ -1,0 +1,432 @@
+{
+  "as_of": "2026-08-29",
+  "scope": "Minnesota DHS 14 high-risk Medicaid service/provider categories",
+  "evidence_rule": "A DHS high-risk designation describes programmatic vulnerability, suspicious patterns, evidence of fraudulent activity, or claim anomalies. It is not a finding that every provider, recipient, or payment in the category is fraudulent.",
+  "common_controls": {
+    "enhanced_screening": true,
+    "off_cycle_revalidation": true,
+    "fee_for_service_pre_payment_review": true,
+    "enrollment_moratoria": "As of July 2026, 12 of 14 high-risk services have a CMS-approved enrollment moratorium through 2027-01-27; EIDBI has a separate moratorium through 2026-10-31; HSS ended 2025-10-31.",
+    "source_records": [
+      "src-mn-dhs-2026-08-program-integrity-snapshot",
+      "src-mn-dhs-2026-07-high-risk-moratoria-extension"
+    ]
+  },
+  "services": [
+    {
+      "service_id": "adult_companion",
+      "name": "Adult Companion Services",
+      "acronym": null,
+      "purpose": "Non-medical care, supervision and socialization that helps an older adult work toward a therapeutic or community-integration goal in the support plan.",
+      "legal_or_program_authority": [
+        "Federally approved Elderly Waiver plan",
+        "Alternative Care 1115 demonstration",
+        "Minn. Stat. ch. 245D"
+      ],
+      "program_source": "https://www.mentalhealth.dhs.state.mn.us/main/idcplg/j/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_002442",
+      "case_coverage": {
+        "level": "mixed_service_charged",
+        "summary": "Direct allegation coverage exists, but no current case in the corpus isolates an Adult Companion-only loss figure.",
+        "cases": [
+          {
+            "case": "State v. Mohamed Abdirashid Omarxeyd / Guardian Home Health Services",
+            "case_number": "27-CR-26-1082",
+            "status": "CHARGED_ALLEGED",
+            "role": "Companion care is one of several HCBS services in the alleged Guardian scheme.",
+            "source_record": "src-mn-hennepin-27-cr-26-1082-omarxeyd-complaint"
+          },
+          {
+            "case": "State v. Tremayne Lamar Jackson",
+            "status": "CHARGED_ALLEGED",
+            "role": "AG alleges more than 6,000 hours across PCA, companion care and homemaker services; >$125,000 mixed-service alleged loss.",
+            "source_record": "src-mn-ag-2026-06-23-national-takedown-seven"
+          }
+        ]
+      },
+      "money_status": "No service-only charged/proven-loss figure isolated in current corpus.",
+      "open_gaps": [
+        "Acquire Jackson complaint for service-by-service claim counts and amounts.",
+        "Do not allocate Guardian's broader >$3.2M alleged scheme total to companion care."
+      ]
+    },
+    {
+      "service_id": "adult_day",
+      "name": "Adult Day Services",
+      "acronym": null,
+      "purpose": "Individualized daytime activities, supervision, care, assistance and training designed around an older adult's assessed health and social needs.",
+      "legal_or_program_authority": [
+        "Federally approved BI, CADI, DD and EW waiver plans",
+        "Minn. Stat. ch. 245A",
+        "Minn. Stat. ch. 256S"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_002205",
+      "case_coverage": {
+        "level": "no_dedicated_medicaid_service_fraud_case_located",
+        "summary": "No dedicated Minnesota Medicaid-billing prosecution for Adult Day Services was located in the current corpus/search pass.",
+        "adjacent_records": [
+          {
+            "record": "2019 federal tax prosecution involving owners of Meisa Group, an adult day care serving Medicaid recipients",
+            "qualification": "Tax evasion/conspiracy allegations based on personal use of company income; not evidence that adult-day Medicaid claims themselves were fraudulent.",
+            "url": "https://www.justice.gov/usao-mn/pr/owners-minneapolis-adult-day-care-charged-tax-evasion"
+          }
+        ]
+      },
+      "current_controls": [
+        "High-risk enhanced screening and pre-payment review",
+        "Adult-day licensing/enrollment controls and statewide high-risk moratorium framework"
+      ],
+      "money_status": "No dedicated service-fraud amount located.",
+      "open_gaps": [
+        "Search MFCU historical complaints and civil recoveries for adult-day billing cases.",
+        "Acquire provider-count and annual-spend series before drawing growth conclusions."
+      ]
+    },
+    {
+      "service_id": "armhs",
+      "name": "Adult Rehabilitative Mental Health Services",
+      "acronym": "ARMHS",
+      "purpose": "Rehabilitative mental-health services intended to build psychiatric stability, social competencies, personal and emotional adjustment, and independent living/community skills impaired by mental illness.",
+      "legal_or_program_authority": [
+        "Minn. Stat. § 256B.0623"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg/?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_058153",
+      "case_coverage": {
+        "level": "dedicated_and_mixed_charged",
+        "cases": [
+          {
+            "case": "State v. Salman Ahmed Elmi / Reva Health",
+            "status": "CHARGED_ALLEGED",
+            "amount": "> $1,000,000 alleged loss",
+            "summary": "Eight felony theft charges; AG alleges false documentation, kickbacks, ineligible providers and inadequate supervision.",
+            "source_record": "src-mn-ag-2026-08-17-armhs-pca-charges"
+          },
+          {
+            "case": "State v. Jessica Wavra",
+            "status": "CHARGED_ALLEGED",
+            "amount": "> $29,000 mixed ARMHS/targeted-case-management allegation",
+            "source_record": "src-mn-ag-2026-06-23-national-takedown-seven"
+          }
+        ]
+      },
+      "money_status": "Reva >$1M is a dedicated charged allegation; Wavra amount is mixed-service. Neither is adjudicated loss as of captured sources.",
+      "open_gaps": [
+        "Acquire Reva and Wavra complaints for count-level extraction.",
+        "Capture official annual provider/spend series rather than journalism-derived growth figures."
+      ]
+    },
+    {
+      "service_id": "act",
+      "name": "Assertive Community Treatment",
+      "acronym": "ACT",
+      "purpose": "Intensive nonresidential, team-based rehabilitative mental-health treatment providing a single point of responsibility for treatment, rehabilitation and support, with services available 24/7 in community settings.",
+      "legal_or_program_authority": [
+        "Minn. Stat. § 256B.0622"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_058151",
+      "case_coverage": {
+        "level": "no_dedicated_case_located",
+        "summary": "No Minnesota ACT-specific fraud prosecution was located in the current research corpus/search pass. This is not evidence that fraud is absent."
+      },
+      "current_controls": [
+        "High-risk enhanced screening and pre-payment review",
+        "DHS Behavioral Health Administration engaged Health Management Associates in 2026 to review ACT, IRTS and Residential Crisis Services payment policies/rate methodology, including program-integrity objectives."
+      ],
+      "control_source": "https://content.govdelivery.com/accounts/MNDHS/bulletins/41a74a0",
+      "money_status": "No service-specific fraud amount located.",
+      "open_gaps": [
+        "Acquire ACT provider count, annual claims/spend, and HMA review deliverables when issued.",
+        "Search historical MFCU and civil False Claims Act records for ACT-specific matters."
+      ]
+    },
+    {
+      "service_id": "cfss",
+      "name": "Community First Services and Supports",
+      "acronym": "CFSS",
+      "purpose": "Flexible assistance for people with disabilities and other health needs to support independence in their homes and communities; replaced PCA and the Consumer Support Grant beginning 2024-10-01.",
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=MNDHS-067912",
+      "case_coverage": {
+        "level": "no_dedicated_cfss_case_located",
+        "summary": "No CFSS-specific fraud prosecution was located. Numerous PCA prosecutions exist, but they predate or involve the predecessor PCA service and must not be relabeled as CFSS fraud."
+      },
+      "current_controls": [
+        "High-risk enhanced screening/pre-payment review",
+        "Transition from extended PCA continues; DHS says extended PCA ends 2026-09-30 while regular PCA can continue until an individual completes transition to CFSS."
+      ],
+      "source_record": "src-mn-dhs-2026-08-28-cfss-transition",
+      "money_status": "No CFSS-specific charged/proven-loss figure located.",
+      "open_gaps": [
+        "Track PCA-to-CFSS claims migration so legacy PCA fraud data are not mixed with CFSS.",
+        "Acquire CFSS provider/spend data after transition stabilizes."
+      ]
+    },
+    {
+      "service_id": "eidbi",
+      "name": "Early Intensive Developmental and Behavioral Intervention",
+      "acronym": "EIDBI",
+      "purpose": "Medically necessary services and supports for people under age 21 with autism spectrum disorder or related conditions, intended to support development, independence and participation in family, school and community life.",
+      "legal_or_program_authority": [
+        "Minn. Stat. § 256B.0949",
+        "CMS-approved Medicaid state-plan amendments"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg/h/main/idcplg/?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=dhs16_195658",
+      "case_coverage": {
+        "level": "dedicated_multiple_federal_cases",
+        "cases": [
+          {
+            "case": "Asha Farhan Hassan / Smart Therapy",
+            "status": "PLEADED_GUILTY",
+            "amount": "> $14M obtained in earlier government description",
+            "qualification": "Overlaps later Smart+Star figures."
+          },
+          {
+            "case": "Abdinajib Hassan Yussuf / Star Autism",
+            "status": "CHARGED in captured primary source; later plea requires primary docket/USAO confirmation",
+            "amount": "> $6M obtained in charging description"
+          },
+          {
+            "case": "Smart Therapy + Star Autism / Shamso Ahmed Hassan and Hanaan Mursal Yusuf",
+            "status": "CHARGED_ALLEGED",
+            "amount": "$46.6M billed / about $21.2M paid",
+            "qualification": "Overlaps the earlier provider-specific $14M and $6M figures; do not sum."
+          }
+        ]
+      },
+      "current_controls": [
+        "Separate new-provider enrollment moratorium through 2026-10-31",
+        "Unannounced/site-visit scrutiny and revalidation",
+        "Updated medical-necessity/service-authorization requirements",
+        "DHS reported an Aug. 2026 authorization backlog caused by increased review volume"
+      ],
+      "current_update_source_record": "src-mn-dhs-2026-08-25-eidbi-authorization-backlog",
+      "money_status": "Multiple overlapping charged/paid figures exist; no single additive EIDBI fraud total is valid from captured sources.",
+      "open_gaps": [
+        "Normalize all EIDBI charging instruments and judgments.",
+        "Capture annual provider count and program spend from primary DHS/CMS data.",
+        "Quantify authorization backlog only if DHS publishes counts."
+      ]
+    },
+    {
+      "service_id": "hss",
+      "name": "Housing Stabilization Services",
+      "acronym": "HSS",
+      "purpose": "A state-plan HCBS Medical Assistance benefit created to help people with disabilities and seniors find and keep housing in their own homes.",
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=dhs-316637",
+      "program_status": "Ended at 11:59 p.m. on 2025-10-31; no HSS services after that date are reimbursable.",
+      "case_coverage": {
+        "level": "dedicated_multiple_federal_cases",
+        "summary": "Multiple federal HSS charge waves cover Brilliant Minds, Faladcare, Leo Human Services, Liberty Plus, Pristine Health, SafeLodgings, House of Heroes, Cradle of Love, North/South Home Health, Cynthia Allen Servicing, Candice Carene, Vitality and others.",
+        "current_adjudication": "All four Brilliant Minds defendants pleaded guilty in July 2026; Anwar and Asad Adow also have captured guilty-plea docket facts."
+      },
+      "research_files": [
+        "research/cases/HSS-FIRST-WAVE.md",
+        "research/cases/medicaid-hcbs/UPDATE-2026-08-29.md"
+      ],
+      "money_status": "Program spend and case amounts are separately typed; billed/paid amounts across HSS cases are not one loss total.",
+      "open_gaps": [
+        "Acquire Brilliant Minds plea agreements/judgments and HSS sentencing records.",
+        "Reconcile HSS historical launch/spend vintages across government sources without silently overwriting them."
+      ]
+    },
+    {
+      "service_id": "ihs",
+      "name": "Individualized Home Supports",
+      "acronym": "IHS",
+      "purpose": "Support and/or training in community-living service categories for people who live in their own home or family home, with service variants based on needed support/training.",
+      "legal_or_program_authority": [
+        "Federally approved BI, CAC, CADI and DD waiver plans",
+        "Minn. Stat. ch. 245D"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=dhs-327070",
+      "case_coverage": {
+        "level": "dedicated_and_mixed_charged",
+        "cases": [
+          {
+            "case": "Healey Homes / Charles Wayne Healey and Katherin Suzan Larsen-Guthmiller",
+            "status": "CHARGED_ALLEGED",
+            "amount": "$22.7M Medicaid reimbursements described by DOJ",
+            "summary": "Government alleges IHS was billed in provider-controlled residences despite the own-home program requirement."
+          },
+          {
+            "case": "Guardian Home Health / Omarxeyd",
+            "status": "CHARGED_ALLEGED",
+            "summary": "Mixed HCBS complaint includes IHS and alleged ineligible sleep-hour billing, including >$45,000 in one described IHS example.",
+            "source_record": "src-mn-hennepin-27-cr-26-1082-omarxeyd-complaint"
+          }
+        ]
+      },
+      "money_status": "Healey Homes is a dedicated charged case figure; Guardian figures are mixed/examples and must not be added as a separate IHS-wide loss.",
+      "open_gaps": [
+        "Acquire Healey charging instrument and later docket outcomes for count-level normalization.",
+        "Build provider-controlled-setting vs own-home rule explainer from controlling waiver/statutory text."
+      ]
+    },
+    {
+      "service_id": "ics",
+      "name": "Integrated Community Supports",
+      "acronym": "ICS",
+      "purpose": "Support and training/habilitation in community-living categories for adults living in provider-controlled ICS settings; services may be delivered up to 24 hours a day in the person's living unit or community.",
+      "legal_or_program_authority": [
+        "BI and CADI waiver plans from 2021",
+        "CAC and DD waiver plans from 2023",
+        "Minn. Stat. § 256B.49, subd. 23",
+        "Minn. Stat. ch. 245D"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg/http/www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=dhs-327069",
+      "case_coverage": {
+        "level": "dedicated_federal_case",
+        "cases": [
+          {
+            "case": "Ultimate Home Health Services / Ahmed Othman Kadar",
+            "status": "CHARGED_ALLEGED",
+            "amount": "about $1.4M billed/paid in May 2026 indictment description",
+            "summary": "Government alleges billing for high-hour ICS services not provided."
+          }
+        ]
+      },
+      "money_status": "Government program-spend descriptions of >$400M and later >$460M since 2021 are program spend, not fraud loss.",
+      "open_gaps": [
+        "Acquire indictment and exact count/transaction table if not already normalized.",
+        "Build annual spend/provider/site count series from primary state data."
+      ]
+    },
+    {
+      "service_id": "irts",
+      "name": "Intensive Residential Treatment Services",
+      "acronym": "IRTS",
+      "purpose": "Time-limited, community-based, medically monitored residential mental-health treatment for adults, with qualified mental-health staff on site 24 hours a day and a goal of psychiatric stability and transition to a more independent setting.",
+      "legal_or_program_authority": [
+        "Minn. Stat. § 256B.0632",
+        "Minn. Stat. § 245I.23"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg/?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_058155",
+      "case_coverage": {
+        "level": "no_dedicated_case_located",
+        "summary": "No Minnesota IRTS-specific fraud prosecution was located in the current corpus/search pass."
+      },
+      "current_controls": [
+        "High-risk screening/pre-payment review",
+        "2026 DHS/HMA review of payment policies and rate methodology for IRTS, ACT and Residential Crisis Services, framed in part around strengthening program integrity"
+      ],
+      "control_source": "https://content.govdelivery.com/accounts/MNDHS/bulletins/41a74a0",
+      "money_status": "No service-specific fraud amount located.",
+      "open_gaps": [
+        "Acquire HMA deliverables when published.",
+        "Capture provider count, bed/capacity, annual spend and any MFCU referrals."
+      ]
+    },
+    {
+      "service_id": "night_supervision",
+      "name": "Night Supervision Services",
+      "acronym": null,
+      "purpose": "Overnight assistance and supervision in a person's own home when an assessed need exists for specified support, ADL/IADL or skill-development activities; the service cannot be used as merely preventative or assumptive safety monitoring.",
+      "legal_or_program_authority": [
+        "Federally approved BI, CAC, CADI and DD waiver plans",
+        "Minn. Stat. ch. 245D"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&dID=132280",
+      "case_coverage": {
+        "level": "mixed_service_charged",
+        "cases": [
+          {
+            "case": "Guardian Home Health / Omarxeyd",
+            "status": "CHARGED_ALLEGED",
+            "summary": "Complaint discusses companion-care night-supervision billing and alleges ineligible sleeping/overnight claims; no standalone Night Supervision scheme total is stated.",
+            "source_record": "src-mn-hennepin-27-cr-26-1082-omarxeyd-complaint"
+          }
+        ]
+      },
+      "current_program_change": "Beginning in 2026 DHS separates awake and asleep night-supervision rate frameworks under the Disability Waiver Rate System.",
+      "money_status": "No standalone service-wide charged loss figure located.",
+      "open_gaps": [
+        "Extract Guardian count-level night-supervision transactions from complaint/claims exhibits if available.",
+        "Avoid treating all overnight IHS or companion-care billing as the Night Supervision service."
+      ]
+    },
+    {
+      "service_id": "nemt",
+      "name": "Nonemergency Medical Transportation Services",
+      "acronym": "NEMT",
+      "purpose": "Transportation enabling Medical Assistance members to travel to and from covered nonemergency medical appointments using the safest, appropriate and cost-effective mode.",
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&dID=133235",
+      "case_coverage": {
+        "level": "dedicated_state_case",
+        "cases": [
+          {
+            "case": "Driving Miss Daisy / Charles Omato and LaTonia Jackson",
+            "status": "CHARGED_ALLEGED",
+            "amount": "> $1.4M alleged loss",
+            "summary": "AG alleges rides not provided and impossible travel-time claims.",
+            "source_record": "src-mn-ag-2024-06-19-nemt-driving-miss-daisy"
+          }
+        ]
+      },
+      "current_controls": [
+        "Seven-county metro new-provider enrollment moratorium extended through 2027-01-27",
+        "DHS announced 2026 NEMT provider-claim compliance reviews with Myers & Stauffer on 2026-08-24"
+      ],
+      "current_update_source_records": [
+        "src-mn-dhs-2026-07-high-risk-moratoria-extension",
+        "src-mn-dhs-2026-08-24-nemt-program-reviews"
+      ],
+      "money_status": "> $1.4M is a charged allegation, not adjudicated loss or restitution.",
+      "open_gaps": [
+        "Acquire Omato/Jackson complaint and current case disposition.",
+        "Capture results of 2026 Myers & Stauffer reviews when published."
+      ]
+    },
+    {
+      "service_id": "recovery_peer",
+      "name": "Recovery Peer Support",
+      "acronym": null,
+      "purpose": "Peer-delivered substance-use-disorder recovery support, including individualized peer support and recovery planning intended to advance recovery goals, self-sufficiency, self-advocacy and natural supports.",
+      "legal_or_program_authority": [
+        "Minn. Stat. § 254B.052"
+      ],
+      "program_source": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&dID=158582",
+      "case_coverage": {
+        "level": "no_dedicated_case_located",
+        "summary": "No Minnesota Recovery Peer Support-specific criminal fraud case was located in the current corpus/search pass."
+      },
+      "current_controls": [
+        "2026 law includes service restrictions/billing limits; current statute makes noncompliant peer-recovery payments subject to monetary recovery",
+        "High-risk screening and pre-payment review"
+      ],
+      "statute_source": "https://www.revisor.mn.gov/statutes/cite/254B/full",
+      "money_status": "No service-specific charged/proven loss located.",
+      "open_gaps": [
+        "Acquire annual provider/client/spend series.",
+        "Track monetary-recovery actions separately from criminal fraud cases."
+      ]
+    },
+    {
+      "service_id": "recuperative_care",
+      "name": "Recuperative Care",
+      "acronym": null,
+      "purpose": "Short-term medical care and support for eligible people experiencing homelessness who do not need hospital-level care but cannot safely recover from physical illness in a shelter or while unhoused.",
+      "program_source": "https://mentalhealth.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=MNDHS-064912",
+      "program_start": "Provider manual posted 2024-01-01.",
+      "case_coverage": {
+        "level": "no_dedicated_case_located",
+        "summary": "No Minnesota Recuperative Care-specific fraud prosecution was located in the current corpus/search pass."
+      },
+      "current_controls": [
+        "Pre-enrollment risk assessment and habitability inspection requirements",
+        "Prior authorization required for all recuperative-care services effective 2026-08-01",
+        "High-risk screening/pre-payment review"
+      ],
+      "current_update_source_record": "src-mn-dhs-2026-07-24-recuperative-prior-auth",
+      "money_status": "No service-specific fraud amount located.",
+      "open_gaps": [
+        "Capture annual spend/provider/facility counts since 2024 launch.",
+        "Evaluate whether prior-authorization changes produce measurable denial/recovery results without equating denials with fraud."
+      ]
+    }
+  ],
+  "cross_cutting_gaps": [
+    "Create annual spend and provider-count series for all 14 categories from a common primary dataset and fixed time window.",
+    "Normalize every known criminal case to complaint/indictment, plea/verdict, judgment, restitution, forfeiture and appeal.",
+    "Track administrative payment holds, disenrollment, sanctions, identified-for-recovery and actual collections as separate event types.",
+    "For categories with no dedicated case located, continue historical MFCU/FCA searches; absence from this pass is not evidence of absence.",
+    "Do not aggregate the 14 categories into a total fraud figure."
+  ]
+}
