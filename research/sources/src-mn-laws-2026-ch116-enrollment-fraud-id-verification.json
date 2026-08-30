@@ -1,0 +1,32 @@
+{
+  "source_id": "src-mn-laws-2026-ch116-enrollment-fraud-id-verification",
+  "canonical_url": "https://www.revisor.mn.gov/laws/2026/0/Session%2BLaw/Chapter/116/",
+  "pdf_url": "https://www.revisor.mn.gov/laws/2026/0/Session%2BLaw/Chapter/116/2026-07-20%2015%3A29%3A04%2B00%3A00/pdf",
+  "issuing_body": "Minnesota Legislature / Office of the Revisor of Statutes",
+  "title": "2026 Minnesota Laws, Chapter 116 — Minnesota State identity-verification appropriation",
+  "publication_date": "2026",
+  "retrieval_date": "2026-08-29",
+  "document_type": "session_law",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 2,
+  "source_status": "PRIMARY_LAW",
+  "evidence_class": "STATUTORY_TEXT",
+  "supports": [
+    "2026 Minn. Laws ch. 116 appropriates $3,000,000 in fiscal year 2027 to the Board of Trustees of the Minnesota State Colleges and Universities for acquisition, implementation, support, and maintenance of automated identity-verification systems to combat enrollment fraud.",
+    "The appropriation is one-time and remains available until June 30, 2029."
+  ],
+  "money": [
+    {
+      "amount": 3000000,
+      "currency": "USD",
+      "metric_type": "program_spend",
+      "qualifier": "appropriation",
+      "notes": "Fraud-prevention system appropriation; not fraud loss, recovered amount, or identified-for-recovery."
+    }
+  ],
+  "does_not_support": [
+    "The $3 million appropriation is not a measurement of enrollment-fraud losses.",
+    "The statute does not establish that every application flagged by an identity-verification system is fraudulent."
+  ]
+}

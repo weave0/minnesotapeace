@@ -1,0 +1,53 @@
+{
+  "source_id": "src-mn-dhs-2026-08-program-integrity-snapshot",
+  "canonical_url": "https://mn.gov/dhs/program-integrity/",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Program Integrity",
+  "publication_date": "2026-08-12",
+  "retrieval_date": "2026-08-29",
+  "document_type": "agency_status_page",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 5,
+  "source_status": "PRIMARY_STATE_AGENCY_POSITION",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS reported total Medicaid spending of $20.9 billion paid to providers in 2024, about 40,000 provider organizations paid in 2024, and average monthly Medicaid enrollment of about 1.2 million recipients.",
+    "DHS reported 3,068 open program-integrity intakes and 1,647 open cases, with those figures updated 2026-08-04.",
+    "DHS reported 490 Medicaid payment withholds imposed in 2025, more than triple 2024.",
+    "DHS reported more than 3,500 investigations and more than 1,150 law-enforcement referrals since 2020.",
+    "DHS reported more than $56 million identified for recovery since 2020; identified_for_recovery is not recovered_amount.",
+    "DHS reported 18,109 inactive providers terminated between October 2025 and March 2026 in connection with the CMS corrective action plan, in addition to 761 provider agencies terminated for inactivity in October 2025.",
+    "For Revalidate 2026, DHS reported 3,070 high-risk providers revalidated, 1,627 providers currently appealing disenrollment, 128 providers that chose to terminate rather than begin revalidation, and 660 providers whose appeal window closed and are now terminated; these counts were updated 2026-08-12.",
+    "DHS said approximately 3,400 high-risk providers had initially received notices of disenrollment, largely for incomplete revalidation information, and that the appeal process remained active.",
+    "DHS lists 14 Medicaid service provider types as high risk, including ARMHS, EIDBI, HSS, IHS, ICS, NEMT and other services.",
+    "DHS reported a return of $2.29 in monetary recoveries and cost avoidance for every dollar invested in its investigators; this blended agency performance ratio is not a fraud-loss measure."
+  ],
+  "money": [
+    {
+      "amount": 20900000000,
+      "currency": "USD",
+      "metric_type": "program_spend",
+      "qualifier": "reported_2024_provider_payments",
+      "notes": "Statewide Medicaid payments to providers; not a fraud denominator by itself."
+    },
+    {
+      "amount": 56000000,
+      "currency": "USD",
+      "metric_type": "identified_for_recovery",
+      "qualifier": "more_than",
+      "notes": "Agency-reported cumulative amount since 2020. Do not label as fraud proven, restitution, or cash recovered."
+    }
+  ],
+  "does_not_support": [
+    "A high-risk designation does not establish fraud by every provider in the category.",
+    "Open intakes and open cases are not criminal case counts.",
+    "A notice of disenrollment, appeal, or termination is not a criminal adjudication.",
+    "The $56 million figure is not a recovered-cash total.",
+    "The $2.29 return figure combines monetary recoveries and cost avoidance and should not be presented as cash recovered."
+  ],
+  "source_locators": {
+    "revalidate_counts": "Program Integrity page lines 199-219 as retrieved 2026-08-29",
+    "enforcement_counts": "Program Integrity page lines 256-269 as retrieved 2026-08-29"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source_id": "src-kstp-2026-08-24-ghost-student-fraud",
+  "canonical_url": "https://kstp.com/kstp-news/top-news/fake-website-calls-out-reality-of-ghost-student-problem-at-minnesota-colleges/",
+  "issuing_body": "KSTP 5 Eyewitness News",
+  "title": "Fake website calls out reality of 'ghost student' problem at Minnesota colleges",
+  "publication_date": "2026-08-24",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_report",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_publisher_host",
+  "source_tier": 8,
+  "source_status": "SECONDARY_VERIFIED_LEAD",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "supports": [
+    "KSTP reported Normandale Community College had processed about 29,000 fraudulent or potentially fraudulent applications over several years and that administrators said roughly 31% of current applications were being flagged for review, down from about 42%.",
+    "KSTP reported Minnesota State flagged 2,696 fraudulent or potentially fraudulent financial-aid applications in the 2025-2026 academic year.",
+    "KSTP documented one identity-theft victim whose identity was used to obtain an approximately $9,000 federal student loan through a fraudulent Normandale enrollment."
+  ],
+  "does_not_support": [
+    "Flagged or potentially fraudulent applications are not equivalent to completed fraud, unique perpetrators, enrollments, or dollars disbursed.",
+    "The 29,000 figure is an application-processing figure attributed to Normandale administration, not an audited statewide loss figure.",
+    "This source should remain a lead for an emerging higher-education/public-aid integrity family until Minnesota State, federal aid, audit, court, or data-practices records are captured."
+  ]
+}

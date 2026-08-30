@@ -1,0 +1,35 @@
+{
+  "source_id": "src-doj-opa-2026-07-24-hss-brilliant-minds-pleas",
+  "canonical_url": "https://www.justice.gov/opa/pr/four-men-plead-guilty-2m-minnesota-medicaid-fraud",
+  "issuing_body": "U.S. Department of Justice, Office of Public Affairs",
+  "title": "Four Men Plead Guilty to $2M Minnesota Medicaid Fraud",
+  "publication_date": "2026-07-24",
+  "retrieval_date": "2026-08-29",
+  "document_type": "press_release",
+  "case_number": "0:25-cr-00349",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "supports": [
+    "Moktar Hassan Aden, Mustafa Dayib Ali, Khalid Ahmed Dayib, and Abdifitah Mohamud Mohamed each pleaded guilty to one count of wire fraud in separate hearings between 2026-07-07 and 2026-07-23.",
+    "DOJ states the four used Brilliant Minds Services LLC to enroll about 350 HSS recipients and fraudulently obtain approximately $2.2 million from Minnesota Medicaid between April 2022 and April 2025.",
+    "DOJ states the defendants fabricated supporting records using ChatGPT after insurers questioned their claims.",
+    "Sentences had not yet been set as of the release."
+  ],
+  "money": [
+    {
+      "amount": 2200000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "qualifier": "approximately",
+      "amount_status": "post_plea_government_characterization",
+      "notes": "DOJ's post-plea release says the defendants fraudulently obtained approximately $2.2 million. Treat guilt as adjudicated, but do not upgrade this press-release figure to restitution_ordered, recovered_amount, or a judgment-certified proven_loss without the plea agreements or judgments. It overlaps the earlier approximately $2.3 million amount_billed allegation."
+    }
+  ],
+  "does_not_support": [
+    "No sentence, restitution order, forfeiture order, or collected-recovery amount is stated in this release.",
+    "The $2.2 million post-plea government characterization overlaps the earlier Brilliant Minds billing allegation and must not be summed with it."
+  ]
+}
