@@ -209,14 +209,15 @@
       "event_date": "2021-04-30",
       "event_type": "stop_pay_hearing",
       "actor": "Ramsey County District Court",
-      "summary": "A further Temporary Restraining Order hearing was held before Judge Guthmann at 3:00 PM (remote), the same calendar day MDE voluntarily removed the stop-pay per OLA's timeline. The June 24, 2021 order confirms this April 30 hearing was one of a series (April 23, April 30, June 18, June 23) addressing FOF's TRO, contempt, and amended-complaint motions together.",
+      "summary": "A further Temporary Restraining Order hearing was held before Judge Guthmann at 3:00 PM (remote), the same calendar day MDE voluntarily removed the stop-pay per OLA's timeline. The June 24, 2021 order confirms this April 30 hearing was one of a series (April 23, April 30, June 18, June 23) addressing FOF's TRO, contempt, and amended-complaint motions together. FOF's own reply brief, filed at 1:19 PM that day (before the hearing), directly quotes MDE's opposition brief stating MDE had already removed the stop-pay 'pursuant to the Court's guidance at the April 21, 2021, hearing' -- confirming the stop-pay was lifted before, and because of, the April 21 hearing, not this April 30 one.",
       "evidence_class": "ADJUDICATED_CIVIL",
       "source_id": "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
       "corroborating_source_ids": [
-        "src-mncro-62-cv-20-5492-register-of-actions"
+        "src-mncro-62-cv-20-5492-register-of-actions",
+        "src-mncro-62-cv-20-5492-reply-2021-04-30"
       ],
-      "source_locator": "Order, 2021-06-24, p.1 (hearing dates); Register of Actions, 04/30/2021 hearing record and Index #42-#50",
-      "qualification": "The court's June 24 order resolves the stop-pay TRO motion as moot because MDE had already lifted the stop-pay and paid the claims (see the payment_resumption event below); it does not identify what, if anything, happened at the April 30 hearing itself that specifically produced that outcome that day."
+      "source_locator": "Order, 2021-06-24, p.1 (hearing dates); Register of Actions, 04/30/2021 hearing record and Index #42-#50; Reply, 2021-04-30, p.2",
+      "qualification": "This resolves the sequencing question raised when this hearing was first identified: the stop-pay removal was not a same-day product of this April 30 hearing. FOF disputed, in the same reply, that removing the stop-pay flag was equivalent to actually paying the claims, so the exact date full payment was completed may not be April 30 itself; that distinction was not further resolved in this pass. At 6:51 PM that evening, after the hearing, FOF filed a Second Amended Complaint adding MDE assistant commissioner Daron Korte personally as a defendant."
     },
     {
       "event_date": "2021-04-30",

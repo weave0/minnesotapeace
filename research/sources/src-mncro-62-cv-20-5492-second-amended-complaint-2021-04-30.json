@@ -1,0 +1,31 @@
+{
+  "source_id": "src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30",
+  "canonical_url": "https://publicaccess.courts.state.mn.us/CaseSearch",
+  "issuing_body": "Feeding Our Future (plaintiff's counsel, Martin Hild PA)",
+  "title": "Second Amended Complaint and Jury Demand (redline)",
+  "case_number": "62-CV-20-5492",
+  "court": "Ramsey County District Court",
+  "document_date": "2021-04-30",
+  "retrieval_date": "2026-08-29",
+  "document_type": "complaint",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "local_path": "retrieved via MCRO document download, Index #47 (25 pages; pages 1-20 of 25 read in this pass), not committed to the repository",
+  "notes": "Filed 4/30/2021 6:51 PM (after that day's 3:00 PM hearing). A redline/tracked-changes version showing additions from the First Amended Complaint. This is FOF's own advocacy pleading; every substantive factual allegation is FOF's characterization, not an adjudicated fact, and MDE's response to these specific allegations was not retrieved in this pass. Pages 21-25 of 25 were not read in this pass.",
+  "supports": [
+    "This Second Amended Complaint adds Daron Korte, the MDE assistant commissioner later interviewed by Congress in 2026 (src-house-oversight-2026-02-03-daron-korte-interview), as a named defendant 'officially and personally,' alongside MDE. This corpus's existing Korte-based claims should note that Korte was personally sued by FOF in this litigation at the time of the events he later described in his 2026 congressional interview.",
+    "The complaint pleads seven counts: (I) Declaratory Judgment, (II) Injunctive Relief, (III) Writ of Mandamus, (IV) Breach of Contract, (V) Tortious Interference with Contracts, (VI) Minnesota Human Rights Act (racial-discrimination theory), and (VII) Federal and State Procedural and Substantive Due Process.",
+    "FOF alleges MDE left 41 of over 50 new-meal-site applications unactioned in 'step one' of its two-step site-ID process for up to 73 days as of the complaint, and includes a chart of 41 applications pending 32-76 days as of 2020-11-23, plus 10 more sites where 'step two' applications were pending 38-56 days.",
+    "FOF alleges that in April 2020 MDE initially refused, without explanation, to issue site IDs for 8 additional meal sites (including Afro Deli, whose owner Abdirahman Kahin is described as having been invited to President Obama's final State of the Union address), and only relented on 2021-04-29 at 5:31 PM after FOF sent MDE a draft complaint and litigation-hold notice on 2021-04-28 threatening suit by April 30 if the sites were not approved. (The complaint's own paragraph 42 dates this dispute's origin to 'April 13 and April 23, 2020,' which is likely a drafting-error year given the surrounding 2021 timeline and the document's own April 28-30, 2021 dates for its resolution.)",
+    "FOF alleges that around 2020-10-15, MDE unilaterally changed the participation end-dates on applications for five meal sites (Dur Dur Restaurant, Lido Restaurant, S&S Catering, Safari Restaurant, Evergreen Grocery and Deli, and Maashaa'allah) to terminate them effective 2020-10-31, without formal notice or an appeal opportunity, allegedly to avoid triggering 7 C.F.R. 225.13 notice-and-appeal requirements. FOF alleges these sites collectively served over 750,000 meals and snacks in October 2020 alone.",
+    "FOF alleges MDE issued a first notice of proposed termination and disqualification against Feeding Our Future and Aimee Bock personally on 2021-03-29, and a second serious-deficiency notice on 2021-03-31 (the notice already reflected in this corpus's timeline) based on five stated grounds, including a Federal Audit Clearinghouse filing failure FOF disputes, budget-worksheet updates, and application 'typos.'",
+    "FOF characterizes MDE's serious-deficiency findings and stop-pay as retaliatory for FOF's lawsuit and intended to limit minority-community participation in the federal food programs; these are FOF's allegations of motive and intent, not established facts."
+  ],
+  "does_not_support": [
+    "Any of these factual allegations as adjudicated or independently verified; MDE's answer or opposition to this specific complaint was not retrieved in this pass.",
+    "A defamation count; despite FOF's April 30 reply brief (src-mncro-62-cv-20-5492-reply-2021-04-30) referencing a planned amendment addressing MDE's alleged media statements that FOF committed fraud, no defamation count appears in the portion of this Second Amended Complaint read in this pass. The June 24, 2021 order later refers to a defamation claim being added via a Third Amended Complaint, which was not retrieved.",
+    "The content of pages 21-25 of this 25-page document, which were not read in this pass."
+  ]
+}

@@ -24,7 +24,8 @@
     "src-house-oversight-2026-02-03-daron-korte-interview",
     "src-house-oversight-2026-01-29-emily-honer-interview",
     "src-mncro-62-cv-20-5492-register-of-actions",
-    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt"
+    "src-mncro-62-cv-20-5492-order-2021-06-24-contempt",
+    "src-mncro-62-cv-20-5492-reply-2021-04-30"
   ],
   "jurisdiction": "Minnesota",
   "date_start": "2021-04-21",
@@ -38,7 +39,9 @@
     "Korte said the FBI never instructed MDE to resume payments; he recalled MDE hoped the resumption would be temporary until federal law enforcement intervened.",
     "No contemporaneous internal MDE memorandum, email chain, meeting notes, or stipulation memorializing the April 30 decision has yet been captured in the corpus.",
     "The Ramsey County register of actions (case 62-CV-20-5492) shows a further Temporary Restraining Order Hearing was held before Judge Guthmann on 2021-04-30 itself, the same day MDE removed the stop-pay, with several same-day filings and an order taking the matter under advisement. Neither Korte's nor Honer's interviews nor the OLA report specifically addresses this hearing; it establishes contemporaneity with, not causation of, MDE's decision.",
-    "The court's June 24, 2021 written order (src-mncro-62-cv-20-5492-order-2021-06-24-contempt) is now the strongest available confirmation of voluntariness: it is the court's own contemporaneous adjudication, not a later recollection or agency characterization, and it denies FOF's stop-pay TRO motion as moot specifically because MDE had already lifted the stop-pay and paid the claims. That same order also clarifies that MDE was separately found in contempt -- for delay in processing 144 site-ID applications under the December 22, 2020 order, not for the reimbursement stop-pay -- and ordered to pay a $35,750 sanction plus $11,750 in stipulated attorneys' fees ($47,500 total)."
+    "The court's June 24, 2021 written order (src-mncro-62-cv-20-5492-order-2021-06-24-contempt) is now the strongest available confirmation of voluntariness: it is the court's own contemporaneous adjudication, not a later recollection or agency characterization, and it denies FOF's stop-pay TRO motion as moot specifically because MDE had already lifted the stop-pay and paid the claims. That same order also clarifies that MDE was separately found in contempt -- for delay in processing 144 site-ID applications under the December 22, 2020 order, not for the reimbursement stop-pay -- and ordered to pay a $35,750 sanction plus $11,750 in stipulated attorneys' fees ($47,500 total).",
+    "The sequencing question raised by the discovery of the April 30 hearing is now resolved: FOF's own reply brief, filed 1:19 PM on April 30 (before that day's 3:00 PM hearing), quotes MDE's opposition brief directly stating the stop-pay was removed 'pursuant to the Court's guidance at the April 21, 2021, hearing' -- i.e., MDE's own contemporaneous filing attributes the decision to April 21, and the removal had already occurred before the April 30 hearing began. FOF disputed that removing the stop-pay flag was equivalent to actually paying the claims, so this does not by itself pin down the exact date full payment was completed.",
+    "Korte was named personally, 'officially and personally,' as a defendant in FOF's Second Amended Complaint filed the evening of 2021-04-30 (src-mncro-62-cv-20-5492-second-amended-complaint-2021-04-30). This is relevant context for weighing his 2026 account -- he was a personal litigant in this matter, not a disinterested witness -- though it does not by itself establish inaccuracy in his testimony."
   ],
   "confidence": "HIGH",
   "is_allegation": false,
