@@ -1,0 +1,33 @@
+{
+  "source_id": "src-mn-laws-2019-ch9-art2-s107-ccap-admin-disqualification",
+  "canonical_url": "https://www.revisor.mn.gov/laws/2019/1/Session+Law/Chapter/9/",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "2019 First Special Session, Chapter 9, Article 2, Section 107 — CCAP Administrative Disqualification",
+  "publication_date": "2019",
+  "retrieval_date": "2026-08-29",
+  "document_type": "session_law",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_SESSION_LAW",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "Section 107 added a separate administrative-disqualification procedure for child-care providers accused of intentional program violations when a criminal action had not been pursued.",
+    "Intentional program violations included intentional false or misleading statements, intentional concealment or withholding of facts, and repeated intentional violations of CCAP/program-integrity regulations.",
+    "The law stated that intent may be proven in the administrative proceeding by demonstrating a pattern of conduct that violates program rules.",
+    "On appeal, the issuing agency bears the burden to prove the intentional program violation by a preponderance of the evidence.",
+    "A provider administratively disqualified under the new procedure was disqualified from CCAP payments for three years for the first offense and permanently for a subsequent offense.",
+    "Section 107 contains no separate effective-date clause; under Minn. Stat. § 645.02, a nonappropriation act without a different specified date generally takes effect August 1 following final enactment."
+  ],
+  "selected_locators": [
+    "Chapter 9, Article 2, Sec. 107, new Minn. Stat. § 256.046, subd. 3(a) — intentional program violation and pattern evidence",
+    "Sec. 107, subd. 3(e) — preponderance burden on appeal",
+    "Sec. 107, subd. 3(g) — three-year/permanent administrative disqualification",
+    "Minn. Stat. § 645.02 — default effective date rule"
+  ],
+  "important_qualifications": [
+    "This change did not lower the burden of proof for a Minnesota criminal conviction. It created an administrative-disqualification remedy used in lieu of a criminal action when criminal prosecution had not been pursued.",
+    "The preponderance standard belongs to the administrative appeal described by the statute, not to a criminal prosecution, where the constitutional beyond-a-reasonable-doubt standard remains applicable.",
+    "Later recodification and amendments moved CCAP program-integrity provisions; publication about 2019 conduct should cite this historical session law rather than only today's section numbering."
+  ],
+  "related_authority_url": "https://www.revisor.mn.gov/statutes/cite/645.02"
+}
