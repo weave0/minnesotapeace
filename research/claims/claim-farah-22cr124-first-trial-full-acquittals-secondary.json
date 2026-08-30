@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-08-30T20:11:00Z",
+  "reviewed_at": "2026-08-30T20:38:00Z",
   "created_at": "2026-08-30T20:11:00Z",
-  "updated_at": "2026-08-30T20:11:00Z",
+  "updated_at": "2026-08-30T20:38:00Z",
   "is_allegation": false,
   "is_inference": false,
   "evidence_class": "SECONDARY_VERIFIED",
@@ -9,25 +9,41 @@
   "jurisdiction": "D. Minn.",
   "proposition_class": "A_FRAUD_AGAINST_STATE",
   "claim_id": "claim-farah-22cr124-first-trial-full-acquittals-secondary",
-  "claim_text": "Contemporaneous courthouse reporting states that Said Shafii Farah and Abdiwahab Maalim Aftin were acquitted of all charges against them in the June 7, 2024 Feeding Our Future jury trial in No. 22-CR-124.",
+  "claim_text": "Independent contemporaneous courthouse reporting states that Said Shafii Farah and Abdiwahab Maalim Aftin were acquitted of all charges against them in the June 7, 2024 Feeding Our Future jury trial in No. 22-CR-124. FOX 9's count-by-count verdict matrix reports Said Farah not guilty on all nine counts assigned to him (Counts 1, 12, 13, 16, 18, 19, 20, 21, and 40) and Aftin not guilty on all three counts assigned to him (Counts 1, 20, and 27). Those denominators align with the captured ECF 57 superseding indictment. The verdict outcome remains SECONDARY_VERIFIED pending capture of the court's verdict forms, minute entry, or another primary judicial record.",
   "claim_type": "DISPOSITION",
   "status": "adjudicated",
   "case_number": "22-CR-124",
   "event_date": "2024-06-07",
   "source_ids": [
-    "src-minnesotareformer-2024-06-07-first-fof-trial-verdict"
+    "src-minnesotareformer-2024-06-07-first-fof-trial-verdict",
+    "src-fox9-2024-06-07-fof-verdict-count-matrix"
+  ],
+  "corroborating_source_ids": [
+    "src-mnd-22-cr-00124-ecf57-farah-superseding"
   ],
   "supporting_passages": [
     {
       "source_id": "src-minnesotareformer-2024-06-07-first-fof-trial-verdict",
       "locator": "June 7, 2024 verdict report",
       "quote": "were acquitted of all charges against them"
+    },
+    {
+      "source_id": "src-fox9-2024-06-07-fof-verdict-count-matrix",
+      "locator": "Said Shafii Farah verdict matrix",
+      "quote": "Said Shafii Farah - Not guilty on all counts"
+    },
+    {
+      "source_id": "src-fox9-2024-06-07-fof-verdict-count-matrix",
+      "locator": "Abdiwahab Maalim Aftin verdict matrix",
+      "quote": "Aftin was found not guilty of all three counts."
     }
   ],
   "qualifiers": [
     "SECONDARY_VERIFIED source quality despite adjudicated legal event",
+    "primary ECF 57 establishes the nine-count Said Farah and three-count Aftin charging denominators, but not the verdict outcome",
+    "Minnesota Reformer independently supports the full-acquittal outcome but its later 'all eight charges' phrase for Said Farah conflicts with the primary indictment and FOX 9 matrix and should not be used as the count denominator",
     "supersede or corroborate with verdict forms, minute entry, judgment, or other primary court record when retrieved",
     "do not infer count-by-count acquittals for the five convicted defendants from this claim"
   ],
-  "editorial_notes": "The USAO-MN June 7 release names only the five convicted defendants and therefore does not independently establish the identities of the two fully acquitted defendants."
+  "editorial_notes": "USAO-MN's June 7 release names only the five convicted defendants and therefore does not independently establish the identities of the two fully acquitted defendants. This claim intentionally separates primary evidence of what counts were charged from secondary evidence of the jury's not-guilty verdicts."
 }
