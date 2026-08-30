@@ -1,0 +1,42 @@
+{
+  "source_id": "src-usao-mn-2025-06-26-nuway-medicaid-settlement",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/nuway-alliance-agrees-pay-18500000-settlement-medicaid-kickbacks-scheme-false-claims-act",
+  "state_companion_url": "https://www.ag.state.mn.us/Office/Communications/2025/06/26_NUWAY.asp",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "NUWAY Alliance Agrees to Pay $18,500,000 Settlement in Medicaid Kickbacks Scheme, False Claims Act Violations",
+  "publication_date": "2025-06-26",
+  "retrieval_date": "2026-08-29",
+  "document_type": "false_claims_act_settlement_release",
+  "jurisdiction": "Minnesota Medicaid / federal False Claims Act",
+  "source_tier": 3,
+  "source_status": "PRIMARY_FEDERAL_ENFORCEMENT_RELEASE",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "supports": [
+    "NUWAY Alliance agreed to pay $18.5 million to resolve allegations involving Minnesota Medicaid substance-use-disorder treatment claims.",
+    "The federal release alleges that from January 2019 through February 2025 NUWAY compensated Medicaid patients for seeking reimbursable intensive outpatient treatment in violation of the Anti-Kickback Statute, causing false Medicaid claims.",
+    "The federal release also alleges NUWAY double-billed overlapping periods of treatment for services not provided as separately claimed.",
+    "NUWAY entered a five-year HHS-OIG Corporate Integrity Agreement requiring a compliance program and independent review of Medicaid claims.",
+    "The Minnesota Attorney General states Minnesota will receive more than $8 million from the settlement."
+  ],
+  "money": [
+    {
+      "amount": 18500000,
+      "currency": "USD",
+      "metric_type": "civil_settlement",
+      "scope": "total federal/state settlement"
+    },
+    {
+      "amount": 8000000,
+      "currency": "USD",
+      "metric_type": "civil_settlement_state_share",
+      "qualifier": "more_than",
+      "scope": "Minnesota share",
+      "source": "Minnesota Attorney General companion release"
+    }
+  ],
+  "important_qualifications": [
+    "The federal release expressly states the claims resolved are allegations and there was no determination of liability or wrongdoing.",
+    "The $8M Minnesota share is nested within the $18.5M total and must not be added to it.",
+    "Because the settlement occurred in FY2025 and involved Minnesota MFCU, it may overlap HHS-OIG's quoted Minnesota MFCU FY2025 >$24M total monetary recoveries; do not sum without a component breakdown."
+  ]
+}
