@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-08-29",
+  "purpose": "Supplement recovery-ledger-2026-08-29.json and recovery-ledger-addendum-2026-08-29.json with the first hard data closing the 'actual cash collections' and 'AG $90M breakdown' gaps identified in known_missing_components.",
+  "entries": [
+    {
+      "entry_id": "mfcu-restitution-ordered-since-2019",
+      "amount": 32000000,
+      "currency": "USD",
+      "qualifier": "nearly",
+      "metric_type": "restitution_ordered",
+      "period": "2019 through 2026-08-03",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_record": "src-kstp-2026-08-03-restitution-collection-analysis",
+      "interpretation": "This is the restitution-ordered component of the AG's $90M 'judgments and recoveries' headline figure. It is a court order, not cash in hand."
+    },
+    {
+      "entry_id": "mfcu-restitution-collected-as-of-2026-05",
+      "amount": 3000000,
+      "currency": "USD",
+      "qualifier": "just_over",
+      "metric_type": "recovered_amount",
+      "period": "as of May 2026",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_record": "src-kstp-2026-08-03-restitution-collection-analysis",
+      "interpretation": "First hard figure in this corpus for actual cash collected against the $90M headline: roughly 9% of the $32M restitution-ordered component. The AG's office says it plays no role in collection; that is the probation system's and courts' function."
+    },
+    {
+      "entry_id": "ag-civil-judgments-since-2019-unverified",
+      "amount": 61000000,
+      "currency": "USD",
+      "qualifier": "roughly",
+      "metric_type": "civil_settlement",
+      "period": "since 2019",
+      "evidence_class": "AGENCY_POSITION",
+      "source_record": "src-kstp-2026-08-03-restitution-collection-analysis",
+      "interpretation": "AG-stated civil-judgments component of the $90M figure. DHS confirmation of this figure was requested by KSTP and still pending as of publication; treat as provisional. Note: $32M + $61M = $93M, ~$3M more than the AG's own $90M headline; this discrepancy is unexplained and unresolved."
+    },
+    {
+      "entry_id": "fox9-restitution-ordered-collected-48-cases",
+      "amount": 13300000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "period": "2020 through 2026-05-17, 48-case FOX 9 sample",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "source_record": "src-fox9-2026-05-17-restitution-collection-analysis",
+      "interpretation": "A differently-scoped, non-exhaustive 48-case sample with $2.355M (~17.7%) collected. Do not merge with the KSTP $32M/$3M figures; see contradiction-restitution-collection-scope-kstp-vs-fox9."
+    }
+  ],
+  "overlap_rules": [
+    "mfcu-restitution-ordered-since-2019 and ag-civil-judgments-since-2019-unverified are both components of the AG's $90M headline figure (mfcu-judgments-and-recoveries-since-2019 in recovery-ledger-2026-08-29.json) and must not be added to that $90M figure again.",
+    "fox9-restitution-ordered-collected-48-cases is a separate, differently-scoped measurement and must not be summed with or averaged against mfcu-restitution-ordered-since-2019 / mfcu-restitution-collected-as-of-2026-05.",
+    "mfcu-restitution-collected-as-of-2026-05 is the first verified recovered_amount figure directly tied to the $90M headline; publish it as a distinct 'collected' column, not blended into 'identified' or 'judgments' figures elsewhere in the ledger."
+  ],
+  "known_missing_components_resolved": [
+    "Breakdown of the AG's $90M mixed judgments/recoveries figure — now partially resolved: ~$32M restitution ordered + ~$61M civil judgments (civil-judgments figure still DHS-unconfirmed).",
+    "Outstanding restitution balances — now partially resolved for the criminal-restitution component: ~$29M outstanding (~$32M ordered minus ~$3M collected) as of May 2026.",
+    "Legal characterization of the AG/KSTP asset-seizure claim — resolved narrowly: MFCU is not expressly listed as a chapter 609 forfeiture 'appropriate agency,' but Minnesota law does not categorically bar state asset seizure; chapter 609 forfeiture and civil judgment execution are separate available mechanisms subject to their own predicates."
+  ],
+  "known_missing_components_still_open": [
+    "DHS confirmation/breakdown of the ~$61M civil-judgments figure (KSTP's request was pending as of 2026-08-03; rechecked 2026-08-29 -- DHS's public program-integrity factcheck page still only repeats the unrelated >$56M identified-for-recovery figure and does not address the $61M civil-judgments question; no public DHS response located). This likely requires a direct records request rather than further web research.",
+    "Explanation for the ~$3M gap between $32M + $61M = $93M and the AG's own $90M headline.",
+    "Case-by-case reconciliation between KSTP's MFCU-wide figures and FOX 9's 48-case sample.",
+    "Forfeiture ordered versus forfeiture realized (still no data).",
+    "Administrative recoupments assessed versus collected (still no data).",
+    "Provider payment holds later released versus permanently retained (still no data).",
+    "Breakdown of DHS's own >$56M identified-for-recovery figure into assessed debt versus collected amounts (still no data; the DHS OIG program-integrity page and factcheck page did not provide a collected-vs-assessed split)."
+  ]
+}

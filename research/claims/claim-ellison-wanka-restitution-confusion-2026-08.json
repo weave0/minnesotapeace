@@ -1,0 +1,42 @@
+{
+  "claim_id": "claim-ellison-wanka-restitution-confusion-2026-08",
+  "claim_text": "During an on-camera KSTP interview about restitution-collection figures, Attorney General Keith Ellison initially disputed the reported low collection figures and produced a paper listing MFCU recovery figures since 2019; when he asked MFCU Director Nicolas Wanka whether those figures represented money actually recovered from defendants, Wanka told him 'No,' clarifying the figures were 'restitution orders and judgments,' not collected money.",
+  "claim_type": "FACT",
+  "normalized_claim": "On camera, Ellison momentarily conflated restitution ordered with restitution collected until corrected by his own MFCU director.",
+  "subject_ids": [
+    "person-keith-ellison",
+    "person-nicolas-wanka"
+  ],
+  "persons": [
+    "person-keith-ellison",
+    "person-nicolas-wanka"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "evidence_class": "SECONDARY_VERIFIED",
+  "status": "confirmed",
+  "source_ids": [
+    "src-americanexperiment-2026-08-04-ellison-restitution-exchange"
+  ],
+  "corroborating_source_ids": [
+    "src-kstp-2026-08-03-restitution-collection-analysis"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-americanexperiment-2026-08-04-ellison-restitution-exchange",
+      "quote": "No... Those are restitution orders and judgments."
+    }
+  ],
+  "jurisdiction": "Minnesota",
+  "qualifiers": [
+    "Sourced via a politically-aligned advocacy outlet's account of a KSTP broadcast segment; this corpus could not independently re-verify the exact quotes from KSTP's own video/transcript (WebFetch to the advocacy outlet's page also returned HTTP 403 on retry). Supersede with a direct KSTP transcript/video citation if it becomes accessible.",
+    "The underlying dollar figures in the exchange match the independently-sourced KSTP written analysis (claim-mfcu-restitution-ordered-vs-collected-2019-2026), which corroborates the substance even though the direct quotes rely on a single secondary account."
+  ],
+  "confidence": "MODERATE",
+  "is_allegation": false,
+  "is_inference": false,
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

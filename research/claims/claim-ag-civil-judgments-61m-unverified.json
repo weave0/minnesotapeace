@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim-ag-civil-judgments-61m-unverified",
+  "claim_text": "The Minnesota Attorney General's office told KSTP it separately tracks roughly $61 million in civil judgments/settlements (as distinct from the $32 million in MFCU criminal restitution ordered since 2019); as of the 2026-08-03 report, a KSTP request to DHS to substantiate or break down that figure was still pending.",
+  "claim_type": "AMOUNT",
+  "normalized_claim": "AG-reported ~$61M civil judgments component of the $90M headline figure; unverified against DHS data as of 2026-08-03.",
+  "subject_ids": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu",
+    "org-mn-dhs"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "unresolved",
+  "source_ids": [
+    "src-kstp-2026-08-03-restitution-collection-analysis"
+  ],
+  "jurisdiction": "Minnesota",
+  "amounts": [
+    {
+      "value": 61000000,
+      "currency": "USD",
+      "metric_type": "civil_settlement",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mfcu-90m-headline-2019-2026"
+    }
+  ],
+  "qualifiers": [
+    "Unverified: sourced only to the AG's office's own statement to a reporter, not to a DHS-confirmed ledger.",
+    "Arithmetic note: $32M restitution + $61M civil judgments = $93M, not the $90M headline figure the AG's office otherwise cites; this ~$3M discrepancy is unexplained in the source and is preserved here rather than silently rounded away."
+  ],
+  "confidence": "LOW",
+  "is_allegation": false,
+  "is_inference": false,
+  "editorial_notes": "Known gap: chase the DHS breakdown KSTP requested. If DHS responds publicly, capture as a new source and either resolve or formalize this discrepancy as a contradiction.",
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

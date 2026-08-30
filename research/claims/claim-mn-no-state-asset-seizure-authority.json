@@ -1,0 +1,39 @@
+{
+  "claim_id": "claim-mn-no-state-asset-seizure-authority",
+  "claim_text": "The Minnesota Attorney General's office told KSTP that Minnesota law does not allow the state to seize assets from convicted Medicaid fraudsters to satisfy restitution. Statutory review and FOX 9's more precise reporting show that formulation is overbroad: MFCU itself is not expressly listed as a chapter 609 forfeiture 'appropriate agency,' but Minnesota law does provide state forfeiture for property tied to designated offenses and ordinary civil execution of restitution judgments against nonexempt assets.",
+  "claim_type": "LEGAL_ELEMENT",
+  "normalized_claim": "AG agency position qualified by primary law: MFCU lacks express listing as a chapter 609 forfeiture seizing agency; Minnesota law does not categorically bar state asset seizure or civil execution to collect restitution.",
+  "subject_ids": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "evidence_class": "AGENCY_POSITION",
+  "status": "resolved",
+  "source_ids": [
+    "src-kstp-2026-08-03-restitution-collection-analysis",
+    "src-fox9-2026-05-17-restitution-collection-analysis",
+    "src-mn-laws-2026-ch127-art8-s6-609531-forfeiture",
+    "src-mn-revisor-6095312-designated-offense-forfeiture",
+    "src-mn-revisor-6095313-judicial-forfeiture-procedure",
+    "src-mn-revisor-611a04-subd3-restitution-civil-judgment",
+    "src-mn-revisor-550-judgment-execution"
+  ],
+  "jurisdiction": "Minnesota",
+  "qualifiers": [
+    "Preserve KSTP's statement as an attributed agency position, not as the corpus's own statement of Minnesota law.",
+    "FOX 9's 2026-05-17 report states the narrower point: MFCU cannot itself use criminal or civil forfeiture in the same way federal authorities do, while Minnesota's forfeiture statute lists other law-enforcement agencies and omits MFCU.",
+    "2026 Minn. Laws ch. 127, art. 8, § 6 added new § 609.467 medical assistance fraud to chapter 609's designated offenses without adding MFCU to the 'appropriate agency' list.",
+    "Minn. Stat. § 611A.04, subd. 3 makes restitution enforceable as a civil judgment; chapter 550 provides execution mechanisms against nonexempt assets and money. FOX 9 also documented MFCU prosecutors obtaining bank-account freezes and using account funds toward restitution.",
+    "Do not collapse forfeiture, pre-judgment/account freezing, civil execution, Revenue Recapture, and restitution collection into one generic 'asset seizure' label."
+  ],
+  "resolved_by_claim_id": "claim-mfcu-forfeiture-restitution-authority-2026",
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "editorial_notes": "Publication correction: replace any categorical 'Minnesota law bars state asset seizure' language with the actor-and-mechanism-specific distinction in claim-mfcu-forfeiture-restitution-authority-2026.",
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

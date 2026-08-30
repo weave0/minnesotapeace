@@ -1,0 +1,35 @@
+{
+  "claim_id": "claim-mfcu-forfeiture-restitution-authority-2026",
+  "claim_text": "Minnesota law does not categorically bar state asset seizure in Medicaid-fraud matters. Chapter 609 subjects property and proceeds associated with designated offenses to forfeiture, and the 2026 Legislature added new § 609.467 medical assistance fraud to the designated-offense definition; however, § 609.531's 'appropriate agency' list does not expressly include the Attorney General's Medicaid Fraud Control Unit. Separately, restitution orders are docketed as civil judgments and may be enforced through ordinary civil judgment execution against nonexempt assets.",
+  "claim_type": "LEGAL_ELEMENT",
+  "normalized_claim": "MFCU is not expressly listed as a chapter 609 forfeiture 'appropriate agency,' but Minnesota has both state forfeiture authority for designated offenses and civil execution mechanisms for restitution judgments.",
+  "subject_ids": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "evidence_class": "LEGAL_AUTHORITY",
+  "status": "confirmed",
+  "source_ids": [
+    "src-mn-laws-2026-ch127-art8-s6-609531-forfeiture",
+    "src-mn-revisor-6095312-designated-offense-forfeiture",
+    "src-mn-revisor-6095313-judicial-forfeiture-procedure",
+    "src-mn-revisor-611a04-subd3-restitution-civil-judgment",
+    "src-mn-revisor-550-judgment-execution",
+    "src-fox9-2026-05-17-restitution-collection-analysis"
+  ],
+  "jurisdiction": "Minnesota",
+  "qualifiers": [
+    "The precise statutory conclusion is narrower than saying 'Minnesota law does not allow the state to seize assets.' MFCU is not named in § 609.531's 'appropriate agency' definition, while other Minnesota law-enforcement agencies are.",
+    "The 2026 amendment simultaneously added § 609.467 medical assistance fraud as a designated offense for forfeiture, confirming that Medicaid-fraud-linked property can fall within the state forfeiture scheme when the statutory predicates and proper agency/procedure are present.",
+    "Restitution judgment execution and chapter 609 forfeiture are distinct tools. A frozen or levied bank account used to satisfy a restitution judgment should not be described as proof that MFCU itself possesses chapter 609 forfeiture authority.",
+    "This record does not resolve whether MFCU may coordinate with a listed 'appropriate agency' in a particular forfeiture matter, nor whether a specific asset would be forfeitable or executable; those questions are fact- and procedure-dependent."
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

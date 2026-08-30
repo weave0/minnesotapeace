@@ -1,0 +1,25 @@
+{
+  "source_id": "src-americanexperiment-2026-08-04-ellison-restitution-exchange",
+  "canonical_url": "https://www.americanexperiment.org/ellison-disputes-kstps-fraud-recovery-numbers-before-admitting-he-has-no-idea-what-they-actually-are",
+  "issuing_body": "Center of the American Experiment (advocacy/policy organization)",
+  "title": "Ellison disputes KSTP's fraud recovery numbers before admitting he has no idea what they actually are",
+  "publication_date": "2026-08-04",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_article",
+  "jurisdiction": "Minnesota",
+  "source_tier": 8,
+  "source_status": "ADVOCACY_MATERIAL",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "access_status": "blocked",
+  "notes": "Center of the American Experiment is a conservative policy-advocacy organization, not a neutral news outlet; its framing/headline is argumentative. Treat as SECONDARY_VERIFIED only for the narrow, quotable on-camera exchange it relays from KSTP's broadcast interview (which the corpus could not independently re-verify because WebFetch received HTTP 403 from this domain). Do not cite this source for editorial characterizations, only for the direct quotes attributed to named officials. If KSTP's own broadcast transcript or video becomes accessible, it should supersede this record as the primary account of the same exchange.",
+  "supports": [
+    "During a KSTP on-camera interview about the restitution-collection figures, Attorney General Keith Ellison initially disputed the reported figures and produced a paper from his jacket pocket describing MFCU recoveries from 2019 to 2025/2026.",
+    "When Ellison asked MFCU Director Nicolas Wanka whether the figures on the paper represented money actually recovered from defendants, Wanka is quoted responding 'No,' and clarifying: 'Those are restitution orders and judgments.'",
+    "Wanka is also quoted describing the paper's figures as 'recoveries, orders, some civil settlements' before the clarifying exchange with Ellison.",
+    "The underlying restitution figures referenced in the exchange (nearly $32 million ordered since 2019, roughly $3 million collected as of May) match src-kstp-2026-08-03-restitution-collection-analysis."
+  ],
+  "does_not_support": [
+    "Any claim beyond the quoted exchange; the outlet's editorializing about Ellison's competence or intent is not adopted by this corpus.",
+    "Independent confirmation of the exact broadcast date/timestamp of the interview segment; only the publication date of this secondary account is known."
+  ]
+}

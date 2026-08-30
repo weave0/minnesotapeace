@@ -1,0 +1,52 @@
+{
+  "source_id": "src-fox9-2026-05-17-restitution-collection-analysis",
+  "canonical_url": "https://www.fox9.com/news/hold-investigators-sunday-medicaid-minnesota-fraudsters-owe-millions-pay-back-little",
+  "issuing_body": "FOX 9 Minneapolis-St. Paul",
+  "title": "Medicaid in Minnesota: Fraudsters owe millions but pay back little",
+  "publication_date": "2026-05-17",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_article",
+  "jurisdiction": "Minnesota state courts; U.S. District Court (District of Minnesota) referenced for federal-tool comparison",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Independent FOX 9 investigative analysis, published roughly 11 weeks before the KSTP 2026-08-03 analysis and covering a narrower, differently-scoped case set. Do not merge its totals with the KSTP figures in src-kstp-2026-08-03-restitution-collection-analysis; see contradiction-restitution-collection-scope-kstp-vs-fox9.",
+  "supports": [
+    "FOX 9 identified 48 Minnesota Medicaid fraud cases since 2020 with a combined $13.3 million in restitution ordered.",
+    "As of spring 2026, approximately $2.355 million (about 17.7%) of that $13.3 million had been repaid, leaving roughly $11 million outstanding.",
+    "Individual case restitution amounts in the reviewed set ranged from $69 to $1.7 million.",
+    "Defendant Ali Ismail Warsame was reported to owe $667,719 in restitution.",
+    "Defendant Xiaoyan Hu was ordered to pay restitution of more than $500,000; more than $284,000 was reported recovered from Hu's accounts.",
+    "A pending attempt to reach a separate $650,000 corporate account was reported in another restitution case.",
+    "One case's restitution order, reported at $21,590, was tied to a case that was later dismissed.",
+    "Attorney General Keith Ellison said MFCU cannot itself use criminal or civil forfeiture as federal authorities do; FOX 9 separately noted that Minnesota's forfeiture law lists certain law-enforcement agencies but does not explicitly list MFCU.",
+    "FOX 9 reported that prosecutors can seek court orders freezing bank accounts for restitution and documented account funds actually applied toward restitution, demonstrating a collection mechanism distinct from chapter 609 forfeiture."
+  ],
+  "system_metrics": [
+    {
+      "metric": "restitution_ordered_48_cases_since_2020",
+      "amount": 13300000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "period_start": "2020-01-01",
+      "period_end": "2026-05-17",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "notes": "Scope is FOX 9's own reviewed set of 48 cases, not stated to be all MFCU-prosecuted cases since 2019/2020."
+    },
+    {
+      "metric": "restitution_collected_spring_2026_48_case_set",
+      "amount": 2355000,
+      "currency": "USD",
+      "qualifier": "approximately",
+      "metric_type": "recovered_amount",
+      "period_end": "2026-05-17",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "notes": "~17.7% collection rate against the $13.3M figure for this specific 48-case set."
+    }
+  ],
+  "does_not_support": [
+    "That the 48-case, $13.3M/2020-forward set is the same population as KSTP's 2019-forward, $32M MFCU-wide figure; the case counts, start years, and totals differ and the source does not reconcile them.",
+    "A full accounting of every MFCU restitution case; this is a reviewed sample, not stated to be exhaustive.",
+    "The categorical proposition that Minnesota law forbids state asset seizure. The article's narrower point is that MFCU is not explicitly listed as a chapter 609 forfeiture 'appropriate agency,' while other collection tools remain available."
+  ]
+}

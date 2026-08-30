@@ -1,0 +1,60 @@
+{
+  "claim_id": "claim-mfcu-restitution-ordered-vs-collected-2019-2026",
+  "claim_text": "Since 2019, Minnesota judges have ordered defendants in Medicaid Fraud Control Unit-prosecuted cases to pay nearly $32 million in criminal restitution; as of May 2026, only just over $3 million (roughly 9%) had actually been collected in the state court system, per a 5 INVESTIGATES review of state court records.",
+  "claim_type": "AMOUNT",
+  "normalized_claim": "MFCU criminal restitution: ~$32M ordered (2019-2026) vs ~$3M collected (as of May 2026), ~9% collection rate.",
+  "subject_ids": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "agencies": [
+    "org-mn-attorney-general-mfcu"
+  ],
+  "evidence_class": "SECONDARY_VERIFIED",
+  "status": "confirmed",
+  "source_ids": [
+    "src-kstp-2026-08-03-restitution-collection-analysis"
+  ],
+  "corroborating_source_ids": [
+    "src-americanexperiment-2026-08-04-ellison-restitution-exchange"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-kstp-2026-08-03-restitution-collection-analysis",
+      "quote": "judges have ordered defendants to pay back nearly $32 million in restitution in MFCU-prosecuted cases... the amount recorded as paid back in the state court system was just over three million dollars"
+    }
+  ],
+  "jurisdiction": "Minnesota state courts",
+  "date_start": "2019-01-01",
+  "date_end": "2026-05-31",
+  "amounts": [
+    {
+      "value": 32000000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "period_start": "2019-01-01",
+      "period_end": "2026-08-03",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": "mfcu-90m-headline-2019-2026"
+    },
+    {
+      "value": 3000000,
+      "currency": "USD",
+      "metric_type": "recovered_amount",
+      "period_end": "2026-05-31",
+      "exact_or_approximate": "approximate"
+    }
+  ],
+  "qualifiers": [
+    "Scope is MFCU-prosecuted cases only, state-court restitution orders; does not include federal cases, civil judgments, or forfeiture.",
+    "The $32M figure is a component of, not identical to, the AG's headline $90M 'judgments and recoveries' figure."
+  ],
+  "contradicting_claim_ids": [
+    "claim-fox9-48case-restitution-ordered-collected-2026-05"
+  ],
+  "confidence": "HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "reviewed_at": "2026-08-29T00:00:00Z",
+  "created_at": "2026-08-29T00:00:00Z",
+  "updated_at": "2026-08-29T00:00:00Z"
+}

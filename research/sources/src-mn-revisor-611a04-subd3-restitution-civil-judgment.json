@@ -1,0 +1,22 @@
+{
+  "source_id": "src-mn-revisor-611a04-subd3-restitution-civil-judgment",
+  "canonical_url": "https://www.revisor.mn.gov/statutes/cite/611A.04",
+  "issuing_body": "Minnesota Office of the Revisor of Statutes",
+  "title": "Minn. Stat. § 611A.04, subd. 3 — Effect of Order for Restitution",
+  "retrieval_date": "2026-08-29",
+  "document_type": "statute",
+  "jurisdiction": "Minnesota",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATUTE",
+  "evidence_class": "LEGAL_AUTHORITY",
+  "supports": [
+    "A restitution order may be enforced by a person named to receive restitution in the same manner as a judgment in a civil action.",
+    "A restitution order must be docketed as a civil judgment, and the court administrator must notify the commissioner of revenue of the restitution debt under the Revenue Recapture Act."
+  ],
+  "selected_locators": [
+    "Subd. 3 — civil-judgment enforcement and docketing of restitution orders"
+  ],
+  "important_qualifications": [
+    "Civil judgment enforcement is a different legal mechanism from criminal or civil forfeiture under chapter 609."
+  ]
+}

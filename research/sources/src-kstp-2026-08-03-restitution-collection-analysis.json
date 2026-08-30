@@ -1,0 +1,60 @@
+{
+  "source_id": "src-kstp-2026-08-03-restitution-collection-analysis",
+  "canonical_url": "https://kstp.com/kstp-news/top-news/minnesota-won-90-million-in-judgments-against-medicaid-fraudsters-only-a-fraction-is-actually-paid-back/",
+  "issuing_body": "KSTP-TV (5 Eyewitness News), 5 Investigates",
+  "author": "Morgan Reddekopp; reporting with Kirsten Swanson",
+  "title": "Minnesota won $90 million in judgments against Medicaid fraudsters. Only a fraction is actually paid back.",
+  "publication_date": "2026-08-03",
+  "retrieval_date": "2026-08-29",
+  "document_type": "news_article",
+  "jurisdiction": "Minnesota state courts",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "5 INVESTIGATES analysis of Minnesota state court records, not merely a restatement of an agency press release. Quotes the Attorney General's chief of staff directly on collection responsibility. dateModified per page metadata is 2026-08-04T14:22:38Z.",
+  "supports": [
+    "Since 2019, Minnesota's Medicaid Fraud Control Unit (MFCU) has secured more than 340 convictions and the Attorney General's office states MFCU has won $90 million in judgments and recoveries.",
+    "The $90 million figure is composed of criminal restitution ordered in MFCU-prosecuted cases plus civil settlements/judgments ordered by courts; it is not a cash-collected total.",
+    "Since 2019, judges have ordered defendants to pay back nearly $32 million in restitution in MFCU-prosecuted cases.",
+    "As of May (2026 per corpus context), the amount recorded as paid back in the state court system was just over $3 million, roughly a 9% collection rate against the $32 million ordered.",
+    "The Attorney General's office states it separately counts roughly $61 million in civil judgments; a KSTP request to DHS to substantiate/break down that figure was still pending as of publication.",
+    "The Attorney General's chief of staff stated the AG's office plays no role in collecting restitution, characterizing collection as the role of the probation system and the courts.",
+    "The article states Minnesota law does not allow the state to seize assets from convicted fraudsters, contrasted with federal authorities' reported recovery of $60-70 million in cash and assets in the Feeding Our Future investigation."
+  ],
+  "system_metrics": [
+    {
+      "metric": "mfcu_restitution_ordered_since_2019",
+      "amount": 32000000,
+      "currency": "USD",
+      "qualifier": "nearly",
+      "metric_type": "restitution_ordered",
+      "period_start": "2019-01-01",
+      "period_end": "2026-08-03",
+      "evidence_class": "SECONDARY_VERIFIED"
+    },
+    {
+      "metric": "mfcu_restitution_collected_as_of_2026_05",
+      "amount": 3000000,
+      "currency": "USD",
+      "qualifier": "just_over",
+      "metric_type": "recovered_amount",
+      "period_end": "2026-05-31",
+      "evidence_class": "SECONDARY_VERIFIED",
+      "notes": "Reported collection rate ~9% of the $32M ordered. Exact May date not specified beyond the month."
+    },
+    {
+      "metric": "ag_civil_judgments_since_2019",
+      "amount": 61000000,
+      "currency": "USD",
+      "qualifier": "roughly",
+      "metric_type": "civil_settlement",
+      "evidence_class": "AGENCY_POSITION",
+      "notes": "Attributed to the AG's office; DHS confirmation/breakdown request was pending at publication. Note $32M + $61M = $93M, not exactly the $90M headline figure; treat as an unresolved rounding/component discrepancy, not reconciled here."
+    }
+  ],
+  "does_not_support": [
+    "That the $32M ordered and the $61M civil judgments are cleanly non-overlapping components that sum to exactly $90M; the arithmetic does not match the AG's own headline and the discrepancy is unexplained in this source.",
+    "Any case-by-case or year-by-year breakdown of who paid what; the source gives only the aggregate figures.",
+    "That the 9% collection rate applies to the $61M civil-judgment component; the article's collection-rate reporting is specific to the $32M criminal-restitution component only."
+  ]
+}

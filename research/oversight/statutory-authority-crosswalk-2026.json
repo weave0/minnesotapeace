@@ -5,40 +5,74 @@
     {
       "question": "Who can administratively suspend or withhold Minnesota Medicaid provider payments?",
       "answer": "Minnesota DHS commissioner under Minn. Stat. § 256B.064, subject to the statute's predicates and federal good-cause rules.",
-      "source_ids": ["src-mn-revisor-256b064-medicaid-sanctions"],
+      "source_ids": [
+        "src-mn-revisor-256b064-medicaid-sanctions"
+      ],
       "qualification": "The existence of authority does not prove that its case-specific prerequisites were satisfied or that suspension was legally required on a particular date."
     },
     {
       "question": "Who investigates and refers suspected Medicaid fraud inside the state Medicaid agency?",
       "answer": "The Medicaid agency must establish methods to identify/investigate suspected fraud and inform the Attorney General in writing when facts may warrant civil or criminal proceedings.",
-      "source_ids": ["src-mn-revisor-256b04-subd10-medicaid-investigation-referral"]
+      "source_ids": [
+        "src-mn-revisor-256b04-subd10-medicaid-investigation-referral"
+      ]
     },
     {
       "question": "Can the Minnesota Attorney General directly prosecute Medicaid fraud?",
       "answer": "Yes. Minn. Stat. § 256B.12 authorizes the Attorney General or appropriate county attorney to institute specified criminal or civil Medicaid actions and recovery proceedings.",
-      "source_ids": ["src-mn-revisor-256b12-medicaid-legal-representation"],
+      "source_ids": [
+        "src-mn-revisor-256b12-medicaid-legal-representation"
+      ],
       "qualification": "This subject-specific authority should not be generalized to every Minnesota felony."
     },
     {
       "question": "Who ordinarily prosecutes Minnesota felonies outside subject-specific grants?",
       "answer": "County attorneys have the general statutory duty to prosecute felonies. The Attorney General may appear on county-attorney request and may prosecute an indictable offense on the Governor's written request; other statutes can grant additional direct authority.",
-      "source_ids": ["src-mn-revisor-388051-county-attorney-duties", "src-mn-revisor-8-01-ag-criminal-jurisdiction"]
+      "source_ids": [
+        "src-mn-revisor-388051-county-attorney-duties",
+        "src-mn-revisor-8-01-ag-criminal-jurisdiction"
+      ]
     },
     {
       "question": "What is the BCA Financial Crimes and Fraud Section's role?",
       "answer": "It investigates covered financial crimes and state-program fraud. State agencies generally must refer covered suspected fraud of at least $100,000, but Medicaid referrals subject to MFCU requirements are expressly carved out into the MFCU pathway.",
-      "source_ids": ["src-mn-revisor-299c061-financial-crimes-fraud-section"],
+      "source_ids": [
+        "src-mn-revisor-299c061-financial-crimes-fraud-section"
+      ],
       "qualification": "The section was created in 2025 and cannot be projected backward onto 2019-2022 events."
+    },
+    {
+      "question": "Can the Medicaid Fraud Control Unit itself seize property through Minnesota's chapter 609 forfeiture scheme?",
+      "answer": "Not by virtue of being MFCU alone. Minn. Stat. § 609.531 defines the law-enforcement entities that qualify as an 'appropriate agency' for chapter 609 forfeiture, and the 2026 amendment does not list MFCU. The same 2026 amendment adds § 609.467 medical assistance fraud to the 'designated offense' definition, so Medicaid-fraud-linked property can be within the state forfeiture scheme even though MFCU is not itself the listed seizing agency.",
+      "source_ids": [
+        "src-mn-laws-2026-ch127-art8-s6-609531-forfeiture",
+        "src-mn-revisor-6095312-designated-offense-forfeiture",
+        "src-mn-revisor-6095313-judicial-forfeiture-procedure"
+      ],
+      "qualification": "Do not turn MFCU's omission from the 'appropriate agency' list into the categorical claim that Minnesota law forbids state asset seizure. Whether a listed agency can participate in a particular case depends on the offense, property, procedure, and facts."
+    },
+    {
+      "question": "Can a Minnesota restitution judgment be enforced against a defendant's assets even without chapter 609 forfeiture?",
+      "answer": "Yes. Minn. Stat. § 611A.04, subd. 3 makes restitution enforceable in the same manner as a civil judgment and requires docketing as a civil judgment. Chapter 550 supplies ordinary judgment-execution mechanisms, including execution on nonexempt assets and levy on specified property, money, or indebtedness.",
+      "source_ids": [
+        "src-mn-revisor-611a04-subd3-restitution-civil-judgment",
+        "src-mn-revisor-550-judgment-execution"
+      ],
+      "qualification": "Civil execution, Revenue Recapture, account freezes, and chapter 609 forfeiture are different legal mechanisms and should be labeled separately."
     },
     {
       "question": "Did Minnesota lower the criminal burden of proof for CCAP fraud in 2019?",
       "answer": "No. The 2019 law created an administrative-disqualification remedy when criminal action had not been pursued. In that administrative process, intent could be shown through a pattern of rule violations and the agency bore a preponderance burden on appeal.",
-      "source_ids": ["src-mn-laws-2019-ch9-art2-s107-ccap-admin-disqualification"],
+      "source_ids": [
+        "src-mn-laws-2019-ch9-art2-s107-ccap-admin-disqualification"
+      ],
       "qualification": "This did not alter the beyond-a-reasonable-doubt burden required for a criminal conviction."
     }
   ],
   "publication_rules": [
     "Describe payment-control authority and prosecution authority separately.",
+    "Do not describe MFCU's absence from the chapter 609 'appropriate agency' list as a categorical Minnesota-law ban on state asset seizure.",
+    "Distinguish chapter 609 forfeiture from civil execution of a restitution judgment, account freezes, Revenue Recapture, and other collection tools.",
     "Do not use the phrase 'lowered the fraud standard' without specifying that the 2019 change concerned administrative disqualification rather than criminal conviction.",
     "Do not use current BCA referral law to infer what agencies were legally required to do before the section existed.",
     "For any case-specific claim that an official should have exercised an authority, cite the contemporaneous factual record establishing that the statutory predicates were met."
