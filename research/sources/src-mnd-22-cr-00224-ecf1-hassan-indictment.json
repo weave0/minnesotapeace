@@ -1,0 +1,24 @@
+{
+  "source_id": "src-mnd-22-cr-00224-ecf1-hassan-indictment",
+  "canonical_url": "https://www.justice.gov/d9/press-releases/attachments/2022/09/20/u.s._v._hassan_-_indictment_1_0.pdf",
+  "issuing_body": "U.S. District Court, District of Minnesota; publicly hosted by U.S. Department of Justice",
+  "title": "United States v. Qamar Ahmed Hassan et al. — Indictment, ECF No. 1",
+  "case_number": "0:22-cr-00224-NEB-TNL",
+  "document_date": "2022-09-13",
+  "retrieval_date": "2026-08-30",
+  "document_type": "indictment",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CHARGED_ALLEGED",
+  "notes": "Original ECF No. 1 indictment. The official DOJ-hosted PDF is unusually large and was not committed as a binary in this pass; the DOJ attachment remains the canonical host. Search-indexed text from the official attachment identifies the filing as Doc. 1 filed 2022-09-13 and reproduces the Count 1 statute language.",
+  "supports": [
+    "Count 1 charges conspiracy to commit wire fraud in violation of 18 U.S.C. §§ 371 and 1343.",
+    "The original indictment does not use 18 U.S.C. § 1349 for Count 1; the charged wire-fraud conspiracy is the general conspiracy statute, § 371, with § 1343 as the object offense.",
+    "The indictment is the original charging instrument in case 0:22-cr-00224, not a later superseding indictment."
+  ],
+  "does_not_support": [
+    "A network-wide conclusion that no Feeding Our Future charging instrument ever used § 1349; this source is specific to 22-CR-224.",
+    "Adjudicated guilt; these are charging allegations."
+  ]
+}
