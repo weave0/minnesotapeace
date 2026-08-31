@@ -1,0 +1,26 @@
+{
+  "source_id": "src-cms-federal-register-2026-00512-mn-1904-hearing",
+  "canonical_url": "https://www.federalregister.gov/d/2026-00512",
+  "issuing_body": "Centers for Medicare & Medicaid Services, U.S. Department of Health and Human Services",
+  "author": "Centers for Medicare & Medicaid Services",
+  "title": "Notice of Opportunity for Hearing on Compliance of Minnesota State Plan Provisions Concerning Program Integrity and Fraud, Waste, and Abuse With Title XIX (Medicaid) of the Social Security Act",
+  "document_date": "2026-01-14",
+  "retrieval_date": "2026-08-31",
+  "document_type": "federal_register_notice",
+  "jurisdiction": "Federal; Minnesota Medicaid",
+  "source_tier": 1,
+  "source_status": "PRIMARY_GOVERNMENT_RECORD",
+  "evidence_class": "AGENCY_FINDING",
+  "notes": "Federal Register document 2026-00512. The official notice embeds the January 6, 2026 CMS Administrator letter to Governor Tim Walz and supplies the previously missing section 1904 hearing notice provenance.",
+  "supports": [
+    "CMS formally offered Minnesota an administrative hearing under section 1904 of the Social Security Act concerning substantial noncompliance findings tied to section 1902(a)(64) and 42 CFR Part 455, Subpart A.",
+    "The notice reproduces the January 6, 2026 letter to Governor Tim Walz, closing the prior gap where the letter's full text was available only through a third-party circulating reproduction.",
+    "CMS states that on December 5, 2025 it formally notified the Minnesota Medicaid Director of its concerns and directed the State to submit a comprehensive corrective action plan by December 31, 2025.",
+    "CMS states that its focused review concerned fourteen high-risk Medicaid services and describes a proposed federal financial participation withholding pending compliance."
+  ],
+  "does_not_support": [
+    "That every suspected or improper Medicaid payment in Minnesota was fraudulent or criminal.",
+    "A final adjudication after hearing that Minnesota was noncompliant; the document is a notice and agency finding with an opportunity for hearing.",
+    "The March 19, 2026 CMS approval letter for Minnesota's revised corrective action plan."
+  ]
+}
