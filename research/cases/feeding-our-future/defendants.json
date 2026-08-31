@@ -87,7 +87,7 @@
     "canonical_name": "Ahmed Sharif Omar-Hashim",
     "case_docket": "22-CR-223",
     "group": "Olive Management",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "alleged_amount": 5000000,
     "organizations": [
@@ -95,8 +95,12 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-usao-mn-2026-08-27-fof-three-sentences"
+    ],
+    "plea_status": "guilty",
+    "sentencing_date": "2026-08-27",
+    "sentence": "36 months (one count wire fraud)"
   },
   {
     "defendant_id": "fof-d-006",
@@ -120,7 +124,7 @@
     "canonical_name": "Abdihakim Ali Ahmed",
     "case_docket": "22-CR-223",
     "group": "ASA Limited",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "alleged_amount": 5000000,
     "organizations": [
@@ -128,8 +132,13 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-usao-mn-2026-08-27-fof-three-sentences"
+    ],
+    "plea_status": "guilty",
+    "sentencing_date": "2026-08-26",
+    "sentence": "54 months (one count wire fraud, one count money laundering)",
+    "restitution": 2242590
   },
   {
     "defendant_id": "fof-d-008",
@@ -210,13 +219,18 @@
     "canonical_name": "Ahmed Abdullahi Ghedi",
     "case_docket": "22-CR-223",
     "group": "ASA Limited",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "alleged_amount": 5000000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-usao-mn-2026-08-27-fof-three-sentences"
+    ],
+    "plea_status": "guilty",
+    "sentencing_date": "2026-08-26",
+    "sentence": "65 months (one count wire fraud, one count money laundering)",
+    "restitution": 2862451
   },
   {
     "defendant_id": "fof-d-014",
