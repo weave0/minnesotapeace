@@ -72,14 +72,18 @@
     "canonical_name": "Abdulkadir Nur Salah",
     "case_docket": "22-CR-223",
     "group": "Safari",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 16000000,
-    "notes": "Safari >$16 million alleged_loss at group level.",
+    "notes": "Safari >$16 million alleged_loss at group level. Pleaded guilty to one count of wire fraud. Safari Restaurant received $16 million alleged; plea-agreement recommended sentence of 9 to 11.5 years and $5.5 million restitution (not yet sentenced).",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 5500000
   },
   {
     "defendant_id": "fof-d-005",
@@ -108,15 +112,20 @@
     "canonical_name": "Abdi Nur Salah",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "organizations": [
       "Stigma-Free"
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 1000000,
+    "notes": "Pleaded guilty to one count of wire fraud. Former aide to Minneapolis Mayor Jacob Frey; admitted pocketing more than $1 million via nonprofit Stigma Free International; plea-agreement recommended sentence of roughly two years (not yet sentenced)."
   },
   {
     "defendant_id": "fof-d-007",
@@ -159,13 +168,17 @@
     "canonical_name": "Abdikadir Ainanshe Mohamud",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free Willmar",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 4000000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of wire fraud. Ran Stigma-Free Willmar food site at FaaFan Restaurant; admitted siphoning more than $5 million; plea-agreement recommended sentence of roughly four to five years (not yet sentenced)."
   },
   {
     "defendant_id": "fof-d-010",
@@ -436,7 +449,7 @@
     "canonical_name": "Qamar Ahmed Hassan",
     "case_docket": "22-CR-224",
     "group": "S&S Catering",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 18000000,
     "organizations": [
@@ -444,8 +457,12 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to money laundering and conspiracy to commit wire fraud. Owned/operated S&S Catering; admitted transferring more than $800,000 of proceeds to personal accounts (Jeep Wrangler, Range Rover, Brooklyn Park townhome, Nairobi apartment)."
   },
   {
     "defendant_id": "fof-d-024",
@@ -486,12 +503,17 @@
     "person_id": "fof-p-filsan-mumin-hassan",
     "canonical_name": "Filsan Mumin Hassan",
     "case_docket": "22-CR-224",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 361000,
+    "notes": "Pleaded guilty to conspiracy to commit wire fraud and money laundering. Operated Youth for Higher Educational Achievement, which received more than $2.5 million; agreed to pay $361,000 in restitution."
   },
   {
     "defendant_id": "fof-d-027",
@@ -540,16 +562,19 @@
     "canonical_name": "Abdul Abubakar Ali",
     "case_docket": "22-CR-224",
     "group": "Youth Inventors Lab",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "organizations": [
       "Youth Inventors Lab"
     ],
-    "notes": "~1.5 million meals claimed.",
+    "notes": "~1.5 million meals claimed. Pleaded guilty on October 26 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran Youth Inventors Lab food site, which never served a meal but claimed 1.3 million meals to obtain $3 million.",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-030",
@@ -569,13 +594,18 @@
     "person_id": "fof-p-haji-osman-salad",
     "canonical_name": "Haji Osman Salad",
     "case_docket": "22-CR-226",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 11600000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 11400000,
+    "notes": "Pleaded guilty to one count of wire fraud. Ran Hajis Kitchen; admitted stealing $19 million and pocketing $11.4 million; agreed to pay $11.4 million in restitution."
   },
   {
     "defendant_id": "fof-d-032",
@@ -600,7 +630,7 @@
     "canonical_name": "Anab Artan Awad",
     "case_docket": "22-CR-226",
     "group": "MCA",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 11000000,
     "organizations": [
@@ -608,22 +638,30 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of wire fraud for fraudulently obtaining $9.3 million via nonprofit Multiple Community Services (five food sites in Minneapolis, Osseo, and Faribault); claimed 3.8 million meals served but admitted serving only a fraction."
   },
   {
     "defendant_id": "fof-d-034",
     "person_id": "fof-p-sharmarke-issa",
     "canonical_name": "Sharmarke Issa",
     "case_docket": "22-CR-226",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 7400000,
-    "notes": ">$7.4 million caused to be paid.",
+    "notes": ">$7.4 million caused to be paid. Pleaded guilty to one count of wire fraud via Minnesotas Somali Community; agreed to pay $3.6 million in restitution. Separately served nearly three years as board chair of the Minneapolis Public Housing Authority (MPHA), reportedly the first Somali in the nation to chair a public housing agency governing body.",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 3600000
   },
   {
     "defendant_id": "fof-d-035",
@@ -631,15 +669,19 @@
     "canonical_name": "Farhiya Mohamud",
     "case_docket": "22-CR-226",
     "group": "Dua Supplies",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "organizations": [
       "Dua Supplies"
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of money laundering. Plea deal states she was not involved in or aware of the broader scheme but should have known money received was criminally derived; admitted her son, co-defendant Sharmarke Issa, directed her to buy real estate using money from co-defendants Haji Salad and Fahad Nur. Prosecutors and defense recommended a one-year probationary sentence."
   },
   {
     "defendant_id": "fof-d-036",
@@ -647,7 +689,7 @@
     "canonical_name": "Liban Yasin Alishire",
     "case_docket": "22-CR-222",
     "group": "CES",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 1600000,
     "organizations": [
@@ -655,8 +697,13 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 714000,
+    "notes": "Pleaded guilty to one count of wire fraud and one count of money laundering. Claimed 870,000 meals served via Community Enhancement Services and Lake Street Kitchen; fraudulently obtained $2.4 million, kept $714,000; agreed to pay $714,000 restitution and forfeit a Kenyan resort, a Kenyan apartment, a Ford F150, and a boat and trailer."
   },
   {
     "defendant_id": "fof-d-037",
@@ -791,39 +838,49 @@
     "person_id": "fof-p-bekam-addissu-merdassa",
     "canonical_name": "Bekam Addissu Merdassa",
     "group": "information, 2022",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
-    "notes": "Charged by information with conspiracy to commit wire fraud.",
+    "notes": "Charged by information with conspiracy to commit wire fraud. Pleaded guilty on October 13 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran shell company Youth Inventors Lab, which never served a meal but collected $3 million by claiming 1.3 million meals served (December 2020-June 2021).",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-046",
     "person_id": "fof-p-hadith-yusuf-ahmed",
     "canonical_name": "Hadith Yusuf Ahmed",
     "group": "information, 2022",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "source_ids": [
       "S01",
-      "S24"
+      "S24",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "Recruiter role described in later Bock filings (S24).",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "Recruiter role described in later Bock filings (S24). Pleaded guilty on October 13 (year not stated in source) to one count of conspiracy to commit wire fraud. Previously monitored Feeding Our Future food-site enrollment; admitted accepting $1 million in kickbacks and starting shell company Southwest Metro Youth, which received $1.1 million by falsely claiming to feed 2,000 children a day.",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-047",
     "person_id": "fof-p-hanna-marekegn",
     "canonical_name": "Hanna Marekegn",
     "group": "information, 2022",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty on October 13 (year not stated in source) to one count of conspiracy to commit wire fraud. Owned Brava Cafe (Minneapolis; a distinct business from the Rochester Brava Restaurant and Cafe LLC tied to the Jama family in 22-CR-225); admitted the restaurant received $7.1 million by claiming to serve more than two million meals (September 2020-January 2022) and that she paid more than $150,000 in bribes to Feeding Our Future employees."
   },
   {
     "defendant_id": "fof-d-048",
@@ -831,13 +888,18 @@
     "canonical_name": "Kawsar Jama",
     "case_docket": "22-CR-226",
     "group": "wave 2",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 3700000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "investigation_family": "inv-feeding-our-future"
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 1300000,
+    "notes": "Pleaded guilty to one count of wire fraud. Operated four food sites including one in Pelican Rapids claiming to serve 2,560 children daily (exceeding the citys total population); plea-agreement recommended sentence of about three to three-and-a-half years and $1.3 million restitution (not yet sentenced)."
   },
   {
     "defendant_id": "fof-d-049",
@@ -845,13 +907,18 @@
     "canonical_name": "Abdikadir Kadiye",
     "case_docket": "22-CR-226",
     "group": "wave 2",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 1100000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "investigation_family": "inv-feeding-our-future"
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 876897,
+    "notes": "Pleaded guilty to wire fraud. Used Hobyo Health Care Foundation to register three meal sites (Eden Prairie, Minneapolis, Minnetonka); stole more than $1 million via invented childrens names; agreed to pay $876,897 restitution. No sentencing date set as of the March 2025 source."
   },
   {
     "defendant_id": "fof-d-050",
@@ -859,14 +926,18 @@
     "canonical_name": "Abdulkadir Awale",
     "case_docket": "22-CR-226",
     "group": "wave 2",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 11800000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "≥$83,000 kickbacks alleged.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "≥$83,000 kickbacks alleged. Pleaded guilty to one count of wire fraud. Enrolled three of his own restaurants over a 21-month period; stole more than $11 million spent on his home mortgage, two semi trucks, and a Chevy Traverse SUV; agreed to pay more than $2 million restitution.",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 2000000
   },
   {
     "defendant_id": "fof-d-051",
@@ -874,28 +945,34 @@
     "canonical_name": "Khadra Abdi",
     "case_docket": "22-CR-226",
     "group": "wave 2",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 3400000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "≥$17,000 kickbacks alleged.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "≥$17,000 kickbacks alleged. Pleaded guilty to one count of wire fraud. Ran the Shafii Tutoring and Homework Help Center food site; fraudulently claimed close to $3.5 million in reimbursements (April 2020-December 2021); plea-agreement recommended sentence of 2.25 to 2.75 years (not yet sentenced).",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-052",
     "person_id": "fof-p-ayan-farah-abukar",
     "canonical_name": "Ayan Farah Abukar",
     "case_docket": "23-CR-80",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 5700000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "~$5.7 million received; >$330,000 kickbacks.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "~$5.7 million received; >$330,000 kickbacks. Pleaded guilty to one count of conspiracy to commit wire fraud. Founded Action for East African People; received about $5.7 million in federal funds and paid more than $330,000 in kickbacks to a Feeding Our Future employee; spent proceeds on a Lakeville commercial property and an aircraft in Kenya.",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-053",
@@ -938,14 +1015,18 @@
     "canonical_name": "Mohamed Ali Hussein",
     "case_docket": "23-CR-91",
     "group": "information",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 5000000,
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": ">$5 million with Lul Ali; >$100,000 kickbacks.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": ">$5 million with Lul Ali; >$100,000 kickbacks. Pleaded guilty to one count of wire fraud. Nonprofit Somali American Faribault Education claimed to serve 2,500 meals a day; jointly with co-defendant Lul Bashir Ali admitted defrauding the government of more than $5 million; jointly agreed to repay that amount and forfeit three properties and one car (joint obligation, not additive with fof-d-056).",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 5000000
   },
   {
     "defendant_id": "fof-d-056",
@@ -953,28 +1034,36 @@
     "canonical_name": "Lul Bashir Ali",
     "case_docket": "23-CR-91",
     "group": "information",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "alleged_amount": 5000000,
     "source_ids": [
       "S02",
-      "S22"
+      "S22",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "Cooperator testimony at Bock trial (S22). Status remains charged in this corpus (no plea PR captured as a numbered primary for her own case).",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "Cooperator testimony at Bock trial (S22). Status remains charged in this corpus (no plea PR captured as a numbered primary for her own case). Pleaded guilty to one count of wire fraud. Claimed to feed 1,600 children a day through her restaurant, Lido Restaurant, via fake attendance records and invoices; jointly with co-defendant Mohamed Ali Hussein agreed to repay more than $5 million and forfeit three properties and a car (joint obligation, not additive with fof-d-055).",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 5000000
   },
   {
     "defendant_id": "fof-d-057",
     "person_id": "fof-p-mulata-yusuf-ali",
     "canonical_name": "Mulata Yusuf Ali",
     "case_docket": "23-CR-92",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2023-03-13",
     "source_ids": [
-      "S02"
+      "S02",
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
     ],
-    "notes": "Charged with theft of government funds.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "Charged with theft of government funds. Pleaded guilty to one count of aiding and abetting the theft of public money. Operated Franklyn Transportation LLC, used to launder more than $2 million; was paid close to $100,000 for use of the businesss bank account. Plea-agreement guideline sentence of 24 to 30 months and $95,099 restitution (not yet sentenced).",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null,
+    "restitution": 95099
   },
   {
     "defendant_id": "fof-d-058",

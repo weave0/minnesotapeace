@@ -1,0 +1,80 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr226-plea-dispositions",
+  "claim_text": "Eight defendants in case 22-CR-226, previously listed in this corpus only as 'charged,' pleaded guilty per a Hiiraan Online tracker: Haji Osman Salad (Haji's Kitchen) pleaded guilty to one count of wire fraud, admitting he stole $19 million and pocketed $11.4 million, and agreed to pay $11.4 million in restitution; Anab Artan Awad (Multiple Community Services) pleaded guilty to one count of wire fraud for fraudulently obtaining $9.3 million, admitting she served only a fraction of the 3.8 million meals claimed; Sharmarke Issa (Minnesota's Somali Community, and separately a former board chair of the Minneapolis Public Housing Authority) pleaded guilty to one count of wire fraud and agreed to pay $3.6 million in restitution; Farhiya Mohamud (Sharmarke Issa's mother) pleaded guilty to one count of money laundering, admitting she should have known money she received from co-defendants Haji Salad and Fahad Nur was criminally derived, with a recommended one-year probationary sentence; Kawsar Jama pleaded guilty to one count of wire fraud tied to a Pelican Rapids food site claiming to serve more children daily than the city's population, and agreed to pay just over $1.3 million in restitution; Abdikadir Kadiye (Hobyo Health Care Foundation) pleaded guilty to wire fraud, admitting he stole more than $1 million via invented children's names, and agreed to pay $876,897 in restitution, with no sentencing date set as of the source's publication; Abdulkadir Awale pleaded guilty to one count of wire fraud, admitting he stole more than $11 million across three restaurants, and agreed to pay more than $2 million in restitution; Khadra Abdi (Shafi'i Tutoring & Homework Help Center) pleaded guilty to one count of wire fraud, fraudulently claiming close to $3.5 million in reimbursements.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00226",
+  "date_start": "2022-09-20",
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Haji Salad... pleaded guilty to one count of wire fraud... He agreed to pay $11.4 million in restitution... Farhiya Mohamud... admitted in court that her son, Sharmarke Issa, who also pleaded guilty in the case, directed her to buy real estate for him using money she received from co-defendants Haji Salad and Fahad Nur."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 11400000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Haji Osman Salad's plea-agreement restitution figure, per Hiiraan Online; not yet confirmed against a primary judgment."
+    },
+    {
+      "value": 3600000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Sharmarke Issa's plea-agreement restitution figure, per Hiiraan Online."
+    },
+    {
+      "value": 1300000,
+      "currency": "USD",
+      "exact_or_approximate": "approximate",
+      "metric_type": "restitution_ordered",
+      "overlap_group_id": null,
+      "methodology": "Kawsar Jama's plea-agreement restitution figure ('just over $1.3 million'), per Hiiraan Online."
+    },
+    {
+      "value": 876897,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Abdikadir Kadiye's plea-agreement restitution figure, per Hiiraan Online."
+    },
+    {
+      "value": 9300000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Amount Anab Artan Awad admitted fraudulently obtaining, per Hiiraan Online."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for any of these eight defendants; all dispositions rest on a single secondary journalism source.",
+    "No exact plea dates are given for any of the eight in the retrieved source text.",
+    "Fahad Nur is named in Farhiya Mohamud's entry as a co-defendant but the source does not state his own plea status; fof-d-032 (Fahad Nur) is left as 'charged' pending further research.",
+    "Abdulkadir Awale's restitution and Abdikadir Kadiye's restitution reflect plea-agreement figures, not confirmed judgments; sentencing has explicitly not occurred for Abdikadir Kadiye as of publication and is unconfirmed for the others."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction. This single source resolved eight of nine still-'charged' defendants in 22-CR-226 in one pass; only Fahad Nur remains unresolved."
+}
