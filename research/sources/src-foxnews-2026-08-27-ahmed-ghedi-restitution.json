@@ -1,0 +1,25 @@
+{
+  "source_id": "src-foxnews-2026-08-27-ahmed-ghedi-restitution",
+  "canonical_url": "https://www.foxnews.com/politics/judge-sentences-feeding-our-future-fraudsters-faked-running-child-nutrition-site",
+  "issuing_body": "Fox News",
+  "title": "Judge sentences Feeding Our Future fraudsters who faked running child nutrition site",
+  "publication_date": "2026-08-27",
+  "retrieval_date": "2026-08-31",
+  "document_type": "news_article",
+  "case_number": "0:22-cr-00223",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "USAO-MN's own press release (src-usao-mn-2026-08-27-fof-three-sentences) explicitly does not state restitution amounts for Ahmed or Ghedi. This article supplies specific restitution figures not in the primary release; treat as secondary until a sentencing judgment or docket entry is captured.",
+  "supports": [
+    "Abdihakim Ahmed was ordered to pay restitution of $2,242,590.",
+    "Ahmed Ghedi was ordered to pay restitution of $2,862,451.",
+    "Ghedi and Ahmed diverted approximately $7.3 million in federal Child Nutrition Program funds through a fraudulent meal site, including funds used for a car, property, and kickbacks to a Feeding Our Future employee.",
+    "Ghedi's site claimed to receive $7.2 million total from the Federal Child Nutrition Program through fraudulent claims."
+  ],
+  "does_not_support": [
+    "A case number, docket citation, or judge's name; not stated in this article.",
+    "Any restitution figure for Ahmed Sharif Omar-Hashim, the third defendant sentenced in the same USAO release."
+  ]
+}

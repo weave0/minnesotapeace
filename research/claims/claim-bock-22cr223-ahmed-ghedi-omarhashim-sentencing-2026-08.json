@@ -1,0 +1,63 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "ADJUDICATED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-bock-22cr223-ahmed-ghedi-omarhashim-sentencing-2026-08",
+  "claim_text": "In No. 0:22-cr-00223, Abdihakim Ali Ahmed was sentenced on August 26, 2026 to 54 months for one count of wire fraud and one count of money laundering; Ahmed Abdullahi Ghedi was sentenced the same day to 65 months on the same two counts; and Ahmed Sharif Omar-Hashim (aka Salah Donyale) was sentenced August 27, 2026 to 36 months for one count of wire fraud. USAO-MN described the three as the 24th, 25th, and 26th Feeding Our Future defendants sentenced. USAO-MN's release does not state restitution amounts; Fox News separately reported Ahmed was ordered to pay $2,242,590 and Ghedi $2,862,451 in restitution.",
+  "claim_type": "DISPOSITION",
+  "status": "PROVEN_AT_TRIAL",
+  "case_number": "0:22-cr-00223",
+  "event_date": "2026-08-26",
+  "date_start": "2026-08-26",
+  "date_end": "2026-08-27",
+  "source_ids": [
+    "src-usao-mn-2026-08-27-fof-three-sentences",
+    "src-foxnews-2026-08-27-ahmed-ghedi-restitution"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2026-08-27-fof-three-sentences",
+      "locator": "USAO-MN press release, August 27, 2026",
+      "quote": "Abdihakim Ali Ahmed was sentenced on 2026-08-26 to 54 months for one count of wire fraud and one count of money laundering."
+    },
+    {
+      "source_id": "src-foxnews-2026-08-27-ahmed-ghedi-restitution",
+      "locator": "Fox News, August 27, 2026",
+      "quote": "Abdihakim Ahmed was ordered to pay restitution of $2,242,590. Ahmed Ghedi was ordered to pay restitution of $2,862,451."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 2242590,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Reported by Fox News; not stated in USAO-MN's own press release. Pending a captured judgment or docket entry."
+    },
+    {
+      "value": 2862451,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Reported by Fox News; not stated in USAO-MN's own press release. Pending a captured judgment or docket entry."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "Sentencing dates, terms, and counts are ADJUDICATED-tier, sourced directly to USAO-MN's own press release.",
+    "The two restitution figures are SECONDARY_VERIFIED from a single outlet (Fox News); no second independent outlet or primary judgment/docket entry has been captured confirming them. Do not treat as ADJUDICATED until a sentencing judgment or docket entry is retrieved.",
+    "No restitution figure is available for Omar-Hashim in any source captured in this pass.",
+    "This reconciles a status gap: research/cases/feeding-our-future/defendants.json previously listed all three defendants as status 'charged' with only the original 2022 charged_date, despite this sentencing having already been captured as a source in an earlier pass and never actioned into a status update. Corrected here."
+  ],
+  "editorial_notes": "Prompted by a freshness review flagging the August 27, 2026 USAO sentencing releases as requiring defendant-by-defendant status reconciliation rather than trusting an older case-status snapshot."
+}
