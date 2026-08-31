@@ -173,17 +173,22 @@
     "canonical_name": "Abdinasir Mahamed Abshir",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free Mankato",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "alleged_amount": 5000000,
     "source_ids": [
-      "S01"
+      "S01",
+      "src-usao-mn-2026-08-18-fof-abshir-sentence"
     ],
     "journalism_leads": [
       "L02"
     ],
     "notes": "Journalism (L02, 2026-08-19) says sentenced 6.5 years for witness tampering. Status remains charged. Do not upgrade from journalism.",
-    "investigation_family": "inv-feeding-our-future"
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": "2025-03-07",
+    "sentencing_date": "2026-08-18",
+    "sentence": "78 months (reflects 2025-02-18 witness-tampering conduct during Bock/Said trial per USAO)"
   },
   {
     "defendant_id": "fof-d-011",
@@ -286,14 +291,19 @@
     "canonical_name": "Mohamed Jama Ismail",
     "case_docket": "22-CR-124",
     "group": "Empire",
-    "status": "charged",
+    "status": "convicted",
     "charged_date": "2022-09-20",
     "alleged_amount": 28000000,
     "notes": "No later status in captured PRs. Empire Cuisine >$28 million alleged_loss, group.",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-usao-mn-2024-06-07-first-fof-trial-verdict",
+      "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown"
+    ],
+    "trial_status": "completed",
+    "trial_dates": "2024-04-22/2024-06-07",
+    "verdict": "guilty on 3 of 4 counts (2024-06-07)"
   },
   {
     "defendant_id": "fof-d-017",
@@ -371,12 +381,17 @@
     "person_id": "fof-p-abdiwahab-maalim-aftin",
     "canonical_name": "Abdiwahab Maalim Aftin",
     "case_docket": "22-CR-124",
-    "status": "charged",
+    "status": "acquitted",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-minnesotareformer-2024-06-07-first-fof-trial-verdict",
+      "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown"
+    ],
+    "trial_status": "completed",
+    "trial_dates": "2024-04-22/2024-06-07",
+    "verdict": "acquitted on all 3 counts (2024-06-07)"
   },
   {
     "defendant_id": "fof-d-021",
@@ -403,12 +418,17 @@
     "person_id": "fof-p-hayat-mohamed-nur",
     "canonical_name": "Hayat Mohamed Nur",
     "case_docket": "22-CR-124",
-    "status": "charged",
+    "status": "convicted",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-usao-mn-2024-06-07-first-fof-trial-verdict",
+      "src-fox9-2024-06-07-first-fof-trial-verdict-breakdown"
+    ],
+    "trial_status": "completed",
+    "trial_dates": "2024-04-22/2024-06-07",
+    "verdict": "guilty on 3 of 5 counts (2024-06-07)"
   },
   {
     "defendant_id": "fof-d-023",
@@ -1061,17 +1081,22 @@
     "person_id": "fof-p-hussein-mohamed-farah",
     "canonical_name": "Hussein Mohamed Farah",
     "group": "73rd defendant; information; New Vision Foundation",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2025-08-06",
     "alleged_amount": 2700000,
     "organizations": [
       "New Vision Foundation"
     ],
     "source_ids": [
-      "S03"
+      "S03",
+      "src-fox9-2026-08-27-hussein-farah-sentencing"
     ],
     "notes": "73rd defendant. One count wire fraud. New Vision received approximately $2.7 million Feb 2021–Jan 2022.",
-    "investigation_family": "inv-feeding-our-future"
+    "investigation_family": "inv-feeding-our-future",
+    "case_docket": "0:25-cr-00297",
+    "sentencing_date": "2026-08-27",
+    "sentence": "20 months plus 2 years supervised release (SECONDARY_VERIFIED, FOX 9; pending primary judgment)",
+    "restitution": 471000
   },
   {
     "defendant_id": "fof-d-066",

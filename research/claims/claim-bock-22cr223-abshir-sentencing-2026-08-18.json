@@ -1,0 +1,39 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "ADJUDICATED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-bock-22cr223-abshir-sentencing-2026-08-18",
+  "claim_text": "Abdinasir Mahamed Abshir, charged in No. 0:22-cr-00223 in connection with the Stigma-Free Mankato site, pleaded guilty on March 7, 2025 and was sentenced on August 18, 2026 to 78 months in prison. USAO-MN states the sentence reflects a 2025-02-18 effort to tamper with a cooperating trial witness during the Bock/Said trial, and described Abshir as the 23rd Feeding Our Future defendant sentenced. This confirms, from a primary USAO source, a sentence this corpus had previously logged only as a LEAD_UNVERIFIED journalism report of 'sentenced 6.5 years' (78 months = 6.5 years).",
+  "claim_type": "DISPOSITION",
+  "status": "PROVEN_AT_TRIAL",
+  "case_number": "0:22-cr-00223",
+  "event_date": "2026-08-18",
+  "date_start": "2025-03-07",
+  "date_end": "2026-08-18",
+  "source_ids": [
+    "src-usao-mn-2026-08-18-fof-abshir-sentence"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2026-08-18-fof-abshir-sentence",
+      "locator": "USAO-MN press release, August 18, 2026",
+      "quote": "Abdinasir Mahamed Abshir was sentenced on 2026-08-18 to 78 months in prison."
+    }
+  ],
+  "amounts": [],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "The release does not state a restitution figure; do not infer one.",
+    "Do not treat the witness-tampering conduct described as a separate adjudicated conviction; USAO's release describes it as a factor reflected in the sentence, not a distinct charged/convicted offense captured in this corpus.",
+    "Reconciles a status gap: research/cases/feeding-our-future/defendants.json and DEFENDANTS.md previously listed Abshir as 'charged' with the sentencing noted only as an unverified journalism lead, despite this primary USAO source already being captured in an earlier pass and never actioned into a status update."
+  ],
+  "editorial_notes": "Second finding in the freshness/disposition-reconciliation pass prompted by the August 27, 2026 USAO sentencing releases."
+}
