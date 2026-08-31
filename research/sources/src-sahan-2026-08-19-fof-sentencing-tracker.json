@@ -1,0 +1,40 @@
+{
+  "source_id": "src-sahan-2026-08-19-fof-sentencing-tracker",
+  "canonical_url": "https://sahanjournal.com/public-safety/who-has-been-sentenced-feeding-our-future/",
+  "issuing_body": "Sahan Journal",
+  "author": "Katrina Pross",
+  "title": "Here's everyone who's been sentenced in the Feeding Our Future fraud",
+  "publication_date": "2025-01-24",
+  "retrieval_date": "2026-08-31",
+  "document_type": "news_article_running_tracker",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Sahan Journal's own primary running tracker of FOF sentencings, listed in chronological order of sentencing date (originally published 2025-01-24, page states 'Updated August 19, 2026'). Retrieved via direct fetch with a browser user-agent; returned full server-rendered article text on the first attempt. Confirms and dates several sentencings already in this corpus from primary/USAO sourcing (Aimee Bock, Sahra Nur, Abdinasir Mahamed Abshir, Abdullahe Nur Jesow, Zamzam Jama) and adds new sentencing dates/amounts for defendants this corpus previously had only as 'pleaded'.",
+  "supports": [
+    "Aimee Bock was sentenced on May 21, 2026 to 41.6 years in prison, found responsible for $242 million in fraud; described by the sentencing judge as the 'epicenter' of a 'vortex of fraud.'",
+    "Abdiaziz Farah was sentenced August 6, 2025 to 28 years in prison for the fraud scheme (personally taking about $8 million), and on July 22, 2026 a federal judge sentenced him to an additional 10 years for attempting to bribe a juror, for a total of 38 years.",
+    "Khadar Adan was sentenced to one year of probation on April 29, 2026, after pleading guilty in September 2025 to one count of theft of government property (misdemeanor); ordered to repay $1,000 in restitution.",
+    "Abdul Abubakar Ali was sentenced to one year of prison on March 30, 2026; he had pleaded guilty in October 2022 to one count of conspiracy to commit wire fraud.",
+    "Bekam Merdassa avoided prison and was sentenced to two years of probation on April 6, 2026, and ordered to pay roughly $343,000 in restitution; U.S. District Judge Nancy Brasel departed from the previously agreed two-year prison recommendation, with Assistant U.S. Attorney Matt Murphy reportedly agreeing that Bekam had played a key cooperating role.",
+    "Yusuf Bashir Ali was sentenced to 1.5 years in prison on April 15, 2026; he had pleaded guilty in September 2023 to conspiracy to commit wire fraud and stealing nearly $280,000.",
+    "Mulata Ali (Mulata Yusuf Ali) was sentenced to one year of probation on April 29, 2026, after pleading guilty to one count of aiding and abetting the theft of public money.",
+    "Sharmake Jama was sentenced to one year and four months in prison on May 7, 2026; his sentence was significantly reduced from the four-to-five-year recommendation due to his cooperation with the government, including testifying at the 2025 trial of Aimee Bock.",
+    "Filsan Hassan (Filsan Mumin Hassan) was sentenced to three years in prison on May 7, 2026.",
+    "Najmo Ahmed was sentenced to 14 months in prison on June 15, 2026; she and her husband owned Evergreen Grocery and Deli, which allegedly took $4.1 million in fraud and paid kickbacks to Abdikerm Eidleh.",
+    "Asha Jama was sentenced to six months in prison on June 16, 2026, and ordered to repay $450,000.",
+    "Mustafa Jama was sentenced to 14 months in prison on July 8, 2026, and ordered to pay $1.4 million in restitution.",
+    "Ahmed Yasin Ali was sentenced to one year of probation on August 4, 2026, and ordered to pay $61,000 in restitution.",
+    "Ahmed Artan was sentenced to two years and nine months in prison on August 13, 2026.",
+    "Abdinasir Mahamed Abshir was sentenced to six-and-a-half years in prison on August 18, 2026; his prior guilty plea to attempted witness tampering played a role in the sentence.",
+    "Zamzam Jama was sentenced to six months in prison on April 1, 2026, and is personally responsible for $491,245 in restitution.",
+    "Abdullahe Nur Jesow was sentenced on April 9, 2026 to three-and-a-half years in prison, two years of supervised release, and roughly $866,000 in restitution.",
+    "Sahra Nur was sentenced on May 23, 2025 to four years and three months in prison, with $5 million in restitution and two years of supervised release."
+  ],
+  "does_not_support": [
+    "This is journalism, not the primary judgments themselves.",
+    "A sentencing date for Asad Mohamed Abshir, Hamdi Hussein Omar, Mahad Ibrahim, Abdirahman Mohamud Ahmed, Abdiwahab Ahmed Mohamud, or Hibo Daar; none of these five appear in this sentencing tracker, only in the companion guilty-pleas tracker (src-sahan-2026-08-19-fof-guilty-pleas-tracker), and remain 'pleaded' rather than 'sentenced' in this corpus.",
+    "Minor figure discrepancies against this corpus's existing primary-sourced records are noted, not resolved: this article gives Aimee Bock's sentence as '41.6 years' (~499.2 months) against this corpus's existing '500 months' from a primary/USAO-adjacent source, and Abdullahe Nur Jesow's restitution as 'roughly $866,000' against this corpus's existing precise figure of $866,458; both are treated as consistent within rounding, not contradictions."
+  ]
+}

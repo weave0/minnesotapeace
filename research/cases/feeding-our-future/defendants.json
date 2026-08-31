@@ -155,12 +155,19 @@
     "canonical_name": "Ahmed Mohamed Artan",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "sentencing_date": "2026-08-13",
+    "sentence": "2 years 9 months (33 months) prison",
+    "notes": "Pleaded guilty to one count of wire fraud; ran Stigma-Free International (claimed 5 million meals) and co-created Olive Management, Optimum Community Services, and the Five A's Project shell company. Sentenced 2026-08-13. Plea-agreement restitution range of $250,000-$666,000 not confirmed as an actual imposed figure."
   },
   {
     "defendant_id": "fof-d-009",
@@ -209,13 +216,17 @@
     "canonical_name": "Asad Mohamed Abshir",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free Mankato",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 5000000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of wire fraud. Helped his brother Abdinasir Mahamed Abshir (fof-d-010) run a Stigma-Free food site in Mankato. No sentencing date found."
   },
   {
     "defendant_id": "fof-d-012",
@@ -223,13 +234,17 @@
     "canonical_name": "Hamdi Hussein Omar",
     "case_docket": "22-CR-223",
     "group": "Stigma-Free Waite Park",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 1000000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of wire fraud. Operator of the Stigma-Free Waite Park food site, which collected $1.4 million; also created a company called Feeding Our Youth. No sentencing date found."
   },
   {
     "defendant_id": "fof-d-013",
@@ -256,13 +271,17 @@
     "canonical_name": "Abdirahman Mohamud Ahmed",
     "case_docket": "22-CR-223",
     "group": "Safari",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 16000000,
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of money laundering. Known professionally as Chef Abcos; co-owner of Safari Restaurant. Now lives in Columbus, Ohio (runs Afra Grill). Prosecutors requested probation and no prison time, saying he spent rather than obtained the fraudulent proceeds. No sentencing date found."
   },
   {
     "defendant_id": "fof-d-015",
@@ -324,7 +343,7 @@
     "canonical_name": "Mahad Ibrahim",
     "case_docket": "22-CR-124",
     "group": "ThinkTechAct",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 18000000,
     "organizations": [
@@ -332,8 +351,12 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to one count of wire fraud and one count of money laundering. Ran ThinkTechAct Foundation (aka Mind Foundry Learning Foundation), tied to the Empire Cuisine trial group and sponsor Partners in Quality Care. No sentencing date found."
   },
   {
     "defendant_id": "fof-d-018",
@@ -491,29 +514,36 @@
     "person_id": "fof-p-abdiwahab-ahmed-mohamud",
     "canonical_name": "Abdiwahab Ahmed Mohamud",
     "case_docket": "22-CR-224",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "notes": "Pleaded guilty to conspiracy to commit money laundering and wire fraud. Worked for S&S Catering and forged documents to help it steal $17 million; plea-agreement recommended sentence of 11-14 years. No sentencing date found."
   },
   {
     "defendant_id": "fof-d-026",
     "person_id": "fof-p-filsan-mumin-hassan",
     "canonical_name": "Filsan Mumin Hassan",
     "case_docket": "22-CR-224",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
     "plea_date": null,
     "restitution": 361000,
-    "notes": "Pleaded guilty to conspiracy to commit wire fraud and money laundering. Operated Youth for Higher Educational Achievement, which received more than $2.5 million; agreed to pay $361,000 in restitution."
+    "notes": "Pleaded guilty to conspiracy to commit wire fraud and money laundering. Operated Youth for Higher Educational Achievement, which received more than $2.5 million; agreed to pay $361,000 in restitution. Sentenced 2026-05-07.",
+    "sentencing_date": "2026-05-07",
+    "sentence": "3 years prison"
   },
   {
     "defendant_id": "fof-d-027",
@@ -562,19 +592,22 @@
     "canonical_name": "Abdul Abubakar Ali",
     "case_docket": "22-CR-224",
     "group": "Youth Inventors Lab",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "organizations": [
       "Youth Inventors Lab"
     ],
-    "notes": "~1.5 million meals claimed. Pleaded guilty on October 26 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran Youth Inventors Lab food site, which never served a meal but claimed 1.3 million meals to obtain $3 million.",
+    "notes": "~1.5 million meals claimed. Pleaded guilty on October 26 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran Youth Inventors Lab food site, which never served a meal but claimed 1.3 million meals to obtain $3 million. Sentenced 2026-03-30 to one year in prison.",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
-    "plea_date": null
+    "plea_date": null,
+    "sentencing_date": "2026-03-30",
+    "sentence": "1 year prison"
   },
   {
     "defendant_id": "fof-d-030",
@@ -582,12 +615,19 @@
     "canonical_name": "Yusuf Bashir Ali",
     "case_docket": "22-CR-224",
     "group": "Youth Inventors Lab",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "2023-09",
+    "sentencing_date": "2026-04-15",
+    "sentence": "1.5 years (18 months) prison",
+    "notes": "Pleaded guilty September 2023 to conspiracy to commit wire fraud and stealing nearly $280,000; confirmed via Sahan Journal's full-name usage to be the same person as an earlier Hiiraan Online source's 'Yusuf Ali, 41' (Youth Inventors Lab, supplied by S&S Catering), resolving this corpus's prior open identity ambiguity. Sentenced 2026-04-15."
   },
   {
     "defendant_id": "fof-d-031",
@@ -710,24 +750,40 @@
     "person_id": "fof-p-ahmed-yasin-ali",
     "canonical_name": "Ahmed Yasin Ali",
     "case_docket": "22-CR-222",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": null,
+    "sentencing_date": "2026-08-04",
+    "sentence": "1 year probation",
+    "restitution": 61000,
+    "notes": "Pleaded guilty to one felony count of evading currency reporting obligations (withdrew $10,000 knowing funds were proceeds of unlawful activity), tied to a Lake Street Kitchen food site in the JigJiga Business Center. Sentenced 2026-08-04 to probation and $61,000 restitution."
   },
   {
     "defendant_id": "fof-d-038",
     "person_id": "fof-p-khadar-jigre-adan",
     "canonical_name": "Khadar Jigre Adan",
     "case_docket": "22-CR-222",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "2025-09",
+    "sentencing_date": "2026-04-29",
+    "sentence": "1 year probation",
+    "restitution": 1000,
+    "notes": "Pleaded guilty September 2025 to one count of theft of government property (misdemeanor); owner of the JigJiga Business Center, allowed a fraudulent food site to operate there for $1,000. Sentenced 2026-04-29 to probation and $1,000 restitution."
   },
   {
     "defendant_id": "fof-d-039",
@@ -735,7 +791,7 @@
     "canonical_name": "Sharmake Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "alleged_amount": 4300000,
     "organizations": [
@@ -744,10 +800,14 @@
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-postbulletin-2025-02-05-jama-brava-pleas"
+      "src-postbulletin-2025-02-05-jama-brava-pleas",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
-    "plea_date": "2025-01-29"
+    "plea_date": "2025-01-29",
+    "sentencing_date": "2026-05-07",
+    "sentence": "1 year 4 months (16 months) prison",
+    "notes": "Sentenced 2026-05-07; sentence significantly reduced from the four-to-five-year plea-agreement recommendation for cooperation with the government, including testifying at Aimee Bock's 2025 trial."
   },
   {
     "defendant_id": "fof-d-040",
@@ -772,15 +832,20 @@
     "canonical_name": "Asha Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas"
+      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
-    "plea_date": "reported by 2025-02-07"
+    "plea_date": "reported by 2025-02-07",
+    "sentencing_date": "2026-06-16",
+    "sentence": "6 months prison",
+    "restitution": 450000,
+    "notes": "Sentenced 2026-06-16 and ordered to repay $450,000."
   },
   {
     "defendant_id": "fof-d-042",
@@ -803,15 +868,20 @@
     "canonical_name": "Mustafa Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas"
+      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
-    "plea_date": "reported by 2025-02-07"
+    "plea_date": "reported by 2025-02-07",
+    "sentencing_date": "2026-07-08",
+    "sentence": "14 months prison",
+    "restitution": 1400000,
+    "notes": "Sentenced 2026-07-08 and ordered to pay $1.4 million restitution."
   },
   {
     "defendant_id": "fof-d-044",
@@ -838,16 +908,20 @@
     "person_id": "fof-p-bekam-addissu-merdassa",
     "canonical_name": "Bekam Addissu Merdassa",
     "group": "information, 2022",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
-    "notes": "Charged by information with conspiracy to commit wire fraud. Pleaded guilty on October 13 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran shell company Youth Inventors Lab, which never served a meal but collected $3 million by claiming 1.3 million meals served (December 2020-June 2021).",
+    "notes": "Charged by information with conspiracy to commit wire fraud. Pleaded guilty on October 13 (year not stated in source) to one count of conspiracy to commit wire fraud. Co-ran shell company Youth Inventors Lab, which never served a meal but collected $3 million by claiming 1.3 million meals served (December 2020-June 2021). Sentenced 2026-04-06 to two years of probation (not the two-year prison term recommended in his plea agreement) and roughly $343,000 restitution; U.S. District Judge Nancy Brasel departed from the plea-agreement recommendation, reportedly reflecting his cooperation with prosecutors.",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
       "S01",
-      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
     "plea_status": "guilty",
-    "plea_date": null
+    "plea_date": null,
+    "sentencing_date": "2026-04-06",
+    "sentence": "2 years probation",
+    "restitution": 343000
   },
   {
     "defendant_id": "fof-d-046",
@@ -1053,17 +1127,20 @@
     "person_id": "fof-p-mulata-yusuf-ali",
     "canonical_name": "Mulata Yusuf Ali",
     "case_docket": "23-CR-92",
-    "status": "pleaded",
+    "status": "sentenced",
     "charged_date": "2023-03-13",
     "source_ids": [
       "S02",
-      "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+      "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
-    "notes": "Charged with theft of government funds. Pleaded guilty to one count of aiding and abetting the theft of public money. Operated Franklyn Transportation LLC, used to launder more than $2 million; was paid close to $100,000 for use of the businesss bank account. Plea-agreement guideline sentence of 24 to 30 months and $95,099 restitution (not yet sentenced).",
+    "notes": "Charged with theft of government funds. Pleaded guilty to one count of aiding and abetting the theft of public money. Operated Franklyn Transportation LLC, used to launder more than $2 million; was paid close to $100,000 for use of the businesss bank account. Plea-agreement guideline sentence of 24 to 30 months and $95,099 restitution (not yet sentenced). Sentenced 2026-04-29 to one year of probation.",
     "investigation_family": "inv-feeding-our-future",
     "plea_status": "guilty",
     "plea_date": null,
-    "restitution": 95099
+    "restitution": 95099,
+    "sentencing_date": "2026-04-29",
+    "sentence": "1 year probation"
   },
   {
     "defendant_id": "fof-d-058",
@@ -1245,17 +1322,20 @@
     "person_id": "fof-p-hibo-daar",
     "canonical_name": "Hibo Daar",
     "group": "71st defendant",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2025-05-01",
     "alleged_amount": 2400000,
     "organizations": [
       "Northside Wellness"
     ],
     "source_ids": [
-      "S16"
+      "S16",
+      "src-sahan-2026-08-19-fof-guilty-pleas-tracker"
     ],
-    "notes": "Charged date is month-approximate (~May 2025); detention hearing May 30. Two counts wire fraud. >$2.4 million claims; bank account received >$1.7 million; $72,000 bribes. Date precision month_approximate.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "Charged date is month-approximate (~May 2025); detention hearing May 30. Two counts wire fraud. >$2.4 million claims; bank account received >$1.7 million; $72,000 bribes. Date precision month_approximate. Pleaded guilty to one count of wire fraud. Ran Northside Wellness Center Corporation (claimed 40,000 meals/week, received $2.4 million); admitted paying $72,000 in bribes to a Feeding Our Future employee. No sentencing date found.",
+    "investigation_family": "inv-feeding-our-future",
+    "plea_status": "guilty",
+    "plea_date": null
   },
   {
     "defendant_id": "fof-d-069",
@@ -1292,14 +1372,17 @@
     "person_id": "fof-p-najmo-ahmed",
     "canonical_name": "Najmo Ahmed",
     "group": "Ereg spouse",
-    "status": "pleaded",
+    "status": "sentenced",
     "plea_status": "guilty",
     "plea_date": "2025-02-24",
     "source_ids": [
-      "S18"
+      "S18",
+      "src-sahan-2026-08-19-fof-sentencing-tracker"
     ],
-    "notes": "Money laundering. Sentencing set 2026-06-15 in S18. Do not mark sentenced unless a sentencing PR is captured.",
-    "investigation_family": "inv-feeding-our-future"
+    "notes": "Money laundering. Sentencing set 2026-06-15 in S18. Do not mark sentenced unless a sentencing PR is captured. Sentenced 2026-06-15.",
+    "investigation_family": "inv-feeding-our-future",
+    "sentencing_date": "2026-06-15",
+    "sentence": "14 months prison"
   },
   {
     "defendant_id": "fof-d-072",

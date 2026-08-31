@@ -1,0 +1,53 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr223-wave1-stragglers-plea-dispositions",
+  "claim_text": "Four remaining 22-CR-223/22-CR-124 defendants, previously listed in this corpus only as 'charged,' pleaded guilty per Sahan Journal's own guilty-pleas tracker: Ahmed Mohamed Artan pleaded guilty to one count of wire fraud (ran Stigma-Free International, claimed to serve 5 million meals; also co-created Olive Management, Optimum Community Services, and the Five A's Project shell company) and was later sentenced to two years and nine months in prison on August 13, 2026; Asad Mohamed Abshir pleaded guilty to one count of wire fraud (helped his brother Abdinasir Mahamed Abshir run a Stigma-Free food site in Mankato); Hamdi Hussein Omar pleaded guilty to one count of wire fraud (operator of the Stigma-Free Waite Park food site, which collected $1.4 million); Mahad Ibrahim pleaded guilty to one count of wire fraud and one count of money laundering (ran ThinkTechAct Foundation, tied to the Empire Cuisine trial group); and Abdirahman Mohamud Ahmed, known professionally as Chef Abcos, pleaded guilty to one count of money laundering (co-owner of Safari Restaurant), with prosecutors requesting probation and no prison time because he spent rather than obtained the fraudulent proceeds.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00223; 0:22-cr-00124",
+  "date_start": "2022-09-20",
+  "date_end": "2026-08-13",
+  "source_ids": [
+    "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+    "src-sahan-2026-08-19-fof-sentencing-tracker"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Ahmed Artan, pleaded guilty to one count of wire fraud... Mahad Ibrahim, 46, ran ThinkTechAct Foundation, pleaded guilty to one count of wire fraud and one count of money laundering."
+    },
+    {
+      "source_id": "src-sahan-2026-08-19-fof-sentencing-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Ahmed Artan was sentenced to two years and nine months in prison on Aug. 13, 2026."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 666000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": null,
+      "methodology": "Upper bound of Ahmed Mohamed Artan's plea-agreement restitution range ($250,000-$666,000), per Sahan Journal; not confirmed against a primary judgment."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for any of these five defendants; all dispositions rest on Sahan Journal's own reporting.",
+    "Only Ahmed Mohamed Artan has a confirmed sentencing date in this pass; Asad Mohamed Abshir, Hamdi Hussein Omar, Mahad Ibrahim, and Abdirahman Mohamud Ahmed remain 'pleaded' with no sentencing date found.",
+    "Do not confuse Asad Mohamed Abshir with his brother Abdinasir Mahamed Abshir (fof-d-010), a separately tracked and already-sentenced defendant."
+  ],
+  "editorial_notes": "Third source-batch in the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction; identified via Sahan Journal's own guilty-plea and sentencing trackers, which this corpus was previously unable to fetch (client-rendering/blocking concerns noted in earlier passes) but retrieved successfully this pass via a direct fetch with a browser user-agent."
+}

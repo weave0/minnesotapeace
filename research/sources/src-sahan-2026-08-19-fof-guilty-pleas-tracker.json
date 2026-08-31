@@ -1,0 +1,37 @@
+{
+  "source_id": "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+  "canonical_url": "https://sahanjournal.com/public-safety/feeding-our-future-food-aid-fraud-investigation-guilty-pleas/",
+  "issuing_body": "Sahan Journal",
+  "author": "Joey Peters",
+  "title": "Here's a list of everyone who has been convicted in the Feeding Our Future case",
+  "publication_date": "2022-10-27",
+  "retrieval_date": "2026-08-31",
+  "document_type": "news_article_running_tracker",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Sahan Journal's own primary running tracker of FOF guilty pleas and trial convictions (originally published 2022-10-27, page states 'Updated August 19, 2026'). States 79 charged, 61 pleaded guilty, 7 more convicted at trial as of this update. This is the source the Hiiraan Online tracker (src-hiiraan-2025-03-21-fof-convicted-defendants-list) explicitly modeled itself on, and is materially more current (August 2026 vs. March 2025). Retrieved via direct fetch with a browser user-agent after prior sessions' notes flagged sahanjournal.com as sometimes client-rendered/blocked; this fetch returned full server-rendered article text on the first attempt.",
+  "supports": [
+    "As of August 19, 2026, 79 people had been charged, 61 had pleaded guilty, and 7 more had been convicted at trial in the Feeding Our Future investigation.",
+    "Ahmed Artan, 40, pleaded guilty to one count of wire fraud; he ran Stigma-Free International (claimed to serve 5 million meals) and co-created Olive Management, Optimum Community Services, and the Five A's Project shell company; agreed to a recommended sentence of around three years and restitution between $250,000 and $666,000.",
+    "Asad Mohamed Abshir, who helped his brother Abdinasir Mahamed Abshir run Stigma-Free International, pleaded guilty to one count of wire fraud; both brothers ran a Stigma-Free food site in Mankato that purported to serve $1.6 million worth of food to children.",
+    "Hamdi Hussein Omar, 29, pleaded guilty to one count of wire fraud; she listed herself as operator of the Stigma-Free Waite Park food site, which claimed to serve 2,000 kids a day and collected $1.4 million from the federal government, and created a company called Feeding Our Youth that purported to supply food at the Waite Park site.",
+    "Mahad Ibrahim, 46, ran ThinkTechAct Foundation (also known as Mind Foundry Learning Foundation) and pleaded guilty to one count of wire fraud and one count of money laundering; ThinkTechAct worked with Empire Cuisine and sponsor Partners in Quality Care.",
+    "Abdirahman Mohamud Ahmed, known professionally as Chef Abcos, pleaded guilty to one count of money laundering; he was co-owner of Safari Restaurant (one of the scheme's largest players, which received $16 million); he now lives in Columbus, Ohio, running Afra Grill; prosecutors asked for probation and no prison time because he did not take part in obtaining the fraudulent money but instead spent it.",
+    "Abdiwahab Mohamud, 35, pleaded guilty to conspiracy to commit money laundering and wire fraud; he worked for S&S Catering and forged documents to help the company steal $17 million from the federal government; he agreed with prosecutors to a recommended sentence of between 11 and 14 years.",
+    "Yusuf Bashir Ali, 41, pleaded guilty to conspiracy to commit wire fraud and stealing nearly $280,000; he worked with others to enroll the shell company Youth Inventors Lab, which falsely claimed S&S Catering as its meal supplier and received more than $3 million claiming 1.3 million meals served.",
+    "Ahmed Yasin Ali pleaded guilty to one felony count of evading currency reporting obligations, admitting he withdrew $10,000 from a bank account knowing the funds were proceeds of unlawful activity; he had created a food site run by Lake Street Kitchen in the JigJiga Business Center, which claimed to serve more than 70,000 meals for roughly $196,000 in government funds; he and prosecutors agreed to a recommended sentence of zero to six months and roughly $61,000 in restitution.",
+    "Khadar Adan, 62, pleaded guilty to one count of theft of government property, a misdemeanor, in September 2025; he is owner of the Minneapolis-based JigJiga Business Center, which he allowed a fraudulent food site to operate out of in exchange for $1,000, which he agreed to repay as restitution.",
+    "Hibo Salah Daar, 51, pleaded guilty to one count of wire fraud; she ran Northside Wellness Center Corporation, which claimed to serve 40,000 meals to children weekly and received $2.4 million from the federal government, and admitted to paying $72,000 in bribes to a Feeding Our Future employee.",
+    "Mohamed Muse Noor, also known as Deeq Darajo, 40, pleaded guilty to one count of conspiracy to commit wire fraud, admitting he enrolled his company Xogmaal Media under the direction of Abdikerm Eidleh, received $1.3 million of federal food-aid money, transferred most of it to Eidleh, and kept around $52,000.",
+    "Mekfira Hussein, 40, pleaded guilty to one count of conspiracy to commit wire fraud, admitting she enrolled her organization Shamsia Hopes under the direction of Abdikerm Eidleh and funneled close to $9 million through her and her husband's organizations.",
+    "Abduljabar Hussein, 44, Mekfira Hussein's husband, pleaded guilty to one count of conspiracy to commit wire fraud, admitting he inflated meals for his company Oromia Feeds, a food vendor for Shamsia Hopes."
+  ],
+  "does_not_support": [
+    "This is journalism, not the primary plea agreements or judgments themselves.",
+    "Abdikerm Abdelahi Eidleh's own plea status; the article describes him only as having directed co-conspirators (Deeq Darajo, Mekfira Hussein) and does not state that he himself has pleaded guilty or been convicted.",
+    "A plea or conviction for Fahad Nur, Sade Osman Hashi, Muna Wais Fidhin, Ousman Camara, Ahmednaji Maalim Aftin Sheikh, or Said Abdullahi Ereg; none of these names appears in this article's text.",
+    "Actual imposed sentences for most defendants named above (Artan, Asad Abshir, Hamdi Hussein Omar, Mahad Ibrahim, Abdirahman Mohamud Ahmed, Abdiwahab Mohamud, Hibo Daar); the figures given for them are plea-agreement recommendations, not judgments, except where cross-confirmed by src-sahan-2026-08-19-fof-sentencing-tracker."
+  ]
+}
