@@ -1,6 +1,6 @@
 # Feeding Our Future — Defendants
 
-Status key: **charged** (allegation only) | **pleaded** | **convicted** (trial) | **sentenced** | **acquitted**. Mark alleged until convicted. Amounts are as stated in the cited primary; metric_type in parentheses. “—” = not in a primary source captured here. Compiled 2026-08-26.
+Status key: **charged** (allegation only) | **pleaded** | **convicted** (trial) | **sentenced** | **acquitted** | **case terminated (deceased)** (defendant died; case closed, not a disposition on the merits). Mark alleged until convicted. Amounts are as stated in the cited primary; metric_type in parentheses. “—” = not in a primary source captured here. Compiled 2026-08-26; disposition-reconciliation pass ongoing since 2026-08-31 (see GAPS.md item 9).
 
 Running official counts (see CLAIMS.md / GAPS.md):
 - Charged: **47** on 2022-09-20 (S01); **+10** on 2023-03-13 (S02); **73rd** 2025-08-06 (S03); **75th** 2025-09-04 (S04); **77th** 2025-11-20 (S05). Journalism later says 78–80; not verified on a fetched .gov page.
@@ -50,12 +50,12 @@ Running official counts (see CLAIMS.md / GAPS.md):
 | Liban Yasin Alishire | 22-CR-222 | **charged** | Charged 2022-09-20 | CES >$1.6 million (alleged_loss) | S01 |
 | Ahmed Yasin Ali | 22-CR-222 | **charged** | Charged 2022-09-20 | — | S01 |
 | Khadar Jigre Adan | 22-CR-222 | **charged** | Charged 2022-09-20 | — | S01 |
-| Sharmake Jama | 22-CR-225 Brava | **charged** | Charged 2022-09-20 | ~$4.3 million (alleged_loss) | S01 |
-| Ayan Jama | 22-CR-225 | **charged** | Charged 2022-09-20 | — | S01 |
-| Asha Jama | 22-CR-225 | **charged** | Charged 2022-09-20 | — | S01 |
-| Fartun Jama | 22-CR-225 | **charged** | Charged 2022-09-20 | — | S01 |
-| Mustafa Jama | 22-CR-225 | **charged** | Charged 2022-09-20 | — | S01 |
-| Zamzam Jama | 22-CR-225 | **charged** | Charged 2022-09-20 | — | S01 |
+| Sharmake Jama | 22-CR-225 Brava | **pleaded** (2026-08-31 pass) | Charged 2022-09-20; pleaded guilty **2025-01-29**; no sentencing captured | ~$4.3 million (alleged_loss, charging) | S01, `src-postbulletin-2025-02-05-jama-brava-pleas` |
+| Ayan Jama | 22-CR-225 | **pleaded** (2026-08-31 pass) | Charged 2022-09-20; pleaded guilty **2025-01-31** (Post Bulletin) or **2025-02-03** (CBS News) -- date discrepancy preserved; admitted using >$775,000 for personal property (Turkey, Rochester, Columbus OH); no sentencing captured | — | S01, `src-postbulletin-2025-02-05-jama-brava-pleas`, `src-cbsnews-2025-02-03-ayan-jama-plea` |
+| Asha Jama | 22-CR-225 | **pleaded** (2026-08-31 pass) | Charged 2022-09-20; pleaded guilty to money laundering, reported by **2025-02-07**; exact date and sentencing not captured | — | S01, `src-krocnews-2025-02-07-asha-mustafa-jama-pleas` |
+| Fartun Jama | 22-CR-225 | **case terminated (deceased)** (2026-08-31 pass) | Charged 2022-09-20; court records from July 2023 (per Sahan Journal) show she died; case terminated, not a merits disposition | — | S01, `src-sahan-2026-07-28-fof-defendant-roster` |
+| Mustafa Jama | 22-CR-225 | **pleaded** (2026-08-31 pass) | Charged 2022-09-20; pleaded guilty to money laundering, reported by **2025-02-07**; exact date and sentencing not captured | — | S01, `src-krocnews-2025-02-07-asha-mustafa-jama-pleas` |
+| Zamzam Jama | 22-CR-225 | **sentenced** (2026-08-31 pass) | Charged 2022-09-20; pleaded guilty **2025-02-05** (money laundering); sentenced (reported by 2026-04-01) to **6 months** | ~$111,000 personal spend admitted at plea (Post Bulletin); restitution **$491,245** (KTTC) | S01, `src-postbulletin-2025-02-05-jama-brava-pleas`, `src-kttc-2026-04-01-zamzam-jama-sentencing` |
 | Bekam Addissu Merdassa | information, 2022 | **charged** (conspiracy to commit wire fraud) | Charged 2022-09-20 | — | S01 |
 | Hadith Yusuf Ahmed | information, 2022 | **charged** | Charged 2022-09-20 | Recruiter role described in later Bock filings (S24) | S01 |
 | Hanna Marekegn | information, 2022 | **charged** | Charged 2022-09-20 | — | S01 |

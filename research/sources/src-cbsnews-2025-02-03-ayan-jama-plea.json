@@ -1,0 +1,22 @@
+{
+  "source_id": "src-cbsnews-2025-02-03-ayan-jama-plea",
+  "canonical_url": "https://www.cbsnews.com/minnesota/news/2-women-guilty-feeding-our-future-fraud",
+  "issuing_body": "CBS News Minnesota",
+  "title": "2 Minnesota women plead guilty in Feeding Our Future fraud scheme",
+  "publication_date": "2025-02-03",
+  "retrieval_date": "2026-08-31",
+  "document_type": "news_article",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "SECONDARY_VERIFIED",
+  "notes": "Dates Ayan Jama's plea to Friday, February 3, 2025 -- one day off from src-postbulletin-2025-02-05-jama-brava-pleas, which dates the same plea to January 31, 2025. Preserved as an unresolved minor date discrepancy, not silently corrected either direction. Also covers Mekfira Hussein (Shamsia Hopes), a separate, unrelated Feeding Our Future defendant not otherwise addressed by this record.",
+  "supports": [
+    "Ayan Jama, 45, of Rochester, manager of Brava Restaurant, pleaded guilty on February 3, 2025 to one count each of wire fraud and money laundering.",
+    "Brava and an associated restaurant submitted fake attendance records claiming more than 1.7 million meals served, obtaining $4.3 million plus $900,000 from 'another restaurant.'"
+  ],
+  "does_not_support": [
+    "A resolution of the plea-date discrepancy against src-postbulletin-2025-02-05-jama-brava-pleas (January 31 vs. February 3, 2025).",
+    "Any claim about Mekfira Hussein / Shamsia Hopes for the Feeding Our Future family tracked in this corpus's defendants.json; that is a separate defendant not yet added to this corpus."
+  ]
+}
