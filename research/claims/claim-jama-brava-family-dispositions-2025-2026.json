@@ -1,0 +1,58 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-jama-brava-family-dispositions-2025-2026",
+  "claim_text": "Six people connected to Brava Restaurant & Cafe LLC (Rochester), an extended Jama family group charged in No. 22-CR-225 in the Feeding Our Future prosecutions, have the following updated dispositions, none reflected in this corpus's defendants.json or DEFENDANTS.md prior to this pass: Sharmake Jama pleaded guilty January 29, 2025; Ayan Jama pleaded guilty either January 31, 2025 (Post Bulletin) or February 3, 2025 (CBS News) -- an unresolved minor date discrepancy -- and admitted using more than $775,000 in program funds for personal expenditures including property in Turkey and homes in Rochester and Columbus, Ohio; Zamzam Jama pleaded guilty February 5, 2025 to money laundering and was later sentenced (reported by April 1, 2026) to six months in prison and $491,245 restitution; Mustafa Jama and Asha Jama both entered guilty pleas to money laundering, reported by February 7, 2025; and Fartun Jama's case was terminated following her 2023 death, per court records described in Sahan Journal's defendant roster.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00225",
+  "date_start": "2025-01-29",
+  "date_end": "2026-04-01",
+  "source_ids": [
+    "src-postbulletin-2025-02-05-jama-brava-pleas",
+    "src-cbsnews-2025-02-03-ayan-jama-plea",
+    "src-krocnews-2025-02-07-asha-mustafa-jama-pleas",
+    "src-kttc-2026-04-01-zamzam-jama-sentencing",
+    "src-sahan-2026-07-28-fof-defendant-roster"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-postbulletin-2025-02-05-jama-brava-pleas",
+      "locator": "Post Bulletin, February 5, 2025",
+      "quote": "Sharmake Jama... pleaded guilty on January 29, 2025... Ayan Jama... pleaded guilty on January 31, 2025... Zamzam Jama... pleaded guilty to money laundering on February 5, 2025"
+    },
+    {
+      "source_id": "src-sahan-2026-07-28-fof-defendant-roster",
+      "locator": "Sahan Journal defendant roster, entry for Fartun Jama",
+      "quote": "Court records from July 2023 show that Fartun has since died."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 491245,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Zamzam Jama's restitution, reported by KTTC; no primary judgment captured."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record (plea agreement, judgment, sentencing minute) has been captured for any of these six defendants; all six dispositions here rest on secondary journalism.",
+    "Ayan Jama's plea date is reported inconsistently across two outlets (January 31 vs. February 3, 2025); preserved as an open discrepancy, not resolved.",
+    "No sentencing information was found for Sharmake Jama, Ayan Jama, Mustafa Jama, or Asha Jama in this pass; only Zamzam Jama's sentencing has been located.",
+    "Fartun Jama's death and case termination is reported only through Sahan Journal's roster note quoting unspecified 'court records from July 2023'; the underlying court record itself has not been independently retrieved.",
+    "This is a sensitive fact (a defendant's death); do not embellish beyond what is stated, and do not speculate about cause or manner of death beyond 'died' / 'natural causes' as separately reported elsewhere."
+  ],
+  "editorial_notes": "Fourth finding in the freshness/disposition-reconciliation pass. All six of these defendants were previously listed as 'charged' with only their original 2022-09-20 charge date in defendants.json and DEFENDANTS.md, despite these guilty pleas dating to January-February 2025 -- more than a year and a half of staleness in the corpus's own case-status tracking for this sub-family."
+}

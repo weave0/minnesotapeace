@@ -15,11 +15,13 @@
   "supports": [
     "The roster states 80 people had been charged in the Feeding Our Future investigation as of its July 28, 2026 update.",
     "Entry 80 identifies Warsame, operator of Metro Area Catering, as charged on July 22, 2026 with one count of wire fraud via a felony information.",
-    "The roster attributes to the charges allegations that Metro Area Catering inflated meal counts and that Warsame obtained more than $4.7 million from Federal Child Nutrition Programs."
+    "The roster attributes to the charges allegations that Metro Area Catering inflated meal counts and that Warsame obtained more than $4.7 million from Federal Child Nutrition Programs.",
+    "The roster's entry for Fartun Jama (Brava Restaurant & Cafe LLC, Rochester) states: 'Court records from July 2023 show that Fartun has since died.'"
   ],
   "does_not_support": [
     "This source is journalism, not the charging instrument itself.",
     "The roster does not establish the later guilty plea by itself.",
-    "The spelling of Warsame's first name on this roster differs from other current reporting; resolve canonical spelling from the primary court filing when captured."
+    "The spelling of Warsame's first name on this roster differs from other current reporting; resolve canonical spelling from the primary court filing when captured.",
+    "The roster's boilerplate 'charged' status label for other Brava/Jama-family entries (Sharmake, Ayan, Asha, Mustafa, Zamzam Jama) should not be read as current; this corpus's own retrieval of the same page found those specific entries had not been rewritten to reflect their later 2025 guilty pleas, per this source's own notes field. Rely on the dated plea-specific sources for their actual disposition."
   ]
 }

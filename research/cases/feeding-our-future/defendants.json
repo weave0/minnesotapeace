@@ -688,7 +688,7 @@
     "canonical_name": "Sharmake Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "alleged_amount": 4300000,
     "organizations": [
@@ -696,8 +696,11 @@
     ],
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-postbulletin-2025-02-05-jama-brava-pleas"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "2025-01-29"
   },
   {
     "defendant_id": "fof-d-040",
@@ -705,12 +708,16 @@
     "canonical_name": "Ayan Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-postbulletin-2025-02-05-jama-brava-pleas",
+      "src-cbsnews-2025-02-03-ayan-jama-plea"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "2025-01-31 (Post Bulletin) or 2025-02-03 (CBS News) -- date discrepancy preserved"
   },
   {
     "defendant_id": "fof-d-041",
@@ -718,12 +725,15 @@
     "canonical_name": "Asha Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "reported by 2025-02-07"
   },
   {
     "defendant_id": "fof-d-042",
@@ -731,12 +741,14 @@
     "canonical_name": "Fartun Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "case_terminated_deceased",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-sahan-2026-07-28-fof-defendant-roster"
+    ],
+    "notes": "Court records from July 2023 (as described by Sahan Journal) show Fartun Jama died; case terminated. Not further characterized beyond this in captured sources."
   },
   {
     "defendant_id": "fof-d-043",
@@ -744,12 +756,15 @@
     "canonical_name": "Mustafa Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "pleaded",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-krocnews-2025-02-07-asha-mustafa-jama-pleas"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "reported by 2025-02-07"
   },
   {
     "defendant_id": "fof-d-044",
@@ -757,12 +772,19 @@
     "canonical_name": "Zamzam Jama",
     "case_docket": "22-CR-225",
     "group": "Brava",
-    "status": "charged",
+    "status": "sentenced",
     "charged_date": "2022-09-20",
     "investigation_family": "inv-feeding-our-future",
     "source_ids": [
-      "S01"
-    ]
+      "S01",
+      "src-postbulletin-2025-02-05-jama-brava-pleas",
+      "src-kttc-2026-04-01-zamzam-jama-sentencing"
+    ],
+    "plea_status": "guilty",
+    "plea_date": "2025-02-05",
+    "sentencing_date": "reported by 2026-04-01",
+    "sentence": "6 months",
+    "restitution": 491245
   },
   {
     "defendant_id": "fof-d-045",
