@@ -1,0 +1,68 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-fof-sentencing-upgrades-2026-04-to-07",
+  "claim_text": "Eight defendants this corpus previously carried only as 'pleaded' (several first reconciled to 'pleaded' earlier in this same disposition-reconciliation pass) were sentenced between April and July 2026, per Sahan Journal's own sentencing tracker: Abdul Abubakar Ali was sentenced to one year of prison on March 30, 2026; Bekam Addissu Merdassa avoided prison and was sentenced to two years of probation on April 6, 2026 with roughly $343,000 in restitution -- a departure by U.S. District Judge Nancy Brasel from the two-year prison recommendation in his plea agreement, reportedly reflecting his cooperation with prosecutors; Mulata Yusuf Ali was sentenced to one year of probation on April 29, 2026; Sharmake Jama was sentenced to one year and four months in prison on May 7, 2026, a sentence significantly reduced from the four-to-five-year recommendation for his cooperation, including testifying at Aimee Bock's 2025 trial; Filsan Mumin Hassan was sentenced to three years in prison on May 7, 2026; Najmo Ahmed was sentenced to 14 months in prison on June 15, 2026; Asha Jama was sentenced to six months in prison on June 16, 2026 and ordered to repay $450,000; and Mustafa Jama was sentenced to 14 months in prison on July 8, 2026 and ordered to pay $1.4 million in restitution.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00224; 0:22-cr-00225; 0:23-cr-00092; multiple",
+  "date_start": "2026-03-30",
+  "date_end": "2026-07-08",
+  "source_ids": [
+    "src-sahan-2026-08-19-fof-sentencing-tracker"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-sahan-2026-08-19-fof-sentencing-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Bekam Merdassa avoided prison and was sentenced to two years of probation on April 6, 2026... previously agreed with federal prosecutors to a recommended two-year prison sentence, but U.S. District Judge Nancy Brasel instead gave him two years of probation and ordered him to pay roughly $343,000 in restitution."
+    },
+    {
+      "source_id": "src-sahan-2026-08-19-fof-sentencing-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Sharmake Jama was sentenced to one year and four months in prison on May 7, 2026... significantly lessened due to his cooperation with the government in the case, including his role as a witness taking the stand in the 2025 trial against former Feeding Our Future Executive Director Aimee Bock."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 343000,
+      "currency": "USD",
+      "exact_or_approximate": "approximate",
+      "metric_type": "restitution_ordered",
+      "overlap_group_id": null,
+      "methodology": "Bekam Addissu Merdassa's actual imposed restitution per Sahan Journal; notably lower than the roughly $3 million figure describing Youth Inventors Lab's total collections, since restitution reflects his individually attributed share/judicial determination, not the full site-level loss."
+    },
+    {
+      "value": 450000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Asha Jama's restitution as ordered at sentencing, per Sahan Journal."
+    },
+    {
+      "value": 1400000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Mustafa Jama's restitution as ordered at sentencing, per Sahan Journal."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record (judgment or sentencing minute) has been captured for any of these eight defendants; all sentencing dates and amounts rest on Sahan Journal's own reporting.",
+    "Bekam Addissu Merdassa's imposed sentence (probation, $343,000 restitution) departs materially from his plea-agreement recommendation (two years' prison); this is a judicial variance, not a reporting error, per Sahan Journal's account of the sentencing hearing.",
+    "This claim does not restate the underlying plea facts for these eight defendants, which are already recorded in this corpus's earlier claims (claim-jama-brava-family-dispositions-2025-2026 for the Jama family; claim-22cr224-sscatering-plea-dispositions for Filsan Mumin Hassan; claim-22cr226-plea-dispositions and claim-youth-inventors-lab-brava-cafe-plea-dispositions for the others); it only adds the sentencing outcome."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction. This corpus previously flagged Ayan Jama's plea date as an open discrepancy (Post Bulletin vs. CBS News) and did not carry a sentencing date for her in this pass; this Sahan tracker does not resolve either point for Ayan Jama specifically, though it does confirm sentencing for four of her five Brava/Jama co-defendants named above."
+}

@@ -1,0 +1,53 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr224-abdiwahab-yusufali-dispositions",
+  "claim_text": "The last two unresolved S&S Catering family defendants (case 22-CR-224) have dispositions per Sahan Journal's own trackers: Abdiwahab Ahmed Mohamud pleaded guilty to conspiracy to commit money laundering and wire fraud, admitting he worked for S&S Catering and forged documents to help it steal $17 million from the federal government, and agreed with prosecutors to a recommended sentence of 11 to 14 years (no sentencing date found); and Yusuf Bashir Ali pleaded guilty in September 2023 to conspiracy to commit wire fraud and stealing nearly $280,000 -- resolving this corpus's prior open ambiguity about whether he was the same 'Yusuf Ali, 41' described in an earlier Hiiraan Online source as tied to Youth Inventors Lab and S&S Catering (Sahan Journal's full-name usage confirms the identity) -- and was sentenced to 1.5 years in prison on April 15, 2026.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00224",
+  "date_start": "2022-09-20",
+  "date_end": "2026-04-15",
+  "source_ids": [
+    "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+    "src-sahan-2026-08-19-fof-sentencing-tracker"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-sahan-2026-08-19-fof-sentencing-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Yusuf Bashir Ali was sentenced to 1.5 years in prison on April 15, 2026. He pleaded guilty in September 2023 to conspiracy to commit wire fraud and stealing nearly $280,000."
+    },
+    {
+      "source_id": "src-sahan-2026-08-19-fof-guilty-pleas-tracker",
+      "locator": "Sahan Journal, updated August 19, 2026",
+      "quote": "Abdiwahab Mohamud, 35, pleaded guilty to conspiracy to commit money laundering and wire fraud. He worked for S&S Catering and forged documents to help the company steal $17 million from the federal government."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 280000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": null,
+      "methodology": "Amount Yusuf Bashir Ali admitted stealing, per Sahan Journal."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for either defendant; both dispositions rest on Sahan Journal's own reporting.",
+    "This corpus's prior batch (claim-22cr224-sscatering-plea-dispositions, from an earlier Hiiraan-sourced pass) had left fof-d-030's identity as a possible-but-unconfirmed match to a passing Hiiraan reference; this claim resolves that ambiguity via Sahan Journal's consistent full-name usage but does not retroactively edit the earlier claim record.",
+    "Abdiwahab Ahmed Mohamud's 11-14 year figure is a plea-agreement recommendation, not a confirmed sentence; he does not appear in Sahan Journal's sentencing tracker as of this pass."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction."
+}
