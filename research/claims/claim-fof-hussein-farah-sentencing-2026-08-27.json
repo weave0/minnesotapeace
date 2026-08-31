@@ -1,0 +1,46 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MODERATE",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-fof-hussein-farah-sentencing-2026-08-27",
+  "claim_text": "Hussein Mohamed Farah, USAO-MN's 73rd charged Feeding Our Future defendant (charged by information on August 6, 2025, No. 0:25-cr-00297, tied to the New Vision Foundation nonprofit), was reported by FOX 9 to have been sentenced on August 27, 2026 to 20 months in federal prison, two years of supervised release, and $471,000 in restitution for wire fraud.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:25-cr-00297",
+  "event_date": "2026-08-27",
+  "source_ids": [
+    "src-fox9-2026-08-27-hussein-farah-sentencing"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-fox9-2026-08-27-hussein-farah-sentencing",
+      "locator": "FOX 9, August 27, 2026",
+      "quote": "Hussein Mohamed Farah was sentenced on 2026-08-27 to 20 months in federal prison, two years of supervised release, and $471,000 restitution for wire fraud."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 471000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Reported by FOX 9; no primary judgment, sentencing minute, or new USAO release has been captured confirming this figure."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record (judgment, sentencing minute) or USAO release specifically confirming this sentencing has been captured; corroborated only by the federal hearing calendar listing Farah for sentencing before Judge Nancy E. Brasel at 10:00 a.m. on 2026-08-27, and by USAO's prior 2025-08-06 charging release identifying Farah as the 73rd defendant and New Vision Foundation's $2.7 million figure.",
+    "USAO-MN's own August 27, 2026 release for the same week (src-usao-mn-2026-08-27-fof-three-sentences) describes Ahmed, Ghedi, and Omar-Hashim as the 24th-26th Feeding Our Future defendants sentenced and does not mention Farah. This is an apparent sequencing/ordinal discrepancy that is preserved here, not resolved: it is possible Farah was sentenced the same week under a separate press release not yet captured, or that the ordinal numbering tracks a different count than raw sentencing order. Do not assume either explanation.",
+    "Do not upgrade this claim to ADJUDICATED until a primary judgment, sentencing minute, or USAO release naming Farah specifically is captured."
+  ],
+  "editorial_notes": "Third finding in the freshness/disposition-reconciliation pass prompted by the cluster of August 2026 USAO sentencing releases. Reconciles a status gap: defendants.json previously listed Farah as 'charged' despite this source already being captured in an earlier pass and never actioned."
+}
