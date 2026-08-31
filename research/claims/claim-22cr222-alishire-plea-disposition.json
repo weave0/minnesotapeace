@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr222-alishire-plea-disposition",
+  "claim_text": "Liban Yasin Alishire, previously listed in this corpus only as 'charged' in case 22-CR-222, pleaded guilty to one count of wire fraud and one count of money laundering per a Hiiraan Online tracker. He claimed 870,000 meals served through Community Enhancement Services and Lake Street Kitchen, fraudulently obtaining $2.4 million and keeping $714,000 for himself. He agreed to pay $714,000 in restitution and to forfeit a resort in Kenya, an apartment unit in Kenya, a Ford F150 pickup, and a boat and trailer.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00222",
+  "date_start": "2022-09-20",
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Liban Yasin Alishire... pleaded guilty to one count of wire fraud and one count of money laundering. Liban agreed to pay $714,000 in restitution and forfeit a resort he owns in Kenya, an apartment unit in Kenya, a Ford F150 pickup, and a boat and trailer."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 714000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Alishire's plea-agreement restitution figure, per Hiiraan Online; not yet confirmed against a primary judgment."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for this defendant; the disposition rests on a single secondary journalism source.",
+    "No exact plea date is given in the retrieved source text.",
+    "This claim does not resolve Ahmed Yasin Ali or Khadar Jigre Adan, the two other 22-CR-222 defendants, who do not appear by name in this source and remain 'charged' pending further research."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction."
+}

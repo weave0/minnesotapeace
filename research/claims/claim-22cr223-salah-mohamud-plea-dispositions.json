@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr223-salah-mohamud-plea-dispositions",
+  "claim_text": "Three defendants in case 22-CR-223, previously listed in this corpus only as 'charged' as of their original 2022-09-20 charge date, pleaded guilty per a Hiiraan Online tracker: Abdulkadir Nur Salah (co-owner of Safari Restaurant) pleaded guilty to one count of wire fraud, admitted to $16 million in fraudulent funds received by Safari, and agreed to pay $5.5 million in restitution with a recommended sentence of 9 to 11.5 years; Abdi Nur Salah (a former aide to Minneapolis Mayor Jacob Frey) pleaded guilty to one count of wire fraud, admitted pocketing more than $1 million via his nonprofit Stigma Free International, and agreed to a recommended sentence of roughly two years; Abdikadir Ainanshe Mohamud ('AK'), who ran the Stigma-Free Willmar food site at FaaFan Restaurant, pleaded guilty to one count of wire fraud, admitted siphoning more than $5 million, and agreed to a recommended sentence of roughly four to five years. None of the three has a confirmed sentencing outcome in this pass.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00223",
+  "date_start": "2022-09-20",
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Abdulkadir Salah... pleaded guilty to one count of wire fraud... Abdi Salah... pleaded guilty to one count of wire fraud... Abdikadir Ainashe Mohamud... known as \"AK,\" pleaded guilty to one count of wire fraud"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 5500000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Abdulkadir Nur Salah's plea-agreement restitution figure, per Hiiraan Online; not yet confirmed against a primary judgment."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record (plea agreement, change-of-plea minute, or judgment) has been captured for any of these three defendants; all three dispositions rest on a single secondary journalism source.",
+    "No exact plea date is given for any of the three in the retrieved source text.",
+    "Restitution and sentencing-range figures reflect plea-agreement recommendations, not imposed sentences; none of the three is treated as 'sentenced' in this corpus pending a primary record."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction; identified via a Hiiraan Online running tracker of Feeding Our Future convictions."
+}

@@ -1,0 +1,64 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-23cr-group-plea-dispositions",
+  "claim_text": "Four defendants across three 2023-docketed cases, previously listed in this corpus only as 'charged,' pleaded guilty per a Hiiraan Online tracker: Ayan Farah Abukar (case 23-CR-80; founder of Action for East African People) pleaded guilty to one count of conspiracy to commit wire fraud, admitting she received about $5.7 million in federal funds and paid more than $330,000 in kickbacks to a Feeding Our Future employee, spending proceeds on a Lakeville commercial property and an aircraft in Kenya; Mohamed Ali Hussein and Lul Bashir Ali (case 23-CR-91, both of Faribault) each pleaded guilty to one count of wire fraud, jointly admitting to defrauding the government of more than $5 million through Hussein's nonprofit Somali American Faribault Education and Ali's restaurant Lido Restaurant, and jointly agreed to repay that amount and forfeit three properties and one car; Mulata Yusuf Ali (case 23-CR-92; operator of Franklyn Transportation LLC) pleaded guilty to one count of aiding and abetting the theft of public money, admitting he was paid close to $100,000 to let others launder more than $2 million through his business's bank account, with a plea-agreement guideline sentence of 24 to 30 months and $95,099 in restitution.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:23-cr-00080; 0:23-cr-00091; 0:23-cr-00092",
+  "date_start": "2023-01-01",
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Mulata Ali... pleaded guilty to one count of aiding and abetting in the theft of public money... Mulata's plea agreement calls for a guideline sentence of 24 to 30 months in prison and a payment of $95,099 in restitution"
+    }
+  ],
+  "amounts": [
+    {
+      "value": 95099,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Mulata Yusuf Ali's plea-agreement restitution figure, per Hiiraan Online; not yet confirmed against a primary judgment."
+    },
+    {
+      "value": 5700000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": null,
+      "methodology": "Amount Ayan Farah Abukar admitted receiving in federal funds, per Hiiraan Online."
+    },
+    {
+      "value": 5000000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "approximate",
+      "overlap_group_id": null,
+      "methodology": "Joint restitution figure ('more than $5 million') agreed by Mohamed Ali Hussein and Lul Bashir Ali per Hiiraan Online; a single joint obligation, not two separate $5 million amounts."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for any of these four defendants; all dispositions rest on a single secondary journalism source.",
+    "No exact plea dates are given for any of the four in the retrieved source text.",
+    "The $5 million restitution obligation for Mohamed Ali Hussein and Lul Bashir Ali is joint, not additive; do not sum it twice across their two defendant records.",
+    "This claim does not resolve Sade Osman Hashi (23-CR-81), who does not appear by name in this source and remains 'charged' pending further research."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction."
+}

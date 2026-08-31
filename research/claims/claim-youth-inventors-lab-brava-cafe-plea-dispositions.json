@@ -1,0 +1,65 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-youth-inventors-lab-brava-cafe-plea-dispositions",
+  "claim_text": "Three named-but-undocketed defendants in this corpus, previously listed only as 'charged' with no case_docket recorded, pleaded guilty per a Hiiraan Online tracker: Bekam Addissu Merdassa (co-ran the shell company Youth Inventors Lab) pleaded guilty on October 13 to one count of conspiracy to commit wire fraud, admitting the company never served a meal but collected $3 million by claiming 1.3 million meals served between December 2020 and June 2021; Hadith Yusuf Ahmed (previously monitored Feeding Our Future food sites for enrollment compliance) pleaded guilty on October 13 to one count of conspiracy to commit wire fraud, admitting he accepted $1 million in kickbacks from food sites and started a shell company, Southwest Metro Youth, that received $1.1 million by falsely claiming to feed 2,000 children a day; Hanna Marekegn (owned Brava Cafe, a Minneapolis restaurant -- a distinct business from the Rochester-based Brava Restaurant & Cafe LLC tied to the Jama family in case 22-CR-225) pleaded guilty on October 13 to one count of conspiracy to commit wire fraud, admitting Brava Cafe received $7.1 million by claiming to serve more than two million meals between September 2020 and January 2022, and that she paid more than $150,000 in bribes to Feeding Our Future employees to enroll her restaurant.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": null,
+  "date_start": null,
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Bekam Merdassa... co-ran Youth Inventors Lab... Bekam pleaded guilty on October 13 to one count of conspiracy to commit wire fraud... Hadith Yusuf Ahmed... Hadith pleaded guilty on October 13 to one count of conspiracy to commit wire fraud... Hanna Marekegn... owned Brava Cafe, a Minneapolis restaurant. She pleaded guilty on October 13 to one count of conspiracy to commit wire fraud."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 3000000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Amount Bekam Addissu Merdassa admitted Youth Inventors Lab collected via false meal claims, per Hiiraan Online."
+    },
+    {
+      "value": 1000000,
+      "currency": "USD",
+      "metric_type": "alleged_loss",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Kickback amount Hadith Yusuf Ahmed admitted accepting, per Hiiraan Online."
+    },
+    {
+      "value": 7100000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Amount Hanna Marekegn admitted Brava Cafe received in federal food-aid money, per Hiiraan Online."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for any of these three defendants; all dispositions rest on a single secondary journalism source.",
+    "The plea date given ('October 13') states no year in the retrieved source text; given the article's framing that pleas began trickling in three weeks after the September 2022 charges, this could plausibly be October 2022 or a later October, but this corpus does not assert a specific year without further confirmation.",
+    "None of the three defendants has a case_docket recorded in this corpus; this claim does not attempt to assign one.",
+    "'Brava Cafe' (Minneapolis, Hanna Marekegn) is a distinct business from 'Brava Restaurant & Cafe LLC' (Rochester, the Jama family, case 22-CR-225); the similarity in name is coincidental and should not be conflated.",
+    "The source separately references a co-defendant, Yusuf Ali, who worked with Youth Inventors Lab and was supplied by S&S Catering; this is not confirmed to be the same person as fof-d-030 (Yusuf Bashir Ali) and is not resolved by this claim."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction. The same source also names additional defendants not yet tracked anywhere in this corpus (Mohamed Muse Noor aka 'Deeq Darajo', Mekfira Hussein, Abduljabar Hussein, and confirmation that Abdikerm Abdelahi Eidleh directed at least two co-conspirators) -- flagged in GAPS.md as a lead for a future pass rather than added as new defendant records here, since none of their case dockets or full charging details have been independently verified yet."
+}

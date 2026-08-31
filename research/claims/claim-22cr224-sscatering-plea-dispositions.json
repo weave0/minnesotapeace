@@ -1,0 +1,56 @@
+{
+  "reviewed_at": "2026-08-31T00:00:00Z",
+  "created_at": "2026-08-31T00:00:00Z",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "is_allegation": false,
+  "is_inference": false,
+  "evidence_class": "SECONDARY_VERIFIED",
+  "confidence": "MEDIUM",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-22cr224-sscatering-plea-dispositions",
+  "claim_text": "Three additional defendants in the S&S Catering family group (case 22-CR-224), previously listed in this corpus only as 'charged,' pleaded guilty per a Hiiraan Online tracker: Qamar Ahmed Hassan (owner/operator of S&S Catering) pleaded guilty to money laundering and conspiracy to commit wire fraud, admitting she transferred more than $800,000 of S&S Catering's proceeds to her own account for personal purchases including a Jeep Wrangler, a Range Rover, a Brooklyn Park townhome, and an apartment in Nairobi, Kenya; Filsan Mumin Hassan (operator of Youth for Higher Educational Achievement) pleaded guilty to conspiracy to commit wire fraud and money laundering, admitting her company received more than $2.5 million and that she spent $114,000 of it on a Brooklyn Park townhome jointly with Qamar Hassan, and agreed to pay $361,000 in restitution; Abdul Abubakar Ali (co-ran the Youth Inventors Lab food site) pleaded guilty on October 26 to one count of conspiracy to commit wire fraud, admitting the site never served a meal but claimed 1.3 million meals to obtain $3 million.",
+  "claim_type": "DISPOSITION",
+  "status": "PARTIALLY_CORROBORATED",
+  "case_number": "0:22-cr-00224",
+  "date_start": "2022-09-20",
+  "date_end": "2025-03-21",
+  "source_ids": [
+    "src-hiiraan-2025-03-21-fof-convicted-defendants-list"
+  ],
+  "supporting_passages": [
+    {
+      "source_id": "src-hiiraan-2025-03-21-fof-convicted-defendants-list",
+      "locator": "Hiiraan Online, March 21, 2025",
+      "quote": "Qamar Hassan... pleaded guilty to money laundering and conspiracy to commit wire fraud... Filsan Hassan... pleaded guilty to conspiracy to commit wire fraud and money laundering... Filsan admitted to spending $114,000 of food-aid money on a Brooklyn Park townhome with co-defendant Qamar Hassan, and agreed to pay $361,000 in restitution."
+    }
+  ],
+  "amounts": [
+    {
+      "value": 361000,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "exact_or_approximate": "exact",
+      "overlap_group_id": null,
+      "methodology": "Filsan Mumin Hassan's plea-agreement restitution figure, per Hiiraan Online; not yet confirmed against a primary judgment."
+    },
+    {
+      "value": 800000,
+      "currency": "USD",
+      "exact_or_approximate": "approximate",
+      "metric_type": "amount_paid",
+      "overlap_group_id": null,
+      "methodology": "Amount Qamar Ahmed Hassan admitted transferring from S&S Catering's proceeds to her personal account, per Hiiraan Online; not a restitution figure and not independently confirmed against a primary record."
+    }
+  ],
+  "organizations": [
+    "org-feeding-our-future"
+  ],
+  "qualifiers": [
+    "No primary court record has been captured for any of these three defendants; all three dispositions rest on a single secondary journalism source.",
+    "Abdul Abubakar Ali's plea date ('October 26') is given without a year in the retrieved source text.",
+    "This claim does not update fof-d-030 (Yusuf Bashir Ali); the source's separate 'Yusuf Ali, 41' entry (tied to Youth Inventors Lab, a different shell company) is not confirmed to be the same person and is left unresolved pending further sourcing.",
+    "This claim does not affect fof-d-025 (Abdiwahab Ahmed Mohamud), who does not appear by name in the source text and remains 'charged' pending further research."
+  ],
+  "editorial_notes": "Part of the defendant-by-defendant disposition reconciliation pass following the 'we need to cover all' instruction. Fof-d-024 (Sahra Mohamed Nur), the fourth named S&S Catering owner/operator in this source, was already reconciled to 'sentenced' in an earlier pass and is not touched here."
+}
