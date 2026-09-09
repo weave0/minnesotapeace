@@ -1,0 +1,26 @@
+{
+  "source_id": "src-usao-mn-2026-07-21-dool-68th-conviction",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/pelican-rapids-man-68th-defendant-plead-guilty-feeding-our-future-fraud-scheme",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Pelican Rapids Man is 68th Defendant to be Convicted in Feeding Our Future Fraud Scheme",
+  "publication_date": "2026-07-21",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved via the in-browser fetch tool after both a plain WebFetch and a curl-with-browser-UA attempt returned only an Akamai bot-verification interstitial, not article content. Cited on the live /status/ page without this corpus previously having captured it; this record closes that provenance gap. This is also the primary source needed to add Abdirashid Bixi Dool to research/cases/feeding-our-future/defendants.json as a properly DOJ-sourced (not journalism-only) entry -- flagged as a follow-up, not yet actioned in this pass.",
+  "supports": [
+    "United States Attorney Daniel N. Rosen announced that Abdirashid Bixi Dool, 36, pleaded guilty on July 13, 2026 to one count of wire fraud for his role in a Feeding Our Future scheme involving more than $330,000.",
+    "USAO-MN described Dool as the 68th Feeding Our Future defendant convicted.",
+    "Dool faces a maximum statutory penalty of 20 years in prison; sentencing had not yet been scheduled as of this release.",
+    "According to court documents cited in the release, from about March 2021 through December 2021 Dool and co-conspirators submitted fraudulent reimbursement claims on behalf of two Minnesota nonprofits, Bilaal Mosque, Inc. and Multicultural Resource Center, Inc., which purported to run meal sites in Pelican Rapids and Moorhead, Minnesota.",
+    "The release states Bilaal and MRC claimed to have served over 505,000 meals to children between approximately March 2021 and February 2022, and that the Minnesota Department of Education paid nearly $1.1 million in federal child-nutrition funds to the two entities based on the fraudulent submissions."
+  ],
+  "does_not_support": [
+    "A sentencing outcome for Dool; this release states only that sentencing would be scheduled later.",
+    "Any claim that Dool operated under a different case caption; this release does not give a docket number."
+  ]
+}

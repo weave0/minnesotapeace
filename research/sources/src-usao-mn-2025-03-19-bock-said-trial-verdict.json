@@ -1,0 +1,23 @@
+{
+  "source_id": "src-usao-mn-2025-03-19-bock-said-trial-verdict",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/federal-jury-finds-feeding-our-future-mastermind-and-co-defendant-guilty-250-million",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Federal Jury Finds Feeding Our Future Mastermind and Co-Defendant Guilty in $250 Million Pandemic Fraud Scheme",
+  "publication_date": "2025-03-19",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved via the in-browser fetch tool. Cited on the live index.html without this corpus previously having captured it; this record closes that provenance gap.",
+  "supports": [
+    "A federal jury found Aimee Bock and Salim Said guilty on March 19, 2025 for their roles in a $250 million fraud scheme exploiting the Federal Child Nutrition Program, announced Acting U.S. Attorney Lisa D. Kirkpatrick.",
+    "Kirkpatrick is quoted stating the defendants falsely claimed to have served 91 million meals, for which they fraudulently received nearly $250 million in federal funds."
+  ],
+  "does_not_support": [
+    "The specific counts of conviction or acquittal for either defendant; this release's retrieved text describes the verdict in aggregate rather than count-by-count. Count-level detail for this trial is already captured elsewhere in this corpus from other sources.",
+    "Sentencing outcomes for either defendant; those are covered by separate, later press releases already or newly captured in this corpus."
+  ]
+}

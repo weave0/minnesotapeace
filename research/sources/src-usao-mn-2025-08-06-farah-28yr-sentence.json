@@ -1,0 +1,27 @@
+{
+  "source_id": "src-usao-mn-2025-08-06-farah-28yr-sentence",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/landmark-sentence-feeding-our-future-scheme-leader-sentenced-28-years-prison",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "In Landmark Sentence, Feeding Our Future Scheme Leader Sentenced to 28 Years in Prison",
+  "publication_date": "2025-08-06",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved via the in-browser fetch tool after both a plain WebFetch and a curl-with-browser-UA attempt returned only an Akamai bot-verification interstitial (bm-verify challenge page), not article content. Cited on the live /status/ page (status/index.html) without this corpus previously having captured it; this record closes that provenance gap.",
+  "supports": [
+    "United States District Judge Nancy E. Brasel sentenced Abdiaziz Shafii Farah, age 36, on August 6, 2025 to 28 years in prison followed by 3 years of supervised release for his role in the Feeding Our Future fraud scheme.",
+    "Farah was ordered to pay restitution in the amount of $47,920,514.",
+    "In June 2024, following a seven-week trial before Judge Brasel, a federal jury convicted Farah of conspiracy to commit wire fraud, conspiracy to commit federal programs bribery, false statements on a passport application, conspiracy to commit money laundering, two counts of federal programs bribery, six counts of wire fraud, and 11 counts of money laundering.",
+    "Farah personally pocketed more than $8 million during 18 months of involvement in the scheme, according to the release.",
+    "Farah pleaded guilty in a separate juror-bribery case and was, as of this release, pending sentencing in that case before Judge David S. Doty; today's 28-year sentence does not reflect the juror-bribery conduct.",
+    "The release describes the underlying scheme as exploiting a federally funded child nutrition program during the COVID-19 pandemic and characterizes it as a $300 million fraud scheme."
+  ],
+  "does_not_support": [
+    "This release predates and does not itself state Farah's later juror-bribery sentence (120 months, imposed 2026-07-22); that is reported in a separate USAO-MN release already in this corpus.",
+    "This release does not isolate a single case-level 'alleged loss' figure distinct from the $47,920,514 restitution order; do not conflate restitution with a charging-document alleged-loss figure."
+  ]
+}

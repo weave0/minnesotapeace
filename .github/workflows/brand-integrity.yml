@@ -89,3 +89,6 @@ jobs:
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og-v2.png' functions/_middleware.js
           grep -Fq 'https://minnesotapeace.com/assets/og/mn-peace-og.jpg' functions/_middleware.js
           grep -Fq '/assets/og/mn-peace-og.jpg  /assets/og/mn-peace-og-v2.png  301' _redirects
+
+      - name: Verify public-page citations resolve to a captured research source
+        run: python3 scripts/check-public-provenance.py

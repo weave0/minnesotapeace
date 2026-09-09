@@ -1,0 +1,27 @@
+{
+  "source_id": "src-doj-2026-05-22-bock-500-month-sentence",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/feeding-our-future-ringleader-sentenced-500-months",
+  "issuing_body": "U.S. Department of Justice (syndicated at both Office of Public Affairs and U.S. Attorney's Office, District of Minnesota)",
+  "title": "Feeding Our Future Ringleader Sentenced to 500 Months",
+  "publication_date": "2026-05-22",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "This identical press release is published at two URLs: the national Office of Public Affairs mirror (https://www.justice.gov/opa/pr/feeding-our-future-ringleader-sentenced-500-months) and the District of Minnesota mirror recorded as canonical_url above. Both are cited across this site's public pages (index.html cites the usao-mn/pr path; status/index.html and guide/index.html cite the opa/pr path). This single record covers both citations. Retrieved via the in-browser fetch tool after a curl-with-browser-UA attempt would likely have hit the same Akamai bm-verify interstitial documented for other usao-mn/pr URLs in this pass. This is the single most-cited fact on the site (Aimee Bock's headline sentence) and previously had no captured primary source anywhere in this corpus -- the most significant provenance gap closed in this pass.",
+  "supports": [
+    "Aimee Bock, 44, founder and executive director of Feeding Our Future, was sentenced on May 22, 2026 to 500 months in prison for her lead role in the Feeding Our Future fraud scheme, announced U.S. Attorney Daniel N. Rosen.",
+    "Salim Said, 36, former co-owner of Safari Restaurant, was jointly tried with Bock.",
+    "Feeding Our Future received more than $18 million in administrative fees to which it was not entitled, per the release.",
+    "The release states Feeding Our Future opened more than 250 Federal Child Nutrition Program sites, going from about $3.4 million in disbursed federal funds in 2019 to nearly $200 million in 2021, and fraudulently obtained and disbursed more than $240 million in Federal Child Nutrition Program funds overall.",
+    "U.S. District Judge Nancy Brasel is quoted at sentencing: 'This was a fraud vortex and you were at the epicenter of it,' and 'A sentence of less than 500 months would not do justice to the people of Minnesota.'",
+    "Assistant Attorney General Colin M. McDonald is quoted characterizing the sentence as 'over 41 years in prison.'"
+  ],
+  "does_not_support": [
+    "A restitution or forfeiture dollar figure specific to Bock's sentencing; none is stated in the retrieved text of this release.",
+    "Any claim that this is a distinct press release from the opa/pr-path version of the same headline; treat them as the same release, not two independent sources."
+  ]
+}
