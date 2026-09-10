@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim-fof-milestone-convicted",
+  "claim_text": "As of July 21, 2026, USAO-MN identified Abdirashid Bixi Dool as the 68th Feeding Our Future defendant convicted, after he pleaded guilty on July 13, 2026. 'Convicted' includes defendants who pleaded guilty and defendants found guilty at trial.",
+  "claim_type": "COUNT",
+  "measurement_type": "OFFICIAL_ORDINAL_MILESTONE",
+  "metric_id": "fof-convicted-count",
+  "metric_value": 68,
+  "evidence_class": "ADJUDICATED",
+  "status": "ADJUDICATED",
+  "confidence": "VERY_HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "jurisdiction": "D. Minn.",
+  "event_date": "2026-07-21",
+  "program_ids": ["inv-feeding-our-future"],
+  "source_ids": ["src-usao-mn-2026-07-21-dool-68th-conviction"],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2026-07-21-dool-68th-conviction",
+      "quote": "USAO-MN described Dool as the 68th Feeding Our Future defendant convicted.",
+      "locator": "press release body, Pelican Rapids Man is 68th Defendant to be Convicted in Feeding Our Future Fraud Scheme"
+    }
+  ],
+  "qualifiers": [
+    "This is an official DOJ ordinal milestone stated outright by the source, not a value derived by this corpus through addition, subtraction, or roster reconciliation.",
+    "Charged, convicted, and sentenced are overlapping procedural stages of the same population, not additive groups; do not sum or subtract this value against the charged or sentenced metrics to infer a 'pending' count.",
+    "A later individual guilty plea or verdict does not by itself change this published ordinal. Only an explicit newer DOJ statement of a higher convicted-count ordinal supersedes this record.",
+    "This claim covers only the Feeding Our Future investigation; it does not include Housing Stabilization Services or any other program."
+  ],
+  "public_label": "defendants convicted",
+  "public_explanation": "DOJ identified Dool as the 68th convicted defendant after his guilty plea. “Convicted” includes defendants who pleaded guilty and defendants found guilty at trial.",
+  "public_source_label": "68th conviction release →",
+  "last_swept_for_supersession": "2026-09-10",
+  "valid_from": "2026-07-21T00:00:00Z",
+  "valid_until": null,
+  "superseded_by": null,
+  "reviewed_at": "2026-09-10T00:00:00Z",
+  "created_at": "2026-09-10T00:00:00Z",
+  "updated_at": "2026-09-10T00:00:00Z"
+}

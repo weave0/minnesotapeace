@@ -62,10 +62,19 @@
           <a class="btn btn-primary" href="#snapshot">See the snapshot <span aria-hidden="true">→</span></a>
           <a class="btn btn-secondary" href="/record/">Open the charging files</a>
         </div>
-        <div class="deep-meta"><span>Status checked Aug. 27, 2026</span><span>DOJ / court-linked</span><span>Counts are date-stamped</span></div>
+        <div class="deep-meta"><span><!-- STATUS-SNAPSHOT:GENERATED:HERO-DATE:START -->Status checked Sept. 10, 2026<!-- STATUS-SNAPSHOT:GENERATED:HERO-DATE:END --></span><span>DOJ / court-linked</span><span>Counts are date-stamped</span></div>
       </div>
     </section>
 
+    <!--
+      DO NOT HAND-EDIT the content inside any STATUS-SNAPSHOT:GENERATED:* marker pair
+      below (the "Status checked" dates and the three snapshot cards). It is written
+      by scripts/build-status-snapshot.py from canonical claims in research/claims/
+      (metric_id fof-charged-count / fof-convicted-count / fof-sentenced-count).
+      Edit the canonical claim + source records and rerun that script instead; CI
+      (scripts/check-status-snapshot-fresh.py) fails the build if this block drifts
+      from what the generator would produce.
+    -->
     <section class="deep-section" id="snapshot">
       <div class="deep-wrap">
         <div class="deep-section-head">
@@ -73,29 +82,31 @@
           <p>These are the latest ordinal counts located in official Justice Department releases. They are not three separate groups to add together. Convicted defendants come from the charged population; sentenced defendants come from the convicted population. Each count also has its own publication date.</p>
         </div>
 
+        <!-- STATUS-SNAPSHOT:GENERATED:CARDS:START -->
         <div class="status-snapshot">
           <article class="snapshot-card">
             <p class="snapshot-value">78</p>
             <p class="snapshot-label">defendants charged in the Feeding Our Future investigation</p>
-            <p class="snapshot-asof">DOJ count · Nov. 24, 2025</p>
+            <p class="snapshot-asof">DOJ count &middot; Nov. 24, 2025</p>
             <p>DOJ identified Abdirashid Bixi Dool as the 78th defendant charged. A charge is an allegation unless later resolved by plea, verdict, dismissal or another court disposition.</p>
             <p class="source-line"><a href="https://www.justice.gov/usao-mn/pr/78th-defendant-charged-feeding-our-future-fraud-scheme">78th defendant release →</a></p>
           </article>
           <article class="snapshot-card">
             <p class="snapshot-value">68</p>
             <p class="snapshot-label">defendants convicted</p>
-            <p class="snapshot-asof">DOJ count · July 21, 2026</p>
+            <p class="snapshot-asof">DOJ count &middot; July 21, 2026</p>
             <p>DOJ identified Dool as the 68th convicted defendant after his guilty plea. “Convicted” includes defendants who pleaded guilty and defendants found guilty at trial.</p>
             <p class="source-line"><a href="https://www.justice.gov/usao-mn/pr/pelican-rapids-man-68th-defendant-plead-guilty-feeding-our-future-fraud-scheme">68th conviction release →</a></p>
           </article>
           <article class="snapshot-card">
             <p class="snapshot-value">26</p>
             <p class="snapshot-label">defendants sentenced</p>
-            <p class="snapshot-asof">DOJ count · Aug. 27, 2026</p>
+            <p class="snapshot-asof">DOJ count &middot; Aug. 27, 2026</p>
             <p>DOJ identified Abdihakim Ali Ahmed, Ahmed Abdullahi Ghedi and Ahmed Sharif Omar-Hashim as the 24th, 25th and 26th defendants sentenced.</p>
             <p class="source-line"><a href="https://www.justice.gov/usao-mn/pr/three-defendants-feeding-our-future-fraud-scheme-sentenced-total-155-months-imprisonment">26th sentencing milestone →</a></p>
           </article>
         </div>
+        <!-- STATUS-SNAPSHOT:GENERATED:CARDS:END -->
         <p class="snapshot-rule"><strong>Do not subtract these counts to invent a “pending” number.</strong> Public ordinal releases are useful milestones, but individual procedural histories can include separate cases, later charges, dismissals or unresolved counts. Use a defendant's docket for the definitive status of that defendant.</p>
       </div>
     </section>
@@ -185,7 +196,7 @@
       <div><p class="footer-brand">MN <em>Peace</em></p><p class="muted">Current outcomes belong beside the charging record, not inside it. Every status here is date-stamped and sourced.</p></div>
       <div class="deep-footer-links"><a href="/">Story</a><a href="/status/">Current status</a><a href="/guide/">Field guide</a><a href="/oversight/">Oversight</a><a href="/record/">The Record</a></div>
     </div>
-    <div class="footer-bottom"><p>Charges are allegations until adjudicated.</p><p>Status checked Aug. 27, 2026</p></div>
+    <div class="footer-bottom"><p>Charges are allegations until adjudicated.</p><p><!-- STATUS-SNAPSHOT:GENERATED:FOOTER-DATE:START -->Status checked Sept. 10, 2026<!-- STATUS-SNAPSHOT:GENERATED:FOOTER-DATE:END --></p></div>
   </footer>
   <script src="/js/peace.js"></script>
 </body>

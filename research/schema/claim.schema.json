@@ -564,6 +564,60 @@
         "null"
       ],
       "description": "claim_id of the record that replaces this one (plea superseding allegation, later count, correction)."
+    },
+    "measurement_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "OFFICIAL_ORDINAL_MILESTONE",
+        null
+      ],
+      "description": "Set only for a claim that represents a discrete, source-stated cumulative ordinal (e.g. 'the 78th defendant charged'), as opposed to an ordinary factual claim. A generator may key off this field to find and validate metric_id claims without parsing claim_text. Never set this on a claim whose number is derived by this corpus (addition, subtraction, or roster reconciliation) rather than stated outright by the source."
+    },
+    "metric_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Stable key identifying which tracked metric this claim is the (or a historical) measurement of, e.g. 'fof-charged-count'. Exactly one claim per metric_id should be active (valid_until null) at a time; a generator consuming this field should fail closed if it finds zero or more than one active claim for a metric_id it needs, unless a clean superseded_by chain resolves the ambiguity."
+    },
+    "metric_value": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The measured count itself, e.g. 78. Distinct from `amounts`, which is reserved for dollar figures with a metric_type from the money taxonomy -- this field is for non-dollar cardinal counts (defendants, sites, complaints, etc.) tied to metric_id."
+    },
+    "public_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Short public-facing label displayed under the headline number on a generated public page, e.g. 'defendants charged in the Feeding Our Future investigation'."
+    },
+    "public_explanation": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Public-facing explanatory sentence(s) displayed alongside the headline number. Should name the specific milestone event the source describes, not just restate metric_value."
+    },
+    "public_source_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Public-facing link text for the citation backing this metric, e.g. '78th defendant release →'."
+    },
+    "last_swept_for_supersession": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "For a metric_id claim: the date of the most recent deliberate search for a newer authoritative source that would supersede this record (distinct from event_date, which is when the measurement itself became true, and from the source's own publication_date). A page generator consuming several metric_id claims together should surface the earliest (least recent) of their last_swept_for_supersession values as its own 'status checked' date, so the page never claims to be more current than its least-recently-checked input."
     }
   }
 }
