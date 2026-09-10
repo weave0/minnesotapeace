@@ -143,7 +143,7 @@ def main() -> int:
     except SystemExit as e:
         note("procedural stage" in str(e), "evidence_class/procedural-stage mismatch is rejected")
 
-    # 4. metric_value doesn't match what the source text actually says (999 claimed, source says 1st).
+    # 4. metric_value doesn't match what the source text actually says (42 claimed, source says 999th).
     try:
         validate_one(
             base_fixture_claim(metric_id="fixture-metric", metric_value=42),
@@ -152,6 +152,30 @@ def main() -> int:
         note(False, "metric_value unsupported by source text is rejected")
     except SystemExit as e:
         note("does not appear to support" in str(e), "metric_value unsupported by source text is rejected")
+
+    # 4b. Self-validation bypass: claim_text (and supporting_passages) FALSELY say
+    #     "42nd defendant charged" -- consistent with the wrong metric_value=42 --
+    #     while the actual archived source says "999th". A claim must not be able
+    #     to prove itself: this must still fail, grounded only in the source's own
+    #     text, not in whatever the claim author also typed into claim_text.
+    try:
+        validate_one(
+            base_fixture_claim(
+                metric_id="fixture-metric",
+                metric_value=42,
+                claim_text="USAO-MN identifies a fixture defendant as the 42nd defendant charged.",
+                supporting_passages=[
+                    {"source_id": "zz-test-fixture-source", "quote": "the 42nd defendant charged", "locator": "fixture"}
+                ],
+            ),
+            base_fixture_source(),  # still says "999th" in its own supports/title
+        )
+        note(False, "claim cannot validate itself via claim_text/supporting_passages")
+    except SystemExit as e:
+        note(
+            "does not appear to support" in str(e),
+            "claim cannot validate itself via claim_text/supporting_passages",
+        )
 
     # 5. Malformed metric_value (not a positive integer).
     try:
@@ -179,6 +203,48 @@ def main() -> int:
     except SystemExit as e:
         note("malformed" in str(e), "non-date event_date string is rejected")
 
+    # 6b. Impossible calendar date specifically on last_swept_for_supersession (not just
+    #     event_date): 2026-02-31 matches the YYYY-MM-DD regex shape but February never
+    #     has 31 days. A bare regex check would miss this; real calendar parsing must not.
+    try:
+        validate_one(
+            base_fixture_claim(metric_id="fixture-metric", last_swept_for_supersession="2026-02-31"),
+            base_fixture_source(),
+        )
+        note(False, "impossible calendar date (2026-02-31) in last_swept_for_supersession is rejected")
+    except SystemExit as e:
+        note(
+            "not a real calendar date" in str(e),
+            "impossible calendar date (2026-02-31) in last_swept_for_supersession is rejected",
+        )
+
+    # 6c. last_swept_for_supersession may not be in the future relative to America/
+    #     Chicago "today" -- a sweep cannot have happened tomorrow. Use a date far
+    #     enough out that no plausible clock skew makes this test flaky.
+    try:
+        validate_one(
+            base_fixture_claim(metric_id="fixture-metric", last_swept_for_supersession="2099-01-01"),
+            base_fixture_source(),
+        )
+        note(False, "a future last_swept_for_supersession (America/Chicago) is rejected")
+    except SystemExit as e:
+        note(
+            "is after today's America/Chicago date" in str(e),
+            "a future last_swept_for_supersession (America/Chicago) is rejected",
+        )
+
+    # 6d. A same-day (today, America/Chicago) sweep date must NOT be rejected as
+    #     "future" -- guards against an off-by-one from comparing local vs. UTC dates.
+    today_str = bss.today_local().isoformat()
+    try:
+        m = validate_one(
+            base_fixture_claim(metric_id="fixture-metric", last_swept_for_supersession=today_str),
+            base_fixture_source(),
+        )
+        note(m["last_swept_for_supersession"] == today_str, "a same-day (America/Chicago) sweep date is accepted")
+    except SystemExit as e:
+        note(False, f"a same-day (America/Chicago) sweep date is accepted (raised: {e})")
+
     # 7. measurement_type not set to the sentinel even though metric_id is present.
     try:
         validate_one(base_fixture_claim(metric_id="fixture-metric", measurement_type=None), base_fixture_source())
@@ -193,7 +259,11 @@ def main() -> int:
     except SystemExit as e:
         note("public_label" in str(e), "empty public_label is rejected")
 
-    # 9. Two active claims for the same metric_id, no supersession chain -> ambiguous.
+    # 9. Two claims for the same metric_id, NEITHER valid_until nor superseded_by set on
+    #    either -> genuinely ambiguous, no chain to resolve it. Must fail closed rather
+    #    than guess (e.g. by picking whichever sorts first, or the one with a later
+    #    event_date) -- the referee's explicit preference is fail-closed rejection of
+    #    multiple active claims unless the canonical corpus resolves the ambiguity itself.
     try:
         claims_by_metric = {
             "fixture-metric": [
@@ -204,7 +274,7 @@ def main() -> int:
         bss.resolve_active_claim("fixture-metric", claims_by_metric["fixture-metric"])
         note(False, "two unresolved active claims for one metric are rejected")
     except SystemExit as e:
-        note("no resolving supersession chain" in str(e), "two unresolved active claims for one metric are rejected")
+        note("neither valid_until nor superseded_by set" in str(e), "two unresolved active claims for one metric are rejected")
 
     # 10. Two claims, one properly superseded (valid_until set + superseded_by) -> resolves cleanly.
     old = base_fixture_claim(claim_id="zz-old", metric_id="fixture-metric", valid_until="2026-01-02T00:00:00Z", superseded_by="zz-new")
@@ -212,12 +282,51 @@ def main() -> int:
     resolved = bss.resolve_active_claim("fixture-metric", [old, new])
     note(resolved["claim_id"] == "zz-new", "a properly superseded old claim does not block resolution")
 
+    # 10b. The exact scenario the referee flagged as broken: TWO claims that are both
+    #      still "active" by valid_until (both None -- nobody set it on the old one),
+    #      but old.superseded_by points at new. The old buggy logic treated "referenced
+    #      by someone else's superseded_by" as a reason to EXCLUDE a candidate from
+    #      "terminal", which backwards-selected the *old* (unreferenced) claim instead
+    #      of the new (referenced, i.e. the actual successor) one. Must select "new".
+    old_both_active = base_fixture_claim(claim_id="zz-old2", metric_id="fixture-metric", valid_until=None, superseded_by="zz-new2")
+    new_both_active = base_fixture_claim(claim_id="zz-new2", metric_id="fixture-metric", valid_until=None, superseded_by=None)
+    resolved2 = bss.resolve_active_claim("fixture-metric", [old_both_active, new_both_active])
+    note(
+        resolved2["claim_id"] == "zz-new2",
+        "old->new via superseded_by (both valid_until=null) selects the successor, not the predecessor",
+    )
+
     # 11. Zero claims for a metric -> "lacks a source record".
     try:
         bss.resolve_active_claim("fixture-metric", [])
         note(False, "a metric with zero claims is rejected")
     except SystemExit as e:
         note("lacks a source record" in str(e), "a metric with zero claims is rejected")
+
+    # 11b. Quote-aware HTML escaping: a canonical_url (or any other rendered field)
+    #      containing a double quote must not be able to break out of the href="..."
+    #      attribute it's interpolated into. Render a card with such a URL and confirm
+    #      the quote is escaped, not passed through raw.
+    hostile_result = {
+        "value": 1,
+        "display_date": "Jan. 1, 2026",
+        "public_label": "fixture label",
+        "public_explanation": "fixture explanation",
+        "public_source_label": "fixture release →",
+        "canonical_url": 'https://example.gov/pr/x"><script>alert(1)</script>',
+        "last_swept_for_supersession": "2026-01-01",
+        "claim_id": "zz-hostile",
+    }
+    rendered = bss.render_card(hostile_result)
+    # The literal sequence `x">` (unescaped quote immediately followed by the tag
+    # closer) must not appear anywhere in the output -- that is what would actually
+    # close the href attribute early and let the rest be parsed as new markup in a
+    # real browser. It must instead show up HTML-entity-escaped.
+    note('x">' not in rendered, "a double quote in a rendered field cannot break out of the href attribute")
+    note(
+        'href="https://example.gov/pr/x&quot;&gt;&lt;script&gt;alert(1)&lt;/script&gt;"' in rendered,
+        "the hostile URL is rendered fully HTML-entity-escaped inside the href attribute",
+    )
 
     # 12. Structural: the generator's own source code never adds/subtracts metric values
     #     across different metrics (the "do not calculate 28 by adding two to 26" rule).

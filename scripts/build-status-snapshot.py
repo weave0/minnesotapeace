@@ -11,23 +11,34 @@ dispositions) and must never be extended to do so for these metrics -- see
 research/README.md's source-priority list and this script's ADMITTED_SOURCE_STATUSES.
 
 Fails closed (non-zero exit, no partial write) when:
-  - a required metric has zero, or more than one unresolved active, claim
+  - a required metric has zero, or more than one unresolved (live) claim
   - a metric's evidence_class does not match its expected procedural stage
   - a metric's source is not an admitted primary source
-  - a metric's source text does not textually support the stated ordinal + stage
-  - metric_value or event_date is malformed
+  - the cited SOURCE record's own title/supports text does not textually support
+    the stated ordinal + stage (claim_text and supporting_passages quotes are
+    deliberately excluded from this check -- a claim must not be able to prove
+    itself)
+  - metric_value, event_date, or last_swept_for_supersession is malformed or not
+    a real calendar date
+  - last_swept_for_supersession is later than today's America/Chicago date
   - required public-facing fields are missing
+
+All HTML interpolation (including href attribute values) goes through esc(),
+which is html.escape(..., quote=True) -- safe against a value containing a
+double quote breaking out of an attribute.
 
 Run from repo root:  python3 scripts/build-status-snapshot.py
 """
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 CLAIMS_DIR = ROOT / "research" / "claims"
@@ -35,6 +46,12 @@ SOURCES_DIR = ROOT / "research" / "sources"
 STATUS_HTML = ROOT / "status" / "index.html"
 
 MEASUREMENT_TYPE = "OFFICIAL_ORDINAL_MILESTONE"
+
+# This product reports "status checked" dates as Minnesota (America/Chicago) local
+# calendar days, not UTC. A sweep run late in the day US-side can already be
+# tomorrow in UTC; comparing against UTC "today" would then wrongly reject a
+# same-day sweep date, or (worse) silently accept a genuinely future one.
+LOCAL_TZ = ZoneInfo("America/Chicago")
 
 # Admitted primary-source statuses for an official ordinal milestone. Deliberately
 # narrow: this generator must never accept a journalism source (e.g. Sahan Journal,
@@ -75,25 +92,32 @@ def load_json(path: Path) -> dict:
         raise BuildError(f"invalid JSON in {path.relative_to(ROOT)}: {exc}")
 
 
-def fmt_date(iso: str) -> str:
+def parse_calendar_date(iso: str, field_label: str = "date") -> date:
+    """Parse a YYYY-MM-DD string into a real calendar date, rejecting both bad
+    formatting and impossible dates (e.g. 2026-02-31) that a bare regex would miss."""
     m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", iso or "")
     if not m:
-        raise BuildError(f"malformed date {iso!r} (expected YYYY-MM-DD)")
+        raise BuildError(f"malformed {field_label} {iso!r} (expected YYYY-MM-DD)")
     y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
     try:
-        date(y, mo, d)
+        return date(y, mo, d)
     except ValueError as exc:
-        raise BuildError(f"malformed calendar date {iso!r}: {exc}")
-    return f"{MONTHS[mo - 1]} {d}, {y}"
+        raise BuildError(f"malformed {field_label} {iso!r}: not a real calendar date ({exc})")
 
 
-def esc(value: str) -> str:
-    return (
-        str(value)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
+def fmt_date(iso: str) -> str:
+    d = parse_calendar_date(iso, "date")
+    return f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
+
+
+def today_local() -> date:
+    return datetime.now(timezone.utc).astimezone(LOCAL_TZ).date()
+
+
+def esc(value) -> str:
+    # quote=True also escapes " and ' so this is safe to interpolate inside a
+    # double-quoted HTML attribute (e.g. href="...") as well as in text content.
+    return html.escape(str(value), quote=True)
 
 
 def load_all_claims() -> list[dict]:
@@ -119,28 +143,35 @@ def resolve_active_claim(metric_id: str, candidates: list[dict]) -> dict:
     if not candidates:
         raise BuildError(f"metric {metric_id!r} has no claim at all -- a required metric lacks a source record")
 
-    active = [c for c in candidates if c.get("valid_until") is None]
-    if len(active) == 1:
-        return active[0]
+    # A claim is "live" (the current measurement) only if it is BOTH still valid
+    # (valid_until is None) AND not itself marked as replaced (superseded_by is
+    # None). Treating superseded_by as authoritative regardless of valid_until is
+    # what makes chain resolution select the *successor*, never the predecessor:
+    # if old.superseded_by = "new" but someone forgot to also set old.valid_until,
+    # old is still correctly excluded here because it names its own replacement.
+    live = [c for c in candidates if c.get("valid_until") is None and c.get("superseded_by") is None]
 
-    if len(active) == 0:
+    if len(live) == 1:
+        return live[0]
+
+    if len(live) == 0:
         raise BuildError(
-            f"metric {metric_id!r} has {len(candidates)} claim(s) but none is active "
-            f"(all have valid_until set) -- fix valid_until on the current record"
+            f"metric {metric_id!r} has {len(candidates)} claim(s) but none is live "
+            f"(every candidate has valid_until and/or superseded_by set) -- fix the "
+            f"current record so exactly one candidate has neither set"
         )
 
-    # More than one active candidate: try to resolve via a superseded_by chain
-    # among just the active set. Exactly one must be the terminal (unreferenced) node.
-    referenced = {c.get("superseded_by") for c in active if c.get("superseded_by")}
-    terminal = [c for c in active if c["claim_id"] not in referenced]
-    if len(terminal) == 1:
-        return terminal[0]
-
-    ids = ", ".join(c["claim_id"] for c in active)
+    # More than one candidate with neither valid_until nor superseded_by set: this
+    # is a genuinely ambiguous "which one is current" state. This generator does
+    # not guess a newest-by-date or any other heuristic here -- it fails closed,
+    # since the canonical corpus has not explicitly resolved the ambiguity via
+    # supersession.
+    ids = ", ".join(c["claim_id"] for c in live)
     raise BuildError(
-        f"metric {metric_id!r} has {len(active)} active claims with no resolving "
-        f"supersession chain ({ids}) -- two active records claim to be the latest "
-        f"measurement for the same metric; set valid_until/superseded_by to resolve"
+        f"metric {metric_id!r} has {len(live)} claims with neither valid_until nor "
+        f"superseded_by set ({ids}) -- two active records claim to be the latest "
+        f"measurement for the same metric with no supersession chain resolving it; "
+        f"set valid_until and/or superseded_by on all but the true current record"
     )
 
 
@@ -189,13 +220,16 @@ def validate_metric(metric_id: str, expected_evidence_class: str, stage_word: st
         if primary_source is None:
             primary_source = src
 
-    # Textual check: somewhere in this claim's own supporting-passage quotes, or the
-    # cited source's own `supports` bullets / title, the ordinal + stage word must
-    # actually appear -- catches a metric_value that doesn't match what the source
-    # actually says, rather than trusting the claim author's arithmetic.
-    haystack_parts = [claim.get("claim_text") or ""]
-    for p in claim.get("supporting_passages") or []:
-        haystack_parts.append(p.get("quote") or "")
+    # Textual check: the ordinal + stage word must actually appear in the cited
+    # SOURCE record's own archived text (title / `supports` bullets) -- and only
+    # there. A claim must not be able to prove itself: claim_text and
+    # supporting_passages[].quote are authored by whoever wrote the claim, so
+    # including them here would let a wrong metric_value pass validation merely
+    # by also writing matching (but unverified, possibly fabricated) prose into
+    # the claim. Grounding this check exclusively in the independently-archived
+    # source record is what makes it a real check rather than the claim
+    # confirming itself.
+    haystack_parts = []
     for sid in source_ids:
         src = sources[sid]
         haystack_parts.append(src.get("title") or "")
@@ -205,7 +239,7 @@ def validate_metric(metric_id: str, expected_evidence_class: str, stage_word: st
     if not ordinal_pattern.search(haystack):
         raise BuildError(
             f"{claim['claim_id']}: could not find text matching '{value}(st|nd|rd|th) ... {stage_word}' "
-            f"in the claim's own supporting passages or its source's stated text -- "
+            f"in the cited source record's own title/supports text -- "
             f"the source does not appear to support the stated procedural stage/value"
         )
 
@@ -214,8 +248,16 @@ def validate_metric(metric_id: str, expected_evidence_class: str, stage_word: st
             raise BuildError(f"{claim['claim_id']}: missing required {field!r}")
 
     swept = claim.get("last_swept_for_supersession")
-    if not (isinstance(swept, str) and re.match(r"^\d{4}-\d{2}-\d{2}$", swept)):
-        raise BuildError(f"{claim['claim_id']}: missing/malformed last_swept_for_supersession")
+    if not isinstance(swept, str):
+        raise BuildError(f"{claim['claim_id']}: missing last_swept_for_supersession")
+    swept_date = parse_calendar_date(swept, "last_swept_for_supersession")
+    today = today_local()
+    if swept_date > today:
+        raise BuildError(
+            f"{claim['claim_id']}: last_swept_for_supersession {swept!r} is after "
+            f"today's America/Chicago date ({today.isoformat()}) -- a sweep cannot "
+            f"have happened in the future"
+        )
 
     canonical_url = primary_source.get("canonical_url")
     if not (isinstance(canonical_url, str) and canonical_url.startswith("http")):
@@ -245,22 +287,22 @@ def render_card(m: dict) -> str:
     )
 
 
-def splice_marker(html: str, marker: str, replacement: str) -> str:
+def splice_marker(html_text: str, marker: str, replacement: str) -> str:
     start = f"<!-- {marker}:START -->"
     end = f"<!-- {marker}:END -->"
-    si = html.find(start)
-    ei = html.find(end)
+    si = html_text.find(start)
+    ei = html_text.find(end)
     if si == -1 or ei == -1 or ei < si:
         raise BuildError(f"marker pair {marker} not found (or out of order) in {STATUS_HTML.relative_to(ROOT)}")
     si_end = si + len(start)
-    return html[:si_end] + replacement + html[ei:]
+    return html_text[:si_end] + replacement + html_text[ei:]
 
 
 def main() -> None:
     if len(sys.argv) > 1 and sys.argv[1] == "--check-markers-only":
-        html = STATUS_HTML.read_text(encoding="utf-8")
+        html_text = STATUS_HTML.read_text(encoding="utf-8")
         for marker, _ in GENERATED_MARKERS:
-            if f"<!-- {marker}:START -->" not in html or f"<!-- {marker}:END -->" not in html:
+            if f"<!-- {marker}:START -->" not in html_text or f"<!-- {marker}:END -->" not in html_text:
                 raise BuildError(f"marker pair {marker} missing")
         print("status-snapshot markers OK")
         return
@@ -288,12 +330,12 @@ def main() -> None:
     cards_html = "\n".join(render_card(r) for r in results)
     cards_block = f"\n        <div class=\"status-snapshot\">\n{cards_html}\n        </div>\n        "
 
-    html = STATUS_HTML.read_text(encoding="utf-8")
-    html = splice_marker(html, "STATUS-SNAPSHOT:GENERATED:HERO-DATE", f"Status checked {status_checked_display}")
-    html = splice_marker(html, "STATUS-SNAPSHOT:GENERATED:CARDS", cards_block)
-    html = splice_marker(html, "STATUS-SNAPSHOT:GENERATED:FOOTER-DATE", f"Status checked {status_checked_display}")
+    html_text = STATUS_HTML.read_text(encoding="utf-8")
+    html_text = splice_marker(html_text, "STATUS-SNAPSHOT:GENERATED:HERO-DATE", f"Status checked {status_checked_display}")
+    html_text = splice_marker(html_text, "STATUS-SNAPSHOT:GENERATED:CARDS", cards_block)
+    html_text = splice_marker(html_text, "STATUS-SNAPSHOT:GENERATED:FOOTER-DATE", f"Status checked {status_checked_display}")
 
-    STATUS_HTML.write_text(html, encoding="utf-8")
+    STATUS_HTML.write_text(html_text, encoding="utf-8")
     print(
         "wrote status/index.html snapshot: "
         + ", ".join(f"{r['claim_id']}={r['value']}" for r in results)

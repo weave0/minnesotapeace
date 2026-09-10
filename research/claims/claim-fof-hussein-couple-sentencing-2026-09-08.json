@@ -26,7 +26,7 @@
     "The source release does not state an ordinal position (e.g. '27th' or '28th defendant sentenced') for either individual. This corpus does not infer one from journalism, arithmetic, or roster reconciliation.",
     "No restitution or forfeiture figure is stated for either defendant in the retrieved source text."
   ],
-  "editorial_notes": "Archived as part of the 2026-09-10 /status/ headline-snapshot official-source sweep. Intentionally excluded from the three headline-metric claims per that pass's scope discipline; a visible 'Recent movement' update for /status/ (if warranted) is deferred to a separate follow-up PR after the snapshot-generator PR is independently certified.",
+  "editorial_notes": "Archived as part of the 2026-09-09 (America/Chicago) /status/ headline-snapshot official-source sweep. Intentionally excluded from the three headline-metric claims per that pass's scope discipline; a visible 'Recent movement' update for /status/ (if warranted) is deferred to a separate follow-up PR after the snapshot-generator PR is independently certified.",
   "valid_from": "2026-09-08T00:00:00Z",
   "valid_until": null,
   "superseded_by": null,
