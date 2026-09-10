@@ -400,6 +400,7 @@ main,
   text-transform: uppercase;
   color: var(--cyan);
   margin-bottom: 1.4rem;
+  text-shadow: 0 1px 12px rgba(2, 6, 12, 0.85);
 }
 
 .hero-title {
@@ -430,6 +431,7 @@ main,
   line-height: 1.75;
   max-width: 38rem;
   margin: 0 auto 2.4rem;
+  text-shadow: 0 1px 16px rgba(2, 6, 12, 0.9);
 }
 
 .hero-actions {
