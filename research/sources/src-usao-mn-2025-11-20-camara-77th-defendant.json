@@ -1,0 +1,23 @@
+{
+  "source_id": "src-usao-mn-2025-11-20-camara-77th-defendant",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/77th-defendant-charged-feeding-our-future-fraud-scheme",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "77th Defendant Charged in Feeding Our Future Fraud Scheme",
+  "publication_date": "2025-11-20",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "notes": "Retrieved via the in-browser fetch tool. Cited on the live index.html without this corpus previously having captured it; this record closes that provenance gap. Confirms this corpus's defendants.json entry (fof-d-067, Ousman Camara, '77th defendant; 9-count indictment') by name, count, and charge date.",
+  "supports": [
+    "Ousman Camara, 45, was indicted on November 20, 2025 in a nine-count indictment with wire fraud, federal programs bribery, and money laundering, announced U.S. Attorney Daniel N. Rosen. Camara is described as the 77th defendant indicted in the Feeding Our Future scheme.",
+    "Camara owned K's Dollar Grocery and Deli in north Minneapolis; the USDA had disqualified Camara and his store from SNAP in August 2015 for suspected fraud, before he enrolled the store in the Federal Child Nutrition Program under Feeding Our Future's sponsorship in September 2020.",
+    "The release states Camara claimed to have served more than 300,000 meals and claimed entitlement to more than $1 million in reimbursement funds, wired more than $100,000 in fraud proceeds abroad, and paid approximately $87,000 in kickbacks to a Feeding Our Future employee."
+  ],
+  "does_not_support": [
+    "Any plea, trial outcome, or sentencing for Camara; this release is a charging announcement only and explicitly states an indictment is merely an allegation."
+  ]
+}

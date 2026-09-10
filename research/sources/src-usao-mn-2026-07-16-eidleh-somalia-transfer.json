@@ -1,0 +1,26 @@
+{
+  "source_id": "src-usao-mn-2026-07-16-eidleh-somalia-transfer",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/successful-transfer-abdikerm-eidleh-somalia-minnesota-face-charges-role-feeding-our",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Successful Transfer of Abdikerm Eidleh from Somalia to Minnesota to Face Charges for Role in Feeding Our Future Fraud Scheme",
+  "publication_date": "2026-07-16",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "CHARGED_ALLEGED",
+  "notes": "Retrieved via the in-browser fetch tool after both a plain WebFetch and a curl-with-browser-UA attempt returned only an Akamai bot-verification interstitial, not article content. Cited on the live /status/ page without this corpus previously having captured it; this record closes that provenance gap. Confirms this corpus's defendants.json note (fof-d-002, Abdikerm Abdelahi Eidleh) that he remains 'charged' with no plea or conviction as of this pass -- this release is about his custody transfer, not a disposition.",
+  "supports": [
+    "United States Attorney Daniel N. Rosen announced that Abdikerm Abdelahi Eidleh, 42, of Burnsville, Minnesota, was transferred to Minnesota on July 16, 2026 following his lawful surrender in Somalia.",
+    "Eidleh was originally charged by indictment in the Feeding Our Future scheme in September 2022 and, per this release, faces 31 charges including conspiracy to commit wire fraud, wire fraud, conspiracy to commit federal programs bribery, federal programs bribery, conspiracy to commit money laundering, and money laundering.",
+    "The U.S. District Court for the District of Minnesota signed a warrant for Eidleh's arrest in September 2022; he was located by law enforcement in Somalia in June 2026, nearly four years later.",
+    "FBI Director Kash Patel is quoted describing Eidleh as 'second only to Aimee Bock' in the scheme (a characterization attributed to USAO in this corpus's other records is here directly quoted from the FBI Director).",
+    "The transfer involved cooperation among the FBI, IRS Criminal Investigation, the Justice Department's Office of International Affairs, Somalia's National Intelligence and Security Agency, and the Somali Police Force."
+  ],
+  "does_not_support": [
+    "Any plea, trial outcome, or sentencing for Eidleh; this release covers only his custodial transfer and states he is facing charges, not that he has been convicted of anything.",
+    "An initial-appearance date; this release does not state one beyond describing the transfer date itself."
+  ]
+}

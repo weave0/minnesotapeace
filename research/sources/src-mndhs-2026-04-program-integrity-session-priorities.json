@@ -1,0 +1,28 @@
+{
+  "source_id": "src-mndhs-2026-04-program-integrity-session-priorities",
+  "canonical_url": "https://mn.gov/dhs/assets/2026-04_program-integrity_tcm1053-738534.pdf",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "2026 Session Priorities: Comprehensive reform package will improve program integrity, from program design to post-payment analytics",
+  "publication_date": "2026-04-01",
+  "retrieval_date": "2026-09-09",
+  "document_type": "agency_legislative_priorities_pdf",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 5,
+  "source_status": "PRIMARY_AGENCY_DOCUMENT",
+  "evidence_class": "AGENCY_POSITION",
+  "notes": "This is a legislative-session budget PRIORITIES/PROPOSAL document dated 04/2026 describing measures in Governor Tim Walz's 2026 supplemental budget -- it is DHS advocating for these reforms to the legislature, not a record that they have all already been enacted or implemented. Several items described (a new statewide Office of Inspector General, codifying HSS termination in statute, several billing-rule and rate-methodology changes) are proposals, not yet-adopted law, as of this document's own text. Do not cite this PDF as proof that any specific proposed measure is already in effect; separately verify enactment (e.g. via session law) before upgrading a proposal to an implemented fact. Cited on the live oversight/index.html without this corpus previously having captured it; this record closes that provenance gap. Retrieved via curl with a browser user-agent (this DHS asset path serves the file directly, unlike the Akamai-challenged justice.gov press-release paths).",
+  "supports": [
+    "DHS describes a comprehensive program-integrity reform package proposed in Governor Tim Walz's 2026 supplemental budget, covering the Medicaid program lifecycle from program design through provider enrollment, prepayment review, payment controls, and post-payment data analytics.",
+    "Proposals include a data-driven preenrollment risk assessment process, enhanced revalidation processes, and stricter background-studies requirements for high-risk providers.",
+    "The proposal includes a statutory update to codify the termination of the Housing Stabilization Services program and directs DHS to develop recommendations for a redesigned housing services benefit, with a stated deadline of September 15, 2027.",
+    "The proposal includes establishing a new statewide Office of Inspector General to investigate and prevent fraud and misuse of public funds across state programs, with investigation and data-research teams and a case management system.",
+    "The proposal would cap administrative fees at 6% for certain disability-waiver and older-adult programs (Alternative Care, Essential Community Supports, Elderly Waiver), citing the current lack of such a limit as allowing some providers to bill the maximum allowable rate regardless of actual cost.",
+    "The proposal includes new reforms specific to Integrated Community Supports, including a 15-minute billing unit, acuity-aligned rate limits, distinct funding streams for housing versus waiver services, and a license moratorium for new providers."
+  ],
+  "does_not_support": [
+    "That any of these proposals have been enacted into law or fully implemented; this document is DHS's session-priorities advocacy document, dated April 2026, describing what the department is asking the legislature to fund and authorize.",
+    "Any dollar figure for money recovered, saved, or prevented by these measures; the document describes intended mechanisms, not realized results.",
+    "The already-implemented DHS actions cited elsewhere on this site (e.g. the 2,061 providers approved through 'Revalidate 2026' or the count of inactive providers terminated); those are separate, already-completed DHS actions and are not sourced to this proposal document."
+  ]
+}

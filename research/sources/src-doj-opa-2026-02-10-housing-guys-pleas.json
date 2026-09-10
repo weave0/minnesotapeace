@@ -1,0 +1,27 @@
+{
+  "source_id": "src-doj-opa-2026-02-10-housing-guys-pleas",
+  "canonical_url": "https://www.justice.gov/opa/pr/fraud-tourists-plead-guilty-minneapolis-medicaid-fraud",
+  "issuing_body": "U.S. Department of Justice, Office of Public Affairs",
+  "title": "Fraud Tourists Plead Guilty to Minneapolis Medicaid Fraud",
+  "publication_date": "2026-02-10",
+  "retrieval_date": "2026-09-09",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved successfully via a plain WebFetch on the first attempt (opa/pr path, unlike usao-mn/pr paths which were Akamai-challenged for this corpus). Cited on the live /status/ page (Housing Stabilization Services section) without this corpus previously having captured it; this record closes that provenance gap. Concerns Housing Stabilization Services (HSS), not Feeding Our Future.",
+  "supports": [
+    "Anthony Waddell Jefferson, 37, and Lester Brown, 53, both of Philadelphia, pleaded guilty on February 9, 2026 to one count of wire fraud each, in connection with a scheme targeting Minnesota's Housing Stabilization Services Medicaid program.",
+    "Each faces a maximum statutory penalty of 20 years in prison.",
+    "The two defendants marketed themselves as 'The Housing Guys,' traveled to Minnesota to recruit homeless shelter residents as purported clients, and billed for services never provided.",
+    "The release states the defendants used ChatGPT to generate fake client notes when documentation was requested, which the release characterizes as marking the first AI-assisted healthcare-fraud charges in Minnesota.",
+    "The scheme is alleged to have stolen approximately $3.5 million from the Housing Stabilization Services program between February 2022 and June 2025, affecting roughly 230 Medicaid beneficiaries.",
+    "Attorney General Pamela Bondi is quoted in the release: 'Criminal fraud not only robs taxpayers — it shatters trust in our institutions.'"
+  ],
+  "does_not_support": [
+    "A sentencing outcome for either defendant; the release covers only the guilty pleas.",
+    "Any connection between this HSS-program scheme and the separate Feeding Our Future child-nutrition prosecutions; these are different programs and different defendants."
+  ]
+}
