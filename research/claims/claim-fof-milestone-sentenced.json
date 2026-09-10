@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim-fof-milestone-sentenced",
+  "claim_text": "As of August 27, 2026, USAO-MN identified Abdihakim Ali Ahmed, Ahmed Abdullahi Ghedi, and Ahmed Sharif Omar-Hashim as the 24th, 25th, and 26th Feeding Our Future defendants sentenced.",
+  "claim_type": "COUNT",
+  "measurement_type": "OFFICIAL_ORDINAL_MILESTONE",
+  "metric_id": "fof-sentenced-count",
+  "metric_value": 26,
+  "evidence_class": "ADJUDICATED",
+  "status": "ADJUDICATED",
+  "confidence": "VERY_HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "jurisdiction": "D. Minn.",
+  "event_date": "2026-08-27",
+  "program_ids": ["inv-feeding-our-future"],
+  "source_ids": ["src-usao-mn-2026-08-27-fof-three-sentences"],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2026-08-27-fof-three-sentences",
+      "quote": "USAO-MN described Ahmed, Ghedi, and Omar-Hashim as the 24th, 25th, and 26th Feeding Our Future defendants sentenced.",
+      "locator": "press release body, Three Defendants in Feeding Our Future Fraud Scheme Sentenced to Total of 155 Months' Imprisonment"
+    }
+  ],
+  "qualifiers": [
+    "This is an official DOJ ordinal milestone stated outright by the source, not a value derived by this corpus through addition, subtraction, or roster reconciliation.",
+    "Charged, convicted, and sentenced are overlapping procedural stages of the same population, not additive groups; do not sum or subtract this value against the charged or convicted metrics to infer a 'pending' count.",
+    "A later individual sentencing does not by itself change this published ordinal, even when this corpus has separately and canonically archived that later sentencing (see claim-fof-hussein-couple-sentencing-2026-09-08). Only an explicit newer DOJ statement of a higher sentenced-count ordinal supersedes this record. As of the 2026-09-09 official-source sweep (America/Chicago), no such statement had been published.",
+    "This claim covers only the Feeding Our Future investigation; it does not include Housing Stabilization Services or any other program."
+  ],
+  "public_label": "defendants sentenced",
+  "public_explanation": "DOJ identified Abdihakim Ali Ahmed, Ahmed Abdullahi Ghedi and Ahmed Sharif Omar-Hashim as the 24th, 25th and 26th defendants sentenced.",
+  "public_source_label": "26th sentencing milestone →",
+  "last_swept_for_supersession": "2026-09-09",
+  "valid_from": "2026-08-27T00:00:00Z",
+  "valid_until": null,
+  "superseded_by": null,
+  "reviewed_at": "2026-09-10T00:00:00Z",
+  "created_at": "2026-09-10T00:00:00Z",
+  "updated_at": "2026-09-10T00:00:00Z"
+}

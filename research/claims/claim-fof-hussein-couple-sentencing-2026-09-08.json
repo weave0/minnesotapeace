@@ -1,0 +1,36 @@
+{
+  "claim_id": "claim-fof-hussein-couple-sentencing-2026-09-08",
+  "claim_text": "Mekfira Hussein was sentenced to 57 months and Abduljabar Hussein was sentenced to 40 months in prison on September 8, 2026, each on one count of conspiracy to commit wire fraud, for their roles in the Feeding Our Future fraud scheme; the two obtained approximately $8.8 million in federal child nutrition program funds.",
+  "claim_type": "DISPOSITION",
+  "measurement_type": null,
+  "metric_id": null,
+  "metric_value": null,
+  "evidence_class": "ADJUDICATED",
+  "status": "ADJUDICATED",
+  "confidence": "VERY_HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "jurisdiction": "D. Minn.",
+  "event_date": "2026-09-08",
+  "program_ids": ["inv-feeding-our-future"],
+  "source_ids": ["src-usao-mn-2026-09-09-hussein-couple-sentencing"],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2026-09-09-hussein-couple-sentencing",
+      "quote": "Mekfira Hussein, 42, of Shakopee, Minnesota, was sentenced to 57 months in prison on one count of conspiracy to commit wire fraud. She pleaded guilty on January 31, 2025. Abduljabar Hussein, 45, of Shakopee, Minnesota, was sentenced to 40 months in prison on one count of conspiracy to commit wire fraud. He pleaded guilty on February 5, 2025.",
+      "locator": "press release body, Couple in Feeding Our Future Fraud Scheme Sentenced to 97 Months' Imprisonment"
+    }
+  ],
+  "qualifiers": [
+    "This is an individual disposition record, not an official ordinal milestone; it does not carry a metric_id and must not be used to increment, supersede, or otherwise alter claim-fof-milestone-sentenced (the published 'sentenced' count, 26 as of 2026-08-27).",
+    "The source release does not state an ordinal position (e.g. '27th' or '28th defendant sentenced') for either individual. This corpus does not infer one from journalism, arithmetic, or roster reconciliation.",
+    "No restitution or forfeiture figure is stated for either defendant in the retrieved source text."
+  ],
+  "editorial_notes": "Archived as part of the 2026-09-09 (America/Chicago) /status/ headline-snapshot official-source sweep. Intentionally excluded from the three headline-metric claims per that pass's scope discipline; a visible 'Recent movement' update for /status/ (if warranted) is deferred to a separate follow-up PR after the snapshot-generator PR is independently certified.",
+  "valid_from": "2026-09-08T00:00:00Z",
+  "valid_until": null,
+  "superseded_by": null,
+  "reviewed_at": "2026-09-10T00:00:00Z",
+  "created_at": "2026-09-10T00:00:00Z",
+  "updated_at": "2026-09-10T00:00:00Z"
+}

@@ -5,9 +5,13 @@ on:
     paths:
       - 'research/**'
       - 'record/data/**'
+      - 'status/index.html'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
       - 'scripts/verify-public-corpus-fresh.py'
+      - 'scripts/build-status-snapshot.py'
+      - 'scripts/check-status-snapshot-fresh.py'
+      - 'scripts/test-status-snapshot-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -16,9 +20,13 @@ on:
     paths:
       - 'research/**'
       - 'record/data/**'
+      - 'status/index.html'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
       - 'scripts/verify-public-corpus-fresh.py'
+      - 'scripts/build-status-snapshot.py'
+      - 'scripts/check-status-snapshot-fresh.py'
+      - 'scripts/test-status-snapshot-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -53,3 +61,13 @@ jobs:
 
       - name: Regression-test the publication boundary itself
         run: python3 scripts/test-publication-boundary.py
+
+      # /status/'s three-number "Feeding Our Future snapshot" is a second, narrower
+      # generated surface (scripts/build-status-snapshot.py), independent of the
+      # /record/ manifest above. This step must also run before any step regenerates
+      # status/index.html against a real checkout, for the same reason noted above.
+      - name: Verify the status-page snapshot is not stale or hand-edited
+        run: python3 scripts/check-status-snapshot-fresh.py
+
+      - name: Regression-test the status-snapshot generator's fail-closed cases
+        run: python3 scripts/test-status-snapshot-boundary.py

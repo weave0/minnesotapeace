@@ -1,0 +1,27 @@
+{
+  "source_id": "src-usao-mn-2026-09-09-hussein-couple-sentencing",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/couple-feeding-our-future-fraud-scheme-sentenced-97-months-imprisonment",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Couple in Feeding Our Future Fraud Scheme Sentenced to 97 Months' Imprisonment",
+  "publication_date": "2026-09-09",
+  "retrieval_date": "2026-09-10",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved via the in-browser fetch tool. Captured as part of the 2026-09-09 (America/Chicago) official-source sweep for the /status/ headline-snapshot canonicalization pass. IMPORTANT: this release does NOT state an ordinal (e.g. '27th' or '28th defendant sentenced') for either Mekfira Hussein or Abduljabar Hussein, unlike USAO-MN's usual practice for Feeding Our Future sentencing releases. A contemporaneous Center of the American Experiment blog post (a policy-advocacy outlet, not treated as a source for this corpus's official-ordinal metrics) separately reported its own count of '27' for a different, earlier September 3, 2026 sentencing (Abdikadir Mohamud) that this corpus has found no corresponding DOJ press release for. This corpus does not adopt any journalist's derived ordinal, and does not add, subtract, or otherwise infer a new official ordinal from this release's silence on the point. The published 'fof-sentenced-count' milestone (26, as of 2026-08-27) is left unchanged pending an explicit DOJ ordinal statement.",
+  "supports": [
+    "United States Attorney Daniel N. Rosen announced that Mekfira Hussein and Abduljabar Hussein were sentenced to a combined 97 months in prison for their roles in the Feeding Our Future fraud scheme, before U.S. District Judge Nancy E. Brasel on September 8, 2026.",
+    "Mekfira Hussein, 42, of Shakopee, Minnesota, was sentenced to 57 months in prison on one count of conspiracy to commit wire fraud; she pleaded guilty on January 31, 2025.",
+    "Abduljabar Hussein, 45, of Shakopee, Minnesota, was sentenced to 40 months in prison on one count of conspiracy to commit wire fraud; he pleaded guilty on February 5, 2025.",
+    "The release states the Husseins submitted fraudulent claims for meals and obtained approximately $8.8 million in federal child nutrition program funds.",
+    "The release notes the defendants were originally charged by indictment on October 18, 2022."
+  ],
+  "does_not_support": [
+    "Any ordinal position (e.g. '27th' or '28th defendant sentenced') for either Mekfira Hussein or Abduljabar Hussein; this release states none.",
+    "Any change to the previously published 'fof-sentenced-count' milestone (26, as of 2026-08-27); this release does not restate or update that count.",
+    "A restitution or forfeiture dollar figure for either defendant; none is stated in the retrieved text of this release beyond the $8.8 million figure attributed to the scheme's underlying meal-fraud claims, which is not itself labeled restitution_ordered."
+  ]
+}

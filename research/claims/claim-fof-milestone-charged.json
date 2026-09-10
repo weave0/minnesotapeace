@@ -1,0 +1,40 @@
+{
+  "claim_id": "claim-fof-milestone-charged",
+  "claim_text": "As of November 24, 2025, USAO-MN identified Abdirashid Bixi Dool, age 36, as the 78th defendant charged in the Feeding Our Future fraud scheme. A charge is an allegation unless later resolved by plea, verdict, dismissal, or another court disposition.",
+  "claim_type": "COUNT",
+  "measurement_type": "OFFICIAL_ORDINAL_MILESTONE",
+  "metric_id": "fof-charged-count",
+  "metric_value": 78,
+  "evidence_class": "CHARGED_ALLEGED",
+  "status": "CHARGED",
+  "confidence": "VERY_HIGH",
+  "is_allegation": false,
+  "is_inference": false,
+  "jurisdiction": "D. Minn.",
+  "event_date": "2025-11-24",
+  "program_ids": ["inv-feeding-our-future"],
+  "source_ids": ["src-usao-mn-2025-11-24-dool-78th-fof-defendant"],
+  "supporting_passages": [
+    {
+      "source_id": "src-usao-mn-2025-11-24-dool-78th-fof-defendant",
+      "quote": "USAO-MN identifies Abdirashid Bixi Dool, age 36, as the 78th defendant charged in the Feeding Our Future fraud scheme.",
+      "locator": "press release body, 78th Defendant Charged in Feeding Our Future Fraud Scheme"
+    }
+  ],
+  "qualifiers": [
+    "This is an official DOJ ordinal milestone stated outright by the source, not a value derived by this corpus through addition, subtraction, or roster reconciliation.",
+    "Charged, convicted, and sentenced are overlapping procedural stages of the same population, not additive groups; do not sum or subtract this value against the convicted or sentenced metrics to infer a 'pending' count.",
+    "A later individual charging announcement does not by itself change this published ordinal. Only an explicit newer DOJ statement of a higher charged-count ordinal supersedes this record.",
+    "This claim covers only the Feeding Our Future investigation; it does not include Housing Stabilization Services or any other program."
+  ],
+  "public_label": "defendants charged in the Feeding Our Future investigation",
+  "public_explanation": "DOJ identified Abdirashid Bixi Dool as the 78th defendant charged. A charge is an allegation unless later resolved by plea, verdict, dismissal or another court disposition.",
+  "public_source_label": "78th defendant release →",
+  "last_swept_for_supersession": "2026-09-09",
+  "valid_from": "2025-11-24T00:00:00Z",
+  "valid_until": null,
+  "superseded_by": null,
+  "reviewed_at": "2026-09-10T00:00:00Z",
+  "created_at": "2026-09-10T00:00:00Z",
+  "updated_at": "2026-09-10T00:00:00Z"
+}
