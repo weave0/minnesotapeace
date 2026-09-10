@@ -1,0 +1,46 @@
+name: OG image health
+
+on:
+  workflow_run:
+    workflows: ["Deploy to Cloudflare Pages"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  verify-og:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify production social preview contract
+        run: |
+          set -euo pipefail
+
+          base="https://minnesotapeace.com"
+          image_url="${base}/assets/og/mn-peace-og-v2.png"
+
+          curl -fsSL --retry 3 --retry-delay 2 -D /tmp/og.headers -o /tmp/og.png "$image_url"
+          curl -fsSL --retry 3 --retry-delay 2 -o /tmp/home.html "${base}/"
+
+          grep -Eqi '^content-type: image/png([;[:space:]]|$)' /tmp/og.headers
+          test "$(wc -c < /tmp/og.png)" -gt 1000
+
+          python3 - <<'PY'
+          import struct
+          from pathlib import Path
+
+          data = Path('/tmp/og.png').read_bytes()
+          if data[:8] != b'\x89PNG\r\n\x1a\n':
+              raise SystemExit('OG asset is not a PNG')
+          width, height = struct.unpack('>II', data[16:24])
+          if (width, height) != (1200, 630):
+              raise SystemExit(f'OG dimensions are {width}x{height}, expected 1200x630')
+          print(f'OG asset OK: {width}x{height}, {len(data)} bytes')
+          PY
+
+          grep -Fq '<meta property="og:image" content="https://minnesotapeace.com/assets/og/mn-peace-og-v2.png">' /tmp/home.html
+          grep -Fq '<meta property="og:image:width" content="1200">' /tmp/home.html
+          grep -Fq '<meta property="og:image:height" content="630">' /tmp/home.html
+          grep -Fq '<meta name="twitter:card" content="summary_large_image">' /tmp/home.html
+          grep -Fq '<meta name="twitter:image" content="https://minnesotapeace.com/assets/og/mn-peace-og-v2.png">' /tmp/home.html
+
+          echo "Production OG image and homepage social metadata are healthy."
