@@ -27,7 +27,7 @@
   }
   function cases(p){
     if(!(p.cases||[]).length)return '<p class="empty">No charge-era case bundle is published for this program in The Record.</p>';
-    return '<div class="card-grid">'+p.cases.map(function(c){return '<article class="case-card"><span class="status-chip charged">'+esc(c.evidentiary_status||"record")+'</span><h4>'+esc(c.short_name||c.docket)+'</h4><p class="card-note">'+esc(c.docket||"")+' · '+esc(c.instrument||"")+(c.count_n!=null?' · '+esc(c.count_n)+' counts':'')+'</p><p class="card-note">'+esc((c.defendants||[]).length)+' named defendant'+((c.defendants||[]).length===1?'':'s')+' in this filing.</p>'+(c.docket?'<a href="/record/#/cases">Open case record →</a>':'')+'</article>'}).join("")+'</div>'
+    return '<div class="card-grid">'+p.cases.map(function(c){return '<article class="case-card"><span class="status-chip charged">'+esc(c.evidentiary_status||"record")+'</span><h4>'+esc(c.short_name||c.docket)+'</h4><p class="card-note">'+esc(c.docket||"")+' · '+esc(c.instrument||"")+(c.count_n!=null?' · '+esc(c.count_n)+' counts':'')+'</p><p class="card-note">'+esc((c.defendants||[]).length)+' named defendant'+((c.defendants||[]).length===1?'':'s')+' in this filing.</p>'+(c.docket?'<a href="/record/#/cases">Open case record →</a>':'')+sourceLinks(c.source_ids)+'</article>'}).join("")+'</div>'
   }
   function events(p){
     if(!(p.events||[]).length)return '<p class="empty">No later accountability event is published for this program yet.</p>';
