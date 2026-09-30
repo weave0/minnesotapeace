@@ -137,6 +137,26 @@ def legal_transition(previous, newer):
         return False
     return LEGAL_STAGE_ORDER[newer] >= LEGAL_STAGE_ORDER[previous]
 
+def validate_event_sequence(events, sources):
+    seen = set()
+    subject_stage = {}
+    by_program = {}
+    for event in events:
+        eid = event.get("event_id")
+        if not eid or eid in seen:
+            raise BuildError(f"duplicate or missing event_id: {eid!r}")
+        seen.add(eid)
+        require_sources(source_ids_for(event), sources, f"event {eid}")
+        validate_legal_event(event)
+        if event.get("legal_stage"):
+            subject = event.get("subject")
+            prev = subject_stage.get(subject)
+            if not legal_transition(prev, event["legal_stage"]):
+                raise BuildError(f"unsupported legal transition for {subject}: {prev} -> {event['legal_stage']}")
+            subject_stage[subject] = event["legal_stage"]
+        by_program.setdefault(event.get("program_id"), []).append(event)
+    return by_program
+
 def active_metric(metric_id, claims, sources):
     matches = [c for c in claims.values() if c.get("metric_id") == metric_id and not c.get("valid_until")]
     if len(matches) != 1:
@@ -235,23 +255,7 @@ def main():
     claims = index_json(RESEARCH / "claims", "claim_id")
     sources = index_json(RESEARCH / "sources", "source_id")
 
-    seen_events = set()
-    events_by_program = {}
-    subject_stage = {}
-    for event in event_doc.get("events", []):
-        eid = event.get("event_id")
-        if not eid or eid in seen_events:
-            raise BuildError(f"duplicate or missing event_id: {eid!r}")
-        seen_events.add(eid)
-        require_sources(source_ids_for(event), sources, f"event {eid}")
-        validate_legal_event(event)
-        if event.get("legal_stage"):
-            subject = event.get("subject")
-            prev = subject_stage.get(subject)
-            if not legal_transition(prev, event["legal_stage"]):
-                raise BuildError(f"unsupported legal transition for {subject}: {prev} -> {event['legal_stage']}")
-            subject_stage[subject] = event["legal_stage"]
-        events_by_program.setdefault(event.get("program_id"), []).append(event)
+    events_by_program = validate_event_sequence(event_doc.get("events", []), sources)
 
     controls_public = timeline_projection(controls, sources)
     programs_out = []
