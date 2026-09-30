@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "description": "Publication selection and public-purpose metadata for /tracker/. This file selects canonical records; it is not an independent truth store.",
+  "programs": [
+    {
+      "program_id": "feeding-our-future",
+      "name": "Feeding Our Future / federal child nutrition",
+      "purpose": "Federal child-nutrition programs reimburse participating organizations for eligible meals and snacks. Feeding Our Future operated as a sponsor in Minnesota.",
+      "purpose_source_ids": [
+        "src-mnd-24-cr-00015-ecf1-mohamed-indictment"
+      ],
+      "family_id": "feeding-our-future",
+      "legal_metric_ids": [
+        "fof-charged-count",
+        "fof-convicted-count",
+        "fof-sentenced-count"
+      ],
+      "claim_ids": [],
+      "event_program_id": "feeding-our-future"
+    },
+    {
+      "program_id": "hss",
+      "name": "Housing Stabilization Services",
+      "purpose": "A Minnesota Medicaid benefit designed to help eligible people with disabilities and seniors find and maintain housing; the program ended October 31, 2025.",
+      "purpose_source_ids": [
+        "src-mnd-25-cr-00349-ecf1-aden-indictment"
+      ],
+      "family_id": "hss",
+      "legal_metric_ids": [],
+      "claim_ids": [
+        "claim-hss-25cr-indictments-statewide-program-payouts"
+      ],
+      "event_program_id": "hss"
+    },
+    {
+      "program_id": "eidbi",
+      "name": "EIDBI / autism services",
+      "purpose": "Early Intensive Developmental and Behavioral Intervention is a Minnesota Medicaid benefit for medically necessary services for eligible people under 21 with autism spectrum disorder or related conditions.",
+      "purpose_source_ids": [
+        "src-usao-mn-2025-09-24-asha-hassan-autism-fof"
+      ],
+      "family_id": null,
+      "legal_metric_ids": [],
+      "claim_ids": [
+        "claim-asha-hassan-smart-therapy-eidbi-14m",
+        "claim-asha-hassan-guilty-plea-2025-12-18"
+      ],
+      "event_program_id": "eidbi"
+    },
+    {
+      "program_id": "medicaid-program-integrity",
+      "name": "Minnesota Medicaid program integrity / high-risk services",
+      "purpose": "Minnesota DHS uses program-integrity controls to screen providers, review claims, investigate suspected fraud and recover inappropriate payments across Medicaid services, including services designated high-risk.",
+      "purpose_source_ids": [
+        "src-mn-dhs-program-integrity-2026-09-09"
+      ],
+      "family_id": null,
+      "legal_metric_ids": [],
+      "claim_ids": [],
+      "event_program_id": "medicaid-program-integrity"
+    }
+  ]
+}
