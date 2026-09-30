@@ -190,17 +190,20 @@ def fact_from_claim(claim, sources):
         "source_ids": sids,
     }
 
-def family_case_projection(family_id, corpus):
+def family_case_projection(family_id, corpus, sources):
     cases = [c for c in corpus.get("cases", []) if c.get("family") == family_id]
     docket_set = {c.get("docket") for c in cases if c.get("docket")}
-    claim_ids = {
-        c.get("claim_id") for c in corpus.get("claims", [])
+    claim_map = {
+        c.get("claim_id"): c for c in corpus.get("claims", [])
         if c.get("case_number") in docket_set and c.get("claim_id")
     }
+    claim_ids = set(claim_map)
     money = []
     for row in corpus.get("money", []):
         if row.get("claim_id") not in claim_ids:
             continue
+        claim = claim_map[row.get("claim_id")]
+        sids = require_sources(source_ids_for(claim), sources, f"record money claim {row.get('claim_id')}")
         normalized = normalize_money(row, f"record money row {row.get('row_id')}")
         normalized.update({
             "row_id": row.get("row_id"),
@@ -208,10 +211,15 @@ def family_case_projection(family_id, corpus):
             "case_number": row.get("case_number"),
             "status": row.get("status"),
             "qualifiers": row.get("qualifiers") or [],
+            "source_ids": sids,
         })
         money.append(normalized)
     public_cases = []
     for case in cases:
+        case_sids = case.get("source_ids") or []
+        if not case_sids:
+            continue
+        require_sources(case_sids, sources, f"record case {case.get('id')}")
         public_cases.append({
             "case_id": case.get("id"),
             "docket": case.get("docket"),
@@ -221,7 +229,7 @@ def family_case_projection(family_id, corpus):
             "defendants": case.get("defendants") or [],
             "count_n": case.get("count_n"),
             "evidentiary_status": case.get("evidentiary_status"),
-            "source_ids": case.get("source_ids") or [],
+            "source_ids": case_sids,
             "gap": bool(case.get("gap")),
         })
     return public_cases, money
@@ -283,7 +291,7 @@ def main():
 
         cases, family_money = ([], [])
         if program.get("family_id"):
-            cases, family_money = family_case_projection(program["family_id"], corpus)
+            cases, family_money = family_case_projection(program["family_id"], corpus, sources)
 
         pevents = events_by_program.get(program.get("event_program_id"), [])
         for event in pevents:
@@ -326,6 +334,11 @@ def main():
                 row["status"] = fact["status"]
                 row["source_ids"] = fact["source_ids"]
                 explicit_money.append(row)
+
+        for row in family_money:
+            used_sources.update(row.get("source_ids") or [])
+        for case in cases:
+            used_sources.update(case.get("source_ids") or [])
 
         programs_out.append({
             "program_id": pid,
