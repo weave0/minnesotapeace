@@ -31,7 +31,7 @@
     {
       "event_id": "evt-hss-sallah-return-2026-09-11",
       "program_id": "hss",
-      "event_type": "CHARGED",
+      "event_type": "CASE_APPEARANCE",
       "occurred_at": "2026-09-11",
       "published_at": "2026-09-11",
       "subject": "Kaamil Omar Sallah",
