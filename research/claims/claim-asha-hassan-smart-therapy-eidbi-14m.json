@@ -21,7 +21,7 @@
       "value": 14000000,
       "currency": "USD",
       "metric_type": "amount_paid",
-      "exact_or_approximate": "minimum",
+      "exact_or_approximate": "approximate",
       "period_start": "2019-11-01",
       "period_end": "2024-12-31",
       "overlap_group_id": "eidbi-smart-star",
