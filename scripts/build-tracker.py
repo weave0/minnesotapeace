@@ -29,6 +29,7 @@ LEGAL_EVENT_STAGES = {
     "PLEADED": "PLEADED",
     "CONVICTED": "CONVICTED",
     "SENTENCED": "SENTENCED",
+    "CASE_APPEARANCE": "CHARGED",
 }
 LEGAL_STAGE_ORDER = {"CHARGED": 1, "PLEADED": 2, "CONVICTED": 2, "SENTENCED": 3}
 MONEY_CATEGORIES = {
@@ -333,6 +334,15 @@ def main():
                 row["claim_id"] = fact["claim_id"]
                 row["status"] = fact["status"]
                 row["source_ids"] = fact["source_ids"]
+                explicit_money.append(row)
+        for event in pevents:
+            for measure in event.get("measures") or []:
+                if measure.get("unit") != "USD":
+                    continue
+                row = normalize_money(measure, f"event measure {event.get('event_id')}")
+                row["event_id"] = event.get("event_id")
+                row["status"] = event.get("implementation_state") or event.get("event_type")
+                row["source_ids"] = source_ids_for(event)
                 explicit_money.append(row)
 
         for row in family_money:
