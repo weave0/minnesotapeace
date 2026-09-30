@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-09-30T00:00:00Z",
+  "created_at": "2026-09-30T00:00:00Z",
+  "updated_at": "2026-09-30T00:00:00Z",
+  "is_allegation": true,
+  "is_inference": false,
+  "evidence_class": "CHARGED_ALLEGED",
+  "confidence": "HIGH",
+  "jurisdiction": "D. Minn.",
+  "proposition_class": "A_FRAUD_AGAINST_STATE",
+  "claim_id": "claim-asha-hassan-smart-therapy-eidbi-14m",
+  "claim_text": "USAO-MN alleges that Smart Therapy obtained more than $14 million in EIDBI reimbursement funds from Minnesota DHS and UCare between approximately November 2019 and December 2024. This amount remains a charging-era allegation and must not be treated as restitution, forfeiture, recovery, or a program-wide loss total.",
+  "claim_type": "AMOUNT",
+  "status": "charged",
+  "source_ids": [
+    "src-usao-mn-2025-09-24-asha-hassan-autism-fof"
+  ],
+  "event_date": "2025-09-24",
+  "amounts": [
+    {
+      "value": 14000000,
+      "currency": "USD",
+      "metric_type": "amount_paid",
+      "exact_or_approximate": "minimum",
+      "period_start": "2019-11-01",
+      "period_end": "2024-12-31",
+      "overlap_group_id": "eidbi-smart-star",
+      "methodology": "USAO-MN release says Smart Therapy obtained more than $14 million in EIDBI reimbursement funds; the amount is tied to charged conduct and is not an adjudicated loss."
+    }
+  ],
+  "qualifiers": [
+    "CHARGED_ALLEGED dollar figure even though Hassan later pleaded guilty; the plea agreement is not captured here to allocate an admitted loss amount.",
+    "Separate from the approximately $465,000 Federal Child Nutrition Program allegation.",
+    "Overlaps later Smart Therapy / Star Autism program figures and must not be added to them."
+  ]
+}
