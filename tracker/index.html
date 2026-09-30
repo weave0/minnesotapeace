@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minnesota Public Money Tracker — MN Peace</title>
+  <meta name="description" content="Track Minnesota public money, legal status, oversight changes and evidence from canonical primary-source records.">
+  <link rel="canonical" href="https://minnesotapeace.com/tracker/">
+  <meta property="og:title" content="Minnesota Public Money Tracker — MN Peace">
+  <meta property="og:description" content="What happened to public money, what courts established, what changed afterward, and what remains unknown.">
+  <meta property="og:image" content="https://minnesotapeace.com/assets/og/mn-peace-og-v2.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/peace.css">
+  <link rel="stylesheet" href="/css/publication.css">
+  <link rel="stylesheet" href="/css/tracker.css">
+</head>
+<body class="tracker-page">
+  <a class="skip-link" href="#tracker">Skip to tracker</a>
+  <header class="site-header is-scrolled" id="nav">
+    <a class="logo" href="/">MN <em>Peace</em></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <div class="nav-panel" id="site-nav">
+      <a class="nav-cta" href="/tracker/" aria-current="page">Public Money Tracker</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/status/">Status</a></li>
+        <li><a href="/programs/">Programs</a></li>
+        <li><a href="/money/">Money</a></li>
+        <li><a href="/oversight/">Oversight</a></li>
+        <li><a href="/record/">The Record</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="tracker" class="tracker-main">
+    <section class="tracker-hero">
+      <div class="tracker-wrap">
+        <p class="tracker-eyebrow">Minnesota Public Money Tracker</p>
+        <h1>What happened to the money — and what changed afterward?</h1>
+        <p class="tracker-deck">Program purpose, public dollars, case status, oversight actions and source evidence in one explorable record. Different money categories and legal stages remain separate by design.</p>
+        <div class="tracker-meta" id="tracker-meta"><span>Loading verified data…</span></div>
+      </div>
+    </section>
+
+    <section class="tracker-shell tracker-wrap" aria-live="polite">
+      <aside class="tracker-sidebar" aria-label="Programs">
+        <div class="tracker-sidebar-head">
+          <p class="tracker-label">Programs</p>
+          <button id="copy-link" class="tracker-copy" type="button">Copy deep link</button>
+        </div>
+        <nav id="program-nav" class="program-nav"></nav>
+        <div class="tracker-legend">
+          <p class="tracker-label">Money labels</p>
+          <p><strong>Program spend</strong> is not alleged loss.</p>
+          <p><strong>Alleged loss / amount paid</strong> is not restitution.</p>
+          <p><strong>Identified for recovery</strong> is not cash recovered.</p>
+        </div>
+      </aside>
+      <div class="tracker-content">
+        <div id="tracker-error" class="tracker-error" hidden></div>
+        <div id="program-view"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div><p class="footer-brand">MN <em>Peace</em></p><p class="muted">Unknown stays unknown. Charges, pleas, convictions and sentences are not interchangeable.</p></div>
+      <div class="deep-footer-links"><a href="/tracker/">Tracker</a><a href="/record/">The Record</a><a href="/oversight/">Oversight</a><a href="/authority/">Authority</a></div>
+    </div>
+  </footer>
+  <script src="/js/peace.js"></script>
+  <script src="/js/tracker.js" defer></script>
+</body>
+</html>
