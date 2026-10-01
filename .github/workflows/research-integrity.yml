@@ -18,6 +18,8 @@ on:
       - 'scripts/build-tracker.py'
       - 'scripts/test-tracker-boundary.py'
       - 'scripts/capture-tracker-snapshot.py'
+      - 'scripts/build-accountability-brief.py'
+      - 'scripts/test-accountability-brief.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -39,6 +41,8 @@ on:
       - 'scripts/build-tracker.py'
       - 'scripts/test-tracker-boundary.py'
       - 'scripts/capture-tracker-snapshot.py'
+      - 'scripts/build-accountability-brief.py'
+      - 'scripts/test-accountability-brief.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -88,3 +92,5 @@ jobs:
         run: |
           python3 scripts/build-tracker.py
           python3 scripts/test-tracker-boundary.py
+          python3 scripts/build-accountability-brief.py
+          python3 scripts/test-accountability-brief.py
