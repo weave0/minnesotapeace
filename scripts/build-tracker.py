@@ -61,6 +61,30 @@ REFORM_STATE_MAP = {
     "federal_noncompliance_determination": "MEASURED",
 }
 
+
+# Evidence-basis model for recovery rows. A row is COURT_DOCUMENT-backed only when it
+# declares primary_document_ids and every one is a court record of a document type that
+# can actually establish that metric. A release, news report, or unrelated court filing
+# (for example an indictment) never upgrades a restitution/forfeiture row.
+COURT_DOC_TYPES_BY_METRIC = {
+    "restitution_ordered": {"court_judgment", "court_amended_judgment", "court_restitution_order"},
+    "forfeiture_ordered": {"court_forfeiture_order", "court_judgment", "court_amended_judgment"},
+    "forfeiture_sought": {"court_forfeiture_motion", "court_forfeiture_order", "court_plea_agreement"},
+    "assets_seized": {"court_forfeiture_order", "court_forfeiture_motion", "court_plea_agreement"},
+    "assets_recovered": {"court_collection_accounting"},
+    "recovered_amount": {"court_collection_accounting"},
+}
+COLLECTION_METRICS = {"recovered_amount", "assets_recovered", "administrative_recoupment"}
+COLLECTION_EVIDENCE_TYPES = {"court_collection_accounting", "agency_collection_ledger"}
+COLLECTED_STATUSES = {"COLLECTED", "PARTIALLY_COLLECTED", "REALIZED", "PARTIALLY_REALIZED", "RECOVERED"}
+SECONDARY_PREFIXES = ("SECONDARY", "LEAD", "NEWS", "REPUTABLE")
+COURT_CLASSES_NOT_ADJUDICATED_FOR = {"assets_seized", "forfeiture_sought", "forfeiture_ordered"}
+BASIS_GAP = {
+    "restitution_ordered": "Judgment or restitution order not yet captured; amount rests on the cited release.",
+    "forfeiture_ordered": "Forfeiture order not yet captured; status rests on the cited release.",
+    "assets_seized": "No court order or filing captured for this seizure; it rests on the cited release.",
+}
+
 class BuildError(SystemExit):
     pass
 
@@ -261,6 +285,57 @@ def timeline_projection(controls, sources):
     return out
 
 
+def derive_evidence_basis(entry, sources, eid):
+    """Return (basis, primary_ids, gap). Never infers court backing from a release."""
+    metric = entry.get("metric_type")
+    sids = source_ids_for(entry)
+    declared = entry.get("primary_document_ids") or []
+    if declared:
+        allowed = COURT_DOC_TYPES_BY_METRIC.get(metric, set())
+        for pid in declared:
+            if pid not in sids:
+                raise BuildError(f"recovery entry {eid}: primary document {pid} is not in source_ids")
+            src = sources[pid]
+            if src.get("source_status") != "PRIMARY_COURT_RECORD" or src.get("document_type") not in allowed:
+                raise BuildError(
+                    f"recovery entry {eid}: {pid} cannot establish {metric} "
+                    f"(status={src.get('source_status')!r}, type={src.get('document_type')!r})"
+                )
+        return "COURT_DOCUMENT", list(declared), None
+    statuses = {str(sources[sid].get("source_status") or "") for sid in sids}
+    # A court record that was not declared as primary for this metric (an indictment, a docket
+    # entry, a co-defendant's judgment) is corroboration only; it never makes the row court-backed.
+    agency_like = {s for s in statuses if s.startswith("PRIMARY_") and "COURT" not in s}
+    secondary_like = {s for s in statuses if s.startswith(SECONDARY_PREFIXES) or "JOURNALISM" in s or "ADVOCACY" in s}
+    if agency_like:
+        basis = "AGENCY_RELEASE_ONLY"
+    elif secondary_like:
+        basis = "SECONDARY_ONLY"
+    else:
+        basis = "UNRESOLVED"
+    default = (
+        "Rests on an agency or contractor publication; no independent record or collection ledger is captured."
+        if basis == "AGENCY_RELEASE_ONLY"
+        else "No primary record is captured for this row."
+    )
+    return basis, [], BASIS_GAP.get(metric, default)
+
+def check_overlap_rules(rows):
+    """Identical restitution amounts across subjects must be explicitly grouped (non-additive)."""
+    by_value = {}
+    for row in rows:
+        if row["category"] == "restitution_ordered":
+            by_value.setdefault((row["program_id"], row["value"]), []).append(row)
+    for (_, value), group in by_value.items():
+        subjects = {r["subject"] for r in group}
+        if len(subjects) < 2:
+            continue
+        groups = {r.get("overlap_group_id") for r in group}
+        if None in groups or len(groups) != 1:
+            raise BuildError(
+                f"identical restitution amount {value} for multiple subjects lacks a single overlap_group_id"
+            )
+
 def recovery_projection(doc, sources):
     seen = set()
     by_program = {}
@@ -272,12 +347,29 @@ def recovery_projection(doc, sources):
         seen.add(eid)
         sids = require_sources(source_ids_for(entry), sources, f"recovery entry {eid}")
         row = normalize_money(entry, f"recovery entry {eid}")
+        metric = row["category"]
+        basis, primary_ids, gap = derive_evidence_basis(entry, sources, eid)
+        evidence_ids = entry.get("collection_evidence_source_ids") or []
+        for cid in evidence_ids:
+            if cid not in sids or sources[cid].get("document_type") not in COLLECTION_EVIDENCE_TYPES:
+                raise BuildError(f"recovery entry {eid}: {cid} is not collection evidence")
+        if metric in COLLECTION_METRICS and not evidence_ids:
+            raise BuildError(f"recovery entry {eid}: {metric} requires collection_evidence_source_ids")
+        claimed = {entry.get("collection_status"), entry.get("realization_status")} & COLLECTED_STATUSES
+        if claimed and not evidence_ids:
+            raise BuildError(f"recovery entry {eid}: {sorted(claimed)} asserted without collection evidence")
+        if metric in COURT_CLASSES_NOT_ADJUDICATED_FOR and basis != "COURT_DOCUMENT"                 and entry.get("evidence_class") == "ADJUDICATED":
+            raise BuildError(f"recovery entry {eid}: release-only {metric} cannot be labelled ADJUDICATED")
         row.update({
             "entry_id": eid,
             "program_id": entry.get("program_id"),
             "subject": entry.get("subject"),
             "event_date": entry.get("event_date"),
             "evidence_class": entry.get("evidence_class"),
+            "evidence_basis": basis,
+            "primary_document_ids": primary_ids,
+            "primary_document_gap": gap,
+            "collection_evidence_source_ids": list(evidence_ids),
             "source_ids": sids,
             "interpretation": entry.get("interpretation"),
             "collection_status": entry.get("collection_status"),
@@ -287,6 +379,7 @@ def recovery_projection(doc, sources):
             raise BuildError(f"recovery entry {eid} missing program_id")
         by_program.setdefault(row["program_id"], []).append(row)
         all_rows.append(row)
+    check_overlap_rules(all_rows)
     return by_program, all_rows
 
 def build_changes(baseline, programs, all_events, recovery_rows):

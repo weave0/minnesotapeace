@@ -1,0 +1,32 @@
+{
+  "source_id": "src-courtlistener-mnd-22-cr-124-ecf952-farah-bbi-forfeiture-settlement-judgment",
+  "canonical_url": "https://www.courtlistener.com/docket/65361787/952/united-states-v-farah/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Farah (BBI, LLC third-party petition) - Judgment approving Stipulation of Settlement, ECF 952",
+  "case_number": "0:22-cr-00124-NEB-DTS",
+  "document_date": "2025-12-10",
+  "publication_date": "2025-12-10",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_forfeiture_order",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.201529/gov.uscourts.mnd.201529.952.0.pdf",
+    "sha256": "294b581f9fab2151b7b54470f1b1e747109d13342dfd93823accfc534e75e45b",
+    "bytes": 202243,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_22-cr-00124_ecf952_farah-bbi-forfeiture-settlement-judgment.pdf",
+    "text_extract_path": "research/court/extracts/0_22-cr-00124_ecf952_farah-bbi-forfeiture-settlement-judgment.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "The court approved the Stipulation of Settlement (ECF 945) between the United States and petitioner BBI, LLC, granted BBI's petition (ECF 933) in part, and amended the Preliminary Order of Forfeiture (ECF 665) to conform to the stipulation."
+  ],
+  "does_not_support": [
+    "The one-page judgment states no dollar amount and does not identify the property; the stipulation (ECF 945) and the Preliminary Order (ECF 665) are not captured.",
+    "It does not show realization of any forfeited asset."
+  ]
+}
