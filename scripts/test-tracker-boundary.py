@@ -106,4 +106,43 @@ fof = next(p for p in data["programs"] if p["program_id"] == "feeding-our-future
 assert all(m.get("as_of") for m in fof["legal_metrics"])
 assert all(m.get("source_ids") for m in fof["legal_metrics"])
 
-print("tracker boundary tests: 10/10 passed")
+# 11. Recovery categories stay distinct and are never silently converted to collected cash.
+fof_recovery = next(p for p in data["programs"] if p["program_id"] == "feeding-our-future")["recovery"]
+assert fof_recovery
+assert any(r["category"] == "restitution_ordered" for r in fof_recovery)
+assert any(r["category"] == "assets_seized" for r in fof_recovery)
+assert all(r["category"] != "recovered_amount" for r in fof_recovery)
+
+# 12. Matching restitution orders remain individual rows with an overlap group, not a summed total.
+empire = [r for r in fof_recovery if r.get("overlap_group_id") == "fof-empire-47920514-restitution"]
+assert len(empire) == 3
+assert all(r["value"] == 47920514 for r in empire)
+assert "recovery_total" not in data
+
+# 13. Snapshot diff exposes new records without inventing a legal-stage change.
+changes = data["changes"]
+assert changes["since_snapshot"] == "tracker-v1-2026-09-30"
+assert changes["legal_metric_changes"] == []
+assert changes["new_events"] == []
+assert len(changes["new_recovery_entries"]) == 10
+
+# 14. Source-less or duplicate recovery entries fail closed.
+expect_error(
+    lambda: mod.recovery_projection(
+        {"entries": [{"entry_id": "r1", "program_id": "p", "amount": 1, "metric_type": "recovered_amount", "source_ids": []}]},
+        SOURCES,
+    ),
+    "source-less recovery row published",
+)
+expect_error(
+    lambda: mod.recovery_projection(
+        {"entries": [
+            {"entry_id": "r1", "program_id": "p", "amount": 1, "metric_type": "recovered_amount", "source_ids": ["src-fixture"]},
+            {"entry_id": "r1", "program_id": "p", "amount": 2, "metric_type": "recovered_amount", "source_ids": ["src-fixture"]},
+        ]},
+        SOURCES,
+    ),
+    "duplicate recovery row accepted",
+)
+
+print("tracker boundary tests: 14/14 passed")
