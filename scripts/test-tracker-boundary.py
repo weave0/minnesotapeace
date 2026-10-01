@@ -123,10 +123,12 @@ assert "recovery_total" not in data
 changes = data["changes"]
 assert changes["since_snapshot"] == "tracker-v1-2026-09-30"
 assert changes["legal_metric_changes"] == []
-assert len(changes["new_events"]) == 1
-assert changes["new_events"][0]["event_id"] == "evt-fof-ross-forfeiture-ordered-2025-02-07"
-assert changes["new_events"][0]["event_type"] == "FORFEITURE_ORDERED"
-assert len(changes["new_recovery_entries"]) == 13
+assert {e["event_id"] for e in changes["new_events"]} == {
+    "evt-fof-ross-forfeiture-ordered-2025-02-07",
+    "evt-fof-ibrahim-forfeiture-ordered-2026-04-03",
+}
+assert all(e["event_type"] == "FORFEITURE_ORDERED" for e in changes["new_events"])
+assert len(changes["new_recovery_entries"]) == 27
 
 # 14. Source-less or duplicate recovery entries fail closed.
 expect_error(
@@ -148,3 +150,119 @@ expect_error(
 )
 
 print("tracker boundary tests: 14/14 passed")
+
+# ---- Primary judgment / collection acquisition regressions (tests 15-23) ----
+RS = {
+    "src-release": {"source_id": "src-release", "source_status": "PRIMARY_GOVERNMENT_RELEASE", "document_type": "press_release"},
+    "src-news": {"source_id": "src-news", "source_status": "SECONDARY_VERIFIED", "document_type": "news_report"},
+    "src-judgment": {"source_id": "src-judgment", "source_status": "PRIMARY_COURT_RECORD", "document_type": "court_judgment"},
+    "src-indictment": {"source_id": "src-indictment", "source_status": "PRIMARY_COURT_RECORD", "document_type": "court_indictment"},
+    "src-prelim-forfeiture": {"source_id": "src-prelim-forfeiture", "source_status": "PRIMARY_COURT_RECORD", "document_type": "court_forfeiture_order"},
+    "src-accounting": {"source_id": "src-accounting", "source_status": "PRIMARY_COURT_RECORD", "document_type": "court_collection_accounting"},
+}
+
+def entry(**kw):
+    base = {"entry_id": "r1", "program_id": "p", "subject": "A", "amount": 100, "currency": "USD",
+            "metric_type": "restitution_ordered", "event_date": "2025-01-01", "evidence_class": "ADJUDICATED",
+            "source_ids": ["src-release"], "interpretation": "fixture"}
+    base.update(kw)
+    return base
+
+def project(*entries):
+    return mod.recovery_projection({"entries": list(entries)}, RS)[1]
+
+# 15. court-backed restitution replaces release-only provenance without changing the amount.
+release_only = project(entry())[0]
+court_backed = project(entry(source_ids=["src-judgment", "src-release"], primary_document_ids=["src-judgment"]))[0]
+assert release_only["evidence_basis"] == "AGENCY_RELEASE_ONLY" and release_only["primary_document_gap"]
+assert court_backed["evidence_basis"] == "COURT_DOCUMENT" and court_backed["primary_document_gap"] is None
+assert court_backed["value"] == release_only["value"] == 100
+assert "src-release" in court_backed["source_ids"]  # release kept as corroboration
+
+# 16. joint-and-several / overlapping restitution stays non-additive and must be grouped.
+expect_error(
+    lambda: project(entry(entry_id="a", subject="A", amount=5), entry(entry_id="b", subject="B", amount=5)),
+    "identical restitution for two subjects accepted without overlap group",
+)
+expect_error(
+    lambda: project(
+        entry(entry_id="a", subject="A", amount=5, overlap_group_id="g1"),
+        entry(entry_id="b", subject="B", amount=5, overlap_group_id="g2"),
+    ),
+    "identical restitution split across different overlap groups accepted",
+)
+grouped = project(
+    entry(entry_id="a", subject="A", amount=5, overlap_group_id="g"),
+    entry(entry_id="b", subject="B", amount=5, overlap_group_id="g"),
+)
+assert {r["overlap_group_id"] for r in grouped} == {"g"} and "recovery_total" not in data
+live_groups = {}
+for r in fof_recovery:
+    if r.get("overlap_group_id"):
+        live_groups.setdefault(r["overlap_group_id"], []).append(r)
+assert all(len({x["value"] for x in rows}) == 1 for rows in live_groups.values() if rows[0]["category"] == "restitution_ordered")
+
+# 17. forfeiture order without realization stays unrecovered.
+fo = project(entry(metric_type="forfeiture_ordered", source_ids=["src-prelim-forfeiture"],
+                   primary_document_ids=["src-prelim-forfeiture"], collection_status=None))[0]
+assert fo["category"] == "forfeiture_ordered" and fo["evidence_basis"] == "COURT_DOCUMENT"
+assert fo["category"] not in {"recovered_amount", "assets_recovered"}
+expect_error(
+    lambda: project(entry(metric_type="forfeiture_ordered", source_ids=["src-prelim-forfeiture"],
+                          primary_document_ids=["src-prelim-forfeiture"], realization_status="REALIZED")),
+    "forfeiture order marked realized without collection evidence",
+)
+
+# 18. seizure without final forfeiture stays seized and cannot be labelled adjudicated from a release.
+seized = project(entry(metric_type="assets_seized", evidence_class="AGENCY_POSITION"))[0]
+assert seized["category"] == "assets_seized" and seized["evidence_basis"] == "AGENCY_RELEASE_ONLY"
+expect_error(
+    lambda: project(entry(metric_type="assets_seized", evidence_class="ADJUDICATED")),
+    "release-only seizure labelled ADJUDICATED",
+)
+
+# 19. collection evidence is required before recovered_amount (and other collection metrics).
+for metric in ("recovered_amount", "assets_recovered", "administrative_recoupment"):
+    expect_error(lambda m=metric: project(entry(metric_type=m)), f"{metric} without collection evidence")
+expect_error(
+    lambda: project(entry(metric_type="recovered_amount", source_ids=["src-release"],
+                          collection_evidence_source_ids=["src-release"])),
+    "press release accepted as collection evidence",
+)
+recovered = project(entry(metric_type="recovered_amount", source_ids=["src-accounting"],
+                          primary_document_ids=["src-accounting"],
+                          collection_evidence_source_ids=["src-accounting"], collection_status="COLLECTED"))[0]
+assert recovered["category"] == "recovered_amount"
+expect_error(
+    lambda: project(entry(collection_status="COLLECTED")),
+    "restitution order flipped to COLLECTED without evidence",
+)
+
+# 20. a missing primary judgment is never silently treated as judgment-backed.
+for src in (["src-release"], ["src-news"], ["src-indictment"]):
+    row = project(entry(source_ids=src))[0]
+    assert row["evidence_basis"] != "COURT_DOCUMENT", src
+expect_error(
+    lambda: project(entry(source_ids=["src-indictment"], primary_document_ids=["src-indictment"])),
+    "indictment accepted as restitution judgment",
+)
+expect_error(
+    lambda: project(entry(source_ids=["src-release"], primary_document_ids=["src-release"])),
+    "press release accepted as primary court document",
+)
+expect_error(
+    lambda: project(entry(source_ids=["src-judgment"], primary_document_ids=["src-judgment", "src-release"])),
+    "primary document outside source_ids accepted",
+)
+assert project(entry(source_ids=["src-news"]))[0]["evidence_basis"] == "SECONDARY_ONLY"
+
+# 21. every published recovery row declares its evidence basis; court rows resolve to court records.
+for prog in data["programs"]:
+    for r in prog["recovery"]:
+        assert r["evidence_basis"] in {"COURT_DOCUMENT", "AGENCY_RELEASE_ONLY", "SECONDARY_ONLY", "UNRESOLVED"}
+        if r["evidence_basis"] == "COURT_DOCUMENT":
+            assert r["primary_document_ids"] and r["primary_document_gap"] is None
+        else:
+            assert not r["primary_document_ids"] and r["primary_document_gap"] or r["category"] in {"identified_for_recovery", "cost_avoidance"}
+
+print("tracker boundary tests (acquisition regressions 15-21): passed")

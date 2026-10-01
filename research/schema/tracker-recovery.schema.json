@@ -95,6 +95,24 @@
             "minLength": 1
           }
         },
+        "primary_document_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "Court-record source_ids (a subset of source_ids) whose document type can establish this metric. Absent = the row is not court-document-backed.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "collection_evidence_source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "Sources that evidence actual collection/realization (court accounting or agency ledger). Required for recovered_amount, assets_recovered, administrative_recoupment and for any COLLECTED/REALIZED status.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
         "overlap_group_id": {
           "type": [
             "string",

@@ -1,0 +1,34 @@
+{
+  "source_id": "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement",
+  "canonical_url": "https://www.courtlistener.com/docket/65360995/496/united-states-v-bock/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Bock et al. (Abdulkadir Nur Salah) - Plea Agreement, ECF 496",
+  "case_number": "0:22-cr-00223-NEB-DTS",
+  "document_date": "2025-01-28",
+  "publication_date": "2025-01-28",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_plea_agreement",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "PLEA_AGREEMENT",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203015/gov.uscourts.mnd.203015.496.0.pdf",
+    "sha256": "823478b6c116c48e7057f27c04362237d60e03459c896c937be84cf2347aca01",
+    "bytes": 14054772,
+    "pdf_archived_in_repo": false,
+    "archive_path": null,
+    "text_extract_path": "research/court/extracts/0_22-cr-00223_ecf496_abdulkadir-salah-plea-agreement.txt",
+    "text_extract_method": "OCR (RapidOCR, 200 dpi)"
+  },
+  "supports": [
+    "Salah agrees to forfeit $309,993.51 seized from a Bell Bank account of Cosmopolitan Business Solutions d/b/a Safari Restaurant, $435,512.44 seized from a Bell Bank account of 3017 LLC, $472,889.08 seized from a Northeast Bank account of 3017 LLC, and real property at 2722 and 2742 Park Avenue South, Minneapolis.",
+    "Salah consents to a money judgment forfeiture of $5,546,419, with credit for the net value of forfeited property, and agrees he owes restitution jointly and severally in the amount of $44,061,053."
+  ],
+  "does_not_support": [
+    "A plea agreement states agreed amounts; it is not a restitution order or a forfeiture order, and no judgment for this defendant is captured.",
+    "Seized property is credited against the money judgment; the figures must not be summed.",
+    "The text layer of this scan was produced by OCR and must be spot-checked against the PDF before quoting."
+  ]
+}

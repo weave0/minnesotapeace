@@ -94,9 +94,23 @@
       "occurred_at": "2025-02-07",
       "published_at": "2025-02-07",
       "subject": "Sharon Denise Ross",
-      "summary": "Ross was ordered to forfeit property derived from fraud proceeds, including her Willernie house. The source does not state a dollar value.",
+      "summary": "Ross was ordered to forfeit property derived from fraud proceeds, including her Willernie house. The USAO release states no dollar value; the court's preliminary order (2024-11-19) also enters a $1,241,455 money judgment, shown in the recovery ledger. No sale or realization is captured.",
       "source_ids": [
-        "src-usao-mn-2025-02-07-ross-43mo-sentence"
+        "src-usao-mn-2025-02-07-ross-43mo-sentence",
+        "src-courtlistener-mnd-23-cr-82-ecf55-ross-prelim-forfeiture-order",
+        "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment"
+      ]
+    },
+    {
+      "event_id": "evt-fof-ibrahim-forfeiture-ordered-2026-04-03",
+      "program_id": "feeding-our-future",
+      "event_type": "FORFEITURE_ORDERED",
+      "occurred_at": "2026-04-03",
+      "published_at": "2026-04-03",
+      "subject": "Mahad Ibrahim",
+      "summary": "The court entered a preliminary order forfeiting real property at 5657 Maple Drive, Lewis Center, Ohio, along with three seized bank balances and a $7,324,412 money judgment (see recovery ledger). The order is final only at sentencing, which is not captured; no sale or realization is captured.",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
       ]
     }
   ]

@@ -1,0 +1,32 @@
+{
+  "source_id": "src-courtlistener-mnd-23-cr-82-ecf43-ross-plea-agreement",
+  "canonical_url": "https://www.courtlistener.com/docket/66996537/43/united-states-v-ross/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Ross - Plea Agreement (Sharon Ross), ECF 43",
+  "case_number": "0:23-cr-00082-NEB-DTS",
+  "document_date": "2024-01-10",
+  "publication_date": "2024-01-10",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_plea_agreement",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "PLEA_AGREEMENT",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.206233/gov.uscourts.mnd.206233.43.0.pdf",
+    "sha256": "530ebb87bfe9eb8f06f9e6098860e3a8e43595a8864397773f064621938761d9",
+    "bytes": 6919621,
+    "pdf_archived_in_repo": false,
+    "archive_path": null,
+    "text_extract_path": "research/court/extracts/0_23-cr-00082_ecf43_ross-plea-agreement.txt",
+    "text_extract_method": "OCR (RapidOCR, 200 dpi)"
+  },
+  "supports": [
+    "Ross agrees she owes restitution of $2,434,360 and consents to forfeiture of the Willernie, Minnesota house and to a money judgment forfeiture of $2,837,491, subject to credit for forfeited assets."
+  ],
+  "does_not_support": [
+    "The judgment (ECF 68) and preliminary order (ECF 55) are the operative orders; the plea states agreed amounts only.",
+    "The text layer of this scan was produced by OCR and must be spot-checked against the PDF before quoting."
+  ]
+}

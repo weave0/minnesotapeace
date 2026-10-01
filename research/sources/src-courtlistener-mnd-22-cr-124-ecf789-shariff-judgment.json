@@ -1,0 +1,34 @@
+{
+  "source_id": "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment",
+  "canonical_url": "https://www.courtlistener.com/docket/65361160/789/united-states-v-farah/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Farah et al. (Mukhtar Mohamed Shariff) - Judgment in a Criminal Case, ECF 789",
+  "case_number": "0:22-cr-00124-NEB-DTS",
+  "document_date": "2025-02-06",
+  "publication_date": "2025-02-06",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_judgment",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203013/gov.uscourts.mnd.203013.789.0.pdf",
+    "sha256": "3b8cd0dd00611473171a83b6576f7a327c2e24a04a4f7f2ad4e985843414eced",
+    "bytes": 300316,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_22-cr-00124_ecf789_shariff-judgment.pdf",
+    "text_extract_path": "research/court/extracts/0_22-cr-00124_ecf789_shariff-judgment.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "Judgment as to Mukhtar Mohamed Shariff (defendant 7) orders mandatory restitution of $47,920,514.00, due immediately.",
+    "The joint-and-several schedule on the judgment lists Abdiaziz Shafii Farah, Mohamed Jama Ismail, Abdimajid Mohamed Nur and Hayat Mohamed Nur at the same $47,920,514.00: one shared obligation, not additive.",
+    "The judgment forfeits the defendant's interest in property listed in the preliminary and final orders of forfeiture."
+  ],
+  "does_not_support": [
+    "It does not show any payment or collection.",
+    "It is Shariff's judgment only; the co-defendants' own judgments are not captured by this record."
+  ]
+}
