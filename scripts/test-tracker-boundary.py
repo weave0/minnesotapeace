@@ -123,7 +123,9 @@ assert "recovery_total" not in data
 changes = data["changes"]
 assert changes["since_snapshot"] == "tracker-v1-2026-09-30"
 assert changes["legal_metric_changes"] == []
-assert changes["new_events"] == []
+assert len(changes["new_events"]) == 1
+assert changes["new_events"][0]["event_id"] == "evt-fof-ross-forfeiture-ordered-2025-02-07"
+assert changes["new_events"][0]["event_type"] == "FORFEITURE_ORDERED"
 assert len(changes["new_recovery_entries"]) == 13
 
 # 14. Source-less or duplicate recovery entries fail closed.
