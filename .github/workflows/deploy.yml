@@ -24,9 +24,11 @@ jobs:
                   set -euo pipefail
                   python3 scripts/build-tracker.py
                   python3 scripts/test-tracker-boundary.py
+                  python3 scripts/build-accountability-brief.py
+                  python3 scripts/test-accountability-brief.py
                   mkdir -p public
                   cp _headers _redirects index.html 404.html robots.txt sitemap.xml favicon.svg public/
-                  cp -a css js assets record status good guide oversight programs money authority tracker public/
+                  cp -a css js assets record status good guide oversight programs money authority tracker accountability public/
                   mkdir -p public/functions
                   cp -a functions/. public/functions/
 
@@ -50,6 +52,9 @@ jobs:
                   test -f public/money/index.html
                   test -f public/authority/index.html
                   test -f public/tracker/index.html
+                  test -f public/accountability/index.html
+                  test -f public/accountability/data/brief.json
+                  test -f public/js/accountability.js
                   test -f public/tracker/data/tracker.json
                   test -f public/css/tracker.css
                   test -f public/js/tracker.js
@@ -76,7 +81,7 @@ jobs:
                     exit 1
                   fi
 
-                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/status/index.html public/good/index.html public/guide/index.html public/oversight/index.html public/programs/index.html public/money/index.html public/authority/index.html public/tracker/index.html; then
+                  if grep -n -E 'CHARGED_ALLEGED|metric_type|overlap_group|Actor classes|v1 records|corpus bundle|Later, not now|Editorial, not a vibe' public/index.html public/record/index.html public/status/index.html public/good/index.html public/guide/index.html public/oversight/index.html public/programs/index.html public/money/index.html public/authority/index.html public/tracker/index.html public/accountability/index.html; then
                     echo "internal research vocabulary leaked into visitor-facing HTML" >&2
                     exit 1
                   fi
@@ -113,6 +118,7 @@ jobs:
                   grep -Fq 'The law divides the work.' public/authority/index.html
                   grep -Fq 'Minnesota Public Money Tracker' public/tracker/index.html
                   grep -Fq 'What happened to the money' public/tracker/index.html
+                  grep -Fq 'Minnesota Public Accountability Brief' public/accountability/index.html
                   grep -Fq 'Evidence room' public/record/index.html
                   grep -Fq '/record/js/briefs.js' public/record/index.html
                   grep -Fq 'Start with a case, not a data table.' public/record/js/briefs.js
@@ -181,8 +187,8 @@ jobs:
 
                   ok=0
                   for attempt in 1 2 3 4 5 6; do
-                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/programs.html /tmp/money.html /tmp/authority.html /tmp/tracker.html /tmp/tracker.json /tmp/briefs.js /tmp/discovery-v7.js /tmp/good-v2.css /tmp/evidence.css
-                    rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers /tmp/programs.headers /tmp/money.headers /tmp/authority.headers /tmp/tracker.headers
+                    rm -f /tmp/home.html /tmp/record.html /tmp/status.html /tmp/good.html /tmp/guide.html /tmp/oversight.html /tmp/programs.html /tmp/money.html /tmp/authority.html /tmp/tracker.html /tmp/tracker.json /tmp/accountability.html /tmp/accountability.json /tmp/briefs.js /tmp/discovery-v7.js /tmp/good-v2.css /tmp/evidence.css
+                    rm -f /tmp/home.headers /tmp/record.headers /tmp/status.headers /tmp/good.headers /tmp/guide.headers /tmp/oversight.headers /tmp/programs.headers /tmp/money.headers /tmp/authority.headers /tmp/tracker.headers /tmp/accountability.headers
 
                     curl -fsSL -D /tmp/home.headers -H 'Cache-Control: no-cache' -o /tmp/home.html "https://minnesotapeace.com/" || true
                     curl -fsSL -D /tmp/record.headers -H 'Cache-Control: no-cache' -o /tmp/record.html "https://minnesotapeace.com/record/" || true
@@ -195,6 +201,8 @@ jobs:
                     curl -fsSL -D /tmp/authority.headers -H 'Cache-Control: no-cache' -o /tmp/authority.html "https://minnesotapeace.com/authority/" || true
                     curl -fsSL -D /tmp/tracker.headers -H 'Cache-Control: no-cache' -o /tmp/tracker.html "https://minnesotapeace.com/tracker/" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/tracker.json "https://minnesotapeace.com/tracker/data/tracker.json" || true
+                    curl -fsSL -D /tmp/accountability.headers -H 'Cache-Control: no-cache' -o /tmp/accountability.html "https://minnesotapeace.com/accountability/" || true
+                    curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/accountability.json "https://minnesotapeace.com/accountability/data/brief.json" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/briefs.js "https://minnesotapeace.com/record/js/briefs.js" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/discovery-v7.js "https://minnesotapeace.com/js/discovery-v7.js" || true
                     curl -fsSL -H 'Cache-Control: no-cache' -o /tmp/good-v2.css "https://minnesotapeace.com/css/good-v2.css" || true
@@ -225,6 +233,9 @@ jobs:
                     check_text /tmp/tracker.json '"new_recovery_entries"' 'tracker deterministic changes' || misses=1
                     check_text /tmp/tracker.json '"category": "restitution_ordered"' 'tracker restitution category' || misses=1
                     check_text /tmp/tracker.json '"category": "assets_seized"' 'tracker seized-assets category' || misses=1
+                    check_text /tmp/accountability.html 'Minnesota Public Accountability Brief' 'accountability brief' || misses=1
+                    check_text /tmp/accountability.json '"since_snapshot": "tracker-v1-2026-09-30"' 'accountability snapshot boundary' || misses=1
+                    check_text /tmp/accountability.json '"kind": "FORFEITURE_ORDERED"' 'accountability non-dollar forfeiture event' || misses=1
                     check_text /tmp/authority.html 'The court did not order reimbursements resumed' 'authority notice chain' || misses=1
                     check_text /tmp/evidence.css '.authority-table' 'evidence depth CSS' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1
