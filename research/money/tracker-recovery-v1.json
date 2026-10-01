@@ -202,22 +202,6 @@
       "interpretation": "Court-ordered restitution; the sentencing release does not establish collection."
     },
     {
-      "entry_id": "fof-ross-forfeiture-ordered-2025-02-07",
-      "program_id": "feeding-our-future",
-      "subject": "Sharon Denise Ross",
-      "amount": 0,
-      "currency": "USD",
-      "metric_type": "forfeiture_ordered",
-      "event_date": "2025-02-07",
-      "evidence_class": "ADJUDICATED",
-      "source_ids": [
-        "src-usao-mn-2025-02-07-ross-43mo-sentence"
-      ],
-      "overlap_group_id": null,
-      "realization_status": "UNKNOWN",
-      "interpretation": "Property forfeiture was ordered, including Ross's Willernie house. The source gives no reliable dollar value, so the amount is intentionally zero-valued and must not be summed."
-    },
-    {
       "entry_id": "fof-jesow-restitution-2026-04-09",
       "program_id": "feeding-our-future",
       "subject": "Abdullahe Nur Jesow",
