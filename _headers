@@ -53,3 +53,7 @@
 
 /tracker/data/*
   Cache-Control: public, max-age=300, must-revalidate
+
+
+/accountability/data/*
+  Cache-Control: public, max-age=300, must-revalidate
