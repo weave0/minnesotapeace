@@ -6,12 +6,17 @@ on:
       - 'research/**'
       - 'record/data/**'
       - 'status/index.html'
+      - 'tracker/**'
+      - 'research/events/**'
+      - 'research/programs/**'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
       - 'scripts/verify-public-corpus-fresh.py'
       - 'scripts/build-status-snapshot.py'
       - 'scripts/check-status-snapshot-fresh.py'
       - 'scripts/test-status-snapshot-boundary.py'
+      - 'scripts/build-tracker.py'
+      - 'scripts/test-tracker-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -21,12 +26,17 @@ on:
       - 'research/**'
       - 'record/data/**'
       - 'status/index.html'
+      - 'tracker/**'
+      - 'research/events/**'
+      - 'research/programs/**'
       - 'scripts/check-research-integrity.py'
       - 'scripts/test-publication-boundary.py'
       - 'scripts/verify-public-corpus-fresh.py'
       - 'scripts/build-status-snapshot.py'
       - 'scripts/check-status-snapshot-fresh.py'
       - 'scripts/test-status-snapshot-boundary.py'
+      - 'scripts/build-tracker.py'
+      - 'scripts/test-tracker-boundary.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
@@ -71,3 +81,8 @@ jobs:
 
       - name: Regression-test the status-snapshot generator's fail-closed cases
         run: python3 scripts/test-status-snapshot-boundary.py
+
+      - name: Build and regression-test the public money tracker
+        run: |
+          python3 scripts/build-tracker.py
+          python3 scripts/test-tracker-boundary.py

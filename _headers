@@ -50,3 +50,6 @@
 
 /research/*
   Cache-Control: no-store
+
+/tracker/data/*
+  Cache-Control: public, max-age=300, must-revalidate

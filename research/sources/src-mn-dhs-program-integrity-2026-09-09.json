@@ -1,0 +1,23 @@
+{
+  "source_id": "src-mn-dhs-program-integrity-2026-09-09",
+  "canonical_url": "https://mn.gov/dhs/program-integrity/",
+  "issuing_body": "Minnesota Department of Human Services",
+  "title": "Program Integrity",
+  "publication_date": "2026-09-09",
+  "retrieval_date": "2026-09-30",
+  "document_type": "agency_program_integrity_dashboard",
+  "source_tier": 2,
+  "source_status": "PRIMARY_STATE_AGENCY_STATUS_RECORD",
+  "evidence_class": "AGENCY_POSITION",
+  "supports": [
+    "DHS reports Minnesota Medicaid paid $20.9 billion to providers in 2024.",
+    "DHS reports more than $56 million identified for recovery since 2020.",
+    "DHS reports 3,587 high-risk providers revalidated, 1,177 appealing disenrollment, 128 voluntary terminations, and 695 terminations after appeal windows closed, updated September 8, 2026.",
+    "DHS identifies 14 Medicaid service provider types as high-risk and describes enhanced screening, revalidation, pre-payment review and onsite visits."
+  ],
+  "important_qualifications": [
+    "Identified for recovery is not the same as cash recovered.",
+    "Provider revalidation and review counts measure implementation activity; they do not by themselves establish that controls are effective at reducing fraud or improper payments.",
+    "High-risk is an oversight designation, not a finding that a provider or service is fraudulent."
+  ]
+}

@@ -1,0 +1,398 @@
+#!/usr/bin/env python3
+"""Build /tracker/ public data from canonical Minnesota Peace records.
+
+The tracker is a projection, not a truth store. It consumes:
+- manifest-gated /record/ corpus for charge-era cases and money rows,
+- canonical research/claims for explicitly selected current metrics/claims,
+- canonical accountability events,
+- canonical Medicaid control timeline,
+- canonical source records for every public fact.
+
+It fails closed on missing sources, ambiguous legal metrics, duplicate events,
+unknown money categories, and unsupported legal-stage transitions.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+RESEARCH = ROOT / "research"
+RECORD = ROOT / "record" / "data" / "corpus.json"
+PROGRAMS = RESEARCH / "programs" / "tracker-programs-v1.json"
+EVENTS = RESEARCH / "events" / "accountability-events-v1.json"
+CONTROLS = RESEARCH / "oversight" / "medicaid-control-timeline.json"
+OUT = ROOT / "tracker" / "data" / "tracker.json"
+
+LEGAL_EVENT_STAGES = {
+    "CHARGED": "CHARGED",
+    "PLEADED": "PLEADED",
+    "CONVICTED": "CONVICTED",
+    "SENTENCED": "SENTENCED",
+    "CASE_APPEARANCE": "CHARGED",
+}
+LEGAL_STAGE_ORDER = {"CHARGED": 1, "PLEADED": 2, "CONVICTED": 2, "SENTENCED": 3}
+MONEY_CATEGORIES = {
+    "amount_billed", "amount_claimed", "amount_paid", "alleged_loss", "proven_loss",
+    "restitution_ordered", "forfeiture_ordered", "recovered_amount",
+    "identified_for_recovery", "cost_avoidance", "program_spend", "fraud_estimate",
+}
+REFORM_STATE_MAP = {
+    "state_program_review": "IMPLEMENTED",
+    "program_termination_request": "ANNOUNCED",
+    "administrative_controls": "IMPLEMENTED",
+    "federal_corrective_action_request": "ANNOUNCED",
+    "prepayment_review": "IMPLEMENTED",
+    "state_cap_submission": "ANNOUNCED",
+    "enhanced_screening": "IMPLEMENTED",
+    "revalidation_notice": "IMPLEMENTED",
+    "provider_enrollment_moratorium": "IMPLEMENTED",
+    "state_revised_cap": "ANNOUNCED",
+    "revalidation_target": "ANNOUNCED",
+    "moratorium_extension": "IMPLEMENTED",
+    "revalidation_snapshot": "MEASURED",
+    "claims_review": "IMPLEMENTED",
+    "service_access_impact": "MEASURED",
+    "payment_integrity_report": "MEASURED",
+    "improper_payment_measurement": "MEASURED",
+    "federal_noncompliance_determination": "MEASURED",
+}
+
+class BuildError(SystemExit):
+    pass
+
+def load(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+def index_json(directory: Path, field: str):
+    out = {}
+    for path in sorted(directory.glob("*.json")):
+        data = load(path)
+        ident = data.get(field) if isinstance(data, dict) else None
+        if not ident:
+            continue
+        if ident in out:
+            raise BuildError(f"duplicate {field}: {ident}")
+        out[ident] = data
+    return out
+
+def source_ids_for(obj):
+    ids = []
+    if isinstance(obj.get("source_id"), str):
+        ids.append(obj["source_id"])
+    if isinstance(obj.get("source_ids"), list):
+        ids.extend(x for x in obj["source_ids"] if isinstance(x, str))
+    return ids
+
+def require_sources(ids, sources, context):
+    ids = list(dict.fromkeys(ids))
+    if not ids:
+        raise BuildError(f"source-less tracker fact: {context}")
+    missing = [sid for sid in ids if sid not in sources]
+    if missing:
+        raise BuildError(f"missing source record(s) for {context}: {missing}")
+    return ids
+
+def source_public(s):
+    return {
+        "source_id": s["source_id"],
+        "title": s.get("title"),
+        "issuing_body": s.get("issuing_body"),
+        "publication_date": s.get("publication_date"),
+        "retrieval_date": s.get("retrieval_date"),
+        "canonical_url": s.get("canonical_url"),
+        "evidence_class": s.get("evidence_class"),
+    }
+
+def normalize_money(amount, context):
+    category = amount.get("metric_type") or amount.get("money_category")
+    if category not in MONEY_CATEGORIES:
+        raise BuildError(f"unclear money category for {context}: {category!r}")
+    if not isinstance(amount.get("value"), (int, float)):
+        raise BuildError(f"missing numeric money value for {context}")
+    return {
+        "value": amount["value"],
+        "currency": amount.get("currency", "USD"),
+        "category": category,
+        "exact_or_approximate": amount.get("exact_or_approximate"),
+        "period_start": amount.get("period_start"),
+        "period_end": amount.get("period_end"),
+        "overlap_group_id": amount.get("overlap_group_id"),
+        "methodology": amount.get("methodology"),
+        "evidence_class": amount.get("evidence_class"),
+    }
+
+def validate_legal_event(event):
+    etype = event.get("event_type")
+    stage = event.get("legal_stage")
+    if etype in LEGAL_EVENT_STAGES:
+        if stage != LEGAL_EVENT_STAGES[etype]:
+            raise BuildError(f"legal event {event.get('event_id')} stage/type mismatch: {etype}/{stage}")
+    elif stage:
+        raise BuildError(f"non-legal event {event.get('event_id')} carries legal_stage {stage}")
+
+def legal_transition(previous, newer):
+    if previous is None:
+        return True
+    if previous not in LEGAL_STAGE_ORDER or newer not in LEGAL_STAGE_ORDER:
+        return False
+    return LEGAL_STAGE_ORDER[newer] >= LEGAL_STAGE_ORDER[previous]
+
+def validate_event_sequence(events, sources):
+    seen = set()
+    subject_stage = {}
+    by_program = {}
+    for event in events:
+        eid = event.get("event_id")
+        if not eid or eid in seen:
+            raise BuildError(f"duplicate or missing event_id: {eid!r}")
+        seen.add(eid)
+        require_sources(source_ids_for(event), sources, f"event {eid}")
+        validate_legal_event(event)
+        if event.get("legal_stage"):
+            subject = event.get("subject")
+            prev = subject_stage.get(subject)
+            if not legal_transition(prev, event["legal_stage"]):
+                raise BuildError(f"unsupported legal transition for {subject}: {prev} -> {event['legal_stage']}")
+            subject_stage[subject] = event["legal_stage"]
+        by_program.setdefault(event.get("program_id"), []).append(event)
+    return by_program
+
+def active_metric(metric_id, claims, sources):
+    matches = [c for c in claims.values() if c.get("metric_id") == metric_id and not c.get("valid_until")]
+    if len(matches) != 1:
+        raise BuildError(f"metric {metric_id!r} must have exactly one active claim; found {len(matches)}")
+    claim = matches[0]
+    sids = require_sources(source_ids_for(claim), sources, f"metric {metric_id}")
+    return {
+        "metric_id": metric_id,
+        "value": claim.get("metric_value"),
+        "measurement_type": claim.get("measurement_type"),
+        "status": claim.get("status"),
+        "evidence_class": claim.get("evidence_class"),
+        "as_of": claim.get("event_date") or claim.get("measurement_date") or claim.get("reviewed_at"),
+        "explanation": claim.get("public_explanation") or claim.get("claim_text"),
+        "source_ids": sids,
+    }
+
+def fact_from_claim(claim, sources):
+    sids = require_sources(source_ids_for(claim), sources, f"claim {claim.get('claim_id')}")
+    money = [normalize_money(a, f"claim {claim.get('claim_id')}") for a in claim.get("amounts") or []]
+    return {
+        "claim_id": claim.get("claim_id"),
+        "text": claim.get("claim_text"),
+        "claim_type": claim.get("claim_type"),
+        "status": claim.get("status"),
+        "evidence_class": claim.get("evidence_class"),
+        "event_date": claim.get("event_date"),
+        "is_allegation": bool(claim.get("is_allegation")),
+        "qualifiers": claim.get("qualifiers") or [],
+        "money": money,
+        "source_ids": sids,
+    }
+
+def family_case_projection(family_id, corpus, sources):
+    cases = [c for c in corpus.get("cases", []) if c.get("family") == family_id]
+    docket_set = {c.get("docket") for c in cases if c.get("docket")}
+    claim_map = {
+        c.get("claim_id"): c for c in corpus.get("claims", [])
+        if c.get("case_number") in docket_set and c.get("claim_id")
+    }
+    claim_ids = set(claim_map)
+    money = []
+    for row in corpus.get("money", []):
+        if row.get("claim_id") not in claim_ids:
+            continue
+        claim = claim_map[row.get("claim_id")]
+        sids = require_sources(source_ids_for(claim), sources, f"record money claim {row.get('claim_id')}")
+        normalized = normalize_money(row, f"record money row {row.get('row_id')}")
+        normalized.update({
+            "row_id": row.get("row_id"),
+            "claim_id": row.get("claim_id"),
+            "case_number": row.get("case_number"),
+            "status": row.get("status"),
+            "qualifiers": row.get("qualifiers") or [],
+            "source_ids": sids,
+        })
+        money.append(normalized)
+    public_cases = []
+    for case in cases:
+        case_sids = case.get("source_ids") or []
+        if not case_sids:
+            continue
+        require_sources(case_sids, sources, f"record case {case.get('id')}")
+        public_cases.append({
+            "case_id": case.get("id"),
+            "docket": case.get("docket"),
+            "short_name": case.get("short_name"),
+            "instrument": case.get("instrument"),
+            "filed": case.get("filed"),
+            "defendants": case.get("defendants") or [],
+            "count_n": case.get("count_n"),
+            "evidentiary_status": case.get("evidentiary_status"),
+            "source_ids": case_sids,
+            "gap": bool(case.get("gap")),
+        })
+    return public_cases, money
+
+def timeline_projection(controls, sources):
+    out = []
+    for idx, event in enumerate(controls.get("events", [])):
+        state = REFORM_STATE_MAP.get(event.get("event_type"))
+        if not state:
+            continue
+        sids = require_sources(source_ids_for(event), sources, f"control timeline event {idx}")
+        out.append({
+            "event_date": event.get("event_date"),
+            "event_type": event.get("event_type"),
+            "actor": event.get("actor"),
+            "program": event.get("program"),
+            "summary": event.get("summary"),
+            "evidence_class": event.get("evidence_class"),
+            "implementation_state": state,
+            "effectiveness": "UNKNOWN",
+            "qualification": event.get("qualification"),
+            "source_ids": sids,
+        })
+    return out
+
+def main():
+    corpus = load(RECORD)
+    config = load(PROGRAMS)
+    event_doc = load(EVENTS)
+    controls = load(CONTROLS)
+    claims = index_json(RESEARCH / "claims", "claim_id")
+    sources = index_json(RESEARCH / "sources", "source_id")
+
+    events_by_program = validate_event_sequence(event_doc.get("events", []), sources)
+
+    controls_public = timeline_projection(controls, sources)
+    programs_out = []
+    used_sources = set()
+
+    for program in config.get("programs", []):
+        pid = program["program_id"]
+        purpose_sids = require_sources(program.get("purpose_source_ids") or [], sources, f"program purpose {pid}")
+        used_sources.update(purpose_sids)
+
+        facts = []
+        for cid in program.get("claim_ids") or []:
+            claim = claims.get(cid)
+            if not claim:
+                raise BuildError(f"tracker selects unknown claim {cid!r}")
+            fact = fact_from_claim(claim, sources)
+            used_sources.update(fact["source_ids"])
+            facts.append(fact)
+
+        metrics = []
+        for mid in program.get("legal_metric_ids") or []:
+            metric = active_metric(mid, claims, sources)
+            used_sources.update(metric["source_ids"])
+            metrics.append(metric)
+
+        cases, family_money = ([], [])
+        if program.get("family_id"):
+            cases, family_money = family_case_projection(program["family_id"], corpus, sources)
+
+        pevents = events_by_program.get(program.get("event_program_id"), [])
+        for event in pevents:
+            used_sources.update(source_ids_for(event))
+
+        reform_events = []
+        if pid in {"hss", "eidbi", "medicaid-program-integrity"}:
+            for event in controls_public:
+                p = (event.get("program") or "").lower()
+                if pid == "hss" and "hss" not in p and "housing stabilization" not in p:
+                    continue
+                if pid == "eidbi" and "eidbi" not in p:
+                    continue
+                if pid == "medicaid-program-integrity" and event.get("program"):
+                    continue
+                reform_events.append(event)
+                used_sources.update(event["source_ids"])
+            if pid == "medicaid-program-integrity":
+                for event in pevents:
+                    if event.get("event_type") == "MEASUREMENT_PUBLISHED":
+                        reform_events.append({
+                            "event_date": event.get("occurred_at"),
+                            "event_type": "measurement_published",
+                            "actor": "Minnesota DHS",
+                            "program": "Minnesota Medicaid",
+                            "summary": event.get("summary"),
+                            "evidence_class": "AGENCY_POSITION",
+                            "implementation_state": "MEASURED",
+                            "effectiveness": event.get("effectiveness", "UNKNOWN"),
+                            "qualification": "Activity/output measures do not by themselves prove effectiveness.",
+                            "source_ids": source_ids_for(event),
+                            "measures": event.get("measures") or [],
+                        })
+
+        explicit_money = []
+        for fact in facts:
+            for amount in fact["money"]:
+                row = dict(amount)
+                row["claim_id"] = fact["claim_id"]
+                row["status"] = fact["status"]
+                row["source_ids"] = fact["source_ids"]
+                explicit_money.append(row)
+        for event in pevents:
+            for measure in event.get("measures") or []:
+                if measure.get("unit") != "USD":
+                    continue
+                row = normalize_money(measure, f"event measure {event.get('event_id')}")
+                row["event_id"] = event.get("event_id")
+                row["status"] = event.get("implementation_state") or event.get("event_type")
+                row["source_ids"] = source_ids_for(event)
+                explicit_money.append(row)
+
+        for row in family_money:
+            used_sources.update(row.get("source_ids") or [])
+        for case in cases:
+            used_sources.update(case.get("source_ids") or [])
+
+        programs_out.append({
+            "program_id": pid,
+            "name": program["name"],
+            "purpose": program["purpose"],
+            "purpose_source_ids": purpose_sids,
+            "legal_metrics": metrics,
+            "facts": facts,
+            "cases": cases,
+            "money": family_money + explicit_money,
+            "events": pevents,
+            "reform_events": reform_events,
+            "unknowns": {
+                "charged_count": None if not any(m["metric_id"].endswith("charged-count") for m in metrics) else "SEE_METRIC",
+                "convicted_count": None if not any(m["metric_id"].endswith("convicted-count") for m in metrics) else "SEE_METRIC",
+                "sentenced_count": None if not any(m["metric_id"].endswith("sentenced-count") for m in metrics) else "SEE_METRIC",
+                "recovery_total": None,
+                "effectiveness": None,
+            },
+        })
+
+    source_list = [source_public(sources[sid]) for sid in sorted(used_sources)]
+    verified_dates = [s.get("retrieval_date") for s in source_list if s.get("retrieval_date")]
+    out = {
+        "schema_version": 1,
+        "generated_from": {
+            "record_corpus_generated_at": corpus.get("generated_at"),
+            "program_selection": "research/programs/tracker-programs-v1.json",
+            "accountability_events": "research/events/accountability-events-v1.json",
+            "control_timeline": "research/oversight/medicaid-control-timeline.json",
+        },
+        "last_verified": max(verified_dates) if verified_dates else None,
+        "do_not_conflate": [
+            "charged, pleaded, convicted, and sentenced",
+            "alleged loss, program spending, adjudicated amount, restitution, forfeiture, recovery, cost avoidance",
+            "announced, enacted, implemented, measured, and effective",
+        ],
+        "programs": programs_out,
+        "sources": source_list,
+    }
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"tracker built: {OUT.relative_to(ROOT)} ({len(programs_out)} programs, {len(source_list)} sources)")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "description": "Canonical accountability events for changes after the underlying charging/program record. Events require primary-source linkage and do not rewrite charge-era case files.",
+  "events": [
+    {
+      "event_id": "evt-fof-hussein-sentenced-2026-09-08",
+      "program_id": "feeding-our-future",
+      "event_type": "SENTENCED",
+      "occurred_at": "2026-09-08",
+      "published_at": "2026-09-09",
+      "subject": "Mekfira Hussein",
+      "legal_stage": "SENTENCED",
+      "summary": "Sentenced to 57 months after a guilty plea.",
+      "source_ids": [
+        "src-usao-mn-2026-09-09-fof-husseins-sentenced"
+      ]
+    },
+    {
+      "event_id": "evt-fof-abduljabar-hussein-sentenced-2026-09-08",
+      "program_id": "feeding-our-future",
+      "event_type": "SENTENCED",
+      "occurred_at": "2026-09-08",
+      "published_at": "2026-09-09",
+      "subject": "Abduljabar Hussein",
+      "legal_stage": "SENTENCED",
+      "summary": "Sentenced to 40 months after a guilty plea.",
+      "source_ids": [
+        "src-usao-mn-2026-09-09-fof-husseins-sentenced"
+      ]
+    },
+    {
+      "event_id": "evt-hss-sallah-return-2026-09-11",
+      "program_id": "hss",
+      "event_type": "CASE_APPEARANCE",
+      "occurred_at": "2026-09-11",
+      "published_at": "2026-09-11",
+      "subject": "Kaamil Omar Sallah",
+      "legal_stage": "CHARGED",
+      "summary": "Returned to Minnesota and appeared in court on existing wire-fraud charges; no later legal stage is implied.",
+      "source_ids": [
+        "src-usao-mn-2026-09-11-hss-sallah-return"
+      ]
+    },
+    {
+      "event_id": "evt-medicaid-integrity-measurement-2026-09-09",
+      "program_id": "medicaid-program-integrity",
+      "event_type": "MEASUREMENT_PUBLISHED",
+      "occurred_at": "2026-09-09",
+      "published_at": "2026-09-09",
+      "subject": "Minnesota Medicaid program integrity",
+      "implementation_state": "MEASURED",
+      "summary": "DHS published updated revalidation, enforcement and recovery-identification activity metrics. These are implementation/output measures, not demonstrated effectiveness.",
+      "source_ids": [
+        "src-mn-dhs-program-integrity-2026-09-09"
+      ],
+      "measures": [
+        {
+          "label": "2024 Medicaid provider spending",
+          "value": 20900000000,
+          "unit": "USD",
+          "money_category": "program_spend"
+        },
+        {
+          "label": "Identified for recovery since 2020",
+          "value": 56000000,
+          "unit": "USD",
+          "money_category": "identified_for_recovery"
+        },
+        {
+          "label": "High-risk providers revalidated",
+          "value": 3587,
+          "unit": "providers",
+          "metric_category": "implementation_output"
+        },
+        {
+          "label": "Appealing disenrollment",
+          "value": 1177,
+          "unit": "providers",
+          "metric_category": "implementation_output"
+        },
+        {
+          "label": "Terminated after appeal window",
+          "value": 695,
+          "unit": "providers",
+          "metric_category": "implementation_output"
+        }
+      ],
+      "effectiveness": "UNKNOWN"
+    }
+  ]
+}

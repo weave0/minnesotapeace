@@ -63,3 +63,10 @@ For major or controversial claims, populate `assertion_ladder`:
 | `current_assessment` | Qualified assessment that preserves A–E boundaries |
 
 Example: the formulation “officials knowingly facilitated fraud” may have evidence that complaints existed, the agency received them, some investigations were inadequate, and payments continued, while missing evidence that a specified official knowingly joined the scheme. Current assessment: strong evidence of oversight failure (B); insufficient evidence for criminal participation by specified officials (E).
+
+
+## Accountability change events
+
+`accountability-event.schema.json` defines the append-only event layer used by the public money tracker. It does not replace claims, court records, or program-control timelines. Event types preserve exact legal stages, and reform states keep `ANNOUNCED`, `ENACTED`, `IMPLEMENTED`, `MEASURED`, and `EFFECTIVE` distinct. A measurement may be published while `effectiveness` remains `UNKNOWN`.
+
+Every publishable event requires at least one canonical `source_id`. Later events may advance legal status only when the cited evidence supports that transition; an appearance on existing charges may retain `legal_stage: CHARGED` without implying a new charge or conviction.

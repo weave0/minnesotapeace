@@ -40,7 +40,7 @@ jobs:
             --include='*.xml' \
             --include='*.js' \
             'Jamie[[:space:]]+Rigling|Family Law Mediation|Rule 114 certified mediator' \
-            index.html record status good guide oversight programs money authority functions; then
+            index.html record status good guide oversight programs money authority tracker functions; then
             echo 'Legacy Jamie Rigling branding leaked into the MN Peace publication.' >&2
             exit 1
           fi
