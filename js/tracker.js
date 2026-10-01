@@ -6,7 +6,7 @@
   function sourceMap(){var m={};(data.sources||[]).forEach(function(s){m[s.source_id]=s});return m}
   function sources(ids){var m=sourceMap();return (ids||[]).map(function(id){return m[id]}).filter(Boolean)}
   function sourceLinks(ids){var ss=sources(ids);if(!ss.length)return '<span class="source-inline">No publishable source</span>';return '<span class="source-inline">'+ss.map(function(s){return '<a href="'+esc(s.canonical_url)+'">'+esc(s.issuing_body||s.title||s.source_id)+'</a>'+(s.publication_date?' · '+esc(s.publication_date):'')}).join(' · ')+'</span>'}
-  function moneyLabel(c){return({program_spend:"Program spend",amount_billed:"Amount billed",amount_claimed:"Amount claimed",amount_paid:"Amount paid",alleged_loss:"Alleged loss",proven_loss:"Adjudicated amount",restitution_ordered:"Restitution ordered",forfeiture_ordered:"Forfeiture ordered",recovered_amount:"Recovered amount",identified_for_recovery:"Identified for recovery",cost_avoidance:"Cost avoidance",fraud_estimate:"Fraud estimate"})[c]||c}
+  function moneyLabel(c){return({program_spend:"Program spend",amount_billed:"Amount billed",amount_claimed:"Amount claimed",amount_paid:"Amount paid",alleged_loss:"Alleged loss",proven_loss:"Adjudicated amount",restitution_ordered:"Restitution ordered",forfeiture_ordered:"Forfeiture ordered",forfeiture_sought:"Subject to forfeiture",assets_seized:"Assets seized",assets_recovered:"Assets recovered",recovered_amount:"Recovered amount",identified_for_recovery:"Identified for recovery",administrative_recoupment:"Administrative recoupment",cost_avoidance:"Cost avoidance",fraud_estimate:"Fraud estimate"})[c]||c}
   function usd(v){if(typeof v!=="number")return "Unknown";return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(v)}
   function date(v){if(!v)return "Date unknown";return esc(v)}
   function renderNav(){
@@ -29,6 +29,24 @@
     if(!(p.cases||[]).length)return '<p class="empty">No charge-era case bundle is published for this program in The Record.</p>';
     return '<div class="card-grid">'+p.cases.map(function(c){return '<article class="case-card"><span class="status-chip charged">'+esc(c.evidentiary_status||"record")+'</span><h4>'+esc(c.short_name||c.docket)+'</h4><p class="card-note">'+esc(c.docket||"")+' · '+esc(c.instrument||"")+(c.count_n!=null?' · '+esc(c.count_n)+' counts':'')+'</p><p class="card-note">'+esc((c.defendants||[]).length)+' named defendant'+((c.defendants||[]).length===1?'':'s')+' in this filing.</p>'+(c.docket?'<a href="/record/#/cases">Open case record →</a>':'')+sourceLinks(c.source_ids)+'</article>'}).join("")+'</div>'
   }
+  function changes(p){
+    var ch=data.changes||{}, rows=[];
+    (ch.legal_metric_changes||[]).forEach(function(m){
+      if(p.program_id==="feeding-our-future" && /^fof-/.test(m.metric_id)) rows.push('<article class="event-row"><time class="event-date">Since '+esc(ch.snapshot_date||"snapshot")+'</time><div><span class="state-chip">LEGAL METRIC</span><h4>'+esc(m.metric_id.replace(/^fof-/,"").replace(/-/g," "))+'</h4><p>'+esc(m.before)+' → '+esc(m.after)+'</p></div></article>');
+    });
+    (ch.new_events||[]).filter(function(e){return e.program_id===p.program_id}).forEach(function(e){
+      rows.push('<article class="event-row"><time class="event-date">'+date(e.occurred_at)+'</time><div><span class="state-chip">'+esc(e.event_type)+'</span><h4>'+esc(e.subject||"Program update")+'</h4><p>'+esc(e.summary)+'</p>'+sourceLinks(e.source_ids)+'</div></article>');
+    });
+    (ch.new_recovery_entries||[]).filter(function(r){return r.program_id===p.program_id}).forEach(function(r){
+      rows.push('<article class="event-row"><time class="event-date">'+date(r.event_date)+'</time><div><span class="money-chip">'+esc(moneyLabel(r.category))+'</span><h4>'+esc(r.subject||"Recovery record")+' · '+usd(r.value)+'</h4><p>'+esc(r.interpretation||"New source-backed recovery record.")+'</p>'+sourceLinks(r.source_ids)+'</div></article>');
+    });
+    if(!rows.length)return '<div class="unknown-box">No source-backed change for this program since '+esc(ch.snapshot_date||"the previous snapshot")+'.</div>';
+    return '<div class="timeline">'+rows.join("")+'</div>';
+  }
+  function recovery(p){
+    var rows=p.recovery||[];if(!rows.length)return '<div class="unknown-box">No source-safe recovery, restitution, seizure or collection row is published for this program yet.</div>';
+    return '<div class="money-list">'+rows.map(function(r){return '<article class="money-row"><div><div class="money-value">'+usd(r.value)+'</div><div class="money-category">'+esc(moneyLabel(r.category))+'</div></div><div><span class="money-chip">'+esc(r.evidence_class||"sourced")+'</span><p class="card-note">'+esc(r.subject||"")+'</p></div><div><p class="card-note">'+esc(r.interpretation||"No aggregation implied.")+'</p>'+(r.collection_status?'<p class="card-note"><strong>Collection:</strong> '+esc(r.collection_status)+'</p>':'')+(r.realization_status?'<p class="card-note"><strong>Realization:</strong> '+esc(r.realization_status)+'</p>':'')+sourceLinks(r.source_ids)+'</div></article>'}).join("")+'</div>'
+  }
   function events(p){
     if(!(p.events||[]).length)return '<p class="empty">No later accountability event is published for this program yet.</p>';
     var sorted=p.events.slice().sort(function(a,b){return String(b.occurred_at||"").localeCompare(String(a.occurred_at||""))});
@@ -39,14 +57,16 @@
     return '<div class="reform-list">'+p.reform_events.slice().sort(function(a,b){return String(b.event_date||"").localeCompare(String(a.event_date||""))}).map(function(e){return '<article class="reform-row"><time class="event-date">'+date(e.event_date)+'</time><div><span class="state-chip">'+esc(e.implementation_state)+'</span><h4>'+esc(e.actor||"Public agency")+'</h4><p>'+esc(e.summary)+'</p><p class="card-note"><strong>Effectiveness:</strong> '+esc(e.effectiveness||"UNKNOWN")+(e.qualification?' · '+esc(e.qualification):'')+'</p>'+sourceLinks(e.source_ids)+'</div></article>'}).join("")+'</div>'
   }
   function sourceSection(p){
-    var ids={};[p.purpose_source_ids,p.legal_metrics.flatMap(function(x){return x.source_ids||[]}),p.facts.flatMap(function(x){return x.source_ids||[]}),p.events.flatMap(function(x){return x.source_ids||[]}),p.reform_events.flatMap(function(x){return x.source_ids||[]})].flat(2).forEach(function(id){if(id)ids[id]=true});
+    var ids={};[p.purpose_source_ids,p.legal_metrics.flatMap(function(x){return x.source_ids||[]}),p.facts.flatMap(function(x){return x.source_ids||[]}),p.events.flatMap(function(x){return x.source_ids||[]}),p.reform_events.flatMap(function(x){return x.source_ids||[]}),p.recovery.flatMap(function(x){return x.source_ids||[]})].flat(2).forEach(function(id){if(id)ids[id]=true});
     var ss=sources(Object.keys(ids));if(!ss.length)return "";
     return '<details class="details-toggle section-block"><summary>Sources used on this program card ('+ss.length+')</summary><div class="source-list">'+ss.map(function(s){return '<a href="'+esc(s.canonical_url)+'">'+esc(s.title||s.source_id)+' · '+esc(s.publication_date||s.retrieval_date||"date unknown")+'</a>'}).join("")+'</div></details>'
   }
   function render(p){
     $("#program-view").innerHTML='<section class="program-head"><p class="tracker-label">Program</p><h2>'+esc(p.name)+'</h2><p class="purpose">'+esc(p.purpose)+'</p>'+sourceLinks(p.purpose_source_ids)+'</section>'+
       '<section class="section-block"><div class="section-head"><h3>Legal status</h3><span class="tracker-label">Exact stages only</span></div>'+metrics(p)+'</section>'+
+      '<section class="section-block"><div class="section-head"><h3>What changed since the last snapshot?</h3><span class="tracker-label">Deterministic diff</span></div>'+changes(p)+'</section>'+
       '<section class="section-block"><div class="section-head"><h3>Money</h3><span class="tracker-label">No cross-category totals</span></div>'+money(p)+'</section>'+
+      '<section class="section-block"><div class="section-head"><h3>Recovery, restitution & seized assets</h3><span class="tracker-label">Orders ≠ collections</span></div>'+recovery(p)+'</section>'+
       '<section class="section-block"><div class="section-head"><h3>People & cases</h3><span class="tracker-label">Charging record</span></div>'+cases(p)+facts(p)+'</section>'+
       '<section class="section-block"><div class="section-head"><h3>What changed?</h3><span class="tracker-label">Later events</span></div>'+events(p)+'</section>'+
       '<section class="section-block"><div class="section-head"><h3>Oversight & reform</h3><span class="tracker-label">Announced ≠ implemented ≠ effective</span></div>'+reforms(p)+'</section>'+
@@ -56,5 +76,5 @@
   function select(id,push){var p=(data.programs||[]).find(function(x){return x.program_id===id})||data.programs[0];if(!p)return;current=p.program_id;if(push){var u=new URL(location.href);u.searchParams.set("program",current);history.pushState({program:current},"",u)}render(p)}
   window.addEventListener("popstate",function(){if(data)select(new URL(location.href).searchParams.get("program"),false)});
   $("#copy-link").addEventListener("click",function(){var u=new URL(location.href);if(current)u.searchParams.set("program",current);navigator.clipboard&&navigator.clipboard.writeText(u.toString());this.textContent="Copied";setTimeout(()=>this.textContent="Copy deep link",1200)});
-  fetch("/tracker/data/tracker.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("tracker data unavailable");return r.json()}).then(function(d){data=d;$("#tracker-meta").innerHTML='<span>Last verified '+esc(data.last_verified||"unknown")+'</span><span>'+esc((data.programs||[]).length)+' program views</span><span>Primary-source linked</span>';renderNav();select(new URL(location.href).searchParams.get("program"),false)}).catch(function(err){var box=$("#tracker-error");box.hidden=false;box.textContent="The tracker data failed closed: "+err.message});
+  fetch("/tracker/data/tracker.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("tracker data unavailable");return r.json()}).then(function(d){data=d;$("#tracker-meta").innerHTML='<span>Last verified '+esc(data.last_verified||"unknown")+'</span><span>'+esc((data.programs||[]).length)+' program views</span><span>'+esc((data.changes&&data.changes.change_count)||0)+' changes since '+esc((data.changes&&data.changes.snapshot_date)||"snapshot")+'</span><span>Primary-source linked</span>';renderNav();select(new URL(location.href).searchParams.get("program"),false)}).catch(function(err){var box=$("#tracker-error");box.hidden=false;box.textContent="The tracker data failed closed: "+err.message});
 })();

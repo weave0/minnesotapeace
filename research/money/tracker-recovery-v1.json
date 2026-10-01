@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "description": "Publication-selected recovery, restitution, seizure, forfeiture and cost-avoidance records for /tracker/. Rows are intentionally non-additive unless an explicit aggregation rule says otherwise.",
+  "rules": [
+    "restitution_ordered is not recovered_amount",
+    "assets_seized is not forfeiture_ordered and is not recovered_amount",
+    "identified_for_recovery is not recovered_amount",
+    "cost_avoidance is not cash recovered",
+    "identical or overlapping court orders must not be summed without judgment-level reconciliation"
+  ],
+  "entries": [
+    {
+      "entry_id": "fof-farah-restitution-2025-08-06",
+      "program_id": "feeding-our-future",
+      "subject": "Abdiaziz Shafii Farah",
+      "amount": 47920514,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "event_date": "2025-08-06",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-08-06-farah-28yr-sentence"
+      ],
+      "overlap_group_id": "fof-empire-47920514-restitution",
+      "collection_status": "UNKNOWN",
+      "interpretation": "Court-ordered restitution. The source does not establish collection, and the same amount appears in related Empire defendants' orders."
+    },
+    {
+      "entry_id": "fof-ismail-restitution-2024-10-15",
+      "program_id": "feeding-our-future",
+      "subject": "Mohamed Jama Ismail",
+      "amount": 47920514,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "event_date": "2024-10-15",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2024-10-15-ismail-12yr-sentence"
+      ],
+      "overlap_group_id": "fof-empire-47920514-restitution",
+      "collection_status": "UNKNOWN",
+      "interpretation": "Court-ordered restitution. Do not add to matching Empire-family restitution orders without judgment-level reconciliation."
+    },
+    {
+      "entry_id": "fof-abdimajid-nur-restitution-2025-11-24",
+      "program_id": "feeding-our-future",
+      "subject": "Abdimajid Mohamed Nur",
+      "amount": 47920514,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "event_date": "2025-11-24",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-11-24-nur-10yr-sentence"
+      ],
+      "overlap_group_id": "fof-empire-47920514-restitution",
+      "collection_status": "UNKNOWN",
+      "interpretation": "Court-ordered restitution. Do not add to matching Empire-family restitution orders without judgment-level reconciliation."
+    },
+    {
+      "entry_id": "fof-sahra-nur-restitution-2025-05-22",
+      "program_id": "feeding-our-future",
+      "subject": "Sahra Mohamed Nur",
+      "amount": 5000240,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "event_date": "2025-05-22",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-05-22-sahra-nur-51mo-sentence"
+      ],
+      "overlap_group_id": null,
+      "collection_status": "UNKNOWN",
+      "interpretation": "Court-ordered restitution; collection is not established by the sentencing release."
+    },
+    {
+      "entry_id": "fof-abdulkadir-salah-seized-bell-safari",
+      "program_id": "feeding-our-future",
+      "subject": "Abdulkadir Nur Salah",
+      "amount": 309993.51,
+      "currency": "USD",
+      "metric_type": "assets_seized",
+      "event_date": "2025-01-28",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
+      ],
+      "overlap_group_id": null,
+      "realization_status": "UNKNOWN",
+      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+    },
+    {
+      "entry_id": "fof-abdulkadir-salah-seized-bell-3017",
+      "program_id": "feeding-our-future",
+      "subject": "Abdulkadir Nur Salah",
+      "amount": 435512.44,
+      "currency": "USD",
+      "metric_type": "assets_seized",
+      "event_date": "2025-01-28",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
+      ],
+      "overlap_group_id": null,
+      "realization_status": "UNKNOWN",
+      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+    },
+    {
+      "entry_id": "fof-abdulkadir-salah-seized-ne-bank-3017",
+      "program_id": "feeding-our-future",
+      "subject": "Abdulkadir Nur Salah",
+      "amount": 472889.08,
+      "currency": "USD",
+      "metric_type": "assets_seized",
+      "event_date": "2025-01-28",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
+      ],
+      "overlap_group_id": null,
+      "realization_status": "UNKNOWN",
+      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+    },
+    {
+      "entry_id": "fof-abdi-salah-seized-star-choice",
+      "program_id": "feeding-our-future",
+      "subject": "Abdi Nur Salah",
+      "amount": 343418.98,
+      "currency": "USD",
+      "metric_type": "assets_seized",
+      "event_date": "2025-01-28",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
+      ],
+      "overlap_group_id": null,
+      "realization_status": "UNKNOWN",
+      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+    },
+    {
+      "entry_id": "medicaid-dhs-identified-recovery-2026-09",
+      "program_id": "medicaid-program-integrity",
+      "subject": "Minnesota Medicaid program integrity",
+      "amount": 56000000,
+      "currency": "USD",
+      "metric_type": "identified_for_recovery",
+      "event_date": "2026-09-09",
+      "evidence_class": "AGENCY_POSITION",
+      "source_ids": [
+        "src-mn-dhs-program-integrity-2026-09-09"
+      ],
+      "overlap_group_id": "dhs-identified-recovery-since-2020",
+      "collection_status": "UNKNOWN",
+      "interpretation": "DHS reports more than $56 million identified for recovery since 2020. This is not a collected-cash figure."
+    },
+    {
+      "entry_id": "medicaid-optum-cost-avoidance-phase1",
+      "program_id": "medicaid-program-integrity",
+      "subject": "Minnesota Medicaid fee-for-service payment integrity",
+      "amount": 165000000,
+      "currency": "USD",
+      "metric_type": "cost_avoidance",
+      "event_date": "2026-01-30",
+      "evidence_class": "AGENCY_POSITION",
+      "source_ids": [
+        "src-mn-optum-2026-01-30-phase1-payment-integrity"
+      ],
+      "overlap_group_id": null,
+      "collection_status": "NOT_APPLICABLE",
+      "interpretation": "Optum describes more than $165 million in cost avoidance. Cost avoidance is prevention of future expense, not money recovered."
+    }
+  ]
+}

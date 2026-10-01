@@ -22,6 +22,8 @@ RECORD = ROOT / "record" / "data" / "corpus.json"
 PROGRAMS = RESEARCH / "programs" / "tracker-programs-v1.json"
 EVENTS = RESEARCH / "events" / "accountability-events-v1.json"
 CONTROLS = RESEARCH / "oversight" / "medicaid-control-timeline.json"
+RECOVERY = RESEARCH / "money" / "tracker-recovery-v1.json"
+SNAPSHOT = RESEARCH / "snapshots" / "tracker-v1-2026-09-30.json"
 OUT = ROOT / "tracker" / "data" / "tracker.json"
 
 LEGAL_EVENT_STAGES = {
@@ -36,6 +38,7 @@ MONEY_CATEGORIES = {
     "amount_billed", "amount_claimed", "amount_paid", "alleged_loss", "proven_loss",
     "restitution_ordered", "forfeiture_ordered", "recovered_amount",
     "identified_for_recovery", "cost_avoidance", "program_spend", "fraud_estimate",
+    "assets_seized", "assets_recovered", "forfeiture_sought", "administrative_recoupment",
 }
 REFORM_STATE_MAP = {
     "state_program_review": "IMPLEMENTED",
@@ -108,10 +111,11 @@ def normalize_money(amount, context):
     category = amount.get("metric_type") or amount.get("money_category")
     if category not in MONEY_CATEGORIES:
         raise BuildError(f"unclear money category for {context}: {category!r}")
-    if not isinstance(amount.get("value"), (int, float)):
+    value = amount.get("value", amount.get("amount"))
+    if not isinstance(value, (int, float)):
         raise BuildError(f"missing numeric money value for {context}")
     return {
-        "value": amount["value"],
+        "value": value,
         "currency": amount.get("currency", "USD"),
         "category": category,
         "exact_or_approximate": amount.get("exact_or_approximate"),
@@ -256,15 +260,79 @@ def timeline_projection(controls, sources):
         })
     return out
 
+
+def recovery_projection(doc, sources):
+    seen = set()
+    by_program = {}
+    all_rows = []
+    for entry in doc.get("entries", []):
+        eid = entry.get("entry_id")
+        if not eid or eid in seen:
+            raise BuildError(f"duplicate or missing recovery entry_id: {eid!r}")
+        seen.add(eid)
+        sids = require_sources(source_ids_for(entry), sources, f"recovery entry {eid}")
+        row = normalize_money(entry, f"recovery entry {eid}")
+        row.update({
+            "entry_id": eid,
+            "program_id": entry.get("program_id"),
+            "subject": entry.get("subject"),
+            "event_date": entry.get("event_date"),
+            "evidence_class": entry.get("evidence_class"),
+            "source_ids": sids,
+            "interpretation": entry.get("interpretation"),
+            "collection_status": entry.get("collection_status"),
+            "realization_status": entry.get("realization_status"),
+        })
+        if not row["program_id"]:
+            raise BuildError(f"recovery entry {eid} missing program_id")
+        by_program.setdefault(row["program_id"], []).append(row)
+        all_rows.append(row)
+    return by_program, all_rows
+
+def build_changes(baseline, programs, all_events, recovery_rows):
+    current_metrics = {}
+    for program in programs:
+        for metric in program.get("legal_metrics") or []:
+            current_metrics[metric["metric_id"]] = metric.get("value")
+
+    metric_changes = []
+    for metric_id, old_value in (baseline.get("legal_metrics") or {}).items():
+        if metric_id not in current_metrics:
+            raise BuildError(f"baseline metric disappeared from tracker: {metric_id}")
+        new_value = current_metrics[metric_id]
+        if new_value != old_value:
+            metric_changes.append({
+                "metric_id": metric_id,
+                "before": old_value,
+                "after": new_value,
+            })
+
+    baseline_events = set(baseline.get("event_ids") or [])
+    new_events = [e for e in all_events if e.get("event_id") not in baseline_events]
+    baseline_recovery = set(baseline.get("recovery_entry_ids") or [])
+    new_recovery = [r for r in recovery_rows if r.get("entry_id") not in baseline_recovery]
+
+    return {
+        "since_snapshot": baseline.get("snapshot_id"),
+        "snapshot_date": baseline.get("snapshot_date"),
+        "legal_metric_changes": metric_changes,
+        "new_events": new_events,
+        "new_recovery_entries": new_recovery,
+        "change_count": len(metric_changes) + len(new_events) + len(new_recovery),
+    }
+
 def main():
     corpus = load(RECORD)
     config = load(PROGRAMS)
     event_doc = load(EVENTS)
     controls = load(CONTROLS)
+    recovery_doc = load(RECOVERY)
+    baseline = load(SNAPSHOT)
     claims = index_json(RESEARCH / "claims", "claim_id")
     sources = index_json(RESEARCH / "sources", "source_id")
 
     events_by_program = validate_event_sequence(event_doc.get("events", []), sources)
+    recovery_by_program, recovery_rows = recovery_projection(recovery_doc, sources)
 
     controls_public = timeline_projection(controls, sources)
     programs_out = []
@@ -350,6 +418,10 @@ def main():
         for case in cases:
             used_sources.update(case.get("source_ids") or [])
 
+        program_recovery = recovery_by_program.get(pid, [])
+        for row in program_recovery:
+            used_sources.update(row.get("source_ids") or [])
+
         programs_out.append({
             "program_id": pid,
             "name": program["name"],
@@ -361,6 +433,7 @@ def main():
             "money": family_money + explicit_money,
             "events": pevents,
             "reform_events": reform_events,
+            "recovery": program_recovery,
             "unknowns": {
                 "charged_count": None if not any(m["metric_id"].endswith("charged-count") for m in metrics) else "SEE_METRIC",
                 "convicted_count": None if not any(m["metric_id"].endswith("convicted-count") for m in metrics) else "SEE_METRIC",
@@ -370,6 +443,7 @@ def main():
             },
         })
 
+    changes = build_changes(baseline, programs_out, event_doc.get("events", []), recovery_rows)
     source_list = [source_public(sources[sid]) for sid in sorted(used_sources)]
     verified_dates = [s.get("retrieval_date") for s in source_list if s.get("retrieval_date")]
     out = {
@@ -379,6 +453,8 @@ def main():
             "program_selection": "research/programs/tracker-programs-v1.json",
             "accountability_events": "research/events/accountability-events-v1.json",
             "control_timeline": "research/oversight/medicaid-control-timeline.json",
+            "recovery_selection": "research/money/tracker-recovery-v1.json",
+            "comparison_snapshot": "research/snapshots/tracker-v1-2026-09-30.json",
         },
         "last_verified": max(verified_dates) if verified_dates else None,
         "do_not_conflate": [
@@ -386,6 +462,8 @@ def main():
             "alleged loss, program spending, adjudicated amount, restitution, forfeiture, recovery, cost avoidance",
             "announced, enacted, implemented, measured, and effective",
         ],
+        "changes": changes,
+        "recovery_rules": recovery_doc.get("rules") or [],
         "programs": programs_out,
         "sources": source_list,
     }

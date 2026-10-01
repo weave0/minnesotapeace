@@ -70,3 +70,10 @@ Example: the formulation “officials knowingly facilitated fraud” may have ev
 `accountability-event.schema.json` defines the append-only event layer used by the public money tracker. It does not replace claims, court records, or program-control timelines. Event types preserve exact legal stages, and reform states keep `ANNOUNCED`, `ENACTED`, `IMPLEMENTED`, `MEASURED`, and `EFFECTIVE` distinct. A measurement may be published while `effectiveness` remains `UNKNOWN`.
 
 Every publishable event requires at least one canonical `source_id`. Later events may advance legal status only when the cited evidence supports that transition; an appearance on existing charges may retain `legal_stage: CHARGED` without implying a new charge or conviction.
+
+
+## Tracker recovery publication rows
+
+`tracker-recovery.schema.json` governs the deliberately non-additive recovery layer used by `/tracker/`. It distinguishes restitution ordered, forfeiture ordered or sought, assets seized or recovered, actual recovered amounts, identified-for-recovery amounts, administrative recoupments, and cost avoidance. Every row requires canonical source linkage. A row may carry an `overlap_group_id`; rows in the same overlap group are never automatically summed.
+
+Release snapshots under `research/snapshots/` are derived checkpoints, not factual source records. They store only stable IDs and headline metric values so `build-tracker.py` can generate a deterministic “what changed since the last snapshot?” view without copying narrative claims into a parallel truth store.

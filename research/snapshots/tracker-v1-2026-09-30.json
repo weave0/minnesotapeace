@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "tracker-v1-2026-09-30",
+  "snapshot_date": "2026-09-30",
+  "commit_sha": "dc80b498495fa526cca4e511ec384ddea7533c83",
+  "legal_metrics": {
+    "fof-charged-count": 78,
+    "fof-convicted-count": 68,
+    "fof-sentenced-count": 26
+  },
+  "event_ids": [
+    "evt-fof-hussein-sentenced-2026-09-08",
+    "evt-fof-abduljabar-hussein-sentenced-2026-09-08",
+    "evt-hss-sallah-return-2026-09-11",
+    "evt-medicaid-integrity-measurement-2026-09-09"
+  ],
+  "recovery_entry_ids": [],
+  "note": "Release snapshot of the first public-money-tracker production tranche. Used only for deterministic change comparison; canonical facts remain in claims, events, sources and recovery records."
+}
