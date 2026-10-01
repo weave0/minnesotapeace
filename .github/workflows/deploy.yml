@@ -222,6 +222,9 @@ jobs:
                     check_text /tmp/tracker.html 'Minnesota Public Money Tracker' 'public money tracker' || misses=1
                     check_text /tmp/tracker.json '"program_id": "feeding-our-future"' 'tracker data FOF program' || misses=1
                     check_text /tmp/tracker.json '"effectiveness": "UNKNOWN"' 'tracker reform effectiveness boundary' || misses=1
+                    check_text /tmp/tracker.json '"new_recovery_entries"' 'tracker deterministic changes' || misses=1
+                    check_text /tmp/tracker.json '"category": "restitution_ordered"' 'tracker restitution category' || misses=1
+                    check_text /tmp/tracker.json '"category": "assets_seized"' 'tracker seized-assets category' || misses=1
                     check_text /tmp/authority.html 'The court did not order reimbursements resumed' 'authority notice chain' || misses=1
                     check_text /tmp/evidence.css '.authority-table' 'evidence depth CSS' || misses=1
                     check_text /tmp/record.html 'Evidence room' 'record' || misses=1
