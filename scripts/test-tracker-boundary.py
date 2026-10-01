@@ -115,7 +115,7 @@ assert all(r["category"] != "recovered_amount" for r in fof_recovery)
 
 # 12. Matching restitution orders remain individual rows with an overlap group, not a summed total.
 empire = [r for r in fof_recovery if r.get("overlap_group_id") == "fof-empire-47920514-restitution"]
-assert len(empire) == 3
+assert len(empire) == 4
 assert all(r["value"] == 47920514 for r in empire)
 assert "recovery_total" not in data
 
@@ -124,7 +124,7 @@ changes = data["changes"]
 assert changes["since_snapshot"] == "tracker-v1-2026-09-30"
 assert changes["legal_metric_changes"] == []
 assert changes["new_events"] == []
-assert len(changes["new_recovery_entries"]) == 10
+assert len(changes["new_recovery_entries"]) == 13
 
 # 14. Source-less or duplicate recovery entries fail closed.
 expect_error(
