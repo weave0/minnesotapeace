@@ -17,6 +17,7 @@ on:
       - 'scripts/test-status-snapshot-boundary.py'
       - 'scripts/build-tracker.py'
       - 'scripts/test-tracker-boundary.py'
+      - 'scripts/capture-tracker-snapshot.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
   push:
@@ -37,6 +38,7 @@ on:
       - 'scripts/test-status-snapshot-boundary.py'
       - 'scripts/build-tracker.py'
       - 'scripts/test-tracker-boundary.py'
+      - 'scripts/capture-tracker-snapshot.py'
       - '.github/workflows/research-integrity.yml'
       - '.github/workflows/deploy.yml'
 
