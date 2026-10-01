@@ -52,6 +52,9 @@ export async function onRequest(context) {
     "/tracker",
     "/tracker/",
     "/tracker/index.html",
+    "/accountability",
+    "/accountability/",
+    "/accountability/index.html",
   ]);
   const isPublicHtml = publicHtmlPaths.has(pathname);
   if (!isPublicHtml) return response;
