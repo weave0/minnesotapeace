@@ -76,7 +76,7 @@ COURT_DOC_TYPES_BY_METRIC = {
 }
 COLLECTION_METRICS = {"recovered_amount", "assets_recovered", "administrative_recoupment"}
 COLLECTION_EVIDENCE_TYPES = {"court_collection_accounting", "agency_collection_ledger"}
-COLLECTED_STATUSES = {"COLLECTED", "PARTIALLY_COLLECTED", "REALIZED", "PARTIALLY_REALIZED", "RECOVERED"}
+NEUTRAL_RECOVERY_STATUSES = {None, "", "UNKNOWN", "NOT_APPLICABLE"}
 SECONDARY_PREFIXES = ("SECONDARY", "LEAD", "NEWS", "REPUTABLE")
 COURT_CLASSES_NOT_ADJUDICATED_FOR = {"assets_seized", "forfeiture_sought", "forfeiture_ordered"}
 BASIS_GAP = {
@@ -355,11 +355,12 @@ def recovery_projection(doc, sources):
                 raise BuildError(f"recovery entry {eid}: {cid} is not collection evidence")
         if metric in COLLECTION_METRICS and not evidence_ids:
             raise BuildError(f"recovery entry {eid}: {metric} requires collection_evidence_source_ids")
-        claimed = {entry.get("collection_status"), entry.get("realization_status")} & COLLECTED_STATUSES
+        claimed = {entry.get("collection_status"), entry.get("realization_status")} - NEUTRAL_RECOVERY_STATUSES
         if claimed and not evidence_ids:
             raise BuildError(f"recovery entry {eid}: {sorted(claimed)} asserted without collection evidence")
-        if metric in COURT_CLASSES_NOT_ADJUDICATED_FOR and basis != "COURT_DOCUMENT"                 and entry.get("evidence_class") == "ADJUDICATED":
-            raise BuildError(f"recovery entry {eid}: release-only {metric} cannot be labelled ADJUDICATED")
+        evidence_class = str(entry.get("evidence_class") or "")
+        if metric in COURT_CLASSES_NOT_ADJUDICATED_FOR and basis != "COURT_DOCUMENT" and evidence_class.startswith("ADJUDICATED"):
+            raise BuildError(f"recovery entry {eid}: release-only {metric} cannot use adjudicated evidence class {evidence_class}")
         row.update({
             "entry_id": eid,
             "program_id": entry.get("program_id"),
