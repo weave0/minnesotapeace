@@ -98,6 +98,45 @@
       "source_ids": [
         "src-usao-mn-2025-02-07-ross-43mo-sentence"
       ]
+    },
+    {
+      "event_id": "evt-fof-abdi-nur-salah-sentenced-2026-10-01",
+      "program_id": "feeding-our-future",
+      "event_type": "SENTENCED",
+      "occurred_at": "2026-10-01",
+      "published_at": "2026-10-01",
+      "subject": "Abdi Nur Salah",
+      "legal_stage": "SENTENCED",
+      "summary": "Sentenced to 33 months after a guilty plea; USAO-MN identified him as the 31st Feeding Our Future defendant sentenced.",
+      "source_ids": [
+        "src-usao-mn-2026-10-01-abdi-nur-salah-sentencing"
+      ]
+    },
+    {
+      "event_id": "evt-hss-hassan-ahmed-hussein-pleaded-2026-09-24",
+      "program_id": "hss",
+      "event_type": "PLEADED",
+      "occurred_at": "2026-09-24",
+      "published_at": "2026-10-01",
+      "subject": "Hassan Ahmed Hussein",
+      "legal_stage": "PLEADED",
+      "summary": "Pleaded guilty to one count of wire fraud in the Pristine Health HSS case; sentencing remains later.",
+      "source_ids": [
+        "src-usao-mn-2026-10-01-hss-pristine-pleas"
+      ]
+    },
+    {
+      "event_id": "evt-hss-ahmed-abdirashid-mohamed-pleaded-2026-10-01",
+      "program_id": "hss",
+      "event_type": "PLEADED",
+      "occurred_at": "2026-10-01",
+      "published_at": "2026-10-01",
+      "subject": "Ahmed Abdirashid Mohamed",
+      "legal_stage": "PLEADED",
+      "summary": "Pleaded guilty to one count of wire fraud in the Pristine Health HSS case; sentencing remains later.",
+      "source_ids": [
+        "src-usao-mn-2026-10-01-hss-pristine-pleas"
+      ]
     }
   ]
 }
