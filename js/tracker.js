@@ -7,7 +7,7 @@
   function sources(ids){var m=sourceMap();return (ids||[]).map(function(id){return m[id]}).filter(Boolean)}
   function sourceLinks(ids){var ss=sources(ids);if(!ss.length)return '<span class="source-inline">No publishable source</span>';return '<span class="source-inline">'+ss.map(function(s){return '<a href="'+esc(s.canonical_url)+'">'+esc(s.issuing_body||s.title||s.source_id)+'</a>'+(s.publication_date?' · '+esc(s.publication_date):'')}).join(' · ')+'</span>'}
   function moneyLabel(c){return({program_spend:"Program spend",amount_billed:"Amount billed",amount_claimed:"Amount claimed",amount_paid:"Amount paid",alleged_loss:"Alleged loss",proven_loss:"Adjudicated amount",restitution_ordered:"Restitution ordered",forfeiture_ordered:"Forfeiture ordered",forfeiture_sought:"Subject to forfeiture",assets_seized:"Assets seized",assets_recovered:"Assets recovered",recovered_amount:"Recovered amount",identified_for_recovery:"Identified for recovery",administrative_recoupment:"Administrative recoupment",cost_avoidance:"Cost avoidance",fraud_estimate:"Fraud estimate"})[c]||c}
-  function usd(v){if(typeof v!=="number")return "Unknown";return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(v)}
+  function usd(v){if(typeof v!=="number")return "Unknown";return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",minimumFractionDigits:0,maximumFractionDigits:2}).format(v)}
   function date(v){if(!v)return "Date unknown";return esc(v)}
   function renderNav(){
     var nav=$("#program-nav");nav.innerHTML=(data.programs||[]).map(function(p){return '<button type="button" data-program="'+esc(p.program_id)+'">'+esc(p.name)+'</button>'}).join("");
@@ -43,7 +43,7 @@
     if(!rows.length)return '<div class="unknown-box">No source-backed change for this program since '+esc(ch.snapshot_date||"the previous snapshot")+'.</div>';
     return '<div class="timeline">'+rows.join("")+'</div>';
   }
-  function basisLabel(b){return({COURT_DOCUMENT:"Court document",AGENCY_RELEASE_ONLY:"Agency release only",SECONDARY_ONLY:"Secondary source only",UNRESOLVED:"Unresolved"})[b]||"Unresolved"}
+  function basisLabel(b){return({COURT_DOCUMENT:"Court document",AGENCY_RELEASE_ONLY:"Agency or contractor publication",SECONDARY_ONLY:"Secondary source only",UNRESOLVED:"Unresolved"})[b]||"Unresolved"}
   function recovery(p){
     var rows=p.recovery||[];if(!rows.length)return '<div class="unknown-box">No source-safe recovery, restitution, seizure or collection row is published for this program yet.</div>';
     return '<div class="money-list">'+rows.map(function(r){return '<article class="money-row"><div><div class="money-value">'+usd(r.value)+'</div><div class="money-category">'+esc(moneyLabel(r.category))+'</div></div><div><span class="money-chip">'+esc(r.evidence_class||"sourced")+'</span> <span class="money-chip basis-'+esc(r.evidence_basis||"UNRESOLVED")+'">'+esc(basisLabel(r.evidence_basis))+'</span><p class="card-note">'+esc(r.subject||"")+'</p></div><div><p class="card-note">'+esc(r.interpretation||"No aggregation implied.")+'</p>'+(r.collection_status?'<p class="card-note"><strong>Collection:</strong> '+esc(r.collection_status)+'</p>':'')+(r.realization_status?'<p class="card-note"><strong>Realization:</strong> '+esc(r.realization_status)+'</p>':'')+(r.primary_document_gap?'<p class="card-note"><strong>Evidence gap:</strong> '+esc(r.primary_document_gap)+'</p>':'')+sourceLinks(r.source_ids)+'</div></article>'}).join("")+'</div>'
