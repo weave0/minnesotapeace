@@ -151,7 +151,7 @@ expect_error(
 
 print("tracker boundary tests: 14/14 passed")
 
-# ---- Primary judgment / collection acquisition regressions (tests 15-23) ----
+# ---- Primary judgment / collection acquisition regressions (tests 15-21) ----
 RS = {
     "src-release": {"source_id": "src-release", "source_status": "PRIMARY_GOVERNMENT_RELEASE", "document_type": "press_release"},
     "src-news": {"source_id": "src-news", "source_status": "SECONDARY_VERIFIED", "document_type": "news_report"},
@@ -220,6 +220,10 @@ expect_error(
     lambda: project(entry(metric_type="assets_seized", evidence_class="ADJUDICATED")),
     "release-only seizure labelled ADJUDICATED",
 )
+expect_error(
+    lambda: project(entry(metric_type="assets_seized", evidence_class="ADJUDICATED_PRELIMINARY_ORDER")),
+    "release-only seizure labelled with adjudicated variant",
+)
 
 # 19. collection evidence is required before recovered_amount (and other collection metrics).
 for metric in ("recovered_amount", "assets_recovered", "administrative_recoupment"):
@@ -236,6 +240,10 @@ assert recovered["category"] == "recovered_amount"
 expect_error(
     lambda: project(entry(collection_status="COLLECTED")),
     "restitution order flipped to COLLECTED without evidence",
+)
+expect_error(
+    lambda: project(entry(collection_status="FULLY_COLLECTED")),
+    "unknown non-neutral collection status bypassed collection evidence gate",
 )
 
 # 20. a missing primary judgment is never silently treated as judgment-backed.
