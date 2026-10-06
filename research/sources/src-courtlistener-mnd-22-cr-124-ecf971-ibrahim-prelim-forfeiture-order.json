@@ -1,0 +1,35 @@
+{
+  "source_id": "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order",
+  "canonical_url": "https://www.courtlistener.com/docket/65361156/971/united-states-v-farah/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Ibrahim - Preliminary Order of Forfeiture, ECF 971",
+  "case_number": "0:22-cr-00124-NEB-DTS",
+  "document_date": "2026-04-03",
+  "publication_date": "2026-04-03",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_forfeiture_order",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203009/gov.uscourts.mnd.203009.971.0.pdf",
+    "sha256": "9206998886c079f7fbf9a067f6eb245e028f6ef9bdc69334aed42de48e418036",
+    "bytes": 108415,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_22-cr-00124_ecf971_ibrahim-prelim-forfeiture-order.pdf",
+    "text_extract_path": "research/court/extracts/0_22-cr-00124_ecf971_ibrahim-prelim-forfeiture-order.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "After Mahad Ibrahim's guilty plea to Counts 5 and 36, the court ordered forfeiture of real property at 5657 Maple Drive, Lewis Center, Ohio, and of $1,842,797.55 seized from a US Bank account held by ThinkTechAct Foundation, $456,968.36 seized from a Spire Credit Union account held by MIB Holdings LLC and $448,285.14 seized from a second Spire Credit Union account held by MIB Holdings LLC.",
+    "A money judgment forfeiture of $7,324,412 is entered against Ibrahim, with credit for the net forfeited value of each asset forfeited from him.",
+    "The order becomes final as to the defendant at sentencing."
+  ],
+  "does_not_support": [
+    "It is a preliminary order; finality depends on sentencing, which this record does not show.",
+    "The money judgment is not collected cash, and the forfeited accounts are credited against it; the figures must not be summed.",
+    "It does not show the property was sold or the funds transferred to the government."
+  ]
+}

@@ -19,11 +19,12 @@
       "event_date": "2025-08-06",
       "evidence_class": "ADJUDICATED",
       "source_ids": [
-        "src-usao-mn-2025-08-06-farah-28yr-sentence"
+        "src-usao-mn-2025-08-06-farah-28yr-sentence",
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
       ],
       "overlap_group_id": "fof-empire-47920514-restitution",
       "collection_status": "UNKNOWN",
-      "interpretation": "Court-ordered restitution. The source does not establish collection, and the same amount appears in related Empire defendants' orders."
+      "interpretation": "Court-ordered restitution per the USAO release. Farah's own judgment (ECF 851/858) is not yet captured; Shariff's judgment (ECF 789) lists Farah in its joint-and-several schedule at the same amount. Collection is not established."
     },
     {
       "entry_id": "fof-ismail-restitution-2024-10-15",
@@ -35,11 +36,12 @@
       "event_date": "2024-10-15",
       "evidence_class": "ADJUDICATED",
       "source_ids": [
-        "src-usao-mn-2024-10-15-ismail-12yr-sentence"
+        "src-usao-mn-2024-10-15-ismail-12yr-sentence",
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
       ],
       "overlap_group_id": "fof-empire-47920514-restitution",
       "collection_status": "UNKNOWN",
-      "interpretation": "Court-ordered restitution. Do not add to matching Empire-family restitution orders without judgment-level reconciliation."
+      "interpretation": "Court-ordered restitution per the USAO release. This defendant's own judgment is not yet captured; Shariff's judgment (ECF 789) lists him in its joint-and-several schedule at the same amount. Not additive with the matching Empire-family orders. Collection is not established."
     },
     {
       "entry_id": "fof-abdimajid-nur-restitution-2025-11-24",
@@ -51,11 +53,12 @@
       "event_date": "2025-11-24",
       "evidence_class": "ADJUDICATED",
       "source_ids": [
-        "src-usao-mn-2025-11-24-nur-10yr-sentence"
+        "src-usao-mn-2025-11-24-nur-10yr-sentence",
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
       ],
       "overlap_group_id": "fof-empire-47920514-restitution",
       "collection_status": "UNKNOWN",
-      "interpretation": "Court-ordered restitution. Do not add to matching Empire-family restitution orders without judgment-level reconciliation."
+      "interpretation": "Court-ordered restitution per the USAO release. This defendant's own judgment is not yet captured; Shariff's judgment (ECF 789) lists him in its joint-and-several schedule at the same amount. Not additive with the matching Empire-family orders. Collection is not established."
     },
     {
       "entry_id": "fof-sahra-nur-restitution-2025-05-22",
@@ -81,13 +84,17 @@
       "currency": "USD",
       "metric_type": "assets_seized",
       "event_date": "2025-01-28",
-      "evidence_class": "ADJUDICATED",
+      "evidence_class": "PLEA_AGREEMENT",
       "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement",
         "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
       ],
-      "overlap_group_id": null,
+      "overlap_group_id": "fof-abdulkadir-salah-forfeiture-pool",
       "realization_status": "UNKNOWN",
-      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+      "interpretation": "Cash seized from a named account, which the defendant agreed in a filed plea agreement to forfeit. No forfeiture order, final order or realization is captured; the seized funds are credited against the defendant's consented money judgment and must not be added to it.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement"
+      ]
     },
     {
       "entry_id": "fof-abdulkadir-salah-seized-bell-3017",
@@ -97,13 +104,17 @@
       "currency": "USD",
       "metric_type": "assets_seized",
       "event_date": "2025-01-28",
-      "evidence_class": "ADJUDICATED",
+      "evidence_class": "PLEA_AGREEMENT",
       "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement",
         "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
       ],
-      "overlap_group_id": null,
+      "overlap_group_id": "fof-abdulkadir-salah-forfeiture-pool",
       "realization_status": "UNKNOWN",
-      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+      "interpretation": "Cash seized from a named account, which the defendant agreed in a filed plea agreement to forfeit. No forfeiture order, final order or realization is captured; the seized funds are credited against the defendant's consented money judgment and must not be added to it.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement"
+      ]
     },
     {
       "entry_id": "fof-abdulkadir-salah-seized-ne-bank-3017",
@@ -113,13 +124,17 @@
       "currency": "USD",
       "metric_type": "assets_seized",
       "event_date": "2025-01-28",
-      "evidence_class": "ADJUDICATED",
+      "evidence_class": "PLEA_AGREEMENT",
       "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement",
         "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
       ],
-      "overlap_group_id": null,
+      "overlap_group_id": "fof-abdulkadir-salah-forfeiture-pool",
       "realization_status": "UNKNOWN",
-      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+      "interpretation": "Cash seized from a named account, which the defendant agreed in a filed plea agreement to forfeit. No forfeiture order, final order or realization is captured; the seized funds are credited against the defendant's consented money judgment and must not be added to it.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement"
+      ]
     },
     {
       "entry_id": "fof-abdi-salah-seized-star-choice",
@@ -129,13 +144,17 @@
       "currency": "USD",
       "metric_type": "assets_seized",
       "event_date": "2025-01-28",
-      "evidence_class": "ADJUDICATED",
+      "evidence_class": "PLEA_AGREEMENT",
       "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf497-abdi-salah-plea-agreement",
         "src-usao-mn-2025-01-28-salah-abdi-pleas-forfeiture"
       ],
-      "overlap_group_id": null,
+      "overlap_group_id": "fof-abdi-salah-forfeiture-pool",
       "realization_status": "UNKNOWN",
-      "interpretation": "Cash identified as seized and subject to forfeiture in the plea release; final forfeiture or recovery is not established."
+      "interpretation": "Cash seized from a named account, which the defendant agreed in a filed plea agreement to forfeit. No forfeiture order, final order or realization is captured; the seized funds are credited against the defendant's consented money judgment and must not be added to it.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf497-abdi-salah-plea-agreement"
+      ]
     },
     {
       "entry_id": "medicaid-dhs-identified-recovery-2026-09",
@@ -179,11 +198,15 @@
       "event_date": "2025-01-24",
       "evidence_class": "ADJUDICATED",
       "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment",
         "src-usao-mn-2025-01-24-shariff-17yr-sentence"
       ],
       "overlap_group_id": "fof-empire-47920514-restitution",
       "collection_status": "UNKNOWN",
-      "interpretation": "Court-ordered restitution. Do not add to matching Empire-family restitution orders without judgment-level reconciliation."
+      "interpretation": "Restitution of $47,920,514 ordered in the court's judgment (ECF 789, filed 2025-02-06), which lists Farah, Ismail, A. Nur and H. Nur as jointly and severally liable for the same amount. Not additive with the matching Empire-family orders. The judgment shows payment terms, not collection.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
+      ]
     },
     {
       "entry_id": "fof-ross-restitution-2025-02-07",
@@ -195,11 +218,15 @@
       "event_date": "2025-02-07",
       "evidence_class": "ADJUDICATED",
       "source_ids": [
+        "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment",
         "src-usao-mn-2025-02-07-ross-43mo-sentence"
       ],
       "overlap_group_id": null,
       "collection_status": "UNKNOWN",
-      "interpretation": "Court-ordered restitution; the sentencing release does not establish collection."
+      "interpretation": "Restitution of $2,434,360 ordered in the court's judgment (ECF 68), payable to the U.S. Department of Agriculture. The judgment shows payment terms, not collection.",
+      "primary_document_ids": [
+        "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment"
+      ]
     },
     {
       "entry_id": "fof-jesow-restitution-2026-04-09",
@@ -216,6 +243,283 @@
       "overlap_group_id": null,
       "collection_status": "UNKNOWN",
       "interpretation": "Court-ordered restitution; the sentencing release does not establish collection."
+    },
+    {
+      "entry_id": "fof-shariff-forfeiture-money-judgment-2024-11-08",
+      "program_id": "feeding-our-future",
+      "subject": "Mukhtar Mohamed Shariff",
+      "amount": 2595301.54,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2024-11-08",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf709-shariff-prelim-forfeiture-order",
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf709-shariff-prelim-forfeiture-order",
+        "src-courtlistener-mnd-22-cr-124-ecf789-shariff-judgment"
+      ],
+      "overlap_group_id": "fof-shariff-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture entered in the court's preliminary order (ECF 709), final as to the defendant at sentencing; the judgment (ECF 789) incorporates the forfeiture orders. A final order is not captured. A money judgment is an obligation, not realized cash, and is credited by assets forfeited from him.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-ross-forfeiture-money-judgment-2024-11-19",
+      "program_id": "feeding-our-future",
+      "subject": "Sharon Denise Ross",
+      "amount": 1241455,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2024-11-19",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-courtlistener-mnd-23-cr-82-ecf55-ross-prelim-forfeiture-order",
+        "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment",
+        "src-usao-mn-2025-02-07-ross-43mo-sentence"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-23-cr-82-ecf55-ross-prelim-forfeiture-order",
+        "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment"
+      ],
+      "overlap_group_id": "fof-ross-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture entered in the court's preliminary order (ECF 55); the order also forfeits the Willernie house. This is lower than the $2,837,491 she consented to in her plea. The USAO release gives no dollar value. Credited by forfeited assets; not realized cash.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-ibrahim-forfeiture-money-judgment-2026-04-03",
+      "program_id": "feeding-our-future",
+      "subject": "Mahad Ibrahim",
+      "amount": 7324412,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2026-04-03",
+      "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "overlap_group_id": "fof-ibrahim-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture entered in the preliminary order (ECF 971); final only at sentencing, which is not captured. Credited by the accounts below; not additive with them and not realized cash.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-ibrahim-forfeited-us-bank-thinktechact-2026-04-03",
+      "program_id": "feeding-our-future",
+      "subject": "Mahad Ibrahim",
+      "amount": 1842797.55,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2026-04-03",
+      "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "overlap_group_id": "fof-ibrahim-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Preliminary order forfeits funds seized from a US Bank account held by ThinkTechAct Foundation. Credited against the money judgment; transfer to the government is not evidenced.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-ibrahim-forfeited-spire-752231-00-2026-04-03",
+      "program_id": "feeding-our-future",
+      "subject": "Mahad Ibrahim",
+      "amount": 456968.36,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2026-04-03",
+      "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "overlap_group_id": "fof-ibrahim-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Preliminary order forfeits funds seized from Spire Credit Union account 752231-00 held by MIB Holdings LLC. Credited against the money judgment; transfer to the government is not evidenced.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-ibrahim-forfeited-spire-752231-11-2026-04-03",
+      "program_id": "feeding-our-future",
+      "subject": "Mahad Ibrahim",
+      "amount": 448285.14,
+      "metric_type": "forfeiture_ordered",
+      "event_date": "2026-04-03",
+      "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-124-ecf971-ibrahim-prelim-forfeiture-order"
+      ],
+      "overlap_group_id": "fof-ibrahim-forfeiture-money-judgment",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Preliminary order forfeits funds seized from Spire Credit Union account 752231-11 held by MIB Holdings LLC. Credited against the money judgment; transfer to the government is not evidenced.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-abdulkadir-salah-money-judgment-consent-2025-01-28",
+      "program_id": "feeding-our-future",
+      "subject": "Abdulkadir Nur Salah",
+      "amount": 5546419,
+      "metric_type": "forfeiture_sought",
+      "event_date": "2025-01-28",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf496-abdulkadir-salah-plea-agreement"
+      ],
+      "overlap_group_id": "fof-abdulkadir-salah-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture the defendant consented to in his filed plea agreement. No forfeiture order is captured; the seized accounts are credited against it and must not be added to it.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-abdi-salah-money-judgment-consent-2025-01-28",
+      "program_id": "feeding-our-future",
+      "subject": "Abdi Nur Salah",
+      "amount": 1063255,
+      "metric_type": "forfeiture_sought",
+      "event_date": "2025-01-28",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf497-abdi-salah-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf497-abdi-salah-plea-agreement"
+      ],
+      "overlap_group_id": "fof-abdi-salah-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture the defendant consented to in his filed plea agreement. No forfeiture order is captured; the seized account is credited against it and must not be added to it.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "hss-anwar-adow-money-judgment-consent-2025-10-23",
+      "program_id": "hss",
+      "subject": "Anwar Ahmed Adow (Liberty Plus LLC)",
+      "amount": 1296394,
+      "metric_type": "forfeiture_sought",
+      "event_date": "2025-10-23",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement"
+      ],
+      "overlap_group_id": "hss-adow-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture consented to in a filed plea agreement. No sentencing or forfeiture order is captured; the seized currency is credited against it and is not additive.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "hss-asad-adow-money-judgment-consent-2025-11-17",
+      "program_id": "hss",
+      "subject": "Asad Ahmed Adow (Leo Human Services LLC)",
+      "amount": 2827281,
+      "metric_type": "forfeiture_sought",
+      "event_date": "2025-11-17",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "overlap_group_id": "hss-adow-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "Money judgment forfeiture consented to in a filed plea agreement. No sentencing or forfeiture order is captured; the seized currency listed in both brothers' pleas is credited against it and is not additive.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "hss-adow-seized-currency-48600",
+      "program_id": "hss",
+      "subject": "Anwar Adow / Asad Adow",
+      "amount": 48600,
+      "metric_type": "assets_seized",
+      "event_date": "2025-10-23",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "overlap_group_id": "hss-adow-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "U.S. currency seized from Anwar Adow's bedroom at a Blaine, Minnesota residence, listed for forfeiture in both brothers' filed plea agreements (one pool of cash, not two). No forfeiture order or realization is captured.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "hss-adow-seized-currency-14760",
+      "program_id": "hss",
+      "subject": "Anwar Adow / Asad Adow",
+      "amount": 14760,
+      "metric_type": "assets_seized",
+      "event_date": "2025-10-23",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "overlap_group_id": "hss-adow-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "U.S. currency seized from a safe in Asad Adow's bedroom at the same residence, listed for forfeiture in both brothers' filed plea agreements (one pool of cash, not two). No forfeiture order or realization is captured.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "hss-adow-seized-currency-25000",
+      "program_id": "hss",
+      "subject": "Anwar Adow / Asad Adow",
+      "amount": 25000,
+      "metric_type": "assets_seized",
+      "event_date": "2025-10-23",
+      "evidence_class": "PLEA_AGREEMENT",
+      "source_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-25-cr-353-ecf9-anwar-adow-plea-agreement",
+        "src-courtlistener-mnd-25-cr-354-ecf14-asad-adow-plea-agreement"
+      ],
+      "overlap_group_id": "hss-adow-forfeiture-pool",
+      "realization_status": "UNKNOWN",
+      "interpretation": "U.S. currency seized from a suitcase at the same residence, listed for forfeiture in both brothers' filed plea agreements (one pool of cash, not two). No forfeiture order or realization is captured.",
+      "currency": "USD"
+    },
+    {
+      "entry_id": "fof-bock-restitution-2026-06-05",
+      "program_id": "feeding-our-future",
+      "subject": "Aimee Marie Bock",
+      "amount": 242807755,
+      "currency": "USD",
+      "metric_type": "restitution_ordered",
+      "event_date": "2026-06-05",
+      "evidence_class": "ADJUDICATED",
+      "source_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf907-bock-judgment"
+      ],
+      "primary_document_ids": [
+        "src-courtlistener-mnd-22-cr-223-ecf907-bock-judgment"
+      ],
+      "overlap_group_id": null,
+      "collection_status": "UNKNOWN",
+      "interpretation": "Restitution of $242,807,755 ordered in the court's judgment (ECF 907, filed 2026-06-05), payable to USDA Food and Nutrition Service. The joint-and-several schedule is blank. It is payable to the same victim for the same program loss as other defendants' orders and has not been reconciled against them: do not add it to any other restitution row. The judgment shows payment terms, not collection."
     }
   ]
 }

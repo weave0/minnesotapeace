@@ -1,0 +1,33 @@
+{
+  "source_id": "src-courtlistener-mnd-22-cr-124-ecf709-shariff-prelim-forfeiture-order",
+  "canonical_url": "https://www.courtlistener.com/docket/65361160/709/united-states-v-farah/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Shariff - Preliminary Order of Forfeiture, ECF 709",
+  "case_number": "0:22-cr-00124-NEB-DTS",
+  "document_date": "2024-11-08",
+  "publication_date": "2024-11-08",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_forfeiture_order",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.203013/gov.uscourts.mnd.203013.709.0.pdf",
+    "sha256": "c1c9c82ef252db22ad4b817b4bdc790351337cefc85750175f01301d381e2cac",
+    "bytes": 124433,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_22-cr-00124_ecf709_shariff-prelim-forfeiture-order.pdf",
+    "text_extract_path": "research/court/extracts/0_22-cr-00124_ecf709_shariff-prelim-forfeiture-order.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "A money judgment forfeiture of $2,595,301.54 is entered against Mukhtar Mohamed Shariff, with credit for the net forfeited value of each asset forfeited from him.",
+    "The order becomes final as to the defendant at sentencing (Fed. R. Crim. P. 32.2(b)(4))."
+  ],
+  "does_not_support": [
+    "It does not show that any dollar of the money judgment has been collected or any asset realized.",
+    "A money judgment forfeiture is not seized or recovered cash."
+  ]
+}
