@@ -1,0 +1,24 @@
+{
+  "source_id": "src-usao-mn-2026-10-01-abdi-nur-salah-sentencing",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/st-paul-man-sentenced-33-months-imprisonment-defrauding-16-million-federal-child",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "St. Paul Man Sentenced to 33 Months’ Imprisonment for Defrauding $1.6 Million in Federal Child Nutrition Program Funds as Part of the Feeding Our Future Fraud Scheme",
+  "publication_date": "2026-10-01",
+  "retrieval_date": "2026-10-06",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved from the official USAO-MN host during the 2026-10-06 status sweep. This release explicitly states the current Feeding Our Future sentencing ordinal and therefore supersedes the prior 26th-defendant sentencing milestone for the headline sentenced-count metric.",
+  "supports": [
+    "Abdi Nur Salah was sentenced to 33 months in prison on October 1, 2026 for his role in the Feeding Our Future fraud scheme.",
+    "Salah is the 31st defendant sentenced in the Feeding Our Future fraud scheme.",
+    "Salah was originally charged on September 13, 2022 and pleaded guilty on January 28, 2025."
+  ],
+  "does_not_support": [
+    "A new charged-defendant ordinal or convicted-defendant ordinal; the release does not state either.",
+    "Any statewide fraud total or recovered-cash total."
+  ]
+}
