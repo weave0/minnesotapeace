@@ -120,10 +120,10 @@
           ]
         },
         "collection_status": {
-          "type": "string"
+          "enum": ["UNKNOWN", "NOT_APPLICABLE", "PARTIALLY_COLLECTED", "COLLECTED", "RECOVERED"]
         },
         "realization_status": {
-          "type": "string"
+          "enum": ["UNKNOWN", "NOT_APPLICABLE", "PARTIALLY_REALIZED", "REALIZED"]
         },
         "interpretation": {
           "type": "string",
