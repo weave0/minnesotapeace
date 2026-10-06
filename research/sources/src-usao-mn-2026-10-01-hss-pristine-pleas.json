@@ -1,0 +1,25 @@
+{
+  "source_id": "src-usao-mn-2026-10-01-hss-pristine-pleas",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/two-minnesota-men-plead-guilty-defrauding-medicaid-housing-services-program",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Two Minnesota Men Plead Guilty to Defrauding Medicaid Housing Services Program",
+  "publication_date": "2026-10-01",
+  "retrieval_date": "2026-10-06",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "ADJUDICATED",
+  "notes": "Retrieved from the official USAO-MN host during the 2026-10-06 public-freshness sweep. The release gives two individual guilty-plea events and does not provide a program-wide HSS conviction ordinal.",
+  "supports": [
+    "Hassan Ahmed Hussein entered a guilty plea on September 24, 2026 to one count of wire fraud.",
+    "Ahmed Abdirashid Mohamed entered a guilty plea on October 1, 2026 to one count of wire fraud.",
+    "The defendants operated Pristine Health LLC and the release states that the company billed Minnesota Medicaid more than $820,000.",
+    "The release states that the two defendants defrauded the HSS program out of more than $500,000 by submitting fraudulent claims for services that were never provided."
+  ],
+  "does_not_support": [
+    "A program-wide HSS charged, convicted, or sentenced ordinal.",
+    "A final sentence for either defendant; sentencing was to be set later."
+  ]
+}
