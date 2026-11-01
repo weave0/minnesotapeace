@@ -1,0 +1,32 @@
+{
+  "source_id": "src-usao-mn-2026-10-30-enforcement-surge",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/dojs-fraud-division-and-united-states-attorneys-office-district-minnesota-uncover-nearly",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "DOJ Fraud Division and District of Minnesota announce benefits-fraud enforcement surge",
+  "publication_date": "2026-10-30",
+  "retrieval_date": "2026-11-01",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "MIXED_DO_NOT_INFER",
+  "notes": "Source-level capture from official government release on November 1, 2026. Multiple legal stages are separately described and must not be collapsed. Source status follows existing live corpus records.",
+  "supports": [
+    "DOJ states that 13 defendants were charged, convicted or sentenced between September 30 and October 30, involving nearly $83 million in alleged or proven intended losses and about $29.1 million of fraud in newly charged cases; these are mixed measures, not amounts collected.",
+    "Shaakir Mohamud Ibrahim was indicted September 29 in a Feeding Our Future matter alleging more than $1.1 million in reimbursements.",
+    "Emily Marice Ravits and Feisal Mohamed Elmi were indicted October 22 in EIDBI-related matters; Habiba Mohamed was charged by information October 29; Faiza Osman Ahmed and Jama Yusuf Mohamod were indicted October 28 in Medicaid matters.",
+    "Ahmed Abdul Razaq Al Obaidi and Muhammad Abdullah Kahn were charged by complaint on October 21 in an alleged SNAP-benefit trafficking matter.",
+    "A jury convicted Muna Wais Fidhin on October 21 of three wire-fraud, four federal-programs-bribery and two money-laundering counts involving sites sponsored by Feeding Our Future and Partners in Nutrition.",
+    "Nicole Lee Slegers and Shaun Hubert Slegers pleaded guilty October 28 to conspiracy to commit wire fraud concerning deceased Medicaid recipients' estates.",
+    "Salim Ahmed Said was sentenced October 28 to 360 months in prison and DOJ described over $44 million in fraud proceeds facilitated; DOJ did not independently certify a collected restitution amount in this release.",
+    "Said Farah was sentenced October 30 to 78 months and a $40,000 fine in a separate juror-bribery matter.",
+    "DOJ reports an October 19 civil forfeiture action concerning three properties valued at about $519,000, encumbered by lis pendens."
+  ],
+  "does_not_support": [
+    "Any latest comprehensive count of Feeding Our Future charged, convicted or sentenced defendants.",
+    "An additional $83 million of proven losses or recovered funds.",
+    "That civil forfeiture property has been liquidated or transferred.",
+    "A signed judgment setting Said's precise restitution obligation."
+  ]
+}

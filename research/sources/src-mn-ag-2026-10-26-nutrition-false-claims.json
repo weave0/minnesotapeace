@@ -1,0 +1,25 @@
+{
+  "source_id": "src-mn-ag-2026-10-26-nutrition-false-claims",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/10/26_Nutrition-Fraud.asp",
+  "issuing_body": "Minnesota Attorney General",
+  "title": "Attorney General files two civil False Claims Act child-nutrition suits",
+  "publication_date": "2026-10-26",
+  "retrieval_date": "2026-11-01",
+  "document_type": "press_release",
+  "jurisdiction": "Minnesota",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "MIXED_DO_NOT_INFER",
+  "notes": "Source-level capture from official government release on November 1, 2026. Multiple legal stages are separately described and must not be collapsed. Source status follows existing live corpus records.",
+  "supports": [
+    "The AG filed civil complaints against Nasib Bakery and Abshir Hossen and separately East African Healthcare Network and related defendants on October 26.",
+    "The AG alleges false claims and improper relationships related to child-nutrition meal sites; these are civil allegations, not criminal verdicts.",
+    "The Partners in Nutrition settlement proposed September 24 is awaiting a December 15, 2026 court hearing.",
+    "The AG states the proposed Partners in Nutrition resolution is approximately $18.5 million, not confirmation of a final court-approved or independently verified collection."
+  ],
+  "does_not_support": [
+    "A final judgment against the October 26 civil defendants.",
+    "Final approval of the proposed Partners in Nutrition settlement or proof of received funds."
+  ]
+}

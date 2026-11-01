@@ -119,15 +119,35 @@ assert len(empire) == 4
 assert all(r["value"] == 47920514 for r in empire)
 assert "recovery_total" not in data
 
-# 13. Snapshot diff exposes new records without inventing a legal-stage change.
+# 13. Snapshot diff exposes source-backed movement since the Sept. 30 release.
 changes = data["changes"]
 assert changes["since_snapshot"] == "tracker-v1-2026-09-30"
-assert changes["legal_metric_changes"] == []
+assert changes["legal_metric_changes"] == [{
+    "metric_id": "fof-sentenced-count",
+    "before": 26,
+    "after": 31,
+}]
 assert {e["event_id"] for e in changes["new_events"]} == {
     "evt-fof-ross-forfeiture-ordered-2025-02-07",
     "evt-fof-ibrahim-forfeiture-ordered-2026-04-03",
+    "evt-fof-abdi-nur-salah-sentenced-2026-10-01",
+    "evt-hss-hassan-ahmed-hussein-pleaded-2026-09-24",
+    "evt-hss-ahmed-abdirashid-mohamed-pleaded-2026-10-01",
+    "evt-fof-ibrahim-charged-2026-09-29",
+    "evt-hss-meadows-convicted-2026-10-07",
+    "evt-eidbi-ravits-charged-2026-10-22",
+    "evt-eidbi-elmi-charged-2026-10-22",
+    "evt-eidbi-habiba-mohamed-charged-2026-10-29",
+    "evt-medicaid-faiza-ahmed-charged-2026-10-28",
+    "evt-medicaid-jama-mohamod-charged-2026-10-28",
+    "evt-fof-fidhin-convicted-2026-10-21",
+    "evt-fof-salim-said-sentenced-2026-10-28",
+    "evt-medicaid-slegers-pleas-2026-10-28",
+    "evt-fof-said-farah-juror-bribery-sentence-2026-10-30",
+    "evt-fof-properties-forfeiture-sought-2026-10-19",
 }
-assert all(e["event_type"] == "FORFEITURE_ORDERED" for e in changes["new_events"])
+assert next(e for e in changes["new_events"] if e["event_id"] == "evt-fof-ross-forfeiture-ordered-2025-02-07")["event_type"] == "FORFEITURE_ORDERED"
+assert next(e for e in changes["new_events"] if e["event_id"] == "evt-fof-abdi-nur-salah-sentenced-2026-10-01")["legal_stage"] == "SENTENCED"
 assert len(changes["new_recovery_entries"]) == 27
 
 # 14. Source-less or duplicate recovery entries fail closed.

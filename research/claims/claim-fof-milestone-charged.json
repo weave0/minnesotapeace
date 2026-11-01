@@ -12,8 +12,12 @@
   "is_inference": false,
   "jurisdiction": "D. Minn.",
   "event_date": "2025-11-24",
-  "program_ids": ["inv-feeding-our-future"],
-  "source_ids": ["src-usao-mn-2025-11-24-dool-78th-fof-defendant"],
+  "program_ids": [
+    "inv-feeding-our-future"
+  ],
+  "source_ids": [
+    "src-usao-mn-2025-11-24-dool-78th-fof-defendant"
+  ],
   "supporting_passages": [
     {
       "source_id": "src-usao-mn-2025-11-24-dool-78th-fof-defendant",
@@ -30,11 +34,11 @@
   "public_label": "defendants charged in the Feeding Our Future investigation",
   "public_explanation": "DOJ identified Abdirashid Bixi Dool as the 78th defendant charged. A charge is an allegation unless later resolved by plea, verdict, dismissal or another court disposition.",
   "public_source_label": "78th defendant release →",
-  "last_swept_for_supersession": "2026-09-09",
+  "last_swept_for_supersession": "2026-10-06",
   "valid_from": "2025-11-24T00:00:00Z",
   "valid_until": null,
   "superseded_by": null,
-  "reviewed_at": "2026-09-10T00:00:00Z",
+  "reviewed_at": "2026-10-06T05:00:00Z",
   "created_at": "2026-09-10T00:00:00Z",
-  "updated_at": "2026-09-10T00:00:00Z"
+  "updated_at": "2026-10-06T05:00:00Z"
 }
