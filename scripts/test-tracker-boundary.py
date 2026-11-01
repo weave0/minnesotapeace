@@ -132,6 +132,18 @@ assert {e["event_id"] for e in changes["new_events"]} == {
     "evt-fof-abdi-nur-salah-sentenced-2026-10-01",
     "evt-hss-hassan-ahmed-hussein-pleaded-2026-09-24",
     "evt-hss-ahmed-abdirashid-mohamed-pleaded-2026-10-01",
+    "evt-fof-ibrahim-charged-2026-09-29",
+    "evt-hss-meadows-convicted-2026-10-07",
+    "evt-eidbi-ravits-charged-2026-10-22",
+    "evt-eidbi-elmi-charged-2026-10-22",
+    "evt-eidbi-habiba-mohamed-charged-2026-10-29",
+    "evt-medicaid-faiza-ahmed-charged-2026-10-28",
+    "evt-medicaid-jama-mohamod-charged-2026-10-28",
+    "evt-fof-fidhin-convicted-2026-10-21",
+    "evt-fof-salim-said-sentenced-2026-10-28",
+    "evt-medicaid-slegers-pleas-2026-10-28",
+    "evt-fof-said-farah-juror-bribery-sentence-2026-10-30",
+    "evt-fof-properties-forfeiture-sought-2026-10-19",
 }
 assert next(e for e in changes["new_events"] if e["event_id"] == "evt-fof-ross-forfeiture-ordered-2025-02-07")["event_type"] == "FORFEITURE_ORDERED"
 assert next(e for e in changes["new_events"] if e["event_id"] == "evt-fof-abdi-nur-salah-sentenced-2026-10-01")["legal_stage"] == "SENTENCED"

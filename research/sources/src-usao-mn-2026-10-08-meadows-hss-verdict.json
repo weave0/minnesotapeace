@@ -1,0 +1,24 @@
+{
+  "source_id": "src-usao-mn-2026-10-08-meadows-hss-verdict",
+  "canonical_url": "https://www.justice.gov/usao-mn/pr/minnesota-woman-convicted-36m-scheme-defraud-medicaid-housing-services-program",
+  "issuing_body": "U.S. Attorney's Office, District of Minnesota",
+  "title": "Minnesota Woman Convicted in $3.6M Scheme to Defraud Medicaid Housing Services Program",
+  "publication_date": "2026-10-08",
+  "retrieval_date": "2026-11-01",
+  "document_type": "press_release",
+  "jurisdiction": "D. Minn.",
+  "access_status": "live_official_host",
+  "source_tier": 3,
+  "source_status": "PRIMARY_GOVERNMENT_RELEASE",
+  "evidence_class": "MIXED_DO_NOT_INFER",
+  "notes": "Source-level capture from official government release on November 1, 2026. Multiple legal stages are separately described and must not be collapsed. Source status follows existing live corpus records.",
+  "supports": [
+    "A jury convicted Sharmaine Meadows on October 7, 2026, on three counts of health-care fraud concerning Housing Stabilization Services.",
+    "DOJ describes more than $3.6 million paid to her company between 2020 and 2025.",
+    "The October 8 release states that sentencing will take place later."
+  ],
+  "does_not_support": [
+    "A sentencing judgment or restitution collected from Meadows.",
+    "A new HSS program-wide conviction total."
+  ]
+}

@@ -137,6 +137,161 @@
       "source_ids": [
         "src-usao-mn-2026-10-01-hss-pristine-pleas"
       ]
+    },
+    {
+      "event_id": "evt-fof-ibrahim-charged-2026-09-29",
+      "program_id": "feeding-our-future",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-09-29",
+      "published_at": "2026-10-30",
+      "subject": "Shaakir Mohamud Ibrahim",
+      "legal_stage": "CHARGED",
+      "summary": "Indicted in an alleged $1.1 million child-nutrition reimbursement scheme. Allegations are not findings; no charged-defendant ordinal is inferred.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-hss-meadows-convicted-2026-10-07",
+      "program_id": "hss",
+      "event_type": "CONVICTED",
+      "occurred_at": "2026-10-07",
+      "published_at": "2026-10-08",
+      "subject": "Sharmaine Meadows",
+      "legal_stage": "CONVICTED",
+      "summary": "Jury convicted Meadows of three health-care-fraud counts; DOJ reports more than $3.6 million paid to her company, not recovered. Sentencing pending.",
+      "source_ids": [
+        "src-usao-mn-2026-10-08-meadows-hss-verdict"
+      ]
+    },
+    {
+      "event_id": "evt-eidbi-ravits-charged-2026-10-22",
+      "program_id": "eidbi",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-10-22",
+      "published_at": "2026-10-30",
+      "subject": "Emily Marice Ravits",
+      "legal_stage": "CHARGED",
+      "summary": "Indicted over allegedly false EIDBI supervision certifications; DOJ describes a $7.7 million alleged scheme. Not a conviction.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-eidbi-elmi-charged-2026-10-22",
+      "program_id": "eidbi",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-10-22",
+      "published_at": "2026-10-30",
+      "subject": "Feisal Mohamed Elmi",
+      "legal_stage": "CHARGED",
+      "summary": "Indicted in an alleged $8.2 million EIDBI billing case. Not a conviction.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-eidbi-habiba-mohamed-charged-2026-10-29",
+      "program_id": "eidbi",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-10-29",
+      "published_at": "2026-10-30",
+      "subject": "Habiba Mohamed",
+      "legal_stage": "CHARGED",
+      "summary": "Charged by information in an alleged $19.1 million EIDBI scheme involving previously charged co-conspirators; do not add overlapping scheme totals.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-medicaid-faiza-ahmed-charged-2026-10-28",
+      "program_id": "medicaid-program-integrity",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-10-28",
+      "published_at": "2026-10-30",
+      "subject": "Faiza Osman Ahmed",
+      "legal_stage": "CHARGED",
+      "summary": "Indicted in an alleged $10 million Medicaid scheme involving home supports, personal care assistance and night supervision.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-medicaid-jama-mohamod-charged-2026-10-28",
+      "program_id": "medicaid-program-integrity",
+      "event_type": "CHARGED",
+      "occurred_at": "2026-10-28",
+      "published_at": "2026-10-30",
+      "subject": "Jama Yusuf Mohamod",
+      "legal_stage": "CHARGED",
+      "summary": "Indicted in an alleged $3.2 million Integrated Community Supports billing case.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-fof-fidhin-convicted-2026-10-21",
+      "program_id": "feeding-our-future",
+      "event_type": "CONVICTED",
+      "occurred_at": "2026-10-21",
+      "published_at": "2026-10-30",
+      "subject": "Muna Wais Fidhin",
+      "legal_stage": "CONVICTED",
+      "summary": "Jury convicted Fidhin of nine counts involving Feeding Our Future and Partners in Nutrition food sites. Sentencing pending.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-fof-salim-said-sentenced-2026-10-28",
+      "program_id": "feeding-our-future",
+      "event_type": "SENTENCED",
+      "occurred_at": "2026-10-28",
+      "published_at": "2026-10-30",
+      "subject": "Salim Ahmed Said",
+      "legal_stage": "SENTENCED",
+      "summary": "Sentenced to 360 months for Feeding Our Future fraud. DOJ describes more than $44 million in proceeds facilitated; no collection established.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-medicaid-slegers-pleas-2026-10-28",
+      "program_id": "medicaid-program-integrity",
+      "event_type": "PLEADED",
+      "occurred_at": "2026-10-28",
+      "published_at": "2026-10-30",
+      "subject": "Nicole Lee Slegers and Shaun Hubert Slegers",
+      "legal_stage": "PLEADED",
+      "summary": "Both pleaded guilty to conspiracy to commit wire fraud involving estates of deceased Medicaid recipients; reported $144,524 obtained through vehicle transfers. Distinct from provider-claim reimbursement fraud.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-fof-said-farah-juror-bribery-sentence-2026-10-30",
+      "program_id": "feeding-our-future",
+      "event_type": "SENTENCED",
+      "occurred_at": "2026-10-30",
+      "published_at": "2026-10-30",
+      "subject": "Said Farah",
+      "legal_stage": "SENTENCED",
+      "summary": "Sentenced to 78 months and $40,000 fine for juror bribery; a separate offense from the underlying food-fraud trial and not a food-fraud conviction.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
+    },
+    {
+      "event_id": "evt-fof-properties-forfeiture-sought-2026-10-19",
+      "program_id": "feeding-our-future",
+      "event_type": "FORFEITURE_SOUGHT",
+      "occurred_at": "2026-10-19",
+      "published_at": "2026-10-30",
+      "subject": "Three Minneapolis real properties",
+      "summary": "Civil forfeiture action filed for three properties valued at approximately $519,000; lis pendens recorded. No completed forfeiture or recovery established.",
+      "source_ids": [
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ]
     }
   ]
 }
