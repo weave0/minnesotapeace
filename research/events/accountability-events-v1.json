@@ -292,30 +292,6 @@
       "source_ids": [
         "src-usao-mn-2026-10-30-enforcement-surge"
       ]
-    },
-    {
-      "event_id": "evt-fof-nasib-false-claims-suit-2026-10-26",
-      "program_id": "feeding-our-future",
-      "event_type": "CIVIL_SUIT_FILED",
-      "occurred_at": "2026-10-26",
-      "published_at": "2026-10-26",
-      "subject": "Nasib Bakery Food Distribution LLC and Abshir Hossen",
-      "summary": "Minnesota AG filed civil false-claims lawsuit relating to meals sponsored by Partners in Nutrition; allegations not adjudicated.",
-      "source_ids": [
-        "src-mn-ag-2026-10-26-nutrition-false-claims"
-      ]
-    },
-    {
-      "event_id": "evt-fof-eahn-false-claims-suit-2026-10-26",
-      "program_id": "feeding-our-future",
-      "event_type": "CIVIL_SUIT_FILED",
-      "occurred_at": "2026-10-26",
-      "published_at": "2026-10-26",
-      "subject": "East African Healthcare Network and related parties",
-      "summary": "Minnesota AG filed a separate civil false-claims lawsuit alleging more than $10 million in meal reimbursements; allegations not adjudicated.",
-      "source_ids": [
-        "src-mn-ag-2026-10-26-nutrition-false-claims"
-      ]
     }
   ]
 }
