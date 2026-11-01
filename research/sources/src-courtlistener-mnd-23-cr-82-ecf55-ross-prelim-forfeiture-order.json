@@ -1,0 +1,34 @@
+{
+  "source_id": "src-courtlistener-mnd-23-cr-82-ecf55-ross-prelim-forfeiture-order",
+  "canonical_url": "https://www.courtlistener.com/docket/66996537/55/united-states-v-ross/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Ross - Preliminary Order of Forfeiture, ECF 55",
+  "case_number": "0:23-cr-00082-NEB-DTS",
+  "document_date": "2024-11-19",
+  "publication_date": "2024-11-19",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_forfeiture_order",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED_PRELIMINARY_ORDER",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.206233/gov.uscourts.mnd.206233.55.0.pdf",
+    "sha256": "5ca273cb8853daa1ec874b82f9f4be20cb987ec993ccfbdcff43657bcdcadeff",
+    "bytes": 124698,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_23-cr-00082_ecf55_ross-prelim-forfeiture-order.pdf",
+    "text_extract_path": "research/court/extracts/0_23-cr-00082_ecf55_ross-prelim-forfeiture-order.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "Real property at 312 Chippenham Lane, Willernie, Minnesota is forfeited to the United States.",
+    "A money judgment forfeiture of $1,241,455 is entered against Sharon Ross, with credit for the net forfeited value of each asset forfeited from her.",
+    "The order becomes final as to the defendant at sentencing."
+  ],
+  "does_not_support": [
+    "The $1,241,455 money judgment is lower than the $2,837,491 money judgment she consented to in her plea agreement (ECF 43); the order, not the plea, is the operative figure.",
+    "It does not show the house was sold or any dollar realized."
+  ]
+}

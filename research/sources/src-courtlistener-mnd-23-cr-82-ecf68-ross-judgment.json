@@ -1,0 +1,33 @@
+{
+  "source_id": "src-courtlistener-mnd-23-cr-82-ecf68-ross-judgment",
+  "canonical_url": "https://www.courtlistener.com/docket/66996537/68/united-states-v-ross/",
+  "issuing_body": "U.S. District Court, District of Minnesota",
+  "title": "United States v. Ross - Judgment in a Criminal Case (Sharon Ross), ECF 68",
+  "case_number": "0:23-cr-00082-NEB-DTS",
+  "document_date": "2025-02-10",
+  "publication_date": "2025-02-10",
+  "retrieval_date": "2026-09-30",
+  "document_type": "court_judgment",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED",
+  "acquisition": {
+    "channel": "CourtListener RECAP archive (no PACER purchase)",
+    "download_url": "https://storage.courtlistener.com/recap/gov.uscourts.mnd.206233/gov.uscourts.mnd.206233.68.0.pdf",
+    "sha256": "08acc7e697a6f80688bbf66cab24fef3bb08da6e2e83a7939774c709cb0532ab",
+    "bytes": 275722,
+    "pdf_archived_in_repo": true,
+    "archive_path": "research/court/pdfs/0_23-cr-00082_ecf68_ross-judgment.pdf",
+    "text_extract_path": "research/court/extracts/0_23-cr-00082_ecf68_ross-judgment.txt",
+    "text_extract_method": "pdftotext -layout"
+  },
+  "supports": [
+    "Judgment as to Sharon Ross orders mandatory restitution of $2,434,360.00 payable to the U.S. Department of Agriculture, due immediately, with payments of not less than $100 per month beginning 30 days after release.",
+    "The judgment forfeits the defendant's interest in all items listed in the preliminary and final orders of forfeiture."
+  ],
+  "does_not_support": [
+    "It does not show any payment or collection.",
+    "It states no forfeiture dollar amount itself; see the Preliminary Order of Forfeiture (ECF 55)."
+  ]
+}

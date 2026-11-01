@@ -22,3 +22,7 @@ Updated 2026-08-26 evening after authenticated RECAP pulls (no PACER purchases).
 ## Notes
 
 Do not burn rate-limited CourtListener pulls merely to duplicate official-host facts. A docket identity is not a locally acquired PDF. `CHARGING-INSTRUMENTS.md` lists a PDF only after save + hash + ECF check.
+
+## Update 2026-09-30: judgments, forfeiture orders and plea agreements
+
+Judgments (Bock ECF 907, Shariff ECF 789, Ross ECF 68), preliminary forfeiture orders (Shariff 709, Ross 55, Ibrahim 971), the Farah/BBI settlement judgment (952) and five plea agreements (Ross, A. Salah, Abdi Salah, Anwar Adow, Asad Adow) are archived with hashes in `research/sources/src-courtlistener-mnd-*.json`. This also resolves the earlier gap that `0:25-cr-00354` (Asad Adow) was not on RECAP as far as its plea agreement is concerned (ECF 14 is available; the information is still not captured). The remaining dispositive-document gaps and their ECF numbers are in `research/money/RECOVERY-EVIDENCE-INVENTORY.md`.
