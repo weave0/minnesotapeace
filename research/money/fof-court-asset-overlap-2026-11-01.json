@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-01",
+  "description": "Research-only, non-additive money/asset evidence connections. Do not feed to tracker or interpret as recoveries; source access is partly via third-party mirrored court records.",
+  "disclaimer": "A restitution order is not forfeiture and neither is collection; a named property is not necessarily sold or realized. Unverified PDF images and third-party text copies must not be promoted to fully verified quantitative tracker rows.",
+  "financial_obligations": [
+    {
+      "obligation_id": "fof-22cr223-omarhashim-ecf1036-restitution",
+      "case_number": "0:22-cr-00223-NEB-DTS",
+      "subject": "Ahmed Sharif Omar-Hashim",
+      "amount_usd": 3314276,
+      "metric_type": "restitution_ordered",
+      "order_filed_at": "2026-09-01",
+      "source_ids": [
+        "src-mirror-mnd-22-cr-223-ecf1036-omar-hashim-judgment"
+      ],
+      "joint_and_several_with": [
+        "Aimee Marie Bock",
+        "Salim Ahmed Said",
+        "Abdulkadir Nur Salah"
+      ],
+      "overlap_group_id": "fof-22cr223-omarhashim-3314276-joint-and-several",
+      "potential_cross_judgment_overlap": "Possible subset of other defendants' orders arising from same child-nutrition program; requires exact-judgment reconciliation against Bock ECF 907 and Said October 28 judgment. Do not add.",
+      "collection_status": "UNKNOWN",
+      "collection_amount_usd": null,
+      "verification_level": "COURT_JUDGMENT_TEXT_MIRRORED_PDF_NOT_INDEPENDENTLY_VERIFIED",
+      "notes": "Bock's own ECF 907 joint-and-several schedule is blank; this is not proof of a contradictory order. The schedules must be compared exactly rather than assumed symmetric."
+    },
+    {
+      "obligation_id": "fof-22cr223-omarhashim-ecf653-forfeiture",
+      "case_number": "0:22-cr-00223-NEB-DTS",
+      "subject": "Ahmed Sharif Omar-Hashim",
+      "amount_usd": 3314276,
+      "metric_type": "forfeiture_ordered_preliminary",
+      "order_filed_at": "2025-05-07",
+      "source_ids": [
+        "src-mirror-mnd-22-cr-223-ecf868-omar-hashim-property-motion",
+        "src-mirror-mnd-22-cr-223-ecf874-omar-hashim-second-forfeiture"
+      ],
+      "overlap_group_id": "fof-22cr223-omarhashim-forfeiture-3314276",
+      "relationship_to_restitution": "Same numeric amount as ECF 1036 restitution, but independent legal category; do not count as separate cash or assume identical crediting mechanics.",
+      "collection_status": "UNKNOWN",
+      "collection_amount_usd": null,
+      "verification_level": "GOVERNMENT_MOTION_CITES_ORIGINAL_ECF653_NOT_INDEPENDENTLY_ACQUIRED",
+      "notes": "ECF 868 attributes the amount to earlier ECF 653; independently retrieve ECF 653 to certify terms."
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "fof-22cr223-cosmopolitan-park-ave-property",
+      "asset_type": "real_property",
+      "location_description": "2722 and 2742 Park Avenue South, Minneapolis, Minnesota",
+      "case_number": "0:22-cr-00223-NEB-DTS",
+      "identified_in_ecf": [
+        805,
+        868,
+        874
+      ],
+      "related_subjects": [
+        "Salim Ahmed Said",
+        "Abdulkadir Nur Salah",
+        "Ahmed Sharif Omar-Hashim"
+      ],
+      "court_recognized_ownership_interest_for_omar_hashim": "20% interest for credit against his forfeiture money judgment, per ECF 874",
+      "source_ids": [
+        "src-court-mnd-22-cr-223-ecf805-said-preliminary-forfeiture",
+        "src-mirror-mnd-22-cr-223-ecf868-omar-hashim-property-motion",
+        "src-mirror-mnd-22-cr-223-ecf874-omar-hashim-second-forfeiture"
+      ],
+      "asset_overlap_group_id": "fof-22cr223-park-ave-single-underlying-property",
+      "assets_seized_status": "NOT_ESTABLISHED_IN_THIS_TRANCH",
+      "forfeiture_order_status": "PRELIMINARY_AS_TO_SUBJECTS",
+      "sale_status": "NOT_ESTABLISHED",
+      "gross_realized_usd": null,
+      "net_realized_usd": null,
+      "notes": "A single physical property is referenced in several defendants' forfeiture records. A 2021 purchase price alleged by government is not current market value or realizable cash. Never sum the same asset several times."
+    },
+    {
+      "asset_id": "fof-26cv04533-pillsbury-3-properties",
+      "asset_type": "three_named_real_properties",
+      "case_number": "0:26-cv-04533",
+      "location_description": "2900 Pillsbury Avenue, 2906 Pillsbury Avenue, and 211 West 29th Street, Minneapolis",
+      "source_ids": [
+        "src-us-mnd-2026-10-19-pillsbury-forfeiture-docket-mirror",
+        "src-usao-mn-2026-10-30-enforcement-surge"
+      ],
+      "related_subjects": [
+        "United States v. defendant real properties"
+      ],
+      "approximate_group_valuation_usd": 519000,
+      "valuation_basis": "DOJ October 30 announcement, approximate collective valuation",
+      "legal_stage": "CIVIL_FORFEITURE_COMPLAINT_FILED",
+      "case_filed_at": "2026-10-19",
+      "complaint_ecf": 1,
+      "complaint_pdf_acquired": false,
+      "assets_seized_status": "NOT_ESTABLISHED",
+      "sale_status": "NOT_ESTABLISHED",
+      "gross_realized_usd": null,
+      "net_realized_usd": null,
+      "notes": "These Pillsbury addresses are different from the Park Avenue property in 22-cr-223. The approximate value is not forfeiture ordered or cash recovered. DOJ described lis pendens and a civil action; do not write that property was finally seized."
+    }
+  ]
+}
