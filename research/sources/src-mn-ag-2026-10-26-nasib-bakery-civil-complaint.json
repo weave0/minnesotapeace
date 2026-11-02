@@ -1,0 +1,38 @@
+{
+  "source_id": "src-mn-ag-2026-10-26-nasib-bakery-civil-complaint",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/docs/Nasib-Bakery_Complaint.pdf",
+  "issuing_body": "Minnesota District Court, Hennepin County (complaint published by Minnesota Attorney General)",
+  "title": "State of Minnesota v. Nasib Bakery Food Distribution LLC and Abshir Hossen, civil False Claims Act complaint",
+  "publication_date": "2026-10-26",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_civil_complaint",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "access_status": "available",
+  "acquisition": {
+    "channel": "Official Minnesota Attorney General document host",
+    "pdf_pages": 26,
+    "pdf_archived_in_repo": false,
+    "content_hash_verified": false
+  },
+  "supports": [
+    "Paragraph 3 (PDF page 2) alleges the Riverside Park SFSP site, sponsored by Partners in Nutrition and vended by Nasib Bakery, claimed more than $2.8 million reimbursement over October 2020–April 2021 for more than 430,000 breakfasts and 430,000 lunches.",
+    "Paragraphs 25–34 (PDF pp. 6–7) describe alleged conflicts of interest where the same person supervised the distribution site and owned its meal vendor, undermining independent cross-checks.",
+    "Paragraph 7 (PDF p. 2) states Abshir Hossen sold the bakery in December 2025; the complaint concerns the earlier alleged conduct, and does not identify later owners as participants.",
+    "Complaint footnote (PDF p. 6) names a *separate* Partners in Nutrition case, 27-CV-26-16476, and its proposed consent judgment."
+  ],
+  "does_not_support": [
+    "That >$2.8 million was all paid to Nasib Bakery personally, as opposed to total site reimbursement claims.",
+    "Civil judgment, final liability determination or a verified recovered amount.",
+    "That the later owners of the bakery were involved in the alleged 2020–2021 conduct.",
+    "A Nasib case number: the publicly released complaint leaves the case number blank."
+  ],
+  "locators": [
+    "PDF p. 2, ¶¶3,7",
+    "PDF p. 6, ¶¶25–27 and footnote 1",
+    "PDF p. 7, ¶¶29–34"
+  ],
+  "notes": "All claims are asserted in a plaintiff's civil complaint; status must remain CIVIL_ALLEGED. Do not transfer the separately referenced PIN case number to this lawsuit."
+}
