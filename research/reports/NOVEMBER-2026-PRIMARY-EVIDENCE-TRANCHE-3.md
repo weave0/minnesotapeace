@@ -23,7 +23,11 @@
 | Fresh Point transfer to title company | 400,000.00 |
 | Marcon cashier's check | 106,000.00 |
 | Cash | 58.00 |
-| **Sum / alleged closing cost** | **516,058.50** |
+| **Sum of four listed amounts** | **516,058.00** |
+| **Complaint's stated total closing cost** | **516,058.50** |
+| **Unreconciled difference in extracted text** | **0.50** |
+
+**Source-level discrepancy:** The four component amounts in the extracted text total $516,058.00, $0.50 less than the complaint's stated $516,058.50. Preserve both figures and obtain PDF page-image/closing-statement confirmation; do not insert a balancing component.
 
 No double count: the **$400,000 is within the $516,058.50**, and the $516,058.50 is historic purchase consideration, not forfeiture proceeds collected. DOJ's approximate **$519,000** October 2026 group property valuation is a distinct measurement, not interchangeable with the 2021 closing price. The DOJ press release does not provide verified net realization.
 
