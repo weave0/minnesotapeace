@@ -1,5 +1,7 @@
 # November 1, 2026 — Cross-judgment financial obligations and shared-property reconciliation
 
+> **Acquisition update, later November 1:** The actual 19-page ECF 1 verified civil complaint has now been located and its text examined in the free CourtListener RECAP archive. The "complaint not acquired" notes below describe the earlier state only; see [tranche 3](NOVEMBER-2026-PRIMARY-EVIDENCE-TRANCHE-3.md) and source `src-recap-mnd-26-cv-4533-ecf1-pillsbury-verified-complaint`. PDF binary/hashing and page-image checks remain incomplete.
+
 ## Scope and independence
 
 This is a second November research tranche built on merged PR #72. It does **not** modify the public tracker recovery totals, historical DOJ aggregate milestones, or the canonical recovery inventory's 27 entries.

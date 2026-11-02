@@ -139,6 +139,24 @@ if asset_map_path.exists():
             for metric in ("gross_realized_usd", "net_realized_usd"):
                 if asset.get(metric) is not None and not asset.get("collection_evidence_source_ids"):
                     error(f"shared-asset ledger asset {ident} has {metric} but no collection evidence")
+            # A closing-cost breakdown must reconcile, or explicitly record any discrepancy in the primary source.
+            # It is not a separate pool of recovered dollars.
+            components = asset.get("alleged_purchase_funding_components")
+            if components is not None:
+                price = asset.get("purchase_price_including_fees_usd")
+                if not isinstance(price, (int, float)) or not isinstance(components, list):
+                    error(f"shared-asset ledger asset {ident} has an invalid purchase reconciliation")
+                elif not all(isinstance(c, dict) and isinstance(c.get("amount_usd"), (int, float)) for c in components):
+                    error(f"shared-asset ledger asset {ident} has a malformed purchase funding component")
+                else:
+                    subtotal = sum(c["amount_usd"] for c in components)
+                    documented_gap = asset.get("unreconciled_purchase_component_gap_usd", 0)
+                    if not isinstance(documented_gap, (int, float)):
+                        error(f"shared-asset ledger asset {ident} has invalid documented discrepancy")
+                    elif abs((price - subtotal) - documented_gap) > 0.005:
+                        error(f"shared-asset ledger asset {ident} purchase discrepancy is not reconciled or documented")
+                    elif documented_gap and not asset.get("reconciliation_gap_explanation"):
+                        error(f"shared-asset ledger asset {ident} does not explain source discrepancy")
         for obligation in mapping.get("financial_obligations", []):
             ident = obligation.get("obligation_id") if isinstance(obligation, dict) else None
             if not ident or ident in obligation_ids:
