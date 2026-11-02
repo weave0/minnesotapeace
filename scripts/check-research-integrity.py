@@ -139,6 +139,17 @@ if asset_map_path.exists():
             for metric in ("gross_realized_usd", "net_realized_usd"):
                 if asset.get(metric) is not None and not asset.get("collection_evidence_source_ids"):
                     error(f"shared-asset ledger asset {ident} has {metric} but no collection evidence")
+            # A forensic closing-cost breakdown must reconcile to the stated total.
+            # It is not a separate pool of recovered dollars.
+            components = asset.get("alleged_purchase_funding_components")
+            if components is not None:
+                price = asset.get("purchase_price_including_fees_usd")
+                if not isinstance(price, (int, float)) or not isinstance(components, list):
+                    error(f"shared-asset ledger asset {ident} has an invalid purchase reconciliation")
+                elif not all(isinstance(c, dict) and isinstance(c.get("amount_usd"), (int, float)) for c in components):
+                    error(f"shared-asset ledger asset {ident} has a malformed purchase funding component")
+                elif abs(sum(c["amount_usd"] for c in components) - price) > 0.005:
+                    error(f"shared-asset ledger asset {ident} purchase components do not match closing cost")
         for obligation in mapping.get("financial_obligations", []):
             ident = obligation.get("obligation_id") if isinstance(obligation, dict) else None
             if not ident or ident in obligation_ids:
