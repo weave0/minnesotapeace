@@ -117,7 +117,40 @@ for directory in (RESEARCH / "cases", RESEARCH / "money", RESEARCH / "oversight"
                     f"{path.relative_to(ROOT)} at {trail}"
                 )
 
-# 4. Research remains a non-public substrate. The deployment workflow must retain
+# 4. Shared-property reconciliation is research-only and must not silently mint
+# collections or count a parcel repeatedly across defendants' orders.
+asset_map_path = RESEARCH / "money" / "fof-court-asset-overlap-2026-11-01.json"
+if asset_map_path.exists():
+    mapping = parsed.get(asset_map_path)
+    if not isinstance(mapping, dict):
+        error("shared-asset ledger must be a JSON object")
+    else:
+        asset_ids = set()
+        obligation_ids = set()
+        for asset in mapping.get("assets", []):
+            ident = asset.get("asset_id") if isinstance(asset, dict) else None
+            if not ident or ident in asset_ids:
+                error(f"shared-asset ledger has duplicate or missing asset_id: {ident!r}")
+                continue
+            asset_ids.add(ident)
+            references = asset.get("identified_in_ecf") or []
+            if len(references) > 1 and not asset.get("asset_overlap_group_id"):
+                error(f"shared-asset ledger asset {ident} appears in multiple filings without overlap group")
+            for metric in ("gross_realized_usd", "net_realized_usd"):
+                if asset.get(metric) is not None and not asset.get("collection_evidence_source_ids"):
+                    error(f"shared-asset ledger asset {ident} has {metric} but no collection evidence")
+        for obligation in mapping.get("financial_obligations", []):
+            ident = obligation.get("obligation_id") if isinstance(obligation, dict) else None
+            if not ident or ident in obligation_ids:
+                error(f"shared-asset ledger duplicate or missing obligation_id: {ident!r}")
+                continue
+            obligation_ids.add(ident)
+            if obligation.get("joint_and_several_with") and not obligation.get("overlap_group_id"):
+                error(f"shared-asset ledger obligation {ident} lacks joint-and-several overlap group")
+            if obligation.get("collection_amount_usd") is not None and not obligation.get("collection_evidence_source_ids"):
+                error(f"shared-asset ledger obligation {ident} claims collection without collection evidence")
+
+# 5. Research remains a non-public substrate. The deployment workflow must retain
 # an explicit research exclusion/guard before this gate passes.
 deploy = ROOT / ".github" / "workflows" / "deploy.yml"
 if not deploy.exists():
