@@ -82,7 +82,8 @@
       "location_description": "2900 Pillsbury Avenue, 2906 Pillsbury Avenue, and 211 West 29th Street, Minneapolis",
       "source_ids": [
         "src-us-mnd-2026-10-19-pillsbury-forfeiture-docket-mirror",
-        "src-usao-mn-2026-10-30-enforcement-surge"
+        "src-usao-mn-2026-10-30-enforcement-surge",
+        "src-recap-mnd-26-cv-4533-ecf1-pillsbury-verified-complaint"
       ],
       "related_subjects": [
         "United States v. defendant real properties"
@@ -93,11 +94,38 @@
       "case_filed_at": "2026-10-19",
       "complaint_ecf": 1,
       "complaint_pdf_acquired": false,
-      "assets_seized_status": "NOT_ESTABLISHED",
+      "assets_seized_status": "NOT_SEIZED_AT_FILING_PER_ECF1_PARA3",
       "sale_status": "NOT_ESTABLISHED",
       "gross_realized_usd": null,
       "net_realized_usd": null,
-      "notes": "These Pillsbury addresses are different from the Park Avenue property in 22-cr-223. The approximate value is not forfeiture ordered or cash recovered. DOJ described lis pendens and a civil action; do not write that property was finally seized."
+      "notes": "These Pillsbury addresses are different from the Park Avenue property in 22-cr-223. The approximate value is not forfeiture ordered or cash recovered. DOJ described lis pendens and a civil action; do not write that property was finally seized. New original ECF 1 explicitly states property was not seized as of 2026-10-19. Complaint alleges PIN-sponsored Addis Foundation to Fresh Point to Marcon money path. Funding items are components of $516,058.50 2021 closing price; DOJ's approximately $519,000 2026 group valuation is different and must not be added.",
+      "complaint_text_inspected": true,
+      "alleged_sponsoring_organization": "Partners in Nutrition (PIN), distinct from Feeding Our Future",
+      "alleged_food_site_organization": "The Addis Foundation Community Services",
+      "alleged_property_purchaser": "Marcon, LLC",
+      "lis_pendens_status": "TO_BE_FILED_PER_ECF1_PARA3_NOT_INDEPENDENTLY_CONFIRMED",
+      "alleged_purchase_closed_on": "2021-07-16",
+      "purchase_price_including_fees_usd": 516058.5,
+      "alleged_purchase_funding_components": [
+        {
+          "source": "personal earnest money",
+          "amount_usd": 10000
+        },
+        {
+          "source": "Fresh Point LLC wire to title company",
+          "amount_usd": 400000
+        },
+        {
+          "source": "Marcon LLC cashier's check",
+          "amount_usd": 106000
+        },
+        {
+          "source": "cash at closing",
+          "amount_usd": 58
+        }
+      ],
+      "alleged_meals_claimed": 5600000,
+      "claims_reimbursement_amount_description": "Complaint alleges >$13 million in claimed reimbursements by related entities, not proven final loss, not purchase amount and not recovery."
     }
   ]
 }
