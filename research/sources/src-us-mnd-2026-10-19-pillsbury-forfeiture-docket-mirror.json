@@ -1,0 +1,27 @@
+{
+  "source_id": "src-us-mnd-2026-10-19-pillsbury-forfeiture-docket-mirror",
+  "canonical_url": "https://dockets.justia.com/docket/minnesota/mndce/0:2026cv04533/236900",
+  "issuing_body": "Justia Dockets (secondary reproduction of federal court docket metadata)",
+  "title": "United States v. 2900 Pillsbury Avenue, Minneapolis, Minnesota et al., 0:26-cv-04533",
+  "publication_date": "2026-10-19",
+  "retrieval_date": "2026-11-01",
+  "document_type": "third_party_docket_extract",
+  "case_number": "0:26-cv-04533",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 8,
+  "source_status": "REPUTABLE_JOURNALISM",
+  "evidence_class": "DOCKET_METADATA_ONLY",
+  "notes": "Source status is an imperfect schema fit: this is a secondary docket mirror, not journalism or an original filing. Treat as docket identification only. Court complaint ECF 1 itself was not downloaded, and docket updates after October 19 are unverified. Do not infer final forfeiture, ownership transfer, sale, seizure or cash collected.",
+  "supports": [
+    "Justia identifies the October 19, 2026 in rem civil forfeiture action as 0:26-cv-04533, U.S. District Court for Minnesota, brought under 18 U.S.C. § 981.",
+    "The defendants named in the action are real properties at 2900 and 2906 Pillsbury Avenue and 211 29th Street West, Minneapolis, MN.",
+    "The October 19 docket extract references ECF 1, complaint for forfeiture in rem filed by the United States with a civil cover sheet."
+  ],
+  "does_not_support": [
+    "The allegations and factual details contained in the complaint itself (ECF 1 not obtained).",
+    "That a court determined properties are fraud proceeds or approved forfeiture.",
+    "That the listed properties are seized, sold or that proceeds have been realized.",
+    "A verified up-to-date docket status after the date of the last index retrieval."
+  ],
+  "source_locator": "Justia docket index, case caption, filing date and Filing 1 listing"
+}
