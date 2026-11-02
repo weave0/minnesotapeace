@@ -1,0 +1,37 @@
+{
+  "source_id": "src-mirror-mnd-22-cr-223-ecf874-omar-hashim-second-forfeiture",
+  "canonical_url": "https://pandemicdarlings.com/source-documents/order-granting-868-motion-for-preliminary-order-of-united-states-v-boc-a27c44454d/",
+  "issuing_body": "U.S. District Court, District of Minnesota (court order reproduced by third-party archive)",
+  "title": "United States v. Ahmed Sharif Omar-Hashim, second preliminary forfeiture order, ECF 874",
+  "publication_date": "2026-05-18",
+  "document_date": "2026-05-18",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_forfeiture_order",
+  "case_number": "0:22-cr-00223-NEB-DTS (defendant 5)",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "PRELIMINARY_COURT_FORFEITURE_ORDER",
+  "acquisition": {
+    "channel": "Court order transcribed by third-party archive; original PDF not independently downloaded",
+    "pdf_archived_in_repo": false,
+    "verified_sha256": false,
+    "ecf": "874"
+  },
+  "supports": [
+    "ECF 874 dated May 18, 2026 grants the government's second motion and orders forfeiture of the real property located at 2722 and 2742 Park Avenue South, Minneapolis.",
+    "The order states Omar-Hashim shall receive credit against his existing money judgment for the net forfeited value of each asset including his twenty percent interest in the property.",
+    "The order sets future notice and third-party petition procedures before clear title passes; it does not document a sale or realization."
+  ],
+  "does_not_support": [
+    "That 100 percent of the property's net value is Omar-Hashim's share.",
+    "That proceeds of a sale were received by the government.",
+    "A standalone new money judgment in addition to the first forfeiture order ECF 653.",
+    "That the value of the 20 percent interest can be computed from acquisition purchase price without actual sale/assessment records."
+  ],
+  "locators": [
+    "Reproduced PDF pp. 1–2, ¶¶1–4",
+    "Reproduced PDF p. 2, ¶¶5–6"
+  ],
+  "notes": "Reconciliation target: compare underlying parcel with property identified in Said forfeiture ECF 805, government motion ECF 868, and co-owner records. Do not double count same parcel."
+}
