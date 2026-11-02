@@ -1,0 +1,42 @@
+{
+  "source_id": "src-mirror-mnd-22-cr-223-ecf1036-omar-hashim-judgment",
+  "canonical_url": "https://pandemicdarlings.com/source-documents/sentencing-judgment-united-states-v-bock-et-al-feeding-our-future-dkt-b2dc59da87/",
+  "issuing_body": "U.S. District Court, District of Minnesota (court judgment reproduced by third-party archive)",
+  "title": "United States v. Ahmed Sharif Omar-Hashim, criminal judgment, ECF 1036",
+  "publication_date": "2026-09-01",
+  "document_date": "2026-09-01",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_judgment",
+  "case_number": "0:22-cr-00223-NEB-DTS (defendant 5)",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "ADJUDICATED",
+  "acquisition": {
+    "channel": "Text of signed court judgment reproduced by Pandemic Darlings; original PDF link on page could not be fetched from this environment",
+    "pdf_archived_in_repo": false,
+    "verified_sha256": false,
+    "third_party_reported_sha256": "f31f293147a4826f1974d62836809c81f052e6abb2f6125c803d8cf523a8ec9e",
+    "third_party_reported_pdf_bytes": 396027,
+    "ecf": "1036",
+    "court_filing_date": "2026-09-01"
+  },
+  "supports": [
+    "Judgment ECF 1036 as reproduced records August 27, 2026 imposition of sentence (36 months imprisonment) and a September 1, 2026 filing.",
+    "Judgment pages 6 and 7 show $3,314,276 in restitution to Food and Nutrition Service; $100 special assessment is separate.",
+    "Judgment page 7 joint-and-several schedule names Aimee Marie Bock, Salim Ahmed Said, and Abdulkadir Nur Salah, each associated with the same $3,314,276 obligation.",
+    "Judgment page 7 directs restitution through the court clerk and allows credit for payments previously made."
+  ],
+  "does_not_support": [
+    "Any amount paid, collected, distributed, or satisfied.",
+    "That the three named co-defendants owe *additional* $3,314,276 each or that the amount is additive to Bock's $242,807,755 restitution order.",
+    "That all defendant judgments have identical joint-and-several schedules; this particular judgment's schedule should not be projected onto others.",
+    "A fact independently verified against original PDF page images; archive text may include OCR errors."
+  ],
+  "locators": [
+    "Reproduced PDF pp. 1–2 case and sentence",
+    "Reproduced PDF p. 6 criminal monetary penalties and recipient",
+    "Reproduced PDF p. 7 joint-and-several schedule"
+  ],
+  "notes": "Primary-court-document content mirrored by a third party; no original PDF bytes were captured or hashed independently this tranche. No recovery-row upgrade until original reviewed."
+}
