@@ -1,0 +1,43 @@
+{
+  "source_id": "src-court-mnd-22-cr-223-ecf805-said-preliminary-forfeiture",
+  "canonical_url": "https://originals.pandemicdarlings.com/source-documents/order-granting-796-motion-for-preliminary-order-of-united-states-v-boc-f3deb78311/805-order-granting-796-motion-for-preliminary-order-of-forfeitur.pdf",
+  "issuing_body": "United States District Court, District of Minnesota (third-party mirror of court PDF)",
+  "title": "United States v. Salim Ahmed Said, preliminary order of forfeiture, ECF 805",
+  "publication_date": "2026-02-27",
+  "document_date": "2026-02-27",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_forfeiture_order",
+  "case_number": "0:22-cr-00223-NEB-DTS",
+  "jurisdiction": "D. Minn.",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "PRELIMINARY_COURT_FORFEITURE_ORDER",
+  "access_status": "available",
+  "acquisition": {
+    "channel": "Public third-party mirror displaying the signed court filing; inspected 6-page PDF; neither court-hosted original nor authenticated RECAP upload acquired",
+    "pdf_archived_in_repo": false,
+    "content_hash_verified": false,
+    "mirror_index": "https://pandemicdarlings.com/source-documents/order-granting-796-motion-for-preliminary-order-of-united-states-v-boc-f3deb78311/",
+    "pdf_pages": 6,
+    "ecf": "805"
+  },
+  "supports": [
+    "ECF 805, filed February 27, 2026, is a signed preliminary forfeiture order as to Salim Ahmed Said (defendant 3) in 0:22-cr-00223-NEB-DTS.",
+    "Page 4 paragraph 4 enters a $7,837,656.60 forfeiture money judgment; paragraph 5 requires credit for net forfeited asset value against that same judgment.",
+    "Pages 2–4 identify seized bank funds, several properties, vehicles and other assets. Several assets are listed under two statutory forfeiture theories; those descriptions do not create separate additive recoveries.",
+    "Page 5 paragraph 9 provides that the preliminary order becomes final as to the defendant at sentencing and must be included in the criminal judgment.",
+    "DOJ's October 30 release separately reports Said was sentenced October 28, 2026; the signed October sentencing judgment has not been acquired here."
+  ],
+  "does_not_support": [
+    "Any value actually realized from assets, amounts distributed to victims, or cash recovered by government.",
+    "A new $7,837,656.60 amount in addition to the value of listed seized assets.",
+    "A signed October 28 judgment or any specific Said restitution figure.",
+    "That this preliminary order was unchanged in the October sentencing judgment, or finality as to third parties."
+  ],
+  "locators": [
+    "PDF page 1 case caption, ECF 805",
+    "PDF page 4 paragraphs 4–5 ($7,837,656.60 and credits)",
+    "PDF page 5 paragraph 9 (effect at sentencing)"
+  ],
+  "notes": "Underlying instrument is a signed primary federal court document but publicly located on a third-party mirror. Inspect original RECAP/PACER copy and October 28 judgment before claims about final terms. No binary file or independently computed SHA-256 was saved to this repository."
+}

@@ -1,0 +1,38 @@
+{
+  "source_id": "src-mn-ag-2026-10-26-eahn-civil-complaint",
+  "canonical_url": "https://www.ag.state.mn.us/Office/Communications/2026/docs/EAHN_Complaint.pdf",
+  "issuing_body": "Minnesota District Court, Hennepin County (complaint published by Minnesota Attorney General)",
+  "title": "State of Minnesota v. East African Healthcare Network et al., Minnesota False Claims Act complaint",
+  "publication_date": "2026-10-26",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_civil_complaint",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "CIVIL_ALLEGED_OR_RESOLVED",
+  "access_status": "available",
+  "acquisition": {
+    "channel": "Official Minnesota Attorney General document host",
+    "pdf_pages": 66,
+    "pdf_archived_in_repo": false,
+    "content_hash_verified": false
+  },
+  "supports": [
+    "Complaint paragraphs 1–3 allege a child nutrition reimbursement scheme involving EAHN and named vendors; claims are allegations, not findings.",
+    "Complaint paragraph 2 (PDF page 2) describes more than $10 million in reimbursements received by EAHN with vendors across SFSP/CACFP programs during 2020–2022; the figure is part of the state's allegations.",
+    "The complaint distinguishes PIN-sponsored periods, when PIN submitted the reimbursement claims, from EAHN's own sponsorship, when EAHN submitted them.",
+    "Complaint paragraph 83 and its table (PDF page 20) list 2,268,484 SFSP meal claims and $7,400,051.15 total payments for PIN-sponsored EAHN sites from July 2020 to September 2021.",
+    "The complaint's PDF page 41 table lists 545,324 CACFP meal claims and $1,341,497.04 total payments for PIN-sponsored EAHN sites from September to December 2021."
+  ],
+  "does_not_support": [
+    "A civil finding of liability, conviction, final monetary judgment, restitution or collection.",
+    "Adding the table amounts to the complaint's >$10 million broad reimbursement figure.",
+    "A verified court case number: the public copy carries a blank Court File No. field."
+  ],
+  "locators": [
+    "PDF pp. 1–3, ¶¶1–5",
+    "PDF p. 20, ¶83 and SFSP table",
+    "PDF p. 41, CACFP table"
+  ],
+  "notes": "Hennepin complaint's published PDF has no filled case number. Source captures allegations and amounts as pleaded, not court findings; independent source data and current docket status should be acquired."
+}

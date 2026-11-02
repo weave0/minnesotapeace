@@ -1,0 +1,39 @@
+{
+  "source_id": "src-mn-courts-2026-10-26-state-v-yusuf-a25-2003-opinion",
+  "canonical_url": "https://mncourts.gov/_media/migration/appellate/court-of-appeals/standard-opinions/26oct26/OPa252003-102626.pdf",
+  "issuing_body": "Minnesota Court of Appeals",
+  "title": "State v. Abdifatah Abdulkadir Yusuf, No. A25-2003, nonprecedential opinion",
+  "publication_date": "2026-10-26",
+  "document_date": "2026-10-26",
+  "retrieval_date": "2026-11-01",
+  "document_type": "court_appellate_opinion",
+  "case_number": "A25-2003 (appeal); 27-CR-24-13734 (Hennepin district court)",
+  "jurisdiction": "Minnesota",
+  "source_tier": 1,
+  "source_status": "PRIMARY_COURT_RECORD",
+  "evidence_class": "APPELLATE_ADJUDICATION_REMAND",
+  "access_status": "available",
+  "acquisition": {
+    "channel": "Official Minnesota Judicial Branch PDF host",
+    "pdf_pages": 18,
+    "pdf_archived_in_repo": false,
+    "content_hash_verified": false
+  },
+  "supports": [
+    "October 26 nonprecedential opinion in A25-2003 reversed the district court's post-verdict acquittal and remanded for reinstatement of six jury guilty verdicts on aiding and abetting theft by swindle.",
+    "The district court had previously acquitted on a separate racketeering count before the six other counts went to the jury; the appeal's disposition does not reinstate that count.",
+    "The court described trial testimony and documentary evidence concerning billing by Promise Health Service LLC, including a lead investigator's testimony that fraudulent payments exceeded $7.2 million; this is not a restitution or recovery order.",
+    "The appellate disposition is a procedural reversal/remand, not a newly entered prison sentence."
+  ],
+  "does_not_support": [
+    "An entered post-remand sentencing judgment, updated restitution or actual collections.",
+    "That a conviction was entered on the previously dismissed racketeering charge.",
+    "Attributing alleged conduct by other named provider organizations to them solely due to shared space or associations."
+  ],
+  "locators": [
+    "Opinion p. 1, caption and disposition",
+    "Opinion pp. 9–11, allegations and procedural history",
+    "Opinion p. 18, reversal/remand"
+  ],
+  "notes": "Preserve the distinction between a jury verdict, intervening post-verdict acquittal, appellate reversal, and later reinstatement on remand. Confirm the district court's entry and any further appellate activity before claiming final sentencing."
+}
